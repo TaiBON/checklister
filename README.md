@@ -1,4 +1,4 @@
-nmelist-generator
+namelist-generator
 ==================
 
 ## 名錄產生器
