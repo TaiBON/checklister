@@ -148,7 +148,7 @@ def main(oformat):
                 pt_family_sp = '''
                     select distinct fullname,n.zh_name from sample s left outer join namelist n 
                     on s.zh_name=n.zh_name where n.plant_type=%i and family='%s'
-                    order by plant_type,family;
+                    order by plant_type,family,fullname;
                 ''' % (pt_plant_type[i][0], pt_family[j][0])
                 curs.execute(pt_family_sp)
                 pt_family_sp = curs.fetchall()
