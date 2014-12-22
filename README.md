@@ -38,7 +38,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 
 ### 輸出範例
 
-!(https://github.com/mutolisp/namelist-generator/blob/master/demo/demo_docx.png)
+![Demo docx](https://github.com/mutolisp/namelist-generator/blob/master/demo/demo_docx.png)
 
 ### 同物異名或同名異物
 namelist-generator 完全依賴 baselist ，所以只要 baselist 裡頭資料正確，產生的名錄即為正確名錄。但仍會有一些中名相同
