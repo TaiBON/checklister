@@ -114,10 +114,23 @@ def main(oformat):
         SELECT count(*) from (SELECT distinct n.zh_name from sample s left outer join namelist n 
                 on s.zh_name=n.zh_name) as f;
         '''
+        not_exist_sp = '''
+        SELECT distinct s.zh_name from sample s left outer join namelist n 
+                on s.zh_name=n.zh_name where n.zh_name is null;
+        '''
         curs.execute(count_family)
         family_no = curs.fetchall()[0][0]
         curs.execute(count_species)
         species_no = curs.fetchall()[0][0]
+        curs.execute(not_exist_sp)
+        no_sp = curs.fetchall()
+        nsp = []
+        for i in no_sp:
+            nsp.append(i[0])
+        nsp = ', '.join(nsp)
+        f.write('\n')
+        f.write('<font color="red">輸入名錄中，下列物種不存在物種資料庫中：{} ，請再次確認物種中名是否和資料庫中相同</font>\n'.format(nsp))
+        f.write('\n')
         f.write('名錄中共有 {} 科、{} 種'.format(family_no, species_no))
         pt_plant_type_sql = '''
             SELECT p.plant_type,p.pt_name
