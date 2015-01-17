@@ -128,10 +128,11 @@ def main(oformat):
         for i in no_sp:
             nsp.append(i[0])
         nsp = ', '.join(nsp)
+        if len(nsp) > 0:
+            f.write('\n')
+            f.write('<font color="red">輸入名錄中，下列物種不存在於物種資料庫中：{} ，請再次確認物種中名是否和資料庫中相同</font>\n'.format(nsp))
         f.write('\n')
-        f.write('<font color="red">輸入名錄中，下列物種不存在物種資料庫中：{} ，請再次確認物種中名是否和資料庫中相同</font>\n'.format(nsp))
-        f.write('\n')
-        f.write('名錄中共有 {} 科、{} 種'.format(family_no, species_no))
+        f.write('名錄中共有 {} 科、{} 種，科名後括弧內為該科之物種總數'.format(family_no, species_no))
         pt_plant_type_sql = '''
             SELECT p.plant_type,p.pt_name
             FROM plant_type p,
@@ -145,7 +146,7 @@ def main(oformat):
         m = 1
         for i in range(0,len(pt_plant_type)):
             f.write('\n')
-            f.write('\n##'+pt_plant_type[i][1]+'\n\n')
+            f.write('\n###'+pt_plant_type[i][1]+'\n\n')
             pt_family_sql = '''
             select distinct family,family_zh from sample s left outer join namelist n 
             on s.zh_name=n.zh_name where n.plant_type=%i
@@ -153,11 +154,19 @@ def main(oformat):
             ''' % pt_plant_type[i][0]
             curs.execute(pt_family_sql)
             pt_family = curs.fetchall()
-            for j in range(0,len(pt_family)):   
+            for j in range(0,len(pt_family)):
+                sp_number_in_fam = '''
+                    select count(*) from 
+                    (select distinct fullname,n.zh_name from sample s left outer join namelist n 
+                    on s.zh_name=n.zh_name where n.plant_type=%i and family='%s'
+                    order by plant_type,family,fullname) as a;
+                ''' % (pt_plant_type[i][0], pt_family[j][0])
+                curs.execute(sp_number_in_fam)
+                fam_spno = curs.fetchall()[0][0]
                 fam = str(m) + '. **' + pt_family[j][0]
                 fam_zh = pt_family[j][1]+'**'
                 f.write('\n')
-                f.write(fam+' '+fam_zh+'\n')
+                f.write(fam+' '+fam_zh+' (%i)\n' % fam_spno)
                 pt_family_sp = '''
                     select distinct fullname,n.zh_name from sample s left outer join namelist n 
                     on s.zh_name=n.zh_name where n.plant_type=%i and family='%s'
