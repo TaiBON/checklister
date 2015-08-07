@@ -17,6 +17,8 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 
 ### 使用方法
 
+#### Unix, GNU/Linux, MacOS 的安裝
+
 1. 安裝 [Python 3](https://www.python.org)
 2. 安裝 [Pandoc](http://johnmacfarlane.net/pandoc/)
 3. [Clone](https://github.com/mutolisp/namelist-generator.git)至你的桌面環境，或是直接下載[zip](https://github.com/mutolisp/namelist-generator/archive/master.zip)
@@ -27,6 +29,33 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 ```
 接下來則會輸出 markdown 檔 output.md  及 Microsoft Office Word 檔 output.docx 
 
+#### Windows 平台的安裝及使用
+
+*設定 Python 路徑*
+Windows 的安裝方法和上面相同，只是需要設定路徑，在安裝完之後，從「控制台」/「系統及安全性」/「系統」，
+中選取進階系統設定，「進階」中選擇編輯「環境變數」，將變數 PATH 設定為
+```
+C:\Users\yourusername\AppData\Local\Pandoc;C:\Python34\
+```
+(前方的 Pandoc 是當你安裝完之後會自動設定，後面加上分號及新增的 Python 路徑，不加也沒關係，
+只是需要多打幾個字)
+
+![設定路徑](https://raw.github.com/mutolisp/namelist-generator/master/docs/setpath.png)
+
+*原始植物名字檔案編碼*
+因為中文 Windows 預設為 CP950 (Big5 擴充字集) 編碼，但 namelist-generator 全部都是使用 UTF-8 編碼，
+所以必須要將文字檔存成 UTF-8，如下圖：
+
+![存成 UTF-8](https://raw.github.com/mutolisp/namelist-generator/master/docs/save_namelist.png)
+
+接下來開啟命令提示字元(cmd.exe)，輸入下方指令（假設您下載的原始碼在 C:\namelist-generator）：
+
+```
+    cd C:\namelist-generator
+    python src\genlist.py data\twnamelist_apg3.csv data\sample.csv
+```
+
+則會在 C:\namelist-generator 下產生 output.md 及 output.docx 兩個檔案，之後您就可以再次確認植物名錄了。
 
 
 ### 轉換文件格式
