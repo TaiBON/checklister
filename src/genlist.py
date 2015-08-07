@@ -1,12 +1,5 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
-# <nbformat>3.0</nbformat>
-
-# <codecell>
-
-#!/usr/bin/env python3
-
-# <codecell>
-
 import csv
 import sqlite3
 import sys
