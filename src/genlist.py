@@ -109,7 +109,7 @@ def main(oformat):
         curs.execute(pt_sql)
         conn.commit()
     
-    with codecs.open('output.md', 'w+') as f:
+    with codecs.open('output.md', 'w+', 'utf-8') as f:
         f.write('# 維管束植物名錄')
         f.write('\n')
         count_family = '''
