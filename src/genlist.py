@@ -59,7 +59,10 @@ def main(oformat):
       zh_name varchar,
       name varchar,
       fullname varchar,
-      plant_type integer
+      plant_type integer,
+      endemic integer,
+      iucn_category varchar,
+      source varchar
     );
     '''
     sample_create = '''
@@ -73,9 +76,18 @@ def main(oformat):
         reader = csv.reader(f, delimiter='|')
         for row in reader:
             insert_db = '''
-            INSERT INTO namelist (family,family_zh,zh_name,name,fullname,plant_type)
-            VALUES ("%s", "%s", "%s", "%s", "%s", %s);
-            ''' % (row[0], row[1], row[2], row[3], row[4], row[5])
+            INSERT INTO namelist (
+                family,
+                family_zh,
+                zh_name,
+                name,
+                fullname,
+                plant_type,
+                endemic,
+                iucn_category,
+                source)
+            VALUES ("%s", "%s", "%s", "%s", "%s", %s,  %s, "%s", "%s");
+            ''' % (row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8])
             curs.execute(insert_db)
             conn.commit()
     with open(sys.argv[2], newline='', encoding='utf-8') as f:
@@ -132,7 +144,12 @@ def main(oformat):
             f.write('\n')
             f.write('<font color="red">輸入名錄中，下列物種不存在於物種資料庫中：{} ，請再次確認物種中名是否和資料庫中相同</font>\n'.format(nsp))
         f.write('\n')
-        f.write('名錄中共有 {} 科、{} 種，科名後括弧內為該科之物種總數'.format(family_no, species_no))
+        f.write('本名錄中共有 {} 科、{} 種，科名後括弧內為該科之物種總數。'.format(family_no, species_no))
+        f.write('"#" 代表特有種，"*" 代表歸化種，"†" 代表栽培種。')
+        f.write('中名後面括號內的縮寫代表依照「臺灣維管束植物初評名錄」中依照 IUCN 瀕危物種所評估等級，')
+        f.write('EX: 滅絕, EW: 野外滅絕, RE: 區域性滅絕, CR: 嚴重瀕臨滅絕, ')
+        f.write('EN: 瀕臨滅絕, VU: 易受害, NT: 接近威脅, DD: 未評估。若未註記者代表安全(Least concern)')
+        f.write('\n')
         pt_plant_type_sql = '''
             SELECT p.plant_type,p.pt_name
             FROM plant_type p,
@@ -168,15 +185,37 @@ def main(oformat):
                 f.write('\n')
                 f.write(fam+' '+fam_zh+' (%i)\n' % fam_spno)
                 pt_family_sp = '''
-                    select distinct fullname,n.zh_name from sample s left outer join namelist n 
+                    select distinct fullname,n.zh_name,n.endemic,n.source,n.iucn_category from sample s left outer join namelist n 
                     on s.zh_name=n.zh_name where n.plant_type=%i and family='%s'
                     order by plant_type,family,fullname;
                 ''' % (pt_plant_type[i][0], pt_family[j][0])
                 curs.execute(pt_family_sp)
                 pt_family_sp = curs.fetchall()
                 m = m + 1
+                # output species within a family
                 for k in range(0,len(pt_family_sp)):
-                    f.write('    ' + str(n) + '. ' + fmtname(pt_family_sp[k][0]) + ' ' + pt_family_sp[k][1] +'\n')
+                    # check the endmic species
+                    if pt_family_sp[k][2]==1:
+                        ENDEMIC = "#"
+                    else:
+                        ENDEMIC = ''
+                    # check the source 
+                    if pt_family_sp[k][3]=='栽培':
+                        SRC = '†'
+                    elif pt_family_sp[k][3]=='歸化':
+                        SRC = '*'
+                    else:
+                        SRC = ''
+                    # IUCN category
+                    if len(pt_family_sp[k][4]) == 2:
+                        IUCNCAT = ' (%s)' % pt_family_sp[k][4]
+                    else:
+                        IUCNCAT = ''
+                    spinfo = ' ' + ENDEMIC + SRC + IUCNCAT
+                    if spinfo is not None:
+                        f.write('    ' + str(n) + '. ' + fmtname(pt_family_sp[k][0]) + ' ' + pt_family_sp[k][1] + spinfo + '\n')
+                    else:
+                        f.write('    ' + str(n) + '. ' + fmtname(pt_family_sp[k][0]) + ' ' + pt_family_sp[k][1] +'\n')
                     n = n + 1
         f.close()        
         convert(oformat)
