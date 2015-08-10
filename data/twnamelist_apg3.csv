@@ -3104,7 +3104,7 @@ Phyllanthaceae|葉下珠科|葉下珠|Phyllanthus urinaria|Phyllanthus urinaria 
 Phyllanthaceae|葉下珠科|光果葉下珠|Phyllanthus urinaria subsp. nudicarpus|Phyllanthus urinaria L. subsp. nudicarpus Rossign. & Haic.|3|0||原生
 Phyllanthaceae|葉下珠科|蜜甘草|Phyllanthus ussuriensis|Phyllanthus ussuriensis Rupr. & Maxim.|3|0||原生
 Phyllanthaceae|葉下珠科|細葉油柑|Phyllanthus virgatus|Phyllanthus virgatus Forst. f.|3|0||原生
-Phyllanthaceae|葉下珠科|假葉下珠|Synostemon bacciforme|Synostemon bacciforme (L.) Webster|3|0||原生
+Phyllanthaceae|葉下珠科|假葉下珠|Sauropus bacciformis|Sauropus bacciformis (L.) Airy Shaw|3|0||原生
 Phytolaccaceae|商陸科|台灣商陸|Phytolacca acinosa|Phytolacca acinosa Roxb.|3|0||未知
 Phytolaccaceae|商陸科|美洲商陸|Phytolacca americana|Phytolacca americana L.|3|0||歸化
 Phytolaccaceae|商陸科|二十蕊商陸|Phytolacca icosandra|Phytolacca icosandra L.|3|0||歸化
@@ -4035,8 +4035,8 @@ Vitaceae|葡萄科|阿穆爾葡萄|Vitis amurensis|Vitis amurensis Rupr.|3|0||�
 Vitaceae|葡萄科|光葉葡萄|Vitis flexuosa|Vitis flexuosa Thunb.|3|0||原生
 Vitaceae|葡萄科|小葉葛藟|Vitis flexuosa fo. parvifolia|Vitis flexuosa Thunb. fo. parvifolia (Roxb.) Planch.|3|0||原生
 Vitaceae|葡萄科|基隆葡萄|Vitis kelungensis|Vitis kelungensis Moriyama|3|1|NT|原生
-Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|EN|原生
 Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|NT|原生
+Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|EN|原生
 Vitaceae|葡萄科|小葉葡萄|Vitis thunbergii var. taiwaniana|Vitis thunbergii Sieb. & Zucc. var. taiwaniana Lu|3|1||原生
 Zygophyllaceae|蒺藜科|大花蒺藜|Tribulus cistoides|Tribulus cistoides L.|3|0||未知
 Zygophyllaceae|蒺藜科|台灣蒺藜|Tribulus taiwanense|Tribulus taiwanense Huang & Hsieh|3|1|NT|原生
@@ -5384,8 +5384,8 @@ Potamogetonaceae|眼子菜科|柳絲藻|Potamogeton pusillus|Potamogeton pusillu
 Potamogetonaceae|眼子菜科|角果藻|Zannichellia palustris|Zannichellia palustris L.|4|0|VU|原生
 Ruppiaceae|流蘇菜科|流蘇菜|Ruppia maritima|Ruppia maritima L.|4|0||原生
 Smilacaceae|菝契科|阿里山菝契|Smilax arisanensis|Smilax arisanensis Hayata|4|0||原生
-Smilacaceae|菝契科|土茯苓|Smilax bockii|Smilax bockii Warb.|4|0||原生
 Smilacaceae|菝契科|平柄菝契|Smilax bockii|Smilax bockii Warb.|4|0||原生
+Smilacaceae|菝契科|土茯苓|Smilax bockii|Smilax bockii Warb.|4|0||原生
 Smilacaceae|菝契科|假菝契|Smilax bracteata|Smilax bracteata C. Presl|4|0||原生
 Smilacaceae|菝契科|糙莖菝契|Smilax bracteata var. verruculosa|Smilax bracteata Prest var. verruculosa (Merr.) T. Koyama|4|0||原生
 Smilacaceae|菝契科|菝契|Smilax china|Smilax china L.|4|0||原生
