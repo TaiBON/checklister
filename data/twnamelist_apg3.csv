@@ -4035,8 +4035,8 @@ Vitaceae|葡萄科|阿穆爾葡萄|Vitis amurensis|Vitis amurensis Rupr.|3|0||�
 Vitaceae|葡萄科|光葉葡萄|Vitis flexuosa|Vitis flexuosa Thunb.|3|0||原生
 Vitaceae|葡萄科|小葉葛藟|Vitis flexuosa fo. parvifolia|Vitis flexuosa Thunb. fo. parvifolia (Roxb.) Planch.|3|0||原生
 Vitaceae|葡萄科|基隆葡萄|Vitis kelungensis|Vitis kelungensis Moriyama|3|1|NT|原生
-Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|EN|原生
 Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|NT|原生
+Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|EN|原生
 Vitaceae|葡萄科|小葉葡萄|Vitis thunbergii var. taiwaniana|Vitis thunbergii Sieb. & Zucc. var. taiwaniana Lu|3|1||原生
 Zygophyllaceae|蒺藜科|大花蒺藜|Tribulus cistoides|Tribulus cistoides L.|3|0||未知
 Zygophyllaceae|蒺藜科|臺灣蒺藜|Tribulus taiwanense|Tribulus taiwanense Huang & Hsieh|3|1|NT|原生
@@ -4440,7 +4440,7 @@ Hydrocharitaceae|水虌科|士林拂尾藻|Najas ancistrocarpa|Najas ancistrocar
 Hydrocharitaceae|水虌科|高雄茨藻|Najas browniana|Najas browniana Rendle|4|0|VU|原生
 Hydrocharitaceae|水虌科|日本茨藻|Najas gracillima|Najas gracillima A. Br. ex Magnus|4|0||原生
 Hydrocharitaceae|水虌科|拂尾藻|Najas graminea|Najas graminea Delile|4|0||原生
-Hydrocharitaceae|水虌科|中華茨藻|Najas indica|Najas indica (Willd.) Cham.|4|0||原生
+Hydrocharitaceae|水虌科|印度茨藻|Najas indica|Najas indica (Willd.) Cham.|4|0||原生
 Hydrocharitaceae|水虌科|大茨藻|Najas marina|Najas marina L.|4|0|NT|原生
 Hydrocharitaceae|水虌科|小茨藻|Najas minor|Najas minor All.|4|0||原生
 Hydrocharitaceae|水虌科|水車前草|Ottelia alismoides|Ottelia alismoides (L.) Pers.|4|0|NT|原生
@@ -5384,8 +5384,8 @@ Potamogetonaceae|眼子菜科|柳絲藻|Potamogeton pusillus|Potamogeton pusillu
 Potamogetonaceae|眼子菜科|角果藻|Zannichellia palustris|Zannichellia palustris L.|4|0|VU|原生
 Ruppiaceae|流蘇菜科|流蘇菜|Ruppia maritima|Ruppia maritima L.|4|0||原生
 Smilacaceae|菝契科|阿里山菝契|Smilax arisanensis|Smilax arisanensis Hayata|4|0||原生
-Smilacaceae|菝契科|平柄菝契|Smilax bockii|Smilax bockii Warb.|4|0||原生
 Smilacaceae|菝契科|土茯苓|Smilax bockii|Smilax bockii Warb.|4|0||原生
+Smilacaceae|菝契科|平柄菝契|Smilax bockii|Smilax bockii Warb.|4|0||原生
 Smilacaceae|菝契科|假菝契|Smilax bracteata|Smilax bracteata C. Presl|4|0||原生
 Smilacaceae|菝契科|糙莖菝契|Smilax bracteata var. verruculosa|Smilax bracteata Prest var. verruculosa (Merr.) T. Koyama|4|0||原生
 Smilacaceae|菝契科|菝契|Smilax china|Smilax china L.|4|0||原生
