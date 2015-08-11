@@ -93,9 +93,11 @@ def main(oformat):
     with open(sys.argv[2], newline='', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter='|')
         for row in reader:
+            # substitute 台 to 臺
+            zhname = re.sub('台([灣|北|中|西|南|東])',r'臺\1', row[0])
             insert_db = '''
             INSERT INTO sample (zh_name) VALUES ("%s");
-            ''' % row[0]
+            ''' % zhname
             curs.execute(insert_db)
             conn.commit()
     # insert plant_type
