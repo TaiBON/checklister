@@ -5,36 +5,42 @@ import sqlite3
 import sys
 import subprocess
 import codecs
+import re
 
 def fmtname(name):
     n_split = name.split(' ')
     lenf = len(n_split)
+    # typesetting
+    italic_b = '*'
+    italic_e = '*'
     if 'var.' in n_split:
         sub_idx = n_split.index('var.')
-        fmt_name = '*' + " ".join(str(item) for item in n_split[0:2])+ '*'
+        fmt_name = italic_b + " ".join(str(item) for item in n_split[0:2])+ italic_e
         fmt_author = " ".join(str(item) for item in n_split[sub_idx+2:lenf])
-        fmt_sub = '*' + str(n_split[sub_idx+1]) + '* '
-        fmt_oname = fmt_name + ' var. ' + fmt_sub + fmt_author
+        fmt_sub = italic_b + str(n_split[sub_idx+1]) + italic_e
+        fmt_oname = fmt_name + ' var. ' + fmt_sub + ' ' + fmt_author
     elif 'subsp.' in n_split:
         sub_idx = n_split.index('subsp.')
-        fmt_name = '*' + " ".join(str(item) for item in n_split[0:2])+ '*'
+        fmt_name = italic_b + " ".join(str(item) for item in n_split[0:2])+ italic_e
         fmt_author = " ".join(str(item) for item in n_split[sub_idx+2:lenf])
-        fmt_sub = '*' + str(n_split[sub_idx+1]) + '* '
-        fmt_oname = fmt_name + ' subsp. ' + fmt_sub + fmt_author
+        fmt_sub = italic_b + str(n_split[sub_idx+1]) + italic_e
+        fmt_oname = fmt_name + ' subsp. ' + fmt_sub + ' ' + fmt_author
     elif 'fo.' in n_split:
         sub_idx = n_split.index('fo.')
-        fmt_name = '*' + " ".join(str(item) for item in n_split[0:2])+ '*'
+        fmt_name = italic_b + " ".join(str(item) for item in n_split[0:2])+ italic_e
         fmt_author = " ".join(str(item) for item in n_split[sub_idx+2:lenf])
-        fmt_sub = '*' + str(n_split[sub_idx+1]) + '* '
-        fmt_oname = fmt_name + ' fo. ' + fmt_sub + fmt_author
+        fmt_sub = italic_b + str(n_split[sub_idx+1]) + italic_e
+        fmt_oname = fmt_name + ' fo. ' + fmt_sub + ' ' + fmt_author
     elif '×' in n_split:
-        fmt_name = '*' + " ".join(str(item) for item in n_split[0:3])+ '*'
+        fmt_name = italic_b + " ".join(str(item) for item in n_split[0:3])+ italic_e
         fmt_author = " ".join(str(item) for item in n_split[3:lenf])
         fmt_oname = fmt_name + ' ' + fmt_author
     else:
-        fmt_name = '*' + " ".join(str(item) for item in n_split[0:2])+ '*'
+        fmt_name = italic_b + " ".join(str(item) for item in n_split[0:2])+ italic_e
         fmt_author = " ".join(str(item) for item in n_split[2:lenf])
         fmt_oname = fmt_name + ' ' + fmt_author
+    # 作者中訂正(ex)需使用斜體
+    fmt_oname = re.sub(' ex ', ' ' + italic_b + 'ex' + italic_e + ' ', fmt_oname)
     return(fmt_oname)
 
 def convert(oformat='docx'):
