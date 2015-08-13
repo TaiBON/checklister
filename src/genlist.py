@@ -152,7 +152,7 @@ def main(dbfile, inputfile, oformat='docx', ofile_prefix='output'):
         f.write('"#" 代表特有種，"*" 代表歸化種，"†" 代表栽培種。')
         f.write('中名後面括號內的縮寫代表依照「臺灣維管束植物初評名錄」中依照 IUCN 瀕危物種所評估等級，')
         f.write('EX: 滅絕, EW: 野外滅絕, RE: 區域性滅絕, CR: 嚴重瀕臨滅絕, ')
-        f.write('EN: 瀕臨滅絕, VU: 易受害, NT: 接近威脅, DD: 未評估。若未註記者代表安全(Least concern)')
+        f.write('EN: 瀕臨滅絕, VU: 易受害, NT: 接近威脅, DD: 資料不足。若未註記者代表安全(Least concern)')
         f.write('\n')
         pt_plant_type_sql = '''
             SELECT p.plant_type,p.pt_name

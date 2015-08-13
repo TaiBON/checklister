@@ -6,7 +6,8 @@ namelist-generator
 namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清單(sample) 」自動產生階層式的名錄，
 植物名錄按照蕨類、裸子植物、「雙子葉植物」、單子葉植物四大類排序，下依照科名字母順序、物種名字母順序排列。
 'data/twnamelist.csv'是基於 Flora of Taiwan 2nd Edition 以及近年來新發現或訂正之物種名錄。'data/sample.csv'
-則是從 twnamelist.csv 中隨機產生的物種中名範例檔。
+則是從 twnamelist.csv 中隨機產生的物種中名範例檔。目前 data/twnamelist_apg3.csv 及 data/twnamelist.csv 包含
+臺灣目前原生、歸化及部分栽培維管束物種清單
 
 ### 開發語言及相依軟體
 
