@@ -7,6 +7,7 @@ import subprocess
 import codecs
 import re
 
+# format the typesetting of names
 def fmtname(name):
     n_split = name.split(' ')
     lenf = len(n_split)
@@ -43,10 +44,11 @@ def fmtname(name):
     fmt_oname = re.sub(' ex ', ' ' + italic_b + 'ex' + italic_e + ' ', fmt_oname)
     return(fmt_oname)
 
-def convert(oformat='docx'):
-    subprocess.call(['pandoc', 'output.md', '-o', 'output.'+oformat])
+# convert markdown to other fileformats using pandoc
+def convert(oformat='docx', ofile_prefix='output'):
+    subprocess.call(['pandoc', ofile_prefix+'.md', '-o', ofile_prefix+'.'+oformat])
     
-def main(oformat):
+def main(dbfile, inputfile, oformat='docx', ofile_prefix='output'):
     conn = sqlite3.connect(':memory:')
     curs = conn.cursor()
     # default db table
@@ -72,7 +74,7 @@ def main(oformat):
     '''
     curs.execute(blist_create)
     curs.execute(sample_create)
-    with open(sys.argv[1], newline='', encoding='utf-8') as f:
+    with open(dbfile, newline='', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter='|')
         for row in reader:
             insert_db = '''
@@ -90,7 +92,7 @@ def main(oformat):
             ''' % (row[0], row[1], row[2], row[3], row[4], row[5], row[6], row[7], row[8])
             curs.execute(insert_db)
             conn.commit()
-    with open(sys.argv[2], newline='', encoding='utf-8') as f:
+    with open(inputfile, newline='', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter='|')
         for row in reader:
             # substitute 台 to 臺
@@ -117,7 +119,7 @@ def main(oformat):
         curs.execute(pt_sql)
         conn.commit()
     
-    with codecs.open('output.md', 'w+', 'utf-8') as f:
+    with codecs.open(ofile_prefix +'.md', 'w+', 'utf-8') as f:
         f.write('# 維管束植物名錄')
         f.write('\n')
         count_family = '''
@@ -220,8 +222,30 @@ def main(oformat):
                         f.write('    ' + str(n) + '. ' + fmtname(pt_family_sp[k][0]) + ' ' + pt_family_sp[k][1] +'\n')
                     n = n + 1
         f.close()        
-        convert(oformat)
+        convert(oformat, ofile_prefix)
 if __name__=='__main__':
-    main(oformat='docx')
-
+    if len(sys.argv) < 8:
+        print("Usage:")
+        print("    -h print this help")
+        print("    -d database file (csv), ex: twnamelist.csv")
+        print("    -s input species file (csv or txt, chinese common names)")
+        print("    -f export file format, default: markdown (md) and docx")
+        print("       optional: all pandoc supported fileformats")
+        print("    -o please specify the prefix of output filename (default is output)")
+        sys.exit()
+    else:
+        for i in range(0,len(sys.argv)):
+            if sys.argv[i] == '-f':
+                argv_f = sys.argv[i+1]
+            elif sys.argv[i] == '-o':
+                argv_fpre = sys.argv[i+1] 
+            elif sys.argv[i] == '-d':
+                argv_db = sys.argv[i+1]
+            elif sys.argv[i] == '-s':
+                argv_sp = sys.argv[i+1]
+        if argv_f is None:
+            argv_f = 'docx'
+        if argv_fpre is None:
+            argv_fpre = 'output'
+        main(dbfile=argv_db, inputfile=argv_sp, oformat=argv_f, ofile_prefix=argv_fpre)
 # <codecell>
