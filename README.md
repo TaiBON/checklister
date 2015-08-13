@@ -12,7 +12,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 ### 開發語言及相依軟體
 
 * [Python 3](https://www.python.org)
-    + packages: sqlite, csv, subprocess, sys 
+    + libraries: codecs, csv, subprocess, sqlite, sys
 * [Pandoc](http://johnmacfarlane.net/pandoc/)
 
 
@@ -71,13 +71,16 @@ C:\Users\yourusername\AppData\Local\Pandoc;C:\Python34\
 萊氏線蕨
 ```
 *WINDOWS 平台注意事項*
+
 因為中文 Windows 預設為 CP950 (Big5 擴充字集) 編碼，但 namelist-generator 全部都是使用 UTF-8 編碼，
 所以必須要將文字檔存成 UTF-8，如下圖：
 
 ![存成 UTF-8](https://raw.github.com/mutolisp/namelist-generator/master/docs/save_namelist.png)
 
 2. 接下來開啟命令提示字元(cmd.exe)或終端機(Terminal)，輸入下方指令（假設您下載的原始碼在 C:\namelist-generator）：
+
 *WINDOWS 使用者:*
+
 
 ```
     cd C:\namelist-generator
@@ -85,7 +88,9 @@ C:\Users\yourusername\AppData\Local\Pandoc;C:\Python34\
 ```
 
 則會在 C:\namelist-generator 下產生 namelist.md 及 namelist.docx 兩個檔案，之後您就可以再次確認植物名錄了。
+
 *GNU/Linux, MacOS 等 *nix 使用者*
+
 ```    
     cd path/to/namelist-generator;
     python3 src/genlist.py -d data/twnamelist_apg3.csv -s data/sample.csv -f docx -o namelist

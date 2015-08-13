@@ -112,7 +112,7 @@ def main(dbfile, inputfile, oformat='docx', ofile_prefix='output'):
     '''
     curs.execute(plant_type_table)
     plant_type = (1, 2, 3, 4)
-    pt_name = ('蕨類植物 Ferns and Fern Allies', '裸子植物 Gymnosperms', "雙子葉植物 'Dicotyledons'", '單子葉植物 Monocotyledons')
+    pt_name = ('蕨類植物 Ferns and Lycophytes', '裸子植物 Gymnosperms', "雙子葉植物 'Dicotyledons'", '單子葉植物 Monocotyledons')
     for i in range(0,4):
         pt_sql = '''INSERT INTO plant_type (plant_type, pt_name) 
         VALUES (%i, "%s");''' % (plant_type[i], pt_name[i])
