@@ -7,58 +7,19 @@
     <x>0</x>
     <y>0</y>
     <width>709</width>
-    <height>548</height>
+    <height>549</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>物種名錄產生器 namelist generator</string>
   </property>
-  <widget class="QWidget" name="horizontalLayoutWidget">
-   <property name="geometry">
-    <rect>
-     <x>260</x>
-     <y>490</y>
-     <width>441</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <layout class="QHBoxLayout" name="horizontalLayout">
-    <item>
-     <spacer name="horizontalSpacer">
-      <property name="orientation">
-       <enum>Qt::Horizontal</enum>
-      </property>
-      <property name="sizeHint" stdset="0">
-       <size>
-        <width>40</width>
-        <height>20</height>
-       </size>
-      </property>
-     </spacer>
-    </item>
-    <item>
-     <widget class="QPushButton" name="butGenerate">
-      <property name="text">
-       <string>產生名錄</string>
-      </property>
-     </widget>
-    </item>
-    <item>
-     <widget class="QPushButton" name="butClose">
-      <property name="text">
-       <string>關閉</string>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
      <x>10</x>
      <y>110</y>
      <width>681</width>
-     <height>371</height>
+     <height>411</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -72,17 +33,38 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>110</y>
+       <y>100</y>
        <width>651</width>
-       <height>211</height>
+       <height>221</height>
       </rect>
      </property>
      <property name="alternatingRowColors">
       <bool>true</bool>
      </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::MultiSelection</enum>
+     </property>
+     <property name="indentation">
+      <number>10</number>
+     </property>
      <property name="rootIsDecorated">
       <bool>false</bool>
      </property>
+     <attribute name="headerVisible">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="headerDefaultSectionSize">
+      <number>60</number>
+     </attribute>
+     <attribute name="headerHighlightSections">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="headerMinimumSectionSize">
+      <number>2</number>
+     </attribute>
+     <attribute name="headerShowSortIndicator" stdset="0">
+      <bool>true</bool>
+     </attribute>
      <column>
       <property name="text">
        <string>Family</string>
@@ -98,6 +80,116 @@
        <string>Localname</string>
       </property>
      </column>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>10</y>
+       <width>641</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>中文俗名</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineSpecies"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="butAddToTree">
+        <property name="text">
+         <string>加入清單</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>340</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QPushButton" name="butGenerateSp">
+        <property name="text">
+         <string>產生名錄</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="butClose1">
+        <property name="text">
+         <string>關閉</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>330</y>
+       <width>291</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="butDeleteSelection">
+        <property name="text">
+         <string>刪除所選物種</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="butDeleteAll">
+        <property name="text">
+         <string>刪除所有物種</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>50</y>
+       <width>641</width>
+       <height>33</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>物種中名暫存檔</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineTempFile"/>
+      </item>
+      <item>
+       <widget class="QPushButton" name="butSelectTempFile">
+        <property name="text">
+         <string>選擇檔案</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </widget>
    </widget>
    <widget class="QWidget" name="tabBatch">
@@ -127,7 +219,33 @@
       <item>
        <widget class="QPushButton" name="butSlist">
         <property name="text">
-         <string>Select Files ...</string>
+         <string>選擇檔案</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="horizontalLayoutWidget_5">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>330</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QPushButton" name="butGenerate">
+        <property name="text">
+         <string>產生名錄</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="butClose">
+        <property name="text">
+         <string>關閉</string>
         </property>
        </widget>
       </item>
@@ -141,7 +259,7 @@
      <x>10</x>
      <y>10</y>
      <width>481</width>
-     <height>81</height>
+     <height>94</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
@@ -172,7 +290,7 @@
     <item row="0" column="2">
      <widget class="QPushButton" name="butBlist">
       <property name="text">
-       <string>Select Files ...</string>
+       <string>選擇檔案</string>
       </property>
      </widget>
     </item>
@@ -213,18 +331,34 @@
  <resources/>
  <connections>
   <connection>
+   <sender>butClose1</sender>
+   <signal>clicked()</signal>
+   <receiver>Window</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>593</x>
+     <y>484</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>354</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
    <sender>butClose</sender>
    <signal>clicked()</signal>
    <receiver>Window</receiver>
    <slot>close()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>656</x>
-     <y>419</y>
+     <x>636</x>
+     <y>485</y>
     </hint>
     <hint type="destinationlabel">
-     <x>353</x>
-     <y>232</y>
+     <x>354</x>
+     <y>274</y>
     </hint>
    </hints>
   </connection>
