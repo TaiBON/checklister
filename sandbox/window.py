@@ -10,7 +10,6 @@ class Window(QWidget, Ui_Window):
     oformat_list = ["docx", "odt", "txt", "rtf"]
 
     def __init__(self, parent = None):
-    
         QWidget.__init__(self, parent)
         self.setupUi(self)
         self.connect(self.butBlist, SIGNAL("clicked()"), self.browBaselist)
@@ -20,6 +19,8 @@ class Window(QWidget, Ui_Window):
         self.connect(self.butGenerateSp, SIGNAL("clicked()"), self.generateSp)
         self.connect(self.butSelectTempFile, SIGNAL("clicked()"), self.browTempfile)
         self.connect(self.butSelectOutput, SIGNAL("clicked()"), self.browOutput)
+        self.connect(self.butDeleteAll, SIGNAL("clicked()"), self.delAllTreeItems)
+        self.connect(self.butDeleteSelection, SIGNAL("clicked()"), self.delSelectedItems)
 #        self.connect(self.
 #        f = open('/tmp/log', 'w')
 #        f.write(ofile + '\n')
@@ -76,7 +77,6 @@ class Window(QWidget, Ui_Window):
         #removing the QTreeItemWidget object
         self.treeWidget.takeTopLevelItem(treeWidget.indexOfTopLevelItem(self))
 
-
     def getTreeItems(self, tree_widget):
         all_items = []
         root = tree_widget.invisibleRootItem()
@@ -85,6 +85,15 @@ class Window(QWidget, Ui_Window):
             item = root.child(i)
             all_items.append(item.text(2))
         return all_items
+
+    def delAllTreeItems(self):
+    # TODO: 加入是否確定要全部刪除的確定
+        self.treeWidget.clear()
+
+    def delSelectedItems(self):
+        root = self.treeWidget.invisibleRootItem()
+        for item in self.treeWidget.selectedItems():
+                (item.parent() or root).removeChild(item)
 
     # 產生單一物種的清單檔案
     def generateSp(self):
@@ -107,7 +116,6 @@ class Window(QWidget, Ui_Window):
             output_flist = str.split(ofile, '.')
             g.generator(dbfile, saved_list, output_flist[1], output_flist[0])
             QMessageBox.information(self, "名錄產生器", "名錄已產生完畢")
-
 
     def browTempfile(self):
         self.lineTempFile.clear()

@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui/namegen.ui'
 #
-# Created: Sun Aug 16 12:04:50 2015
+# Created: Sun Aug 16 13:48:18 2015
 #      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
