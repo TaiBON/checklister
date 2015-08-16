@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui/namegen.ui'
 #
-# Created: Sun Aug 16 05:48:37 2015
+# Created: Sun Aug 16 11:28:03 2015
 #      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -33,7 +33,7 @@ class Ui_Window(object):
         self.tabSelect = QtGui.QWidget()
         self.tabSelect.setObjectName(_fromUtf8("tabSelect"))
         self.treeWidget = QtGui.QTreeWidget(self.tabSelect)
-        self.treeWidget.setGeometry(QtCore.QRect(10, 100, 651, 221))
+        self.treeWidget.setGeometry(QtCore.QRect(10, 100, 651, 220))
         self.treeWidget.setAlternatingRowColors(True)
         self.treeWidget.setSelectionMode(QtGui.QAbstractItemView.MultiSelection)
         self.treeWidget.setIndentation(10)
@@ -136,6 +136,7 @@ class Ui_Window(object):
         self.gridLayout_2.setMargin(0)
         self.gridLayout_2.setObjectName(_fromUtf8("gridLayout_2"))
         self.lineBlist = QtGui.QLineEdit(self.gridLayoutWidget_2)
+        self.lineBlist.setText(_fromUtf8(""))
         self.lineBlist.setObjectName(_fromUtf8("lineBlist"))
         self.gridLayout_2.addWidget(self.lineBlist, 0, 1, 1, 1)
         self.label_3 = QtGui.QLabel(self.gridLayoutWidget_2)
@@ -169,6 +170,7 @@ class Ui_Window(object):
 
     def retranslateUi(self, Window):
         Window.setWindowTitle(_translate("Window", "物種名錄產生器 namelist generator", None))
+        self.treeWidget.setSortingEnabled(True)
         self.treeWidget.headerItem().setText(0, _translate("Window", "Family", None))
         self.treeWidget.headerItem().setText(1, _translate("Window", "Name", None))
         self.treeWidget.headerItem().setText(2, _translate("Window", "Localname", None))

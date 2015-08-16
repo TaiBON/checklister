@@ -35,7 +35,7 @@
        <x>10</x>
        <y>100</y>
        <width>651</width>
-       <height>221</height>
+       <height>220</height>
       </rect>
      </property>
      <property name="alternatingRowColors">
@@ -49,6 +49,9 @@
      </property>
      <property name="rootIsDecorated">
       <bool>false</bool>
+     </property>
+     <property name="sortingEnabled">
+      <bool>true</bool>
      </property>
      <attribute name="headerVisible">
       <bool>true</bool>
@@ -264,7 +267,11 @@
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
     <item row="0" column="1">
-     <widget class="QLineEdit" name="lineBlist"/>
+     <widget class="QLineEdit" name="lineBlist">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
     </item>
     <item row="2" column="0">
      <widget class="QLabel" name="label_3">
@@ -326,6 +333,13 @@
      </widget>
     </item>
    </layout>
+   <zorder>label</zorder>
+   <zorder>label_2</zorder>
+   <zorder>label_3</zorder>
+   <zorder>butBlist</zorder>
+   <zorder>lineOutputFilename</zorder>
+   <zorder>comboOutputFormat</zorder>
+   <zorder>lineBlist</zorder>
   </widget>
  </widget>
  <resources/>

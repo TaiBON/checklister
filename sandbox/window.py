@@ -18,6 +18,7 @@ class Window(QWidget, Ui_Window):
         self.connect(self.butGenerate, SIGNAL("clicked()"), self.generate)
         self.connect(self.butAddToTree, SIGNAL("clicked()"), self.addToTree)
         self.connect(self.butGenerateSp, SIGNAL("clicked()"), self.generateSp)
+        self.connect(self.butSelectTempFile, SIGNAL("clicked()"), self.browTempfile)
 #        self.connect(self.
 #        f = open('/tmp/log', 'w')
 #        f.write(ofile + '\n')
@@ -68,7 +69,7 @@ class Window(QWidget, Ui_Window):
         self.treeWidget.takeTopLevelItem(treeWidget.indexOfTopLevelItem(self))
 
 
-    def get_all_items(self, tree_widget):
+    def getTreeItems(self, tree_widget):
         all_items = []
         root = tree_widget.invisibleRootItem()
         child_count = root.childCount()
@@ -77,14 +78,36 @@ class Window(QWidget, Ui_Window):
             all_items.append(item.text(2))
         return all_items
 
+    # 產生單一物種的清單檔案
     def generateSp(self):
-        temp_container = []
-        print(self.treeWidget.items)
-        tree_item = self.get_all_items(self.treeWidget)
-        f = open('/tmp/log', 'a')
-        for row in range(len(tree_item)):
-            f.write(tree_item[row]+'\n')
-        f.close()
+        g = genlist_api.genlist()
+        tree_item = self.getTreeItems(self.treeWidget)
+        if self.lineBlist.text() == '':
+            QMessageBox.information(self, "Warning", "請指定物種資料檔案")
+        elif self.lineOutputFilename.text() == '':
+            QMessageBox.information(self, "Warning", "請指定輸出檔案名稱")
+        elif self.lineTempFile.text() == '':
+            QMessageBox.information(self, "Warning", "請指定要存物種清單之檔案")
+        else:
+            saved_list = str(self.lineTempFile.text())
+            f = open(saved_list, 'w')
+            for sp in tree_item:
+                f.write("%s\n" % sp)
+            f.close()
+            dbfile = str(self.lineBlist.text())
+            ofile = str(self.lineOutputFilename.text())
+            oformat = self.oformat_list[self.comboOutputFormat.currentIndex()]
+            output = ofile + '.' + oformat
+            g.generator(dbfile, saved_list, oformat, ofile)
+            QMessageBox.information(self, "名錄產生器", "名錄已產生完畢")
+
+
+    def browTempfile(self):
+        self.lineTempFile.clear()
+        saveTempFile = QFileDialog.getSaveFileName(self, "Save File as 開啟物種清單檔案:", "./", "Text files (*.txt *.csv)")
+        if saveTempFile is None:
+            return
+        self.lineTempFile.setText(saveTempFile) 
 
     def generate(self):
         g = genlist_api.genlist()
