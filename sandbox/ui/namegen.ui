@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>709</width>
-    <height>549</height>
+    <width>704</width>
+    <height>515</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>110</y>
+     <y>80</y>
      <width>681</width>
-     <height>411</height>
+     <height>421</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -261,8 +261,8 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>481</width>
-     <height>94</height>
+     <width>411</width>
+     <height>61</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
@@ -273,17 +273,10 @@
       </property>
      </widget>
     </item>
-    <item row="2" column="0">
-     <widget class="QLabel" name="label_3">
-      <property name="text">
-       <string>輸出格式</string>
-      </property>
-     </widget>
-    </item>
     <item row="1" column="0">
      <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>輸出檔名</string>
+       <string>輸出名錄檔案</string>
       </property>
      </widget>
     </item>
@@ -304,42 +297,24 @@
     <item row="1" column="1">
      <widget class="QLineEdit" name="lineOutputFilename">
       <property name="text">
-       <string>output</string>
+       <string/>
       </property>
      </widget>
     </item>
-    <item row="2" column="1">
-     <widget class="QComboBox" name="comboOutputFormat">
-      <item>
-       <property name="text">
-        <string>docx</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>odt</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>txt</string>
-       </property>
-      </item>
-      <item>
-       <property name="text">
-        <string>rtf</string>
-       </property>
-      </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="butSelectOutput">
+      <property name="text">
+       <string>選擇檔案</string>
+      </property>
      </widget>
     </item>
    </layout>
    <zorder>label</zorder>
    <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
    <zorder>butBlist</zorder>
    <zorder>lineOutputFilename</zorder>
-   <zorder>comboOutputFormat</zorder>
    <zorder>lineBlist</zorder>
+   <zorder>butSelectOutput</zorder>
   </widget>
  </widget>
  <resources/>

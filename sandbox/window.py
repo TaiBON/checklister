@@ -19,6 +19,7 @@ class Window(QWidget, Ui_Window):
         self.connect(self.butAddToTree, SIGNAL("clicked()"), self.addToTree)
         self.connect(self.butGenerateSp, SIGNAL("clicked()"), self.generateSp)
         self.connect(self.butSelectTempFile, SIGNAL("clicked()"), self.browTempfile)
+        self.connect(self.butSelectOutput, SIGNAL("clicked()"), self.browOutput)
 #        self.connect(self.
 #        f = open('/tmp/log', 'w')
 #        f.write(ofile + '\n')
@@ -43,6 +44,13 @@ class Window(QWidget, Ui_Window):
         if Slist is None:
             return
         self.lineSlist.setText(Slist) 
+
+    def browOutput(self):
+        self.lineOutputFilename.clear()
+        saveOutputFile = QFileDialog.getSaveFileName(self, "Save File as 儲存輸出的名錄檔案:", "./", "Text files (*.docx *.odt *.txt)")
+        if saveOutputFile is None:
+            return
+        self.lineOutputFilename.setText(saveOutputFile)
 
     # import data into auto-completion list
     def getCompleteData(self, model, blist):
@@ -96,9 +104,8 @@ class Window(QWidget, Ui_Window):
             f.close()
             dbfile = str(self.lineBlist.text())
             ofile = str(self.lineOutputFilename.text())
-            oformat = self.oformat_list[self.comboOutputFormat.currentIndex()]
-            output = ofile + '.' + oformat
-            g.generator(dbfile, saved_list, oformat, ofile)
+            output_flist = str.split(ofile, '.')
+            g.generator(dbfile, saved_list, output_flist[1], output_flist[0])
             QMessageBox.information(self, "名錄產生器", "名錄已產生完畢")
 
 
@@ -121,10 +128,7 @@ class Window(QWidget, Ui_Window):
             dbfile = str(self.lineBlist.text())
             sample_file = str(self.lineSlist.text())
             ofile = str(self.lineOutputFilename.text())
-            oformat = self.oformat_list[self.comboOutputFormat.currentIndex()]
-            output = ofile + '.' + oformat
-            g.generator(dbfile, sample_file, oformat, ofile)
-            f = open('/tmp/log', 'w')
-            f.write(dbfile + ' ' + sample_file + ' ' + oformat + ' ' +ofile + '\n')
-            f.close()
+            #oformat = self.oformat_list[self.comboOutputFormat.currentIndex()]
+            output_flist = str.split(ofile, '.')
+            g.generator(dbfile, sample_file, output_flist[1], output_flist[0])
             QMessageBox.information(self, "名錄產生器", "名錄已產生完畢")

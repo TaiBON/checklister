@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui/namegen.ui'
 #
-# Created: Sun Aug 16 11:28:03 2015
+# Created: Sun Aug 16 12:04:50 2015
 #      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -26,9 +26,9 @@ except AttributeError:
 class Ui_Window(object):
     def setupUi(self, Window):
         Window.setObjectName(_fromUtf8("Window"))
-        Window.resize(709, 549)
+        Window.resize(704, 515)
         self.tabWidget = QtGui.QTabWidget(Window)
-        self.tabWidget.setGeometry(QtCore.QRect(10, 110, 681, 411))
+        self.tabWidget.setGeometry(QtCore.QRect(10, 80, 681, 421))
         self.tabWidget.setObjectName(_fromUtf8("tabWidget"))
         self.tabSelect = QtGui.QWidget()
         self.tabSelect.setObjectName(_fromUtf8("tabSelect"))
@@ -130,7 +130,7 @@ class Ui_Window(object):
         self.horizontalLayout_5.addWidget(self.butClose)
         self.tabWidget.addTab(self.tabBatch, _fromUtf8(""))
         self.gridLayoutWidget_2 = QtGui.QWidget(Window)
-        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(10, 10, 481, 94))
+        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(10, 10, 411, 61))
         self.gridLayoutWidget_2.setObjectName(_fromUtf8("gridLayoutWidget_2"))
         self.gridLayout_2 = QtGui.QGridLayout(self.gridLayoutWidget_2)
         self.gridLayout_2.setMargin(0)
@@ -139,9 +139,6 @@ class Ui_Window(object):
         self.lineBlist.setText(_fromUtf8(""))
         self.lineBlist.setObjectName(_fromUtf8("lineBlist"))
         self.gridLayout_2.addWidget(self.lineBlist, 0, 1, 1, 1)
-        self.label_3 = QtGui.QLabel(self.gridLayoutWidget_2)
-        self.label_3.setObjectName(_fromUtf8("label_3"))
-        self.gridLayout_2.addWidget(self.label_3, 2, 0, 1, 1)
         self.label_2 = QtGui.QLabel(self.gridLayoutWidget_2)
         self.label_2.setObjectName(_fromUtf8("label_2"))
         self.gridLayout_2.addWidget(self.label_2, 1, 0, 1, 1)
@@ -152,15 +149,12 @@ class Ui_Window(object):
         self.butBlist.setObjectName(_fromUtf8("butBlist"))
         self.gridLayout_2.addWidget(self.butBlist, 0, 2, 1, 1)
         self.lineOutputFilename = QtGui.QLineEdit(self.gridLayoutWidget_2)
+        self.lineOutputFilename.setText(_fromUtf8(""))
         self.lineOutputFilename.setObjectName(_fromUtf8("lineOutputFilename"))
         self.gridLayout_2.addWidget(self.lineOutputFilename, 1, 1, 1, 1)
-        self.comboOutputFormat = QtGui.QComboBox(self.gridLayoutWidget_2)
-        self.comboOutputFormat.setObjectName(_fromUtf8("comboOutputFormat"))
-        self.comboOutputFormat.addItem(_fromUtf8(""))
-        self.comboOutputFormat.addItem(_fromUtf8(""))
-        self.comboOutputFormat.addItem(_fromUtf8(""))
-        self.comboOutputFormat.addItem(_fromUtf8(""))
-        self.gridLayout_2.addWidget(self.comboOutputFormat, 2, 1, 1, 1)
+        self.butSelectOutput = QtGui.QPushButton(self.gridLayoutWidget_2)
+        self.butSelectOutput.setObjectName(_fromUtf8("butSelectOutput"))
+        self.gridLayout_2.addWidget(self.butSelectOutput, 1, 2, 1, 1)
 
         self.retranslateUi(Window)
         self.tabWidget.setCurrentIndex(0)
@@ -188,13 +182,8 @@ class Ui_Window(object):
         self.butGenerate.setText(_translate("Window", "產生名錄", None))
         self.butClose.setText(_translate("Window", "關閉", None))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tabBatch), _translate("Window", "批次匯入", None))
-        self.label_3.setText(_translate("Window", "輸出格式", None))
-        self.label_2.setText(_translate("Window", "輸出檔名", None))
+        self.label_2.setText(_translate("Window", "輸出名錄檔案", None))
         self.label.setText(_translate("Window", "物種清單資料表", None))
         self.butBlist.setText(_translate("Window", "選擇檔案", None))
-        self.lineOutputFilename.setText(_translate("Window", "output", None))
-        self.comboOutputFormat.setItemText(0, _translate("Window", "docx", None))
-        self.comboOutputFormat.setItemText(1, _translate("Window", "odt", None))
-        self.comboOutputFormat.setItemText(2, _translate("Window", "txt", None))
-        self.comboOutputFormat.setItemText(3, _translate("Window", "rtf", None))
+        self.butSelectOutput.setText(_translate("Window", "選擇檔案", None))
 
