@@ -6,9 +6,11 @@ import sys
 import subprocess
 import codecs
 import re
+import pypandoc
+
 
 # format the typesetting of names
-class genlist(object):
+class Genlist(object):
     def __init__(self):
         pass
 #    def __init__(self, name, dbfile, inputfile, oformat, ofile_prefix):
@@ -55,9 +57,11 @@ class genlist(object):
         fmt_oname = re.sub(' ex ', ' ' + italic_b + 'ex' + italic_e + ' ', fmt_oname)
         return(fmt_oname)
 
+    # DEPRECATED: use pypandoc package
     # convert markdown to other fileformats using pandoc
-    def convert(self, oformat='docx', ofile_prefix='output'):
-        subprocess.call(['pandoc', ofile_prefix+'.md', '-o', ofile_prefix+'.'+oformat])
+    #
+    # def convert(self, oformat='docx', ofile_prefix='output'):
+    #     subprocess.call(['pandoc', ofile_prefix+'.md', '-o', ofile_prefix+'.'+oformat])
         
     def generator(self, dbfile, inputfile, oformat='docx', ofile_prefix='output'):
         """
@@ -239,4 +243,4 @@ class genlist(object):
                             f.write('    ' + str(n) + '. ' + self.fmtname(pt_family_sp[k][0]) + ' ' + pt_family_sp[k][1] +'\n')
                         n = n + 1
             f.close()        
-            self.convert(oformat, ofile_prefix)
+            pypandoc.convert(ofile_prefix + '.md', oformat, outputfile=ofile_prefix+'.'+oformat)

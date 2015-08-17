@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import sys 
+import genlist_api
 from PyQt4.QtGui import QApplication
 from window import Window
 
 if __name__ == "__main__":
-
     app = QApplication(sys.argv)
     window = Window()
     window.show()

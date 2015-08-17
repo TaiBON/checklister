@@ -21,13 +21,12 @@ class Window(QWidget, Ui_Window):
         self.connect(self.butSelectOutput, SIGNAL("clicked()"), self.browOutput)
         self.connect(self.butDeleteAll, SIGNAL("clicked()"), self.delAllTreeItems)
         self.connect(self.butDeleteSelection, SIGNAL("clicked()"), self.delSelectedItems)
-#        self.connect(self.
-#        f = open('/tmp/log', 'w')
-#        f.write(ofile + '\n')
-#        f.write(oformat + '\n')
-#        f.close()
 
     def browBaselist(self):
+        """
+        browBaselist: browse the baselist file 
+        ======================================
+        """
         self.lineBlist.clear()
         Blist = QFileDialog.getOpenFileName(self, "Open File 開啟物種資料檔案:", "./data/", "Text files (*.txt *.csv)")
         if Blist is None:
@@ -48,7 +47,7 @@ class Window(QWidget, Ui_Window):
 
     def browOutput(self):
         self.lineOutputFilename.clear()
-        saveOutputFile = QFileDialog.getSaveFileName(self, "Save File as 儲存輸出的名錄檔案:", "./", "Text files (*.docx *.odt *.txt)")
+        saveOutputFile = QFileDialog.getSaveFileName(self, "Save File as 儲存輸出的名錄檔案:", "~", "Text files (*.docx *.odt *.txt)")
         if saveOutputFile is None:
             return
         self.lineOutputFilename.setText(saveOutputFile)
@@ -97,7 +96,7 @@ class Window(QWidget, Ui_Window):
 
     # 產生單一物種的清單檔案
     def generateSp(self):
-        g = genlist_api.genlist()
+        g = genlist_api.Genlist()
         tree_item = self.getTreeItems(self.treeWidget)
         if self.lineBlist.text() == '':
             QMessageBox.information(self, "Warning", "請指定物種資料檔案")
@@ -119,13 +118,13 @@ class Window(QWidget, Ui_Window):
 
     def browTempfile(self):
         self.lineTempFile.clear()
-        saveTempFile = QFileDialog.getSaveFileName(self, "Save File as 開啟物種清單檔案:", "./", "Text files (*.txt *.csv)")
+        saveTempFile = QFileDialog.getSaveFileName(self, "Save File as 開啟物種清單檔案:", "~", "Text files (*.txt *.csv)")
         if saveTempFile is None:
             return
         self.lineTempFile.setText(saveTempFile) 
 
-    def generate(self):
-        g = genlist_api.genlist()
+    def genList(self):
+        g = genlist_api.Genlist()
         if self.lineBlist.text() == '':
             QMessageBox.information(self, "Warning", "請指定物種資料檔案")
         elif self.lineSlist.text() == '':
@@ -136,7 +135,6 @@ class Window(QWidget, Ui_Window):
             dbfile = str(self.lineBlist.text())
             sample_file = str(self.lineSlist.text())
             ofile = str(self.lineOutputFilename.text())
-            #oformat = self.oformat_list[self.comboOutputFormat.currentIndex()]
             output_flist = str.split(ofile, '.')
             g.generator(dbfile, sample_file, output_flist[1], output_flist[0])
             QMessageBox.information(self, "名錄產生器", "名錄已產生完畢")
