@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import sys 
 import genlist_api
-from PyQt4.QtGui import QApplication
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import (QApplication, QWidget)
 from window import Window
 
 if __name__ == "__main__":

@@ -1,26 +1,36 @@
-from PyQt4.QtCore import *
-from PyQt4.QtGui import *
+from PyQt5.QtCore import *
+from PyQt5.QtWidgets import *
+#(QApplication, QWidget, QDialog, QFileDialog, QCompleter)
 from genlist_api import *
 
 from ui_window import Ui_Window
 import genlist_api
-
+Blist = ''
 class Window(QWidget, Ui_Window):
     
-    oformat_list = ["docx", "odt", "txt", "rtf"]
-
     def __init__(self, parent = None):
-        QWidget.__init__(self, parent)
+        super(Window, self).__init__()
+        #QWidget.__init__(self, parent)
         self.setupUi(self)
-        self.connect(self.butBlist, SIGNAL("clicked()"), self.browBaselist)
-        self.connect(self.butSlist, SIGNAL("clicked()"), self.browSlist)
-        self.connect(self.butGenerate, SIGNAL("clicked()"), self.generate)
-        self.connect(self.butAddToTree, SIGNAL("clicked()"), self.addToTree)
-        self.connect(self.butGenerateSp, SIGNAL("clicked()"), self.generateSp)
-        self.connect(self.butSelectTempFile, SIGNAL("clicked()"), self.browTempfile)
-        self.connect(self.butSelectOutput, SIGNAL("clicked()"), self.browOutput)
-        self.connect(self.butDeleteAll, SIGNAL("clicked()"), self.delAllTreeItems)
-        self.connect(self.butDeleteSelection, SIGNAL("clicked()"), self.delSelectedItems)
+        self.butBlist.clicked.connect(self.browBaselist)
+        self.butSlist.clicked.connect(self.browSlist)
+        self.butGenerate.clicked.connect(self.genList)
+        self.butAddToTree.clicked.connect(self.addToTree)
+        self.butGenerateSp.clicked.connect(self.generateSp)
+        self.butSelectTempFile.clicked.connect(self.browTempfile)
+        self.butSelectOutput.clicked.connect(self.browOutput)
+        self.butDeleteAll.clicked.connect(self.delAllTreeItems)
+        self.butDeleteSelection.clicked.connect(self.delSelectedItems)
+
+        #self.connect(self.butBlist, SIGNAL("clicked()"), self.browBaselist)
+        #self.connect(self.butSlist, SIGNAL("clicked()"), self.browSlist)
+        #self.connect(self.butGenerate, SIGNAL("clicked()"), self.genList)
+        #self.connect(self.butAddToTree, SIGNAL("clicked()"), self.addToTree)
+        #self.connect(self.butGenerateSp, SIGNAL("clicked()"), self.generateSp)
+        #self.connect(self.butSelectTempFile, SIGNAL("clicked()"), self.browTempfile)
+        #self.connect(self.butSelectOutput, SIGNAL("clicked()"), self.browOutput)
+        #self.connect(self.butDeleteAll, SIGNAL("clicked()"), self.delAllTreeItems)
+        #self.connect(self.butDeleteSelection, SIGNAL("clicked()"), self.delSelectedItems)
 
     def browBaselist(self):
         """
@@ -28,7 +38,7 @@ class Window(QWidget, Ui_Window):
         ======================================
         """
         self.lineBlist.clear()
-        Blist = QFileDialog.getOpenFileName(self, "Open File 開啟物種資料檔案:", "./data/", "Text files (*.txt *.csv)")
+        Blist = QFileDialog.getOpenFileName(self, self.tr("Open File 開啟物種資料檔案:"), QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
         if Blist is None:
             return
         self.lineBlist.setText(Blist) 
@@ -36,18 +46,19 @@ class Window(QWidget, Ui_Window):
         self.lineSpecies.setCompleter(completer)
         model = QStringListModel()
         completer.setModel(model)
-        self.getCompleteData(model, str(self.lineBlist.text()))
+        self.getCompleteData(model, Blist)
 
     def browSlist(self):
         self.lineSlist.clear()
-        Slist = QFileDialog.getOpenFileName(self, "Open File 開啟物種清單檔案:", "./data/", "Text files (*.txt *.csv)")
+        Slist = QFileDialog.getOpenFileName(self, self.tr("Open File 開啟物種清單檔案:"), QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
         if Slist is None:
             return
         self.lineSlist.setText(Slist) 
 
     def browOutput(self):
         self.lineOutputFilename.clear()
-        saveOutputFile = QFileDialog.getSaveFileName(self, "Save File as 儲存輸出的名錄檔案:", "~", "Text files (*.docx *.odt *.txt)")
+        saveOutputFile = QFileDialog.getSaveFileName(self, self.tr("Save File as 儲存輸出的名錄檔案:"), \
+                QDir.homePath(), self.tr("Text files (*.docx *.odt *.txt)"))[0]
         if saveOutputFile is None:
             return
         self.lineOutputFilename.setText(saveOutputFile)
@@ -118,7 +129,8 @@ class Window(QWidget, Ui_Window):
 
     def browTempfile(self):
         self.lineTempFile.clear()
-        saveTempFile = QFileDialog.getSaveFileName(self, "Save File as 開啟物種清單檔案:", "~", "Text files (*.txt *.csv)")
+        saveTempFile = QFileDialog.getSaveFileName(self, self.tr("Save File as 開啟物種清單檔案:"), QDir.homePath(), \
+                self.tr("Text files (*.txt *.csv)"))[0]
         if saveTempFile is None:
             return
         self.lineTempFile.setText(saveTempFile) 
