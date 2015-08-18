@@ -4058,8 +4058,8 @@ Vitaceae|葡萄科|阿穆爾葡萄|Vitis amurensis|Vitis amurensis Rupr.|3|0||�
 Vitaceae|葡萄科|光葉葡萄|Vitis flexuosa|Vitis flexuosa Thunb.|3|0||原生
 Vitaceae|葡萄科|小葉葛藟|Vitis flexuosa fo. parvifolia|Vitis flexuosa Thunb. fo. parvifolia (Roxb.) Planch.|3|0||原生
 Vitaceae|葡萄科|基隆葡萄|Vitis kelungensis|Vitis kelungensis Moriyama|3|1|NT|原生
-Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|EN|原生
 Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|NT|原生
+Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|EN|原生
 Vitaceae|葡萄科|小葉葡萄|Vitis thunbergii var. taiwaniana|Vitis thunbergii Sieb. & Zucc. var. taiwaniana Lu|3|1||原生
 Zygophyllaceae|蒺藜科|大花蒺藜|Tribulus cistoides|Tribulus cistoides L.|3|0||未知
 Zygophyllaceae|蒺藜科|臺灣蒺藜|Tribulus taiwanense|Tribulus taiwanense Huang & Hsieh|3|1|NT|原生
@@ -5408,30 +5408,30 @@ Potamogetonaceae|眼子菜科|線葉藻|Potamogeton oxyphyllus|Potamogeton oxyph
 Potamogetonaceae|眼子菜科|龍鬚草|Potamogeton pectinatus|Potamogeton pectinatus L.|4|0||原生
 Potamogetonaceae|眼子菜科|柳絲藻|Potamogeton pusillus|Potamogeton pusillus L.|4|0|VU|原生
 Ruppiaceae|流蘇菜科|流蘇菜|Ruppia maritima|Ruppia maritima L.|4|0||原生
-Smilacaceae|菝契科|阿里山菝契|Smilax arisanensis|Smilax arisanensis Hayata|4|0||原生
+Smilacaceae|菝契科|阿里山菝葜|Smilax arisanensis|Smilax arisanensis Hayata|4|0||原生
 Smilacaceae|菝契科|土茯苓|Smilax bockii|Smilax bockii Warb.|4|0||原生
-Smilacaceae|菝契科|假菝契|Smilax bracteata|Smilax bracteata C. Presl|4|0||原生
-Smilacaceae|菝契科|糙莖菝契|Smilax bracteata var. verruculosa|Smilax bracteata Prest var. verruculosa (Merr.) T. Koyama|4|0||原生
-Smilacaceae|菝契科|菝契|Smilax china|Smilax china L.|4|0||原生
-Smilacaceae|菝契科|裡白菝契|Smilax corbularia|Smilax corbularia Kunth|4|0||原生
-Smilacaceae|菝契科|宜蘭菝契|Smilax discotis|Smilax discotis Warburg|4|0||原生
-Smilacaceae|菝契科|細葉菝契|Smilax elongatoumbellata|Smilax elongatoumbellata Hayata|4|0||未知
+Smilacaceae|菝契科|假菝葜|Smilax bracteata|Smilax bracteata C. Presl|4|0||原生
+Smilacaceae|菝契科|糙莖菝葜|Smilax bracteata var. verruculosa|Smilax bracteata Prest var. verruculosa (Merr.) T. Koyama|4|0||原生
+Smilacaceae|菝契科|菝葜|Smilax china|Smilax china L.|4|0||原生
+Smilacaceae|菝契科|裡白菝葜|Smilax corbularia|Smilax corbularia Kunth|4|0||原生
+Smilacaceae|菝契科|宜蘭菝葜|Smilax discotis|Smilax discotis Warburg|4|0||原生
+Smilacaceae|菝契科|細葉菝葜|Smilax elongatoumbellata|Smilax elongatoumbellata Hayata|4|0||未知
 Smilacaceae|菝契科|香港偽土茯苓|Smilax gaudichaudiana|Smilax gaudichaudiana Kunth|4|0||未知
 Smilacaceae|菝契科|禹餘糧|Smilax glabra|Smilax glabra Wright.|4|0||原生
-Smilacaceae|菝契科|和社菝契|Smilax glaucochina|Smilax glaucochina Warburg|4|0||未知
-Smilacaceae|菝契科|早田氏菝契|Smilax hayatae|Smilax hayatae T. Koyama|4|0||原生
-Smilacaceae|菝契科|密刺菝契|Smilax horridiramula|Smilax horridiramula Hayata|4|1|VU|原生
+Smilacaceae|菝契科|和社菝葜|Smilax glaucochina|Smilax glaucochina Warburg|4|0||未知
+Smilacaceae|菝契科|早田氏菝葜|Smilax hayatae|Smilax hayatae T. Koyama|4|0||原生
+Smilacaceae|菝契科|密刺菝葜|Smilax horridiramula|Smilax horridiramula Hayata|4|1|VU|原生
 Smilacaceae|菝契科|臺灣土茯苓|Smilax lanceifolia|Smilax lanceifolia Roxb.|4|0||原生
-Smilacaceae|菝契科|呂氏菝契|Smilax luei|Smilax luei T. Koyama|4|1|EN|原生
-Smilacaceae|菝契科|巒大菝契|Smilax menispermoidea|Smilax menispermoidea A. DC.|4|0||原生
-Smilacaceae|菝契科|南投菝契|Smilax nantoensis|Smilax nantoensis T. Koyama|4|0||原生
-Smilacaceae|菝契科|日本菝契|Smilax nipponica|Smilax nipponica Miq.|4|0|CR|原生
-Smilacaceae|菝契科|耳葉菝契|Smilax ocreata|Smilax ocreata A. DC.|4|0||原生
+Smilacaceae|菝契科|呂氏菝葜|Smilax luei|Smilax luei T. Koyama|4|1|EN|原生
+Smilacaceae|菝契科|巒大菝葜|Smilax menispermoidea|Smilax menispermoidea A. DC.|4|0||原生
+Smilacaceae|菝契科|南投菝葜|Smilax nantoensis|Smilax nantoensis T. Koyama|4|0||原生
+Smilacaceae|菝契科|日本菝葜|Smilax nipponica|Smilax nipponica Miq.|4|0|CR|原生
+Smilacaceae|菝契科|耳葉菝葜|Smilax ocreata|Smilax ocreata A. DC.|4|0||原生
 Smilacaceae|菝契科|烏蘇里山馬薯|Smilax riparia|Smilax riparia A. DC.|4|0||原生
 Smilacaceae|菝契科|臺中假土茯苓|Smilax seisuiensis|Smilax seisuiensis (Hayata) T. C. Hsu & S. W. Chung|4|1||原生
 Smilacaceae|菝契科|短柱土茯苓|Smilax septemnervia|Smilax septemnervia (F. T. Wang & Tang) T. C. Hsu & S. W. Chung|4|0||原生
 Smilacaceae|菝契科|臺灣山馬薯|Smilax sieboldii|Smilax sieboldii Miq.|4|0||原生
-Smilacaceae|菝契科|玉山菝契|Smilax vaginata|Smilax vaginata Decne.|4|0||原生
+Smilacaceae|菝契科|玉山菝葜|Smilax vaginata|Smilax vaginata Decne.|4|0||原生
 Sparganiaceae|黑三稜科|東亞黑三稜|Sparganium fallax|Sparganium fallax Graebn.|4|0|VU|原生
 Stemonaceae|百部科|百部|Stemona tuberosa|Stemona tuberosa Lour.|4|0||原生
 Taccaceae|蒟蒻薯科|蒟蒻薯|Tacca leontopetaloides|Tacca leontopetaloides (L.) Kuntze|4|0|CR|歸化
