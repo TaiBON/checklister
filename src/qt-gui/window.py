@@ -1,6 +1,5 @@
 from PyQt5.QtCore import *
-from PyQt5.QtWidgets import *
-#(QApplication, QWidget, QDialog, QFileDialog, QCompleter)
+from PyQt5.QtWidgets import * 
 from genlist_api import *
 
 from ui_window import Ui_Window
@@ -16,21 +15,12 @@ class Window(QWidget, Ui_Window):
         self.butSlist.clicked.connect(self.browSlist)
         self.butGenerate.clicked.connect(self.genList)
         self.butAddToTree.clicked.connect(self.addToTree)
+        self.lineSpecies.returnPressed.connect(self.addToTree)
         self.butGenerateSp.clicked.connect(self.generateSp)
         self.butSelectTempFile.clicked.connect(self.browTempfile)
         self.butSelectOutput.clicked.connect(self.browOutput)
         self.butDeleteAll.clicked.connect(self.delAllTreeItems)
         self.butDeleteSelection.clicked.connect(self.delSelectedItems)
-
-        #self.connect(self.butBlist, SIGNAL("clicked()"), self.browBaselist)
-        #self.connect(self.butSlist, SIGNAL("clicked()"), self.browSlist)
-        #self.connect(self.butGenerate, SIGNAL("clicked()"), self.genList)
-        #self.connect(self.butAddToTree, SIGNAL("clicked()"), self.addToTree)
-        #self.connect(self.butGenerateSp, SIGNAL("clicked()"), self.generateSp)
-        #self.connect(self.butSelectTempFile, SIGNAL("clicked()"), self.browTempfile)
-        #self.connect(self.butSelectOutput, SIGNAL("clicked()"), self.browOutput)
-        #self.connect(self.butDeleteAll, SIGNAL("clicked()"), self.delAllTreeItems)
-        #self.connect(self.butDeleteSelection, SIGNAL("clicked()"), self.delSelectedItems)
 
     def browBaselist(self):
         """
@@ -41,12 +31,13 @@ class Window(QWidget, Ui_Window):
         Blist = QFileDialog.getOpenFileName(self, self.tr("Open File 開啟物種資料檔案:"), QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
         if Blist is None:
             return
-        self.lineBlist.setText(Blist) 
-        completer = QCompleter()
-        self.lineSpecies.setCompleter(completer)
-        model = QStringListModel()
-        completer.setModel(model)
-        self.getCompleteData(model, Blist)
+        else:
+            self.lineBlist.setText(Blist) 
+            completer = QCompleter()
+            self.lineSpecies.setCompleter(completer)
+            model = QStringListModel()
+            completer.setModel(model)
+            self.getCompleteData(model, Blist)
 
     def browSlist(self):
         self.lineSlist.clear()
@@ -75,12 +66,16 @@ class Window(QWidget, Ui_Window):
         model.setStringList(b_container)
 
     def addToTree(self):
-        item = QTreeWidgetItem()     
-        species_item = str.split(str(self.lineSpecies.text()), ',')
-        item.setText(0, species_item[2])
-        item.setText(1, species_item[1])
-        item.setText(2, species_item[0])
-        self.treeWidget.addTopLevelItem(item)
+        if self.lineSpecies.text() is '':
+            QMessageBox.information(self, "Warning", "請輸入物種名稱!")
+            return
+        else:
+            item = QTreeWidgetItem()     
+            species_item = str.split(str(self.lineSpecies.text()), ',')
+            item.setText(0, species_item[2])
+            item.setText(1, species_item[1])
+            item.setText(2, species_item[0])
+            self.treeWidget.addTopLevelItem(item)
         self.lineSpecies.clear()
 
     def delFromTree(self):

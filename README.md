@@ -13,7 +13,8 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 
 * [Python 3](https://www.python.org)
     + libraries: codecs, csv, subprocess, sqlite, sys
-    + GUI libraries: pyqt4
+    + GUI libraries: Qt 5.x, pyqt5
+
 * [Pandoc](http://johnmacfarlane.net/pandoc/)
 
 

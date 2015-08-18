@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>80</y>
+     <y>100</y>
      <width>681</width>
-     <height>421</height>
+     <height>401</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -70,17 +70,17 @@
      </attribute>
      <column>
       <property name="text">
-       <string>Family</string>
+       <string>科名</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Name</string>
+       <string>學名</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>Localname</string>
+       <string>中文名</string>
       </property>
      </column>
     </widget>
@@ -156,7 +156,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="label_5">
         <property name="text">
-         <string>中文俗名</string>
+         <string>中文名</string>
         </property>
        </widget>
       </item>
@@ -250,7 +250,7 @@
      <x>10</x>
      <y>10</y>
      <width>411</width>
-     <height>68</height>
+     <height>81</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
@@ -277,6 +277,9 @@
     </item>
     <item row="0" column="2">
      <widget class="QPushButton" name="butBlist">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;選擇物種清單的資料表，這個資料表為 csv 檔案，以 UTF-8 編碼。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="text">
        <string>選擇檔案</string>
       </property>
