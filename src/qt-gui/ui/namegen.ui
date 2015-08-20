@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>704</width>
-    <height>515</height>
+    <width>705</width>
+    <height>585</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,9 +17,9 @@
    <property name="geometry">
     <rect>
      <x>10</x>
-     <y>100</y>
+     <y>130</y>
      <width>681</width>
-     <height>401</height>
+     <height>441</height>
     </rect>
    </property>
    <property name="currentIndex">
@@ -33,9 +33,9 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>100</y>
+       <y>80</y>
        <width>651</width>
-       <height>220</height>
+       <height>271</height>
       </rect>
      </property>
      <property name="alternatingRowColors">
@@ -88,7 +88,7 @@
      <property name="geometry">
       <rect>
        <x>490</x>
-       <y>340</y>
+       <y>360</y>
        <width>171</width>
        <height>41</height>
       </rect>
@@ -110,49 +110,16 @@
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="horizontalLayoutWidget">
+    <widget class="QWidget" name="gridLayoutWidget_3">
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>330</y>
-       <width>291</width>
-       <height>32</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout">
-      <item>
-       <widget class="QPushButton" name="butDeleteSelection">
-        <property name="text">
-         <string>刪除所選物種</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="butDeleteAll">
-        <property name="text">
-         <string>刪除所有物種</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="gridLayoutWidget">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
        <y>10</y>
-       <width>641</width>
-       <height>80</height>
+       <width>551</width>
+       <height>51</height>
       </rect>
      </property>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="2">
-       <widget class="QPushButton" name="butAddToTree">
-        <property name="text">
-         <string>加入清單</string>
-        </property>
-       </widget>
-      </item>
+     <layout class="QGridLayout" name="gridLayout_3">
       <item row="0" column="0">
        <widget class="QLabel" name="label_5">
         <property name="text">
@@ -161,82 +128,111 @@
        </widget>
       </item>
       <item row="0" column="1">
-       <widget class="QLineEdit" name="lineSpecies"/>
-      </item>
-      <item row="1" column="0">
-       <widget class="QLabel" name="label_6">
-        <property name="text">
-         <string>物種中名暫存檔</string>
+       <widget class="QLineEdit" name="lineSpecies">
+        <property name="baseSize">
+         <size>
+          <width>0</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>16</pointsize>
+          <italic>true</italic>
+         </font>
+        </property>
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;輸入物種開頭前幾字則會列出近似物種，&lt;/p&gt;&lt;p&gt;可按 enter 或 return 選擇該物種加入下方物種名錄清單&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
         </property>
        </widget>
       </item>
-      <item row="1" column="1">
-       <widget class="QLineEdit" name="lineTempFile"/>
-      </item>
-      <item row="1" column="2">
-       <widget class="QPushButton" name="butSelectTempFile">
+      <item row="0" column="2">
+       <widget class="QPushButton" name="butAddToTree">
         <property name="text">
-         <string>選擇檔案</string>
+         <string>加入清單</string>
         </property>
        </widget>
       </item>
      </layout>
+    </widget>
+    <widget class="QPushButton" name="butDeleteSelection">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>360</y>
+       <width>127</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>刪除所選物種</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="butDeleteAll">
+     <property name="geometry">
+      <rect>
+       <x>140</x>
+       <y>360</y>
+       <width>131</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>刪除所有物種</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>60</y>
+       <width>81</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>物種名錄清單</string>
+     </property>
     </widget>
    </widget>
    <widget class="QWidget" name="tabBatch">
     <attribute name="title">
-     <string>批次匯入</string>
+     <string>資料庫管理</string>
     </attribute>
     <widget class="QWidget" name="horizontalLayoutWidget_2">
      <property name="geometry">
       <rect>
-       <x>60</x>
-       <y>30</y>
-       <width>571</width>
-       <height>80</height>
+       <x>10</x>
+       <y>20</y>
+       <width>411</width>
+       <height>41</height>
       </rect>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QLabel" name="label_4">
+       <widget class="QLabel" name="label">
         <property name="text">
-         <string>產生名錄之物種csv檔案</string>
+         <string>物種清單資料表</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineSlist"/>
+       <widget class="QLineEdit" name="lineBlist">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="butSlist">
+       <widget class="QPushButton" name="butBlist">
+        <property name="toolTip">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;選擇物種清單的資料表，這個資料表為 csv 檔案，以 UTF-8 編碼。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
         <property name="text">
          <string>選擇檔案</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
-    </widget>
-    <widget class="QWidget" name="horizontalLayoutWidget_5">
-     <property name="geometry">
-      <rect>
-       <x>490</x>
-       <y>330</y>
-       <width>171</width>
-       <height>41</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_5">
-      <item>
-       <widget class="QPushButton" name="butGenerate">
-        <property name="text">
-         <string>產生名錄</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="butClose">
-        <property name="text">
-         <string>關閉</string>
         </property>
        </widget>
       </item>
@@ -249,13 +245,42 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>411</width>
-     <height>81</height>
+     <width>681</width>
+     <height>102</height>
     </rect>
    </property>
    <layout class="QGridLayout" name="gridLayout_2">
+    <item row="2" column="2">
+     <widget class="QPushButton" name="butSelectTempFile">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;選擇暫存的物種中名暫存檔，未來可重複載入此檔案批次產生名錄&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="text">
+       <string>選擇檔案</string>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="1">
-     <widget class="QLineEdit" name="lineBlist">
+     <widget class="QComboBox" name="comboDBselect">
+      <item>
+       <property name="text">
+        <string>臺灣維管束植物名錄(APG III)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>臺灣維管束植物名錄(Flora of Taiwan 2nd Edition)</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>臺灣鳥類名錄(2014)</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineOutputFilename">
       <property name="text">
        <string/>
       </property>
@@ -268,44 +293,61 @@
       </property>
      </widget>
     </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>物種清單資料表</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QPushButton" name="butBlist">
-      <property name="toolTip">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;選擇物種清單的資料表，這個資料表為 csv 檔案，以 UTF-8 編碼。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-      </property>
-      <property name="text">
-       <string>選擇檔案</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QLineEdit" name="lineOutputFilename">
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
     <item row="1" column="2">
      <widget class="QPushButton" name="butSelectOutput">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;選擇輸出的名錄檔案，會依照附檔名輸出相對應的格式。&lt;/p&gt;&lt;p&gt;目前支援的格式有：Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md) 等&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
       <property name="text">
        <string>選擇檔案</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLineEdit" name="lineSlist"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QPushButton" name="butUpdateDB">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;更新名錄資料庫(需連上網路)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="text">
+       <string>更新資料庫</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>載入資料庫</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="text">
+       <string>物種中名暫存檔</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="lineTempFile"/>
+    </item>
+    <item row="2" column="4">
+     <widget class="QPushButton" name="butSlist">
+      <property name="text">
+       <string>選擇檔案</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="label_4">
+      <property name="text">
+       <string>載入物種中名批次處理</string>
       </property>
      </widget>
     </item>
    </layout>
-   <zorder>label</zorder>
-   <zorder>label_2</zorder>
-   <zorder>butBlist</zorder>
-   <zorder>lineOutputFilename</zorder>
-   <zorder>lineBlist</zorder>
-   <zorder>butSelectOutput</zorder>
   </widget>
  </widget>
  <resources/>
@@ -319,22 +361,6 @@
     <hint type="sourcelabel">
      <x>593</x>
      <y>484</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>354</x>
-     <y>274</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>butClose</sender>
-   <signal>clicked()</signal>
-   <receiver>Window</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>636</x>
-     <y>485</y>
     </hint>
     <hint type="destinationlabel">
      <x>354</x>
