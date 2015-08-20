@@ -15,13 +15,17 @@ import os
 class Genlist(object):
     def __init__(self):
         pass
-#    def __init__(self, name, dbfile, inputfile, oformat, ofile_prefix):
-#        self.name = name
-#        self.dbfile = dbfile
-#        self.inputfile = inputfile
-#        self.oformat = oformat
-#        self.ofile_prefix = ofile_prefix
 
+    # for pyinstaller 
+    # http://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile
+    def resource_path(self, relative):
+        return os.path.join(
+            os.environ.get(
+                "_MEIPASS2",
+                os.path.abspath(".")
+            ),
+            relative
+        )
 
     def fmtname(self, name):
         n_split = name.split(' ')
@@ -65,13 +69,13 @@ class Genlist(object):
     # def convert(self, oformat='docx', ofile_prefix='output'):
     #     subprocess.call(['pandoc', ofile_prefix+'.md', '-o', ofile_prefix+'.'+oformat])
         
-    def dbCreateTable(self, schema, dbfile='twnamelist.db'):
+    def dbCreateTable(self, schema, dbfile):
         conn = sqlite3.connect(dbfile)
         curs = conn.cursor()
         curs.execute(schema)
         conn.close()
 
-    def dbImportTable(self, table_name, csvfile, dbfile='twnamelist.db'):
+    def dbImportTable(self, table_name, csvfile, dbfile):
         conn = sqlite3.connect(dbfile)
         curs = conn.cursor()
         with open(csvfile, newline='', encoding='utf-8') as f:
@@ -95,7 +99,7 @@ class Genlist(object):
             conn.commit()
         conn.close()
 
-    def dbGetsp(self, table_name, dbfile='twnamelist.db'):
+    def dbGetsp(self, table_name, dbfile):
         conn = sqlite3.connect(dbfile)
         curs = conn.cursor()
         get_splist_sql = '''SELECT * FROM %s ORDER BY family,name;''' % table_name

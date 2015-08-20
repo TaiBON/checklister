@@ -8,8 +8,8 @@ Usage:
 from setuptools import setup
 
 APP = ['NGenerator.py']
-DATA_FILES = []
-OPTIONS = {'argv_emulation': True}
+DATA_FILES = [('twnamelist.db')]
+OPTIONS = {'argv_emulation': False}
 
 setup(
     app=APP,

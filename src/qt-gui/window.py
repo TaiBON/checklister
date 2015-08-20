@@ -2,51 +2,41 @@ from PyQt5.QtCore import *
 from PyQt5.QtWidgets import * 
 import genlist_api
 from ui_window import Ui_Window
-from pandas import DataFrame
 import re
 import sqlite3
 import codecs
 import csv
+import sys
 
 class Window(QWidget, Ui_Window):
-    
+
     def __init__(self, parent = None):
-        super(Window, self).__init__()
-        #QWidget.__init__(self, parent)
-        self.setupUi(self)
-        self.butBlist.clicked.connect(self.browBaselist)
-        self.butSlist.clicked.connect(self.browSlist)
-        self.butAddToTree.clicked.connect(self.addToTree)
-        self.lineSpecies.returnPressed.connect(self.addToTree)
-        self.butGenerateSp.clicked.connect(self.genNamelist)
-        self.butSelectTempFile.clicked.connect(self.browTempfile)
-        self.butSelectOutput.clicked.connect(self.browOutput)
-        self.butDeleteAll.clicked.connect(self.delAllTreeItems)
-        self.butDeleteSelection.clicked.connect(self.delSelectedItems)
-        self.comboDBselect.activated.connect(self.loadSelectedTable)
         try:
             g = genlist_api.Genlist()
+            super(Window, self).__init__()
+            self.sqlite_db = g.resource_path('./twnamelist.db')
+            self.setupUi(self)
+            self.butBlist.clicked.connect(self.browBaselist)
+            self.butSlist.clicked.connect(self.browSlist)
+            self.butAddToTree.clicked.connect(self.addToTree)
+            self.lineSpecies.returnPressed.connect(self.addToTree)
+            self.butGenerateSp.clicked.connect(self.genNamelist)
+            self.butSelectTempFile.clicked.connect(self.browTempfile)
+            self.butSelectOutput.clicked.connect(self.browOutput)
+            self.butDeleteAll.clicked.connect(self.delAllTreeItems)
+            self.butDeleteSelection.clicked.connect(self.delSelectedItems)
+            self.comboDBselect.activated.connect(self.loadSelectedTable)
             completer = QCompleter()
             self.lineSpecies.setCompleter(completer)
             model = QStringListModel()
             completer.setModel(model)
-            retrieved = g.dbGetsp('dao_pnamelist_apg3')        
+            retrieved = g.dbGetsp('dao_pnamelist_apg3', self.sqlite_db)        
             b_container=[]
             for i in range(len(retrieved)):
                 b_container.append(retrieved[i][3] +  "," + retrieved[i][4] + "," + retrieved[i][2])
             model.setStringList(b_container)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
-            
-
-        #for 
-        #completer = QCompleter()
-        #self.lineSpecies.setCompleter(completer)
-        #model = QStringListModel()
-        #completer.setModel(model)
-        #self.getCompleteData(model, Blist)
-
-
 
     def browBaselist(self):
         """
@@ -55,7 +45,8 @@ class Window(QWidget, Ui_Window):
         """
         try:
             self.lineBlist.clear()
-            Blist = QFileDialog.getOpenFileName(self, self.tr("Open File 開啟物種資料檔案:"), QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
+            Blist = QFileDialog.getOpenFileName(self, self.tr("Open File 開啟物種資料檔案:"), \
+                    QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
             if Blist is '' or Blist is None:
                 return
             else:
@@ -87,7 +78,8 @@ class Window(QWidget, Ui_Window):
     def browSlist(self):
         try:
             self.lineSlist.clear()
-            Slist = QFileDialog.getOpenFileName(self, self.tr("Open File 開啟物種清單檔案:"), QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
+            Slist = QFileDialog.getOpenFileName(self, self.tr("Open File 開啟物種清單檔案:"), \
+                    QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
             if Slist is None or Slist is '':
                 return
             self.lineSlist.setText(Slist)
@@ -97,7 +89,7 @@ class Window(QWidget, Ui_Window):
             Slist_str = str.split(Slist, '.')
             Slist_modified = Slist_str[0] + '_temp.' + Slist_str[1]
             self.lineTempFile.setText(Slist_modified)
-            conn = sqlite3.connect('twnamelist.db')
+            conn = sqlite3.connect(sqlite_db)
             curs = conn.cursor()
             drop_table = '''DROP TABLE IF EXISTS sample;'''
             create_sample = '''CREATE TABLE sample (zh_name varchar);'''
@@ -122,6 +114,23 @@ class Window(QWidget, Ui_Window):
             ''' % db_table
             curs.execute(query_list)
             fetched_results = curs.fetchall() 
+            # check phanton species (does not exist in our database)
+            query_not_exists_sp = ''' 
+                SELECT 
+                    distinct s.zh_name 
+                FROM 
+                    sample s LEFT OUTER JOIN %s n 
+                ON s.zh_name=n.zh_name
+                WHERE n.zh_name is null;
+            ''' % db_table 
+            curs.execute(query_not_exists_sp)
+            no_sp = curs.fetchall()
+            nsp = []
+            for i in no_sp:
+                nsp.append(i[0])
+            nsp = ', '.join(nsp)
+            if len(nsp) > 0:
+                QMessageBox.information(self, "Warning", "下列物種不存在資料庫中，請查明後再重新輸入: %s" % nsp)
             # clean the tree first
             self.delAllTreeItems() 
             for i in range(len(fetched_results)):
@@ -167,18 +176,20 @@ class Window(QWidget, Ui_Window):
             db_idx = self.comboDBselect.currentIndex()
             if db_idx == 0:
                 # APG III
-                retrieved = g.dbGetsp('dao_pnamelist_apg3')        
+                retrieved = g.dbGetsp('dao_pnamelist_apg3', self.sqlite_db)        
             elif db_idx == 1:
                 # Flora of Taiwan
-                retrieved = g.dbGetsp('dao_pnamelist')        
+                retrieved = g.dbGetsp('dao_pnamelist', self.sqlite_db)  
             elif db_idx == 2:
                 # Birdlist of Taiwan
-                retrieved = g.dbGetsp('dao_bnamelist')
+                retrieved = g.dbGetsp('dao_bnamelist', self.sqlite_db)
             else:
-                retrieved = g.dbGetsp('dao_pnamelist_apg3')        
-            retrieved = DataFrame(retrieved)
+                retrieved = g.dbGetsp('dao_pnamelist_apg3', self.sqlite_db)        
+            b_container = []
+            for i in range(len(retrieved)):
+                    b_container.append([retrieved[i][2], retrieved[i][3], retrieved[i][4]])
             # returnlist
-            return(retrieved)
+            return(b_container)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -192,9 +203,13 @@ class Window(QWidget, Ui_Window):
                 # check for species items
                 item = QTreeWidgetItem()     
                 species_item = str.split(str(self.lineSpecies.text()), ',')
+                # get species zh_name
                 splist = self.getDbIdx()
+                splist_zhname = []
+                for i in range(len(splist)):
+                        splist_zhname.append(splist[i][1])
                 exists = 0
-                for i, j in enumerate(list(splist[3])):
+                for i, j in enumerate(splist_zhname):
                     if j == species_item[0]:
                         exists = 1
                 if exists == 1:
@@ -236,9 +251,12 @@ class Window(QWidget, Ui_Window):
         self.treeWidget.clear()
 
     def delSelectedItems(self):
-        root = self.treeWidget.invisibleRootItem()
-        for item in self.treeWidget.selectedItems():
-                (item.parent() or root).removeChild(item)
+        try:
+            root = self.treeWidget.invisibleRootItem()
+            for item in self.treeWidget.selectedItems():
+                    (item.parent() or root).removeChild(item)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
 
     def loadSelectedTable(self):
         try:
@@ -248,7 +266,7 @@ class Window(QWidget, Ui_Window):
             model = QStringListModel()
             completer.setModel(model)
             db_table = self.checkDB()
-            sp_data = g.dbGetsp(db_table)
+            sp_data = g.dbGetsp(db_table, self.sqlite_db)
             b_container=[]
             for i in range(len(sp_data)):
                 b_container.append(sp_data[i][3] +  "," + sp_data[i][4] + "," + sp_data[i][2])
@@ -256,7 +274,7 @@ class Window(QWidget, Ui_Window):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
  
-    #
+    # 產生名錄
     def genNamelist(self):
         try:
             g = genlist_api.Genlist()
@@ -279,12 +297,12 @@ class Window(QWidget, Ui_Window):
                 ofile = str(self.lineOutputFilename.text())
                 output_flist = str.split(ofile, '.')
                 # before generate namelist, clean up the sample table in sqlite db
-                conn = sqlite3.connect('twnamelist.db')
+                conn = sqlite3.connect(sqlite_db)
                 curs = conn.cursor()
                 curs.execute('DROP TABLE IF EXISTS sample;')
                 conn.commit()
                 # export outputfile
-                g.genEngine('twnamelist.db', db_table, saved_list, output_flist[1], output_flist[0])
+                g.genEngine(sqlite_db, db_table, saved_list, output_flist[1], output_flist[0])
                 QMessageBox.information(self, "名錄產生器", "名錄已產生完畢")
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -297,24 +315,5 @@ class Window(QWidget, Ui_Window):
             if saveTempFile is None or saveTempFile is '':
                 return
             self.lineTempFile.setText(saveTempFile) 
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
-
-    def genList(self):
-        try:
-            g = genlist_api.Genlist()
-            #if self.lineBlist.text() == '':
-            #    QMessageBox.information(self, "Warning", "請指定物種資料檔案")
-            if self.lineSlist.text() == '':
-                QMessageBox.information(self, "Warning", "請指定物種清單檔案")
-            elif self.lineOutputFilename.text() == '':
-                QMessageBox.information(self, "Warning", "請指定輸出檔案名稱")
-            else:
-                dbfile = str(self.lineBlist.text())
-                sample_file = str(self.lineSlist.text())
-                ofile = str(self.lineOutputFilename.text())
-                output_flist = str.split(ofile, '.')
-                g.generator(dbfile, sample_file, output_flist[1], output_flist[0])
-                QMessageBox.information(self, "名錄產生器", "名錄已產生完畢")
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))

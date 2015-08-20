@@ -4,9 +4,8 @@ PYTHON=python3
 all:
 	$(PYUIC) ui/namegen.ui -o ui_window.py
 
-macos:
-	py2applet --make-setup NGenerator.py
-	$(PYTHON) setup.py py2app --includes "sip"
+binary:
+	pyinstaller -w NGenerator.spec
 
 update_db:
 	sed -e 's/'\''/'\'\''/g' ../../data/twnamelist_apg3.csv | awk -v q="'" -F'|' '{print "INSERT INTO dao_pnamelist_apg3 (family,family_zh,zh_name,name,fullname,plant_type,endemic,iucn_category,source) VALUES ("q$$1q","q$$2q","q$$3q","q$$4q","q$$5q","$$6","$$7","q$$8q","q$$9q");"}' > db_schema/insert_pnamelist_apg3.sql
