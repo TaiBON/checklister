@@ -10,6 +10,7 @@ import subprocess   # execute shell commands
 import sys      # system
 import os
 import traceback # dealing with exception
+from platform import uname
 
 
 # format the typesetting of names
@@ -68,7 +69,10 @@ class Genlist(object):
         path_to_pandoc = os.path.join(dpath, 'pandoc')
         inpfile = ofile_prefix+'.md'
         outfile = ofile_prefix+'.'+oformat
-        p = subprocess.Popen([path_to_pandoc, '-f', 'markdown', '-t', 'docx', inpfile, '-o', outfile], shell=True)
+        if uname()[0] == 'Windows':
+            subprocess.Popen([path_to_pandoc, '-f', 'markdown', '-t', 'docx', inpfile, '-o', outfile], shell=True)
+        else:
+            subprocess.Popen([path_to_pandoc, inpfile, '-o', outfile])
         
     def dbCreateTable(self, schema, dbfile):
         conn = sqlite3.connect(dbfile)
