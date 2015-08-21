@@ -7,67 +7,54 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 植物名錄按照蕨類、裸子植物、「雙子葉植物」、單子葉植物四大類排序，下依照科名字母順序、物種名字母順序排列。
 'data/twnamelist.csv'是基於 Flora of Taiwan 2nd Edition 以及近年來新發現或訂正之物種名錄。'data/sample.csv'
 則是從 twnamelist.csv 中隨機產生的物種中名範例檔。目前 data/twnamelist_apg3.csv 及 data/twnamelist.csv 包含
-臺灣目前原生、歸化及部分栽培維管束物種清單
+臺灣目前原生、歸化及部分栽培維管束物種清單。
+
+授權為通用公共授權第三版 (General Public License version 3; GPL v3)，也就是您可以自由複製、取得、散佈並修改。
+
+### 支援的物種清單
+
+1. 臺灣維管束植物名錄 (APGIII / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資源整合查詢系統](http://tai2.ntu.edu.tw)
+2. 臺灣鳥類名錄 2014。資料來源：[中華野鳥學會](www.bird.org.tw/index.php/works/lists)
 
 ### 開發語言及相依軟體
 
-* [Python 3](https://www.python.org)
-    + libraries: codecs, csv, subprocess, sqlite, sys
-    + GUI libraries: Qt 5.x, pyqt5
+* 開發語言 [Python 3](https://www.python.org)
+    + libraries: codecs, csv, subprocess, sqlite, sys, etc.
+    + 資料庫: sqlite
+    + GUI libraries: pyqt5 (Qt 5.5)
+    + 打包程式: pyinstaller 
 
-* [Pandoc](http://johnmacfarlane.net/pandoc/)
-
+* 文件格式轉換 [Pandoc](http://johnmacfarlane.net/pandoc/)
 
 ### 安裝
 
-#### Unix, GNU/Linux, MacOS 的安裝
+* 支援平台，跨平台(32/64 bits)： 
+    + MacOSX (測試過 10.10，理論上 10.7 以上應該都可用)
+    + Windows (目前編譯使用 32 bits MinGW)
+    + GNU/Linux, *BSD (尚未編譯測試)
 
-下列安裝可以透過第三方套件管理程式(GNU/Linux，以 Ubuntu 為例可使用 aptitude/apt-get，
-Mac OS 則可以使用 [homebrew](http://brew.sh)，FreeBSD 可以使用 pkg 或 ports 安裝)
-
-1. 安裝 [Python 3](https://www.python.org)
-2. 安裝 [Pandoc](http://johnmacfarlane.net/pandoc/)
-3. 若要使用圖形介面，請安裝 pyqt4 (未來會整個包成一個安裝檔)
-4. [Clone](https://github.com/mutolisp/namelist-generator.git)至你的桌面環境，或是直接下載[zip](https://github.com/mutolisp/namelist-generator/archive/master.zip)
-
-#### Windows 平台的安裝
-
-*設定 Python 路徑*
-Windows 的安裝方法和上面相同，只是需要設定路徑，在安裝完之後，從「控制台」/「系統及安全性」/「系統」，
-中選取進階系統設定，「進階」中選擇編輯「環境變數」，將變數 PATH 設定為
-```
-C:\Users\yourusername\AppData\Local\Pandoc;C:\Python34\
-```
-(前方的 Pandoc 是當你安裝完之後會自動設定，後面加上分號及新增的 Python 路徑，不加也沒關係，
-只是需要多打幾個字)
-
-![設定路徑](https://raw.github.com/mutolisp/namelist-generator/master/docs/setpath.png)
-
+* 下載編譯好的執行檔：最新版為 [0.2.1版](https://github.com/mutolisp/namelist-generator/tree/v0.2.1)
+    + Windows 平台(*.exe)，將執行檔複製到你喜歡的地方即可(免安裝，放在隨身碟也行)
+    + MacOS X 平台，解壓縮後複製到 /Applications 即可或是放在你喜歡的位置
 
 ### 使用方法
 
-目前還需要從終端機將圖形介面啟動：
-```
-cd ./namelist-generator/src/qt-gui/; ./main.pyw
-```
-![點選物種加入名錄清單中](https://raw.github.com/mutolisp/namelist-generator/master/docs/pyqt_gui_demo.png)
+![點選物種加入名錄清單中](https://raw.github.com/mutolisp/namelist-generator/master/docs/NGenerator_v0.2.1.png)
 
 有兩個方式可以建立物種名錄，第一個是手動一個個搜尋物種加入清單：
 
 1. 在主畫面中，先選擇物種清單資料表(例：data/twnamelist_apg3.csv)、預計要輸出名錄的檔案(例：/path/to/mylist.docx)、
-物種中名暫存檔等。
-
+物種中名暫存檔等
 2. 在中文俗名的文字輸入方塊中，只需要打該物種的中文名前幾個字即可在下方列出相同字元開頭的物種，
-點選後「加入清單」則會加到候選清單中。
-
+點選後「加入清單」則會加到候選清單中
 3. 若需要刪除，可以選擇想刪除的項目刪除
-
 4. 確認無誤後，按下「產生名錄」即可
 
 第二個方法則是批次產生名錄檔案，和第一方法步驟 1 相同，選擇好物種清單資料表以及輸出名錄的檔案，
-再選擇要批次匯入的 csv 檔案(UTF-8 編碼，一個物種一行)，最後再按下「產生名錄」即可。
+再選擇要批次匯入的 csv 檔案(UTF-8 編碼，一個物種一行)，然後程式會自動將查詢批次匯入的物種科名、學名等，
+若該物種不存在資料庫中則會出現警告及提示。最後再按下「產生名錄」即可。
 
-#### 文字介面參數
+#### 文字介面參數 (genlist.py)
 ```
 -d 代表物種名彙資料表
 -s 代表需產生名錄的物種中名
@@ -100,34 +87,6 @@ cd ./namelist-generator/src/qt-gui/; ./main.pyw
 所以必須要將文字檔存成 UTF-8，如下圖：
 
 ![存成 UTF-8](https://raw.github.com/mutolisp/namelist-generator/master/docs/save_namelist.png)
-
-2. 接下來開啟命令提示字元(cmd.exe)或終端機(Terminal)，輸入下方指令（假設您下載的原始碼在 C:\namelist-generator）：
-
-*WINDOWS 使用者:*
-
-
-```
-    cd C:\namelist-generator
-    python src\genlist.py -d data\twnamelist_apg3.csv -s data\sample.csv -f docx -o namelist
-```
-
-則會在 C:\namelist-generator 下產生 namelist.md 及 namelist.docx 兩個檔案，之後您就可以再次確認植物名錄了。
-
-*GNU/Linux, MacOS 等 *nix 使用者*
-
-```    
-    cd path/to/namelist-generator;
-    python3 src/genlist.py -d data/twnamelist_apg3.csv -s data/sample.csv -f docx -o namelist
-```
-接下來則會輸出 markdown 檔 output.md  及 Microsoft Office Word 檔 output.docx 
-
-
-### 轉換文件格式
-
-若有安裝 xelatex，則可以使用下列指令轉成 pdf 檔
-```
-    pandoc --latex-engine=xelatex -V mainfont='Times New Roman' --template pandoc.template output.md -o output.pdf
-```
 
 ### 輸出範例
 
