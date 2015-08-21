@@ -66,7 +66,9 @@ class Genlist(object):
     def pandocConvert(self, oformat='docx', ofile_prefix='output'):
         dpath = sys._MEIPASS
         path_to_pandoc = os.path.join(dpath, 'pandoc')
-        subprocess.call([path_to_pandoc, ofile_prefix+'.md', '-o', ofile_prefix+'.'+oformat])
+        inpfile = ofile_prefix+'.md'
+        outfile = ofile_prefix+'.'+oformat
+        p = subprocess.Popen([path_to_pandoc, '-f', 'markdown', '-t', 'docx', inpfile, '-o', outfile], shell=True)
         
     def dbCreateTable(self, schema, dbfile):
         conn = sqlite3.connect(dbfile)
