@@ -47,5 +47,5 @@ coll = COLLECT(exe,
                name=os.path.join('dist', 'NGenerator'))
 app = BUNDLE(coll,
              name='NGenerator.app',
-             icon=None,
+             icon='icons/ngenerator.icns',
              bundle_identifier=None)
