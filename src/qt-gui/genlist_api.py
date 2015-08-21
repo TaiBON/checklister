@@ -9,6 +9,7 @@ import sqlite3  # lightweight database
 import subprocess   # execute shell commands
 import sys      # system
 import os
+import traceback # dealing with exception
 
 
 # format the typesetting of names
@@ -19,13 +20,9 @@ class Genlist(object):
     # for pyinstaller 
     # http://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile
     def resource_path(self, relative):
-        return os.path.join(
-            os.environ.get(
-                "_MEIPASS2",
-                os.path.abspath(".")
-            ),
-            relative
-        )
+        if hasattr(sys, '_MEIPASS'):
+            return os.path.join(sys._MEIPASS, relative)
+        return os.path.join(os.path.abspath("."), relative)
 
     def fmtname(self, name):
         n_split = name.split(' ')
@@ -66,8 +63,10 @@ class Genlist(object):
     # DEPRECATED: use pypandoc package
     # convert markdown to other fileformats using pandoc
     #
-    # def convert(self, oformat='docx', ofile_prefix='output'):
-    #     subprocess.call(['pandoc', ofile_prefix+'.md', '-o', ofile_prefix+'.'+oformat])
+    def pandocConvert(self, oformat='docx', ofile_prefix='output'):
+        dpath = sys._MEIPASS
+        path_to_pandoc = os.path.join(dpath, 'pandoc')
+        subprocess.call([path_to_pandoc, ofile_prefix+'.md', '-o', ofile_prefix+'.'+oformat])
         
     def dbCreateTable(self, schema, dbfile):
         conn = sqlite3.connect(dbfile)
@@ -343,7 +342,11 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                             f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] +'\n')
                         n = n + 1
             f.close()        
-            pypandoc.convert(ofile_prefix + '.md', oformat, outputfile=ofile_prefix+'.'+oformat)
+            try:
+            #    pypandoc.convert(ofile_prefix + '.md', oformat, outputfile=ofile_prefix+'.'+oformat)
+                self.pandocConvert(oformat, ofile_prefix)
+            except BaseException as e:
+                print(str(e))
             curs.execute('DROP TABLE IF EXISTS sample;')
             conn.commit()
             conn.close()

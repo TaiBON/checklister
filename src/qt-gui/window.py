@@ -7,6 +7,8 @@ import sqlite3
 import codecs
 import csv
 import sys
+import traceback
+import os
 
 class Window(QWidget, Ui_Window):
 
@@ -14,7 +16,9 @@ class Window(QWidget, Ui_Window):
         try:
             g = genlist_api.Genlist()
             super(Window, self).__init__()
-            self.sqlite_db = g.resource_path('./twnamelist.db')
+            #self.sqlite_db = g.resource_path('twnamelist.db')
+            db_filename = 'twnamelist.db'
+            self.sqlite_db = g.resource_path(os.path.join('db', db_filename))
             self.setupUi(self)
             self.butBlist.clicked.connect(self.browBaselist)
             self.butSlist.clicked.connect(self.browSlist)
@@ -89,7 +93,7 @@ class Window(QWidget, Ui_Window):
             Slist_str = str.split(Slist, '.')
             Slist_modified = Slist_str[0] + '_temp.' + Slist_str[1]
             self.lineTempFile.setText(Slist_modified)
-            conn = sqlite3.connect(sqlite_db)
+            conn = sqlite3.connect(self.sqlite_db)
             curs = conn.cursor()
             drop_table = '''DROP TABLE IF EXISTS sample;'''
             create_sample = '''CREATE TABLE sample (zh_name varchar);'''
@@ -286,23 +290,23 @@ class Window(QWidget, Ui_Window):
             #    QMessageBox.information(self, "Warning", "請指定物種資料檔案")
             if self.lineOutputFilename.text() == '':
                 QMessageBox.information(self, "Warning", "請指定輸出檔案名稱")
-            elif self.lineTempFile.text() == '' and self.lineSlist == '':
+            elif self.lineTempFile.text() == '' or self.lineSlist == '':
                 QMessageBox.information(self, "Warning", "請指定要存物種清單之檔案")
             else:
                 saved_list = str(self.lineTempFile.text())
-                f = open(saved_list, 'w')
-                for sp in tree_item:
-                    f.write("%s\n" % sp)
+                with codecs.open(saved_list, 'w+', 'utf-8') as f:
+                    for sp in tree_item:
+                        f.write("%s\n" % sp)
                 f.close()
                 ofile = str(self.lineOutputFilename.text())
                 output_flist = str.split(ofile, '.')
                 # before generate namelist, clean up the sample table in sqlite db
-                conn = sqlite3.connect(sqlite_db)
+                conn = sqlite3.connect(self.sqlite_db)
                 curs = conn.cursor()
                 curs.execute('DROP TABLE IF EXISTS sample;')
                 conn.commit()
                 # export outputfile
-                g.genEngine(sqlite_db, db_table, saved_list, output_flist[1], output_flist[0])
+                g.genEngine(self.sqlite_db, db_table, saved_list, output_flist[1], output_flist[0])
                 QMessageBox.information(self, "名錄產生器", "名錄已產生完畢")
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
