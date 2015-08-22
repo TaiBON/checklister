@@ -178,8 +178,8 @@ class Genlist(object):
                 f.write('# 維管束植物名錄')
                 sp_note = '"#" 代表特有種，"*" 代表歸化種，"†" 代表栽培種。'
                 sp_conserv = '''中名後面括號內的縮寫代表依照「臺灣維管束植物初評名錄」中依照 IUCN 瀕危物種所評估等級， \
-'EX: 滅絕、EW: 野外滅絕、RE: 區域性滅絕、CR: 嚴重瀕臨滅絕、 \
-'EN: 瀕臨滅絕、VU: 易受害、NT: 接近威脅、DD: 資料不足。若未註記者代表安全(Least concern)'''
+EX: 滅絕、EW: 野外滅絕、RE: 區域性滅絕、CR: 嚴重瀕臨滅絕、 \
+EN: 瀕臨滅絕、VU: 易受害、NT: 接近威脅、DD: 資料不足。若未註記者代表安全(Least concern)'''
             elif species_type == 2:
                 f.write('# 鳥類名錄')
                 sp_note = '"#" 代表特有種，"##" 代表特有亞種'
