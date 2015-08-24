@@ -2,8 +2,10 @@
 all:
 	iconutil -c icns ngenerator.iconset
 
+# you need to install imagemagick first 
 resize:
 	cd ngenerator.iconset;
+	cp ngenerator.iconset/icon_2048x2048.png ngenerator.iconset/icon_2048x2048@2.png
 	convert -resize 1024x1024 ngenerator.iconset/icon_2048x2048.png ngenerator.iconset/icon_1024x1024.png
 	cp ngenerator.iconset/icon_1024x1024.png ngenerator.iconset/icon_1024x1024@2.png
 	convert -resize 512x512 ngenerator.iconset/icon_2048x2048.png ngenerator.iconset/icon_512x512.png
