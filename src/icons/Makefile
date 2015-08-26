@@ -1,6 +1,9 @@
-
-all:
+icns:
 	iconutil -c icns ngenerator.iconset
+
+ico:
+	convert -resize 256x256 ngenerator_icons_orig.png ngenerator_small.png 
+	convert ngenerator_small.png ngenerator.ico
 
 # you need to install imagemagick first 
 resize:
