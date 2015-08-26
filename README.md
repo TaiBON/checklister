@@ -29,13 +29,23 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 ### 安裝
 
 * 支援平台，跨平台(32/64 bits)： 
-    + MacOSX (測試過 10.10，理論上 10.7 以上應該都可用)
-    + Windows (目前編譯使用 32 bits MinGW)
-    + GNU/Linux, *BSD (尚未編譯測試)
+    + MacOSX (測試過 10.10，理論上 10.6+ 以上應該都可用)
+    + Windows (目前編譯使用 32 bits MinGW，測試過 Windows 10 x64, 8 x64, 7 x64)
+    + GNU/Linux (Ubuntu 14.04 測試過), *BSD (尚未編譯測試)
 
-* 下載編譯好的執行檔：最新版為 [0.2.1版](https://github.com/mutolisp/namelist-generator/tree/v0.2.1)
+* 下載編譯好的執行檔：最新版為 [0.2.2版](https://github.com/mutolisp/namelist-generator/tree/v0.2.2)
     + Windows 平台(*.exe)，將執行檔複製到你喜歡的地方即可(免安裝，放在隨身碟也行)
     + MacOS X 平台，解壓縮後複製到 /Applications 即可或是放在你喜歡的位置
+
+* 自行編譯(linux, macos)
+    1. 安裝 git, python3, pip, pyqt5, pandoc (視需求可能會需要安裝 zlib 之類的)
+    2. pip 安裝 pypandoc
+    3. 複製 pyinstaller python3 分支原始碼: `git clone https://github.com/pyinstaller/pyinstaller.git`
+    4. `cd pyinstaller; git checkout python3`
+    5. 安裝 bootloader: `cd pyinstaller; python3 waf configure; python3 waf all`
+    6. 安裝 pyinstaller: `cd ..; python3 setup.py install`
+    7. `git clone https://github.com/mutolisp/namelist-generator`
+    8. `make binary; sudo cp dist/NGenerator /usr/local/bin/`
 
 ### 使用方法
 
@@ -100,3 +110,7 @@ namelist-generator 完全依賴 baselist (也就是 data/twnamelist.* )，所以
 紫草科和禾本科中名皆有狗尾草，此時則需判斷是否為 _Heliotropium indicum_ 或 _Setaria viridis_。
 
 發現資料檔案(twnamelist_apg3.csv & twnamelist.csv)有錯誤或是有使用上的問題歡迎直接 email 問我(mutolisp _AT_ gmail)
+
+### LICENSE
+python, shell script 等採用 GPL v3
+資料檔(即 *.csv, *.db)採用 public domain
