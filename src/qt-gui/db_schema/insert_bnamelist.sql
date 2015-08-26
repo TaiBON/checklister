@@ -126,7 +126,7 @@ INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) V
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Campephagidae','山椒鳥科','長尾山椒鳥','Pericrocotus ethologus','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Campephagidae','山椒鳥科','灰喉山椒鳥','Pericrocotus solaris','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Campephagidae','山椒鳥科','琉球山椒鳥','Pericrocotus tegimae','','');
-INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Caprimulgidae','夜鷹科','台灣夜鷹','Caprimulgus affinis','特有亞種(C. a. stictomus)','');
+INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Caprimulgidae','夜鷹科','臺灣夜鷹','Caprimulgus affinis','特有亞種(C. a. stictomus)','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Caprimulgidae','夜鷹科','普通夜鷹','Caprimulgus indicus','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Cettiidae','樹鶯科','棕面鶯','Abroscopus albogularis','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Cettiidae','樹鶯科','深山鶯','Horornis acanthizoides','特有亞種(H. a. concolor)','');
@@ -180,7 +180,7 @@ INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) V
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Corvidae','鴉科','松鴉','Garrulus glandarius','特有亞種(G. g. taivanus)','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Corvidae','鴉科','星鴉','Nucifraga caryocatactes','特有亞種(N. c. owstoni)','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Corvidae','鴉科','喜鵲','Pica pica','','');
-INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Corvidae','鴉科','台灣藍鵲','Urocissa caerulea','特有種','III');
+INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Corvidae','鴉科','臺灣藍鵲','Urocissa caerulea','特有種','III');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Cuculidae','杜鵑科','八聲杜鵑','Cacomantis merulinus','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Cuculidae','杜鵑科','番鵑','Centropus bengalensis','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Cuculidae','杜鵑科','褐翅鴉鵑','Centropus sinensis','','');
@@ -238,7 +238,7 @@ INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) V
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Fregatidae','軍艦鳥科','軍艦鳥','Fregata minor','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Fringillidae','雀科','普通朱頂雀','Acanthis flammea','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Fringillidae','雀科','普通朱雀','Carpodacus erythrinus','','');
-INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Fringillidae','雀科','台灣朱雀','Carpodacus formosanus','特有種','');
+INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Fringillidae','雀科','臺灣朱雀','Carpodacus formosanus','特有種','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Fringillidae','雀科','北朱雀','Carpodacus roseus','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Fringillidae','雀科','金翅雀','Chloris sinica','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Fringillidae','雀科','臘嘴雀','Coccothraustes coccothraustes','','');
@@ -318,14 +318,14 @@ INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) V
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','紋翼畫眉','Actinodura morrisoniana','特有種','III');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','繡眼畫眉','Alcippe morrisonia','特有種','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','大陸畫眉','Garrulax canorus','','II');
-INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','台灣畫眉','Garrulax taewanus','特有種','II');
+INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','臺灣畫眉','Garrulax taewanus','特有種','II');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','白耳畫眉','Heterophasia auricularis','特有種','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','黑喉噪眉','Ianthocincla chinensis','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','棕噪眉','Ianthocincla poecilorhyncha','特有種','II');
-INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','台灣白喉噪眉','Ianthocincla ruficeps','特有種','II');
+INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','臺灣白喉噪眉','Ianthocincla ruficeps','特有種','II');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','黃胸藪眉','Liocichla steerii','特有種','');
-INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','台灣噪眉','Trochalopteron morrisonianum','特有種','');
-INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Locustellidae','蝗鶯科','台灣叢樹鶯','Locustella alishanensis','特有種','');
+INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Leiothrichidae','噪眉科','臺灣噪眉','Trochalopteron morrisonianum','特有種','');
+INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Locustellidae','蝗鶯科','臺灣叢樹鶯','Locustella alishanensis','特有種','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Locustellidae','蝗鶯科','庫頁島蝗鶯','Locustella amnicola','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Locustellidae','蝗鶯科','小蝗鶯','Locustella certhiola','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Locustellidae','蝗鶯科','蒼眉蝗鶯','Locustella fasciolata','','');
@@ -385,7 +385,7 @@ INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) V
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Muscicapidae','鶲科','烏鶲','Muscicapa sibirica','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Muscicapidae','鶲科','斑鶲','Muscicapa striata','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Muscicapidae','鶲科','白斑紫嘯鶇','Myophonus caeruleus','','');
-INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Muscicapidae','鶲科','台灣紫嘯鶇','Myophonus insularis','特有種','');
+INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Muscicapidae','鶲科','臺灣紫嘯鶇','Myophonus insularis','特有種','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Muscicapidae','鶲科','棕腹大仙鶲','Niltava davidi','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Muscicapidae','鶲科','棕腹仙鶲','Niltava sundara','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Muscicapidae','鶲科','黃腹琉璃','Niltava vivida','特有亞種(N. v. vivida)','III');
@@ -427,7 +427,7 @@ INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) V
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Phalacrocoracidae','鸕鷀科','丹氏鸕鷀','Phalacrocorax capillatus','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Phalacrocoracidae','鸕鷀科','鸕鷀','Phalacrocorax carbo','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Phalacrocoracidae','鸕鷀科','海鸕鷀','Phalacrocorax pelagicus','','');
-INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Phasianidae','雉科','台灣山鷓鴣','Arborophila crudigularis','特有種','III');
+INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Phasianidae','雉科','臺灣山鷓鴣','Arborophila crudigularis','特有種','III');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Phasianidae','雉科','竹雞','Bambusicola thoracicus','特有亞種(B. t. sonorivox)','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Phasianidae','雉科','小鵪鶉','Coturnix chinensis','','II');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Phasianidae','雉科','鵪鶉','Coturnix japonica','','');
@@ -463,7 +463,7 @@ INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) V
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Pittidae','八色鳥科','藍翅八色鳥','Pitta moluccensis','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Pittidae','八色鳥科','八色鳥','Pitta nympha','','II');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Pittidae','八色鳥科','綠胸八色鳥','Pitta sordida','','');
-INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Pnoepygidae','鷦眉科','台灣鷦眉','Pnoepyga formosana','特有種','');
+INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Pnoepygidae','鷦眉科','臺灣鷦眉','Pnoepyga formosana','特有種','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Podicipedidae','鸊鷉科','角鸊鷉','Podiceps auritus','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Podicipedidae','鸊鷉科','冠鸊鷉','Podiceps cristatus','','');
 INSERT INTO dao_bnamelist (family,family_zh,zh_name,name,endemic,consv_status) VALUES ('Podicipedidae','鸊鷉科','赤頸鸊鷉','Podiceps grisegena','','');

@@ -23,6 +23,8 @@ class Genlist(object):
     def resource_path(self, relative):
         if hasattr(sys, '_MEIPASS'):
             return os.path.join(sys._MEIPASS, relative)
+        else:
+            return(relative)
         return os.path.join(os.path.abspath("."), relative)
 
     def fmtname(self, name):
@@ -175,18 +177,18 @@ class Genlist(object):
         with codecs.open(ofile_prefix +'.md', 'w+', 'utf-8') as f:
             #### Generate HEADER
             if species_type == 1:
-                f.write('# 維管束植物名錄')
-                sp_note = '"#" 代表特有種，"*" 代表歸化種，"†" 代表栽培種。'
-                sp_conserv = '''中名後面括號內的縮寫代表依照「臺灣維管束植物初評名錄」中依照 IUCN 瀕危物種所評估等級， \
+                f.write(u'# 維管束植物名錄')
+                sp_note = u'"#" 代表特有種，"*" 代表歸化種，"†" 代表栽培種。'
+                sp_conserv = u'''中名後面括號內的縮寫代表依照「臺灣維管束植物紅皮書初評名錄」中依照 IUCN 瀕危物種所評估等級， \
 EX: 滅絕、EW: 野外滅絕、RE: 區域性滅絕、CR: 嚴重瀕臨滅絕、 \
 EN: 瀕臨滅絕、VU: 易受害、NT: 接近威脅、DD: 資料不足。若未註記者代表安全(Least concern)'''
             elif species_type == 2:
-                f.write('# 鳥類名錄')
-                sp_note = '"#" 代表特有種，"##" 代表特有亞種'
-                sp_conserv = '''中名後面括號內代表行政院農業委員會依照野生動物保護法所公布之保育等級。 \
+                f.write(u'# 鳥類名錄')
+                sp_note = u'"#" 代表特有種，"##" 代表特有亞種'
+                sp_conserv = u'''中名後面括號內代表行政院農業委員會依照野生動物保護法所公布之保育等級。 \
 I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III：表示其他應予保育之野生動物'''
             else:
-                f.write('# 物種名錄')
+                f.write(u'# 物種名錄')
             f.write('\n')
             count_family = '''
             SELECT count(*) from (SELECT distinct family from sample s left outer join %s n 
@@ -212,9 +214,9 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             nsp = ', '.join(nsp)
             if len(nsp) > 0:
                 f.write('\n')
-                f.write('<font color="red">輸入名錄中，下列物種不存在於物種資料庫中：{} ，請再次確認物種中名是否和資料庫中相同</font>\n'.format(nsp))
+                f.write(u'<font color="red">輸入名錄中，下列物種不存在於物種資料庫中：{} ，請再次確認物種中名是否和資料庫中相同</font>\n'.format(nsp))
             f.write('\n')
-            f.write('本名錄中共有 {} 科、{} 種，科名後括弧內為該科之物種總數。'.format(family_no, species_no))
+            f.write(u'本名錄中共有 {} 科、{} 種，科名後括弧內為該科之物種總數。'.format(family_no, species_no))
             f.write(sp_note)
             f.write(sp_conserv)
             f.write('\n')
@@ -267,14 +269,14 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                         # output species within a family
                         for k in range(0,len(taxa_family_sp)):
                             # check the endmic species
-                            if taxa_family_sp[k][2]==1:
+                            if taxa_family_sp[k][2] == 1:
                                 ENDEMIC = "#"
                             else:
                                 ENDEMIC = ''
                             # check the source 
-                            if taxa_family_sp[k][3]=='栽培':
+                            if taxa_family_sp[k][3] == u'栽培':
                                 SRC = '†'
-                            elif taxa_family_sp[k][3]=='歸化':
+                            elif taxa_family_sp[k][3] == u'歸化':
                                 SRC = '*'
                             else:
                                 SRC = ''
@@ -333,9 +335,9 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                     # output species within a family
                     for k in range(0,len(taxa_family_sp)):
                         # check the endmic species
-                        if taxa_family_sp[k][2] =='特有種':
+                        if taxa_family_sp[k][2] == u'特有種':
                             ENDEMIC = "#"
-                        elif taxa_family_sp[k][2][0:4] == '特有亞種':
+                        elif taxa_family_sp[k][2][0:4] == u'特有亞種':
                             ENDEMIC = '##'
                         else:
                             ENDEMIC = ''
