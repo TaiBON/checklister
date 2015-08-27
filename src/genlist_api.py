@@ -67,14 +67,12 @@ class Genlist(object):
     # convert markdown to other fileformats using pandoc
     #
     def pandocConvert(self, oformat='docx', ofile_prefix='output'):
-        dpath = sys._MEIPASS
-        path_to_pandoc = os.path.join(dpath, 'pandoc')
         inpfile = ofile_prefix+'.md'
         outfile = ofile_prefix+'.'+oformat
         if uname()[0] == 'Windows':
-            subprocess.Popen([path_to_pandoc, '-f', 'markdown', '-t', 'docx', inpfile, '-o', outfile], shell=True)
+            subprocess.Popen([self.resource_path('pandoc'), '-f', 'markdown', '-t', 'docx', inpfile, '-o', outfile], shell=True)
         else:
-            subprocess.Popen([path_to_pandoc, inpfile, '-o', outfile])
+            subprocess.Popen([self.resource_path('pandoc'), inpfile, '-o', outfile])
         
     def dbCreateTable(self, schema, dbfile):
         conn = sqlite3.connect(dbfile)
@@ -156,6 +154,8 @@ class Genlist(object):
             species_type = 1
 
         #### INPUT FILES
+        curs.execute('DROP TABLE IF EXISTS sample;')
+        conn.commit()
         sample_create = '''
         CREATE TABLE sample (
           zh_name varchar

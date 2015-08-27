@@ -6,21 +6,26 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>705</width>
-    <height>585</height>
+    <width>812</width>
+    <height>639</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>物種名錄產生器 namelist generator</string>
+   <string>checklist generator</string>
   </property>
   <widget class="QTabWidget" name="tabWidget">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>20</x>
      <y>130</y>
-     <width>681</width>
+     <width>781</width>
      <height>441</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial Narrow</family>
+    </font>
    </property>
    <property name="currentIndex">
     <number>0</number>
@@ -34,9 +39,12 @@
       <rect>
        <x>10</x>
        <y>80</y>
-       <width>651</width>
+       <width>741</width>
        <height>271</height>
       </rect>
+     </property>
+     <property name="mouseTracking">
+      <bool>false</bool>
      </property>
      <property name="alternatingRowColors">
       <bool>true</bool>
@@ -53,6 +61,9 @@
      <property name="sortingEnabled">
       <bool>true</bool>
      </property>
+     <property name="animated">
+      <bool>true</bool>
+     </property>
      <attribute name="headerVisible">
       <bool>true</bool>
      </attribute>
@@ -63,7 +74,7 @@
       <bool>true</bool>
      </attribute>
      <attribute name="headerMinimumSectionSize">
-      <number>2</number>
+      <number>5</number>
      </attribute>
      <attribute name="headerShowSortIndicator" stdset="0">
       <bool>true</bool>
@@ -83,32 +94,6 @@
        <string>中文名</string>
       </property>
      </column>
-    </widget>
-    <widget class="QWidget" name="horizontalLayoutWidget_4">
-     <property name="geometry">
-      <rect>
-       <x>490</x>
-       <y>360</y>
-       <width>171</width>
-       <height>51</height>
-      </rect>
-     </property>
-     <layout class="QHBoxLayout" name="horizontalLayout_4">
-      <item>
-       <widget class="QPushButton" name="butGenerateSp">
-        <property name="text">
-         <string>產生名錄</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="butClose1">
-        <property name="text">
-         <string>關閉</string>
-        </property>
-       </widget>
-      </item>
-     </layout>
     </widget>
     <widget class="QWidget" name="gridLayoutWidget_3">
      <property name="geometry">
@@ -137,8 +122,9 @@
         </property>
         <property name="font">
          <font>
-          <pointsize>16</pointsize>
-          <italic>true</italic>
+          <family>Arial</family>
+          <pointsize>14</pointsize>
+          <italic>false</italic>
          </font>
         </property>
         <property name="toolTip">
@@ -245,7 +231,7 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>681</width>
+     <width>796</width>
      <height>111</height>
     </rect>
    </property>
@@ -350,6 +336,32 @@
      <widget class="QLabel" name="label_4">
       <property name="text">
        <string>載入物種中名批次處理</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget_4">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>580</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QPushButton" name="butGenerateSp">
+      <property name="text">
+       <string>產生名錄</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="butClose1">
+      <property name="text">
+       <string>關閉</string>
       </property>
      </widget>
     </item>

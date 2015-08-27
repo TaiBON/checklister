@@ -16,9 +16,9 @@ class Window(QWidget, Ui_Window):
 
     def __init__(self, parent = None):
         try:
-            g = genlist_api.Genlist()
             super(Window, self).__init__()
             #self.sqlite_db = g.resource_path('twnamelist.db')
+            g = genlist_api.Genlist()
             db_filename = 'twnamelist.db'
             self.sqlite_db = g.resource_path(os.path.join('db', db_filename))
             self.setupUi(self)
@@ -31,14 +31,24 @@ class Window(QWidget, Ui_Window):
             self.butSelectOutput.clicked.connect(self.browOutput)
             self.butDeleteAll.clicked.connect(self.delAllTreeItems)
             self.butDeleteSelection.clicked.connect(self.delSelectedItems)
-            self.comboDBselect.activated.connect(self.loadSelectedTable)
+            self.comboDBselect.activated.connect(self.spCompleter)
+            # enable completer to show matched species list
+            self.spCompleter()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def spCompleter(self):
+        try:
+            g = genlist_api.Genlist()
             completer = QCompleter()
-            #pFilterModel = QSortFilterProxyModel()
-            #pFilterModel.setFilterCaseSensitivity(Qt.CaseInsensitive)
-            self.lineSpecies.setCompleter(completer)
             model = QStringListModel()
             completer.setModel(model)
-            retrieved = g.dbGetsp('dao_pnamelist_apg3', self.sqlite_db)        
+            # QCompleter setFilterMode Qt>5.2
+            # http://doc.qt.io/qt-5/qcompleter.html#filterMode-prop
+            completer.setFilterMode(Qt.MatchContains)
+            self.lineSpecies.setCompleter(completer)
+            db_table = self.checkDB()
+            retrieved = g.dbGetsp(db_table, self.sqlite_db)        
             b_container=[]
             for i in range(len(retrieved)):
                 b_container.append(retrieved[i][3] +  "," + retrieved[i][4] + "," + retrieved[i][2])
@@ -271,22 +281,6 @@ class Window(QWidget, Ui_Window):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
-    def loadSelectedTable(self):
-        try:
-            g = genlist_api.Genlist()
-            completer = QCompleter()
-            self.lineSpecies.setCompleter(completer)
-            model = QStringListModel()
-            completer.setModel(model)
-            db_table = self.checkDB()
-            sp_data = g.dbGetsp(db_table, self.sqlite_db)
-            b_container=[]
-            for i in range(len(sp_data)):
-                b_container.append(sp_data[i][3] +  "," + sp_data[i][4] + "," + sp_data[i][2])
-            model.setStringList(b_container)
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
- 
     # 產生名錄
     def genNamelist(self):
         try:
