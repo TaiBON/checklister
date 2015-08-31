@@ -278,7 +278,6 @@ Dryopteridaceae|鱗毛蕨科|細齒貫眾蕨|Cyrtomium caryotideum|Cyrtomium car
 Dryopteridaceae|鱗毛蕨科|全緣貫眾蕨|Cyrtomium falcatum|Cyrtomium falcatum (L. f.) Presl|1|0||原生
 Dryopteridaceae|鱗毛蕨科|狹葉貫眾蕨|Cyrtomium hookerianum|Cyrtomium hookerianum (Presl) C. Chr.|1|0||原生
 Dryopteridaceae|鱗毛蕨科|尖葉貫眾蕨|Cyrtomium macrophyllum var. acuminatum|Cyrtomium macrophyllum (Makino) Tagawa var. acuminatum (Diels) Tagawa|1|0|EN|原生
-Dryopteridaceae|鱗毛蕨科|尖葉貫眾蕨|Cyrtomium macrophyllum var. acuminatum|Cyrtomium macrophyllum (Makino) Tagawa var. acuminatum (Diels) Tagawa|1|0|EN|原生
 Dryopteridaceae|鱗毛蕨科|臺灣貫眾蕨|Cyrtomium taiwanianum|Cyrtomium taiwanianum Tagawa|1|0|VU|原生
 Dryopteridaceae|鱗毛蕨科|紅線蕨|Diacalpe aspidioides|Diacalpe aspidioides Bl.|1|0|VU|原生
 Dryopteridaceae|鱗毛蕨科|擬鱗毛蕨|Dryopsis fauriei|Dryopsis fauriei Holttum & Edwards|1|0||未知
@@ -2063,7 +2062,7 @@ Gesneriaceae|苦苣苔科|苦苣苔|Conandron ramondioides|Conandron ramondioide
 Gesneriaceae|苦苣苔科|槳果苣苔|Cyrtandra umbellifera|Cyrtandra umbellifera Merr.|3|0|VU|原生
 Gesneriaceae|苦苣苔科|長蒴苣苔|Didymocarpus anachoreta|Didymocarpus anachoreta (Hance) Lév.|3|0||未知
 Gesneriaceae|苦苣苔科|臺灣苣苔|Epithema taiwanense|Epithema taiwanense S.S. Ying|3|1|EN|原生
-Gesneriaceae|苦苣苔科|密花苣苔|Epithema taiwanense var. fasciculatum|Epithema taiwanense var. fasciculatum (C.B. Clarke) Z.Yu Li & M.T. Kao|3|0||原生
+Gesneriaceae|苦苣苔科|密花苣苔|Epithema taiwanense var. fasciculatum|Epithema taiwanense var. fasciculatum (C.B. Clarke) Z.Yu Li & M.T. Kao|3|0|VU|原生
 Gesneriaceae|苦苣苔科|臺灣半蒴苣苔|Hemiboea bicornuta|Hemiboea bicornuta (Hayata) Ohwi|3|0||原生
 Gesneriaceae|苦苣苔科|石吊蘭|Lysionotus pauciflorus|Lysionotus pauciflorus Maxim.|3|0||原生
 Gesneriaceae|苦苣苔科|蘭嶼吊石苣苔|Lysionotus pauciflorus var. ikedae|Lysionotus pauciflorus Maxim. var. ikedae (Hatusima) W. T. Wang|3|1|EN|原生
@@ -3304,7 +3303,6 @@ Rosaceae|薔薇科|毛刺懸鉤子|Rubus pungens var. oldhamii|Rubus pungens Cam
 Rosaceae|薔薇科|梨葉懸鉤子|Rubus pyrifolius|Rubus pyrifolius J. E. Sm.|3|0||原生
 Rosaceae|薔薇科|李棟山懸鉤子|Rubus ritozanensis|Rubus ritozanensis Sasaki|3|1||原生
 Rosaceae|薔薇科|高山懸鉤子|Rubus rolfei|Rubus rolfei Vidal|3|0|NT|原生
-Rosaceae|薔薇科|高山懸鉤子|Rubus rolfei|Rubus rolfei Vidal|3|0|NT|原生
 Rosaceae|薔薇科|刺莓|Rubus rosifolius|Rubus rosifolius J. E. Smith|3|0||原生
 Rosaceae|薔薇科|棕紅懸鉤子|Rubus rufus|Rubus rufus Focke|3|0||未知
 Rosaceae|薔薇科|紅腺懸鉤子|Rubus sumatranus|Rubus sumatranus Miq.|3|0|EN|原生
@@ -3471,7 +3469,7 @@ Rutaceae|芸香科|長果月橘|Murraya paniculata var. omphalocarpa|Murraya pan
 Rutaceae|芸香科|臺灣黃蘗|Phellodendron amurense var. wilsonii|Phellodendron amurense Rupr. var. wilsonii (Hayata & Kanehira) Chang|3|1|CR|原生
 Rutaceae|芸香科|烏柑仔|Severinia buxifolia|Severinia buxifolia (Poir.) Tenore|3|0||原生
 Rutaceae|芸香科|阿里山茵芋|Skimmia arisanensis|Skimmia arisanensis Hayata|3|1||原生
-Rutaceae|芸香科|顯脈茵芋|Skimmia japonica var. distincte-venulosa|Skimmia japonica var. distincte-venulosa (Hayata) Ho|3|0|DD|原生
+Rutaceae|芸香科|顯脈茵芋|Skimmia japonica var. distincte-venulosa|Skimmia japonica var. distincte-venulosa (Hayata) Ho|3|0||原生
 Rutaceae|芸香科|臺灣茵芋|Skimmia japonica var. orthoclada|Skimmia japonica var. orthoclada (Hayata) Masam.|3|0|DD|
 Rutaceae|芸香科|深紅茵芋|Skimmia reevesiana|Skimmia reevesiana Fortune|3|0||原生
 Rutaceae|芸香科|賊仔樹|Tetradium glabrifolium|Tetradium glabrifolium (Champ. ex Benth.) T. Hartley|3|0||原生
@@ -4060,7 +4058,6 @@ Vitaceae|葡萄科|阿穆爾葡萄|Vitis amurensis|Vitis amurensis Rupr.|3|0|VU|
 Vitaceae|葡萄科|光葉葡萄|Vitis flexuosa|Vitis flexuosa Thunb.|3|0|NT|原生
 Vitaceae|葡萄科|小葉葛藟|Vitis flexuosa fo. parvifolia|Vitis flexuosa Thunb. fo. parvifolia (Roxb.) Planch.|3|0|DD|原生
 Vitaceae|葡萄科|基隆葡萄|Vitis kelungensis|Vitis kelungensis Moriyama|3|1|NT|原生
-Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|EN|原生
 Vitaceae|葡萄科|細本葡萄|Vitis thunbergii|Vitis thunbergii Sieb. & Zucc.|3|1|NT|原生
 Vitaceae|葡萄科|小葉葡萄|Vitis thunbergii var. taiwaniana|Vitis thunbergii Sieb. & Zucc. var. taiwaniana Lu|3|1||原生
 Zygophyllaceae|蒺藜科|大花蒺藜|Tribulus cistoides|Tribulus cistoides L.|3|0||未知
@@ -5003,7 +5000,6 @@ Orchidaceae|蘭科|白鶴蘭|Calanthe triplicata|Calanthe triplicata (Willemet) 
 Orchidaceae|蘭科|長距白鶴蘭|Calanthe × dominii|Calanthe × dominii Lindl.|4|0||原生
 Orchidaceae|蘭科|高山頭蕊蘭|Cephalanthera alpicola|Cephalanthera alpicola Fukuy.|4|0||原生
 Orchidaceae|蘭科|白花肖頭蕊蘭|Cephalantheropsis calanthoides|Cephalantheropsis calanthoides (Ames) T.S. Liu & H.J. Su|4|0|NT|原生
-Orchidaceae|蘭科|白花肖頭蕊蘭|Cephalantheropsis calanthoides|Cephalantheropsis calanthoides (Ames) T.S. Liu & H.J. Su|4|0|NT|原生
 Orchidaceae|蘭科|綠花肖頭蕊蘭|Cephalantheropsis gracilis|Cephalantheropsis gracilis (Lindl.) S. Y. Hu|4|0||原生
 Orchidaceae|蘭科|低葯蘭|Chamaeanthus wenzelii|Chamaeanthus wenzelii Ames|4|0|DD|未知
 Orchidaceae|蘭科|中國指柱蘭|Cheirostylis chinensis|Cheirostylis chinensis Rolfe|4|0||原生
@@ -5022,7 +5018,7 @@ Orchidaceae|蘭科|虎紋蘭|Cleisostoma paniculatum|Cleisostoma paniculatum (Ke
 Orchidaceae|蘭科|烏來閉口蘭|Cleisostoma uraiense|Cleisostoma uraiense (Hayata) Garay & H.R. Sweet|4|0|EN|原生
 Orchidaceae|蘭科|南湖大山凹舌蘭|Coeloglossum nankotaizanensis|Coeloglossum nankotaizanensis (Masam.) Ying|4|0||未知
 Orchidaceae|蘭科|綠花凹舌蘭|Coeloglossum viride|Coeloglossum viride (L.) Hartm.|4|0||原生
-Orchidaceae|蘭科|柯麗白蘭|Collabium chinense|Collabium chinense (Rolfe) T. Tang & F. T. Wang|4|0||原生
+Orchidaceae|蘭科|柯麗白蘭|Collabium chinense|Collabium chinense (Rolfe) T. Tang & F. T. Wang|4|0|EN|原生
 Orchidaceae|蘭科|臺灣柯麗白蘭|Collabium formosanum|Collabium formosanum Hayata|4|0||原生
 Orchidaceae|蘭科|喜馬拉雅盔蘭|Corybas himalaicus|Corybas himalaicus (King & Pantl.) Schltr.|4|0|CR|未知
 Orchidaceae|蘭科|豔紫盔蘭|Corybas puniceus|Corybas puniceus T.P. Lin & W.M. Lin|4|1|CR|
@@ -5210,7 +5206,6 @@ Orchidaceae|蘭科|寶島羊耳蒜|Liparis formosana|Liparis formosana Reichb. f
 Orchidaceae|蘭科|恆春羊耳蒜|Liparis grossa|Liparis grossa Reichb. f.|4|0|NT|原生
 Orchidaceae|蘭科|齒唇羊耳蒜|Liparis henryi|Liparis henryi Rolfe|4|0||原生
 Orchidaceae|蘭科|明潭羊耳蒜|Liparis hensoaensis|Liparis hensoaensis Kudo|4|1|EX|原生
-Orchidaceae|蘭科|長穗羊耳蒜|Liparis japonica|Liparis japonica (Miq.) Maxim.|4|0|EN|原生
 Orchidaceae|蘭科|長穗羊耳蒜|Liparis japonica|Liparis japonica (Miq.) Maxim.|4|0|EN|原生
 Orchidaceae|蘭科|尾唇羊耳蒜|Liparis krameri var. sasakii|Liparis krameri Franch. & Sav. var. sasakii (Hayata) T. Hashim.|4|1|VU|原生
 Orchidaceae|蘭科|良如羊耳蘭|Liparis liangzuensis|Liparis liangzuensis T. P. Lin & W. M. Lin|4|1||原生
