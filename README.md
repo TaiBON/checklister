@@ -14,6 +14,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 ### 支援的物種清單
 
 1. 臺灣維管束植物名錄 (APGIII / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資源整合查詢系統](http://tai2.ntu.edu.tw)
+    1. 收錄物種：5479 種
 2. 臺灣鳥類名錄 2014。資料來源：[中華野鳥學會](www.bird.org.tw/index.php/works/lists)
 
 ### 開發語言及相依軟體

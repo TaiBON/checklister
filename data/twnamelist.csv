@@ -3471,7 +3471,7 @@ Rutaceae|芸香科|長果月橘|Murraya paniculata var. omphalocarpa|Murraya pan
 Rutaceae|芸香科|臺灣黃蘗|Phellodendron amurense var. wilsonii|Phellodendron amurense Rupr. var. wilsonii (Hayata & Kanehira) Chang|3|1|CR|原生
 Rutaceae|芸香科|烏柑仔|Severinia buxifolia|Severinia buxifolia (Poir.) Tenore|3|0||原生
 Rutaceae|芸香科|阿里山茵芋|Skimmia arisanensis|Skimmia arisanensis Hayata|3|1||原生
-Rutaceae|芸香科|顯脈茵芋|Skimmia japonica var. distincte-venulosa|Skimmia japonica var. distincte-venulosa (Hayata) Ho|3|0||原生
+Rutaceae|芸香科|顯脈茵芋|Skimmia japonica var. distincte-venulosa|Skimmia japonica var. distincte-venulosa (Hayata) Ho|3|0|DD|原生
 Rutaceae|芸香科|臺灣茵芋|Skimmia japonica var. orthoclada|Skimmia japonica var. orthoclada (Hayata) Masam.|3|0|DD|
 Rutaceae|芸香科|深紅茵芋|Skimmia reevesiana|Skimmia reevesiana Fortune|3|0||原生
 Rutaceae|芸香科|賊仔樹|Tetradium glabrifolium|Tetradium glabrifolium (Champ. ex Benth.) T. Hartley|3|0||原生
@@ -3684,7 +3684,7 @@ Solanaceae|茄科|星茄|Solanum seaforthianum|Solanum seaforthianum Andrews|3|0
 Solanaceae|茄科|擬刺茄|Solanum sisymbriifolium|Solanum sisymbriifolium Lam.|3|0||歸化
 Solanaceae|茄科|水茄|Solanum torvum|Solanum torvum Swartz|3|0||歸化
 Solanaceae|茄科|馬鈴薯|Solanum tuberosum|Solanum tuberosum L.|3|0||歸化
-Solanaceae|茄科|黃水茄|Solanum undatum|Solanum undatum Lam.|3|0||原生
+Solanaceae|茄科|黃水茄|Solanum undatum|Solanum undatum Lam.|3|0|VU|原生
 Solanaceae|茄科|毛果茄|Solanum viarum|Solanum viarum Dunal|3|0||歸化
 Solanaceae|茄科|印度茄|Solanum violaceum|Solanum violaceum Ortega|3|0||原生
 Solanaceae|茄科|龍珠|Tubocapsicum anomalum|Tubocapsicum anomalum (Franch. & Sav.) Makino|3|0||原生
@@ -5003,6 +5003,7 @@ Orchidaceae|蘭科|白鶴蘭|Calanthe triplicata|Calanthe triplicata (Willemet) 
 Orchidaceae|蘭科|長距白鶴蘭|Calanthe × dominii|Calanthe × dominii Lindl.|4|0||原生
 Orchidaceae|蘭科|高山頭蕊蘭|Cephalanthera alpicola|Cephalanthera alpicola Fukuy.|4|0||原生
 Orchidaceae|蘭科|白花肖頭蕊蘭|Cephalantheropsis calanthoides|Cephalantheropsis calanthoides (Ames) T.S. Liu & H.J. Su|4|0|NT|原生
+Orchidaceae|蘭科|白花肖頭蕊蘭|Cephalantheropsis calanthoides|Cephalantheropsis calanthoides (Ames) T.S. Liu & H.J. Su|4|0|NT|原生
 Orchidaceae|蘭科|綠花肖頭蕊蘭|Cephalantheropsis gracilis|Cephalantheropsis gracilis (Lindl.) S. Y. Hu|4|0||原生
 Orchidaceae|蘭科|低葯蘭|Chamaeanthus wenzelii|Chamaeanthus wenzelii Ames|4|0|DD|未知
 Orchidaceae|蘭科|中國指柱蘭|Cheirostylis chinensis|Cheirostylis chinensis Rolfe|4|0||原生
@@ -5209,6 +5210,7 @@ Orchidaceae|蘭科|寶島羊耳蒜|Liparis formosana|Liparis formosana Reichb. f
 Orchidaceae|蘭科|恆春羊耳蒜|Liparis grossa|Liparis grossa Reichb. f.|4|0|NT|原生
 Orchidaceae|蘭科|齒唇羊耳蒜|Liparis henryi|Liparis henryi Rolfe|4|0||原生
 Orchidaceae|蘭科|明潭羊耳蒜|Liparis hensoaensis|Liparis hensoaensis Kudo|4|1|EX|原生
+Orchidaceae|蘭科|長穗羊耳蒜|Liparis japonica|Liparis japonica (Miq.) Maxim.|4|0|EN|原生
 Orchidaceae|蘭科|長穗羊耳蒜|Liparis japonica|Liparis japonica (Miq.) Maxim.|4|0|EN|原生
 Orchidaceae|蘭科|尾唇羊耳蒜|Liparis krameri var. sasakii|Liparis krameri Franch. & Sav. var. sasakii (Hayata) T. Hashim.|4|1|VU|原生
 Orchidaceae|蘭科|良如羊耳蘭|Liparis liangzuensis|Liparis liangzuensis T. P. Lin & W. M. Lin|4|1||原生
