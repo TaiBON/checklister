@@ -5,7 +5,7 @@ all:
 	$(PYUIC) ui/namegen.ui -o ui_window.py
 
 binary:
-	pyinstaller -w NGenerator.spec
+	pyinstaller --onefile NGenerator.spec
 	./symlink_macos.sh && cp -rf dist/NGenerator.app /Applications/; cp -rf dist/NGenerator.app ../../packages/
 
 update_db:
