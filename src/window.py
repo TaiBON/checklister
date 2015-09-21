@@ -112,10 +112,10 @@ class Window(QWidget, Ui_Window):
             if not os.path.exists(self.checklist_db_dir):
                 os.mkdir(self.checklist_db_dir)
                 # copy db to user directory
-                shutil.copyfile(builtin_sqlite_db, self.checklist_db)
-                shutil.copyfile(builtin_sqlite_db, self.latest_db)
+                shutil.copy(builtin_sqlite_db, self.checklist_db)
+                shutil.copy(builtin_sqlite_db, self.latest_db)
             if not os.path.exists(self.latest_db):
-                shutil.copyfile(builtin_sqlite_db, self.latest_db)
+                shutil.copy(builtin_sqlite_db, self.latest_db)
             return(self.checklist_db)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -125,22 +125,26 @@ class Window(QWidget, Ui_Window):
         try:
             self.checkLocalDB()
             # backup original database
-            shutil.copyfile(self.checklist_db, self.orig_db)
+            shutil.copy(self.checklist_db, self.orig_db)
             # use pycurl to update database
             curl = pycurl.Curl()
             dburl = 'https://raw.github.com/mutolisp/namelist-generator/master/src/db/twnamelist.db'
             curl.setopt(pycurl.URL, dburl)
-            #curl.setopt(pycurl.FOLLOWLOCATION, True)
-            curl.perform()
-            if curl.getinfo(curl.HTTP_CODE) == 200:
-                with open(self.latest_db, 'wb') as f:
-                    curl.setopt(curl.WRITEDATA, f)
-                    curl.perform()
-                # update to latest
-                shutil.copyfile(self.latest_db, self.checklist_db)
+            curl.setopt(pycurl.FOLLOWLOCATION, True)
+            #curl.perform()
+            #if curl.getinfo(curl.HTTP_CODE) == 200:
+            with open(self.latest_db, 'wb+') as f:
+                curl.setopt(curl.WRITEDATA, f)
+                curl.perform()
+            # update to latest
+            shutil.copy(self.latest_db, self.checklist_db)
             QMessageBox.information(self, self.tr('Checklist generator'), self.tr('Update DB done!'))
+            #else:
+            #    QMessageBox.information(self, self.tr('Checklist generator'), self.tr('Update DB failed!')
             #qApp.restoreOverrideCursor()
             curl.close()
+            # update completer
+            self.spCompleter()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
