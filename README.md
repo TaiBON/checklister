@@ -117,3 +117,8 @@ namelist-generator 完全依賴 baselist (也就是 data/twnamelist.* )，所以
 ### LICENSE
 python, shell script 等採用 GPL v3
 資料檔(即 *.csv, *.db)採用 public domain
+
+
+### Discussion Group
+
+[Facebook "checklist generator"](https://www.facebook.com/groups/1491667327794847/)
