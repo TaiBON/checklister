@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>812</width>
-    <height>639</height>
+    <width>817</width>
+    <height>648</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -24,15 +24,18 @@
    </property>
    <property name="font">
     <font>
-     <family>Arial Narrow</family>
+     <family>Arial</family>
     </font>
    </property>
    <property name="currentIndex">
     <number>0</number>
    </property>
+   <property name="usesScrollButtons">
+    <bool>true</bool>
+   </property>
    <widget class="QWidget" name="tabSelect">
     <attribute name="title">
-     <string>選擇物種</string>
+     <string>Select species</string>
     </attribute>
     <widget class="QTreeWidget" name="treeWidget">
      <property name="geometry">
@@ -81,17 +84,17 @@
      </attribute>
      <column>
       <property name="text">
-       <string>科名</string>
+       <string>Family</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>學名</string>
+       <string>Name</string>
       </property>
      </column>
      <column>
       <property name="text">
-       <string>中文名</string>
+       <string>Common name</string>
       </property>
      </column>
     </widget>
@@ -100,7 +103,7 @@
       <rect>
        <x>10</x>
        <y>10</y>
-       <width>551</width>
+       <width>631</width>
        <height>51</height>
       </rect>
      </property>
@@ -108,7 +111,7 @@
       <item row="0" column="0">
        <widget class="QLabel" name="label_5">
         <property name="text">
-         <string>中文名</string>
+         <string>Local (common) name</string>
         </property>
        </widget>
       </item>
@@ -128,7 +131,7 @@
          </font>
         </property>
         <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;輸入物種開頭前幾字則會列出近似物種，&lt;/p&gt;&lt;p&gt;可按 enter 或 return 選擇該物種加入下方物種名錄清單&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="autoFillBackground">
          <bool>false</bool>
@@ -138,7 +141,7 @@
       <item row="0" column="2">
        <widget class="QPushButton" name="butAddToTree">
         <property name="text">
-         <string>加入清單</string>
+         <string>add species</string>
         </property>
        </widget>
       </item>
@@ -154,7 +157,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>刪除所選物種</string>
+      <string>Delete selected</string>
      </property>
     </widget>
     <widget class="QPushButton" name="butDeleteAll">
@@ -167,7 +170,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>刪除所有物種</string>
+      <string>Delete all species</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_7">
@@ -180,13 +183,13 @@
       </rect>
      </property>
      <property name="text">
-      <string>物種名錄清單</string>
+      <string>Checklist</string>
      </property>
     </widget>
    </widget>
    <widget class="QWidget" name="tabBatch">
     <attribute name="title">
-     <string>資料庫管理</string>
+     <string>DB management</string>
     </attribute>
     <widget class="QWidget" name="horizontalLayoutWidget_2">
      <property name="geometry">
@@ -201,7 +204,7 @@
       <item>
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>物種清單資料表</string>
+         <string>Checklist file</string>
         </property>
        </widget>
       </item>
@@ -215,10 +218,10 @@
       <item>
        <widget class="QPushButton" name="butBlist">
         <property name="toolTip">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;選擇物種清單的資料表，這個資料表為 csv 檔案，以 UTF-8 編碼。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="text">
-         <string>選擇檔案</string>
+         <string>Select file</string>
         </property>
        </widget>
       </item>
@@ -231,7 +234,7 @@
     <rect>
      <x>10</x>
      <y>10</y>
-     <width>796</width>
+     <width>791</width>
      <height>111</height>
     </rect>
    </property>
@@ -239,10 +242,10 @@
     <item row="2" column="2">
      <widget class="QPushButton" name="butSelectTempFile">
       <property name="toolTip">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;選擇暫存的物種中名暫存檔，未來可重複載入此檔案批次產生名錄&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select temporary file to save common names, and this file can be loaded to generate checklist later&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="text">
-       <string>選擇檔案</string>
+       <string>Select file ...</string>
       </property>
      </widget>
     </item>
@@ -256,17 +259,17 @@
       </property>
       <item>
        <property name="text">
-        <string>臺灣維管束植物名錄(APG III)</string>
+        <string>Vascular plants of Taiwan (APG III)</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>臺灣維管束植物名錄(Flora of Taiwan 2nd Edition)</string>
+        <string>Vascular plants of Taiwan (Flora of Taiwan 2nd Edition)</string>
        </property>
       </item>
       <item>
        <property name="text">
-        <string>臺灣鳥類名錄(2014)</string>
+        <string>Bird list of Taiwan (2014)</string>
        </property>
       </item>
      </widget>
@@ -281,17 +284,17 @@
     <item row="1" column="0">
      <widget class="QLabel" name="label_2">
       <property name="text">
-       <string>輸出名錄檔案</string>
+       <string>Export checklist file</string>
       </property>
      </widget>
     </item>
     <item row="1" column="2">
      <widget class="QPushButton" name="butSelectOutput">
       <property name="toolTip">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;選擇輸出的名錄檔案，會依照附檔名輸出相對應的格式。&lt;/p&gt;&lt;p&gt;目前支援的格式有：Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md) 等&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="text">
-       <string>選擇檔案</string>
+       <string>Select file ...</string>
       </property>
      </widget>
     </item>
@@ -301,24 +304,24 @@
     <item row="0" column="2">
      <widget class="QPushButton" name="butUpdateDB">
       <property name="toolTip">
-       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;更新名錄資料庫(需連上網路)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update the checklist database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
       </property>
       <property name="text">
-       <string>更新資料庫</string>
+       <string>Update DB</string>
       </property>
      </widget>
     </item>
     <item row="0" column="0">
      <widget class="QLabel" name="label_3">
       <property name="text">
-       <string>載入資料庫</string>
+       <string>Checklist DB</string>
       </property>
      </widget>
     </item>
     <item row="2" column="0">
      <widget class="QLabel" name="label_6">
       <property name="text">
-       <string>物種中名暫存檔</string>
+       <string>Temporary file for local names</string>
       </property>
      </widget>
     </item>
@@ -328,14 +331,14 @@
     <item row="2" column="4">
      <widget class="QPushButton" name="butSlist">
       <property name="text">
-       <string>選擇檔案</string>
+       <string>Select file ...</string>
       </property>
      </widget>
     </item>
     <item row="1" column="3">
      <widget class="QLabel" name="label_4">
       <property name="text">
-       <string>載入物種中名批次處理</string>
+       <string>Load local batch file</string>
       </property>
      </widget>
     </item>
@@ -344,9 +347,9 @@
   <widget class="QWidget" name="horizontalLayoutWidget_4">
    <property name="geometry">
     <rect>
-     <x>630</x>
+     <x>620</x>
      <y>580</y>
-     <width>171</width>
+     <width>179</width>
      <height>51</height>
     </rect>
    </property>
@@ -354,14 +357,14 @@
     <item>
      <widget class="QPushButton" name="butGenerateSp">
       <property name="text">
-       <string>產生名錄</string>
+       <string>Generate</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="butClose1">
       <property name="text">
-       <string>關閉</string>
+       <string>Close</string>
       </property>
      </widget>
     </item>

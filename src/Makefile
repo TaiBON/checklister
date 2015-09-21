@@ -4,6 +4,16 @@ PYTHON=python3
 all:
 	$(PYUIC) ui/namegen.ui -o ui_window.py
 
+translate:
+	pylupdate5 window.py -ts i18n/window_zh_TW.ts
+	pylupdate5 window.py -ts i18n/window_zh_CN.ts
+	pylupdate5 window.py -ts i18n/window_ja_JP.ts
+	pylupdate5 window.py -ts i18n/window_ko_KR.ts
+	pylupdate5 ui_window.py -ts i18n/ui_window_zh_TW.ts
+	pylupdate5 ui_window.py -ts i18n/ui_window_zh_CN.ts
+	pylupdate5 ui_window.py -ts i18n/ui_window_ja_JP.ts
+	pylupdate5 ui_window.py -ts i18n/ui_window_ko_KR.ts
+
 binary:
 	pyinstaller --onefile NGenerator.spec
 	./symlink_macos.sh && cp -rf dist/NGenerator.app /Applications/; cp -rf dist/NGenerator.app ../../packages/

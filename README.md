@@ -1,7 +1,7 @@
 namelist-generator
 ==================
 
-## 名錄產生器
+## 名錄產生器 Checklist generator
 
 namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清單(sample) 」自動產生階層式的名錄，
 植物名錄按照蕨類、裸子植物、「雙子葉植物」、單子葉植物四大類排序，下依照科名字母順序、物種名字母順序排列。
@@ -14,37 +14,39 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 ### 支援的物種清單
 
 1. 臺灣維管束植物名錄 (APGIII / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資源整合查詢系統](http://tai2.ntu.edu.tw)
-    1. 收錄物種：5479 種
+    1. 收錄物種：5481 種 (v 0.2.5)
 2. 臺灣鳥類名錄 2014。資料來源：[中華野鳥學會](www.bird.org.tw/index.php/works/lists)
 
 ### 開發語言及相依軟體
 
-* 開發語言 [Python 3](https://www.python.org)
+* Developing language [Python 3](https://www.python.org)
     + libraries: codecs, csv, subprocess, sqlite, sys, etc.
-    + 資料庫: sqlite
+    + Database: sqlite
     + GUI libraries: pyqt5 (Qt 5.5)
-    + 打包程式: pyinstaller 
+    + Convert python into standalone executable: pyinstaller 
 
 * 文件格式轉換 [Pandoc](http://johnmacfarlane.net/pandoc/)
 
-### 安裝
+### Installation
 
-* 支援平台，跨平台(32/64 bits)： 
-    + MacOSX (測試過 10.10，理論上 10.6+ 以上應該都可用)
-    + Windows (目前編譯使用 32 bits MinGW，測試過 Windows 10 x64, 8 x64, 7 x64)
-    + GNU/Linux (Ubuntu 14.04 測試過), *BSD (尚未編譯測試)
+* Supported platforms (platform-independant 32/64 bits)： 
+    + MacOSX (Tested on 10.10， version 10.6+ should work)
+    + Windows (Compiled with 32 bits MinGW，tested on Windows 10 x64, 8 x64, 7 x64)
+    + GNU/Linux (Tested on Ubuntu 14.04), *BSD (not yet test)
 
-* 下載編譯好的執行檔：最新版為 [0.2.3 版](https://github.com/mutolisp/namelist-generator/tree/v0.2.3)
-    + Windows 平台(*.exe)，將執行檔複製到你喜歡的地方即可(免安裝，放在隨身碟也行)
-    + MacOS X 平台，解壓縮後複製到 /Applications 即可或是放在你喜歡的位置
+* Supported languages: zh_TW (traditional Chinese), zh_CN (simplified Chinese), ja_JP (Japanese), ko_KR (Korean)
 
-* 自行編譯(linux, macos)
-    1. 安裝 git, python3, pip, pyqt5, pandoc (視需求可能會需要安裝 zlib 之類的)
-    2. pip 安裝 pypandoc
-    3. 複製 pyinstaller python3 分支原始碼: `git clone https://github.com/pyinstaller/pyinstaller.git`
+* Download executable binary：Latest version is [0.2.5 版](https://github.com/mutolisp/namelist-generator/tree/v0.2.5)
+    + Windows (*.exe)，將執行檔複製到你喜歡的地方即可(免安裝，放在隨身碟也行)
+    + MacOS X ，解壓縮後複製到 /Applications 即可或是放在你喜歡的位置
+
+* Compile by yourself (linux, macos)
+    1. Install git, python3, pip, pyqt5, pandoc (視需求可能會需要安裝 zlib 之類的)
+    2. pip install pypandoc
+    3. Clone pyinstaller python3 branch: `git clone https://github.com/pyinstaller/pyinstaller.git`
     4. `cd pyinstaller; git checkout python3`
-    5. 安裝 bootloader: `cd pyinstaller; python3 waf configure; python3 waf all`
-    6. 安裝 pyinstaller: `cd ..; python3 setup.py install`
+    5. Install bootloader: `cd pyinstaller; python3 waf configure; python3 waf all`
+    6. Install pyinstaller: `cd ..; python3 setup.py install`
     7. `git clone https://github.com/mutolisp/namelist-generator`
     8. `make binary; sudo cp dist/NGenerator /usr/local/bin/`
 

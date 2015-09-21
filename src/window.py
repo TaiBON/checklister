@@ -46,6 +46,7 @@ class Window(QWidget, Ui_Window):
             # QCompleter setFilterMode Qt>5.2
             # http://doc.qt.io/qt-5/qcompleter.html#filterMode-prop
             completer.setFilterMode(Qt.MatchContains)
+            completer.setCaseSensitivity(Qt.CaseInsensitive)
             self.lineSpecies.setCompleter(completer)
             db_table = self.checkDB()
             retrieved = g.dbGetsp(db_table, self.sqlite_db)        
@@ -63,7 +64,7 @@ class Window(QWidget, Ui_Window):
         """
         try:
             self.lineBlist.clear()
-            Blist = QFileDialog.getOpenFileName(self, self.tr(u"Open File 開啟物種資料檔案:"), \
+            Blist = QFileDialog.getOpenFileName(self, self.tr("Open file:"), \
                     QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
             if Blist is '' or Blist is None:
                 return
@@ -96,14 +97,15 @@ class Window(QWidget, Ui_Window):
     def browSlist(self):
         try:
             self.lineSlist.clear()
-            Slist = QFileDialog.getOpenFileName(self, self.tr(u"Open File 開啟物種清單檔案:"), \
+            Slist = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
                     QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
             if Slist is None or Slist is '':
                 return
             self.lineSlist.setText(Slist)
-            info_message = u'''載入物種清單批次處理時，將會在同一目錄另存一個暫存檔(檔名_temp.txt/csv)，同時 \
-並載入至下方的物種名錄清單中，您可修改後再產生名錄檔案。'''
-            QMessageBox.information(self, "Info", info_message)
+            info_message = u'''When you load species file (only common names) to \
+            generate checklist, the "checklist generator" will save a temporary file (filename_temp.txt/csv) within the same directory, \
+            and load this species file into checklist below. You can add/remove species to generate checklist.'''
+            QMessageBox.information(self, "Info", self.tr(info_message))
             Slist_str = str.split(str(Slist), '.')
             Slist_modified = Slist_str[0] + '_temp.' + Slist_str[1]
             self.lineTempFile.setText(Slist_modified)
@@ -153,7 +155,8 @@ class Window(QWidget, Ui_Window):
                 nsp.append(i[0])
             nsp = ', '.join(nsp)
             if len(nsp) > 0:
-                QMessageBox.information(self, "Warning", u"下列物種不存在資料庫中，請查明後再重新輸入: %s" % nsp)
+                QMessageBox.information(self, "Warning", \
+                        self.tr(u"The following species did not exist in our database, please check again: %s" % nsp))
             # clean the tree first
             self.delAllTreeItems() 
             for i in range(len(fetched_results)):
@@ -169,8 +172,8 @@ class Window(QWidget, Ui_Window):
     def browOutput(self):
         try:
             self.lineOutputFilename.clear()
-            saveOutputFile = QFileDialog.getSaveFileName(self, self.tr(u"Save File as 儲存輸出的名錄檔案:"), \
-                    QDir.homePath(), self.tr("Text files (*.docx *.odt *.txt)"))[0]
+            saveOutputFile = QFileDialog.getSaveFileName(self, self.tr(u"Save file as:"), \
+                    QDir.homePath(), self.tr("Text files (*.docx *.odt)"))[0]
             if saveOutputFile is None or saveOutputFile is '':
                 return
             self.lineOutputFilename.setText(saveOutputFile)
@@ -220,7 +223,7 @@ class Window(QWidget, Ui_Window):
     def addToTree(self):
         try:
             if self.lineSpecies.text() is '':
-                QMessageBox.information(self, "Warning", u"請輸入物種名稱!")
+                QMessageBox.information(self, "Warning", self.tr("Please input the species name!"))
                 return
             else:
                 # check for species items
@@ -242,7 +245,7 @@ class Window(QWidget, Ui_Window):
                    self.treeWidget.addTopLevelItem(item)
                    self.lineSpecies.clear()
                 else:
-                    QMessageBox.information(self, "Warning", u"物種名稱%s不存在資料庫中!" % species_item[0])
+                    QMessageBox.information(self, "Warning", self.tr("The species %s did not exist in our database!") % species_item[0])
                     self.lineSpecies.clear()
             self.lineSpecies.clear()
         except BaseException as e:
@@ -289,12 +292,10 @@ class Window(QWidget, Ui_Window):
             # getdbtable
             db_table = self.checkDB()
 
-            #if self.lineBlist.text() == '':
-            #    QMessageBox.information(self, "Warning", "請指定物種資料檔案")
             if self.lineOutputFilename.text() == '':
-                QMessageBox.information(self, "Warning", u"請指定輸出檔案名稱")
+                QMessageBox.information(self, "Warning", self.tr("Please input export file name "))
             elif self.lineTempFile.text() == '' or self.lineSlist == '':
-                QMessageBox.information(self, "Warning", u"請指定要存物種清單之檔案")
+                QMessageBox.information(self, "Warning", self.tr("Please input the file to store checklist file"))
             else:
                 saved_list = str(self.lineTempFile.text())
                 with codecs.open(saved_list, 'w+', 'utf-8') as f:
@@ -310,14 +311,14 @@ class Window(QWidget, Ui_Window):
                 conn.commit()
                 # export outputfile
                 g.genEngine(self.sqlite_db, db_table, saved_list, output_flist[1], output_flist[0])
-                QMessageBox.information(self, u"名錄產生器", u"名錄已產生完畢")
+                QMessageBox.information(self, self.tr('Checklist generator'), self.tr('Checklist generated!'))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
     def browTempfile(self):
         try:
             self.lineTempFile.clear()
-            saveTempFile = QFileDialog.getSaveFileName(self, self.tr(u"Save File as 開啟物種清單檔案:"), QDir.homePath(), \
+            saveTempFile = QFileDialog.getSaveFileName(self, self.tr(u"Save File as ... "), QDir.homePath(), \
                     self.tr("Text files (*.txt *.csv)"))[0]
             if saveTempFile is None or saveTempFile is '':
                 return

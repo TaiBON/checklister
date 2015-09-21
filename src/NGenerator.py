@@ -1,12 +1,20 @@
 #!/usr/bin/env python3
 import sys 
 import genlist_api
-from PyQt5.QtCore import Qt
+import locale
+from PyQt5.QtCore import Qt, QLocale, QTranslator
 from PyQt5.QtWidgets import *
 from window import Window
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    current_locale = QLocale()
+    trans = QTranslator()
+    g = genlist_api.Genlist()
+    i18n_ui_window_trans = g.resource_path(os.path.join('i18n', 'ui_window_' + current_locale.name() + '.qm'))
+    trans.load(i18n_ui_window_trans)
+    app.installTranslator(trans)
+
     window = Window()
     window.show()
     sys.exit(app.exec_())
