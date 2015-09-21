@@ -2,6 +2,7 @@
 import sys 
 import genlist_api
 import locale
+import os
 from PyQt5.QtCore import Qt, QLocale, QTranslator
 from PyQt5.QtWidgets import *
 from window import Window

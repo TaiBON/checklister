@@ -11,6 +11,8 @@ import csv
 import sys
 import traceback
 import os
+import pycurl
+import shutil
 
 class Window(QWidget, Ui_Window):
 
@@ -32,6 +34,7 @@ class Window(QWidget, Ui_Window):
             self.butDeleteAll.clicked.connect(self.delAllTreeItems)
             self.butDeleteSelection.clicked.connect(self.delSelectedItems)
             self.comboDBselect.activated.connect(self.spCompleter)
+            self.butUpdateDB.clicked.connect(self.updateDB)
             # enable completer to show matched species list
             self.spCompleter()
         except BaseException as e:
@@ -93,6 +96,32 @@ class Window(QWidget, Ui_Window):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    def updateDB(self):
+        try:
+            qApp.setOverrideCursor(Qt.WaitCursor)
+
+            g = genlist_api.Genlist()
+            curl = pycurl.Curl()
+            orig_sqlite_db = g.resource_path(os.path.join('db', 'twnamelist.db'))
+            backup_sqlite_db = g.resource_path(os.path.join('db', 'twnamelist.db.back'))
+            latest_sqlite_db = g.resource_path(os.path.join('db', 'latest.db'))
+            dburl = 'https://raw.github.com/mutolisp/namelist-generator/master/src/db/twnamelist.db'
+            curl.setopt(pycurl.URL, dburl)
+            curl.setopt(pycurl.FOLLOWLOCATION, 1)
+            curl.perform()
+            if curl.getinfo(curl.HTTP_CODE) == 200:
+                with open(latest_sqlite_db, 'wb') as f:
+                    curl.setopt(curl.WRITEDATA, f)
+                    curl.perform()
+                shutil.copyfile(orig_sqlite_db, backup_sqlite_db)
+                shutil.copyfile(latest_sqlite_db, orig_sqlite_db)
+                QMessageBox.information(self, self.tr('Checklist generator'), self.tr('Update DB done!'))
+                qApp.restoreOverrideCursor()
+            else:
+                QMessageBox.information(self, self.tr('Checklist generator'), self.tr('Update DB failed!'))
+            curl.close()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
 
     def browSlist(self):
         try:

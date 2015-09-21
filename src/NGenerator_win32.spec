@@ -18,6 +18,7 @@ def Datafiles(*filenames, **kw):
 
 block_cipher = None
 dbfile = Datafiles('db/twnamelist.db', strip_path=False) # keep the path of this file
+i18n_tree = Tree('i18n', prefix='i18n', excludes=['.ts'])
 
 a = Analysis(['NGenerator.py'],
             #pathex=['Z:\\Documents\\Dropbox\\projects\\2014_TWplantlist\\namelist-generator\\src\\qt-gui'],
@@ -33,6 +34,7 @@ exe = EXE(pyz,
           a.binaries + [('pandoc.exe', 'C:\\Users\\psilotum\\AppData\\Local\\Pandoc\\pandoc.exe', 'BINARY')],
           a.zipfiles,
           a.datas,
+          i18n_tree,
           dbfile,
           icon='.\\icons\\ngenerator.ico',
           name='NGenerator.exe',
