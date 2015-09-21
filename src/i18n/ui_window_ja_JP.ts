@@ -21,12 +21,12 @@
     <message>
         <location filename="ui_window.py" line="160"/>
         <source>Common name</source>
-        <translation><byte value="x8"/>和名</translation>
+        <translation>和名</translation>
     </message>
     <message>
         <location filename="ui_window.py" line="161"/>
         <source>Local (common) name</source>
-        <translation><byte value="x8"/>和名</translation>
+        <translation>和名</translation>
     </message>
     <message>
         <location filename="ui_window.py" line="162"/>

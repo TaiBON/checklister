@@ -21,8 +21,16 @@ class Window(QWidget, Ui_Window):
             super(Window, self).__init__()
             #self.sqlite_db = g.resource_path('twnamelist.db')
             g = genlist_api.Genlist()
-            db_filename = 'twnamelist.db'
-            self.sqlite_db = g.resource_path(os.path.join('db', db_filename))
+            #db_filename = 'twnamelist.db'
+            #self.sqlite_db = g.resource_path(os.path.join('db', db_filename))
+
+            self.home = os.path.expanduser("~")
+            self.checklist_db_dir = g.resource_path(os.path.join(self.home, 'checklist_db'))
+            self.checklist_db = g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist.db'))
+            self.latest_db = g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist_latest.db'))
+            self.orig_db = g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist_orig.db'))
+            self.sqlite_db = self.checkLocalDB()
+
             self.setupUi(self)
             self.butBlist.clicked.connect(self.browBaselist)
             self.butSlist.clicked.connect(self.browSlist)
@@ -96,29 +104,42 @@ class Window(QWidget, Ui_Window):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    def checkLocalDB(self):
+        try:
+            g = genlist_api.Genlist()
+            db_filename = 'twnamelist.db'
+            builtin_sqlite_db = g.resource_path(os.path.join('db', db_filename))
+            if not os.path.exists(self.checklist_db_dir):
+                os.mkdir(self.checklist_db_dir)
+                # copy db to user directory
+                shutil.copyfile(builtin_sqlite_db, self.checklist_db)
+                shutil.copyfile(builtin_sqlite_db, self.latest_db)
+            if not os.path.exists(self.latest_db):
+                shutil.copyfile(builtin_sqlite_db, self.latest_db)
+            return(self.checklist_db)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+
     def updateDB(self):
         try:
-            qApp.setOverrideCursor(Qt.WaitCursor)
-
-            g = genlist_api.Genlist()
+            self.checkLocalDB()
+            # backup original database
+            shutil.copyfile(self.checklist_db, self.orig_db)
+            # use pycurl to update database
             curl = pycurl.Curl()
-            orig_sqlite_db = g.resource_path(os.path.join('db', 'twnamelist.db'))
-            backup_sqlite_db = g.resource_path(os.path.join('db', 'twnamelist.db.back'))
-            latest_sqlite_db = g.resource_path(os.path.join('db', 'latest.db'))
             dburl = 'https://raw.github.com/mutolisp/namelist-generator/master/src/db/twnamelist.db'
             curl.setopt(pycurl.URL, dburl)
-            curl.setopt(pycurl.FOLLOWLOCATION, 1)
+            #curl.setopt(pycurl.FOLLOWLOCATION, True)
             curl.perform()
             if curl.getinfo(curl.HTTP_CODE) == 200:
-                with open(latest_sqlite_db, 'wb') as f:
+                with open(self.latest_db, 'wb') as f:
                     curl.setopt(curl.WRITEDATA, f)
                     curl.perform()
-                shutil.copyfile(orig_sqlite_db, backup_sqlite_db)
-                shutil.copyfile(latest_sqlite_db, orig_sqlite_db)
-                QMessageBox.information(self, self.tr('Checklist generator'), self.tr('Update DB done!'))
-                qApp.restoreOverrideCursor()
-            else:
-                QMessageBox.information(self, self.tr('Checklist generator'), self.tr('Update DB failed!'))
+                # update to latest
+                shutil.copyfile(self.latest_db, self.checklist_db)
+            QMessageBox.information(self, self.tr('Checklist generator'), self.tr('Update DB done!'))
+            #qApp.restoreOverrideCursor()
             curl.close()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
