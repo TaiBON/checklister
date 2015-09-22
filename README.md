@@ -1,7 +1,7 @@
-namelist-generator
-==================
 
-## 名錄產生器 Checklist generator
+名錄產生器 Checklist generator
+==============================
+
 
 namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清單(sample) 」自動產生階層式的名錄，
 植物名錄按照蕨類、裸子植物、「雙子葉植物」、單子葉植物四大類排序，下依照科名字母順序、物種名字母順序排列。
@@ -11,13 +11,13 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 
 授權為通用公共授權第三版 (General Public License version 3; GPL v3)，也就是您可以自由複製、取得、散佈並修改。
 
-### 支援的物種清單
+### Supported checklist
 
-1. 臺灣維管束植物名錄 (APGIII / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資源整合查詢系統](http://tai2.ntu.edu.tw)
-    1. 收錄物種：5481 種 (v 0.2.5)
-2. 臺灣鳥類名錄 2014。資料來源：[中華野鳥學會](www.bird.org.tw/index.php/works/lists)
+1. 臺灣維管束植物名錄 (Vascular plants of Taiwan, APGIII / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資源整合查詢系統](http://tai2.ntu.edu.tw)
+    1. 收錄物種：5481 種 (v 0.2.5, 2015-09-21)
+2. 臺灣鳥類名錄 2014 (Bird list of Taiwan)。資料來源：[中華野鳥學會](www.bird.org.tw/index.php/works/lists)
 
-### 開發語言及相依軟體
+### Developing language and dependencies
 
 * Developing language [Python 3](https://www.python.org)
     + libraries: codecs, csv, subprocess, sqlite, sys, etc.
@@ -25,7 +25,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
     + GUI libraries: pyqt5 (Qt 5.5)
     + Convert python into standalone executable: pyinstaller 
 
-* 文件格式轉換 [Pandoc](http://johnmacfarlane.net/pandoc/)
+* Document conversion [Pandoc](http://johnmacfarlane.net/pandoc/)
 
 ### Installation
 
@@ -36,9 +36,9 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 
 * Supported languages: zh_TW (traditional Chinese), zh_CN (simplified Chinese), ja_JP (Japanese), ko_KR (Korean)
 
-* Download executable binary：Latest version is [0.2.5 版](https://github.com/mutolisp/namelist-generator/tree/v0.2.5)
-    + Windows (*.exe)，將執行檔複製到你喜歡的地方即可(免安裝，放在隨身碟也行)
-    + MacOS X ，解壓縮後複製到 /Applications 即可或是放在你喜歡的位置
+* Download executable binary：Latest version is [0.2.5](https://github.com/mutolisp/namelist-generator/tree/v0.2.5)
+    + Windows (*.exe), copy the executable file to whatever you like (even on USB disk)
+    + MacOS X, copy, unarchive and put NGenerator.app in /Applications
 
 * Compile by yourself (linux, macos)
     1. Install git, python3, pip, pyqt5, pandoc (視需求可能會需要安裝 zlib 之類的)
@@ -50,7 +50,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
     7. `git clone https://github.com/mutolisp/namelist-generator`
     8. `make binary; sudo cp dist/NGenerator /usr/local/bin/`
 
-### 使用方法
+### How to use
 
 ![點選物種加入名錄清單中](https://raw.github.com/mutolisp/namelist-generator/master/docs/NGenerator_v0.2.1.png)
 
@@ -105,7 +105,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 
 ![Demo docx](https://github.com/mutolisp/namelist-generator/blob/master/demo/demo_docx.png)
 
-### 同物異名或同名異物
+### Synonyms 同物異名或同名異物
 namelist-generator 完全依賴 baselist (也就是 data/twnamelist.* )，所以只要 baselist 裡頭資料正確，產生的名錄即為正確名錄。
 但仍會有一些中名相同的問題需要修正，
 例如：
