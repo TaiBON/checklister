@@ -15,7 +15,7 @@ if __name__ == "__main__":
     i18n_ui_window_trans = g.resource_path(os.path.join('i18n', 'ui_window_' + current_locale.name() + '.qm'))
     trans.load(i18n_ui_window_trans)
     app.installTranslator(trans)
-
+    
     window = Window()
     window.show()
     sys.exit(app.exec_())
