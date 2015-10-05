@@ -59,15 +59,19 @@ class Window(QMainWindow, Ui_MainWindow):
             self.ui.butCheckBSelect.clicked.connect(self.selChecklistB)
             self.ui.butCompare.clicked.connect(self.checklistCompare)
 
+            # merge checklist actions
+            self.ui.butMergeChecklists.clicked.connect(self.selMergedList)
+
+            # load menubar
             menubar = self.menuBar()
-            self.statusBar().showMessage('Ready')
+            self.statusBar().showMessage(self.tr('Ready'))
             self.setWindowTitle(self.tr('Checklist generator'))  
 
 
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
-
+    
     def selChecklistA(self):
         try:
             self.ui.lineChecklistA.clear()
@@ -76,6 +80,8 @@ class Window(QMainWindow, Ui_MainWindow):
             if checklist_A is None or checklist_A is '':
                 return
             self.ui.lineChecklistA.setText(checklist_A)
+            status_bar = "Loading " + checklist_A 
+            self.statusBar().showMessage(self.tr(status_bar))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
     
@@ -87,9 +93,36 @@ class Window(QMainWindow, Ui_MainWindow):
                     QDir.homePath(), self.tr("Text files (*.txt)"))[0]
             if checklist_B is None or checklist_B is '':
                 return
-            self.ui.lineChecklistB.setText(checklist_B)
+            status_bar = "Loading " + checklist_B 
+            self.statusBar().showMessage(self.tr(status_bar))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
+
+    # load to be merged list 
+    def selMergedList(self):
+        try:
+            self.ui.lineMergeChecklists.clear()
+            tobe_merged_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to merge"), \
+                    QDir.homePath(), self.tr("Text files (*.txt)"))[0]
+            if tobe_merged_lists is None or tobe_merged_lists is '':
+                return
+            tobe_merged_files = ', '.join(tobe_merged_lists)
+            self.ui.lineMergeChecklists.setText(tobe_merged_files)
+            # load data into QTreeWidget
+            m_lists = []
+            for files in range(len(tobe_merged_lists)):
+                with codecs.open(tobe_merged_lists[files], 'r', 'utf-8') as f:
+                     m_lists += f.read().splitlines()
+                f.close()
+            m_lists_uniq = list(set(m_lists))
+            if len(m_lists_uniq) >= 1:
+                self.bulkLoadToTree(m_lists_uniq)
+            else:
+                QMessageBox.information(self, "Warning", \
+                        self.tr("There is nothing to load into the tree view of checklist. Maybe the files are empty"))
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
 
     def spCompleter(self):
         try:
@@ -191,59 +224,12 @@ class Window(QMainWindow, Ui_MainWindow):
                     tmp_filename = a_filename + '_' + b_filename + '-' + ab_type[0] + '_' + ab_type[1] + '.txt'
                     self.ui.lineTempFile.setText(os.path.join(a_path, tmp_filename))
                     compare_result = list(compare_result)
-                    # 3. After compared A and B, insert into db and show list in 
-                    # QTreeItems
-                    conn = sqlite3.connect(self.sqlite_db)
-                    curs = conn.cursor()
-                    drop_table = '''DROP TABLE IF EXISTS compare_sample;'''
-                    create_sample = '''CREATE TABLE compare_sample (zh_name varchar);'''
-                    curs.execute(drop_table)
-                    curs.execute(create_sample)
-                    for row in range(len(compare_result)):
-                        zhname = re.sub(' ', '', compare_result[row]) 
-                        zhname = re.sub('\ufeff', '', zhname)
-                        # substitute 台 to 臺
-                        zhname = re.sub(u'台([灣|北|中|西|南|東])',r'臺\1', zhname)
-                        # pass the empty lines
-                        if zhname != '':
-                            insert_db = '''
-                            INSERT INTO compare_sample (zh_name) VALUES ("%s");
-                            ''' % zhname
-                        curs.execute(insert_db)
-                    conn.commit()
-                    # check the target database table
-                    db_table = self.checkDB()
-                    query_list = '''
-                    SELECT n.family_zh,n.name,n.zh_name FROM %s n, compare_sample s
-                    WHERE n.zh_name = s.zh_name order by family,name;
-                    ''' % db_table
-                    curs.execute(query_list)
-                    fetched_results = curs.fetchall() 
-                    # check phanton species (does not exist in our database)
-                    query_not_exists_sp = ''' 
-                        SELECT 
-                            distinct s.zh_name 
-                        FROM 
-                            compare_sample s LEFT OUTER JOIN %s n 
-                        ON s.zh_name=n.zh_name
-                        WHERE n.zh_name is null;
-                    ''' % db_table 
-                    curs.execute(query_not_exists_sp)
-                    no_sp = curs.fetchall()
-                    nsp = []
-                    for i in no_sp:
-                        nsp.append(i[0])
-                    nsp = ', '.join(nsp)
-                    if len(nsp) > 0:
-                        QMessageBox.information(self, "Warning", \
-                                self.tr(u"The following species did not exist in our database, please check again: %s" % nsp))
-                    self.delAllTreeItems() 
-                    for i in range(len(fetched_results)):
-                        item = QTreeWidgetItem()
-                        item.setText(0, fetched_results[i][0])
-                        item.setText(1, fetched_results[i][1])
-                        item.setText(2, fetched_results[i][2])
-                        self.ui.treeWidget.addTopLevelItem(item)
+                    # load compared list into QTreeWidget
+                    if len(compare_result) >= 1:
+                        self.bulkLoadToTree(compare_result)
+                    else:
+                        QMessageBox.information(self, "Warning", self.tr("There is no common species between checklist A and B"))
+
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -364,6 +350,65 @@ class Window(QMainWindow, Ui_MainWindow):
                 self.ui.treeWidget.addTopLevelItem(item)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
+
+    def bulkLoadToTree(self, local_name_list):
+        try:
+            # QTreeItems
+            conn = sqlite3.connect(self.sqlite_db)
+            curs = conn.cursor()
+            drop_table = '''DROP TABLE IF EXISTS compare_sample;'''
+            create_sample = '''CREATE TABLE compare_sample (zh_name varchar);'''
+            curs.execute(drop_table)
+            curs.execute(create_sample)
+            for row in range(len(local_name_list)):
+                zhname = re.sub(' ', '', local_name_list[row]) 
+                zhname = re.sub('\ufeff', '', zhname)
+                # substitute 台 to 臺
+                zhname = re.sub(u'台([灣|北|中|西|南|東])',r'臺\1', zhname)
+                # pass the empty lines
+                if zhname != '':
+                    insert_db = '''
+                    INSERT INTO compare_sample (zh_name) VALUES ("%s");
+                    ''' % zhname
+                curs.execute(insert_db)
+            conn.commit()
+            # check the target database table
+            db_table = self.checkDB()
+            query_list = '''
+            SELECT n.family_zh,n.name,n.zh_name FROM %s n, compare_sample s
+            WHERE n.zh_name = s.zh_name order by family,name;
+            ''' % db_table
+            curs.execute(query_list)
+            fetched_results = curs.fetchall() 
+            # check phanton species (does not exist in our database)
+            query_not_exists_sp = ''' 
+                SELECT 
+                    distinct s.zh_name 
+                FROM 
+                    compare_sample s LEFT OUTER JOIN %s n 
+                ON s.zh_name=n.zh_name
+                WHERE n.zh_name is null;
+            ''' % db_table 
+            curs.execute(query_not_exists_sp)
+            no_sp = curs.fetchall()
+            nsp = []
+            for i in no_sp:
+                nsp.append(i[0])
+            nsp = ', '.join(nsp)
+            if len(nsp) > 0:
+                QMessageBox.information(self, "Warning", \
+                        self.tr(u"The following species did not exist in our database, please check again: %s" % nsp))
+            self.delAllTreeItems() 
+            for i in range(len(fetched_results)):
+                item = QTreeWidgetItem()
+                item.setText(0, fetched_results[i][0])
+                item.setText(1, fetched_results[i][1])
+                item.setText(2, fetched_results[i][2])
+                self.ui.treeWidget.addTopLevelItem(item)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+
  
 
     def browOutput(self):
