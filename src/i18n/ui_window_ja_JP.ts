@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ja_JP" sourcelanguage="en_US">
+<!DOCTYPE TS><TS version="2.0" language="ja_JP" sourcelanguage="en_US">
 <context>
     <name>Window</name>
     <message>
         <location filename="ui_window.py" line="156"/>
         <source>checklist generator</source>
-        <translation>チェックリストジェネレータ</translation>
+        <translation type="unfinished">チェックリストジェネレーター</translation>
     </message>
     <message>
         <location filename="ui_window.py" line="158"/>
@@ -31,7 +30,7 @@
     <message>
         <location filename="ui_window.py" line="162"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">種名を入力してください。和名．学名．科名をそれぞれ部分一致検索することができます。Enter、又はReturnを押すと、その種をチェックリストに加えることができます。</translation>
     </message>
     <message>
         <location filename="ui_window.py" line="163"/>
@@ -106,7 +105,7 @@
     <message>
         <location filename="ui_window.py" line="177"/>
         <source>Export checklist file</source>
-        <translation>輸出チェックリストファイル</translation>
+        <translation type="unfinished">チェックリストファイルをエクスポート</translation>
     </message>
     <message>
         <location filename="ui_window.py" line="178"/>

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import codecs   # utf8 codecs
 import csv      # read/write csv files
@@ -11,7 +11,9 @@ import sys      # system
 import os
 import traceback # dealing with exception
 from platform import uname
-
+# export xlsx
+from openpyxl.styles import Font, Color, Alignment
+from openpyxl import Workbook
 
 # format the typesetting of names
 class Genlist(object):
@@ -74,10 +76,16 @@ class Genlist(object):
         else:
             subprocess.Popen([self.resource_path('pandoc'), inpfile, '-o', outfile])
         
-    def dbCreateTable(self, schema, dbfile):
+    def dbExecuteSQL(self, schema, dbfile, show_results=False):
         conn = sqlite3.connect(dbfile)
         curs = conn.cursor()
         curs.execute(schema)
+        if show_results == True:
+            output = curs.fetchall()
+            return(output)
+        else:
+            conn.commit()
+            print("Execute '%s' successfully" % schema) 
         conn.close()
 
     def dbImportTable(self, table_name, csvfile, dbfile):
@@ -113,6 +121,86 @@ class Genlist(object):
         conn.commit()
         return(get_splist_result)
         conn.close()
+
+    def importTable(self, dbfile, table_name, import_file, isFile=True):
+        conn = sqlite3.connect(dbfile)
+        curs = conn.cursor()
+        curs.execute('DROP TABLE IF EXISTS %s;' % table_name)
+        conn.commit()
+        sample_create = '''
+        CREATE TABLE %s (
+          local_name varchar
+        ); ''' % table_name
+        curs.execute(sample_create)
+        if isFile == True:
+            m_lists = []
+            with codecs.open(import_file, 'r', 'utf-8') as f:
+                m_lists += f.read().splitlines()
+            f.close()
+        else:
+            m_lists = import_file
+        for row in range(len(m_lists)):
+            zhname = re.sub(' ', '', m_lists[row])
+            zhname = re.sub('\ufeff', '', zhname)
+            # substitute 台 to 臺
+            zhname = re.sub(u'台([灣|北|中|西|南|東])',r'臺\1', zhname)
+            # pass the empty lines
+            if zhname != '':
+                insert_db = '''
+                INSERT INTO %s (local_name) VALUES ("%s");
+                ''' % (table_name, zhname)
+            curs.execute(insert_db)
+        conn.commit()
+
+    def combineChecklists(self, dbfile, checklists):
+        """
+        dbfile: sqlite database
+        checklists: list of checklists
+        """
+        m_lists = []
+        table_name_lists = []
+        for files in range(len(checklists)):
+            with codecs.open(checklists[files], 'r', 'utf-8') as f:
+                # import all the local names in checklists and merge 
+                # them into one list
+                m_lists += f.read().splitlines()
+                # import checklists into different tables
+                checklist_filename = os.path.split(checklists[files])[1]
+                checklist_tablename = str.split(checklist_filename, '.')[0]
+                table_name_lists.append(checklist_tablename)
+                self.importTable(dbfile, checklist_tablename, checklists[files])
+            f.close()
+        # create a union table includes all the species 
+        self.importTable(dbfile, 'tmp_union', m_lists, isFile=False)
+        # update
+        for t in range(len(table_name_lists)):
+            add_column_sql = '''ALTER TABLE tmp_union ADD COLUMN %s varchar;''' % table_name_lists[t]
+            self.dbExecuteSQL(add_column_sql, dbfile)
+            update_sql = '''
+            update tmp_union set %s = '+' WHERE EXISTS (SELECT * FROM %s WHERE %s.local_name = tmp_union.local_name);
+            ''' % ( table_name_lists[t], table_name_lists[t], table_name_lists[t] )
+            self.dbExecuteSQL(update_sql, dbfile)
+        output = self.dbExecuteSQL('''SELECT distinct * FROM tmp_union;''', dbfile, show_results = True)
+        return(output)
+
+    def listToXls(self, import_list, xls_file):
+        """
+        listToXls: write list to excel 
+        ==============================
+        """
+        try:
+            xls_subname = str.split(os.path.split(xls_file)[1], '.')[-1]
+            if xls_subname != 'xlsx' and xls_subname != 'xls':
+                xls_file = str(xls_file) + '.xlsx'
+            wb = Workbook()
+            ws = wb.active
+            for row in range(len(import_list)):
+                ws.append(list(import_list[row]))
+            wb.save(xls_file)
+        except BaseException as e:
+            print(str(e))
+
+
 
     def genEngine(self, dbfile, dbtable, inputfile, oformat='docx', ofile_prefix='output'):
         """
@@ -175,7 +263,7 @@ class Genlist(object):
         f.close()
                
         with codecs.open(ofile_prefix +'.md', 'w+', 'utf-8') as f:
-            #### Generate HEADER
+            ##### Generate HEADER #####
             if species_type == 1:
                 f.write(u'# 維管束植物名錄')
                 sp_note = u'"#" 代表特有種，"*" 代表歸化種，"†" 代表栽培種。'
@@ -190,6 +278,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             else:
                 f.write(u'# 物種名錄')
             f.write('\n')
+            ##### End of HEADER #####
             count_family = '''
             SELECT count(*) from (SELECT distinct family from sample s left outer join %s n 
                     on s.zh_name=n.zh_name) as f;
@@ -223,6 +312,10 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             ####### End of HEADER
 
             ####### namelist BODY
+            if oformat == 'xlsx':
+                wb = Workbook()
+                ws = wb.active
+
             if species_type == 1:
                 pt_plant_type_sql = '''
                     SELECT p.plant_type,p.pt_name
@@ -235,9 +328,19 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                 pt_plant_type = curs.fetchall()
                 n = 1
                 m = 1
+
+                # write excel header
+                if oformat == 'xlsx':
+                    wb = Workbook()
+                    ws = wb.active
+                    ws.append(['',u'family',u'species',u'local name', \
+                        u'species info',u'IUCN category'])
                 for i in range(0,len(pt_plant_type)):
-                    f.write('\n')
-                    f.write('\n###'+pt_plant_type[i][1]+'\n\n')
+                    if oformat == 'xlsx':
+                        ws.append([pt_plant_type[i][1]])
+                    else:
+                        f.write('\n')
+                        f.write('\n###'+pt_plant_type[i][1]+'\n\n')
                     taxa_family_sql = '''
                     select distinct family,family_zh from sample s left outer join %s n 
                     on s.zh_name=n.zh_name where n.plant_type=%i
@@ -248,18 +351,24 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                     for j in range(0,len(taxa_family)):
                         sp_number_in_fam = '''
                         select count(*) from 
-                            (select distinct fullname,n.zh_name from sample s left outer join %s n 
+                            (select distinct fullname, name, n.zh_name from sample s left outer join %s n 
                             on s.zh_name=n.zh_name where n.plant_type=%i and family='%s'
                             order by plant_type,family,fullname) as a;
                         ''' % (dbtable, pt_plant_type[i][0], taxa_family[j][0])
                         curs.execute(sp_number_in_fam)
                         fam_spno = curs.fetchall()[0][0]
-                        fam = str(m) + '. **' + taxa_family[j][0]
-                        fam_zh = taxa_family[j][1]+'**'
-                        f.write('\n')
-                        f.write(fam+' '+fam_zh+' (%i)\n' % fam_spno)
+                        if oformat == 'xlsx':
+                            fam = taxa_family[j][0]
+                            fam_zh = taxa_family[j][1]
+                            fam_name = fam + '(' + fam_zh + ')'
+                            ws.append(['', fam_name])
+                        else:
+                            fam = str(m) + '. **' + taxa_family[j][0]
+                            fam_zh = taxa_family[j][1] + '**'
+                            f.write('\n')
+                            f.write(fam + ' ' + fam_zh + ' (%i)\n' % fam_spno)
                         taxa_family_sp = '''
-                            select distinct fullname,n.zh_name,n.endemic,n.source,n.iucn_category from sample s left outer join %s n 
+                            select distinct fullname,n.zh_name,n.endemic,n.source,n.iucn_category,n.name from sample s left outer join %s n 
                             on s.zh_name=n.zh_name where n.plant_type=%i and family='%s'
                             order by plant_type,family,fullname;
                         ''' % (dbtable, pt_plant_type[i][0], taxa_family[j][0])
@@ -282,16 +391,31 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                                 SRC = ''
                             # IUCN category
                             if len(taxa_family_sp[k][4]) == 2:
-                                IUCNCAT = ' (%s)' % taxa_family_sp[k][4]
+                                if oformat == 'xlsx':
+                                    IUCNCAT = taxa_family_sp[k][4]
+                                else:
+                                    IUCNCAT = ' (%s)' % taxa_family_sp[k][4]
                             else:
                                 IUCNCAT = ''
                             spinfo = ' ' + ENDEMIC + SRC + IUCNCAT
                             if spinfo is not None:
-                                f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
+                                if oformat == 'xlsx':
+                                    SPINFO = re.sub(' ', '', ENDEMIC + SRC) 
+                                    ws.append(['', '', taxa_family_sp[k][5], taxa_family_sp[k][1], SPINFO, IUCNCAT])
+                                else:
+                                    f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
                             else:
-                                f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] +'\n')
+                                if oformat == 'xlsx':
+                                    ws.append(['', '', taxa_family_sp[k][5]], taxa_family_sp[k][1])
+                                else:
+                                    f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] +'\n')
                             n = n + 1
+                if oformat == 'xlsx':
+                    wb.save(ofile_prefix + '.' + oformat)
             else:
+                if oformat == 'xlsx':
+                    wb = Workbook()
+                    ws = wb.active
                 taxa_family_sql = '''
                     SELECT DISTINCT 
                         family,family_zh 
@@ -305,6 +429,13 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
 
                 m = 1
                 n = 1
+                # write excel header
+                if oformat == 'xlsx':
+                    wb = Workbook()
+                    ws = wb.active
+                    ws.append(['',u'family',u'species',u'local name', \
+                        u'species info',u'Conservation status'])
+
                 for j in range(0,len(taxa_family)):
                     sp_number_in_fam = '''
                         select count(*) from 
@@ -316,10 +447,15 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                     ''' % (dbtable, taxa_family[j][0])
                     curs.execute(sp_number_in_fam)
                     fam_spno = curs.fetchall()[0][0]
-                    fam = str(m) + '. **' + taxa_family[j][0]
-                    fam_zh = taxa_family[j][1]+'**'
-                    f.write('\n')
-                    f.write(fam+' '+fam_zh+' (%i)\n' % fam_spno)
+                    if oformat == 'xlsx':
+                        fam = taxa_family[j][0]
+                        fam_zh = '(' + taxa_family[j][1] + ')'
+                        ws.append([fam + fam_zh])
+                    else:
+                        fam = str(m) + '. **' + taxa_family[j][0]
+                        fam_zh = taxa_family[j][1]+'**'
+                        f.write('\n')
+                        f.write(fam+' '+fam_zh+' (%i)\n' % fam_spno)
                     taxa_family_sp = '''
                         SELECT distinct 
                             name,n.zh_name,n.endemic,n.consv_status 
@@ -345,14 +481,24 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                         CONSERV = taxa_family_sp[k][3]
                         spinfo = ' ' + ENDEMIC + CONSERV
                         if spinfo is not None:
-                            f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
+                            if oformat == 'xlsx':
+                                ws.append(['', taxa_family_sp[k][0], taxa_family_sp[k][1], ENDEMIC, CONSERV])
+                            else:
+                                f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
                         else:
-                            f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] +'\n')
+                            if oformat == 'xlsx':
+                                ws.append(['', taxa_family_sp[k][0], taxa_family_sp[k][1]])
+                            else:
+                                f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] +'\n')
                         n = n + 1
-            f.close()        
+                if oformat == 'xlsx':
+                    wb.save(ofile_prefix + '.' + oformat)
+            f.close()
+
             try:
             #    pypandoc.convert(ofile_prefix + '.md', oformat, outputfile=ofile_prefix+'.'+oformat)
-                self.pandocConvert(oformat, ofile_prefix)
+                if oformat != 'xlsx':
+                    self.pandocConvert(oformat, ofile_prefix)
             except BaseException as e:
                 print(str(e))
             curs.execute('DROP TABLE IF EXISTS sample;')
