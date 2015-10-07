@@ -1,20 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import codecs   # utf8 codecs
-import csv      # read/write csv files
-import pypandoc # convert markdown to docx/odt, etc.
-import re       # regular expression
-import shutil   # copy files
-import sqlite3  # lightweight database
-import subprocess   # execute shell commands
-import sys      # system
+import codecs       # utf8 codecs
+import csv          # read/write csv files
 import os
-import traceback # dealing with exception
+import pypandoc     # convert markdown to docx/odt, etc.
+import re           # regular expression
+import shutil       # copy files
+import sqlite3      # lightweight database
+import subprocess   # execute shell commands
+import sys          # system
+import traceback    # dealing with exception
+import xlsxwriter   # export xlsx
 from platform import uname
-# export xlsx
-#from openpyxl import Workbook
-#from openpyxl.styles import Font, Color, Alignment
-import xlsxwriter
 
 # format the typesetting of names
 class Genlist(object):

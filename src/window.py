@@ -2,18 +2,17 @@
 # -*- coding: utf-8 -*-
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import * 
-import genlist_api
 from ui_window import Ui_Window
-import re
-import sqlite3
 import codecs
 import csv
-import sys
-import traceback
+import genlist_api
 import os
 import pycurl
+import re
 import shutil
-
+import sqlite3
+import sys
+import traceback
 
 class Window(QWidget, Ui_Window):
 
