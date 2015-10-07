@@ -3,8 +3,7 @@
 from PyQt5.QtCore import *
 from PyQt5.QtWidgets import * 
 import genlist_api
-#from ui_window import Ui_Window
-from ui_main_window import Ui_MainWindow
+from ui_main_window import Ui_Window
 import re
 import sqlite3
 import codecs
@@ -16,7 +15,7 @@ import pycurl
 import shutil
 
 
-class Window(QMainWindow, Ui_MainWindow):
+class Window(QMainWindow, Ui_Window):
 
     def __init__(self, parent = None):
         try:
@@ -24,10 +23,9 @@ class Window(QMainWindow, Ui_MainWindow):
             
             #self.sqlite_db = g.resource_path('twnamelist.db')
             g = genlist_api.Genlist()
-            #db_filename = 'twnamelist.db'
-            #self.sqlite_db = g.resource_path(os.path.join('db', db_filename))
-            self.main_widget = QWidget(self)
-            self.setCentralWidget(self.main_widget)
+            # only for main window
+            #self.main_widget = QWidget(self)
+            #self.setCentralWidget(self.main_widget)
 
             self.home = os.path.expanduser("~")
             self.checklist_db_dir = g.resource_path(os.path.join(self.home, 'checklist_db'))
@@ -37,7 +35,7 @@ class Window(QMainWindow, Ui_MainWindow):
             self.sqlite_db = self.checkLocalDB()
 
             #self.setupUi(self)
-            self.ui = Ui_MainWindow()
+            self.ui = Ui_Window()
             self.ui.setupUi(self)
 
             #self.ui.butBlist.clicked.connect(self.browBaselist)
