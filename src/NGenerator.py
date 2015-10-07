@@ -12,7 +12,7 @@ if __name__ == "__main__":
     current_locale = QLocale()
     trans = QTranslator()
     g = genlist_api.Genlist()
-    i18n_ui_window_trans = g.resource_path(os.path.join('i18n', 'ui_window_' + current_locale.name() + '.qm'))
+    i18n_ui_window_trans = g.resource_path(os.path.join('i18n', 'ui_main_window_' + current_locale.name() + '.qm'))
     trans.load(i18n_ui_window_trans)
     app.installTranslator(trans)
     

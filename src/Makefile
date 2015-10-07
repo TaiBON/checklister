@@ -2,8 +2,8 @@ PYUIC=pyuic5
 PYTHON=python3
 
 all:
-	$(PYUIC) ui/namegen.ui -o ui_window.py
-	$(PYUIC) ui/main_window.ui -o ui_main_window.py
+	#$(PYUIC) ui/namegen.ui -o ui_window.py
+	$(PYUIC) ui/main_window.ui -o ui_window.py
 
 translate:
 	pylupdate5 window.py -ts i18n/window_zh_TW.ts
