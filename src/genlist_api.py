@@ -12,8 +12,9 @@ import os
 import traceback # dealing with exception
 from platform import uname
 # export xlsx
-from openpyxl.styles import Font, Color, Alignment
-from openpyxl import Workbook
+#from openpyxl import Workbook
+#from openpyxl.styles import Font, Color, Alignment
+import xlsxwriter
 
 # format the typesetting of names
 class Genlist(object):
@@ -29,12 +30,10 @@ class Genlist(object):
             return(relative)
         return os.path.join(os.path.abspath("."), relative)
 
-    def fmtname(self, name):
+    def fmtname(self, name, italic_b="*", italic_e="*"):
         n_split = name.split(' ')
         lenf = len(n_split)
         # typesetting
-        italic_b = '*'
-        italic_e = '*'
         if 'var.' in n_split:
             sub_idx = n_split.index('var.')
             fmt_name = italic_b + " ".join(str(item) for item in n_split[0:2])+ italic_e
@@ -183,24 +182,50 @@ class Genlist(object):
         output = self.dbExecuteSQL('''SELECT distinct * FROM tmp_union;''', dbfile, show_results = True)
         return(output)
 
-    def listToXls(self, import_list, xls_file):
+    def listToXls(self, import_list, name_italic_col, xls_file):
         """
         listToXls: write list to excel 
         ==============================
+
+        import_list
+        -----------
+
+        name_italic_col
+        ---------------
+        
         """
         try:
             xls_subname = str.split(os.path.split(xls_file)[1], '.')[-1]
-            if xls_subname != 'xlsx' and xls_subname != 'xls':
+            if xls_subname != 'xlsx':
                 xls_file = str(xls_file) + '.xlsx'
-            wb = Workbook()
-            ws = wb.active
+            wb = xlsxwriter.Workbook(xls_file)
+            ws = wb.add_worksheet()
+            # rich formats
+            italic = wb.add_format({'italic': True})
+            default = wb.add_format()
             for row in range(len(import_list)):
-                ws.append(list(import_list[row]))
-            wb.save(xls_file)
+                for col in range(len(import_list[row])):
+                    if col == int(name_italic_col):
+                        len_of_col = len(import_list[row][col])*0.8+1
+                        input_name = self.fmtname(import_list[row][col], italic_b=',italic,', italic_e=',default,')
+                        a = str.split(input_name, ',')
+                        a.remove(''); a.remove(' ')
+                        for item in range(len(a)):
+                            if a[item] == 'italic':
+                                a[item] = italic
+                            elif a[item] == 'default':
+                                a[item] = default
+                        if len(a) == 7:
+                            ws.write_rich_string(row,col,a[0],a[1],a[2],a[3],a[4],a[5],a[6])
+                        elif len(a) == 3:
+                            ws.write_rich_string(row,col,a[0],a[1],a[2])
+                        else:
+                            ws.write_rich_string(row,col,import_list[row][col])
+                    else:
+                        ws.write(row,col,import_list[row][col])
+            wb.close()
         except BaseException as e:
             print(str(e))
-
-
 
     def genEngine(self, dbfile, dbtable, inputfile, oformat='docx', ofile_prefix='output'):
         """
@@ -313,8 +338,10 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
 
             ####### namelist BODY
             if oformat == 'xlsx':
-                wb = Workbook()
-                ws = wb.active
+                wb = xlsxwriter.Workbook(ofile_prefix + '.xlsx')
+                ws = wb.add_worksheet()
+                italic = wb.add_format({'italic': True})
+                default = wb.add_format()
 
             if species_type == 1:
                 pt_plant_type_sql = '''
@@ -331,13 +358,15 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
 
                 # write excel header
                 if oformat == 'xlsx':
-                    wb = Workbook()
-                    ws = wb.active
-                    ws.append(['',u'family',u'species',u'local name', \
-                        u'species info',u'IUCN category'])
+                    xls_num_row = 0
+                    xls_header = ['',u'family',u'species',u'local name', \
+                        u'species info',u'IUCN category']
+                    for col in range(len(xls_header)):
+                        ws.write(xls_num_row, col, xls_header[col])
                 for i in range(0,len(pt_plant_type)):
                     if oformat == 'xlsx':
-                        ws.append([pt_plant_type[i][1]])
+                        xls_num_row += 1
+                        ws.write(xls_num_row, 0, pt_plant_type[i][1])
                     else:
                         f.write('\n')
                         f.write('\n###'+pt_plant_type[i][1]+'\n\n')
@@ -361,7 +390,8 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                             fam = taxa_family[j][0]
                             fam_zh = taxa_family[j][1]
                             fam_name = fam + '(' + fam_zh + ')'
-                            ws.append(['', fam_name])
+                            xls_num_row += 1
+                            ws.write(xls_num_row, 1, fam_name)
                         else:
                             fam = str(m) + '. **' + taxa_family[j][0]
                             fam_zh = taxa_family[j][1] + '**'
@@ -398,24 +428,79 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                             else:
                                 IUCNCAT = ''
                             spinfo = ' ' + ENDEMIC + SRC + IUCNCAT
+                            # when export to xls, format the name to xlsxwriter rich text format 
+                            xlsx_input_name = self.fmtname(taxa_family_sp[k][5], italic_b=',italic,', italic_e=',default,')
+                            a = str.split(xlsx_input_name, ',')
+                            a.remove(''); a.remove(' ')
+                            for item in range(len(a)):
+                                if a[item] == 'italic':
+                                    a[item] = italic
+                                elif a[item] == 'default':
+                                    a[item] = default
+                            if len(a) == 7:
+                                ws.write_rich_string(0,0,a[0],a[1],a[2],a[3],a[4],a[5],a[6])
+                            elif len(a) == 3:
+                                ws.write_rich_string(0,0,a[0],a[1],a[2])
+                            else:
+                                ws.write_rich_string(0,0,a)
                             if spinfo is not None:
                                 if oformat == 'xlsx':
                                     SPINFO = re.sub(' ', '', ENDEMIC + SRC) 
-                                    ws.append(['', '', taxa_family_sp[k][5], taxa_family_sp[k][1], SPINFO, IUCNCAT])
+                                    xls_num_row += 1 
+                                    #ws.append(['', '', taxa_family_sp[k][5], taxa_family_sp[k][1], SPINFO, IUCNCAT])
+
+                                    # when export to xls, format the name to xlsxwriter rich text format 
+                                    xlsx_input_name = self.fmtname(taxa_family_sp[k][5], italic_b=',italic,', italic_e=',default,')
+                                    a = str.split(xlsx_input_name, ',')
+                                    a.remove(''); a.remove(' ')
+                                    for item in range(len(a)):
+                                        if a[item] == 'italic':
+                                            a[item] = italic
+                                        elif a[item] == 'default':
+                                            a[item] = default
+                                    if len(a) == 7:
+                                        ws.write_rich_string(xls_num_row, 2, a[0],a[1],a[2],a[3],a[4],a[5],a[6])
+                                    elif len(a) == 3:
+                                        ws.write_rich_string(xls_num_row, 2, a[0],a[1],a[2])
+                                    else:
+                                        ws.write_rich_string(xls_num_row, 2, taxa_family_sp[k][5])
+                                    
+                                    ws.write(xls_num_row, 3, taxa_family_sp[k][1])
+                                    ws.write(xls_num_row, 4, SPINFO)
+                                    ws.write(xls_num_row, 5, IUCNCAT)
                                 else:
                                     f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
                             else:
                                 if oformat == 'xlsx':
-                                    ws.append(['', '', taxa_family_sp[k][5]], taxa_family_sp[k][1])
+                                    #ws.append(['', '', taxa_family_sp[k][5]], taxa_family_sp[k][1])
+                                    xls_num_row += 1 
+                                    # when export to xls, format the name to xlsxwriter rich text format 
+                                    xlsx_input_name = self.fmtname(taxa_family_sp[k][5], italic_b=',italic,', italic_e=',default,')
+                                    a = str.split(xlsx_input_name, ',')
+                                    a.remove(''); a.remove(' ')
+                                    for item in range(len(a)):
+                                        if a[item] == 'italic':
+                                            a[item] = italic
+                                        elif a[item] == 'default':
+                                            a[item] = default
+                                    if len(a) == 7:
+                                        ws.write_rich_string(xls_num_row, 2, a[0],a[1],a[2],a[3],a[4],a[5],a[6])
+                                    elif len(a) == 3:
+                                        ws.write_rich_string(xls_num_row, 2, a[0],a[1],a[2])
+                                    else:
+                                        ws.write_rich_string(xls_num_row, 2, taxa_family_sp[k][5])
+ 
+                                    ws.write(xls_num_row, 3, taxa_family_sp[k][1])
                                 else:
                                     f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] +'\n')
                             n = n + 1
-                if oformat == 'xlsx':
-                    wb.save(ofile_prefix + '.' + oformat)
+                #if oformat == 'xlsx':
+                    #wb.save(ofile_prefix + '.' + oformat)
+                #    wb.close()
             else:
-                if oformat == 'xlsx':
-                    wb = Workbook()
-                    ws = wb.active
+                #if oformat == 'xlsx':
+                #    wb = Workbook()
+                #    ws = wb.active
                 taxa_family_sql = '''
                     SELECT DISTINCT 
                         family,family_zh 
@@ -431,10 +516,16 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                 n = 1
                 # write excel header
                 if oformat == 'xlsx':
-                    wb = Workbook()
-                    ws = wb.active
-                    ws.append(['',u'family',u'species',u'local name', \
-                        u'species info',u'Conservation status'])
+                    #wb = Workbook()
+                    #ws = wb.active
+                    #ws.append(['',u'family',u'species',u'local name', \
+                    #    u'species info',u'Conservation status'])
+                    xls_num_row = 0
+                    xls_header = ['',u'family',u'species',u'local name', \
+                        u'species info',u'Conservation status']
+                    for col in range(len(xls_header)):
+                        ws.write(xls_num_row, col, xls_header[col])
+
 
                 for j in range(0,len(taxa_family)):
                     sp_number_in_fam = '''
@@ -450,7 +541,10 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                     if oformat == 'xlsx':
                         fam = taxa_family[j][0]
                         fam_zh = '(' + taxa_family[j][1] + ')'
-                        ws.append([fam + fam_zh])
+                        xls_num_row += 1
+                        ws.write(xls_num_row, 0, fam)
+                        ws.write(xls_num_row, 1, fam_zh)
+                        #ws.append([fam + fam_zh])
                     else:
                         fam = str(m) + '. **' + taxa_family[j][0]
                         fam_zh = taxa_family[j][1]+'**'
@@ -482,17 +576,54 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                         spinfo = ' ' + ENDEMIC + CONSERV
                         if spinfo is not None:
                             if oformat == 'xlsx':
-                                ws.append(['', taxa_family_sp[k][0], taxa_family_sp[k][1], ENDEMIC, CONSERV])
+                                xls_num_row += 1
+                                
+                                xlsx_input_name = self.fmtname(taxa_family_sp[k][5], italic_b=',italic,', italic_e=',default,')
+                                a = str.split(xlsx_input_name, ',')
+                                a.remove(''); a.remove(' ')
+                                for item in range(len(a)):
+                                    if a[item] == 'italic':
+                                        a[item] = italic
+                                    elif a[item] == 'default':
+                                        a[item] = default
+                                if len(a) == 7:
+                                    ws.write_rich_string(xls_num_row, 1, a[0],a[1],a[2],a[3],a[4],a[5],a[6])
+                                elif len(a) == 3:
+                                    ws.write_rich_string(xls_num_row, 1, a[0],a[1],a[2])
+                                else:
+                                    ws.write_rich_string(xls_num_row, 1, taxa_family_sp[k][0])
+ 
+                                ws.write(xls_num_row, 2, taxa_family_sp[k][1])
+                                ws.write(xls_num_row, 3, ENDEMIC)
+                                ws.write(xls_num_row, 4, CONSERV)
                             else:
                                 f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
                         else:
                             if oformat == 'xlsx':
-                                ws.append(['', taxa_family_sp[k][0], taxa_family_sp[k][1]])
+                                xls_num_row += 1
+                                xlsx_input_name = self.fmtname(taxa_family_sp[k][5], italic_b=',italic,', italic_e=',default,')
+                                a = str.split(xlsx_input_name, ',')
+                                a.remove(''); a.remove(' ')
+                                for item in range(len(a)):
+                                    if a[item] == 'italic':
+                                        a[item] = italic
+                                    elif a[item] == 'default':
+                                        a[item] = default
+                                if len(a) == 7:
+                                    ws.write_rich_string(xls_num_row, 1, a[0],a[1],a[2],a[3],a[4],a[5],a[6])
+                                elif len(a) == 3:
+                                    ws.write_rich_string(xls_num_row, 1, a[0],a[1],a[2])
+                                else:
+                                    ws.write_rich_string(xls_num_row, 1, taxa_family_sp[k][0])
+
+                                ws.write(xls_num_row, 2, taxa_family_sp[k][1])
+                                
                             else:
                                 f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] +'\n')
                         n = n + 1
-                if oformat == 'xlsx':
-                    wb.save(ofile_prefix + '.' + oformat)
+            if oformat == 'xlsx':
+                #wb.save(ofile_prefix + '.' + oformat)
+                wb.close()
             f.close()
 
             try:

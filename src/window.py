@@ -166,6 +166,9 @@ class Window(QWidget, Ui_Window):
             else:
                 export_filename = self.lineOutputFilename.text()
             self.combined_checklists = combined_table
+            # clear temp file for local names & Slist
+            self.lineTempFile.clear()
+            self.lineSlist.clear()
             # load data into QTreeWidget
             self.delAllTreeItems() 
             for i in range(1,len(combined_table)):
@@ -545,7 +548,7 @@ class Window(QWidget, Ui_Window):
     def delFromTree(self):
         #removing the QTreeItemWidget object
         try:
-            self.treeWidget.takeTopLevelItem(ui.treeWidget.indexOfTopLevelItem(self))
+            self.treeWidget.takeTopLevelItem(treeWidget.indexOfTopLevelItem(self))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
  
@@ -588,7 +591,8 @@ class Window(QWidget, Ui_Window):
             elif self.lineTempFile.text() == '' or self.lineSlist == '':
                 if self.lineCombineChecklists.text() != '':
                     export_combined_checklist_file = self.lineOutputFilename.text()
-                    g.listToXls(self.combined_checklists, export_combined_checklist_file)
+
+                    g.listToXls(self.combined_checklists, 2, export_combined_checklist_file)
                     QMessageBox.information(self, self.tr('Checklist generator'), \
                         self.tr("Export checklist to '%s' done!" % export_filename))
                     self.lineCombineChecklists.clear()
