@@ -81,8 +81,8 @@ class Window(QWidget, Ui_Window):
             if checklist_A is None or checklist_A is '':
                 return
             self.lineChecklistA.setText(checklist_A)
-            status_bar = "Loading " + checklist_A 
-            self.statusBar().showMessage(self.tr(status_bar))
+            #status_bar = "Loading " + checklist_A 
+            #self.statusBar().showMessage(self.tr(status_bar))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
     
@@ -94,9 +94,9 @@ class Window(QWidget, Ui_Window):
                     QDir.homePath(), self.tr("Text files (*.txt)"))[0]
             if checklist_B is None or checklist_B is '':
                 return
-            self.lineChecklistA.setText(checklist_B)
-            status_bar = "Loading " + checklist_B 
-            self.statusBar().showMessage(self.tr(status_bar))
+            self.lineChecklistB.setText(checklist_B)
+            #status_bar = "Loading " + checklist_B 
+            #self.statusBar().showMessage(self.tr(status_bar))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -144,6 +144,11 @@ class Window(QWidget, Ui_Window):
             g = genlist_api.Genlist()
             g.combineChecklists(self.sqlite_db, tobe_combined_lists) 
             current_db_table = self.checkDB()
+            # print(current_db_table)
+            # if current_db_table == 'dao_bnamelist':
+            #     db_fullname = 'name'
+            # else:
+            #     db_fullname = 'fullname'
             fetch_combined_sql = '''
             SELECT 
                 distinct d.family,d.family_zh,d.name,u.* 
@@ -153,7 +158,8 @@ class Window(QWidget, Ui_Window):
                 u.local_name = d.zh_name;
             ''' % current_db_table
             combined_table = g.dbExecuteSQL(fetch_combined_sql, self.sqlite_db, show_results=True)
-            header = ['family','family_cname','species name', 'common name']
+            print(combined_table)
+            header = ['family', 'family_cname', 'name', 'common name']
             for i in range(len(tobe_combined_lists)):
                 fname = str.split(os.path.split(tobe_combined_lists[i])[1], '.')
                 header.insert(4+i, fname[0])
@@ -165,6 +171,7 @@ class Window(QWidget, Ui_Window):
             else:
                 export_filename = self.lineOutputFilename.text()
             self.combined_checklists = combined_table
+            print(self.combined_checklists)
             # clear temp file for local names & Slist
             self.lineTempFile.clear()
             self.lineSlist.clear()
@@ -172,6 +179,7 @@ class Window(QWidget, Ui_Window):
             self.delAllTreeItems() 
             for i in range(1,len(combined_table)):
                 item = QTreeWidgetItem()
+                # family_zh, name, common name
                 item.setText(0, combined_table[i][1])
                 item.setText(1, combined_table[i][2])
                 item.setText(2, combined_table[i][3])
@@ -284,6 +292,7 @@ class Window(QWidget, Ui_Window):
                         self.bulkLoadToTree(compare_result)
                     else:
                         QMessageBox.information(self, "Warning", self.tr("There is no common species between checklist A and B"))
+                        self.delAllTreeItems()
 
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -590,7 +599,6 @@ class Window(QWidget, Ui_Window):
             elif self.lineTempFile.text() == '' or self.lineSlist == '':
                 if self.lineCombineChecklists.text() != '':
                     export_combined_checklist_file = self.lineOutputFilename.text()
-
                     g.listToXls(self.combined_checklists, 2, export_combined_checklist_file)
                     QMessageBox.information(self, self.tr('Checklist generator'), \
                         self.tr("Export checklist to '%s' done!" % export_filename))

@@ -14,10 +14,6 @@ translate:
 	pylupdate5 ui_window.py -ts i18n/ui_window_zh_CN.ts
 	pylupdate5 ui_window.py -ts i18n/ui_window_ja_JP.ts
 	pylupdate5 ui_window.py -ts i18n/ui_window_ko_KR.ts
-	pylupdate5 ui_main_window.py -ts i18n/ui_main_window_zh_TW.ts
-	pylupdate5 ui_main_window.py -ts i18n/ui_main_window_zh_CN.ts
-	pylupdate5 ui_main_window.py -ts i18n/ui_main_window_ja_JP.ts
-	pylupdate5 ui_main_window.py -ts i18n/ui_main_window_ko_KR.ts
 
 binary:
 	pyinstaller --onefile NGenerator.spec

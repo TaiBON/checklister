@@ -203,7 +203,6 @@ class Genlist(object):
             for row in range(len(import_list)):
                 for col in range(len(import_list[row])):
                     if col == int(name_italic_col):
-                        len_of_col = len(import_list[row][col])*0.8+1
                         input_name = self.fmtname(import_list[row][col], italic_b=',italic,', italic_e=',default,')
                         a = str.split(input_name, ',')
                         a.remove(''); a.remove(' ')
@@ -356,8 +355,8 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                 # write excel header
                 if oformat == 'xlsx':
                     xls_num_row = 0
-                    xls_header = ['',u'family',u'species',u'local name', \
-                        u'species info',u'IUCN category']
+                    xls_header = [u'Header',u'Family',u'Species',u'Common name', \
+                        u'Species info',u'IUCN category']
                     for col in range(len(xls_header)):
                         ws.write(xls_num_row, col, xls_header[col])
                 for i in range(0,len(pt_plant_type)):
@@ -518,8 +517,8 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                     #ws.append(['',u'family',u'species',u'local name', \
                     #    u'species info',u'Conservation status'])
                     xls_num_row = 0
-                    xls_header = ['',u'family',u'species',u'local name', \
-                        u'species info',u'Conservation status']
+                    xls_header = [u'Header',u'Family',u'Species',u'Common name', \
+                        u'Species info',u'Conservation status']
                     for col in range(len(xls_header)):
                         ws.write(xls_num_row, col, xls_header[col])
 
@@ -612,7 +611,6 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                                     ws.write_rich_string(xls_num_row, 1, a[0],a[1],a[2])
                                 else:
                                     ws.write_rich_string(xls_num_row, 1, taxa_family_sp[k][0])
-
                                 ws.write(xls_num_row, 2, taxa_family_sp[k][1])
                                 
                             else:
@@ -620,6 +618,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                         n = n + 1
             if oformat == 'xlsx':
                 #wb.save(ofile_prefix + '.' + oformat)
+                ws.write(0, 0, '%s.xlsx' % ofile_prefix)
                 wb.close()
             f.close()
 
