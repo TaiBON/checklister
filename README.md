@@ -36,7 +36,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 
 * Supported languages: zh_TW (traditional Chinese), zh_CN (simplified Chinese), ja_JP (Japanese), ko_KR (Korean)
 
-* Download executable binary：Latest version is [0.3.0](https://github.com/mutolisp/namelist-generator/tree/v0.3.0)
+* Download executable binary：Latest version is [0.3.1](https://github.com/mutolisp/namelist-generator/tree/v0.3.1)
     + Windows (*.exe), copy the executable file to whatever you like (even on USB disk)
     + MacOS X, copy, unarchive and put NGenerator.app in /Applications
 
