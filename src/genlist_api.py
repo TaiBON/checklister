@@ -11,12 +11,14 @@ import subprocess   # execute shell commands
 import sys          # system
 import traceback    # dealing with exception
 import xlsxwriter   # export xlsx
+from openpyxl import Workbook, worksheet, load_workbook
 from platform import uname
 
 # format the typesetting of names
 class Genlist(object):
-    def __init__(self):
-        pass
+
+    def __init__(self, parent=None):
+        super(Genlist, self).__init__()
 
     # for pyinstaller 
     # http://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile
@@ -27,39 +29,135 @@ class Genlist(object):
             return(relative)
         return os.path.join(os.path.abspath("."), relative)
 
-    def fmtname(self, name, italic_b="*", italic_e="*"):
-        n_split = name.split(' ')
-        lenf = len(n_split)
-        # typesetting
-        if 'var.' in n_split:
-            sub_idx = n_split.index('var.')
-            fmt_name = italic_b + " ".join(str(item) for item in n_split[0:2])+ italic_e
-            fmt_author = " ".join(str(item) for item in n_split[sub_idx+2:lenf])
-            fmt_sub = italic_b + str(n_split[sub_idx+1]) + italic_e
-            fmt_oname = fmt_name + ' var. ' + fmt_sub + ' ' + fmt_author
-        elif 'subsp.' in n_split:
-            sub_idx = n_split.index('subsp.')
-            fmt_name = italic_b + " ".join(str(item) for item in n_split[0:2])+ italic_e
-            fmt_author = " ".join(str(item) for item in n_split[sub_idx+2:lenf])
-            fmt_sub = italic_b + str(n_split[sub_idx+1]) + italic_e
-            fmt_oname = fmt_name + ' subsp. ' + fmt_sub + ' ' + fmt_author
-        elif 'fo.' in n_split:
-            sub_idx = n_split.index('fo.')
-            fmt_name = italic_b + " ".join(str(item) for item in n_split[0:2])+ italic_e
-            fmt_author = " ".join(str(item) for item in n_split[sub_idx+2:lenf])
-            fmt_sub = italic_b + str(n_split[sub_idx+1]) + italic_e
-            fmt_oname = fmt_name + ' fo. ' + fmt_sub + ' ' + fmt_author
-        elif '×' in n_split:
-            fmt_name = italic_b + " ".join(str(item) for item in n_split[0:3])+ italic_e
-            fmt_author = " ".join(str(item) for item in n_split[3:lenf])
-            fmt_oname = fmt_name + ' ' + fmt_author
+    def fmtname(self, fullname, italic_b="*", italic_e="*", format_type='markdown', doformat=True, split=True):
+        """
+        fmtname(fullname, italic_b="*", italic_e="*", format_type='markdown', doformat=True, split=True)
+        =======
+        This function will format a scientific name into following rules:
+        1. genus and species name are italicized
+        2. subrank (ex: subsp., var., etc.) is not italicized
+
+        html tag example <i></i> means italic fonts):
+        <i>Castanopsis cuspidata</i> (Thunb.) Schottky var. <i>carlesii</i> (Hemsl.) T.Yamaz.' 
+
+        fullname:
+        --------
+        fullname, ex: 'Castanopsis cuspidata (Thunb.) Schottky var. carlesii (Hemsl.) T.Yamaz.'
+
+        format_type:
+        ------------
+        markdown, html or custom, default is markdown
+
+        italic_b:
+        ---------
+        beginning tag of italic, default is "*"
+
+        italic_e:
+        ---------
+        end tag of italic, default is "*"
+
+        split:
+        --------
+        After the fullname is formatted, fmtname will return a list: 
+        [formatted_fullname, authors]
+
+        If split option is true, fmtname will return a string of fullname and authors.
+        
+        
+        """
+        if fullname is None or fullname is '':
+            print('Usage: fmtname(fullname_with_author)')
+            return
+        if format_type == 'markdown':
+            italic_b = '*'; italic_e = '*'
+        elif format_type == 'html':
+            italic_b = '<i>'; italic_e = '</i>'
+        elif format_type == 'custom':
+            italic_b; italic_e
         else:
-            fmt_name = italic_b + " ".join(str(item) for item in n_split[0:2])+ italic_e
-            fmt_author = " ".join(str(item) for item in n_split[2:lenf])
-            fmt_oname = fmt_name + ' ' + fmt_author
-        # 作者中訂正(ex)需使用斜體
-        fmt_oname = re.sub(' ex ', ' ' + italic_b + 'ex' + italic_e + ' ', fmt_oname)
-        return(fmt_oname)
+            print('Unsupported format type: %s (only support markdown and html)' % format_type)
+            return
+        if doformat == False:
+            italic_b = ''
+            italic_e = ''
+        # remove trailing spaces
+        fullname_split = fullname.split(' ')
+        while '' in fullname_split:
+            fullname_split.remove('')
+        length_fullname = len(fullname_split)
+        subordinate_status = []
+        if '×' in fullname_split:
+            cross_idx = fullname_split.index('×')
+            subordinate_status.append([cross_idx, '×'])
+        if 'subsp.' in fullname_split:
+            subsp_idx = fullname_split.index('subsp.')
+            subordinate_status.append([subsp_idx, 'subsp.'])
+        if 'ssp.' in fullname_split:
+            subsp_idx = fullname_split.index('ssp.')
+            subordinate_status.append([subsp_idx, 'ssp.'])
+        if 'var.' in fullname_split:
+            var_idx = fullname_split.index('var.')
+            subordinate_status.append([var_idx, 'var.'])
+        if 'fo.' in fullname_split:
+            fo_idx = fullname_split.index('fo.')
+            subordinate_status.append([fo_idx, 'fo.'])
+        subordinate_status = sorted(subordinate_status)
+        fname_sp = italic_b + ' '.join(str(item) for item in fullname_split[0:2])+ italic_e
+        next_s = ''
+        epithet_cont = []
+        epithet = ''
+        authors_start = ''
+        if len(subordinate_status) >= 1:
+            for v in range(len(subordinate_status)):
+                if subordinate_status[v][1] == '×':
+                    if subordinate_status[v][0] == 0:
+                        fname_sp =  italic_b + '× ' + ' '.join(str(item) for item in fullname_split[1:3])+ italic_e
+                        authors_start = 3
+                    elif subordinate_status[v][0] == 1:
+                        fname_sp = italic_b + ' '.join(str(item) for item in fullname_split[0:3]) + italic_e
+                        authors_start = 3
+                    elif subordinate_status[v][0] > 1:
+                        next_s = fullname_split[subordinate_status[v][0]+1]
+                        before_s = fullname_split[subordinate_status[v][0]-1]
+                        if next_s == 'var.' or next_s == 'subsp.' or next_s == 'fo.':
+                            epithet = '× '# + next_s + ' ' + italic_b + \
+                                #fullname_split[subordinate_status[v][0]+2] + italic_e
+                            authors_start = subordinate_status[v][0] + 3
+                        elif before_s == 'var.' or before_s == 'subsp.' or before_s == 'fo.':
+                            epithet = ''
+                            authors_start = subordinate_status[v][0] + 3
+                        elif re.search('^[A-Z].*', next_s):
+                            epithet = '× ' + italic_b + fullname_split[subordinate_status[v][0]+2] + italic_e
+                            authors_start = subordinate_status[v][0] + 3
+                elif len(subordinate_status) >= 1:
+                    if fullname_split[subordinate_status[v][0]+1] == '×':
+                        sub_epithet = '× ' + fullname_split[subordinate_status[v][0]+2]
+                    else:
+                        sub_epithet = fullname_split[subordinate_status[v][0]+1]
+                    epithet = subordinate_status[v][1] + ' ' + italic_b + sub_epithet + italic_e  
+                epithet_cont.append(epithet)
+            # authors
+            if authors_start is '':
+                authors_start = subordinate_status[-1][0] + 2
+            authors = fullname_split[authors_start:length_fullname]
+            authors_join = ' '.join(authors)
+            if epithet == '':
+                fname_cont = fname_sp + ' ' + ' '.join(epithet_cont)
+            else:
+                fname_cont = fname_sp + ' ' + ' '.join(epithet_cont)
+        else:
+            authors = fullname_split[2:length_fullname]
+            authors_join = ' '.join(authors)
+            fname_cont = fname_sp
+        # ex should be italic
+        authors_join = re.sub(' ex ', ' ' + italic_b + 'ex' + italic_e + ' ', authors_join)
+        if split == False:
+            return(fname_cont + ' ' + authors_join)
+        elif split == True:
+            return([fname_cont, authors_join])
+        else:
+            print("Invalid split option. Please choose 'True' or 'False'")
+
 
     # DEPRECATED: use pypandoc package
     # convert markdown to other fileformats using pandoc
@@ -203,23 +301,42 @@ class Genlist(object):
             for row in range(len(import_list)):
                 for col in range(len(import_list[row])):
                     if col == int(name_italic_col):
-                        input_name = self.fmtname(import_list[row][col], italic_b=',italic,', italic_e=',default,')
-                        a = str.split(input_name, ',')
-                        a.remove(''); a.remove(' ')
-                        for item in range(len(a)):
-                            if a[item] == 'italic':
-                                a[item] = italic
-                            elif a[item] == 'default':
-                                a[item] = default
-                        if len(a) == 7:
-                            ws.write_rich_string(row,col,a[0],a[1],a[2],a[3],a[4],a[5],a[6])
-                        elif len(a) == 3:
-                            ws.write_rich_string(row,col,a[0],a[1],a[2])
-                        else:
-                            ws.write_rich_string(row,col,import_list[row][col])
+                        print(import_list[row][col])
+                        input_name = self.fmtname(import_list[row][col], format_type='custom', italic_b='^', italic_e='$', split=False)
+                        formatted_cont = []
+                        splitted_name = input_name.split('^')
+                        splitted_name.remove('')
+                        for i in range(len(splitted_name)):
+                            if re.search('$', splitted_name[i]):
+                                should_italic = splitted_name[i].split('$')
+                                a = [italic, should_italic[0], default, should_italic[1]]
+                                for r in range(len(a)):
+                                    formatted_cont.append(a[r])
+                        ws.write_rich_string(row, col, *formatted_cont)
                     else:
                         ws.write(row,col,import_list[row][col])
             wb.close()
+        except BaseException as e:
+            print(str(e))
+
+    def fmtExcelNames(self, original, outputfile, name_col_num, header=True):
+        try:
+            openpyxl_wb = load_workbook(original, read_only=True)
+            work_sheet = openpyxl_wb.get_sheet_names()[0]
+            curr_sheet = openpyxl_wb[work_sheet]
+            max_col = curr_sheet.get_highest_column()
+            max_row = curr_sheet.get_highest_row()
+            # header  
+            ws_cont = [['orignal', 'formatted']]
+            if name_col_num > max_col:
+                print(u'The column number exceed the maximum limit')
+            else:
+                for i in range(1, max_row):
+                    if header == True:
+                        i = i+1
+                    d = curr_sheet.cell(row=i, column=name_col_num).value
+                    ws_cont.append([d,d])
+            self.listToXls(ws_cont, 1, outputfile)
         except BaseException as e:
             print(str(e))
 
@@ -355,7 +472,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                 # write excel header
                 if oformat == 'xlsx':
                     xls_num_row = 0
-                    xls_header = [u'Header',u'Family',u'Species',u'Common name', \
+                    xls_header = [u'',u'Family',u'Species',u'Common name', \
                         u'Species info',u'IUCN category']
                     for col in range(len(xls_header)):
                         ws.write(xls_num_row, col, xls_header[col])
@@ -424,75 +541,40 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                             else:
                                 IUCNCAT = ''
                             spinfo = ' ' + ENDEMIC + SRC + IUCNCAT
-                            # when export to xls, format the name to xlsxwriter rich text format 
-                            xlsx_input_name = self.fmtname(taxa_family_sp[k][5], italic_b=',italic,', italic_e=',default,')
-                            a = str.split(xlsx_input_name, ',')
-                            a.remove(''); a.remove(' ')
-                            for item in range(len(a)):
-                                if a[item] == 'italic':
-                                    a[item] = italic
-                                elif a[item] == 'default':
-                                    a[item] = default
-                            if len(a) == 7:
-                                ws.write_rich_string(0,0,a[0],a[1],a[2],a[3],a[4],a[5],a[6])
-                            elif len(a) == 3:
-                                ws.write_rich_string(0,0,a[0],a[1],a[2])
-                            else:
-                                ws.write_rich_string(0,0,a)
+                            # write species names (fullname)
+                            xls_num_row +=1
+                            if oformat == 'xlsx':
+                                # when export to xls, format the name to xlsxwriter rich text format 
+                                xls_input_name = self.fmtname(taxa_family_sp[k][0], format_type='custom', italic_b='^', italic_e='$', split=False)
+                                formatted_cont = []
+                                splitted_name = xls_input_name.split('^')
+                                splitted_name.remove('')
+                                for i in range(len(splitted_name)):
+                                    if re.search('$', splitted_name[i]):
+                                        should_italic = splitted_name[i].split('$')
+                                        a = [italic, should_italic[0], default, should_italic[1]]
+                                        for r in range(len(a)):
+                                            formatted_cont.append(a[r])
+                                ws.write_rich_string(xls_num_row, 2, *formatted_cont)
+
                             if spinfo is not None:
                                 if oformat == 'xlsx':
                                     SPINFO = re.sub(' ', '', ENDEMIC + SRC) 
-                                    xls_num_row += 1 
-                                    #ws.append(['', '', taxa_family_sp[k][5], taxa_family_sp[k][1], SPINFO, IUCNCAT])
-
-                                    # when export to xls, format the name to xlsxwriter rich text format 
-                                    xlsx_input_name = self.fmtname(taxa_family_sp[k][5], italic_b=',italic,', italic_e=',default,')
-                                    a = str.split(xlsx_input_name, ',')
-                                    a.remove(''); a.remove(' ')
-                                    for item in range(len(a)):
-                                        if a[item] == 'italic':
-                                            a[item] = italic
-                                        elif a[item] == 'default':
-                                            a[item] = default
-                                    if len(a) == 7:
-                                        ws.write_rich_string(xls_num_row, 2, a[0],a[1],a[2],a[3],a[4],a[5],a[6])
-                                    elif len(a) == 3:
-                                        ws.write_rich_string(xls_num_row, 2, a[0],a[1],a[2])
-                                    else:
-                                        ws.write_rich_string(xls_num_row, 2, taxa_family_sp[k][5])
-                                    
+                                    # write common name
                                     ws.write(xls_num_row, 3, taxa_family_sp[k][1])
+                                    # write species info (endemic/naturalized)
                                     ws.write(xls_num_row, 4, SPINFO)
                                     ws.write(xls_num_row, 5, IUCNCAT)
                                 else:
-                                    f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
+                                    f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0], split=False) \
+                                            + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
                             else:
                                 if oformat == 'xlsx':
-                                    #ws.append(['', '', taxa_family_sp[k][5]], taxa_family_sp[k][1])
-                                    xls_num_row += 1 
-                                    # when export to xls, format the name to xlsxwriter rich text format 
-                                    xlsx_input_name = self.fmtname(taxa_family_sp[k][5], italic_b=',italic,', italic_e=',default,')
-                                    a = str.split(xlsx_input_name, ',')
-                                    a.remove(''); a.remove(' ')
-                                    for item in range(len(a)):
-                                        if a[item] == 'italic':
-                                            a[item] = italic
-                                        elif a[item] == 'default':
-                                            a[item] = default
-                                    if len(a) == 7:
-                                        ws.write_rich_string(xls_num_row, 2, a[0],a[1],a[2],a[3],a[4],a[5],a[6])
-                                    elif len(a) == 3:
-                                        ws.write_rich_string(xls_num_row, 2, a[0],a[1],a[2])
-                                    else:
-                                        ws.write_rich_string(xls_num_row, 2, taxa_family_sp[k][5])
- 
                                     ws.write(xls_num_row, 3, taxa_family_sp[k][1])
                                 else:
-                                    f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] +'\n')
+                                    f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0], split=False) \
+                                            + ' ' + taxa_family_sp[k][1] +'\n')
                             n = n + 1
-                #if oformat == 'xlsx':
-                    #wb.save(ofile_prefix + '.' + oformat)
-                #    wb.close()
             else:
                 #if oformat == 'xlsx':
                 #    wb = Workbook()
@@ -517,7 +599,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                     #ws.append(['',u'family',u'species',u'local name', \
                     #    u'species info',u'Conservation status'])
                     xls_num_row = 0
-                    xls_header = [u'Header',u'Family',u'Species',u'Common name', \
+                    xls_header = ['',u'Family',u'Species',u'Common name', \
                         u'Species info',u'Conservation status']
                     for col in range(len(xls_header)):
                         ws.write(xls_num_row, col, xls_header[col])
@@ -570,55 +652,40 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                         # conservation status 
                         CONSERV = taxa_family_sp[k][3]
                         spinfo = ' ' + ENDEMIC + CONSERV
+
+                        # write species names (fullname)
+                        if oformat == 'xlsx':
+                            # when export to xls, format the name to xlsxwriter rich text format 
+                            xls_num_row +=1
+                            xls_input_name = self.fmtname(taxa_family_sp[k][0], format_type='custom', \
+                                                italic_b='^', italic_e='$', split=False)
+                            formatted_cont = []
+                            splitted_name = xls_input_name.split('^')
+                            splitted_name.remove('')
+                            for i in range(len(splitted_name)):
+                                if re.search('$', splitted_name[i]):
+                                    should_italic = splitted_name[i].split('$')
+                                    a = [italic, should_italic[0], default, should_italic[1]]
+                                    for r in range(len(a)):
+                                        formatted_cont.append(a[r])
+                            ws.write_rich_string(xls_num_row, 1, *formatted_cont)
+
                         if spinfo is not None:
                             if oformat == 'xlsx':
-                                xls_num_row += 1
-                                
-                                xlsx_input_name = self.fmtname(taxa_family_sp[k][5], italic_b=',italic,', italic_e=',default,')
-                                a = str.split(xlsx_input_name, ',')
-                                a.remove(''); a.remove(' ')
-                                for item in range(len(a)):
-                                    if a[item] == 'italic':
-                                        a[item] = italic
-                                    elif a[item] == 'default':
-                                        a[item] = default
-                                if len(a) == 7:
-                                    ws.write_rich_string(xls_num_row, 1, a[0],a[1],a[2],a[3],a[4],a[5],a[6])
-                                elif len(a) == 3:
-                                    ws.write_rich_string(xls_num_row, 1, a[0],a[1],a[2])
-                                else:
-                                    ws.write_rich_string(xls_num_row, 1, taxa_family_sp[k][0])
- 
                                 ws.write(xls_num_row, 2, taxa_family_sp[k][1])
                                 ws.write(xls_num_row, 3, ENDEMIC)
                                 ws.write(xls_num_row, 4, CONSERV)
                             else:
-                                f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
+                                f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0], split=False) + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
                         else:
                             if oformat == 'xlsx':
-                                xls_num_row += 1
-                                xlsx_input_name = self.fmtname(taxa_family_sp[k][5], italic_b=',italic,', italic_e=',default,')
-                                a = str.split(xlsx_input_name, ',')
-                                a.remove(''); a.remove(' ')
-                                for item in range(len(a)):
-                                    if a[item] == 'italic':
-                                        a[item] = italic
-                                    elif a[item] == 'default':
-                                        a[item] = default
-                                if len(a) == 7:
-                                    ws.write_rich_string(xls_num_row, 1, a[0],a[1],a[2],a[3],a[4],a[5],a[6])
-                                elif len(a) == 3:
-                                    ws.write_rich_string(xls_num_row, 1, a[0],a[1],a[2])
-                                else:
-                                    ws.write_rich_string(xls_num_row, 1, taxa_family_sp[k][0])
                                 ws.write(xls_num_row, 2, taxa_family_sp[k][1])
-                                
                             else:
-                                f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0]) + ' ' + taxa_family_sp[k][1] +'\n')
+                                f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0], split=False) + ' ' + taxa_family_sp[k][1] +'\n')
                         n = n + 1
             if oformat == 'xlsx':
                 #wb.save(ofile_prefix + '.' + oformat)
-                ws.write(0, 0, '%s.xlsx' % ofile_prefix)
+                #ws.write(0, 0, '%s.xlsx' % ofile_prefix)
                 wb.close()
             f.close()
 

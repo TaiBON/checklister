@@ -50,5 +50,5 @@ coll = COLLECT(exe,
 app = BUNDLE(coll,
              name='NGenerator.app',
              icon='icons/ngenerator.icns',
-             version='0.3.0',
+             version='0.3.1',
              bundle_identifier=None)

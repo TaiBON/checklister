@@ -177,179 +177,214 @@
 <context>
     <name>Window</name>
     <message>
-        <location filename="ui_window.py" line="219"/>
+        <location filename="ui_window.py" line="261"/>
         <source>checklist generator</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="221"/>
+        <location filename="ui_window.py" line="263"/>
         <source>Family</source>
         <translation>科名</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="222"/>
+        <location filename="ui_window.py" line="264"/>
         <source>Name</source>
         <translation>種名</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="241"/>
+        <location filename="ui_window.py" line="283"/>
         <source>Common name</source>
         <translation>中名</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="224"/>
+        <location filename="ui_window.py" line="266"/>
         <source>Delete selected</source>
         <translation>刪除選擇的物種</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="225"/>
+        <location filename="ui_window.py" line="267"/>
         <source>Delete all species</source>
         <translation>刪除所有物種</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="226"/>
+        <location filename="ui_window.py" line="268"/>
         <source>Checklist DB</source>
         <translation>物種名錄資料庫</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="227"/>
+        <location filename="ui_window.py" line="269"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select temporary file to save common names, and this file can be loaded to generate checklist later&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="259"/>
+        <location filename="ui_window.py" line="304"/>
         <source>Select file ...</source>
         <translation>選擇檔案 ...</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="229"/>
+        <location filename="ui_window.py" line="271"/>
         <source>Temporary file for local names</source>
         <translation>儲存中名之暫存檔</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="230"/>
+        <location filename="ui_window.py" line="272"/>
         <source>Export checklist file</source>
         <translation>輸出名錄</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="231"/>
+        <location filename="ui_window.py" line="273"/>
         <source>Vascular plants of Taiwan (APG III)</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="232"/>
+        <location filename="ui_window.py" line="274"/>
         <source>Vascular plants of Taiwan (Flora of Taiwan 2nd Edition)</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="233"/>
+        <location filename="ui_window.py" line="275"/>
         <source>Bird list of Taiwan (2014)</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="234"/>
+        <location filename="ui_window.py" line="303"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="236"/>
+        <location filename="ui_window.py" line="278"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update the checklist database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;更新資料庫&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="237"/>
+        <location filename="ui_window.py" line="279"/>
         <source>Update DB</source>
         <translation>更新資料庫</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="238"/>
+        <location filename="ui_window.py" line="280"/>
         <source>Load local batch file</source>
         <translation>載入中名檔批次處理</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="240"/>
+        <location filename="ui_window.py" line="282"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>輸入物種名。你可以輸入部分中名、部分學名、科名來自動列出相近物種。按 Enter 或 Return 加入下方名錄</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="242"/>
+        <location filename="ui_window.py" line="284"/>
         <source>Add species</source>
         <translation>加入物種</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="243"/>
+        <location filename="ui_window.py" line="285"/>
         <source>Select species</source>
         <translation>選擇物種</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="244"/>
+        <location filename="ui_window.py" line="286"/>
         <source>To be merged checklists</source>
         <translation>要合併的名錄</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="247"/>
+        <location filename="ui_window.py" line="289"/>
         <source>Merge</source>
         <translation>合併</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="248"/>
+        <location filename="ui_window.py" line="290"/>
         <source>Checklist B</source>
         <translation>物種名錄 B</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="257"/>
+        <location filename="ui_window.py" line="299"/>
         <source>Compare</source>
         <translation>比較</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="250"/>
+        <location filename="ui_window.py" line="292"/>
         <source>Checklist A</source>
         <translation>物種名錄 A</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="251"/>
+        <location filename="ui_window.py" line="293"/>
         <source>A differ B (A - B)</source>
         <translation>A差集B</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="252"/>
+        <location filename="ui_window.py" line="294"/>
         <source>B differ A (B - A)</source>
         <translation>B差集A</translation>
     </message>
     <message>
         <location filename="ui_window.py" line="253"/>
-        <source>A intersects B (A ∩ B )</source>
-        <translation>A 交集 B (A ∩ B )</translation>
+        <source>A intersects B (A ? B )</source>
+        <translation type="obsolete">A 交集 B (A ∩ B )</translation>
     </message>
     <message>
         <location filename="ui_window.py" line="254"/>
-        <source>A union B (A ∪ B)</source>
-        <translation>A 聯集 B (A ∪ B)</translation>
+        <source>A union B (A ? B)</source>
+        <translation type="obsolete">A 聯集 B (A ∪ B)</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="258"/>
+        <location filename="ui_window.py" line="300"/>
         <source>To be combined checklists</source>
         <translation>要組合的名錄</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="260"/>
+        <location filename="ui_window.py" line="302"/>
         <source>Combine</source>
         <translation>組合名錄</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="261"/>
+        <location filename="ui_window.py" line="311"/>
         <source>Export</source>
         <translation>輸出</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="262"/>
+        <location filename="ui_window.py" line="312"/>
         <source>Close</source>
         <translation>關閉</translation>
     </message>
     <message>
-        <location filename="ui_window.py" line="263"/>
+        <location filename="ui_window.py" line="313"/>
         <source>Checklist</source>
         <translation>物種名錄</translation>
+    </message>
+    <message>
+        <location filename="ui_window.py" line="295"/>
+        <source>A intersects B (A ∩ B )</source>
+        <translation>A 交集 B (A ∩ B )</translation>
+    </message>
+    <message>
+        <location filename="ui_window.py" line="296"/>
+        <source>A union B (A ∪ B)</source>
+        <translation>A 聯集 B (A ∪ B)</translation>
+    </message>
+    <message>
+        <location filename="ui_window.py" line="305"/>
+        <source>Column number of name</source>
+        <translation>學名欄位</translation>
+    </message>
+    <message>
+        <location filename="ui_window.py" line="306"/>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="ui_window.py" line="310"/>
+        <source>Format</source>
+        <translation>學名斜體化</translation>
+    </message>
+    <message>
+        <location filename="ui_window.py" line="308"/>
+        <source>Choose file to format names:</source>
+        <translation>選擇要格式化的檔案:</translation>
+    </message>
+    <message>
+        <location filename="ui_window.py" line="309"/>
+        <source>with header</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

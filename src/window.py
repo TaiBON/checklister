@@ -22,6 +22,7 @@ class Window(QWidget, Ui_Window):
             
             #self.sqlite_db = g.resource_path('twnamelist.db')
             g = genlist_api.Genlist()
+            self.g = genlist_api.Genlist()
             # only for main window
             #self.main_widget = QWidget(self)
             #self.setCentralWidget(self.main_widget)
@@ -62,6 +63,11 @@ class Window(QWidget, Ui_Window):
             # combine checklist actions
             self.butCombineChecklists.clicked.connect(self.selCombineList)
             self.combined_checklists = list()
+
+            # format excel scientific names
+            self.butSelectExcel.clicked.connect(self.selExcelFile)
+            self.butFormatName.clicked.connect(self.formatExcel)
+            #self.checkBox.isChecked
 
             # load menubar
             #menubar = self.menuBar()
@@ -145,18 +151,18 @@ class Window(QWidget, Ui_Window):
             g.combineChecklists(self.sqlite_db, tobe_combined_lists) 
             current_db_table = self.checkDB()
             # print(current_db_table)
-            # if current_db_table == 'dao_bnamelist':
-            #     db_fullname = 'name'
-            # else:
-            #     db_fullname = 'fullname'
+            if current_db_table == 'dao_bnamelist':
+                db_fullname = 'name'
+            else:
+                db_fullname = 'fullname'
             fetch_combined_sql = '''
             SELECT 
-                distinct d.family,d.family_zh,d.name,u.* 
+                distinct d.family,d.family_zh,d.%s,u.* 
             FROM 
                 tmp_union u, %s d
             WHERE
                 u.local_name = d.zh_name;
-            ''' % current_db_table
+            ''' % (db_fullname, current_db_table)
             combined_table = g.dbExecuteSQL(fetch_combined_sql, self.sqlite_db, show_results=True)
             print(combined_table)
             header = ['family', 'family_cname', 'name', 'common name']
@@ -184,6 +190,38 @@ class Window(QWidget, Ui_Window):
                 item.setText(1, combined_table[i][2])
                 item.setText(2, combined_table[i][3])
                 self.treeWidget.addTopLevelItem(item)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+    def selExcelFile(self):
+        try:
+            self.lineExcelFilePath.clear()
+            orig_excel_file = QFileDialog.getOpenFileName(self, self.tr(u"Select excel files"), \
+                    QDir.homePath(), self.tr("Excel files (*.xls *.xlsx)"))[0]
+            if orig_excel_file is None or orig_excel_file is '':
+                return
+            self.lineExcelFilePath.setText(orig_excel_file)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+
+    def formatExcel(self):
+        try:
+            orig_excel_file = self.lineExcelFilePath.text()
+            ncol = self.lineExcelColnum.text()
+            if orig_excel_file is None or orig_excel_file is '':
+                QMessageBox.information(self, "Warning", self.tr(u"Please input the excel filename"))
+            elif ncol is None or ncol is '':
+                QMessageBox.information(self, "Warning", self.tr(u"Please input the column number of scientific names"))
+            else:
+                # get filename and os path
+                base_path = os.path.split(orig_excel_file)[0]
+                excel_filename = str.split(os.path.split(orig_excel_file)[1], '.')[0]
+                formatted_excel_filename = excel_filename + '_formatted.xlsx'
+                ncol = int(self.lineExcelColnum.text())
+                formatted_filepath = os.path.join(base_path, formatted_excel_filename)
+                self.g.fmtExcelNames(original=orig_excel_file, outputfile=formatted_filepath, \
+                        name_col_num=ncol)
+                QMessageBox.information(self, "Notice", self.tr(u"Formatted excel file:  %s done!" % formatted_filepath))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -588,46 +626,46 @@ class Window(QWidget, Ui_Window):
 
     # 產生名錄
     def genChecklist(self):
-        try:
-            g = genlist_api.Genlist()
-            tree_item = self.getTreeItems(self.treeWidget)
-            # getdbtable
-            db_table = self.checkDB()
-            export_filename = self.lineOutputFilename.text()
-            if self.lineOutputFilename.text() == '':
-                QMessageBox.information(self, "Warning", self.tr("Please input export file name "))
-            elif self.lineTempFile.text() == '' or self.lineSlist == '':
-                if self.lineCombineChecklists.text() != '':
-                    export_combined_checklist_file = self.lineOutputFilename.text()
-                    g.listToXls(self.combined_checklists, 2, export_combined_checklist_file)
-                    QMessageBox.information(self, self.tr('Checklist generator'), \
-                        self.tr("Export checklist to '%s' done!" % export_filename))
-                    self.lineCombineChecklists.clear()
-                else:
-                    QMessageBox.information(self, "Warning", self.tr("Please input the file to store checklist file"))
-            else:
-                saved_list = str(self.lineTempFile.text())
-                with codecs.open(saved_list, 'w+', 'utf-8') as f:
-                    for sp in tree_item:
-                        f.write("%s\n" % sp)
-                f.close()
-                ofile = str(self.lineOutputFilename.text())
-                if os.path.exists(ofile) == True:
-                    ofile_abspath = g.resource_path(ofile)
-                    shutil.copyfile(ofile_abspath, ofile_abspath+'.bak')
-                    os.remove(ofile_abspath)
-                output_flist = str.split(ofile, '.')
-                # before generate namelist, clean up the sample table in sqlite db
-                conn = sqlite3.connect(self.sqlite_db)
-                curs = conn.cursor()
-                curs.execute('DROP TABLE IF EXISTS sample;')
-                conn.commit()
-                # export outputfile
-                g.genEngine(self.sqlite_db, db_table, saved_list, output_flist[1], output_flist[0])
+        #try:
+        g = genlist_api.Genlist()
+        tree_item = self.getTreeItems(self.treeWidget)
+        # getdbtable
+        db_table = self.checkDB()
+        export_filename = self.lineOutputFilename.text()
+        if self.lineOutputFilename.text() == '':
+            QMessageBox.information(self, "Warning", self.tr("Please input export file name "))
+        elif self.lineTempFile.text() == '' or self.lineSlist == '':
+            if self.lineCombineChecklists.text() != '':
+                export_combined_checklist_file = self.lineOutputFilename.text()
+                g.listToXls(self.combined_checklists, 2, export_combined_checklist_file)
                 QMessageBox.information(self, self.tr('Checklist generator'), \
-                        self.tr("Export checklist to '%s' done!" % export_filename))
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
+                    self.tr("Export checklist to '%s' done!" % export_filename))
+                self.lineCombineChecklists.clear()
+            else:
+                QMessageBox.information(self, "Warning", self.tr("Please input the file to store checklist file"))
+        else:
+            saved_list = str(self.lineTempFile.text())
+            with codecs.open(saved_list, 'w+', 'utf-8') as f:
+                for sp in tree_item:
+                    f.write("%s\n" % sp)
+            f.close()
+            ofile = str(self.lineOutputFilename.text())
+            if os.path.exists(ofile) == True:
+                ofile_abspath = g.resource_path(ofile)
+                shutil.copyfile(ofile_abspath, ofile_abspath+'.bak')
+                os.remove(ofile_abspath)
+            output_flist = str.split(ofile, '.')
+            # before generate namelist, clean up the sample table in sqlite db
+            conn = sqlite3.connect(self.sqlite_db)
+            curs = conn.cursor()
+            curs.execute('DROP TABLE IF EXISTS sample;')
+            conn.commit()
+            # export outputfile
+            g.genEngine(self.sqlite_db, db_table, saved_list, output_flist[1], output_flist[0])
+            QMessageBox.information(self, self.tr('Checklist generator'), \
+                    self.tr("Export checklist to '%s' done!" % export_filename))
+        #except BaseException as e:
+        #    QMessageBox.information(self, "Warning", str(e))
 
     def browTempfile(self):
         try:
@@ -638,4 +676,4 @@ class Window(QWidget, Ui_Window):
                 return
             self.lineTempFile.setText(saveTempFile) 
         except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
+            MessageBox.information(self, "Warning", str(e))
