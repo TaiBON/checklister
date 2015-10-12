@@ -20,9 +20,14 @@ class Genlist(object):
     def __init__(self, parent=None):
         super(Genlist, self).__init__()
 
-    # for pyinstaller 
-    # http://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile
     def resource_path(self, relative):
+        """
+        resource_path(relative)
+        =======================
+        For pyinstaller 
+
+        ref:  http://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile
+        """
         if hasattr(sys, '_MEIPASS'):
             return os.path.join(sys._MEIPASS, relative)
         else:
@@ -149,8 +154,9 @@ class Genlist(object):
             authors = fullname_split[2:length_fullname]
             authors_join = ' '.join(authors)
             fname_cont = fname_sp
-        # ex should be italic
-        authors_join = re.sub(' ex ', ' ' + italic_b + 'ex' + italic_e + ' ', authors_join)
+        # ex should be italic?
+        # NEEDS TO BE CONFIRMED
+        # authors_join = re.sub(' ex ', ' ' + italic_b + 'ex' + italic_e + ' ', authors_join)
         if split == False:
             return(fname_cont + ' ' + authors_join)
         elif split == True:
@@ -171,6 +177,11 @@ class Genlist(object):
             subprocess.Popen([self.resource_path('pandoc'), inpfile, '-o', outfile])
         
     def dbExecuteSQL(self, schema, dbfile, show_results=False):
+        """
+        dbExcuteSQL(schema, dbfile, show_results=False)
+        ===========
+        dbfile
+        """
         conn = sqlite3.connect(dbfile)
         curs = conn.cursor()
         curs.execute(schema)
