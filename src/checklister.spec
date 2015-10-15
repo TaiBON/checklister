@@ -20,8 +20,7 @@ block_cipher = None
 dbfile = Datafiles('db/twnamelist.db', strip_path=False) # keep the path of this file
 i18n_tree = Tree('i18n', prefix='i18n', excludes=['.ts'])
 
-a = Analysis(['NGenerator.py'],
-             #pathex=['/Users/psilotum/Documents/Dropbox/projects/2014_TWplantlist/namelist-generator/src/qt-gui'],
+a = Analysis(['checklister.py'],
              hiddenimports=[],
              hookspath=None,
              runtime_hooks=None,
@@ -33,7 +32,7 @@ pyz = PYZ(a.pure,
 exe = EXE(pyz,
           a.scripts,
           exclude_binaries=True,
-          name='NGenerator',
+          name='checklister',
           debug=False,
           strip=None,
           upx=True,
@@ -46,9 +45,9 @@ coll = COLLECT(exe,
                a.datas,
                strip=None,
                upx=True,
-               name=os.path.join('dist', 'NGenerator'))
+               name=os.path.join('dist', 'checklister'))
 app = BUNDLE(coll,
-             name='NGenerator.app',
-             icon='icons/ngenerator.icns',
+             name='checklister.app',
+             icon='icons/checklister.icns',
              version='0.3.1',
              bundle_identifier=None)

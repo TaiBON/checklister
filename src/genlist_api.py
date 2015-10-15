@@ -106,6 +106,9 @@ class Genlist(object):
         if 'fo.' in fullname_split:
             fo_idx = fullname_split.index('fo.')
             subordinate_status.append([fo_idx, 'fo.'])
+        if 'cv.' in fullname_split:
+            cv_idx = fullname_split.index('cv.')
+            subordinate_status.append([cv_idx, 'cv.'])
         subordinate_status = sorted(subordinate_status)
         fname_sp = italic_b + ' '.join(str(item) for item in fullname_split[0:2])+ italic_e
         next_s = ''
@@ -124,11 +127,11 @@ class Genlist(object):
                     elif subordinate_status[v][0] > 1:
                         next_s = fullname_split[subordinate_status[v][0]+1]
                         before_s = fullname_split[subordinate_status[v][0]-1]
-                        if next_s == 'var.' or next_s == 'subsp.' or next_s == 'fo.':
+                        if next_s == 'var.' or next_s == 'subsp.' or next_s == 'fo.' or before_s == 'cv.':
                             epithet = '× '# + next_s + ' ' + italic_b + \
                                 #fullname_split[subordinate_status[v][0]+2] + italic_e
                             authors_start = subordinate_status[v][0] + 3
-                        elif before_s == 'var.' or before_s == 'subsp.' or before_s == 'fo.':
+                        elif before_s == 'var.' or before_s == 'subsp.' or before_s == 'fo.' or before_s == 'cv.':
                             epithet = ''
                             authors_start = subordinate_status[v][0] + 3
                         elif re.search('^[A-Z].*', next_s):

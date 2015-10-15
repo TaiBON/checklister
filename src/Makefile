@@ -16,8 +16,8 @@ translate:
 	pylupdate5 ui_window.py -ts i18n/ui_window_ko_KR.ts
 
 binary:
-	pyinstaller --onefile NGenerator.spec
-	./symlink_macos.sh && cp -rf dist/NGenerator.app /Applications/; cp -rf dist/NGenerator.app ../../packages/
+	pyinstaller --onefile checklister.spec
+	./symlink_macos.sh && cp -rf dist/checklister.app /Applications/; cp -rf dist/checklister.app ../../packages/
 
 update_db:
 	# export pgsql view to csv files 

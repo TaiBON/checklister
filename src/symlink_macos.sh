@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 if [ `uname` == "Darwin" ]; then
-    cd dist/NGenerator.app/Contents/MacOS
+    cd dist/checklister.app/Contents/MacOS
     unlink db; unlink include; unlink lib
     unlink i18n; #unlink qt_menu.nib
     #unlink bin; unlink share; unlink changelog
