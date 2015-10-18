@@ -631,46 +631,46 @@ class Window(QWidget, Ui_Window):
 
     # 產生名錄
     def genChecklist(self):
-        #try:
-        g = genlist_api.Genlist()
-        tree_item = self.getTreeItems(self.treeWidget)
-        # getdbtable
-        db_table = self.checkDB()
-        export_filename = self.lineOutputFilename.text()
-        if self.lineOutputFilename.text() == '':
-            QMessageBox.information(self, "Warning", self.tr("Please input export file name "))
-        elif self.lineTempFile.text() == '' or self.lineSlist == '':
-            if self.lineCombineChecklists.text() != '':
-                export_combined_checklist_file = self.lineOutputFilename.text()
-                g.listToXls(self.combined_checklists, 2, export_combined_checklist_file)
-                QMessageBox.information(self, self.tr('Checklist generator'), \
-                    self.tr("Export checklist to '%s' done!" % export_filename))
-                self.lineCombineChecklists.clear()
+        try:
+            g = genlist_api.Genlist()
+            tree_item = self.getTreeItems(self.treeWidget)
+            # getdbtable
+            db_table = self.checkDB()
+            export_filename = self.lineOutputFilename.text()
+            if self.lineOutputFilename.text() == '':
+                QMessageBox.information(self, "Warning", self.tr("Please input export file name "))
+            elif self.lineTempFile.text() == '' or self.lineSlist == '':
+                if self.lineCombineChecklists.text() != '':
+                    export_combined_checklist_file = self.lineOutputFilename.text()
+                    g.listToXls(self.combined_checklists, 2, export_combined_checklist_file)
+                    QMessageBox.information(self, self.tr('Checklist generator'), \
+                        self.tr("Export checklist to '%s' done!" % export_filename))
+                    self.lineCombineChecklists.clear()
+                else:
+                    QMessageBox.information(self, "Warning", self.tr("Please input the file to store checklist file"))
             else:
-                QMessageBox.information(self, "Warning", self.tr("Please input the file to store checklist file"))
-        else:
-            saved_list = str(self.lineTempFile.text())
-            with codecs.open(saved_list, 'w+', 'utf-8') as f:
-                for sp in tree_item:
-                    f.write("%s\n" % sp)
-            f.close()
-            ofile = str(self.lineOutputFilename.text())
-            if os.path.exists(ofile) == True:
-                ofile_abspath = g.resource_path(ofile)
-                shutil.copyfile(ofile_abspath, ofile_abspath+'.bak')
-                os.remove(ofile_abspath)
-            output_flist = str.split(ofile, '.')
-            # before generate namelist, clean up the sample table in sqlite db
-            conn = sqlite3.connect(self.sqlite_db)
-            curs = conn.cursor()
-            curs.execute('DROP TABLE IF EXISTS sample;')
-            conn.commit()
-            # export outputfile
-            g.genEngine(self.sqlite_db, db_table, saved_list, output_flist[1], output_flist[0])
-            QMessageBox.information(self, self.tr('Checklist generator'), \
-                    self.tr("Export checklist to '%s' done!" % export_filename))
-        #except BaseException as e:
-        #    QMessageBox.information(self, "Warning", str(e))
+                saved_list = str(self.lineTempFile.text())
+                with codecs.open(saved_list, 'w+', 'utf-8') as f:
+                    for sp in tree_item:
+                        f.write("%s\n" % sp)
+                f.close()
+                ofile = str(self.lineOutputFilename.text())
+                if os.path.exists(ofile) == True:
+                    ofile_abspath = g.resource_path(ofile)
+                    shutil.copyfile(ofile_abspath, ofile_abspath+'.bak')
+                    os.remove(ofile_abspath)
+                output_flist = str.split(ofile, '.')
+                # before generate namelist, clean up the sample table in sqlite db
+                conn = sqlite3.connect(self.sqlite_db)
+                curs = conn.cursor()
+                curs.execute('DROP TABLE IF EXISTS sample;')
+                conn.commit()
+                # export outputfile
+                g.genEngine(self.sqlite_db, db_table, saved_list, output_flist[1], output_flist[0])
+                QMessageBox.information(self, self.tr('Checklist generator'), \
+                        self.tr("Export checklist to '%s' done!" % export_filename))
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
 
     def browTempfile(self):
         try:
