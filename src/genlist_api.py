@@ -205,8 +205,8 @@ class Genlist(object):
                 insert_db = '''
                 INSERT INTO %s (
                     family,
-                    family_zh,
-                    zh_name,
+                    family_cname,
+                    cname,
                     name,
                     fullname,
                     plant_type,
@@ -385,7 +385,8 @@ class Genlist(object):
         if list_tables == '':
             exit
         # vascular plants
-        elif list_tables[0][0] == 'dao_pnamelist' or list_tables[0][0] == 'dao_pnamelist_apg3':
+        elif list_tables[0][0] == 'dao_pnamelist' or list_tables[0][0] == 'dao_pnamelist_apg3' \
+                or list_tables[0][0] == 'dao_jp_ylist':
             species_type = 1
         # birds
         elif list_tables[0][0] == 'dao_bnamelist':
@@ -398,7 +399,7 @@ class Genlist(object):
         conn.commit()
         sample_create = '''
         CREATE TABLE sample (
-          zh_name varchar
+          cname varchar
         );
         '''
         curs.execute(sample_create)
@@ -408,7 +409,7 @@ class Genlist(object):
                 # substitute 台 to 臺
                 zhname = re.sub('台([灣|北|中|西|南|東])',r'臺\1', row[0])
                 insert_db = '''
-                INSERT INTO sample (zh_name) VALUES ("%s");
+                INSERT INTO sample (cname) VALUES ("%s");
                 ''' % zhname
                 curs.execute(insert_db)
                 conn.commit()
@@ -433,15 +434,15 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             ##### End of HEADER #####
             count_family = '''
             SELECT count(*) from (SELECT distinct family from sample s left outer join %s n 
-                    on s.zh_name=n.zh_name) as f;
+                    on s.cname=n.cname) as f;
             ''' % dbtable
             count_species = '''
-            SELECT count(*) from (SELECT distinct n.zh_name from sample s left outer join %s n 
-                    on s.zh_name=n.zh_name) as f;
+            SELECT count(*) from (SELECT distinct n.cname from sample s left outer join %s n 
+                    on s.cname=n.cname) as f;
             ''' % dbtable
             not_exist_sp = '''
-            SELECT distinct s.zh_name from sample s left outer join %s n 
-                    on s.zh_name=n.zh_name where n.zh_name is null;
+            SELECT distinct s.cname from sample s left outer join %s n 
+                    on s.cname=n.cname where n.cname is null;
             ''' % dbtable
             curs.execute(count_family)
             family_no = curs.fetchall()[0][0]
@@ -475,7 +476,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                     SELECT p.plant_type,p.pt_name
                     FROM dao_plant_type p,
                         (SELECT distinct plant_type from sample s left outer join %s n 
-                        on s.zh_name=n.zh_name order by plant_type) as t
+                        on s.cname=n.cname order by plant_type) as t
                     WHERE p.plant_type = t.plant_type;
                 ''' % dbtable
                 curs.execute(pt_plant_type_sql)
@@ -498,8 +499,8 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                         f.write('\n')
                         f.write('\n###'+pt_plant_type[i][1]+'\n\n')
                     taxa_family_sql = '''
-                    select distinct family,family_zh from sample s left outer join %s n 
-                    on s.zh_name=n.zh_name where n.plant_type=%i
+                    select distinct family,family_cname from sample s left outer join %s n 
+                    on s.cname=n.cname where n.plant_type=%i
                     order by plant_type,family;
                     ''' % (dbtable, pt_plant_type[i][0])
                     curs.execute(taxa_family_sql)
@@ -507,8 +508,8 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                     for j in range(0,len(taxa_family)):
                         sp_number_in_fam = '''
                         select count(*) from 
-                            (select distinct fullname, name, n.zh_name from sample s left outer join %s n 
-                            on s.zh_name=n.zh_name where n.plant_type=%i and family='%s'
+                            (select distinct fullname, name, n.cname from sample s left outer join %s n 
+                            on s.cname=n.cname where n.plant_type=%i and family='%s'
                             order by plant_type,family,fullname) as a;
                         ''' % (dbtable, pt_plant_type[i][0], taxa_family[j][0])
                         curs.execute(sp_number_in_fam)
@@ -525,8 +526,8 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                             f.write('\n')
                             f.write(fam + ' ' + fam_zh + ' (%i)\n' % fam_spno)
                         taxa_family_sp = '''
-                            select distinct fullname,n.zh_name,n.endemic,n.source,n.iucn_category,n.name from sample s left outer join %s n 
-                            on s.zh_name=n.zh_name where n.plant_type=%i and family='%s'
+                            select distinct fullname,n.cname,n.endemic,n.source,n.iucn_category,n.name from sample s left outer join %s n 
+                            on s.cname=n.cname where n.plant_type=%i and family='%s'
                             order by plant_type,family,fullname;
                         ''' % (dbtable, pt_plant_type[i][0], taxa_family[j][0])
                         curs.execute(taxa_family_sp)
@@ -595,10 +596,10 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                 #    ws = wb.active
                 taxa_family_sql = '''
                     SELECT DISTINCT 
-                        family,family_zh 
+                        family,family_cname 
                     FROM sample s 
                     LEFT OUTER JOIN %s n 
-                    ON s.zh_name=n.zh_name
+                    ON s.cname=n.cname
                     ORDER BY family;
                     ''' % dbtable
                 curs.execute(taxa_family_sql)
@@ -622,9 +623,9 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                 for j in range(0,len(taxa_family)):
                     sp_number_in_fam = '''
                         select count(*) from 
-                        (SELECT distinct name,n.zh_name
+                        (SELECT distinct name,n.cname
                             FROM sample s LEFT OUTER JOIN %s n 
-                            ON s.zh_name=n.zh_name 
+                            ON s.cname=n.cname 
                         WHERE family='%s'
                         ORDER BY family,name) as a;
                     ''' % (dbtable, taxa_family[j][0])
@@ -644,9 +645,9 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                         f.write(fam+' '+fam_zh+' (%i)\n' % fam_spno)
                     taxa_family_sp = '''
                         SELECT distinct 
-                            name,n.zh_name,n.endemic,n.consv_status 
+                            name,n.cname,n.endemic,n.consv_status 
                         FROM sample s LEFT OUTER JOIN %s n 
-                            ON s.zh_name=n.zh_name 
+                            ON s.cname=n.cname 
                         WHERE 
                             family='%s'
                         ORDER BY family,name;

@@ -157,11 +157,11 @@ class Window(QWidget, Ui_Window):
                 db_fullname = 'fullname'
             fetch_combined_sql = '''
             SELECT 
-                distinct d.family,d.family_zh,d.%s,u.* 
+                distinct d.family,d.family_cname,d.%s,u.* 
             FROM 
                 tmp_union u, %s d
             WHERE
-                u.local_name = d.zh_name;
+                u.local_name = d.cname;
             ''' % (db_fullname, current_db_table)
             combined_table = g.dbExecuteSQL(fetch_combined_sql, self.sqlite_db, show_results=True)
             print(combined_table)
@@ -185,7 +185,7 @@ class Window(QWidget, Ui_Window):
             self.delAllTreeItems() 
             for i in range(1,len(combined_table)):
                 item = QTreeWidgetItem()
-                # family_zh, name, common name
+                # family_cname, name, common name
                 item.setText(0, combined_table[i][1])
                 item.setText(1, combined_table[i][2])
                 item.setText(2, combined_table[i][3])
@@ -275,6 +275,8 @@ class Window(QWidget, Ui_Window):
                 db_table = 'dao_pnamelist'
             elif db_idx == 2:
                 db_table = 'dao_bnamelist'
+            elif db_idx == 3:
+                db_table = 'dao_jp_ylist'
             else:
                 db_table = 'dao_pnamelist'
             return(db_table)
@@ -397,7 +399,7 @@ class Window(QWidget, Ui_Window):
             conn = sqlite3.connect(self.sqlite_db)
             curs = conn.cursor()
             drop_table = '''DROP TABLE IF EXISTS sample;'''
-            create_sample = '''CREATE TABLE sample (zh_name varchar);'''
+            create_sample = '''CREATE TABLE sample (cname varchar);'''
             curs.execute(drop_table)
             curs.execute(create_sample)
             with codecs.open(Slist, 'r', 'utf-8') as f:
@@ -411,7 +413,7 @@ class Window(QWidget, Ui_Window):
                     # pass the empty lines
                     if zhname != '':
                         insert_db = '''
-                        INSERT INTO sample (zh_name) VALUES ("%s");
+                        INSERT INTO sample (cname) VALUES ("%s");
                         ''' % zhname
                     curs.execute(insert_db)
                 conn.commit()
@@ -419,19 +421,19 @@ class Window(QWidget, Ui_Window):
             # check the target database table
             db_table = self.checkDB()
             query_list = '''
-            SELECT n.family_zh,n.name,n.zh_name FROM %s n, sample s
-            WHERE n.zh_name = s.zh_name order by family,name;
+            SELECT n.family_cname,n.name,n.cname FROM %s n, sample s
+            WHERE n.cname = s.cname order by family,name;
             ''' % db_table
             curs.execute(query_list)
             fetched_results = curs.fetchall() 
             # check phanton species (does not exist in our database)
             query_not_exists_sp = ''' 
                 SELECT 
-                    distinct s.zh_name 
+                    distinct s.cname 
                 FROM 
                     sample s LEFT OUTER JOIN %s n 
-                ON s.zh_name=n.zh_name
-                WHERE n.zh_name is null;
+                ON s.cname=n.cname
+                WHERE n.cname is null;
             ''' % db_table 
             curs.execute(query_not_exists_sp)
             no_sp = curs.fetchall()
@@ -459,7 +461,7 @@ class Window(QWidget, Ui_Window):
             conn = sqlite3.connect(self.sqlite_db)
             curs = conn.cursor()
             drop_table = '''DROP TABLE IF EXISTS compare_sample;'''
-            create_sample = '''CREATE TABLE compare_sample (zh_name varchar);'''
+            create_sample = '''CREATE TABLE compare_sample (cname varchar);'''
             curs.execute(drop_table)
             curs.execute(create_sample)
             for row in range(len(local_name_list)):
@@ -470,26 +472,26 @@ class Window(QWidget, Ui_Window):
                 # pass the empty lines
                 if zhname != '':
                     insert_db = '''
-                    INSERT INTO compare_sample (zh_name) VALUES ("%s");
+                    INSERT INTO compare_sample (cname) VALUES ("%s");
                     ''' % zhname
                 curs.execute(insert_db)
             conn.commit()
             # check the target database table
             db_table = self.checkDB()
             query_list = '''
-            SELECT n.family_zh,n.name,n.zh_name FROM %s n, compare_sample s
-            WHERE n.zh_name = s.zh_name order by family,name;
+            SELECT n.family_cname,n.name,n.cname FROM %s n, compare_sample s
+            WHERE n.cname = s.cname order by family,name;
             ''' % db_table
             curs.execute(query_list)
             fetched_results = curs.fetchall() 
             # check phanton species (does not exist in our database)
             query_not_exists_sp = ''' 
                 SELECT 
-                    distinct s.zh_name 
+                    distinct s.cname 
                 FROM 
                     compare_sample s LEFT OUTER JOIN %s n 
-                ON s.zh_name=n.zh_name
-                WHERE n.zh_name is null;
+                ON s.cname=n.cname
+                WHERE n.cname is null;
             ''' % db_table 
             curs.execute(query_not_exists_sp)
             no_sp = curs.fetchall()
@@ -549,6 +551,9 @@ class Window(QWidget, Ui_Window):
             elif db_idx == 2:
                 # Birdlist of Taiwan
                 retrieved = g.dbGetsp('dao_bnamelist', self.sqlite_db)
+            elif db_idx == 3:
+                # Plant list of Japan (Ylist, cached: 2015-10-15)
+                retrieved = g.dbGetsp('dao_jp_ylist', self.sqlite_db)
             else:
                 retrieved = g.dbGetsp('dao_pnamelist_apg3', self.sqlite_db)        
             b_container = []
@@ -569,7 +574,7 @@ class Window(QWidget, Ui_Window):
                 # check for species items
                 item = QTreeWidgetItem()     
                 species_item = str.split(str(self.lineSpecies.text()), ',')
-                # get species zh_name
+                # get species cname
                 splist = self.getDbIdx()
                 splist_zhname = []
                 for i in range(len(splist)):
