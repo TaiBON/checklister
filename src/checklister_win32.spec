@@ -20,7 +20,7 @@ block_cipher = None
 dbfile = Datafiles('db/twnamelist.db', strip_path=False) # keep the path of this file
 i18n_tree = Tree('i18n', prefix='i18n', excludes=['.ts'])
 
-a = Analysis(['NGenerator.py'],
+a = Analysis(['checklister.py'],
             #pathex=['Z:\\Documents\\Dropbox\\projects\\2014_TWplantlist\\namelist-generator\\src\\qt-gui'],
              hiddenimports=[],
              hookspath=None,
@@ -36,8 +36,8 @@ exe = EXE(pyz,
           a.datas,
           i18n_tree,
           dbfile,
-          icon='.\\icons\\ngenerator.ico',
-          name='NGenerator.exe',
+          icon='.\\icons\\checklister.ico',
+          name='checklister.exe',
           debug=False,
           strip=None,
           upx=True,
