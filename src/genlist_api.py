@@ -485,8 +485,8 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                 m = 1
 
                 # write excel header
+                xls_num_row = 0
                 if oformat == 'xlsx':
-                    xls_num_row = 0
                     xls_header = [u'',u'Family',u'Species',u'Common name', \
                         u'Species info',u'IUCN category']
                     for col in range(len(xls_header)):
