@@ -41,7 +41,11 @@ class Window(QWidget, Ui_Window):
             #self.butBlist.clicked.connect(self.browBaselist)
             self.butSlist.clicked.connect(self.browSlist)
             self.butAddToTree.clicked.connect(self.addToTree)
+            # Key events
             self.lineSpecies.returnPressed.connect(self.addToTree)
+            #self.lineSpecies.escPressed.connect(self.lineSpecies.clear())
+
+
             self.butGenerateSp.clicked.connect(self.genChecklist)
             self.butSelectTempFile.clicked.connect(self.browTempfile)
             self.butSelectOutput.clicked.connect(self.browOutput)
@@ -78,12 +82,44 @@ class Window(QWidget, Ui_Window):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    #def keyPressEvent(self, event):
+    #    super(Window, self).keyPressEvent(event)
+    #    self.keyPressed.emit()
+
+
+    def butCheckPath(self, text_edit_path):
+        """
+        butCheckPath(text_edit)
+        ==========================
+        Synopsis: check if the "Text Edit" field exists. If the "Text Edit" exists, then let 
+        it become a global variable.
+
+        text_edit: Qt Text Edit 
+
+        """
+        try:
+            if text_edit_path is None or text_edit_path is '':
+                text_edit_path = QDir.homePath()
+            else:
+                if os.path.isdir(text_edit_path) == True:
+                    pass
+                else:
+                    text_edit_path = os.path.split(text_edit_path)[0]
+                    if os.path.exists(text_edit_path) == True:
+                        pass 
+                    else:
+                        text_edit_path = QDir.homePath()
+            return(text_edit_path)
+                
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
     
     def selChecklistA(self):
         try:
-            self.lineChecklistA.clear()
+            text_edit_path = self.butCheckPath(self.lineChecklistA.text())
             checklist_A = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
-                    QDir.homePath(), self.tr("Text files (*.txt)"))[0]
+                    text_edit_path, self.tr("Text files (*.txt)"))[0]
             if checklist_A is None or checklist_A is '':
                 return
             self.lineChecklistA.setText(checklist_A)
@@ -95,9 +131,9 @@ class Window(QWidget, Ui_Window):
 
     def selChecklistB(self):
         try:
-            self.lineChecklistB.clear()
+            text_edit_path = self.butCheckPath(self.lineChecklistB.text())
             checklist_B = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
-                    QDir.homePath(), self.tr("Text files (*.txt)"))[0]
+                    text_edit_path, self.tr("Text files (*.txt)"))[0]
             if checklist_B is None or checklist_B is '':
                 return
             self.lineChecklistB.setText(checklist_B)
@@ -109,9 +145,10 @@ class Window(QWidget, Ui_Window):
     # load to be merged list 
     def selMergedList(self):
         try:
-            self.lineMergeChecklists.clear()
+            #self.lineMergeChecklists.clear()
+            text_edit_path = self.butCheckPath(str(self.lineMergeChecklists.text()))
             tobe_merged_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to merge"), \
-                    QDir.homePath(), self.tr("Text files (*.txt)"))[0]
+                    text_edit_path, self.tr("Text files (*.txt)"))[0]
             if tobe_merged_lists is None or tobe_merged_lists == '':
                 return
             tobe_merged_files = ', '.join(tobe_merged_lists)
@@ -140,9 +177,10 @@ class Window(QWidget, Ui_Window):
         ===========================
         """
         try:
-            self.lineCombineChecklists.clear()
+            #self.lineCombineChecklists.clear()
+            text_edit_path = self.butCheckPath(self.lineCombineChecklists.text())
             tobe_combined_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to combine"), \
-                    QDir.homePath(), self.tr("Text files (*.txt)"))[0]
+                    text_edit_path, self.tr("Text files (*.txt)"))[0]
             if tobe_combined_lists is None or tobe_combined_lists is '':
                 return
             tobe_combined_files = ', '.join(tobe_combined_lists)
@@ -192,17 +230,18 @@ class Window(QWidget, Ui_Window):
                 self.treeWidget.addTopLevelItem(item)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
+
     def selExcelFile(self):
         try:
-            self.lineExcelFilePath.clear()
+            #self.lineExcelFilePath.clear()
+            text_edit_path = self.butCheckPath(self.lineExcelFilePath.text())
             orig_excel_file = QFileDialog.getOpenFileName(self, self.tr(u"Select excel files"), \
-                    QDir.homePath(), self.tr("Excel files (*.xls *.xlsx)"))[0]
+                    text_edit_path, self.tr("Excel files (*.xls *.xlsx)"))[0]
             if orig_excel_file is None or orig_excel_file is '':
                 return
             self.lineExcelFilePath.setText(orig_excel_file)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
-
 
     def formatExcel(self):
         try:
@@ -227,10 +266,14 @@ class Window(QWidget, Ui_Window):
 
     def spCompleter(self):
         try:
+            def setHighlighted(self, text):
+                self.lastSelected = text
             g = genlist_api.Genlist()
             completer = QCompleter()
             model = QStringListModel()
             completer.setModel(model)
+            # PopupCompletion
+            completer.setCompletionMode(1)
             # QCompleter setFilterMode Qt>5.2
             # http://doc.qt.io/qt-5/qcompleter.html#filterMode-prop
             completer.setFilterMode(Qt.MatchContains)
@@ -383,9 +426,10 @@ class Window(QWidget, Ui_Window):
 
     def browSlist(self):
         try:
-            self.lineSlist.clear()
+            #self.lineSlist.clear()
+            text_edit_path = self.butCheckPath(self.lineSlist.text())
             Slist = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
-                    QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
+                    text_edit_path, self.tr("Text files (*.txt *.csv)"))[0]
             if Slist is None or Slist is '':
                 return
             self.lineSlist.setText(Slist)
@@ -514,9 +558,10 @@ class Window(QWidget, Ui_Window):
 
     def browOutput(self):
         try:
-            self.lineOutputFilename.clear()
+            #self.lineOutputFilename.clear()
+            text_edit_path = self.butCheckPath(self.lineOutputFilename.text())
             saveOutputFile = QFileDialog.getSaveFileName(self, self.tr(u"Save file as:"), \
-                    QDir.homePath(), self.tr("Text files (*.docx *.odt *.xlsx)"))[0]
+                    text_edit_path, self.tr("Text files (*.docx *.odt *.xlsx)"))[0]
             if saveOutputFile is None or saveOutputFile is '':
                 return
             self.lineOutputFilename.setText(saveOutputFile)
@@ -674,8 +719,9 @@ class Window(QWidget, Ui_Window):
 
     def browTempfile(self):
         try:
-            self.lineTempFile.clear()
-            saveTempFile = QFileDialog.getSaveFileName(self, self.tr(u"Save File as ... "), QDir.homePath(), \
+            #self.lineTempFile.clear()
+            text_edit_path = self.butCheckPath(self.lineTempFile.text())
+            saveTempFile = QFileDialog.getSaveFileName(self, self.tr(u"Save File as ... "), text_edit_path, \
                     self.tr("Text files (*.txt *.csv)"))[0]
             if saveTempFile is None or saveTempFile is '':
                 return

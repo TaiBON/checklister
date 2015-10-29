@@ -48,12 +48,12 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
     4. `cd pyinstaller; git checkout python3`
     5. Install bootloader: `cd pyinstaller; python3 waf configure; python3 waf all`
     6. Install pyinstaller: `cd ..; python3 setup.py install`
-    7. `git clone https://github.com/mutolisp/namelist-generator`
+    7. `git clone https://github.com/TaiBON/checklister`
     8. `make binary; sudo cp dist/NGenerator /usr/local/bin/`
 
 ### How to use
 
-![點選物種加入名錄清單中](https://raw.github.com/mutolisp/namelist-generator/master/docs/NGenerator_v0.2.1.png)
+![點選物種加入名錄清單中](https://raw.github.com/TaiBON/checklister/master/docs/NGenerator_v0.2.1.png)
 
 有兩個方式可以建立物種名錄，第一個是手動一個個搜尋物種加入清單：
 
@@ -100,11 +100,11 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 因為中文 Windows 預設為 CP950 (Big5 擴充字集) 編碼，但 namelist-generator 全部都是使用 UTF-8 編碼，
 所以必須要將文字檔存成 UTF-8，如下圖：
 
-![存成 UTF-8](https://raw.github.com/mutolisp/namelist-generator/master/docs/save_namelist.png)
+![存成 UTF-8](https://raw.github.com/TaiBON/checklister/master/docs/save_namelist.png)
 
 ### 輸出範例
 
-![Demo docx](https://github.com/mutolisp/namelist-generator/blob/master/demo/demo_docx.png)
+![Demo docx](https://raw.github.com/TaiBON/checklister/master/demo/demo_docx.png)
 
 ### Synonyms 同物異名或同名異物
 namelist-generator 完全依賴 baselist (也就是 data/twnamelist.* )，所以只要 baselist 裡頭資料正確，產生的名錄即為正確名錄。
