@@ -45,7 +45,7 @@ CREATE TABLE dao_plant_type (
   plant_type integer,
   pt_name varchar
 );
-INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (1, '苔蘚地衣類植物 Mosses and Lichens');
+INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (0, '苔蘚地衣類植物 Mosses and Lichens');
 INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (1, '蕨類植物 Ferns and Lycophytes');
 INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (2, '裸子植物 Gymnosperms');
 INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (3, "雙子葉植物 'Dicotyledons'");

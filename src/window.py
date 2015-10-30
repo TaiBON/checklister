@@ -191,22 +191,30 @@ class Window(QWidget, Ui_Window):
             # print(current_db_table)
             if current_db_table == 'dao_bnamelist':
                 db_fullname = 'name'
+                iucn = 'consv_status'
             else:
                 db_fullname = 'fullname'
+                iucn = 'iucn_category'
             fetch_combined_sql = '''
             SELECT 
-                distinct d.family,d.family_cname,d.%s,u.* 
+                distinct 
+                d.family,
+                d.family_cname,
+                d.%s,
+                d.endemic,
+                d.%s,
+                u.* 
             FROM 
                 tmp_union u, %s d
             WHERE
                 u.local_name = d.cname;
-            ''' % (db_fullname, current_db_table)
+            ''' % (db_fullname, iucn, current_db_table)
             combined_table = g.dbExecuteSQL(fetch_combined_sql, self.sqlite_db, show_results=True)
             print(combined_table)
-            header = ['family', 'family_cname', 'name', 'common name']
+            header = ['family', 'family_cname', 'name', 'endemic', iucn, 'common name']
             for i in range(len(tobe_combined_lists)):
                 fname = str.split(os.path.split(tobe_combined_lists[i])[1], '.')
-                header.insert(4+i, fname[0])
+                header.insert(7+i, fname[0])
             header = tuple(header)
             combined_table.insert(0, header)
             if self.lineOutputFilename.text() is None or self.lineOutputFilename.text() == '':
@@ -226,7 +234,7 @@ class Window(QWidget, Ui_Window):
                 # family_cname, name, common name
                 item.setText(0, combined_table[i][1])
                 item.setText(1, combined_table[i][2])
-                item.setText(2, combined_table[i][3])
+                item.setText(2, combined_table[i][5])
                 self.treeWidget.addTopLevelItem(item)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
