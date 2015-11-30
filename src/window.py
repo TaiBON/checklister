@@ -192,24 +192,26 @@ class Window(QWidget, Ui_Window):
             if current_db_table == 'dao_bnamelist':
                 db_fullname = 'name'
                 iucn = 'consv_status'
+                list_type = 'family'
             else:
                 db_fullname = 'fullname'
                 iucn = 'iucn_category'
-            fetch_combined_sql = '''
-            SELECT 
-                distinct 
-                d.family,
-                d.family_cname,
-                d.%s,
-                d.endemic,
-                d.%s,
-                u.* 
-            FROM 
-                tmp_union u, %s d
-            WHERE
-                u.local_name = d.cname;
-            ''' % (db_fullname, iucn, current_db_table)
-            combined_table = g.dbExecuteSQL(fetch_combined_sql, self.sqlite_db, show_results=True)
+                list_type = 'plant_type,family'
+                fetch_combined_sql = '''
+                SELECT 
+                    distinct 
+                    d.family,
+                    d.family_cname,
+                    d.%s,
+                    d.endemic,
+                    d.%s,
+                    u.* 
+                FROM 
+                    tmp_union u, %s d
+                WHERE
+                    u.local_name = d.cname order by %s
+                ''' % (db_fullname, iucn, current_db_table, list_type)
+                combined_table = g.dbExecuteSQL(fetch_combined_sql, self.sqlite_db, show_results=True)
             print(combined_table)
             header = ['family', 'family_cname', 'name', 'endemic', iucn, 'common name']
             for i in range(len(tobe_combined_lists)):
@@ -281,7 +283,7 @@ class Window(QWidget, Ui_Window):
             model = QStringListModel()
             completer.setModel(model)
             # PopupCompletion
-            completer.setCompletionMode(1)
+            #completer.setCompletionMode(1)
             # QCompleter setFilterMode Qt>5.2
             # http://doc.qt.io/qt-5/qcompleter.html#filterMode-prop
             completer.setFilterMode(Qt.MatchContains)

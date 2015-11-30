@@ -8,7 +8,7 @@ Aspleniaceae|鐵角蕨科|大鐵角蕨|Asplenium bullatum|Asplenium bullatum Wal
 Aspleniaceae|鐵角蕨科|姬鐵角蕨|Asplenium capillipes|Asplenium capillipes Makino|1|0||原生
 Aspleniaceae|鐵角蕨科|單邊鐵角蕨|Asplenium cataractarum|Asplenium cataractarum Rosenst.|1|0||原生
 Aspleniaceae|鐵角蕨科|薄葉孔雀鐵角蕨|Asplenium cheilosorum|Asplenium cheilosorum Kunze ex Mett.|1|0||原生
-Aspleniaceae|鐵角蕨科|大蓬萊鐵角蕨|Asplenium cuneatiforme|Asplenium cuneatiforme Christ|1|0||原生
+Aspleniaceae|鐵角蕨科|大蓬萊鐵角蕨|Asplenium cuneatiforme|Asplenium cuneatiforme Christ|1|1||原生
 Aspleniaceae|鐵角蕨科|劍葉鐵角蕨|Asplenium ensiforme|Asplenium ensiforme Wall. ex Hook. & Grev.|1|0||原生
 Aspleniaceae|鐵角蕨科|剪葉鐵角蕨|Asplenium excisum|Asplenium excisum C. Presl|1|0||原生
 Aspleniaceae|鐵角蕨科|複齒鐵角蕨|Asplenium filipes|Asplenium filipes Copel.|1|0||未知
@@ -96,7 +96,7 @@ Blechnaceae|烏毛蕨科|細葉狗脊蕨|Woodwardia kempii|Woodwardia kempii Cop
 Blechnaceae|烏毛蕨科|臺灣狗脊蕨|Woodwardia orientalis var. formosana|Woodwardia orientalis var. formosana Rosenst.|1|0||原生
 Blechnaceae|烏毛蕨科|生芽狗脊蕨|Woodwardia unigemmata|Woodwardia unigemmata (Makino) Nakai|1|0||原生
 Cibotiaceae|金狗毛蕨科|金狗毛蕨|Cibotium barometz|Cibotium barometz (L.) J. Sm.|1|0||原生
-Cibotiaceae|金狗毛蕨科|臺灣金狗毛蕨|Cibotium taiwanense|Cibotium taiwanense C.M. Kuo|1|0||原生
+Cibotiaceae|金狗毛蕨科|臺灣金狗毛蕨|Cibotium taiwanense|Cibotium taiwanense C.M. Kuo|1|1||原生
 Cyatheaceae|桫欏科|蘭嶼筆筒樹|Cyathea fenicis|Cyathea fenicis Copel.|1|0|VU|原生
 Cyatheaceae|桫欏科|韓氏桫欏|Cyathea hancockii|Cyathea hancockii Copel.|1|0|NT|原生
 Cyatheaceae|桫欏科|筆筒樹|Cyathea lepifera|Cyathea lepifera (J. Sm. ex Hook.) Copel.|1|0||原生
@@ -556,7 +556,7 @@ Pteridaceae|鳳尾蕨科|天草鳳尾蕨|Pteris dispar|Pteris dispar Kunze|1|0||
 Pteridaceae|鳳尾蕨科|箭葉鳳尾蕨|Pteris ensiformis|Pteris ensiformis Burm. f.|1|0||原生
 Pteridaceae|鳳尾蕨科|溪鳳尾蕨|Pteris excelsa|Pteris excelsa Blume|1|0||原生
 Pteridaceae|鳳尾蕨科|傅氏鳳尾蕨|Pteris fauriei|Pteris fauriei Hieron.|1|0||原生
-Pteridaceae|鳳尾蕨科|臺灣鳳尾蕨|Pteris formosana|Pteris formosana Baker|1|0||原生
+Pteridaceae|鳳尾蕨科|臺灣鳳尾蕨|Pteris formosana|Pteris formosana Baker|1|1||原生
 Pteridaceae|鳳尾蕨科|翅柄鳳尾蕨|Pteris grevilleana|Pteris grevilleana Wall. ex J. Agardh|1|0||原生
 Pteridaceae|鳳尾蕨科|白斑翅柄鳳尾蕨|Pteris grevilleana var. ornata|Pteris grevilleana var. ornata Alderw.|1|0||原生
 Pteridaceae|鳳尾蕨科|城戶氏鳳尾蕨|Pteris kidoi|Pteris kidoi Sa. Kurata|1|0|NT|原生
@@ -2974,7 +2974,7 @@ Oleaceae|木犀科|玉山女貞|Ligustrum morrisonense|Ligustrum morrisonense Ka
 Oleaceae|木犀科|阿里山女貞|Ligustrum pricei|Ligustrum pricei Hayata|3|0||原生
 Oleaceae|木犀科|深瓣女貞|Ligustrum shakaroense|Ligustrum shakaroense Kaneh.|3|0||未知
 Oleaceae|木犀科|小實女貞|Ligustrum sinense|Ligustrum sinense Lour.|3|0||原生
-Oleaceae|木犀科|無脈木犀|Osmanthus enervius|Osmanthus enervius Masam. & K. Mori|3|0||原生
+Oleaceae|木犀科|無脈木犀|Osmanthus enervius|Osmanthus enervius Masam. & K. Mori|3|1||原生
 Oleaceae|木犀科|桂花|Osmanthus fragrans|Osmanthus fragrans (Thunb.) Lour.|3|0||未知
 Oleaceae|木犀科|異葉木犀|Osmanthus heterophyllus|Osmanthus heterophyllus (G. Don) P.S. Green|3|1||原生
 Oleaceae|木犀科|圓葉木犀|Osmanthus integrifolius|Osmanthus integrifolius Hayata|3|0||未知
@@ -3744,7 +3744,7 @@ Santalaceae|檀香科|刀葉槲寄生|Viscum multinerve|Viscum multinerve (Hayat
 Sapindaceae|無患子科|樟葉槭|Acer albopurpurascens|Acer albopurpurascens Hayata|3|1||原生
 Sapindaceae|無患子科|臺灣三角楓|Acer buergerianum var. formosanum|Acer buergerianum var. formosanum (Hayata ex H. Lév.) Sasaki|3|1|CR|原生
 Sapindaceae|無患子科|大屯尖葉槭|Acer insulare|Acer insulare Makino|3|0||未知
-Sapindaceae|無患子科|尖葉槭|Acer kawakamii|Acer kawakamii Koidz.|3|0||原生
+Sapindaceae|無患子科|尖葉槭|Acer kawakamii|Acer kawakamii Koidz.|3|1||原生
 Sapindaceae|無患子科|臺灣紅榨槭|Acer morrisonense|Acer morrisonense Hayata|3|1||原生
 Sapindaceae|無患子科|臺灣掌葉槭|Acer palmatum var. pubescens|Acer palmatum var. pubescens Li|3|1||原生
 Sapindaceae|無患子科|青楓|Acer serrulatum|Acer serrulatum Hayata|3|1||原生
@@ -3904,7 +3904,7 @@ Theaceae|茶科|阿里山茶|Camellia transarisanensis|Camellia transarisanensis
 Theaceae|茶科|泛能高山茶|Camellia transnokoensis|Camellia transnokoensis Hayata|3|1||原生
 Theaceae|茶科|大頭茶|Gordonia axillaris|Gordonia axillaris Endl.|3|0||原生
 Theaceae|茶科|武威山烏皮茶|Pyrenaria buisanensis|Pyrenaria buisanensis (Sasaki) C.F. Hsieh, S.Z. Yang & M.H. Su|3|1|CR|
-Theaceae|茶科|烏皮茶|Pyrenaria shinkoensis|Pyrenaria shinkoensis (Hayata) H. Keng|3|0||原生
+Theaceae|茶科|烏皮茶|Pyrenaria shinkoensis|Pyrenaria shinkoensis (Hayata) H. Keng|3|1||原生
 Theaceae|茶科|木荷|Schima superba|Schima superba Gardner & Champ.|3|0||原生
 Theaceae|茶科|港口木荷|Schima superba var. kankaoensis|Schima superba Gard. & Champ. var. kankaoensis (Hayata) Keng|3|1||原生
 Thymelaeaceae|瑞香科|臺灣瑞香|Daphne arisanensis|Daphne arisanensis Hayata|3|1||原生
@@ -4108,7 +4108,7 @@ Araceae|天南星科|浦島天南星|Arisaema thunbergii subsp. urashima|Arisaem
 Araceae|天南星科|彩葉芋|Caladium × hortulanum|Caladium × hortulanum Birdsey|4|0||栽培
 Araceae|天南星科|芋|Colocasia esculenta|Colocasia esculenta (L.) Schott|4|0||歸化
 Araceae|天南星科|檳榔芋|Colocasia esculenta var. antiquorum|Colocasia esculenta var. antiquorum (Schott) C.E. Hubb. & Rehder|4|0||歸化
-Araceae|天南星科|臺灣青芋|Colocasia formosana|Colocasia formosana Hayata|4|0||原生
+Araceae|天南星科|臺灣青芋|Colocasia formosana|Colocasia formosana Hayata|4|1||原生
 Araceae|天南星科|大野芋|Colocasia gigantea|Colocasia gigantea (Blume) Hook. f.|4|0||歸化
 Araceae|天南星科|山芋|Colocasia konishii|Colocasia konishii Hayata|4|0||
 Araceae|天南星科|紫芋|Colocasia tonoimo|Colocasia tonoimo Nakai|4|0||歸化
@@ -5332,7 +5332,7 @@ Poaceae|禾本科|金髮草|Pogonatherum paniceum|Pogonatherum paniceum (Lam.) H
 Poaceae|禾本科|棒頭草|Polypogon fugax|Polypogon fugax Nees ex Steud.|4|0||原生
 Poaceae|禾本科|長芒棒頭草|Polypogon monspeliensis|Polypogon monspeliensis (L.) Desf.|4|0|NT|歸化
 Poaceae|禾本科|大偽針茅|Pseudoraphis spinescens|Pseudoraphis spinescens (R. Br.) Vickery|4|0|EN|原生
-Poaceae|禾本科|包籜箭竹|Pseudosasa usawai|Pseudosasa usawai Nakai|4|0||原生
+Poaceae|禾本科|包籜箭竹|Pseudosasa usawai|Pseudosasa usawai Nakai|4|1||原生
 Poaceae|禾本科|紅毛草|Rhynchelytrum repens|Rhynchelytrum repens (Willd.) C.E. Hubb.|4|0||歸化
 Poaceae|禾本科|羅氏草|Rottboellia exaltata|Rottboellia exaltata L. f.|4|0||原生
 Poaceae|禾本科|甜根子草|Saccharum spontaneum|Saccharum spontaneum L.|4|0||原生
