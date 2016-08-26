@@ -808,6 +808,7 @@ Acanthaceae|爵床科|密毛爵床|Justicia procumbens var. hirsuta|Justicia pro
 Acanthaceae|爵床科|狹葉爵床|Justicia procumbens var. linearifolia|Justicia procumbens var. linearifolia Yamam.|3|1|VU|原生
 Acanthaceae|爵床科|花蓮爵床|Justicia quadrifaria|Justicia quadrifaria (Nees) T. Anderson|3|0|VU|原生
 Acanthaceae|爵床科|田烏串|Justicia simplex|Justicia simplex D. Don|3|0||未知
+Acanthaceae|爵床科|小蝦花|Justicia brandegeeana|Justicia brandegeeana Wasshausen & L.B. Sm.|3|0||栽培
 Acanthaceae|爵床科|銀脈爵床|Kudoacanthus albonervosa|Kudoacanthus albonervosa Hosok.|3|1|VU|原生
 Acanthaceae|爵床科|臺灣鱗球花|Lepidagathis formosensis|Lepidagathis formosensis C.B. Clarke ex Hayata|3|0||原生
 Acanthaceae|爵床科|卵葉鱗球花|Lepidagathis inaequalis|Lepidagathis inaequalis C.B. Clarke ex Elmer|3|0||原生
@@ -834,6 +835,7 @@ Acanthaceae|爵床科|黑眼花|Thunbergia alata|Thunbergia alata Bojer ex Sims|
 Acanthaceae|爵床科|立鶴花|Thunbergia erecta|Thunbergia erecta (Benth.) T. Anderson|3|0||未知
 Acanthaceae|爵床科|碗花草|Thunbergia fragrans|Thunbergia fragrans Roxb.|3|0||歸化
 Acanthaceae|爵床科|大鄧伯花|Thunbergia grandiflora|Thunbergia grandiflora Roxb.|3|0||歸化
+Acanthaceae|爵床科|仙鶴草|Rhinacanthus nasutus|Rhinacanthus nasutus (L.) Kurz|3|0||栽培
 Actinidiaceae|獼猴桃科|軟棗獼猴桃|Actinidia arguta|Actinidia arguta (Siebold & Zucc.) Planch. ex Miq.|3|0|VU|原生
 Actinidiaceae|獼猴桃科|硬齒獼猴桃|Actinidia callosa|Actinidia callosa Lindl.|3|0||原生
 Actinidiaceae|獼猴桃科|駝齒獼猴桃|Actinidia callosa var. ephippioidea|Actinidia callosa var. ephippioidea C.F. Liang|3|0||原生
@@ -1444,27 +1446,27 @@ Bignoniaceae|紫葳科|山菜豆|Radermachera sinica|Radermachera sinica (Hance)
 Bignoniaceae|紫葳科|火焰木|Spathodea campanulata|Spathodea campanulata P. Beauv.|3|0||歸化
 Bignoniaceae|紫葳科|洋凌霄|Tecoma jasminoides|Tecoma jasminoides Lindl.|3|0||
 Boraginaceae|紫草科|細纍子草|Bothriospermum zeylanicum|Bothriospermum zeylanicum (J. Jacq.) Druce|3|0||原生
-Boraginaceae|紫草科|滿福木|Carmona retusa|Carmona retusa (Vahl) Masam.|3|0||原生
-Boraginaceae|紫草科|臥莖同籬生果草|Coldenia procumbens|Coldenia procumbens L.|3|0|EN|原生
-Boraginaceae|紫草科|金平氏破布子|Cordia aspera subsp. kanehirae|Cordia aspera subsp. kanehirae (Hayata) H.Y. Liu|3|0||原生
-Boraginaceae|紫草科|破布子|Cordia dichotoma|Cordia dichotoma G. Forst.|3|0||原生
+Ehretiaceae|厚殼樹科|小葉厚殼樹|Ehretia microphylla|Ehretia microphylla Lam.|3|0||栽培
+Coldeniaceae|生果草科|臥莖同籬生果草|Coldenia procumbens|Coldenia procumbens L.|3|0|EN|原生
+Cordiaceae|破布子科|金平氏破布子|Cordia aspera subsp. kanehirae|Cordia aspera subsp. kanehirae (Hayata) H.Y. Liu|3|0||原生
+Cordiaceae|破布子科|破布子|Cordia dichotoma|Cordia dichotoma G. Forst.|3|0||原生
 Boraginaceae|紫草科|高山倒提壺|Cynoglossum alpestre|Cynoglossum alpestre Ohwi|3|1|NT|原生
 Boraginaceae|紫草科|琉璃草|Cynoglossum furcatum|Cynoglossum furcatum Wall.|3|0||原生
 Boraginaceae|紫草科|小花倒提壺|Cynoglossum lanceolatum|Cynoglossum lanceolatum Forssk.|3|0||原生
-Boraginaceae|紫草科|厚殼樹|Ehretia acuminata|Ehretia acuminata R. Br.|3|0||原生
-Boraginaceae|紫草科|破布烏|Ehretia dicksonii|Ehretia dicksonii Hance|3|0||原生
-Boraginaceae|紫草科|長花厚殼樹|Ehretia longiflora|Ehretia longiflora Champ. ex Benth.|3|0||原生
-Boraginaceae|紫草科|蘭嶼厚殼樹|Ehretia philippinensis|Ehretia philippinensis A. DC.|3|0|VU|原生
-Boraginaceae|紫草科|恆春厚殼樹|Ehretia resinosa|Ehretia resinosa Hance|3|0||原生
-Boraginaceae|紫草科|山豆根|Heliotropium formosanum|Heliotropium formosanum I.M. Johnst.|3|1||原生
-Boraginaceae|紫草科|印度天芹菜|Heliotropium indicum|Heliotropium indicum L.|3|0||歸化
-Boraginaceae|紫草科|伏毛天芹菜|Heliotropium procumbens var. depressum|Heliotropium procumbens Mill. var. depressum (Cham.) H. Y. Liu|3|0||歸化
+Ehretiaceae|厚殼樹科|厚殼樹|Ehretia acuminata|Ehretia acuminata R. Br.|3|0||原生
+Ehretiaceae|厚殼樹科|破布烏|Ehretia dicksonii|Ehretia dicksonii Hance|3|0||原生
+Ehretiaceae|厚殼樹科|長花厚殼樹|Ehretia longiflora|Ehretia longiflora Champ. ex Benth.|3|0||原生
+Ehretiaceae|厚殼樹科|蘭嶼厚殼樹|Ehretia philippinensis|Ehretia philippinensis A. DC.|3|0|VU|原生
+Ehretiaceae|厚殼樹科|恆春厚殼樹|Ehretia resinosa|Ehretia resinosa Hance|3|0||原生
+Heliotropiaceae|天芹菜科|山豆根|Heliotropium formosanum|Heliotropium formosanum I.M. Johnst.|3|1||原生
+Heliotropiaceae|天芹菜科|印度天芹菜|Heliotropium indicum|Heliotropium indicum L.|3|0||歸化
+Heliotropiaceae|天芹菜科|伏毛天芹菜|Heliotropium procumbens var. depressum|Heliotropium procumbens Mill. var. depressum (Cham.) H. Y. Liu|3|0||歸化
 Boraginaceae|紫草科|梓木草|Lithospermum zollingeri|Lithospermum zollingeri A. DC.|3|0|VU|原生
 Boraginaceae|紫草科|野勿忘草|Myosotis arvensis|Myosotis arvensis (L.) Hill|3|0||歸化
 Boraginaceae|紫草科|康復力|Symphytum officinale|Symphytum officinale L.|3|0||歸化
 Boraginaceae|紫草科|盾果草|Thyrocarpus sampsonii|Thyrocarpus sampsonii Hance|3|0||原生
-Boraginaceae|紫草科|白水木|Tournefortia argentea|Tournefortia argentea L. f.|3|0||原生
-Boraginaceae|紫草科|冷飯藤|Tournefortia sarmentosa|Tournefortia sarmentosa Lam.|3|0||原生
+Heliotropiaceae|天芹菜科|白水木|Heliotropium argenteum|Heliotropium argenteum Lehm.|3|0||原生
+Heliotropiaceae|天芹菜科|冷飯藤|Heliotropium sarmentosum|Heliotropium sarmentosum (Lam.) Craven|3|0||原生
 Boraginaceae|紫草科|假酸漿|Trichodesma calycosum|Trichodesma calycosum Collett & Hemsl.|3|0||原生
 Boraginaceae|紫草科|印度碧果草|Trichodesma indicum|Trichodesma indicum (L.) Lehm.|3|0||歸化
 Boraginaceae|紫草科|斯里蘭卡碧果草|Trichodesma zeylanicum|Trichodesma zeylanicum (Burm. f.) R. Br.|3|0||歸化
@@ -1732,7 +1734,7 @@ Convolvulaceae|旋花科|戟葉菜欒藤|Xenostegia tridentata|Xenostegia triden
 Coriariaceae|馬桑科|臺灣馬桑|Coriaria japonica subsp. intermedia|Coriaria japonica subsp. intermedia (Matsum.) T.C. Huang|3|0||原生
 Cornaceae|山茱萸科|華八角楓|Alangium chinense|Alangium chinense (Lour.) Harms|3|0||原生
 Cornaceae|山茱萸科|四照花|Benthamidia japonica var. chinensis|Benthamidia japonica var. chinensis (Osborn) H. Hara|3|0|DD|原生
-Cornaceae|山茱萸科|喜樹|Camptotheca acuminata|Camptotheca acuminata Decne.|3|0||未知
+Nyssaceae|喜樹科|喜樹|Camptotheca acuminata|Camptotheca acuminata Decne.|3|0||未知
 Cornaceae|山茱萸科|燈台樹|Swida controversa|Swida controversa (Hemsl.) Soják|3|0|NT|原生
 Cornaceae|山茱萸科|梜木|Swida macrophylla|Swida macrophylla (Wall.) Soják|3|0||原生
 Crassulaceae|景天科|落地生根|Bryophyllum pinnatum|Bryophyllum pinnatum (Lam.) Oken|3|0||歸化
@@ -2687,6 +2689,7 @@ Lythraceae|千屈菜科|細葉雪茄花|Cuphea hyssopifolia|Cuphea hyssopifolia 
 Lythraceae|千屈菜科|雪茄花|Cuphea ignea|Cuphea ignea A. DC.|3|0||
 Lythraceae|千屈菜科|紫薇|Lagerstroemia indica|Lagerstroemia indica L.|3|0||栽培
 Lythraceae|千屈菜科|九芎|Lagerstroemia subcostata|Lagerstroemia subcostata Koehne|3|0||原生
+Lythraceae|千屈菜科|大花紫薇|Lagerstroemia speciosa|Lagerstroemia speciosa (L.) Pers.|3|0||栽培
 Lythraceae|千屈菜科|水芫花|Pemphis acidula|Pemphis acidula J.R. Forst. & G. Forst.|3|0||原生
 Lythraceae|千屈菜科|安石榴|Punica granatum|Punica granatum L.|3|0||
 Lythraceae|千屈菜科|水杉菜|Rotala hippuris|Rotala hippuris Makino|3|0|CR|
@@ -2744,7 +2747,8 @@ Malvaceae|錦葵科|牧野氏山芙蓉|Hibiscus makinoi|Hibiscus makinoi Jotani 
 Malvaceae|錦葵科|木芙蓉|Hibiscus mutabilis|Hibiscus mutabilis L.|3|0|DD|原生
 Malvaceae|錦葵科|朱槿|Hibiscus rosa-sinensis|Hibiscus rosa-sinensis L.|3|0||歸化
 Malvaceae|錦葵科|重瓣朱槿|Hibiscus rosa-sinensis var. rubro-plenus|Hibiscus rosa-sinensis var. rubro-plenus Sweet|3|0||栽培
-Malvaceae|錦葵科|裂瓣朱槿|Hibiscus schizopetalus|Hibiscus schizopetalus (Dyer) Hook. f.|3|0||
+Malvaceae|錦葵科|裂瓣朱槿|Hibiscus schizopetalus|Hibiscus schizopetalus (Dyer) Hook. f.|3|0||栽培
+Malvaceae|錦葵科|南美朱槿|Malvaviscus arboreus|Malvaviscus arboreus (L.) Cav.|3|0||栽培
 Malvaceae|錦葵科|刺芙蓉|Hibiscus surattensis|Hibiscus surattensis L.|3|0|EN|原生
 Malvaceae|錦葵科|木槿|Hibiscus syriacus|Hibiscus syriacus L.|3|0||原生
 Malvaceae|錦葵科|山芙蓉|Hibiscus taiwanensis|Hibiscus taiwanensis S.Y. Hu|3|1||原生
@@ -3132,7 +3136,7 @@ Phytolaccaceae|商陸科|臺灣商陸|Phytolacca acinosa|Phytolacca acinosa Roxb
 Phytolaccaceae|商陸科|美洲商陸|Phytolacca americana|Phytolacca americana L.|3|0||歸化
 Phytolaccaceae|商陸科|二十蕊商陸|Phytolacca icosandra|Phytolacca icosandra L.|3|0||歸化
 Phytolaccaceae|商陸科|日本商陸|Phytolacca japonica|Phytolacca japonica Makino|3|0||原生
-Phytolaccaceae|商陸科|數珠珊瑚|Rivina humilis|Rivina humilis L.|3|0||歸化
+Petiveriaceae|蒜香草科|數珠珊瑚|Rivina humilis|Rivina humilis L.|3|0||歸化
 Piperaceae|胡椒科|臺灣椒草|Peperomia formosana|Peperomia formosana C. DC.|3|0||未知
 Piperaceae|胡椒科|椒草|Peperomia japonica|Peperomia japonica Makino|3|0||原生
 Piperaceae|胡椒科|山椒草|Peperomia nakaharae|Peperomia nakaharae Hayata|3|1||原生
@@ -4075,6 +4079,7 @@ Alismataceae|澤瀉科|水金英|Hydrocleys nymphoides|Hydrocleys nymphoides (Wi
 Alismataceae|澤瀉科|臺灣冠果草|Sagittaria guayanensis subsp. lappula|Sagittaria guayanensis subsp. lappula (D. Don) Bogin|4|0||原生
 Alismataceae|澤瀉科|線慈菇|Sagittaria pygmaea|Sagittaria pygamea Miq.|4|0||原生
 Alismataceae|澤瀉科|三腳剪|Sagittaria trifolia|Sagittaria trifolia L.|4|0||原生
+Alismataceae|澤瀉科|心葉齒果澤瀉|Echinodorus cordifolius|Echinodorus cordifolius (L.) Griseb.|4|0||栽培
 Amaryllidaceae|石蒜科|玉山蒜|Allium bakeri var. morrisonense|Allium bakeri var. morrisonense (Hayata) Tang S. Liu & S.S. Ying|4|1|DD|原生
 Amaryllidaceae|石蒜科|山蒜|Allium grayi|Allium grayi Regel|4|0|DD|原生
 Amaryllidaceae|石蒜科|山蒜|Allium macrostemon|Allium macrostemon Bunge|4|0||
@@ -4086,6 +4091,7 @@ Amaryllidaceae|石蒜科|紅花石蒜|Lycoris radiata|Lycoris radiata (L'Hér.) 
 Amaryllidaceae|石蒜科|換錦花|Lycoris sprengeri|Lycoris sprengeri Comes ex Baker|4|0||
 Amaryllidaceae|石蒜科|蔥蘭|Zephyranthes candida|Zephyranthes candida (Lindl.) Herb.|4|0||
 Amaryllidaceae|石蒜科|韭蘭|Zephyranthes carinata|Zephyranthes carinata Herb.|4|0||栽培
+Amaryllidaceae|石蒜科|孤挺花|Hippeastrum equestre|Hippeastrum equestre (Ait.) Herb.|4|0||栽培
 Aponogetonaceae|水蕹科|水蕹|Aponogeton taiwanensis|Aponogeton taiwanensis Masam.|4|1|CR|原生
 Araceae|天南星科|臺灣姑婆芋|Alocasia cucullata|Alocasia cucullata (Lour.) G. Don|4|0||原生
 Araceae|天南星科|姑婆芋|Alocasia odora|Alocasia odora (Roxb.) K. Koch|4|0||原生
@@ -4167,6 +4173,7 @@ Asparagaceae|天門冬科|朱蕉|Cordyline fruticosa|Cordyline fruticosa (L.) A.
 Asparagaceae|天門冬科|阿里山假寶鐸花|Disporopsis fuscopicta var. arisanensis|Disporopsis fuscopicta var. arisanensis (Hayata) S.S. Ying|4|1||原生
 Asparagaceae|天門冬科|臺灣假寶鐸花|Disporopsis taiwanensis|Disporopsis taiwanensis S.S. Ying|4|1||原生
 Asparagaceae|天門冬科|番仔林投|Dracaena angustifolia|Dracaena angustifolia Roxb.|4|0|VU|原生
+Asparagaceae|天門冬科|虎斑木|Dracaena goldieana|Dracaena goldieana Bullen ex Mast. & T. Moore|4|0||栽培
 Asparagaceae|天門冬科|大龍舌蘭|Furcraea foetida|Furcraea foetida (L.) Haw.|4|0||歸化
 Asparagaceae|天門冬科|臺灣黃精|Heteropolygonatum altelobatum|Heteropolygonatum altelobatum|4|1|VU|未知
 Asparagaceae|天門冬科|臺灣鹿藥|Maianthemum formosanum|Maianthemum formosanum (Hayata) La Frankie|4|0||原生
@@ -4335,7 +4342,7 @@ Cyperaceae|莎草科|輻射磚子苗|Cyperus radians|Cyperus radians Nees & Meye
 Cyperaceae|莎草科|香附子|Cyperus rotundus|Cyperus rotundus L.|4|0||原生
 Cyperaceae|莎草科|水莎草|Cyperus serotinus|Cyperus serotinus Rottb.|4|0||原生
 Cyperaceae|莎草科|粗根莖莎草|Cyperus stolonifer|Cyperus stolonifer Retz.|4|0||原生
-Cyperaceae|莎草科|刺桿莎草|Cyperus surinamensis|Cyperus surinamensis Rottb.|4|0||歸化
+Cyperaceae|莎草科|刺桿莎草|Cyperus surinamensis|Cyperus surinamensis Rottb.|4|0||歸化
 Cyperaceae|莎草科|四稜穗莎草|Cyperus tenuiculmis|Cyperus tenuiculmis Boeckeler|4|0||原生
 Cyperaceae|莎草科|窄翅莎草|Cyperus tenuispica|Cyperus tenuispica Steud.|4|0||原生
 Cyperaceae|莎草科|假香附子|Cyperus tuberosus|Cyperus tuberosus Rottb.|4|0||原生
@@ -4518,6 +4525,7 @@ Liliaceae|百合科|山油點草|Tricyrtis formosana var. stolonifera|Tricyrtis 
 Liliaceae|百合科|高山油點草|Tricyrtis ravenii|Tricyrtis ravenii C.I. Peng & C.L. Tiang|4|0||未知
 Liliaceae|百合科|鈴木氏油點草|Tricyrtis suzukii|Tricyrtis suzukii Masam.|4|1|VU|原生
 Marantaceae|竹芋科|蘭嶼竹芋|Donax canniformis|Donax canniformis (G. Forst.) K. Schum.|4|0|VU|原生
+Marantaceae|竹芋科|垂花水竹芋|Thalia geniculata|Thalia geniculata L.|4|0||栽培
 Melanthiaceae|黑葯花科|臺灣胡麻花|Helonias umbellata|Helonias umbellata (Baker) N. Tanaka|4|1||原生
 Melanthiaceae|黑葯花科|短瓣球葯隔七葉一枝花|Paris fargesii var. brevipetalata|Paris fargesii var. brevipetalata (T.C. Huang & K.C. Yang) T.C. Huang & K.C. Yang|4|0|DD|原生
 Melanthiaceae|黑葯花科|高山七葉一枝花|Paris lanceolata|Paris lanceolata Hayata|4|0||未知
@@ -5338,6 +5346,8 @@ Poaceae|禾本科|紅毛草|Rhynchelytrum repens|Rhynchelytrum repens (Willd.) C
 Poaceae|禾本科|羅氏草|Rottboellia exaltata|Rottboellia exaltata L. f.|4|0||原生
 Poaceae|禾本科|甜根子草|Saccharum spontaneum|Saccharum spontaneum L.|4|0||原生
 Poaceae|禾本科|羅氏甜根子草|Saccharum spontaneum var. roxburghii|Saccharum spontaneum var. roxburghii Honda|4|0||未知
+Poaceae|禾本科|甘蔗|Saccharum sinense|Saccharum sinense Roxb. et Jeswiet|4|0||栽培
+Poaceae|禾本科|秀貴甘蔗|Saccharum officinarum|Saccharum officinarum L.|4|0||栽培
 Poaceae|禾本科|囊穎草|Sacciolepis indica|Sacciolepis indica (L.) Chase|4|0||原生
 Poaceae|禾本科|裂稃草|Schizachyrium brevifolium|Schizachyrium brevifolium (Sw.) Nees ex Buse|4|0|NT|原生
 Poaceae|禾本科|尖葉裂稃草|Schizachyrium fragile var. shimadae|Schizachyrium fragile (R. Br.) A. Camus var. shimadae (Ohwi) C. C. H|4|1|DD|原生
@@ -5443,10 +5453,10 @@ Triuridaceae|霉草科|錫蘭霉草|Sciaphila secundiflora|Sciaphila secundiflor
 Typhaceae|香蒲科|東亞黑三稜|Sparganium fallax|Sparganium fallax Graebn.|4|0|VU|原生
 Typhaceae|香蒲科|水燭|Typha angustifolia|Typha angustifolia L.|4|0||原生
 Typhaceae|香蒲科|香蒲|Typha orientalis|Typha orientalis C. Presl|4|0||原生
-Xanthorrhoeaceae|黃脂木科|蘆薈|Aloe vera var. chinensis|Aloe vera var. chinensis (Haw.) A. Berger|4|0||歸化
-Xanthorrhoeaceae|黃脂木科|桔梗蘭|Dianella ensifolia|Dianella ensifolia (L.) DC.|4|0||原生
-Xanthorrhoeaceae|黃脂木科|橙萱|Hemerocallis aurantiaca|Hemerocallis aurantiaca Baker|4|0|DD|原生
-Xanthorrhoeaceae|黃脂木科|萱草|Hemerocallis fulva|Hemerocallis fulva (L.) L.|4|0||歸化
+Asphodelaceae|獨尾草科|蘆薈|Aloe vera var. chinensis|Aloe vera var. chinensis (Haw.) A. Berger|4|0||歸化
+Asphodelaceae|獨尾草科|桔梗蘭|Dianella ensifolia|Dianella ensifolia (L.) DC.|4|0||原生
+Asphodelaceae|獨尾草科|橙萱|Hemerocallis aurantiaca|Hemerocallis aurantiaca Baker|4|0|DD|原生
+Asphodelaceae|獨尾草科|萱草|Hemerocallis fulva|Hemerocallis fulva (L.) L.|4|0||歸化
 Xyridaceae|蔥草科|桃園草|Xyris formosana|Xyris formosana Hayata|4|1|CR|原生
 Zingiberaceae|薑科|呂宋月桃|Alpinia flabellata|Alpinia flabellata Ridl.|4|0||原生
 Zingiberaceae|薑科|臺灣月桃|Alpinia formosana|Alpinia formosana K. Schum.|4|0||原生
@@ -5480,3 +5490,5 @@ Zingiberaceae|薑科|多穗薑|Zingiber pleiostachyum|Zingiber pleiostachyum K. 
 Zingiberaceae|薑科|雙龍薑|Zingiber shuanglongensis|Zingiber shuanglongensis C.L. Yeh & S.W. Chung|4|0||原生
 Zingiberaceae|薑科|薑花|Zingiber zerumbet|Zingiber zerumbet (L.) Roscoe ex Sm.|4|0||歸化
 Zosteraceae|甘藻科|甘藻|Zostera japonica|Zostera japonica Asch. & Graebn.|4|0||原生
+
+
