@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to namelist-generator's documentation!
+Welcome to checklister documentation!
 ==============================================
 
 Contents:
@@ -11,8 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-.. automodule:: source/window.Window
-   :members:
+   module
 
 
 Indices and tables

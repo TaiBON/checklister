@@ -713,3 +713,6 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             curs.execute('DROP TABLE IF EXISTS sample;')
             conn.commit()
             conn.close()
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod()
