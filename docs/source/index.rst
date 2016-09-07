@@ -8,9 +8,10 @@ Welcome to checklister documentation!
 
 Contents:
 
+module
+
 .. toctree::
    :maxdepth: 2
-
    module
 
 
