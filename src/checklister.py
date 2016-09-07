@@ -9,6 +9,8 @@ from window import Window
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    # for retina
+    #app.setAttribute(Qt.AA_EnableHighDpiScaling, True)
     current_locale = QLocale()
     trans = QTranslator()
     g = genlist_api.Genlist()

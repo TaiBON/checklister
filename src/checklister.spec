@@ -49,5 +49,5 @@ coll = COLLECT(exe,
 app = BUNDLE(coll,
              name='checklister.app',
              icon='icons/checklister.icns',
-             version='0.3.2',
+             version='0.3.3',
              bundle_identifier=None)
