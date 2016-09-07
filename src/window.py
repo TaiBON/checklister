@@ -56,6 +56,7 @@ class Window(QWidget, Ui_Window):
             # enable completer to show matched species list
             self.spCompleter()
 
+
             # comparison actions
             self.butCheckASelect.clicked.connect(self.selChecklistA)
             self.butCheckBSelect.clicked.connect(self.selChecklistB)
@@ -273,6 +274,7 @@ class Window(QWidget, Ui_Window):
                 QMessageBox.information(self, "Notice", self.tr(u"Formatted excel file:  %s done!" % formatted_filepath))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
+
 
     def spCompleter(self):
         try:

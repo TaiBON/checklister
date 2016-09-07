@@ -415,6 +415,24 @@ class Genlist(object):
                 conn.commit()
         f.close()
                
+        # SELECT
+        query_all = '''
+            SELECT distinct n.* from sample s LEFT OUTER JOIN
+            (SELECT distinct id, family, 
+                family_cname, 
+                fullname, cname, 
+                endemic, iucn_category, source
+            FROM %s) as n ON s.cname = n.cname;
+        ''' % ( dbtable )
+        curs.execute(query_all)
+        dwc_list = curs.fetchall()
+        with codecs.open(ofile_prefix + '.csv', 'w+', 'utf-8') as f:
+            writer = csv.writer(f, delimiter='\t', doublequote=True, quoting=1, dialect='excel')
+            writer.writerow(['taxonID','family', 'familyVernacularName', 'scientificName', \
+                                        'vernacularName', 'isEndemic', 'iucnCategory', 'source'])
+            for i in range(0, len(dwc_list)):
+                writer.writerow(dwc_list[i])
+
         with codecs.open(ofile_prefix +'.md', 'w+', 'utf-8') as f:
             ##### Generate HEADER #####
             if species_type == 1:

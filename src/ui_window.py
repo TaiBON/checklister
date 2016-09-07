@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui/main_window.ui'
 #
-# Created by: PyQt5 UI code generator 5.5
+# Created by: PyQt5 UI code generator 5.6
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -11,9 +11,9 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Window(object):
     def setupUi(self, Window):
         Window.setObjectName("Window")
-        Window.resize(643, 759)
+        Window.resize(641, 756)
         self.treeWidget = QtWidgets.QTreeWidget(Window)
-        self.treeWidget.setGeometry(QtCore.QRect(20, 350, 601, 301))
+        self.treeWidget.setGeometry(QtCore.QRect(20, 370, 601, 301))
         self.treeWidget.setMouseTracking(False)
         self.treeWidget.setAlternatingRowColors(True)
         self.treeWidget.setSelectionMode(QtWidgets.QAbstractItemView.MultiSelection)
@@ -27,15 +27,16 @@ class Ui_Window(object):
         self.treeWidget.header().setMinimumSectionSize(5)
         self.treeWidget.header().setSortIndicatorShown(True)
         self.butDeleteSelection = QtWidgets.QPushButton(Window)
-        self.butDeleteSelection.setGeometry(QtCore.QRect(20, 660, 127, 32))
+        self.butDeleteSelection.setGeometry(QtCore.QRect(20, 680, 127, 32))
         self.butDeleteSelection.setObjectName("butDeleteSelection")
         self.butDeleteAll = QtWidgets.QPushButton(Window)
-        self.butDeleteAll.setGeometry(QtCore.QRect(150, 660, 131, 32))
+        self.butDeleteAll.setGeometry(QtCore.QRect(150, 680, 131, 32))
         self.butDeleteAll.setObjectName("butDeleteAll")
         self.gridLayoutWidget_2 = QtWidgets.QWidget(Window)
-        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(20, 20, 601, 137))
+        self.gridLayoutWidget_2.setGeometry(QtCore.QRect(20, 40, 601, 137))
         self.gridLayoutWidget_2.setObjectName("gridLayoutWidget_2")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.gridLayoutWidget_2)
+        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.label_3 = QtWidgets.QLabel(self.gridLayoutWidget_2)
         self.label_3.setObjectName("label_3")
@@ -84,7 +85,7 @@ class Ui_Window(object):
         self.butSlist.setObjectName("butSlist")
         self.gridLayout_2.addWidget(self.butSlist, 3, 2, 1, 1)
         self.tabWidget = QtWidgets.QTabWidget(Window)
-        self.tabWidget.setGeometry(QtCore.QRect(20, 170, 601, 151))
+        self.tabWidget.setGeometry(QtCore.QRect(20, 190, 601, 151))
         font = QtGui.QFont()
         font.setFamily("Arial")
         font.setStyleStrategy(QtGui.QFont.PreferDefault)
@@ -121,6 +122,7 @@ class Ui_Window(object):
         self.gridLayoutWidget_5.setGeometry(QtCore.QRect(70, 10, 461, 71))
         self.gridLayoutWidget_5.setObjectName("gridLayoutWidget_5")
         self.gridLayout_5 = QtWidgets.QGridLayout(self.gridLayoutWidget_5)
+        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_5.setObjectName("gridLayout_5")
         self.lineMergeChecklists = QtWidgets.QLineEdit(self.gridLayoutWidget_5)
         self.lineMergeChecklists.setObjectName("lineMergeChecklists")
@@ -141,6 +143,7 @@ class Ui_Window(object):
         self.gridLayoutWidget_6.setGeometry(QtCore.QRect(10, 10, 581, 113))
         self.gridLayoutWidget_6.setObjectName("gridLayoutWidget_6")
         self.gridLayout_6 = QtWidgets.QGridLayout(self.gridLayoutWidget_6)
+        self.gridLayout_6.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_6.setObjectName("gridLayout_6")
         self.label_8 = QtWidgets.QLabel(self.gridLayoutWidget_6)
         self.label_8.setObjectName("label_8")
@@ -187,6 +190,7 @@ class Ui_Window(object):
         self.horizontalLayoutWidget.setGeometry(QtCore.QRect(20, 40, 561, 61))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout.setObjectName("horizontalLayout")
         self.lineCombineChecklists = QtWidgets.QLineEdit(self.horizontalLayoutWidget)
         self.lineCombineChecklists.setObjectName("lineCombineChecklists")
@@ -201,6 +205,7 @@ class Ui_Window(object):
         self.gridLayoutWidget.setGeometry(QtCore.QRect(0, 30, 581, 41))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
         self.gridLayout.setObjectName("gridLayout")
         self.lineExcelFilePath = QtWidgets.QLineEdit(self.gridLayoutWidget)
         self.lineExcelFilePath.setText("")
@@ -213,6 +218,7 @@ class Ui_Window(object):
         self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(0, 80, 201, 41))
         self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
+        self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
         self.label_10 = QtWidgets.QLabel(self.horizontalLayoutWidget_2)
         self.label_10.setObjectName("label_10")
@@ -232,9 +238,10 @@ class Ui_Window(object):
         self.checkBox.setObjectName("checkBox")
         self.tabWidget.addTab(self.tab, "")
         self.horizontalLayoutWidget_4 = QtWidgets.QWidget(Window)
-        self.horizontalLayoutWidget_4.setGeometry(QtCore.QRect(378, 670, 251, 51))
+        self.horizontalLayoutWidget_4.setGeometry(QtCore.QRect(378, 700, 251, 51))
         self.horizontalLayoutWidget_4.setObjectName("horizontalLayoutWidget_4")
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_4)
+        self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.butGenerateSp = QtWidgets.QPushButton(self.horizontalLayoutWidget_4)
         self.butGenerateSp.setObjectName("butGenerateSp")
@@ -243,8 +250,11 @@ class Ui_Window(object):
         self.butClose1.setObjectName("butClose1")
         self.horizontalLayout_4.addWidget(self.butClose1)
         self.label_7 = QtWidgets.QLabel(Window)
-        self.label_7.setGeometry(QtCore.QRect(20, 330, 81, 16))
+        self.label_7.setGeometry(QtCore.QRect(20, 350, 81, 16))
         self.label_7.setObjectName("label_7")
+        self.label_13 = QtWidgets.QLabel(Window)
+        self.label_13.setGeometry(QtCore.QRect(20, 20, 121, 16))
+        self.label_13.setObjectName("label_13")
 
         self.retranslateUi(Window)
         self.tabWidget.setCurrentIndex(0)
@@ -253,7 +263,7 @@ class Ui_Window(object):
 
     def retranslateUi(self, Window):
         _translate = QtCore.QCoreApplication.translate
-        Window.setWindowTitle(_translate("Window", "checklist generator"))
+        Window.setWindowTitle(_translate("Window", "checklister"))
         self.treeWidget.setSortingEnabled(True)
         self.treeWidget.headerItem().setText(0, _translate("Window", "Family"))
         self.treeWidget.headerItem().setText(1, _translate("Window", "Name"))
@@ -265,7 +275,7 @@ class Ui_Window(object):
         self.butSelectTempFile.setText(_translate("Window", "Select file ..."))
         self.label_6.setText(_translate("Window", "Temporary file for local names"))
         self.label_2.setText(_translate("Window", "Export checklist file"))
-        self.comboDBselect.setItemText(0, _translate("Window", "Vascular plants of Taiwan (APG III)"))
+        self.comboDBselect.setItemText(0, _translate("Window", "Vascular plants of Taiwan (APG IV)"))
         self.comboDBselect.setItemText(1, _translate("Window", "Vascular plants of Taiwan (Flora of Taiwan 2nd Edition)"))
         self.comboDBselect.setItemText(2, _translate("Window", "Bird list of Taiwan (2014)"))
         self.comboDBselect.setItemText(3, _translate("Window", "Plants of Japan (Ylist)"))
@@ -307,4 +317,5 @@ class Ui_Window(object):
         self.butGenerateSp.setText(_translate("Window", "Export"))
         self.butClose1.setText(_translate("Window", "Close"))
         self.label_7.setText(_translate("Window", "Checklist"))
+        self.label_13.setText(_translate("Window", "Checklister v0.3.x"))
 
