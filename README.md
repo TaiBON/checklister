@@ -13,8 +13,8 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 
 ### Supported checklist
 
-1. 臺灣維管束植物名錄 (Vascular plants of Taiwan, APGIII / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資訊整合查詢系統](http://tai2.ntu.edu.tw)
-    1. 收錄物種：5481 種 (v 0.2.5, 2015-09-21)
+1. 臺灣維管束植物名錄 (Vascular plants of Taiwan, APGIII / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資訊整合查詢系統](http://tai2.ntu.edu.tw), [TaiBNET](http://taibnet.sinica.edu.tw)
+    1. 收錄物種：5492 種 (v 0.3.3, 2016-09-08)
 2. 臺灣鳥類名錄 2014 (Bird list of Taiwan)。資料來源：[中華野鳥學會](www.bird.org.tw/index.php/works/lists)
 3. Plants of Japan ("Ylist", 20103 records). Source: http://ylist.info
 
@@ -23,7 +23,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 * Developing language [Python 3](https://www.python.org)
     + libraries: codecs, csv, subprocess, sqlite, sys, etc.
     + Database: sqlite
-    + GUI libraries: pyqt5 (Qt 5.5)
+    + GUI libraries: pyqt5 (Qt 5.6)
     + Convert python into standalone executable: pyinstaller 
 
 * Document conversion [Pandoc](http://johnmacfarlane.net/pandoc/)
@@ -37,7 +37,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 
 * Supported languages: zh_TW (traditional Chinese), zh_CN (simplified Chinese), ja_JP (Japanese), ko_KR (Korean)
 
-* Download executable binary：Latest version is [0.3.2](https://github.com/TaiBON/checklister/tree/v0.3.2)
+* Download executable binary：Latest version is [0.3.3](https://github.com/TaiBON/checklister/releases/latest)
     + Windows (*.exe), copy the executable file to whatever you like (even on USB disk)
     + MacOS X, copy, unarchive and put NGenerator.app in /Applications
 
