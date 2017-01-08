@@ -2104,8 +2104,8 @@ Athyriaceae|メシダ科|フケイヌワラビ|Athyrium × masayukianum|Athyrium
 Athyriaceae|メシダ科|ヤクツクシイヌワラビ|Athyrium × megayakusimense|Athyrium × megayakusimense Sa.Kurata|1|0||
 Athyriaceae|メシダ科|ヘビヤマイヌワラビ|Athyrium × mentiens|Athyrium × mentiens Sa.Kurata|1|0||
 Athyriaceae|メシダ科|ナンキイヌワラビ|Athyrium × minakuchii|Athyrium × minakuchii Sa.Kurata|1|0||
-Athyriaceae|メシダ科|オゼオオサトメシダ|Athyrium × multifidum|Athyrium × multifidum Rosenst.  nothof. sakuraii (Rosenst.) Sa.Kurata|1|0||
 Athyriaceae|メシダ科|オオサトメシダ|Athyrium × multifidum|Athyrium × multifidum Rosenst.|1|0||
+Athyriaceae|メシダ科|オゼオオサトメシダ|Athyrium × multifidum|Athyrium × multifidum Rosenst.  nothof. sakuraii (Rosenst.) Sa.Kurata|1|0||
 Athyriaceae|メシダ科|ホウヤクイヌワラビ|Athyrium × neoelegans|Athyrium × neoelegans Sa.Kurata|1|0||
 Athyriaceae|メシダ科|ケホウヤクイヌワラビ|Athyrium × neoelegans|Athyrium × neoelegans Sa.Kurata  nothof. pulvereum Sa.Kurata|1|0||
 Athyriaceae|メシダ科|オオサカバサトメシダ|Athyrium × paludicola|Athyrium × paludicola Sa.Kurata ex Seriz.|1|0||
@@ -2119,8 +2119,8 @@ Athyriaceae|メシダ科|ムラサキオトメイヌワラビ|Athyrium × purpur
 Athyriaceae|メシダ科|ケムラサキオトメイヌワラビ|Athyrium × purpurascens  fo. pilosum|Athyrium × purpurascens (Tagawa) Sa.Kurata  fo. pilosum (Sa.Kurata) Sa.Kurata|1|0||
 Athyriaceae|メシダ科|カラタニイヌワラビ|Athyrium × purpureipes|Athyrium × purpureipes Sa.Kurata|1|0||
 Athyriaceae|メシダ科|コビトイヌワラビ|Athyrium × pygmaei-silvae|Athyrium × pygmaei-silvae Sa.Kurata|1|0||
-Athyriaceae|メシダ科|ヤマタニイヌワラビ|Athyrium × quaesitum|Athyrium × quaesitum Sa.Kurata|1|0||
 Athyriaceae|メシダ科|ケヤマタニイヌワラビ|Athyrium × quaesitum|Athyrium × quaesitum Sa.Kurata  nothof. pulvereum Sa.Kurata|1|0||
+Athyriaceae|メシダ科|ヤマタニイヌワラビ|Athyrium × quaesitum|Athyrium × quaesitum Sa.Kurata|1|0||
 Athyriaceae|メシダ科|サワライヌワラビ|Athyrium × sadaoi|Athyrium × sadaoi Sa.Kurata, nom. nud.|1|0||
 Athyriaceae|メシダ科|オオアオグキイヌワラビ|Athyrium × satsumense|Athyrium × satsumense Seriz.|1|0||
 Athyriaceae|メシダ科|セフリイヌワラビ|Athyrium × sefuricola|Athyrium × sefuricola Sa.Kurata|1|0||
@@ -3155,8 +3155,8 @@ Polypodiaceae|ウラボシ科|ラシャシダ|Pyrrosia gralla|Pyrrosia gralla (G
 Polypodiaceae|ウラボシ科|イワオモダカ|Pyrrosia hastata|Pyrrosia hastata (Houtt.) Ching|1|0||
 Polypodiaceae|ウラボシ科|ビロードシダ|Pyrrosia linearifolia|Pyrrosia linearifolia (Hook.) Ching|1|0||
 Polypodiaceae|ウラボシ科|シシヒトツバ|Pyrrosia lingua|Pyrrosia lingua (Thunb.) Farw.  'Cristata'|1|0||栽
-Polypodiaceae|ウラボシ科|エボシヒトツバ|Pyrrosia lingua|Pyrrosia lingua (Thunb.) Farw.  'Contorta'|1|0||栽
 Polypodiaceae|ウラボシ科|ハゴロモヒトツバ|Pyrrosia lingua|Pyrrosia lingua (Thunb.) Farw.  'Monstrifera'|1|0||栽
+Polypodiaceae|ウラボシ科|エボシヒトツバ|Pyrrosia lingua|Pyrrosia lingua (Thunb.) Farw.  'Contorta'|1|0||栽
 Polypodiaceae|ウラボシ科|フイリヒトツバ|Pyrrosia lingua|Pyrrosia lingua (Thunb.) Farw.  'Variegata'|1|0||栽
 Polypodiaceae|ウラボシ科|ヒトツバ|Pyrrosia lingua|Pyrrosia lingua (Thunb.) Farw.|1|0||
 Polypodiaceae|ウラボシ科|コヒトツバ|Pyrrosia petiolosa|Pyrrosia petiolosa (Christ) Ching|1|0||外
@@ -3491,30 +3491,30 @@ Cupressaceae|ヒノキ科|オニヒバ|Calocedrus decurrens|Calocedrus decurrens
 Cupressaceae|ヒノキ科|ショウナンボク|Calocedrus macrolepis var. formosana|Calocedrus macrolepis Kurz  var. formosana (Florin) W.C.Cheng et L.K.Fu|2|0||栽
 Cupressaceae|ヒノキ科|ベニヒ|Chamaecyparis formosensis|Chamaecyparis formosensis Matsum.|2|0||外
 Cupressaceae|ヒノキ科|ローソンヒノキ|Chamaecyparis lawsoniana|Chamaecyparis lawsoniana (A.Murray bis) Parl.|2|0||外
-Cupressaceae|ヒノキ科|カマクラヒバ|Chamaecyparis obtusa|Chamaecyparis obtusa (Siebold et Zucc.) Endl.  'Breviramea'|2|1||栽
-Cupressaceae|ヒノキ科|アオノクジャクヒバ|Chamaecyparis obtusa|Chamaecyparis obtusa (Siebold et Zucc.) Endl.  'Filicoides'|2|1||栽
 Cupressaceae|ヒノキ科|オウゴンクジャクヒバ|Chamaecyparis obtusa|Chamaecyparis obtusa (Siebold et Zucc.) Endl.  'Filicoides-aurea'|2|1||栽
+Cupressaceae|ヒノキ科|アオノクジャクヒバ|Chamaecyparis obtusa|Chamaecyparis obtusa (Siebold et Zucc.) Endl.  'Filicoides'|2|1||栽
+Cupressaceae|ヒノキ科|カマクラヒバ|Chamaecyparis obtusa|Chamaecyparis obtusa (Siebold et Zucc.) Endl.  'Breviramea'|2|1||栽
 Cupressaceae|ヒノキ科|ヒノキ|Chamaecyparis obtusa|Chamaecyparis obtusa (Siebold et Zucc.) Endl.|2|1||
 Cupressaceae|ヒノキ科|シダレヒノキ|Chamaecyparis obtusa|Chamaecyparis obtusa (Siebold et Zucc.) Endl.  'Penduliformis'|2|1||栽
 Cupressaceae|ヒノキ科|クリハダヒノキ|Chamaecyparis obtusa fo. hasegawana|Chamaecyparis obtusa (Siebold et Zucc.) Endl.  fo. hasegawana Hayashi|2|0||
 Cupressaceae|ヒノキ科|タイワンヒノキ|Chamaecyparis obtusa var. formosana|Chamaecyparis obtusa (Siebold et Zucc.) Endl.  var. formosana (Hayata) Hayata|2|0||外
 Cupressaceae|ヒノキ科|ツノミノヒノキ|Chamaecyparis obtusa var. takeuchii|Chamaecyparis obtusa (Siebold et Zucc.) Endl.  var. takeuchii Hayashi|2|0||
-Cupressaceae|ヒノキ科|ブルーバール|Chamaecyparis pisifera|Chamaecyparis pisifera (Siebold et Zucc.) Endl.  'Boulevard'|2|1||栽
-Cupressaceae|ヒノキ科|オウゴンシノブヒバ|Chamaecyparis pisifera|Chamaecyparis pisifera (Siebold et Zucc.) Endl.  'Plumosa Aurea'|2|1||栽
-Cupressaceae|ヒノキ科|サワラ|Chamaecyparis pisifera|Chamaecyparis pisifera (Siebold et Zucc.) Endl.|2|1||
-Cupressaceae|ヒノキ科|ヒヨクヒバ|Chamaecyparis pisifera|Chamaecyparis pisifera (Siebold et Zucc.) Endl.  'Filifera'|2|1||栽
 Cupressaceae|ヒノキ科|ヒムロ|Chamaecyparis pisifera|Chamaecyparis pisifera (Siebold et Zucc.) Endl.  'Squarrosa'|2|1||栽
+Cupressaceae|ヒノキ科|オウゴンシノブヒバ|Chamaecyparis pisifera|Chamaecyparis pisifera (Siebold et Zucc.) Endl.  'Plumosa Aurea'|2|1||栽
+Cupressaceae|ヒノキ科|ブルーバール|Chamaecyparis pisifera|Chamaecyparis pisifera (Siebold et Zucc.) Endl.  'Boulevard'|2|1||栽
+Cupressaceae|ヒノキ科|ヒヨクヒバ|Chamaecyparis pisifera|Chamaecyparis pisifera (Siebold et Zucc.) Endl.  'Filifera'|2|1||栽
+Cupressaceae|ヒノキ科|サワラ|Chamaecyparis pisifera|Chamaecyparis pisifera (Siebold et Zucc.) Endl.|2|1||
 Cupressaceae|ヒノキ科|シノブヒバ|Chamaecyparis pisifera|Chamaecyparis pisifera (Siebold et Zucc.) Endl.  'Plumosa'|2|1||栽
 Cupressaceae|ヒノキ科|アツカワサワラ|Chamaecyparis pisifera fo. crassa|Chamaecyparis pisifera (Siebold et Zucc.) Endl.  fo. crassa Hayashi|2|0||
 Cupressaceae|ヒノキ科|ヌマヒバ|Chamaecyparis thyoides|Chamaecyparis thyoides (L.) Britton, Sterns et Poggenb.|2|0||外
-Cupressaceae|ヒノキ科|メジロスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Albospica'|2|1||栽
-Cupressaceae|ヒノキ科|エンコウスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Araucarioides'|2|1||栽
-Cupressaceae|ヒノキ科|ヨレスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Spiralis'|2|1||栽
-Cupressaceae|ヒノキ科|エイザンスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Unciata'|2|1||栽
-Cupressaceae|ヒノキ科|スギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don|2|1||
-Cupressaceae|ヒノキ科|セッカンスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Sekkan-sugi'|2|1||栽
 Cupressaceae|ヒノキ科|ヤワラスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Elegans'|2|1||栽
+Cupressaceae|ヒノキ科|エンコウスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Araucarioides'|2|1||栽
 Cupressaceae|ヒノキ科|イカリスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Lycopodioides'|2|1||栽
+Cupressaceae|ヒノキ科|エイザンスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Unciata'|2|1||栽
+Cupressaceae|ヒノキ科|メジロスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Albospica'|2|1||栽
+Cupressaceae|ヒノキ科|スギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don|2|1||
+Cupressaceae|ヒノキ科|ヨレスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Spiralis'|2|1||栽
+Cupressaceae|ヒノキ科|セッカンスギ|Cryptomeria japonica|Cryptomeria japonica (L.f.) D.Don  'Sekkan-sugi'|2|1||栽
 Cupressaceae|ヒノキ科|ミタマスギ|Cryptomeria japonica fo. clathrata|Cryptomeria japonica (L.f.) D.Don  fo. clathrata Sugim.|2|0||栽
 Cupressaceae|ヒノキ科|アシウスギ|Cryptomeria japonica var. radicans|Cryptomeria japonica (L.f.) D.Don  var. radicans Nakai|2|1||
 Cupressaceae|ヒノキ科|カワイスギ|Cryptomeria japonica var. sinensis|Cryptomeria japonica (L.f.) D.Don  var. sinensis Siebold|2|0||外
@@ -3575,10 +3575,10 @@ Cycadaceae|ソテツ科|ソテツ|Cycas revoluta|Cycas revoluta Thunb.|2|1||
 Cycadaceae|ソテツ科|ナンヨウソテツ|Cycas rumphii|Cycas rumphii Miq.|2|0||栽
 Cycadaceae|ソテツ科|タイワンソテツ|Cycas taitungensis|Cycas taitungensis C.F.Shen, K.D.Hill, C.H.Tsou et C.J.Chen|2|0||栽
 Ephedraceae|マオウ科|シナマオウ|Ephedra sinica|Ephedra sinica Stapf|2|0||栽
+Ginkgoaceae|イチョウ科|シダレイチョウ|Ginkgo biloba|Ginkgo biloba L. 'Pendula'|2|0||栽
 Ginkgoaceae|イチョウ科|フイリイチョウ|Ginkgo biloba|Ginkgo biloba L.  'Aureovariegata'|2|0||栽
 Ginkgoaceae|イチョウ科|オハツキイチョウ|Ginkgo biloba|Ginkgo biloba L. 'Epiphylla'|2|0||栽
 Ginkgoaceae|イチョウ科|イチョウ|Ginkgo biloba|Ginkgo biloba L.|2|0||栽
-Ginkgoaceae|イチョウ科|シダレイチョウ|Ginkgo biloba|Ginkgo biloba L. 'Pendula'|2|0||栽
 Ginkgoaceae|イチョウ科|キレハイチョウ|Ginkgo biloba var. laciniata|Ginkgo biloba L. var. laciniata Hort.|2|0||栽
 Gnetaceae|グネツム科|グネモンノキ|Gnetum gnemon|Gnetum gnemon L.|2|0||栽
 Pinaceae|マツ科|ヨーロッパモミ|Abies alba|Abies alba Mill.|2|0||栽
@@ -4061,8 +4061,8 @@ Amaranthaceae|ヒユ科|センニチノゲイトウ|Gomphrena celosioides|Gomphr
 Amaranthaceae|ヒユ科|センニチコウ|Gomphrena globrosa|Gomphrena globrosa L.|3|0||帰
 Amaranthaceae|ヒユ科|アメリカセンニチコウ|Gomphrena haageana|Gomphrena haageana Klotzsch|3|0||栽
 Amaranthaceae|ヒユ科||Gomphrena serrata|Gomphrena serrata L.|3|0||外
-Amaranthaceae|ヒユ科|ケショウビユ|Iresine herbstii|Iresine herbstii Hook.f. ex Lindl.|3|0||栽
 Amaranthaceae|ヒユ科|キフマルバビユ|Iresine herbstii|Iresine herbstii Hook.f. ex Lindl.  'Aureo-reticulata'|3|0||栽
+Amaranthaceae|ヒユ科|ケショウビユ|Iresine herbstii|Iresine herbstii Hook.f. ex Lindl.|3|0||栽
 Amaranthaceae|ヒユ科|ナガバケショウビユ|Iresine lindenii|Iresine lindenii Van Houtte|3|0||栽
 Amaranthaceae|ヒユ科|ヤリノホアカザ|Monolepis nuttalliana|Monolepis nuttalliana (Schult. et Schult.f.) Greene|3|0||帰
 Amaranthaceae|ヒユ科|シロバナイソフサギ|Philoxerus wrightii fo. albolutescens|Philoxerus wrightii Hook.f. ex Maxim.  fo. albolutescens Hatus., nom. nud.|3|0||
@@ -6279,9 +6279,9 @@ Asteraceae|キク科|オニジシバリ|× Ixyoungia sekimotoi|× Ixyoungia seki
 Asteraceae|キク科|オニヒメジシバリ|× Ixyoungia yendoi|× Ixyoungia yendoi Kitam.|3|0||
 Aucubaceae|アオキ科|タイワンアオキ|Aucuba chinensis|Aucuba chinensis Benth.|3|0||外
 Aucubaceae|アオキ科|ヒマラヤアオキ|Aucuba himalaica|Aucuba himalaica Hook.f. et Thomson|3|0||外
-Aucubaceae|アオキ科|ナカフアオキ|Aucuba japonica|Aucuba japonica Thunb.  'Picturata'|3|1||栽
 Aucubaceae|アオキ科|フクリンアオキ|Aucuba japonica|Aucuba japonica Thunb.  'Luteo-marginata'|3|1||栽
 Aucubaceae|アオキ科|フイリアオキ|Aucuba japonica|Aucuba japonica Thunb.  'Variegata'|3|1||栽
+Aucubaceae|アオキ科|ナカフアオキ|Aucuba japonica|Aucuba japonica Thunb.  'Picturata'|3|1||栽
 Aucubaceae|アオキ科|シロミノアオキ|Aucuba japonica fo. leucocarpa|Aucuba japonica Thunb.  fo. leucocarpa (Matsum. et Nakai) Ohwi|3|0||
 Aucubaceae|アオキ科|キミノアオキ|Aucuba japonica fo. luteocarpa|Aucuba japonica Thunb.  fo. luteocarpa (Dombrain) Rehder|3|0||栽
 Aucubaceae|アオキ科|アオバナアオキ|Aucuba japonica fo. viridiflora|Aucuba japonica Thunb.  fo. viridiflora Makino|3|0||
@@ -8378,8 +8378,8 @@ Ericaceae|ツツジ科|アルペンローゼ|Rhododendron ferrugineum|Rhododendr
 Ericaceae|ツツジ科|タイワンシャクナゲ|Rhododendron formosanum|Rhododendron formosanum Hemsl.|3|0||外
 Ericaceae|ツツジ科|ゴヨウザンヨウラク|Rhododendron goyozanense|Rhododendron goyozanense (M.Kikuchi) Craven|3|0||
 Ericaceae|ツツジ科|ヒュウガミツバツツジ|Rhododendron hyugaense|Rhododendron hyugaense (T.Yamaz.) T.Yamaz.|3|1||
-Ericaceae|ツツジ科|ハカタジロ|Rhododendron indicum|Rhododendron indicum (L.) Sweet  'Hakatajiro'|3|1||栽
 Ericaceae|ツツジ科|サツキ|Rhododendron indicum|Rhododendron indicum (L.) Sweet|3|1||
+Ericaceae|ツツジ科|ハカタジロ|Rhododendron indicum|Rhododendron indicum (L.) Sweet  'Hakatajiro'|3|1||栽
 Ericaceae|ツツジ科|オタクミツツジ|Rhododendron indicum fo. otakumi|Rhododendron indicum (L.) Sweet  fo. otakumi T.Yamaz.|3|0||
 Ericaceae|ツツジ科|ホンシャクナゲ|Rhododendron japonoheptamerum var. hondoense|Rhododendron japonoheptamerum Kitam.  var. hondoense (Nakai) Kitam.|3|0||
 Ericaceae|ツツジ科|シロバナホンシャクナゲ|Rhododendron japonoheptamerum var. hondoense fo. leucanthum|Rhododendron japonoheptamerum Kitam.  var. hondoense (Nakai) Kitam.  fo. leucanthum (Nakai) T.Yamaz.|3|0||
@@ -8416,11 +8416,11 @@ Ericaceae|ツツジ科|モウセンツツジ|Rhododendron lapponicum subsp. alpi
 Ericaceae|ツツジ科|サカイツツジ|Rhododendron lapponicum subsp. parvifolium|Rhododendron lapponicum (L.) Wahlenb.  subsp. parvifolium (Adams) T.Yamaz.|3|0|VU|
 Ericaceae|ツツジ科|セイシカ|Rhododendron latoucheae|Rhododendron latoucheae Franch.|3|0||
 Ericaceae|ツツジ科|アマミセイシカ|Rhododendron latoucheae var. amamiense|Rhododendron latoucheae Franch.  var. amamiense (Ohwi) T.Yamaz.|3|1|CR|
-Ericaceae|ツツジ科|セイガイツツジ|Rhododendron macrosepalum|Rhododendron macrosepalum Maxim.  'Linearifolium'|3|1||栽
-Ericaceae|ツツジ科|ハナグルマ|Rhododendron macrosepalum|Rhododendron macrosepalum Maxim.  'Hanaguruma'|3|1||栽
 Ericaceae|ツツジ科|モチツツジ|Rhododendron macrosepalum|Rhododendron macrosepalum Maxim.|3|1||
 Ericaceae|ツツジ科|ユキグルマ|Rhododendron macrosepalum|Rhododendron macrosepalum Maxim.  'Yukiguruma'|3|1||栽
+Ericaceae|ツツジ科|セイガイツツジ|Rhododendron macrosepalum|Rhododendron macrosepalum Maxim.  'Linearifolium'|3|1||栽
 Ericaceae|ツツジ科|シデグルマ|Rhododendron macrosepalum|Rhododendron macrosepalum Maxim.  'Sideguruma'|3|1||栽
+Ericaceae|ツツジ科|ハナグルマ|Rhododendron macrosepalum|Rhododendron macrosepalum Maxim.  'Hanaguruma'|3|1||栽
 Ericaceae|ツツジ科|シロバナモチツツジ|Rhododendron macrosepalum fo. albiflorum|Rhododendron macrosepalum Maxim.  fo. albiflorum (Honda) H.Hara|3|0||
 Ericaceae|ツツジ科|ヒラザキモチツツジ|Rhododendron macrosepalum fo. subrotatum|Rhododendron macrosepalum Maxim.  fo. subrotatum Sugim.|3|0||
 Ericaceae|ツツジ科|タキノクチツツジ|Rhododendron macrosepalum × pulchrum|Rhododendron macrosepalum Maxim. × R. pulchrum Sweet|3|0||
@@ -8532,8 +8532,8 @@ Ericaceae|ツツジ科|チョウセンヤマツツジ|Rhododendron yedoense var.
 Ericaceae|ツツジ科|スルガツツジ|Rhododendron × ashitakayamense|Rhododendron × ashitakayamense Sugim.|3|0||
 Ericaceae|ツツジ科|チュウキリシマ|Rhododendron × chukirishima|Rhododendron × chukirishima T.Yamaz.|3|0||栽
 Ericaceae|ツツジ科|ウレンツツジ|Rhododendron × enomotoi|Rhododendron × enomotoi T.Yamaz.|3|0||
-Ericaceae|ツツジ科|ハンノウツツジ|Rhododendron × hannoense|Rhododendron × hannoense Nakai|3|0||
 Ericaceae|ツツジ科|ブンゴニシキ|Rhododendron × hannoense|Rhododendron × hannoense Nakai  'Bungonishiki'|3|0||栽
+Ericaceae|ツツジ科|ハンノウツツジ|Rhododendron × hannoense|Rhododendron × hannoense Nakai|3|0||
 Ericaceae|ツツジ科|ハコネミツバツツジ|Rhododendron × hasegawae|Rhododendron × hasegawae S.Watan.|3|0||
 Ericaceae|ツツジ科|アオヤシャクナゲ|Rhododendron × hidaense|Rhododendron × hidaense Makino|3|0||
 Ericaceae|ツツジ科|ムラサキリュウキュウ|Rhododendron × hortense|Rhododendron × hortense Nakai|3|0||栽
@@ -9084,8 +9084,8 @@ Fabaceae|マメ科|タイヘイヨウグルミ|Inocarpus fagifer|Inocarpus fagif
 Fabaceae|マメ科|タシロマメ|Intsia bijuga|Intsia bijuga (Colebr.) Kuntze|3|0|CR|
 Fabaceae|マメ科|マルバヤハズソウ|Kummerowia stipulacea|Kummerowia stipulacea (Maxim.) Makino|3|0||
 Fabaceae|マメ科|ヤハズソウ|Kummerowia striata|Kummerowia striata (Thunb.) Schindl.|3|0||
-Fabaceae|マメ科|フジマメ|Lablab purpurea|Lablab purpurea (L.) Sweet|3|0||栽
 Fabaceae|マメ科|シロフジマメ|Lablab purpurea|Lablab purpurea (L.) Sweet  'Bengalensis'|3|0||栽
+Fabaceae|マメ科|フジマメ|Lablab purpurea|Lablab purpurea (L.) Sweet|3|0||栽
 Fabaceae|マメ科|キバナフジ|Laburnum anagyroides|Laburnum anagyroides Medik.|3|0||栽
 Fabaceae|マメ科|タクヨウレンリソウ|Lathyrus aphaca|Lathyrus aphaca L.|3|0||帰
 Fabaceae|マメ科|オトメレンリソウ|Lathyrus clymenum|Lathyrus clymenum L.|3|0||帰
@@ -9156,8 +9156,8 @@ Fabaceae|マメ科|ケハギ|Lespedeza thunbergii subsp. patens|Lespedeza thunbe
 Fabaceae|マメ科|ユキハギ|Lespedeza thunbergii subsp. patens fo. nivea|Lespedeza thunbergii (DC.) Nakai  subsp. patens (Nakai) H.Ohashi  fo. nivea (S.Akiyama et H.Ohba) H.Ohashi|3|0||
 Fabaceae|マメ科|タテヤマハギ|Lespedeza thunbergii subsp. patens fo. sericea|Lespedeza thunbergii (DC.) Nakai  subsp. patens (Nakai) H.Ohashi  fo. sericea (Matsum.) H.Ohashi|3|0||
 Fabaceae|マメ科|サツマハギ|Lespedeza thunbergii subsp. satsumensis|Lespedeza thunbergii (DC.) Nakai  subsp. satsumensis (Nakai) H.Ohashi|3|0|NT|
-Fabaceae|マメ科|ニシキハギ|Lespedeza thunbergii subsp. thunbergii|Lespedeza thunbergii (DC.) Nakai  subsp. thunbergii 'Nipponica'|3|0||栽
 Fabaceae|マメ科|ソメワケハギ|Lespedeza thunbergii subsp. thunbergii|Lespedeza thunbergii (DC.) Nakai  subsp. thunbergii f. versicolor (Nakai) Ohwi|3|0||栽
+Fabaceae|マメ科|ニシキハギ|Lespedeza thunbergii subsp. thunbergii|Lespedeza thunbergii (DC.) Nakai  subsp. thunbergii 'Nipponica'|3|0||栽
 Fabaceae|マメ科|シラハギ|Lespedeza thunbergii subsp. thunbergii fo. alba|Lespedeza thunbergii (DC.) Nakai  subsp. thunbergii  fo. alba (Nakai) H.Ohashi et K.Ohashi|3|0||栽
 Fabaceae|マメ科|ビッチュウヤマハギ|Lespedeza thunbergii subsp. thunbergii fo. angustifolia|Lespedeza thunbergii (DC.) Nakai  subsp. thunbergii  fo. angustifolia (Nakai) Ohwi|3|0||
 Fabaceae|マメ科|シロバナミヤギノハギ|Lespedeza thunbergii subsp. thunbergii fo. miyagialba|Lespedeza thunbergii (DC.) Nakai  subsp. thunbergii  fo. miyagialba H.Ohashi et K.Ohashi|3|0||栽
@@ -12012,8 +12012,8 @@ Paeoniaceae|ボタン科|ケナシシロシャクヤク|Paeonia obovata fo. albi
 Paeoniaceae|ボタン科|ケナシベニバナヤマシャクヤク|Paeonia obovata fo. glabra|Paeonia obovata Maxim.  fo. glabra (Makino) Kitam.|3|0||
 Paeoniaceae|ボタン科|マンシュウヤマシャクヤク|Paeonia obovata fo. oreogeton|Paeonia obovata Maxim.  fo. oreogeton (S.Moore) Kitag.|3|0||
 Paeoniaceae|ボタン科|オランダシャクヤク|Paeonia officinalis|Paeonia officinalis L.|3|0||栽
-Paeoniaceae|ボタン科|ボタン|Paeonia suffruticosa|Paeonia suffruticosa Andrews|3|0||栽
 Paeoniaceae|ボタン科|カンボタン|Paeonia suffruticosa|Paeonia suffruticosa Andrews  'Hiberniflora'|3|0||栽
+Paeoniaceae|ボタン科|ボタン|Paeonia suffruticosa|Paeonia suffruticosa Andrews|3|0||栽
 Paeoniaceae|ボタン科|ホソバシャクヤク|Paeonia tenuifolia|Paeonia tenuifolia L.|3|0||栽
 Papaveraceae|ケシ科|ツルコマクサ|Adlumia asiatica|Adlumia asiatica Ohwi|3|0||外
 Papaveraceae|ケシ科|モモチドリ|Adlumia fungosa|Adlumia fungosa (Aiton) Greene ex Britton, Sterns et Poggenb.|3|0||栽
@@ -12518,8 +12518,8 @@ Polemoniaceae|ハナシノブ科|ツツナガギリア|Gilia lutea|Gilia lutea S
 Polemoniaceae|ハナシノブ科|アカバナギリア|Gilia rubra|Gilia rubra (L.) Heller|3|0||栽
 Polemoniaceae|ハナシノブ科|イガギリア|Gilia squarrosa|Gilia squarrosa (Eschsch.) Hook. et Arn.|3|0||栽
 Polemoniaceae|ハナシノブ科|サンシキギリア|Gilia tricolor|Gilia tricolor Benth.|3|0||栽
-Polemoniaceae|ハナシノブ科|キキョウナデシコ|Phlox drummondii|Phlox drummondii Hook.|3|0||栽
 Polemoniaceae|ハナシノブ科|ホシザキフロックス|Phlox drummondii|Phlox drummondii Hook.  'Stellaris'|3|0||栽
+Polemoniaceae|ハナシノブ科|キキョウナデシコ|Phlox drummondii|Phlox drummondii Hook.|3|0||栽
 Polemoniaceae|ハナシノブ科|クサキョウチクトウ|Phlox paniculata|Phlox paniculata L.|3|0||栽
 Polemoniaceae|ハナシノブ科|シバザクラ|Phlox subulata|Phlox subulata L.|3|0||栽
 Polemoniaceae|ハナシノブ科|ヒメハナシノブ|Polemonium boreale|Polemonium boreale Adams|3|0||栽
@@ -13683,17 +13683,17 @@ Rosaceae|バラ科|キリタチヤマザクラ|Cerasus sargentii var. akimotoi|C
 Rosaceae|バラ科|ブラックチェリー|Cerasus serotina|Cerasus serotina (Ehrh.) Loisel.|3|0||栽
 Rosaceae|バラ科|サトザクラ|Cerasus serrulata|Cerasus serrulata (Lindl.) G.Don|3|0||栽
 Rosaceae|バラ科|イシヅチザクラ|Cerasus shikokuensis|Cerasus shikokuensis (Moriya) H.Ohba|3|0||
-Rosaceae|バラ科|ナデン|Cerasus sieboldii|Cerasus sieboldii Carrière 'Caespitosa'|3|0||栽
 Rosaceae|バラ科|ナデン|Cerasus sieboldii|Cerasus sieboldii Carrière|3|0||栽
+Rosaceae|バラ科|ナデン|Cerasus sieboldii|Cerasus sieboldii Carrière 'Caespitosa'|3|0||栽
 Rosaceae|バラ科|コシノヒガンザクラ|Cerasus spachiana var. koshiensis|Cerasus spachiana Lavalée ex H.Otto  var. koshiensis (Koidz.) H.Ohba|3|0||
 Rosaceae|バラ科|エドヒガン|Cerasus spachiana var. spachiana|Cerasus spachiana Lavalée ex H.Otto  var. spachiana|3|0||
 Rosaceae|バラ科|エドヒガン|Cerasus spachiana var. spachiana fo. ascendens|Cerasus spachiana Lavalée ex H.Otto  var. spachiana  fo. ascendens (Makino) H.Ohba|3|0||
-Rosaceae|バラ科|シオカゼザクラ|Cerasus speciosa|Cerasus speciosa (Koidz.) H.Ohba f. idzuensis (Nakai) H.Ohba|3|0||
 Rosaceae|バラ科|オオシマザクラ|Cerasus speciosa|Cerasus speciosa (Koidz.) H.Ohba|3|0||
+Rosaceae|バラ科|シオカゼザクラ|Cerasus speciosa|Cerasus speciosa (Koidz.) H.Ohba f. idzuensis (Nakai) H.Ohba|3|0||
 Rosaceae|バラ科|ヤエノオオシマザクラ|Cerasus speciosa fo. plena|Cerasus speciosa (Koidz.) H.Ohba  fo. plena H.Ohba|3|0||
 Rosaceae|バラ科|ウスガサネオオシマ|Cerasus speciosa fo. semiplena|Cerasus speciosa (Koidz.) H.Ohba  fo. semiplena (Makino) H.Ohba|3|0||
-Rosaceae|バラ科|コヒガンザクラ|Cerasus subhirtella|Cerasus subhirtella (Miq.) Sokolov|3|0||栽
 Rosaceae|バラ科|ジュウガツザクラ|Cerasus subhirtella|Cerasus subhirtella (Miq.) Sokolov 'Autumnalis'|3|0||栽
+Rosaceae|バラ科|コヒガンザクラ|Cerasus subhirtella|Cerasus subhirtella (Miq.) Sokolov|3|0||栽
 Rosaceae|バラ科|ムシャザクラ|Cerasus taiwaniana|Cerasus taiwaniana (Hayata) Masam. et S.Suzuki|3|0||外
 Rosaceae|バラ科|ホシザクラ|Cerasus tamaclivorum|Cerasus tamaclivorum (T.Oohara, Seriz. et Wakab.) Yonek.|3|0||
 Rosaceae|バラ科|アリサンヤマザクラ|Cerasus transarisanensis|Cerasus transarisanensis (Hayata) Masam. et S.Suzuki|3|0||外
@@ -13704,8 +13704,8 @@ Rosaceae|バラ科|アイヅシダレ|Cerasus × chichibuensis|Cerasus × chichi
 Rosaceae|バラ科|チチブザクラ|Cerasus × chichibuensis|Cerasus × chichibuensis (Kubota et Moriya) H.Ohba|3|0||
 Rosaceae|バラ科|オグラヤマザクラ|Cerasus × chichibuensis  var. uyekii|Cerasus × chichibuensis (Kubota et Moriya) H.Ohba  var. uyekii (Kubota) H.Ohba|3|0||
 Rosaceae|バラ科|アカツキザクラ|Cerasus × compta|Cerasus × compta (Koidz.) H.Ohba|3|0||
-Rosaceae|バラ科|ヤママメザクラ|Cerasus × furuseana|Cerasus × furuseana (Ohwi) H.Ohba|3|0||
 Rosaceae|バラ科|キンキヤママメザクラ|Cerasus × furuseana|Cerasus × furuseana (Ohwi) H.Ohba  nothovar. pseudoaffinis (Kawas.) H.Ohba|3|0||
+Rosaceae|バラ科|ヤママメザクラ|Cerasus × furuseana|Cerasus × furuseana (Ohwi) H.Ohba|3|0||
 Rosaceae|バラ科|ヤブザクラ|Cerasus × hisauchiana|Cerasus × hisauchiana (Koidz. ex Hisauti) H.Ohba|3|0||
 Rosaceae|バラ科|マツマエベニソメイ|Cerasus × juddii|Cerasus × juddii (E.S.Anderson) H.Ohba|3|0||栽
 Rosaceae|バラ科|カンザクラ|Cerasus × kanzakura|Cerasus × kanzakura (Makino) H.Ohba 'Praecox'|3|0||栽
@@ -13728,11 +13728,11 @@ Rosaceae|バラ科|タキノザクラ|Cerasus × takinoensis|Cerasus × takinoen
 Rosaceae|バラ科|ニッコウザクラ|Cerasus × tschonoskii|Cerasus × tschonoskii (Koehne) H.Ohba|3|0||
 Rosaceae|バラ科|カスミオクチョウジザクラ|Cerasus × tschonoskii|Cerasus × tschonoskii (Maxim.) H.Ohba  nothovar. pseudoverecunda (H.Kubota et Moriya) H.Ohba|3|0||
 Rosaceae|バラ科|ナルサワザクラ|Cerasus × yanashimana|Cerasus × yanashimana (H.Kubota et Moriya) H.Ohba|3|0||
-Rosaceae|バラ科|ソメイヨシノ|Cerasus × yedoensis|Cerasus × yedoensis (Matsum.) A.V.Vassil.|3|0||栽
-Rosaceae|バラ科|センダイヨシノ|Cerasus × yedoensis|Cerasus × yedoensis (Matsum.) A.V.Vassil. 'Sakabai'|3|0||栽
 Rosaceae|バラ科|ソメイヨシノ|Cerasus × yedoensis|Cerasus × yedoensis (Matsum.) A.V.Vassil.  'Somei-yoshino'|3|0||栽
-Rosaceae|バラ科|ブコウカスミザクラ|Cerasus × yuyamae|Cerasus × yuyamae (Sugim.) H.Ohba  nothovar. bukosanensis (Moriya) H.Ohba|3|0||
+Rosaceae|バラ科|センダイヨシノ|Cerasus × yedoensis|Cerasus × yedoensis (Matsum.) A.V.Vassil. 'Sakabai'|3|0||栽
+Rosaceae|バラ科|ソメイヨシノ|Cerasus × yedoensis|Cerasus × yedoensis (Matsum.) A.V.Vassil.|3|0||栽
 Rosaceae|バラ科|フジカスミザクラ|Cerasus × yuyamae|Cerasus × yuyamae (Sugim.) H.Ohba|3|0||
+Rosaceae|バラ科|ブコウカスミザクラ|Cerasus × yuyamae|Cerasus × yuyamae (Sugim.) H.Ohba  nothovar. bukosanensis (Moriya) H.Ohba|3|0||
 Rosaceae|バラ科|マボケ|Chaenomeles cathayensis|Chaenomeles cathayensis (Hemsl.) C.K.Schneid.|3|0||栽
 Rosaceae|バラ科|クサボケ|Chaenomeles japonica|Chaenomeles japonica (Thunb.) Lindl. ex Spach|3|0||
 Rosaceae|バラ科|シロバナクサボケ|Chaenomeles japonica fo. alba|Chaenomeles japonica (Thunb.) Lindl. ex Spach  fo. alba (Nakai) Ohwi|3|0||
@@ -14408,8 +14408,8 @@ Rubiaceae|アカネ科|チョウセンカワラマツバ|Galium verum subsp. asi
 Rubiaceae|アカネ科|シナノカワラマツバ|Galium verum subsp. asiaticum var. trachycarpum fo. shinanense|Galium verum L.  subsp. asiaticum (Nakai) T.Yamaz.  var. trachycarpum DC.  fo. shinanense Hiyama|3|0||
 Rubiaceae|アカネ科|エゾノケカワラマツバ|Galium verum subsp. asiaticum var. trachycarpum fo. tomentosum|Galium verum L.  subsp. asiaticum  (Nakai) T.Yamaz.  var. trachycarpum DC.  fo. tomentosum Nakai|3|0||
 Rubiaceae|アカネ科|オガサワラクチナシ|Gardenia boninensis|Gardenia boninensis (Nakai) Tuyama ex Toyoda|3|1|VU|
-Rubiaceae|アカネ科|マルバクチナシ|Gardenia jasminoides|Gardenia jasminoides Ellis  'Maruba'|3|0||栽
 Rubiaceae|アカネ科|クチナシ|Gardenia jasminoides|Gardenia jasminoides Ellis|3|0||
+Rubiaceae|アカネ科|マルバクチナシ|Gardenia jasminoides|Gardenia jasminoides Ellis  'Maruba'|3|0||栽
 Rubiaceae|アカネ科|ヤエクチナシ|Gardenia jasminoides|Gardenia jasminoides Ellis  'Flore-pleno'|3|0||栽
 Rubiaceae|アカネ科|フクリンクチナシ|Gardenia jasminoides|Gardenia jasminoides Ellis  'Albomarginata'|3|0||栽
 Rubiaceae|アカネ科|マルミノクチナシ|Gardenia jasminoides fo. globicarpa|Gardenia jasminoides Ellis  fo. globicarpa Sakata|3|0||
@@ -14555,8 +14555,8 @@ Rubiaceae|アカネ科|ビロードアカネ|Rubia pubescens|Rubia pubescens Nak
 Rubiaceae|アカネ科|モリアカネ|Rubia sylvatica|Rubia sylvatica (Maxim.) Nakai|3|0||外
 Rubiaceae|アカネ科|セイヨウアカネ|Rubia tinctorum|Rubia tinctorum L.|3|0||栽
 Rubiaceae|アカネ科|ミズバヒルギ|Scyphiphora hydrophyllacea|Scyphiphora hydrophyllacea C.F.Gaertn.|3|0||外
-Rubiaceae|アカネ科|フイリハクチョウゲ|Serissa japonica|Serissa japonica (Thunb.) Thunb.  'Variegata'|3|0|EN|栽
 Rubiaceae|アカネ科|ハクチョウゲ|Serissa japonica|Serissa japonica (Thunb.) Thunb.|3|0|EN|
+Rubiaceae|アカネ科|フイリハクチョウゲ|Serissa japonica|Serissa japonica (Thunb.) Thunb.  'Variegata'|3|0|EN|栽
 Rubiaceae|アカネ科|ダンチョウゲ|Serissa japonica|Serissa japonica (Thunb.) Thunb.  'Crassiramea'|3|0|EN|栽
 Rubiaceae|アカネ科|シナハクチョウゲ|Serissa serissoides|Serissa serissoides (DC.) Druce|3|0||栽
 Rubiaceae|アカネ科|ハナヤエムグラ|Sherardia arvensis|Sherardia arvensis L.|3|0||帰
@@ -14604,11 +14604,11 @@ Rutaceae|ミカン科|ハナユ|Citrus hanayu|Citrus hanayu Hort. ex Shirai|3|0|
 Rutaceae|ミカン科|ハッサク|Citrus hassaku|Citrus hassaku Hort. ex Tanaka, nom. nud.|3|0||栽
 Rutaceae|ミカン科|フサラ|Citrus iriomotensis|Citrus iriomotensis Tanaka, nom. nud.|3|0||栽
 Rutaceae|ミカン科|イヨカン|Citrus iyo|Citrus iyo Hort. ex Tanaka, nom. nud.|3|0||栽
-Rutaceae|ミカン科|キンカン|Citrus japonica|Citrus japonica Thunb.|3|0||栽
-Rutaceae|ミカン科|マメキンカン|Citrus japonica|Citrus japonica Thunb.  'Hindsii'|3|0||栽
-Rutaceae|ミカン科|ネイハキンカン|Citrus japonica|Citrus japonica Thunb.  'Crassifolia'|3|0||栽
-Rutaceae|ミカン科|ナガキンカン|Citrus japonica|Citrus japonica Thunb.  'Margarita'|3|0||栽
 Rutaceae|ミカン科|チョウジュキンカン|Citrus japonica|Citrus japonica Thunb.  'Obovata'|3|0||栽
+Rutaceae|ミカン科|ネイハキンカン|Citrus japonica|Citrus japonica Thunb.  'Crassifolia'|3|0||栽
+Rutaceae|ミカン科|キンカン|Citrus japonica|Citrus japonica Thunb.|3|0||栽
+Rutaceae|ミカン科|ナガキンカン|Citrus japonica|Citrus japonica Thunb.  'Margarita'|3|0||栽
+Rutaceae|ミカン科|マメキンカン|Citrus japonica|Citrus japonica Thunb.  'Hindsii'|3|0||栽
 Rutaceae|ミカン科|ユズ|Citrus junos|Citrus junos (Makino) Siebold ex Tanaka|3|0||栽
 Rutaceae|ミカン科|キシュウミカン|Citrus kinokuni|Citrus kinokuni Hort. ex Tanaka|3|0||栽
 Rutaceae|ミカン科|キズ|Citrus kizu|Citrus kizu Hort. ex Y.Tanaka, nom. nud.|3|0||栽
@@ -14635,8 +14635,8 @@ Rutaceae|ミカン科|ナンショウダイダイ|Citrus taiwanica|Citrus taiwan
 Rutaceae|ミカン科|ヒュウガナツ|Citrus tamurana|Citrus tamurana Hort. ex Takah.|3|0||栽
 Rutaceae|ミカン科|オオベニミカン|Citrus tangerina|Citrus tangerina Hort. ex Tanaka|3|0||栽
 Rutaceae|ミカン科|タンカン|Citrus tankan|Citrus tankan Hayata|3|0||栽
-Rutaceae|ミカン科|ヒリュウ|Citrus trifoliata|Citrus trifoliata L.  'Monstrosa'|3|0||栽
 Rutaceae|ミカン科|カラタチ|Citrus trifoliata|Citrus trifoliata L.|3|0||栽
+Rutaceae|ミカン科|ヒリュウ|Citrus trifoliata|Citrus trifoliata L.  'Monstrosa'|3|0||栽
 Rutaceae|ミカン科|ウンシュウミカン|Citrus unshiu|Citrus unshiu (Swingle) Marcow.|3|0||栽
 Rutaceae|ミカン科|コウトウワンピ (temp.)|Clausena anisum-olens|Clausena anisum-olens (Blanco) Merr.|3|0||外
 Rutaceae|ミカン科|ヒメワンピ|Clausena excavata|Clausena excavata Burm.f.|3|0||外
@@ -14859,8 +14859,8 @@ Salicaceae|ヤナギ科|ホソバヌマヤナギ|Salix rosmarinifolia|Salix rosm
 Salicaceae|ヤナギ科|コマイワヤナギ|Salix rupifraga|Salix rupifraga Koidz.|3|0|VU|
 Salicaceae|ヤナギ科|ケコマイワヤナギ|Salix rupifraga fo. eriocarpa|Salix rupifraga Koidz.  fo. eriocarpa (Kimura) Kimura ex H.Ohashi|3|0||
 Salicaceae|ヤナギ科|ケコバヤナギ|Salix saxatilis|Salix saxatilis Turcz. ex Ledeb.|3|0||外
-Salicaceae|ヤナギ科|キヌヤナギ|Salix schwerinii|Salix schwerinii E.L.Wolf   'Kinuyanagi'|3|0||
 Salicaceae|ヤナギ科|エゾノキヌヤナギ|Salix schwerinii|Salix schwerinii E.L.Wolf|3|0||
+Salicaceae|ヤナギ科|キヌヤナギ|Salix schwerinii|Salix schwerinii E.L.Wolf   'Kinuyanagi'|3|0||
 Salicaceae|ヤナギ科|オオミネヤナギ|Salix sericeocinerea|Salix sericeocinerea Nakai|3|0||外
 Salicaceae|ヤナギ科|オオミネケヤナギ|Salix sericeocinerea fo. lanata|Salix sericeocinerea Nakai  fo. lanata (Nakai) W.T.Lee|3|0||外
 Salicaceae|ヤナギ科|シライヤナギ|Salix shiraii|Salix shiraii Seemen|3|0||
@@ -14890,8 +14890,8 @@ Salicaceae|ヤナギ科|ハイイロヤナギ|Salix xerophila fo. manshurica|Sal
 Salicaceae|ヤナギ科|チャイロミネヤナギ|Salix xerophila var. fuscescens|Salix xerophila Flod.  var. fuscescens (Nakai) W.T.Lee|3|0||外
 Salicaceae|ヤナギ科|ヨシノヤナギ|Salix yoshinoi|Salix yoshinoi Koidz.|3|0||
 Salicaceae|ヤナギ科|トウゲヤナギ|Salix × algista|Salix × algista C.K.Schneid.|3|0||栽
-Salicaceae|ヤナギ科|ハコダテヤナギ|Salix × ampherista|Salix × ampherista C.K.Schneid.|3|0||
 Salicaceae|ヤナギ科|ヤマトヤナギ|Salix × ampherista|Salix × ampherista C.K.Schneid.  nothosubsp. yamatoensis (Koidz.) H.Ohashi et Yonek.|3|0||
+Salicaceae|ヤナギ科|ハコダテヤナギ|Salix × ampherista|Salix × ampherista C.K.Schneid.|3|0||
 Salicaceae|ヤナギ科|ナガバノネコヤナギ|Salix × arakiana|Salix × arakiana Koidz.|3|0||
 Salicaceae|ヤナギ科|バッコオオキツネヤナギ|Salix × arikae|Salix × arikae H.Ohashi et Yonek.|3|0||
 Salicaceae|ヤナギ科|コガネシダレ|Salix × chrysocoma|Salix × chrysocoma Dode|3|0||栽
@@ -14914,8 +14914,8 @@ Salicaceae|ヤナギ科|カミコウチヤナギ|Salix × kamikotica|Salix × ka
 Salicaceae|ヤナギ科|ミョウジンヤナギ|Salix × kawamurana|Salix × kawamurana Kimura|3|0||
 Salicaceae|ヤナギ科|トヨハラヤナギ|Salix × koidzumii|Salix × koidzumii Kimura|3|0||
 Salicaceae|ヤナギ科|ヌシロヤナギ|Salix × koiei|Salix × koiei Kimura|3|0||
-Salicaceae|ヤナギ科|シロシダレヤナギ|Salix × lasiogyne|Salix × lasiogyne Seemen|3|0||
 Salicaceae|ヤナギ科|ユウキシダレ|Salix × lasiogyne|Salix × lasiogyne Seemen  nothosubsp. yuhkii (Kimura) H.Ohashi|3|0||
+Salicaceae|ヤナギ科|シロシダレヤナギ|Salix × lasiogyne|Salix × lasiogyne Seemen|3|0||
 Salicaceae|ヤナギ科|フリソデヤナギ|Salix × leucopithecia|Salix × leucopithecia Kimura|3|0||
 Salicaceae|ヤナギ科|オクヤマサルコ|Salix × matsumurae|Salix × matsumurae Seemen|3|0||
 Salicaceae|ヤナギ科|ワケノカワヤナギ|Salix × mictostemon|Salix × mictostemon Kimura|3|0||
@@ -14971,8 +14971,8 @@ Sapindaceae|ムクロジ科|ホソエカエデ|Acer capillipes|Acer capillipes M
 Sapindaceae|ムクロジ科|チドリノキ|Acer carpinifolium|Acer carpinifolium Siebold et Zucc.|3|1||
 Sapindaceae|ムクロジ科|オオバチドリノキ|Acer carpinifolium fo. magnificum|Acer carpinifolium Siebold et Zucc.  fo. magnificum Sugim.|3|0||
 Sapindaceae|ムクロジ科|ミツデカエデ|Acer cissifolium|Acer cissifolium (Siebold et Zucc.) K.Koch|3|1||
-Sapindaceae|ムクロジ科|ウリカエデ|Acer crataegifolium|Acer crataegifolium Siebold et Zucc.|3|1||
 Sapindaceae|ムクロジ科|フイリウリカエデ|Acer crataegifolium|Acer crataegifolium Siebold et Zucc.  'Veitchii'|3|1||栽
+Sapindaceae|ムクロジ科|ウリカエデ|Acer crataegifolium|Acer crataegifolium Siebold et Zucc.|3|1||
 Sapindaceae|ムクロジ科|カジカエデ|Acer diabolicum|Acer diabolicum Blume ex K.Koch|3|1||
 Sapindaceae|ムクロジ科|ヒトツバカエデ|Acer distylum|Acer distylum Siebold et Zucc.|3|1||
 Sapindaceae|ムクロジ科|タイワンヤマモミジ|Acer duplicatoserratum|Acer duplicatoserratum Hayata|3|0||外
@@ -14981,12 +14981,12 @@ Sapindaceae|ムクロジ科|チョウセンカラコギカエデ|Acer ginnala va
 Sapindaceae|ムクロジ科|アカハダメグスリノキ|Acer griseum|Acer griseum (Franch.) Pax|3|0||栽
 Sapindaceae|ムクロジ科|シマウリカエデ|Acer insulare|Acer insulare Makino|3|1||
 Sapindaceae|ムクロジ科|クスノハカエデ|Acer itoanum|Acer itoanum (Hayata) H.L.Li|3|0||
-Sapindaceae|ムクロジ科|ココノエ|Acer japonicum|Acer japonicum Thunb.  'Kokonoe'|3|1||栽
-Sapindaceae|ムクロジ科|カサド|Acer japonicum|Acer japonicum Thunb.  'Kasado'|3|1||栽
+Sapindaceae|ムクロジ科|サヨシグレ|Acer japonicum|Acer japonicum Thunb.  'Sayosigure'|3|1||栽
 Sapindaceae|ムクロジ科|マツヨイ|Acer japonicum|Acer japonicum Thunb.  'Matsuyoi'|3|1||栽
 Sapindaceae|ムクロジ科|マイクジャク|Acer japonicum|Acer japonicum Thunb.  'Parsonsii'|3|1||栽
+Sapindaceae|ムクロジ科|カサド|Acer japonicum|Acer japonicum Thunb.  'Kasado'|3|1||栽
+Sapindaceae|ムクロジ科|ココノエ|Acer japonicum|Acer japonicum Thunb.  'Kokonoe'|3|1||栽
 Sapindaceae|ムクロジ科|ハウチワカエデ|Acer japonicum|Acer japonicum Thunb.|3|1||
-Sapindaceae|ムクロジ科|サヨシグレ|Acer japonicum|Acer japonicum Thunb.  'Sayosigure'|3|1||栽
 Sapindaceae|ムクロジ科|エゾメイゲツカエデ|Acer japonicum fo. microphyllum|Acer japonicum Thunb.  fo. microphyllum (Koidz.) Rehder|3|0||
 Sapindaceae|ムクロジ科|タカサゴウリカエデ|Acer kawakamii|Acer kawakamii Koidz.|3|0||外
 Sapindaceae|ムクロジ科|チョウセンミネカエデ|Acer komarovii|Acer komarovii Pojark.|3|0||外
@@ -15341,12 +15341,12 @@ Solanaceae|ナス科|アメリカバンマツリ|Brunfelsia americana|Brunfelsia
 Solanaceae|ナス科|オオバンマツリ|Brunfelsia calycina|Brunfelsia calycina Benth.|3|0||栽
 Solanaceae|ナス科|ニオイバンマツリ|Brunfelsia latifolia|Brunfelsia latifolia Benth.|3|0||栽
 Solanaceae|ナス科|バンマツリ|Brunfelsia uniflora|Brunfelsia uniflora (Pohl) D.Don|3|0||栽
-Solanaceae|ナス科|ピーマン|Capsicum annuum|Capsicum annuum L.  Grossum group|3|0||栽
-Solanaceae|ナス科|ヤツブサ|Capsicum annuum|Capsicum annuum L.  Fasciculatum group|3|0||栽
 Solanaceae|ナス科|ゴシキトウガラシ|Capsicum annuum|Capsicum annuum L.  Conoides group|3|0||栽
 Solanaceae|ナス科|ソラミトウガラシ|Capsicum annuum|Capsicum annuum L.  Acuminatum group|3|0||栽
 Solanaceae|ナス科|トウガラシ|Capsicum annuum|Capsicum annuum L.|3|0||栽
 Solanaceae|ナス科|ナガミトウガラシ|Capsicum annuum|Capsicum annuum L.  Longum group|3|0||栽
+Solanaceae|ナス科|ピーマン|Capsicum annuum|Capsicum annuum L.  Grossum group|3|0||栽
+Solanaceae|ナス科|ヤツブサ|Capsicum annuum|Capsicum annuum L.  Fasciculatum group|3|0||栽
 Solanaceae|ナス科|ホシトウガラシ|Capsicum annuum|Capsicum annuum L.  Cerasiforme group|3|0||栽
 Solanaceae|ナス科|キダチトウガラシ|Capsicum frutescens|Capsicum frutescens L.|3|0||帰
 Solanaceae|ナス科|キチョウジ|Cestrum aurantiacum|Cestrum aurantiacum Lindl.|3|0||栽
@@ -15392,8 +15392,8 @@ Solanaceae|ナス科|アオホオズキ|Physaliastrum japonicum|Physaliastrum ja
 Solanaceae|ナス科|タカオホオズキ|Physaliastrum japonicum fo. kimurae|Physaliastrum japonicum (Franch. et Sav.) Honda  fo. kimurae (Makino) Yonek.|3|0||
 Solanaceae|ナス科|ナガエノセンナリホオズキ|Physalis acutifolia|Physalis acutifolia (Miers) Sandw.|3|0||帰
 Solanaceae|ナス科|ヨウシュホオズキ|Physalis alkekengi var. alkekengi|Physalis alkekengi L.  var. alkekengi|3|0||帰
-Solanaceae|ナス科|ホオズキ|Physalis alkekengi var. franchetii|Physalis alkekengi L.  var. franchetii (Mast.) Makino|3|0||帰
 Solanaceae|ナス科|ヨウラクホオズキ|Physalis alkekengi var. franchetii|Physalis alkekengi L.  var. franchetii (Mast.) Makino  'Monstrosa'|3|0||栽
+Solanaceae|ナス科|ホオズキ|Physalis alkekengi var. franchetii|Physalis alkekengi L.  var. franchetii (Mast.) Makino|3|0||帰
 Solanaceae|ナス科|ヒロハフウリンホオズキ|Physalis angulata var. angulata|Physalis angulata L.  var. angulata|3|0||帰
 Solanaceae|ナス科|ホソバフウリンホオズキ|Physalis angulata var. lanceifolia|Physalis angulata L.  var. lanceifolia (Nees) Waterf.|3|0||帰
 Solanaceae|ナス科|アイフウリンホオズキ|Physalis angulata var. pendula|Physalis angulata L.  var. pendula (Rydb.) Waterf.|3|0||帰
@@ -15482,8 +15482,8 @@ Stachyuraceae|キブシ科|フクリンキブシ|Stachyurus praecox fo. marginat
 Stachyuraceae|キブシ科|コバノキブシ|Stachyurus praecox fo. microphyllus|Stachyurus praecox Siebold et Zucc.  fo. microphyllus (Nakai) H.Hara|3|0||
 Stachyuraceae|キブシ科|マルバキブシ|Stachyurus praecox fo. rotundifolius|Stachyurus praecox Siebold et Zucc.  fo. rotundifolius (Tuyama) Tuyama ex H.Hara|3|0||
 Stachyuraceae|キブシ科|ナンバンキブシ|Stachyurus praecox var. lancifolius|Stachyurus praecox Siebold et Zucc.  var. lancifolius (Koidz.) H.Hara|3|0||
-Stachyuraceae|キブシ科|ハザクラキブシ|Stachyurus praecox var. macrocarpus|Stachyurus praecox Siebold et Zucc.  var. macrocarpus (Koidz.) Tuyama ex H.Ohba|3|0||
 Stachyuraceae|キブシ科|ナガバキブシ|Stachyurus praecox var. macrocarpus|Stachyurus praecox Siebold et Zucc.  var. macrocarpus (Koidz.) Tuyama ex H.Ohba|3|0||
+Stachyuraceae|キブシ科|ハザクラキブシ|Stachyurus praecox var. macrocarpus|Stachyurus praecox Siebold et Zucc.  var. macrocarpus (Koidz.) Tuyama ex H.Ohba|3|0||
 Stachyuraceae|キブシ科|ハチジョウキブシ|Stachyurus praecox var. matsuzakii|Stachyurus praecox Siebold et Zucc.  var. matsuzakii (Nakai) Makino ex H.Hara|3|1||
 Stachyuraceae|キブシ科|ハチジョウキブシ|Stachyurus praecox var. matsuzakii|Stachyurus praecox Siebold et Zucc.  var. matsuzakii (Nakai) Makino ex H.Hara|3|1||
 Stachyuraceae|キブシ科|ヒメキブシ|Stachyurus praecox var. parviflorus|Stachyurus praecox Siebold et Zucc.  var. parviflorus Makino ex H.Hara|3|0||
@@ -15652,8 +15652,8 @@ Theaceae|ツバキ科|シロバナユキツバキ|Camellia rusticana fo. leucant
 Theaceae|ツバキ科|ノザワツバキ|Camellia rusticana fo. plena|Camellia rusticana Honda  fo. plena (Honda) H.Hara|3|0||栽
 Theaceae|ツバキ科|ヤナギバサザンカ|Camellia salicifolia|Camellia salicifolia Champ. ex Benth.|3|0||栽
 Theaceae|ツバキ科|サルウィンツバキ|Camellia saluenensis|Camellia saluenensis Stapf ex Bean|3|0||栽
-Theaceae|ツバキ科|カンツバキ|Camellia sasanqua|Camellia sasanqua Thunb.  'Shishigashira'|3|0||栽
 Theaceae|ツバキ科|サザンカ|Camellia sasanqua|Camellia sasanqua Thunb.|3|0||
+Theaceae|ツバキ科|カンツバキ|Camellia sasanqua|Camellia sasanqua Thunb.  'Shishigashira'|3|0||栽
 Theaceae|ツバキ科|チャノキ|Camellia sinensis|Camellia sinensis (L.) Kuntze|3|0||帰
 Theaceae|ツバキ科|ベニバナチャ|Camellia sinensis fo. rosea|Camellia sinensis (L.) Kuntze  fo. rosea (Makino) Kitam.|3|0||栽
 Theaceae|ツバキ科|アッサムチャ|Camellia sinensis var. assamica|Camellia sinensis (L.) Kuntze  var. assamica (J.W.Mast.) Kitam.|3|0||栽
@@ -15661,8 +15661,8 @@ Theaceae|ツバキ科|タイワンヒメサザンカ|Camellia transarisanensis|C
 Theaceae|ツバキ科|テリバヒメサザンカ|Camellia transnokoensis|Camellia transnokoensis Hayata|3|0||外
 Theaceae|ツバキ科|ウラク|Camellia uraku|Camellia uraku Kitam.|3|0||栽
 Theaceae|ツバキ科|ベニワビスケ|Camellia wabisuke var. campanulata|Camellia wabisuke (Makino) Kitam.  var. campanulata (Makino) Kitam.|3|0||栽
-Theaceae|ツバキ科|ワビスケ|Camellia wabisuke var. campanulata fo. bicolor|Camellia wabisuke (Makino) Kitam.  var. campanulata (Makino) Kitam.  fo. bicolor (Makino) Kitam.|3|0||栽
 Theaceae|ツバキ科|コチョウワビスケ|Camellia wabisuke var. campanulata fo. bicolor|Camellia wabisuke (Makino) Kitam.  var. campanulata (Makino) Kitam.  fo. bicolor (Makino) Kitam.|3|0||栽
+Theaceae|ツバキ科|ワビスケ|Camellia wabisuke var. campanulata fo. bicolor|Camellia wabisuke (Makino) Kitam.  var. campanulata (Makino) Kitam.  fo. bicolor (Makino) Kitam.|3|0||栽
 Theaceae|ツバキ科|シロワビスケ|Camellia wabisuke var. wabisuke|Camellia wabisuke (Makino) Kitam.  var. wabisuke|3|0||栽
 Theaceae|ツバキ科|ユキバタツバキ|Camellia × intermedia|Camellia × intermedia (Tuyama) Nagam.|3|0||
 Theaceae|ツバキ科|ハルサザンカ|Camellia × vernalis|Camellia × vernalis (Makino) Makino|3|0||栽
@@ -16214,8 +16214,8 @@ Violaceae|スミレ科|デワタチツボスミレ|Viola × luxuriosa|Viola × l
 Violaceae|スミレ科|アスマスミレ|Viola × martinii|Viola × martinii F.Maek.|3|0||
 Violaceae|スミレ科|スワスミレ|Viola × miyajiana|Viola × miyajiana Koidz.|3|0||
 Violaceae|スミレ科|ニオイエゾノタチツボスミレ|Viola × obtusoacuminata|Viola × obtusoacuminata T.Hashim. ex T.Shimizu|3|0||
-Violaceae|スミレ科|マルバタチツボスミレ|Viola × obtusogrypoceras|Viola × obtusogrypoceras Makino|3|0||
 Violaceae|スミレ科|トノウエスミレ|Viola × obtusogrypoceras|Viola × obtusogrypoceras Makino  nothovar. minor F.Maek. et T.Hashim., nom. nud.|3|0||
+Violaceae|スミレ科|マルバタチツボスミレ|Viola × obtusogrypoceras|Viola × obtusogrypoceras Makino|3|0||
 Violaceae|スミレ科|カツラギスミレ|Viola × ogawae|Viola × ogawae Nakai|3|0||
 Violaceae|スミレ科|フイリカツラギスミレ|Viola × ogawae|Viola × ogawae Nakai  nothof. variegata E.Hama ex T.Shimizu|3|0||
 Violaceae|スミレ科|オクハラスミレ|Viola × okuharae|Viola × okuharae F.Maek. ex T.Shimizu|3|0||
@@ -16225,8 +16225,8 @@ Violaceae|スミレ科|フイリオクタマスミレ|Viola × savatieri|Viola �
 Violaceae|スミレ科|オクタマスミレ|Viola × savatieri|Viola × savatieri Makino|3|0||
 Violaceae|スミレ科|スズキスミレ|Viola × suzukii|Viola × suzukii Hort. ex F.Maek. et T.Hashim., nom. nud.|3|0||
 Violaceae|スミレ科|キクバコマスミレ|Viola × takahashii|Viola × takahashii (Nakai) Taken.|3|0||外
-Violaceae|スミレ科|カワギシスミレ|Viola × taradakensis|Viola × taradakensis Nakai  nothovar. eizalacea F.Maek. et T.Hashim. ex T.Shimizu|3|0||
 Violaceae|スミレ科|フイリフギレシハイスミレ|Viola × taradakensis|Viola × taradakensis Nakai  nothof. variegata E.Hama ex T.Shimizu|3|0||
+Violaceae|スミレ科|カワギシスミレ|Viola × taradakensis|Viola × taradakensis Nakai  nothovar. eizalacea F.Maek. et T.Hashim. ex T.Shimizu|3|0||
 Violaceae|スミレ科|フギレシハイスミレ|Viola × taradakensis|Viola × taradakensis Nakai|3|0||
 Violaceae|スミレ科|エドスミレ|Viola × tokyoensis|Viola × tokyoensis F.Maek. et T.Hashim.|3|0||
 Violaceae|スミレ科||Viola × wansanensis|Viola × wansanensis Y.N.Lee|3|0||外
@@ -16602,9 +16602,9 @@ Araceae|サトイモ科|チリメンハイモ|Caladium picturatum|Caladium pictu
 Araceae|サトイモ科|ヒメカイウ|Calla palustris|Calla palustris L.|4|0|NT|
 Araceae|サトイモ科|ヤマサトイモ|Colocasia antiquorum|Colocasia antiquorum Schott|4|0||栽
 Araceae|サトイモ科|トウノイモ|Colocasia antiquorum var. toonoimo|Colocasia antiquorum Schott  var. toonoimo T.Itô|4|0||栽
-Araceae|サトイモ科|サトイモ|Colocasia esculenta|Colocasia esculenta (L.) Schott|4|0||栽
-Araceae|サトイモ科|ズイキ|Colocasia esculenta|Colocasia esculenta (L.) Schott  'Rosea'|4|0||栽
 Araceae|サトイモ科|エグイモ|Colocasia esculenta|Colocasia esculenta (L.) Schott  'Eguimo'|4|0||栽
+Araceae|サトイモ科|ズイキ|Colocasia esculenta|Colocasia esculenta (L.) Schott  'Rosea'|4|0||栽
+Araceae|サトイモ科|サトイモ|Colocasia esculenta|Colocasia esculenta (L.) Schott|4|0||栽
 Araceae|サトイモ科|ミズイモ|Colocasia esculenta var. aquatilis|Colocasia esculenta (L.) Schott  var. aquatilis (Hassk.) Kitam. ex M.Hotta|4|0||帰
 Araceae|サトイモ科|ハスイモ|Colocasia gigantea|Colocasia gigantea (Blume) Hook.f.|4|0||栽
 Araceae|サトイモ科|サトイモモドキ|Colocasia konishii|Colocasia konishii Hayata|4|0||外
@@ -16850,8 +16850,8 @@ Asparagaceae|キジカクシ科|タチテンモンドウ|Asparagus cochinchinens
 Asparagaceae|キジカクシ科|ウサギボウキ|Asparagus cooperi|Asparagus cooperi Baker|4|0||栽
 Asparagaceae|キジカクシ科|ヤナギボウキ|Asparagus crispus|Asparagus crispus Lam.|4|0||栽
 Asparagaceae|キジカクシ科|トウキジカクシ|Asparagus dauricus|Asparagus dauricus Fisch. ex Link|4|0||外
-Asparagaceae|キジカクシ科|スギノハカズラ|Asparagus densiflorus|Asparagus densiflorus (Kunth) Jessop 'Sprengeri'|4|0||栽
 Asparagaceae|キジカクシ科|ホウキテンモンドウ|Asparagus densiflorus|Asparagus densiflorus (Kunth) Jessop|4|0||栽
+Asparagaceae|キジカクシ科|スギノハカズラ|Asparagus densiflorus|Asparagus densiflorus (Kunth) Jessop 'Sprengeri'|4|0||栽
 Asparagaceae|キジカクシ科|ヤナギバテンモンドウ|Asparagus falcatus|Asparagus falcatus L.|4|0||栽
 Asparagaceae|キジカクシ科|ハマタマボウキ|Asparagus kiusianus|Asparagus kiusianus Makino|4|0|EN|
 Asparagaceae|キジカクシ科|ナギボウキ|Asparagus madagascariensis|Asparagus madagascariensis Baker|4|0||栽
@@ -16861,8 +16861,8 @@ Asparagaceae|キジカクシ科|オランダキジカクシ|Asparagus officinali
 Asparagaceae|キジカクシ科|タマボウキ|Asparagus oligoclonos|Asparagus oligoclonos Maxim.|4|0|EN|
 Asparagaceae|キジカクシ科|ギョリュウカズラ|Asparagus scandens|Asparagus scandens Thunb.|4|0||栽
 Asparagaceae|キジカクシ科|キジカクシ|Asparagus schoberioides|Asparagus schoberioides Kunth|4|0||
-Asparagaceae|キジカクシ科|シノブボウキ|Asparagus setaceus|Asparagus setaceus (Kunth) Jessop 'Nanus'|4|0||栽
 Asparagaceae|キジカクシ科|オオミドリボウキ|Asparagus setaceus|Asparagus setaceus (Kunth) Jessop|4|0||帰
+Asparagaceae|キジカクシ科|シノブボウキ|Asparagus setaceus|Asparagus setaceus (Kunth) Jessop 'Nanus'|4|0||栽
 Asparagaceae|キジカクシ科|ミドリボウキ|Asparagus setaceus|Asparagus setaceus (Kunth) Jessop 'Tenuissimus'|4|0||栽
 Asparagaceae|キジカクシ科|イトテンモンドウ|Asparagus tenuifolius|Asparagus tenuifolius Lam.|4|0||栽
 Asparagaceae|キジカクシ科|イトキジカクシ|Asparagus trichophyllus|Asparagus trichophyllus Bunge|4|0||外
@@ -16940,10 +16940,10 @@ Asparagaceae|キジカクシ科|クロナミギボウシ|Hosta sieboldiana var. 
 Asparagaceae|キジカクシ科|ナメルギボウシ|Hosta sieboldiana var. glabra|Hosta sieboldiana (Lodd.) Engl.  var. glabra N.Fujita|4|0||
 Asparagaceae|キジカクシ科|ハガクレギボウシ|Hosta sieboldiana var. hypophylla|Hosta sieboldiana (Lodd.) Engl.  var. hypophylla F.Maek.|4|0||
 Asparagaceae|キジカクシ科|クロギボウシ|Hosta sieboldiana var. nigrescens|Hosta sieboldiana (Lodd.) Engl.  var. nigrescens Makino|4|0||
-Asparagaceae|キジカクシ科|キフクリンギボウシ|Hosta sieboldii|Hosta sieboldii (Paxton) J.W.Ingram  'Kifukurin'|4|0||栽
-Asparagaceae|キジカクシ科|カビタンギボウシ|Hosta sieboldii|Hosta sieboldii (Paxton) J.W.Ingram  'Kabitan'|4|0||栽
 Asparagaceae|キジカクシ科|シロカビタンギボウシ|Hosta sieboldii|Hosta sieboldii (Paxton) J.W.Ingram  'Subchrocea'|4|0||栽
+Asparagaceae|キジカクシ科|キフクリンギボウシ|Hosta sieboldii|Hosta sieboldii (Paxton) J.W.Ingram  'Kifukurin'|4|0||栽
 Asparagaceae|キジカクシ科|コバギボウシ|Hosta sieboldii|Hosta sieboldii (Paxton) J.W.Ingram|4|0||
+Asparagaceae|キジカクシ科|カビタンギボウシ|Hosta sieboldii|Hosta sieboldii (Paxton) J.W.Ingram  'Kabitan'|4|0||栽
 Asparagaceae|キジカクシ科|キスジギボウシ|Hosta sieboldii|Hosta sieboldii (Paxton) J.W.Ingram  'Mediopicta'|4|0||栽
 Asparagaceae|キジカクシ科|シロバナコバギボウシ|Hosta sieboldii fo. alba|Hosta sieboldii (Paxton) J.W.Ingram  fo. alba (Rob.) H.Hara|4|0||
 Asparagaceae|キジカクシ科|ヤツブサギボウシ|Hosta sieboldii fo. polycarpellata|Hosta sieboldii (Paxton) J.W.Ingram  fo. polycarpellata (F.Maek.) H.Hara|4|0||栽
@@ -17061,8 +17061,8 @@ Asparagaceae|キジカクシ科|ボウチトセラン|Sansevieria cylindrica|San
 Asparagaceae|キジカクシ科|チトセラン|Sansevieria nilotica|Sansevieria nilotica Baker|4|0||栽
 Asparagaceae|キジカクシ科|ツツチトセラン|Sansevieria stuckyi|Sansevieria stuckyi God.-Leb.|4|0||栽
 Asparagaceae|キジカクシ科|マルバチトセラン|Sansevieria trifasciata|Sansevieria trifasciata Prain  'Hahnii'|4|0||栽
-Asparagaceae|キジカクシ科|フクリンチトセラン|Sansevieria trifasciata|Sansevieria trifasciata Prain  'Laurentii'|4|0||栽
 Asparagaceae|キジカクシ科|フイリマルバチトセラン|Sansevieria trifasciata|Sansevieria trifasciata Prain  'Golden Hahnii'|4|0||栽
+Asparagaceae|キジカクシ科|フクリンチトセラン|Sansevieria trifasciata|Sansevieria trifasciata Prain  'Laurentii'|4|0||栽
 Asparagaceae|キジカクシ科|アツバチトセラン|Sansevieria trifasciata|Sansevieria trifasciata Prain|4|0||栽
 Asparagaceae|キジカクシ科|オオツルボ|Scilla peruviana|Scilla peruviana L.|4|0||栽
 Asparagaceae|キジカクシ科|シベリアツルボ|Scilla siberica|Scilla siberica Haw.|4|0||外
@@ -17183,9 +17183,9 @@ Commelinaceae|ツユクサ科|シラフオオトキワツユクサ|Tradescantia 
 Commelinaceae|ツユクサ科|オオトキワツユクサ|Tradescantia albiflora|Tradescantia albiflora Kunth|4|0||帰
 Commelinaceae|ツユクサ科|シキンツユクサ|Tradescantia blossfeldiana|Tradescantia blossfeldiana Mildbl.|4|0||栽
 Commelinaceae|ツユクサ科|フイリシキンツユクサ|Tradescantia blossfeldiana|Tradescantia blossfeldiana Mildbl.  'Variegata'|4|0||栽
+Commelinaceae|ツユクサ科|ミドリハカタカラクサ|Tradescantia fluminensis|Tradescantia fluminensis Vell.  'Viridis'|4|0||帰
 Commelinaceae|ツユクサ科|ノハカタカラクサ|Tradescantia fluminensis|Tradescantia fluminensis Vell.|4|0||帰
 Commelinaceae|ツユクサ科|シロフハカタカラクサ|Tradescantia fluminensis|Tradescantia fluminensis Vell.  'Variegata'|4|0||帰
-Commelinaceae|ツユクサ科|ミドリハカタカラクサ|Tradescantia fluminensis|Tradescantia fluminensis Vell.  'Viridis'|4|0||帰
 Commelinaceae|ツユクサ科|カサネオウギ|Tradescantia navicularis|Tradescantia navicularis Ortega|4|0||栽
 Commelinaceae|ツユクサ科|ムラサキツユクサ|Tradescantia ohiensis|Tradescantia ohiensis Raf.|4|0||栽
 Commelinaceae|ツユクサ科|ムラサキオオツユクサ|Tradescantia pallida|Tradescantia pallida (Rose) D.R.Hunt|4|0||栽
@@ -17716,8 +17716,8 @@ Iridaceae|アヤメ科|ノハナショウブ|Iris ensata var. spontanea|Iris ens
 Iridaceae|アヤメ科|コガネアヤメ|Iris flavissima|Iris flavissima Pall.|4|0||外
 Iridaceae|アヤメ科|タイワンシャガ|Iris formosana|Iris formosana Ohwi|4|0||栽
 Iridaceae|アヤメ科|チャショウブ|Iris fulva|Iris fulva Ker Gawl.|4|0||栽
-Iridaceae|アヤメ科|ニオイアヤメ|Iris germanica|Iris germanica L. 'Florentina'|4|0||栽
 Iridaceae|アヤメ科|ドイツアヤメ|Iris germanica|Iris germanica L.|4|0||栽
+Iridaceae|アヤメ科|ニオイアヤメ|Iris germanica|Iris germanica L. 'Florentina'|4|0||栽
 Iridaceae|アヤメ科|ヒメシャガ|Iris gracilipes|Iris gracilipes A.Gray|4|0|NT|
 Iridaceae|アヤメ科|シャガ|Iris japonica|Iris japonica Thunb.|4|0||帰
 Iridaceae|アヤメ科|ヒメネジアヤメ|Iris kobayashii|Iris kobayashii Kitag.|4|0||外
@@ -17980,8 +17980,8 @@ Melanthiaceae|シュロソウ科||Chionographis japonica var. koreana|Chionograp
 Melanthiaceae|シュロソウ科|ヤクシマシライトソウ|Chionographis japonica var. yakusimensis|Chionographis japonica Maxim.  var. yakusimensis Masam.|4|0|VU|
 Melanthiaceae|シュロソウ科|チャボシライトソウ|Chionographis koidzumiana|Chionographis koidzumiana Ohwi|4|0||
 Melanthiaceae|シュロソウ科|クロカミシライトソウ|Chionographis koidzumiana var. kurokamiana|Chionographis koidzumiana Ohwi  var. kurokamiana (H.Hara) M.Maki|4|0|CR|
-Melanthiaceae|シュロソウ科|ツクシショウジョウバカマ|Helonias breviscapa|Helonias breviscapa (Maxim.) N.Tanaka|4|0||
 Melanthiaceae|シュロソウ科|シロバナショウジョウバカマ|Helonias breviscapa|Helonias breviscapa (Maxim.) N.Tanaka|4|0||
+Melanthiaceae|シュロソウ科|ツクシショウジョウバカマ|Helonias breviscapa|Helonias breviscapa (Maxim.) N.Tanaka|4|0||
 Melanthiaceae|シュロソウ科|コショウジョウバカマ|Helonias kawanoi|Helonias kawanoi (Koidz.) N.Tanaka|4|0|VU|
 Melanthiaceae|シュロソウ科|オオシロショウジョウバカマ|Helonias leucantha|Helonias leucantha (Koidz.) N.Tanaka|4|0|VU|
 Melanthiaceae|シュロソウ科|ショウジョウバカマ|Helonias orientalis|Helonias orientalis (Thunb.) N.Tanaka|4|0||
@@ -18245,9 +18245,9 @@ Orchidaceae|ラン科|キバナノアツモリソウ|Cypripedium yatabeanum|Cypr
 Orchidaceae|ラン科|アイノコアツモリ(temp.)|Cypripedium × ventricosum|Cypripedium × ventricosum Sw.|4|0||外
 Orchidaceae|ラン科|ジャワツチアケビ(temp.)|Cyrtosia javanica|Cyrtosia javanica Blume|4|0||外
 Orchidaceae|ラン科|ツチアケビ|Cyrtosia septentrionalis|Cyrtosia septentrionalis (Rchb.f.) Garay|4|0||
-Orchidaceae|ラン科|ハクサンチドリ|Dactylorhiza aristata|Dactylorhiza aristata (Fisch. ex Lindl.) Soó|4|0||
-Orchidaceae|ラン科|シロバナハクサンチドリ|Dactylorhiza aristata|Dactylorhiza aristata (Fisch. ex Lindl.) Soó f. albiflora (Koidz.) F.Maek. ex Toyok.|4|0||
 Orchidaceae|ラン科|ウズラバハクサンチドリ|Dactylorhiza aristata|Dactylorhiza aristata (Fisch. ex Lindl.) Soó f. punctata (Tatew.) F.Maek. ex Toyok.|4|0||
+Orchidaceae|ラン科|シロバナハクサンチドリ|Dactylorhiza aristata|Dactylorhiza aristata (Fisch. ex Lindl.) Soó f. albiflora (Koidz.) F.Maek. ex Toyok.|4|0||
+Orchidaceae|ラン科|ハクサンチドリ|Dactylorhiza aristata|Dactylorhiza aristata (Fisch. ex Lindl.) Soó|4|0||
 Orchidaceae|ラン科|モウコチドリ|Dactylorhiza salina|Dactylorhiza salina (Turcz. ex Lindl.) Soó|4|0||外
 Orchidaceae|ラン科|アオチドリ|Dactylorhiza viridis|Dactylorhiza viridis (L.) R.M.Bateman, A.M.Pridgeton & M.W.Chase|4|0||
 Orchidaceae|ラン科|イチヨウラン|Dactylostalix ringens|Dactylostalix ringens Rchb.f.|4|0||
@@ -18846,8 +18846,8 @@ Poaceae|イネ科|ヒメマツバシバ|Aristida longispica|Aristida longispica 
 Poaceae|イネ科|オオマツバシバ|Aristida takeoi|Aristida takeoi Ohwi|4|0|EN|
 Poaceae|イネ科|オオカニツリ|Arrhenatherum elatius|Arrhenatherum elatius (L.) P.Beauv. ex J. et C.Presl|4|0||帰
 Poaceae|イネ科|フタヒゲオオカニツリ|Arrhenatherum elatius var. biaristatum|Arrhenatherum elatius (L.) P.Beauv. ex J. et C.Presl  var. biaristatum (Peterm.) Peterm.|4|0||帰
-Poaceae|イネ科|リボンガヤ|Arrhenatherum elatius var. bulbosum|Arrhenatherum elatius (L.) P.Beauv. ex J. et C.Presl  var. bulbosum (Willd.) Spenn.  'Variegatum'|4|0||栽
 Poaceae|イネ科|チョロギガヤ|Arrhenatherum elatius var. bulbosum|Arrhenatherum elatius (L.) P.Beauv. ex J. et C.Presl  var. bulbosum (Willd.) Spenn.|4|0||帰
+Poaceae|イネ科|リボンガヤ|Arrhenatherum elatius var. bulbosum|Arrhenatherum elatius (L.) P.Beauv. ex J. et C.Presl  var. bulbosum (Willd.) Spenn.  'Variegatum'|4|0||栽
 Poaceae|イネ科|コブナグサ|Arthraxon hispidus|Arthraxon hispidus (Thunb.) Makino|4|0||
 Poaceae|イネ科|アイダコブナグサ|Arthraxon hispidus fo. brevisetus|Arthraxon hispidus (Thunb.) Makino  fo. brevisetus (Regel) Ohwi|4|0||
 Poaceae|イネ科|オオコブナグサ|Arthraxon hispidus fo. centrasiaticus|Arthraxon hispidus (Thunb.) Makino  fo. centrasiaticus (Griseb.) Ohwi|4|0||
@@ -18867,8 +18867,8 @@ Poaceae|イネ科|シバガヤ|Arundinella pubescens|Arundinella pubescens Merr.
 Poaceae|イネ科|ミギワトダシバ|Arundinella riparia|Arundinella riparia Honda|4|0|VU|
 Poaceae|イネ科|オオボケガヤ|Arundinella riparia subsp. breviaristata|Arundinella riparia Honda  subsp. breviaristata Ibaragi|4|0||
 Poaceae|イネ科|ヒガヤ|Arundinella setosa|Arundinella setosa Trin.|4|0||外
-Poaceae|イネ科|フイリダンチク|Arundo donax|Arundo donax L.  'Versicolor'|4|0||栽
 Poaceae|イネ科|ダンチク|Arundo donax|Arundo donax L.|4|0||
+Poaceae|イネ科|フイリダンチク|Arundo donax|Arundo donax L.  'Versicolor'|4|0||栽
 Poaceae|イネ科|ムラサキダンチク|Arundo donax var. barbigera|Arundo donax L.  var. barbigera (Honda) Ohwi|4|0||
 Poaceae|イネ科|タカサゴダンチク|Arundo donax var. coleotricha|Arundo donax L.  var. coleotricha Hack.|4|0||
 Poaceae|イネ科|ヒナヨシ|Arundo formosana|Arundo formosana Hack.|4|0||
@@ -18887,9 +18887,9 @@ Poaceae|イネ科|シチク|Bambusa blumeana|Bambusa blumeana Schult. et Schult.
 Poaceae|イネ科|チョウシチク|Bambusa dolichoclada|Bambusa dolichoclada Hayata|4|0||栽
 Poaceae|イネ科|ヒフキダケ|Bambusa dolichomerithalla|Bambusa dolichomerithalla Hayata|4|0||外
 Poaceae|イネ科|ホウショウチク|Bambusa multiplex|Bambusa multiplex (Lour.) Raeusch. ex J.A. et J.H.Schult.  'Silverstripe'|4|0||栽
-Poaceae|イネ科|スホウチク|Bambusa multiplex|Bambusa multiplex (Lour.) Raeusch. ex J.A. et J.H.Schult.  'Alphonso-karr'|4|0||栽
-Poaceae|イネ科|ホウライチク|Bambusa multiplex|Bambusa multiplex (Lour.) Raeusch. ex Schult. et Schult.f.|4|0||帰
 Poaceae|イネ科|ホウオウチク|Bambusa multiplex|Bambusa multiplex (Lour.) Raeusch. ex J.A. et J.H.Schult.  'Fernleaf'|4|0||栽
+Poaceae|イネ科|ホウライチク|Bambusa multiplex|Bambusa multiplex (Lour.) Raeusch. ex Schult. et Schult.f.|4|0||帰
+Poaceae|イネ科|スホウチク|Bambusa multiplex|Bambusa multiplex (Lour.) Raeusch. ex J.A. et J.H.Schult.  'Alphonso-karr'|4|0||栽
 Poaceae|イネ科|セキカクチク|Bambusa multiplex var. shimadae|Bambusa multiplex (Lour.) Raeusch. ex J.A. et J.H.Schult.  var. shimadae (Hayata) Sasaki|4|0||外
 Poaceae|イネ科|コダイサンチク|Bambusa odashimae|Bambusa odashimae Hatus.|4|0||栽
 Poaceae|イネ科|リョクチク|Bambusa oldhamii|Bambusa oldhamii Munro|4|0||栽
@@ -19244,8 +19244,8 @@ Poaceae|イネ科|マンゴクドジョウツナギ|Glyceria × tokitana|Glyceri
 Poaceae|イネ科|ヤエガヤ|Hackelochloa granularis|Hackelochloa granularis (L.) Kuntze|4|0||
 Poaceae|イネ科|ハリノホ|Hainardia cylindrica|Hainardia cylindrica (Willd.) Greuter|4|0||帰
 Poaceae|イネ科|ウラハグサ|Hakonechloa macra|Hakonechloa macra (Munro ex S.Moore) Makino ex Honda|4|0||
-Poaceae|イネ科|ギンウラハグサ|Hakonechloa macra|Hakonechloa macra (Munro ex S.Moore) Makino ex Honda  'Albovariegata'|4|0||栽
 Poaceae|イネ科|キンウラハグサ|Hakonechloa macra|Hakonechloa macra (Munro ex S.Moore) Makino ex Honda  'Aureola'|4|0||栽
+Poaceae|イネ科|ギンウラハグサ|Hakonechloa macra|Hakonechloa macra (Munro ex S.Moore) Makino ex Honda  'Albovariegata'|4|0||栽
 Poaceae|イネ科|シラキンウラハグサ|Hakonechloa macra fo. alboaurea|Hakonechloa macra (Munro ex S.Moore) Makino ex Honda  fo. alboaurea Ohwi|4|0||栽
 Poaceae|イネ科|ホウライチャヒキ|Helictotrichon abietetorum|Helictotrichon abietetorum (Ohwi) Ohwi|4|0||外
 Poaceae|イネ科|ミヤマエンバク|Helictotrichon dahuricum|Helictotrichon dahuricum (Kom.) Kitag.|4|0||外
@@ -19478,8 +19478,8 @@ Poaceae|イネ科|オオコササガヤ|Perotis rara|Perotis rara R.Br.|4|0||外
 Poaceae|イネ科|アイアシ|Phacelurus latifolius|Phacelurus latifolius (Steud.) Ohwi|4|0||
 Poaceae|イネ科|タキキビ|Phaenosperma globosum|Phaenosperma globosum Munro ex Benth.|4|0||
 Poaceae|イネ科|オニクサヨシ|Phalaris aquatica|Phalaris aquatica L.|4|0||帰
-Poaceae|イネ科|クサヨシ|Phalaris arundinacea|Phalaris arundinacea L.|4|0||
 Poaceae|イネ科|シマヨシ|Phalaris arundinacea|Phalaris arundinacea L.  'Picta'|4|0||栽
+Poaceae|イネ科|クサヨシ|Phalaris arundinacea|Phalaris arundinacea L.|4|0||
 Poaceae|イネ科|ホソボクサヨシ|Phalaris arundinacea var. japonica|Phalaris arundinacea L.  var. japonica (Steud.) Hack.|4|0||
 Poaceae|イネ科|カナリークサヨシ|Phalaris canariensis|Phalaris canariensis L.|4|0||帰
 Poaceae|イネ科|ヒメカナリークサヨシ|Phalaris minor|Phalaris minor Retz.|4|0||帰
@@ -19495,17 +19495,17 @@ Poaceae|イネ科|ケヨシ|Phragmites australis fo. pilifer|Phragmites australi
 Poaceae|イネ科|ツルヨシ|Phragmites japonicus|Phragmites japonicus Steud.|4|0||
 Poaceae|イネ科|セイタカヨシ|Phragmites karka|Phragmites karka (Retz.) Trin. ex Steud.|4|0||
 Poaceae|イネ科|ホテイチク|Phyllostachys aurea|Phyllostachys aurea Carrière ex A. et C.Rivière|4|0||栽
-Poaceae|イネ科|ギンメイチク|Phyllostachys bambusoides|Phyllostachys bambusoides Siebold et Zucc.  'Castilloni-inversa'|4|0||栽
-Poaceae|イネ科|カシロダケ|Phyllostachys bambusoides|Phyllostachys bambusoides Siebold et Zucc.  'Kashirodake'|4|0||栽
-Poaceae|イネ科|ウサンチク|Phyllostachys bambusoides|Phyllostachys bambusoides Siebold et Zucc.  'Usanchiku'|4|0||栽
 Poaceae|イネ科|シボチク|Phyllostachys bambusoides|Phyllostachys bambusoides Siebold et Zucc.  'Marliacea'|4|0||栽
-Poaceae|イネ科|モウソウチク|Phyllostachys edulis|Phyllostachys edulis (Carrière) Houz.|4|0||帰
+Poaceae|イネ科|カシロダケ|Phyllostachys bambusoides|Phyllostachys bambusoides Siebold et Zucc.  'Kashirodake'|4|0||栽
+Poaceae|イネ科|ギンメイチク|Phyllostachys bambusoides|Phyllostachys bambusoides Siebold et Zucc.  'Castilloni-inversa'|4|0||栽
+Poaceae|イネ科|ウサンチク|Phyllostachys bambusoides|Phyllostachys bambusoides Siebold et Zucc.  'Usanchiku'|4|0||栽
 Poaceae|イネ科|キッコウチク|Phyllostachys edulis|Phyllostachys edulis (Carrière) Houz.  'Kikko-chiku'|4|0||栽
 Poaceae|イネ科|キンメイモウソウチク|Phyllostachys edulis|Phyllostachys edulis (Carrière) Houz.  'Tao Kiang'|4|0||栽
+Poaceae|イネ科|モウソウチク|Phyllostachys edulis|Phyllostachys edulis (Carrière) Houz.|4|0||帰
 Poaceae|イネ科|チョウチク|Phyllostachys lithophila|Phyllostachys lithophila Hayata|4|0||外
 Poaceae|イネ科|タイワンマダケ|Phyllostachys makinoi|Phyllostachys makinoi Hayata|4|0||栽
-Poaceae|イネ科|キンメイハチク|Phyllostachys nigra|Phyllostachys nigra (Lodd. ex Loud.) Munro  'Flavescens'|4|0||栽
 Poaceae|イネ科|サカサダケ|Phyllostachys nigra|Phyllostachys nigra (Lodd. ex Loud.) Munro  'Pendula'|4|0||栽
+Poaceae|イネ科|キンメイハチク|Phyllostachys nigra|Phyllostachys nigra (Lodd. ex Loud.) Munro  'Flavescens'|4|0||栽
 Poaceae|イネ科|ハチク|Phyllostachys nigra var. henonis|Phyllostachys nigra (Lodd. ex Loud.) Munro  var. henonis (Bean ex Mitford) Stapf ex Rendle|4|0||
 Poaceae|イネ科|クロチク|Phyllostachys nigra var. nigra|Phyllostachys nigra (Lodd. ex Loud.) Munro  var. nigra|4|0||栽
 Poaceae|イネ科|カイチク(temp.)|Phyllostachys nuda|Phyllostachys nuda McClure|4|0||外
@@ -19513,18 +19513,18 @@ Poaceae|イネ科|マダケ|Phyllostachys reticulata|Phyllostachys reticulata (R
 Poaceae|イネ科|キンメイチク|Phyllostachys sulphurea|Phyllostachys sulphurea (Carrière) A. et C.Rivière|4|0||栽
 Poaceae|イネ科|イネガヤ|Piptatherum kuoi|Piptatherum kuoi S.M.Phillips et Z.L.Wu|4|0|CR|
 Poaceae|イネ科|アレチイネガヤ|Piptatherum miliaceum|Piptatherum miliaceum (L.) Cosson|4|0||帰
-Poaceae|イネ科|オロシマチク|Pleioblastus argenteostriatus|Pleioblastus argenteostriatus (Regel) Nakai  'Distichus'|4|0||栽
 Poaceae|イネ科|アケボノザサ|Pleioblastus argenteostriatus|Pleioblastus argenteostriatus (Regel) Nakai  'Akebono'|4|0||栽
-Poaceae|イネ科|オキナダケ|Pleioblastus argenteostriatus|Pleioblastus argenteostriatus (Regel) Nakai|4|0||栽
 Poaceae|イネ科|オキナダケ|Pleioblastus argenteostriatus|Pleioblastus argenteostriatus (Regel) Nakai  'Okina'|4|0||栽
+Poaceae|イネ科|オロシマチク|Pleioblastus argenteostriatus|Pleioblastus argenteostriatus (Regel) Nakai  'Distichus'|4|0||栽
+Poaceae|イネ科|オキナダケ|Pleioblastus argenteostriatus|Pleioblastus argenteostriatus (Regel) Nakai|4|0||栽
 Poaceae|イネ科|ゴキダケ|Pleioblastus argenteostriatus fo. communis|Pleioblastus argenteostriatus (Regel) Nakai  fo. communis (Makino)|4|0||
 Poaceae|イネ科|ネザサ|Pleioblastus argenteostriatus fo. glaber|Pleioblastus argenteostriatus (Regel) Nakai  fo. glaber (Makino) Murata|4|0||
+Poaceae|イネ科|アズマネザサ|Pleioblastus chino|Pleioblastus chino (Franch. et Sav.) Makino|4|0||
 Poaceae|イネ科|ジョウボウジダケ|Pleioblastus chino|Pleioblastus chino (Franch. et Sav.) Makino f. nebulosus (Makino) Muroi|4|0||栽
 Poaceae|イネ科|キンジョウチク|Pleioblastus chino|Pleioblastus chino (Franch. et Sav.) Makino  'Laydekeri'|4|0||栽
-Poaceae|イネ科|ヒメシマダケ|Pleioblastus chino|Pleioblastus chino (Franch. et Sav.) Makino f. elegantissimus (Makino) Muroi et H.Okamura|4|0||栽
-Poaceae|イネ科|アズマネザサ|Pleioblastus chino|Pleioblastus chino (Franch. et Sav.) Makino|4|0||
-Poaceae|イネ科|スダレヨシ|Pleioblastus chino|Pleioblastus chino (Franch. et Sav.) Makino f. pumilus (Mitford) Sad.Suzuki|4|0||栽
 Poaceae|イネ科|カンサイアズマネザサ|Pleioblastus chino|Pleioblastus chino (Franch. et Sav.) Makino f. lentigiosus (Koidz.) Sad.Suzuki|4|0||
+Poaceae|イネ科|スダレヨシ|Pleioblastus chino|Pleioblastus chino (Franch. et Sav.) Makino f. pumilus (Mitford) Sad.Suzuki|4|0||栽
+Poaceae|イネ科|ヒメシマダケ|Pleioblastus chino|Pleioblastus chino (Franch. et Sav.) Makino f. elegantissimus (Makino) Muroi et H.Okamura|4|0||栽
 Poaceae|イネ科|ヤシバダケ|Pleioblastus chino var. gracilis|Pleioblastus chino (Franch. et Sav.) Makino  var. gracilis (Makino) Nakai  'Variegatus'|4|0||栽
 Poaceae|イネ科|シマダケ|Pleioblastus fortunei|Pleioblastus fortunei (Van Houtte) Nakai|4|0||栽
 Poaceae|イネ科|タイミンチク|Pleioblastus gramineus|Pleioblastus gramineus (Bean) Nakai|4|0||栽
@@ -19567,8 +19567,8 @@ Poaceae|イネ科|ウォーターベントグラス|Polypogon viridis|Polypogon 
 Poaceae|イネ科|オオウキシバ|Pseudoraphis brunoniana|Pseudoraphis brunoniana (Wall. ex Griff.) Pilg.|4|0||外
 Poaceae|イネ科|ウキシバ|Pseudoraphis sordida|Pseudoraphis sordida (Thwaites) S.M.Phillips et S.L.Chen|4|0||
 Poaceae|イネ科|ヤダケ|Pseudosasa japonica|Pseudosasa japonica (Siebold et Zucc. ex Steud.) Makino ex Nakai|4|0||
-Poaceae|イネ科|ラッキョウヤダケ|Pseudosasa japonica|Pseudosasa japonica (Siebold et Zucc. ex Steud.) Makino ex Nakai  'Tsutsumiana'|4|0||栽
 Poaceae|イネ科|キシマヤダケ|Pseudosasa japonica|Pseudosasa japonica (Siebold et Zucc. ex Steud.) Makino ex Nakai  'Flavo-variegata'|4|0||栽
+Poaceae|イネ科|ラッキョウヤダケ|Pseudosasa japonica|Pseudosasa japonica (Siebold et Zucc. ex Steud.) Makino ex Nakai  'Tsutsumiana'|4|0||栽
 Poaceae|イネ科|ムラサキヤダケ|Pseudosasa japonica var. purpurascens|Pseudosasa japonica (Siebold et Zucc. ex Steud.) Makino ex Nakai  var. purpurascens Nakai|4|0||外
 Poaceae|イネ科|ヤクシマダケ|Pseudosasa owatarii|Pseudosasa owatarii (Makino) Makino ex Nakai|4|0||
 Poaceae|イネ科|カワカムリダケ|Pseudosasa usawae|Pseudosasa usawae (Hayata) Makino et Nemoto|4|0||外
@@ -19720,8 +19720,8 @@ Poaceae|イネ科|ミズガヤ|Scolochloa festucacea|Scolochloa festucacea (Will
 Poaceae|イネ科|ライムギ|Secale cereale|Secale cereale L.|4|0||帰
 Poaceae|イネ科|ナリヒラダケ|Semiarundinaria fastuosa|Semiarundinaria fastuosa (Mitford) Makino ex Nakai|4|0||
 Poaceae|イネ科|アオナリヒラ|Semiarundinaria fastuosa var. viridis|Semiarundinaria fastuosa (Mitford) Makino ex Nakai  var. viridis (Makino) Makino ex Sad.Suzuki|4|0||栽
-Poaceae|イネ科|クマナリヒラ|Semiarundinaria fortis|Semiarundinaria fortis Koidz.|4|0||
 Poaceae|イネ科|マダラナリヒラ|Semiarundinaria fortis|Semiarundinaria fortis Koidz.  'Madaranarihira'|4|0||栽
+Poaceae|イネ科|クマナリヒラ|Semiarundinaria fortis|Semiarundinaria fortis Koidz.|4|0||
 Poaceae|イネ科|リクチュウダケ|Semiarundinaria kagamiana|Semiarundinaria kagamiana Makino|4|0||
 Poaceae|イネ科|ビゼンナリヒラ|Semiarundinaria okuboi|Semiarundinaria okuboi Makino|4|0||栽
 Poaceae|イネ科|ヤシャダケ|Semiarundinaria yashadake|Semiarundinaria yashadake (Makino) Makino|4|0||
@@ -19730,8 +19730,8 @@ Poaceae|イネ科|ヒメササキビ|Setaria barbata|Setaria barbata (Lam.) Kunt
 Poaceae|イネ科|イヌアワ|Setaria chondrachne|Setaria chondrachne (Steud.) Honda|4|0||
 Poaceae|イネ科|ウスギキンエノコロ|Setaria cinerea|Setaria cinerea T.Koyama|4|0||帰
 Poaceae|イネ科|アキノエノコログサ|Setaria faberi|Setaria faberi R.A.W.Herrm.|4|0||
-Poaceae|イネ科|コアワ|Setaria italica|Setaria italica (L.) P.Beauv.  'Major'|4|0||栽
 Poaceae|イネ科|アワ|Setaria italica|Setaria italica (L.) P.Beauv.|4|0||栽
+Poaceae|イネ科|コアワ|Setaria italica|Setaria italica (L.) P.Beauv.  'Major'|4|0||栽
 Poaceae|イネ科|クロボキンエノコロ|Setaria nigriostris|Setaria nigriostris (Nees) Durand et Schinz|4|0||帰
 Poaceae|イネ科|コツブキンエノコロ|Setaria pallidefusca|Setaria pallidefusca (Schumach.) Stapf et C.E.Hubb.|4|0||
 Poaceae|イネ科|ササキビ|Setaria palmifolia|Setaria palmifolia (J.Koenig) Stapf|4|0||
@@ -19754,12 +19754,12 @@ Poaceae|イネ科|シマオカメザサ|Shibataea kumasaca fo. aureostriata|Shib
 Poaceae|イネ科|スズコナリヒラ|Sinobambusa tootsik|Sinobambusa tootsik (Makino) Makino ex Nakai 'Suzukonarihira'|4|0||栽
 Poaceae|イネ科|トウチク|Sinobambusa tootsik|Sinobambusa tootsik (Makino) Makino ex Nakai|4|0||栽
 Poaceae|イネ科|ホソバトウチク|Sinobambusa tootsik var. tenuifolia|Sinobambusa tootsik (Makino) Makino ex Nakai  var. tenuifolia (Koidz.) Sad.Suzuki|4|0||栽
-Poaceae|イネ科|アズキモロコシ|Sorghum bicolor|Sorghum bicolor (L.) Moench  Durra group|4|0||栽
-Poaceae|イネ科|モロコシ|Sorghum bicolor|Sorghum bicolor (L.) Moench|4|0||栽
-Poaceae|イネ科|カザリモロコシ|Sorghum bicolor|Sorghum bicolor (L.) Moench  Dochna group|4|0||栽
-Poaceae|イネ科|コウリャン|Sorghum bicolor|Sorghum bicolor (L.) Moench  Nervosum group|4|0||栽
 Poaceae|イネ科|ホウキモロコシ|Sorghum bicolor|Sorghum bicolor (L.) Moench  'Hoki'|4|0||栽
+Poaceae|イネ科|カザリモロコシ|Sorghum bicolor|Sorghum bicolor (L.) Moench  Dochna group|4|0||栽
+Poaceae|イネ科|アズキモロコシ|Sorghum bicolor|Sorghum bicolor (L.) Moench  Durra group|4|0||栽
 Poaceae|イネ科|サトウモロコシ|Sorghum bicolor|Sorghum bicolor (L.) Moench  'Dulciusculum'|4|0||栽
+Poaceae|イネ科|モロコシ|Sorghum bicolor|Sorghum bicolor (L.) Moench|4|0||栽
+Poaceae|イネ科|コウリャン|Sorghum bicolor|Sorghum bicolor (L.) Moench  Nervosum group|4|0||栽
 Poaceae|イネ科||Sorghum bicolor subsp. arundinaceum|Sorghum bicolor (L.) Moench  subsp. arundinaceum (Desv.) de Wet et J.R.Harlan|4|0||外
 Poaceae|イネ科|ナミモロコシ|Sorghum bicolor var. bicolor|Sorghum bicolor (L.) Moench  var. bicolor|4|0||栽
 Poaceae|イネ科||Sorghum halepense|Sorghum halepense (L.) Pers.|4|0||栽
@@ -19842,9 +19842,9 @@ Poaceae|イネ科|ナギナタガヤ|Vulpia myuros|Vulpia myuros (L.) C.C.Gmel.|
 Poaceae|イネ科|オオナギナタガヤ|Vulpia myuros var. megalura|Vulpia myuros (L.) C.C.Gmel.  var. megalura (Nutt.) Rydb.|4|0||帰
 Poaceae|イネ科|ムラサキナギナタガヤ|Vulpia octoflora|Vulpia octoflora (Walter) Rydb.|4|0||帰
 Poaceae|イネ科|ニイタカヤダケ|Yushania niitakayamensis|Yushania niitakayamensis (Hayata) Keng f.|4|0||外
-Poaceae|イネ科|フイリトウモロコシ|Zea mays|Zea mays L.  'Japonica'|4|0||栽
-Poaceae|イネ科|トウモロコシ|Zea mays|Zea mays L.|4|0||栽
 Poaceae|イネ科|ポップコーン|Zea mays|Zea mays L.  'Everta'|4|0||栽
+Poaceae|イネ科|トウモロコシ|Zea mays|Zea mays L.|4|0||栽
+Poaceae|イネ科|フイリトウモロコシ|Zea mays|Zea mays L.  'Japonica'|4|0||栽
 Poaceae|イネ科|テオシント|Zea mays subsp. mexicana|Zea mays L.  subsp. mexicana (Schrad.) Iltis|4|0||栽
 Poaceae|イネ科|アメリカマコモ|Zizania aquatica|Zizania aquatica L.|4|0||外
 Poaceae|イネ科|マコモ|Zizania latifolia|Zizania latifolia (Griseb.) Turcz. ex Stapf|4|0||
@@ -20087,8 +20087,8 @@ Zingiberaceae|ショウガ科|サンナ|Hedychium spicatum|Hedychium spicatum Bu
 Zingiberaceae|ショウガ科|バンウコン|Kaempferia galanga|Kaempferia galanga L.|4|0||栽
 Zingiberaceae|ショウガ科|コウトウハナミョウガ(temp.)|Vanoverberghia sasakiana|Vanoverberghia sasakiana Funak. et H.Ohashi|4|0||外
 Zingiberaceae|ショウガ科|タイワンミョウガ|Zingiber kawagoii|Zingiber kawagoii Hayata|4|0||外
-Zingiberaceae|ショウガ科|フイリミョウガ|Zingiber mioga|Zingiber mioga (Thunb.) Roscoe  'Variegata'|4|0||栽
 Zingiberaceae|ショウガ科|ミョウガ|Zingiber mioga|Zingiber mioga (Thunb.) Roscoe|4|0||帰
+Zingiberaceae|ショウガ科|フイリミョウガ|Zingiber mioga|Zingiber mioga (Thunb.) Roscoe  'Variegata'|4|0||栽
 Zingiberaceae|ショウガ科|ショウガ|Zingiber officinale|Zingiber officinale (Willd.) Roscoe|4|0||栽
 Zingiberaceae|ショウガ科||Zingiber oligophyllum|Zingiber oligophyllum K.Schum.|4|0||外
 Zingiberaceae|ショウガ科||Zingiber pleiostachyum|Zingiber pleiostachyum K.Schum.|4|0||外
