@@ -928,6 +928,7 @@ Amaranthaceae|莧科|短穗假千日紅|Gomphrena serrata|Gomphrena serrata L.|3
 Amaranthaceae|莧科|洋莧|Iresine herbstii|Iresine herbstii Hook.|3|0||栽培
 Amaranthaceae|莧科|安旱草|Philoxerus wrightii|Philoxerus wrightii Hook. f.|3|0|VU|原生
 Amaranthaceae|莧科|小花鉤牛膝|Pupalia micrantha|Pupalia micrantha Hauman|3|0||歸化
+Amaranthaceae|莧科|仙鶴草|Rhinacanthus nasutus|Rhinacanthus nasutus (L.) Kurz|3|0||栽培
 Amaranthaceae|莧科|菠菜|Spinacia oleracea|Spinacia oleracea L.|3|0||栽培
 Amaranthaceae|莧科|裸花鹼蓬|Suaeda maritima|Suaeda maritima (L.) Dumort.|3|0||原生
 Anacardiaceae|漆樹科|庚大利|Bouea mocrophylla|Bouea mocrophylla Griff.|3|0||栽培
@@ -2575,6 +2576,7 @@ Juglandaceae|胡桃科|黃杞|Engelhardia roxburghiana|Engelhardia roxburghiana 
 Juglandaceae|胡桃科|野核桃|Juglans cathayensis|Juglans cathayensis Dode|3|0||原生
 Juglandaceae|胡桃科|核桃|Juglans regia|Juglans regia L.|3|0||栽培
 Juglandaceae|胡桃科|化香樹|Platycarya strobilacea|Platycarya strobilacea Siebold & Zucc.|3|0||原生
+Lagerstroemia|千屈菜科|大花紫薇|Lagerstroemia flos-reginae|Lagerstroemia flos-reginae Retz.|3|0||栽培
 Lamiaceae|唇形科|頂頭花|Acrocephalus indicus|Acrocephalus indicus (Burm. f.) Kuntze|3|0|DD|原生
 Lamiaceae|唇形科|茴藿香|Agastache foeniculum|Agastache foeniculum (Pursh) Kuntze|3|0||栽培
 Lamiaceae|唇形科|藿香|Agastache rugosa|Agastache rugosa (Fisch. & C.A. Mey.) Kuntze|3|0|NT|原生
@@ -2810,6 +2812,7 @@ Lentibulariaceae|狸藻科|小狸藻|Utricularia minor|Utricularia minor L.|3|0|
 Lentibulariaceae|狸藻科|圓葉挖耳草|Utricularia striatula|Utricularia striatula Sm.|3|0|NT|原生
 Lentibulariaceae|狸藻科|齒萼挖耳草|Utricularia uliginosa|Utricularia uliginosa Vahl|3|0|DD|原生
 Linaceae|亞麻科|亞麻|Linum usitatissimum|Linum usitatissimum L.|3|0||栽培
+Linderniaceae|母草科|迷你矮珍珠|Hemianthus callitrichoides |Hemianthus callitrichoides Griseb.|3|0||栽培
 Linderniaceae|母草科|三翅萼|Legazpia polygonoides|Legazpia polygonoides (Benth.) T. Yamaz.|3|0|VU|原生
 Linderniaceae|母草科|擬櫻草|Lindernia anagallidea|Lindernia anagallidea (Michx.) Pennell|3|0||歸化
 Linderniaceae|母草科|定經草|Lindernia anagallis|Lindernia anagallis (Burm. f.) Pennell|3|0||原生
@@ -2951,6 +2954,7 @@ Malvaceae|錦葵科|小花錦葵|Malva parviflora|Malva parviflora L.|3|0||歸�
 Malvaceae|錦葵科|輪葉蜀葵|Malva verticillata|Malva verticillata L.|3|0||栽培
 Malvaceae|錦葵科|賽葵|Malvastrum coromandelianum|Malvastrum coromandelianum (L.) Garcke|3|0||歸化
 Malvaceae|錦葵科|穗花賽葵|Malvastrum spicatum|Malvastrum spicatum (L.) A. Gray|3|0||歸化
+Malvaceae|錦葵科|南美朱槿|Malvaviscus arboreus|Malvaviscus arboreus Cav.|3|0||栽培
 Malvaceae|錦葵科|野路葵|Melochia corchorifolia|Melochia corchorifolia L.|3|0||原生
 Malvaceae|錦葵科|卡羅萊納錦葵|Modiola caroliniana|Modiola caroliniana (L.) G. Don|3|0||歸化
 Malvaceae|錦葵科|馬拉巴栗|Pachira macrocarpa|Pachira macrocarpa (Schltdl. & Cham.) Walp.|3|0||歸化
@@ -4547,6 +4551,7 @@ Asparagaceae|天門冬科|阿里山假寶鐸花|Disporopsis fuscopicta var. aris
 Asparagaceae|天門冬科|臺灣假寶鐸花|Disporopsis taiwanensis|Disporopsis taiwanensis S.S. Ying|4|1||原生
 Asparagaceae|天門冬科|番仔林投|Dracaena angustifolia|Dracaena angustifolia Roxb.|4|0|VU|原生
 Asparagaceae|天門冬科|香龍血樹|Dracaena fragrans|Dracaena fragrans (Linn.) Ker-Gawl.|4|0||栽培
+Asparagaceae|天門冬科|虎斑木|Dracaena goldieana|Dracaena goldieana Bullen ex Mast. & T. Moore|4|0||栽培
 Asparagaceae|天門冬科|紅邊竹蕉|Dracaena marginata|Dracaena marginata Lam.|4|0||栽培
 Asparagaceae|天門冬科|百合竹|Dracaena reflexa|Dracaena reflexa Lam.|4|0||栽培
 Asparagaceae|天門冬科|金黃百合竹|Dracaena reflexa cv. Song|Dracaena reflexa cv. Song Lam.|4|0||栽培
@@ -4969,6 +4974,7 @@ Marantaceae|竹芋科|蘭嶼竹芋|Donax canniformis|Donax canniformis (G. Forst
 Marantaceae|竹芋科|竹芋|Maranta arundinacea|Maranta arundinacea L.|4|0||栽培
 Marantaceae|竹芋科|豹紋竹芋|Maranta leuconeura var. massangeana|Maranta leuconeura var. massangeana Morr.|4|0||栽培
 Marantaceae|竹芋科|紅裏蕉|Stromanthe sanguinea|Stromanthe sanguinea Sond|4|0||栽培
+Marantaceae|竹芋科|垂花水竹芋|Thalia geniculata|Thalia geniculata L.|4|0||栽培
 Melanthiaceae|黑葯花科|臺灣胡麻花|Helonias umbellata|Helonias umbellata (Baker) N. Tanaka|4|1||原生
 Melanthiaceae|黑葯花科|短瓣球葯隔七葉一枝花|Paris fargesii var. brevipetalata|Paris fargesii var. brevipetalata (T.C. Huang & K.C. Yang) T.C. Huang & K.C. Yang|4|0|DD|原生
 Melanthiaceae|黑葯花科|高山七葉一枝花|Paris lanceolata|Paris lanceolata Hayata|4|0||未知

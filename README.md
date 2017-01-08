@@ -14,7 +14,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 ### Supported checklist
 
 1. 臺灣維管束植物名錄 (Vascular plants of Taiwan, APGIV / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資訊整合查詢系統](http://tai2.ntu.edu.tw), [TaiBNET](http://taibnet.sinica.edu.tw)
-    1. 收錄物種：6021 種 (v 0.3.3, 2016-09-08, 2017-01-08 資料更新)
+    1. 收錄物種：6019 種 (v 0.3.3, 2016-09-08, 2017-01-08 資料更新)
 2. 臺灣鳥類名錄 2014 (Bird list of Taiwan)。資料來源：[中華野鳥學會](www.bird.org.tw/index.php/works/lists)
 3. Plants of Japan ("Ylist", 20103 records). Source: http://ylist.info
 

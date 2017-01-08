@@ -903,6 +903,7 @@ INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,en
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Amaranthaceae','莧科','洋莧','Iresine herbstii','Iresine herbstii Hook.',3,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Amaranthaceae','莧科','安旱草','Philoxerus wrightii','Philoxerus wrightii Hook. f.',3,0,'VU','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Amaranthaceae','莧科','小花鉤牛膝','Pupalia micrantha','Pupalia micrantha Hauman',3,0,'','歸化');
+INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Amaranthaceae','莧科','仙鶴草','Rhinacanthus nasutus','Rhinacanthus nasutus (L.) Kurz',3,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Anacardiaceae','','庚大利','Bouea mocrophylla','Bouea mocrophylla Griff.',3,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Anacardiaceae','漆樹科','山羨子','Buchanania arborescens','Buchanania arborescens (Blume) Blume',3,0,'NT','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Anacardiaceae','漆樹科','芒果','Mangifera indica','Mangifera indica L.',3,0,'','歸化');
@@ -2391,6 +2392,7 @@ INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,en
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Labiatae','唇形科','二齒香科科','Teucrium bidentatum','Teucrium bidentatum Hemsl.',3,0,'','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Labiatae','唇形科','臺灣香科科','Teucrium taiwanianum','Teucrium taiwanianum T.H. Hsieh & T.C. Huang',3,1,'VU','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Labiatae','唇形科','血見愁','Teucrium viscidum','Teucrium viscidum Blume',3,0,'','原生');
+INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Lagerstroemia','千屈菜科','大花紫薇','Lagerstroemia flos-reginae','Lagerstroemia flos-reginae Retz.',3,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Lardizabalaceae','木通科','長序木通','Akebia longeracemosa','Akebia longeracemosa Matsum.',3,0,'','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Lardizabalaceae','木通科','白木通','Akebia trifoliata subsp. australis','Akebia trifoliata subsp. australis (Diels) T. Shimizu',3,0,'NT','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Lardizabalaceae','木通科','變尾葉石月','Stauntonia hexaphylla fo. obovata','Stauntonia hexaphylla (Thunb.) Dcene. fo. obovata Wu',3,0,'','未知');
@@ -2760,6 +2762,7 @@ INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,en
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Lentibulariaceae','狸藻科','圓葉挖耳草','Utricularia striatula','Utricularia striatula Sm.',3,0,'NT','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Lentibulariaceae','狸藻科','齒萼挖耳草','Utricularia uliginosa','Utricularia uliginosa Vahl',3,0,'DD','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Linaceae','','亞麻','Linum usitatissimum','Linum usitatissimum L.',3,0,'','栽培');
+INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Linderniaceae','母草科','迷你矮珍珠','Hemianthus callitrichoides ','Hemianthus callitrichoides Griseb.',3,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Loganiaceae','馬錢科','揚波','Buddleja asiatica','Buddleja asiatica Lour.',3,0,'','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Loganiaceae','馬錢科','彎花醉魚木','Buddleja curviflora','Buddleja curviflora Hook. & Arn.',3,0,'VU','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Loganiaceae','馬錢科','灰莉','Fagraea ceilanica','Fagraea ceilanica Thunb.',3,0,'VU','原生');
@@ -2857,6 +2860,7 @@ INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,en
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Malvaceae','錦葵科','輪葉蜀葵','Malva verticillata','Malva verticillata L.',3,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Malvaceae','錦葵科','賽葵','Malvastrum coromandelianum','Malvastrum coromandelianum (L.) Garcke',3,0,'','歸化');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Malvaceae','錦葵科','穗花賽葵','Malvastrum spicatum','Malvastrum spicatum (L.) A. Gray',3,0,'','歸化');
+INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Malvaceae','錦葵科','南美朱槿','Malvaviscus arboreus','Malvaviscus arboreus Cav.',3,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Malvaceae','錦葵科','卡羅萊納錦葵','Modiola caroliniana','Modiola caroliniana (L.) G. Don',3,0,'','歸化');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Malvaceae','錦葵科','細葉金午時花','Sida acuta','Sida acuta Burm. f.',3,0,'','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Malvaceae','錦葵科','圓葉金午時花','Sida cordifolia','Sida cordifolia L.',3,0,'','原生');
@@ -4382,6 +4386,7 @@ INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,en
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Agavaceae','龍舌蘭科','朱蕉','Cordyline fruticosa','Cordyline fruticosa (L.) A. Chev.',4,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Agavaceae','龍舌蘭科','番仔林投','Dracaena angustifolia','Dracaena angustifolia Roxb.',4,0,'VU','原生');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Agavaceae','','香龍血樹','Dracaena fragrans','Dracaena fragrans (Linn.) Ker-Gawl.',4,0,'','栽培');
+INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Agavaceae','龍舌蘭科','虎斑木','Dracaena goldieana','Dracaena goldieana Bullen ex Mast. & T. Moore',4,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Agavaceae','','紅邊竹蕉','Dracaena marginata','Dracaena marginata Lam.',4,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Agavaceae','','百合竹','Dracaena reflexa','Dracaena reflexa Lam.',4,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Agavaceae','','金黃百合竹','Dracaena reflexa cv. Song','Dracaena reflexa cv. Song Lam.',4,0,'','栽培');
@@ -5359,6 +5364,7 @@ INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,en
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Marantaceae','','竹芋','Maranta arundinacea','Maranta arundinacea L.',4,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Marantaceae','','豹紋竹芋','Maranta leuconeura var. massangeana','Maranta leuconeura var. massangeana Morr.',4,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Marantaceae','','紅裏蕉','Stromanthe sanguinea','Stromanthe sanguinea Sond',4,0,'','栽培');
+INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Marantaceae','竹芋科','垂花水竹芋','Thalia geniculata','Thalia geniculata L.',4,0,'','栽培');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Musaceae','芭蕉科','象腿蕉','Ensete glaucum','Ensete glaucum (Roxb.) Cheesman',4,0,'','未知');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Musaceae','芭蕉科','拔蕉','Musa balbisiana','Musa balbisiana Colla',4,0,'','歸化');
 INSERT INTO dao_pnamelist (family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('Musaceae','芭蕉科','臺灣芭蕉','Musa basjoo var. formosana','Musa basjoo var. formosana (Warb. ex Schum.) S.S. Ying',4,1,'','原生');
