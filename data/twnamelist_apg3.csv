@@ -831,7 +831,6 @@ Acanthaceae|爵床科|翠蘆莉|Ruellia brittoniana|Ruellia brittoniana Leonard|
 Acanthaceae|爵床科|匍蘆利草|Ruellia prostrata|Ruellia prostrata Poir.|3|0||栽培
 Acanthaceae|爵床科|蔓枝蘆莉草|Ruellia squarrosa|Ruellia squarrosa Fenzl|3|0||歸化
 Acanthaceae|爵床科|塊根蘆莉草|Ruellia tuberosa|Ruellia tuberosa L.|3|0||歸化
-Acanthaceae|爵床科|塊根蘆利草|Ruellia tuberose|Ruellia tuberose L.|3|0||栽培
 Acanthaceae|爵床科|明萼草|Rungia chinensis|Rungia chinensis Benth.|3|0||原生
 Acanthaceae|爵床科|臺灣明萼草|Rungia taiwanensis|Rungia taiwanensis T. Yamaz.|3|1||原生
 Acanthaceae|爵床科|金葉木|Sanchezia nobilis|Sanchezia nobilis Hook. f.|3|0||栽培
@@ -1536,14 +1535,14 @@ Brassicaceae|十字花科|高山山芥|Barbarea arisanense|Barbarea arisanense (
 Brassicaceae|十字花科|山芥菜|Barbarea orthoceras|Barbarea orthoceras Ledeb.|3|1||原生
 Brassicaceae|十字花科|臺灣山芥菜|Barbarea taiwaniana|Barbarea taiwaniana Ohwi|3|1|VU|原生
 Brassicaceae|十字花科|青梗白菜|Brassica campestris subsp. chinensis|Brassica campestris subsp. chinensis L.|3|0||栽培
-Brassicaceae|十字花科|紅菜苔|Brassica campestris subsp. chinensis|Brassica campestris subsp. chinensis L.|3|0||栽培
-Brassicaceae|十字花科|小菘菜|Brassica campestris subsp. chinensis|Brassica campestris subsp. chinensis L.|3|0||栽培
 Brassicaceae|十字花科|結球白菜|Brassica campestris subsp. pekinensis|Brassica campestris subsp. pekinensis L.|3|0||栽培
 Brassicaceae|十字花科|油菜|Brassica campestris var. amplexicaulis|Brassica campestris var. amplexicaulis Makino|3|0||栽培
+Brassicaceae|十字花科|紅菜苔|Brassica campestris var. purpuraria|Brassica campestris var. purpuraria L.H. Bailey|3|0||栽培
 Brassicaceae|十字花科|小白菜|Brassica chinensis|Brassica chinensis L.|3|0||栽培
 Brassicaceae|十字花科|千寶菜|Brassica juncea var. japonica|Brassica juncea var. japonica (L.) Czern.|3|0||栽培
 Brassicaceae|十字花科|甘藍|Brassica oleracea var. capitata|Brassica oleracea var. capitata L.|3|0||未知
 Brassicaceae|十字花科|蕪菁|Brassica rapa|Brassica rapa L.|3|0||栽培
+Brassicaceae|十字花科|小菘菜|Brassica rapa var. perviridis|Brassica rapa var. perviridis L.H. Bailey|3|0||栽培
 Brassicaceae|十字花科|薺|Capsella bursa-pastoris|Capsella bursa-pastoris (L.) Medik.|3|0||歸化
 Brassicaceae|十字花科|阿玉碎米薺|Cardamine agyokumontana|Cardamine agyokumontana Hayata|3|1|DD|原生
 Brassicaceae|十字花科|蔊菜|Cardamine flexuosa|Cardamine flexuosa With.|3|0||歸化
@@ -1988,7 +1987,7 @@ Ericaceae|歐石楠科|志佳陽杜鵑|Rhododendron sikayotaizanense|Rhododendro
 Ericaceae|歐石楠科|唐杜鵑|Rhododendron simsii|Rhododendron simsii Planch.|3|0|NT|原生
 Ericaceae|歐石楠科|阿里山杜鵑|Rhododendron tanakae|Rhododendron tanakae Hayata|3|0||未知
 Ericaceae|歐石楠科|大武杜鵑|Rhododendron tashiroi|Rhododendron tashiroi Maxim.|3|0|DD|未知
-Ericaceae|杜鵑花科|豔紫杜鵑|Rhododendron × pulchrum|Rhododendron × pulchrum Sweet|3|0||栽培
+Ericaceae|歐石楠科|豔紫杜鵑|Rhododendron × pulchrum|Rhododendron × pulchrum Sweet|3|0||栽培
 Ericaceae|歐石楠科|米飯花|Vaccinium bracteatum|Vaccinium bracteatum Thunb.|3|0||原生
 Ericaceae|歐石楠科|珍珠花|Vaccinium dunalianum var. caudatifolium|Vaccinium dunalianum var. caudatifolium (Hayata) H.L. Li|3|0||原生
 Ericaceae|歐石楠科|凹葉越橘|Vaccinium emarginatum|Vaccinium emarginatum Hayata|3|1||原生
@@ -5949,7 +5948,6 @@ Potamogetonaceae|眼子菜科|柳絲藻|Potamogeton pusillus|Potamogeton pusillu
 Potamogetonaceae|眼子菜科|角果藻|Zannichellia palustris|Zannichellia palustris L.|4|0|VU|原生
 Ruppiaceae|流蘇菜科|流蘇菜|Ruppia maritima|Ruppia maritima L.|4|0||原生
 Smilacaceae|菝葜科|阿里山菝葜|Smilax arisanensis|Smilax arisanensis Hayata|4|0||原生
-Smilacaceae|菝葜科|平柄菝葜|Smilax bockii|Smilax bockii Warb. ex Diels|4|0||原生
 Smilacaceae|菝葜科|土茯苓|Smilax bockii|Smilax bockii Warb.|4|0||原生
 Smilacaceae|菝葜科|假菝葜|Smilax bracteata|Smilax bracteata C. Presl|4|0||原生
 Smilacaceae|菝葜科|糙莖菝葜|Smilax bracteata var. verruculosa|Smilax bracteata var. verruculosa (Merr.) T. Koyama|4|0||原生
