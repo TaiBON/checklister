@@ -3,6 +3,7 @@ icns:
 
 ico:
 	convert -resize 256x256 checklister_icons_orig.png checklister_small.png 
+	convert -resize 2048x2048 checklister_icons_orig.png checklister.iconset/icon_2048x2048.png
 	convert checklister_small.png checklister.ico
 
 # you need to install imagemagick first 

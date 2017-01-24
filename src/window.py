@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from PyQt5.QtCore import *
-from PyQt5.QtWidgets import * 
-from ui_window import Ui_Window
+from PyQt5.QtGui import QIcon
+from PyQt5.QtWidgets import *
+#from ui_window import Ui_MainWindow
+from ui_main import Ui_MainWindow
 import codecs
 import csv
 import genlist_api
@@ -14,18 +16,15 @@ import sqlite3
 import sys
 import traceback
 
-class Window(QWidget, Ui_Window):
+class MainWindow(QMainWindow, Ui_MainWindow):
 
     def __init__(self, parent = None):
         try:
-            super(Window, self).__init__()
-            
+            super(MainWindow, self).__init__(parent)
             #self.sqlite_db = g.resource_path('twnamelist.db')
             g = genlist_api.Genlist()
             self.g = genlist_api.Genlist()
             # only for main window
-            #self.main_widget = QWidget(self)
-            #self.setCentralWidget(self.main_widget)
 
             self.home = os.path.expanduser("~")
             self.checklist_db_dir = g.resource_path(os.path.join(self.home, 'checklist_db'))
@@ -34,9 +33,16 @@ class Window(QWidget, Ui_Window):
             self.orig_db = g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist_orig.db'))
             self.sqlite_db = self.checkLocalDB()
 
+            self.ui = Ui_MainWindow()
             self.setupUi(self)
             #self = Ui_Window()
             #self.setupUi(self)
+
+
+            #add icon
+            self.setWindowIcon(QIcon('icons/checklister_small.png'))
+            #
+            #self.menuAction.addAction()
 
             #self.butBlist.clicked.connect(self.browBaselist)
             self.butSlist.clicked.connect(self.browSlist)

@@ -4,6 +4,7 @@ PYTHON=python3
 all:
 	#$(PYUIC) ui/namegen.ui -o ui_window.py
 	$(PYUIC) ui/main_window.ui -o ui_window.py
+	$(PYUIC) ui/ui_main.ui -o ui_main.py
 
 translate:
 	pylupdate5 window.py -ts i18n/window_zh_TW.ts
@@ -14,6 +15,10 @@ translate:
 	pylupdate5 ui_window.py -ts i18n/ui_window_zh_CN.ts
 	pylupdate5 ui_window.py -ts i18n/ui_window_ja_JP.ts
 	pylupdate5 ui_window.py -ts i18n/ui_window_ko_KR.ts
+	pylupdate5 ui_main.py -ts i18n/ui_window_zh_TW.ts
+	pylupdate5 ui_main.py -ts i18n/ui_window_zh_CN.ts
+	pylupdate5 ui_main.py -ts i18n/ui_window_ja_JP.ts
+	pylupdate5 ui_main.py -ts i18n/ui_window_ko_KR.ts
 
 binary:
 	pyinstaller --onefile checklister.spec

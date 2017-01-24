@@ -67,8 +67,6 @@ class Genlist(object):
         [formatted_fullname, authors]
 
         If split option is true, fmtname will return a string of fullname and authors.
-        
-        
         """
         if fullname is None or fullname is '':
             print('Usage: fmtname(fullname_with_author)')
@@ -91,6 +89,7 @@ class Genlist(object):
             fullname_split.remove('')
         length_fullname = len(fullname_split)
         subordinate_status = []
+        
         if '×' in fullname_split:
             cross_idx = fullname_split.index('×')
             subordinate_status.append([cross_idx, '×'])
@@ -119,7 +118,7 @@ class Genlist(object):
             for v in range(len(subordinate_status)):
                 if subordinate_status[v][1] == '×':
                     if subordinate_status[v][0] == 0:
-                        fname_sp =  italic_b + '× ' + ' '.join(str(item) for item in fullname_split[1:3])+ italic_e
+                        fname_sp =  italic_b + '×' + ' '.join(str(item) for item in fullname_split[1:3])+ italic_e
                         authors_start = 3
                     elif subordinate_status[v][0] == 1:
                         fname_sp = italic_b + ' '.join(str(item) for item in fullname_split[0:3]) + italic_e
@@ -128,18 +127,18 @@ class Genlist(object):
                         next_s = fullname_split[subordinate_status[v][0]+1]
                         before_s = fullname_split[subordinate_status[v][0]-1]
                         if next_s == 'var.' or next_s == 'subsp.' or next_s == 'fo.' or before_s == 'cv.':
-                            epithet = '× '# + next_s + ' ' + italic_b + \
+                            epithet = '×'# + next_s + ' ' + italic_b + \
                                 #fullname_split[subordinate_status[v][0]+2] + italic_e
                             authors_start = subordinate_status[v][0] + 3
                         elif before_s == 'var.' or before_s == 'subsp.' or before_s == 'fo.' or before_s == 'cv.':
                             epithet = ''
                             authors_start = subordinate_status[v][0] + 3
                         elif re.search('^[A-Z].*', next_s):
-                            epithet = '× ' + italic_b + fullname_split[subordinate_status[v][0]+2] + italic_e
+                            epithet = '×' + italic_b + fullname_split[subordinate_status[v][0]+2] + italic_e
                             authors_start = subordinate_status[v][0] + 3
                 elif len(subordinate_status) >= 1:
                     if fullname_split[subordinate_status[v][0]+1] == '×':
-                        sub_epithet = '× ' + fullname_split[subordinate_status[v][0]+2]
+                        sub_epithet = '×' + fullname_split[subordinate_status[v][0]+2]
                     else:
                         sub_epithet = fullname_split[subordinate_status[v][0]+1]
                     epithet = subordinate_status[v][1] + ' ' + italic_b + sub_epithet + italic_e  
