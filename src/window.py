@@ -83,8 +83,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             #self.checkBox.isChecked
 
             # load menubar
-            #menubar = self.menuBar()
             self.statusBar().showMessage(self.tr('Ready'))
+            # Menubar::File
+            self.actionExport.triggered.connect(self.browOutput)
+            self.actionBatch.triggered.connect(self.browSlist)
+            # Menubar::Edit
+            self.actionDeleteSel.triggered.connect(self.delSelectedItems)
+            self.actionDeleteAll.triggered.connect(self.delAllTreeItems)
+            self.actionClearSp.triggered.connect(self.lineSpecies.clear)
             #self.setWindowTitle(self.tr('Checklist generator'))  
 
             # browser
