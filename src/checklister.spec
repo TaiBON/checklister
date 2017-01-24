@@ -21,7 +21,6 @@ dbfile = Datafiles('db/twnamelist.db', strip_path=False) # keep the path of this
 i18n_tree = Tree('i18n', prefix='i18n', excludes=['.ts'])
 
 a = Analysis(['checklister.py'],
-             hiddenimports=[],
              hookspath=None,
              runtime_hooks=None,
              excludes=None,
@@ -49,5 +48,9 @@ coll = COLLECT(exe,
 app = BUNDLE(coll,
              name='checklister.app',
              icon='icons/checklister.icns',
-             version='0.3.4',
-             bundle_identifier=None)
+             version='0.4.0',
+             bundle_identifier=None,
+             info_plist={
+                'NSHighResolutionCapable': 'True'
+             }
+)

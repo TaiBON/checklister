@@ -3,6 +3,7 @@
 from PyQt5.QtCore import *
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import *
+#from PyQt5.QtWebKit import QWebView
 #from ui_window import Ui_MainWindow
 from ui_main import Ui_MainWindow
 import codecs
@@ -45,15 +46,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             #self.menuAction.addAction()
 
             #self.butBlist.clicked.connect(self.browBaselist)
+            # 批次輸出名錄
             self.butSlist.clicked.connect(self.browSlist)
+            # 把手動選擇的物種加到樹中
             self.butAddToTree.clicked.connect(self.addToTree)
-            # Key events
-            self.lineSpecies.returnPressed.connect(self.addToTree)
-            #self.lineSpecies.escPressed.connect(self.lineSpecies.clear())
+            # Key events: 按 Enter 會自動將選擇的物種加到樹中
+            #self.lineSpecies.returnPressed.connect(self.addToTree)
 
 
             self.butGenerateSp.clicked.connect(self.genChecklist)
-            self.butSelectTempFile.clicked.connect(self.browTempfile)
+            #self.butSelectTempFile.clicked.connect(self.browTempfile)
             self.butSelectOutput.clicked.connect(self.browOutput)
             self.butDeleteAll.clicked.connect(self.delAllTreeItems)
             self.butDeleteSelection.clicked.connect(self.delSelectedItems)
@@ -82,17 +84,45 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             # load menubar
             #menubar = self.menuBar()
-            #self.statusBar().showMessage(self.tr('Ready'))
+            self.statusBar().showMessage(self.tr('Ready'))
             #self.setWindowTitle(self.tr('Checklist generator'))  
+
+            # browser
+            #QWebView.__init__(self)
+            #self.loadFinished.connect(self._result_available)
 
 
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
-    #def keyPressEvent(self, event):
-    #    super(Window, self).keyPressEvent(event)
-    #    self.keyPressed.emit()
+    def keyPressEvent(self, qKeyEvent):
+        '''
+        shortcut key events
+        '''
+        try:
 
+            if qKeyEvent.key() == Qt.Key_Return or qKeyEvent.key() == Qt.Key_Enter:
+                if self.lineSpecies.text() is not None:
+                    self.addToTree()
+                self.lineSpecies.clear()
+            if qKeyEvent.key() == Qt.Key_Escape:
+                self.lineSpecies.clear()
+            if qKeyEvent.key() == Qt.Key_Delete or qKeyEvent.key() == Qt.Key_Backspace:
+                self.delSelectedItems()
+            # ctrl/command + s: save txt files
+            if qKeyEvent.key() == Qt.Key_S and (qKeyEvent.modifiers() & Qt.ControlModifier):
+                self.saveChecklistTxt()
+            # ctrl/command + e: export checklist 輸出名錄 
+            if qKeyEvent.key() == Qt.Key_E and (qKeyEvent.modifiers() & Qt.ControlModifier):
+                self.genChecklist()
+            # ctrl/command + o: save export file
+            if qKeyEvent.key() == Qt.Key_O and (qKeyEvent.modifiers() & Qt.ControlModifier):
+                self.browOutput()
+            # ctrl/command + b: open batch file
+            if qKeyEvent.key() == Qt.Key_B and (qKeyEvent.modifiers() & Qt.ControlModifier):
+                self.browSlist()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
 
     def butCheckPath(self, text_edit_path):
         """
@@ -117,11 +147,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     else:
                         text_edit_path = QDir.homePath()
             return(text_edit_path)
-                
+
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
+            self.statusBar().showMessage(self.tr('Debug: butCheckPath error!'))
 
-    
     def selChecklistA(self):
         try:
             text_edit_path = self.butCheckPath(self.lineChecklistA.text())
@@ -134,7 +164,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             #self.statusBar().showMessage(self.tr(status_bar))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
-    
 
     def selChecklistB(self):
         try:
@@ -162,13 +191,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.lineMergeChecklists.setText(tobe_merged_files)
             # load data into QTreeWidget
             m_lists = []
-            for files in range(len(tobe_merged_lists)):
+            for files in range(0,len(tobe_merged_lists)):
                 with codecs.open(tobe_merged_lists[files], 'r', 'utf-8') as f:
                      m_lists += f.read().splitlines()
                 f.close()
             m_lists_uniq = list(set(m_lists))
-            if self.lineTempFile.text() == '':
-                self.lineTempFile.setText(os.path.join(QDir.homePath(), 'merged_checklists.txt'))
+            # if self.lineTempFile.text() == '':
+            #     self.lineTempFile.setText(os.path.join(QDir.homePath(), 'merged_checklists.txt'))
+            # self.checklistTextFile(os.path.join(text_edit_path, 'merged_checklists.txt')
             if len(m_lists_uniq) >= 1:
                 self.bulkLoadToTree(m_lists_uniq)
             else:
@@ -193,7 +223,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             tobe_combined_files = ', '.join(tobe_combined_lists)
             self.lineCombineChecklists.setText(tobe_combined_files)
             g = genlist_api.Genlist()
-            g.combineChecklists(self.sqlite_db, tobe_combined_lists) 
+            g.combineChecklists(self.sqlite_db, tobe_combined_lists)
             current_db_table = self.checkDB()
             # print(current_db_table)
             if current_db_table == 'dao_bnamelist':
@@ -220,7 +250,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 ''' % (db_fullname, iucn, current_db_table, list_type)
                 combined_table = g.dbExecuteSQL(fetch_combined_sql, self.sqlite_db, show_results=True)
             print(combined_table)
-            header = ['family', 'family_cname', 'name', 'endemic', iucn, 'common name']
+            header = ['family', 'family_cname', 'fullname', 'endemic', iucn, 'common name']
             for i in range(len(tobe_combined_lists)):
                 fname = str.split(os.path.split(tobe_combined_lists[i])[1], '.')
                 header.insert(7+i, fname[0])
@@ -234,7 +264,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.combined_checklists = combined_table
             print(self.combined_checklists)
             # clear temp file for local names & Slist
-            self.lineTempFile.clear()
+            #self.lineTempFile.clear()
             self.lineSlist.clear()
             # load data into QTreeWidget
             self.delAllTreeItems() 
@@ -298,10 +328,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             completer.setCaseSensitivity(Qt.CaseInsensitive)
             self.lineSpecies.setCompleter(completer)
             db_table = self.checkDB()
-            retrieved = g.dbGetsp(db_table, self.sqlite_db)        
+            retrieved = g.dbGetsp(db_table, self.sqlite_db)
             b_container=[]
             for i in range(len(retrieved)):
-                b_container.append(retrieved[i][3] +  "," + retrieved[i][4] + "," + retrieved[i][2])
+                b_container.append(retrieved[i][3] +  "|" + retrieved[i][5] + "|" + retrieved[i][2])
             model.setStringList(b_container)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -386,7 +416,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     a_filename = os.path.split(checklist_A)[1].split('.')[0]
                     b_filename = os.path.split(checklist_B)[1].split('.')[0]
                     tmp_filename = a_filename + '_' + b_filename + '-' + ab_type[0] + '_' + ab_type[1] + '.txt'
-                    self.lineTempFile.setText(os.path.join(a_path, tmp_filename))
+                    #self.lineTempFile.setText(os.path.join(a_path, tmp_filename))
                     compare_result = list(compare_result)
                     # load compared list into QTreeWidget
                     if len(compare_result) >= 1:
@@ -457,7 +487,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Info", self.tr(info_message))
             Slist_str = str.split(str(Slist), '.')
             Slist_modified = Slist_str[0] + '_temp.' + Slist_str[1]
-            self.lineTempFile.setText(Slist_modified)
+            # self.lineTempFile.setText(Slist_modified)
             conn = sqlite3.connect(self.sqlite_db)
             curs = conn.cursor()
             drop_table = '''DROP TABLE IF EXISTS sample;'''
@@ -483,7 +513,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # check the target database table
             db_table = self.checkDB()
             query_list = '''
-            SELECT n.family_cname,n.name,n.cname FROM %s n, sample s
+            SELECT n.family_cname,n.fullname,n.cname FROM %s n, sample s
             WHERE n.cname = s.cname order by family,name;
             ''' % db_table
             curs.execute(query_list)
@@ -541,7 +571,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # check the target database table
             db_table = self.checkDB()
             query_list = '''
-            SELECT n.family_cname,n.name,n.cname FROM %s n, compare_sample s
+            SELECT n.family_cname,n.fullname,n.cname FROM %s n, compare_sample s
             WHERE n.cname = s.cname order by family,name;
             ''' % db_table
             curs.execute(query_list)
@@ -583,6 +613,22 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if saveOutputFile is None or saveOutputFile is '':
                 return
             self.lineOutputFilename.setText(saveOutputFile)
+            # automatically save checklist as a text file
+            #txtFilePath = self.checklistTextFile(saveOutputFile)
+            #self.lineTempFile.setText(txtFilePath)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def checklistTextFile(self, saveOutputFile):
+        '''
+        Get txt file according to the output *.docx/*.odt filename
+        '''
+        try:
+            if saveOutputFile is None or saveOutputFile is '':
+                return
+            outputFilePath = os.path.splitext(self.g.resource_path(saveOutputFile))
+            checklistTxtFile = outputFilePath[0] + '.txt'
+            return(checklistTxtFile)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -607,10 +653,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             db_idx = self.comboDBselect.currentIndex()
             if db_idx == 0:
                 # APG III
-                retrieved = g.dbGetsp('dao_pnamelist_apg3', self.sqlite_db)        
+                retrieved = g.dbGetsp('dao_pnamelist_apg3', self.sqlite_db)
             elif db_idx == 1:
                 # Flora of Taiwan
-                retrieved = g.dbGetsp('dao_pnamelist', self.sqlite_db)  
+                retrieved = g.dbGetsp('dao_pnamelist', self.sqlite_db)
             elif db_idx == 2:
                 # Birdlist of Taiwan
                 retrieved = g.dbGetsp('dao_bnamelist', self.sqlite_db)
@@ -618,10 +664,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 # Plant list of Japan (Ylist, cached: 2015-10-15)
                 retrieved = g.dbGetsp('dao_jp_ylist', self.sqlite_db)
             else:
-                retrieved = g.dbGetsp('dao_pnamelist_apg3', self.sqlite_db)        
+                retrieved = g.dbGetsp('dao_pnamelist_apg3', self.sqlite_db) 
             b_container = []
             for i in range(len(retrieved)):
-                    b_container.append([retrieved[i][2], retrieved[i][3], retrieved[i][4]])
+                    b_container.append([retrieved[i][2], retrieved[i][3], retrieved[i][5]])
             # returnlist
             return(b_container)
         except BaseException as e:
@@ -635,8 +681,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 return
             else:
                 # check for species items
-                item = QTreeWidgetItem()     
-                species_item = str.split(str(self.lineSpecies.text()), ',')
+                item = QTreeWidgetItem()
+                species_item = str.split(str(self.lineSpecies.text()), '|')
                 # get species cname
                 splist = self.getDbIdx()
                 splist_zhname = []
@@ -655,7 +701,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 else:
                     QMessageBox.information(self, "Warning", self.tr("The species %s did not exist in our database!") % species_item[0])
                     self.lineSpecies.clear()
-                self.lineSpecies.clear()
+            self.lineSpecies.clear()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -665,7 +711,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.treeWidget.takeTopLevelItem(treeWidget.indexOfTopLevelItem(self))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
- 
 
     def getTreeItems(self, tree_widget):
         try:
@@ -678,7 +723,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             return all_items
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
- 
 
     def delAllTreeItems(self):
     # TODO: 加入是否確定要全部刪除的確定
@@ -692,9 +736,37 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    # 儲存批次的文字檔
+    def saveChecklistTxt(self):
+        try:
+            # 取得既有的名錄
+            tree_item = self.getTreeItems(self.treeWidget)
+            # 先確認看一下有沒有輸出的檔名
+            if self.lineOutputFilename.text() == '':
+                QMessageBox.information(self, "Warning", self.tr("Please input export file name!"))
+            else:
+                # 儲存的文字檔案
+                savedTxtList = self.checklistTextFile(self.lineOutputFilename.text())
+                # 檢查有沒有同檔名存在，如果有的話另外存成 $filename.bak
+                if os.path.exists(savedTxtList) == True:
+                    ofile_abspath = self.g.resource_path(savedTxtList)
+                    shutil.copyfile(ofile_abspath, ofile_abspath + '.bak')
+                    os.remove(ofile_abspath)
+                else:
+                    pass
+                with codecs.open(savedTxtList, 'w+', 'utf-8') as f:
+                    for sp in tree_item:
+                        f.write("%s\n" % sp)
+                f.close()
+                self.statusBar().showMessage(self.tr("Saving checklist to %s " % savedTxtList))
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+
     # 產生名錄
     def genChecklist(self):
         try:
+            ## TODO: 
             g = genlist_api.Genlist()
             tree_item = self.getTreeItems(self.treeWidget)
             # getdbtable
@@ -702,17 +774,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             export_filename = self.lineOutputFilename.text()
             if self.lineOutputFilename.text() == '':
                 QMessageBox.information(self, "Warning", self.tr("Please input export file name "))
-            elif self.lineTempFile.text() == '' or self.lineSlist == '':
-                if self.lineCombineChecklists.text() != '':
-                    export_combined_checklist_file = self.lineOutputFilename.text()
-                    g.listToXls(self.combined_checklists, 2, export_combined_checklist_file)
-                    QMessageBox.information(self, self.tr('Checklist generator'), \
-                        self.tr("Export checklist to '%s' done!" % export_filename))
-                    self.lineCombineChecklists.clear()
-                else:
-                    QMessageBox.information(self, "Warning", self.tr("Please input the file to store checklist file"))
+            #elif self.lineTempFile.text() == '' or self.lineSlist == '':
+            #    if self.lineCombineChecklists.text() != '':
+            #        export_combined_checklist_file = self.lineOutputFilename.text()
+            #        g.listToXls(self.combined_checklists, 2, export_combined_checklist_file)
+            #        QMessageBox.information(self, self.tr('Checklist generator'), \
+            #            self.tr("Export checklist to '%s' done!" % export_filename))
+            #        self.lineCombineChecklists.clear()
+            #    else:
+            #        QMessageBox.information(self, "Warning", self.tr("Please input the file to store checklist file"))
             else:
-                saved_list = str(self.lineTempFile.text())
+                #saved_list = str(self.lineTempFile.text())
+                saved_list = self.checklistTextFile(self.lineOutputFilename.text())
                 with codecs.open(saved_list, 'w+', 'utf-8') as f:
                     for sp in tree_item:
                         f.write("%s\n" % sp)
@@ -735,14 +808,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
-    def browTempfile(self):
-        try:
-            #self.lineTempFile.clear()
-            text_edit_path = self.butCheckPath(self.lineTempFile.text())
-            saveTempFile = QFileDialog.getSaveFileName(self, self.tr(u"Save File as ... "), text_edit_path, \
-                    self.tr("Text files (*.txt *.csv)"))[0]
-            if saveTempFile is None or saveTempFile is '':
-                return
-            self.lineTempFile.setText(saveTempFile) 
-        except BaseException as e:
-            MessageBox.information(self, "Warning", str(e))
+    # def browTempfile(self):
+    #     try:
+    #         #self.lineTempFile.clear()
+    #         text_edit_path = self.butCheckPath(self.lineTempFile.text())
+    #         saveTempFile = QFileDialog.getSaveFileName(self, self.tr(u"Save File as ... "), text_edit_path, \
+    #                 self.tr("Text files (*.txt *.csv)"))[0]
+    #         if saveTempFile is None or saveTempFile is '':
+    #             return
+    #         self.lineTempFile.setText(saveTempFile) 
+    #     except BaseException as e:
+    #         MessageBox.information(self, "Warning", str(e))
