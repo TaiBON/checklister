@@ -384,7 +384,7 @@ class Genlist(object):
         if list_tables == '':
             exit
         # vascular plants
-        elif list_tables[0][0] == 'dao_pnamelist' or list_tables[0][0] == 'dao_pnamelist_apg3' \
+        elif list_tables[0][0] == 'dao_pnamelist' or list_tables[0][0] == 'dao_pnamelist_pg' \
                 or list_tables[0][0] == 'dao_jp_ylist':
             species_type = 1
         # birds

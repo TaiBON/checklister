@@ -1,6 +1,6 @@
 -- create plant namelist "pnamelist"
-DROP TABLE IF EXISTS dao_pnamelist_apg3;
-CREATE TABLE dao_pnamelist_apg3 (
+DROP TABLE IF EXISTS dao_pnamelist_pg;
+CREATE TABLE dao_pnamelist_pg (
   id integer primary key,
   family varchar,
   family_cname varchar,

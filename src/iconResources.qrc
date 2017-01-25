@@ -1,0 +1,9 @@
+<RCC>
+  <qresource>
+    <file>images/export2.png</file>
+    <file>images/delete.png</file>
+    <file>images/delete_all.png</file>
+    <file>images/search.png</file>
+    <file>images/export.png</file>
+  </qresource>
+</RCC>
