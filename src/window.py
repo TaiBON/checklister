@@ -82,6 +82,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.butFormatName.clicked.connect(self.formatExcel)
             #self.checkBox.isChecked
 
+            # DBViewer
+            self.dbViewer()
+            self.butViewTable.clicked.connect(self.viewTable)
+
             # load menubar
             self.statusBar().showMessage(self.tr('Ready'))
             # Menubar::File
@@ -741,9 +745,74 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     (item.parent() or root).removeChild(item)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
+    # DB Tree Widget
+    # 設定 tree widget header
+    # self.treeWidget.headerItem().setText(0, _translate("MainWindow", "Family")))
+    def dbViewer(self):
+        try:
+            conn = sqlite3.connect(self.sqlite_db)
+            with conn:
+                curs = conn.cursor()
+                # 設定 combo text: 列出資料庫內所有資料表
+                queryTableList = '''SELECT name FROM sqlite_master WHERE type = "table"'''
+                curs.execute(queryTableList)
+                allTableList = curs.fetchall()
+                for tab in range(0,len(allTableList)):
+                    self.comboDBTables.addItem(self.tr("%s" % allTableList[tab]))
+            conn.close()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning: [dbViewer]", str(e))
+
+    def viewTable(self):
+        '''
+        view table data from sqlite db
+        '''
+        try:
+            # clear all treeWidget items
+            self.treeWidgetDB.clear()
+            # clear all of the columns (headers)
+            self.treeWidgetDB.setColumnCount(0)
+            # fetch table columns
+            tableName = str(self.comboDBTables.currentText())
+            self.treeWidgetDB.header().setVisible(True)
+            conn = sqlite3.connect(self.sqlite_db)
+            with conn:
+                curs = conn.cursor()
+                queryTableColNames = '''pragma table_info('%s')''' % tableName
+                curs.execute(queryTableColNames)
+                columnNamesInfo = curs.fetchall()
+                columnNames = []
+                for col in range(0, len(columnNamesInfo)):
+                    columnNames.append(columnNamesInfo[col][1])
+                    self.treeWidgetDB.headerItem().setText(col, self.tr("%s" % columnNamesInfo[col][1]))
+                # add item data
+                queryTableContents = '''SELECT * FROM %s;''' % tableName
+                curs.execute(queryTableContents)
+                tableContents = curs.fetchall()
+                for i in range(0, len(tableContents)):
+                    item = QTreeWidgetItem()
+                    for col in range(0, len(columnNames)):
+                        # check for species items
+                        item.setText(col, str(tableContents[i][col]))
+                    self.treeWidgetDB.addTopLevelItem(item)
+            conn.close()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning: [viewTable]", str(e))
+
 
     # 儲存批次的文字檔
     def saveChecklistTxt(self):
+        '''
+        saveChecklistTxt
+        ================
+        save checklist (vernacular names)
+
+
+        Returns
+        =======
+        None
+
+        '''
         try:
             # 取得既有的名錄
             tree_item = self.getTreeItems(self.treeWidget)
