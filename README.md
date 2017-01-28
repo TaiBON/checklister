@@ -1,20 +1,26 @@
 
-名錄產生器 Checklist generator
-==============================
+物種名錄產生器 Checklister
+====================
 
-
-namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清單(sample) 」自動產生階層式的名錄，
+checklister 會根據「基礎資料清單(baselist)」 及「樣本清單(sample) 」自動產生階層式的名錄，
 植物名錄按照蕨類、裸子植物、「雙子葉植物」、單子葉植物四大類排序，下依照科名字母順序、物種名字母順序排列。
 'data/twnamelist.csv'是基於 Flora of Taiwan 2nd Edition 以及近年來新發現或訂正之物種名錄。'data/sample.csv'
-則是從 twnamelist.csv 中隨機產生的物種中名範例檔。目前 data/twnamelist_apg3.csv 及 data/twnamelist.csv 包含
+則是從 twnamelist.csv 中隨機產生的物種中名範例檔。目前 data/twnamelist_pg.csv 及 data/twnamelist.csv 包含
 臺灣目前原生、歸化及部分栽培維管束物種清單。
 
 授權為通用公共授權第三版 (General Public License version 3; GPL v3)，也就是您可以自由複製、取得、散佈並修改。
 
+### 執行檔下載
+
+目前僅支援 windows 和 MacOS X：
+
+* [Windows 平台; v0.4.0](https://github.com/TaiBON/checklister/releases/download/v0.4.0/checklister_v0.4.0.exe)
+* [MacOS X](https://github.com/TaiBON/checklister/releases/download/v0.4.0/checklister_v0.4.0.app.zip)
+
 ### Supported checklist
 
 1. 臺灣維管束植物名錄 (Vascular plants of Taiwan, APGIV / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資訊整合查詢系統](http://tai2.ntu.edu.tw), [TaiBNET](http://taibnet.sinica.edu.tw)
-    1. 收錄物種：6019 種 (v 0.3.3, 2016-09-08, 2017-01-08 資料更新)
+    1. 收錄物種：6019 種 (v 0.4.0, 2016-09-08, 2017-01-08 資料更新)
 2. 臺灣鳥類名錄 2014 (Bird list of Taiwan)。資料來源：[中華野鳥學會](www.bird.org.tw/index.php/works/lists)
 3. Plants of Japan ("Ylist", 20103 records). Source: http://ylist.info
 
@@ -37,9 +43,9 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
 
 * Supported languages: zh_TW (traditional Chinese), zh_CN (simplified Chinese), ja_JP (Japanese), ko_KR (Korean)
 
-* Download executable binary：Latest version is [0.3.3](https://github.com/TaiBON/checklister/releases/latest)
+* Download executable binary：Latest version is [0.4.0](https://github.com/TaiBON/checklister/releases/latest)
     + Windows (*.exe), copy the executable file to whatever you like (even on USB disk)
-    + MacOS X, copy, unarchive and put NGenerator.app in /Applications
+    + MacOS X, copy, unarchive and put checklister.app in /Applications
 
 * Compile by yourself (linux, macos)
     1. Install git, python3, pip, pyqt5, pandoc (視需求可能會需要安裝 zlib 之類的)
@@ -49,7 +55,7 @@ namelist-generator 會根據「基礎資料清單(baselist)」 及「樣本清�
     5. Install bootloader: `cd pyinstaller; python3 waf configure; python3 waf all`
     6. Install pyinstaller: `cd ..; python3 setup.py install`
     7. `git clone https://github.com/TaiBON/checklister`
-    8. `make binary; sudo cp dist/NGenerator /usr/local/bin/`
+    8. `make binary; sudo cp dist/checklister /usr/local/bin/`
 
 ### How to use
 
