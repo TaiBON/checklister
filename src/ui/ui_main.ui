@@ -41,7 +41,7 @@
          <x>0</x>
          <y>0</y>
          <width>628</width>
-         <height>558</height>
+         <height>538</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_4">
@@ -91,24 +91,6 @@
                <enum>QFrame::Raised</enum>
               </property>
               <layout class="QGridLayout" name="gridLayout_2">
-               <item row="3" column="1">
-                <widget class="QPushButton" name="butTaibif">
-                 <property name="toolTip">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search TaiBIF database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="whatsThis">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search TaiBIF database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton#butTaibif{
-	qproperty-icon: url(:images/search.png);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>TaiBIF</string>
-                 </property>
-                </widget>
-               </item>
                <item row="1" column="8">
                 <widget class="QPushButton" name="butSlist">
                  <property name="sizePolicy">
@@ -331,7 +313,14 @@
                     </spacer>
                    </item>
                    <item row="1" column="4">
-                    <widget class="QLineEdit" name="lineChecklistB"/>
+                    <widget class="QLineEdit" name="lineChecklistB">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
                    </item>
                    <item row="0" column="4">
                     <widget class="QLabel" name="labelChecklistB">
@@ -501,36 +490,6 @@
                  </property>
                 </widget>
                </item>
-               <item row="3" column="2">
-                <widget class="QPushButton" name="butNomenMatch">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>120</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search NomenMatch — a scientific name match database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="whatsThis">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search NomenMatch (a scientific name matching webapp, thanks for @trashmai)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton#butNomenMatch{
-	qproperty-icon: url(:images/search.png);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>NomenMatch</string>
-                 </property>
-                </widget>
-               </item>
                <item row="4" column="0" colspan="9">
                 <widget class="QTreeWidget" name="treeWidget">
                  <property name="sizePolicy">
@@ -608,7 +567,7 @@
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QPushButton#butTropicos{
-	qproperty-icon: url(:images/search.png);
+	qproperty-icon: url(:images/search.svg);
 }</string>
                  </property>
                  <property name="text">
@@ -658,12 +617,18 @@
                    <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="toolTip">
                   <string extracomment="Delete selected item(s)">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete selected item(s)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QPushButton#butDeleteSelection{
-	qproperty-icon: url(:images/delete.png);
+	qproperty-icon: url(:images/delete.svg);
 }</string>
                  </property>
                  <property name="text">
@@ -679,12 +644,18 @@
                    <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>32</width>
+                   <height>32</height>
+                  </size>
+                 </property>
                  <property name="toolTip">
                   <string extracomment="Delete all items">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete all items&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QPushButton#butDeleteAll{
-	qproperty-icon: url(:images/delete_all.png);
+	qproperty-icon: url(:images/delete_all.svg);
 }</string>
                  </property>
                  <property name="text">
@@ -702,6 +673,36 @@
                  </property>
                  <property name="text">
                   <string/>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QPushButton" name="butNomenMatch">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>120</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="toolTip">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search NomenMatch — a scientific name match database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="whatsThis">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search NomenMatch (a scientific name matching webapp, thanks for @trashmai)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#butNomenMatch{
+	qproperty-icon: url(:images/search.svg);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>NomenMatch</string>
                  </property>
                 </widget>
                </item>
@@ -844,6 +845,11 @@
               <attribute name="headerShowSortIndicator" stdset="0">
                <bool>true</bool>
               </attribute>
+              <column>
+               <property name="text">
+                <string notr="true">1</string>
+               </property>
+              </column>
              </widget>
             </item>
             <item row="1" column="0" colspan="3">
@@ -860,8 +866,6 @@
              </widget>
             </item>
            </layout>
-           <zorder>frame_2</zorder>
-           <zorder>frame_2</zorder>
            <zorder>butUpdateDB</zorder>
            <zorder>comboDBselect</zorder>
            <zorder>treeWidgetDB</zorder>
@@ -887,7 +891,7 @@
                  <x>0</x>
                  <y>0</y>
                  <width>556</width>
-                 <height>471</height>
+                 <height>451</height>
                 </rect>
                </property>
                <layout class="QGridLayout" name="gridLayout_11">
@@ -978,7 +982,6 @@ p, li { white-space: pre-wrap; }
      <string>Help</string>
     </property>
     <addaction name="actionAbout"/>
-    <addaction name="separator"/>
     <addaction name="actionHomepage"/>
     <addaction name="actionReportIssues"/>
    </widget>
@@ -990,7 +993,7 @@ p, li { white-space: pre-wrap; }
   <action name="actionExport">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/images/export.png</normaloff>:/images/export.png</iconset>
+     <normaloff>:/images/export.svg</normaloff>:/images/export.svg</iconset>
    </property>
    <property name="text">
     <string>Export File</string>
@@ -1013,19 +1016,25 @@ p, li { white-space: pre-wrap; }
   <action name="actionDeleteSel">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/images/delete.png</normaloff>:/images/delete.png</iconset>
+     <normaloff>:/images/delete.svg</normaloff>:/images/delete.svg</iconset>
    </property>
    <property name="text">
     <string>Delete selected</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
    </property>
   </action>
   <action name="actionDeleteAll">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/images/delete_all.png</normaloff>:/images/delete_all.png</iconset>
+     <normaloff>:/images/delete_all.svg</normaloff>:/images/delete_all.svg</iconset>
    </property>
    <property name="text">
     <string>Delete all</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+D</string>
    </property>
   </action>
   <action name="actionClearSp">

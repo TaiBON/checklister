@@ -4,8 +4,8 @@ PYTHON=python3
 
 all:
 	#$(PYUIC) ui/main_window.ui -o ui_window.py
-	cp ui/ui_main2.ui ui/ui_main.ui
 	$(PYUIC) ui/ui_main.ui -o ui_main.py
+	$(PYUIC) ui/ui_about.ui -o ui_about.py
 	$(PYRCC) -o iconResources_rc.py iconResources.qrc
 
 translate:

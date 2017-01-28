@@ -3,9 +3,8 @@
 from PyQt5.QtCore import *
 from PyQt5.QtGui import QIcon,QDesktopServices
 from PyQt5.QtWidgets import *
-#from PyQt5.QtWebKit import QWebView
-#from ui_window import Ui_MainWindow
 from ui_main import Ui_MainWindow
+from ui_about import Ui_AboutDialog
 import codecs
 import csv
 import genlist_api
@@ -17,6 +16,19 @@ import sqlite3
 import sys
 import traceback
 
+
+
+class AboutDialog(QDialog, Ui_AboutDialog):
+
+     def __init__(self, parent=None):
+         self.MainWindow = MainWindow()
+         super(AboutDialog, self).__init__(parent)
+         self.setupUi(self)
+         self.okButton.clicked.connect(self.destroy)
+
+     def destroy(self):
+         self.close()
+
 class MainWindow(QMainWindow, Ui_MainWindow):
 
     def __init__(self, parent = None):
@@ -25,7 +37,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             #self.sqlite_db = g.resource_path('twnamelist.db')
             g = genlist_api.Genlist()
             self.g = genlist_api.Genlist()
-            # only for main window
 
             self.home = os.path.expanduser("~")
             self.checklist_db_dir = g.resource_path(os.path.join(self.home, 'checklist_db'))
@@ -34,11 +45,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.orig_db = g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist_orig.db'))
             self.sqlite_db = self.checkLocalDB()
 
-            self.ui = Ui_MainWindow()
+            #self.ui = Ui_MainWindow()
             self.setupUi(self)
-            #self = Ui_Window()
-            #self.setupUi(self)
-
 
             #add icon
             self.setWindowIcon(QIcon('icons/checklister_small.png'))
@@ -63,7 +71,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.spCompleter()
             # search Tropicos
             self.butTropicos.clicked.connect(self.searchTropicos)
-            self.butTaibif.clicked.connect(self.searchTaibif)
             self.butNomenMatch.clicked.connect(self.searchNomenMatch)
 
 
@@ -101,12 +108,28 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # Menubar::Help
             self.actionHomepage.triggered.connect(self.urlHomepage)
             self.actionReportIssues.triggered.connect(self.urlIssue)
+            self.actionAbout.triggered.connect(self.openAboutDialog)
 
             #self.setWindowTitle(self.tr('Checklist generator'))
 
             # browser
             #QWebView.__init__(self)
             #self.loadFinished.connect(self._result_available)
+
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def openAboutDialog(self):
+        try:
+            self.AboutDialog = AboutDialog(self)
+            self.AboutDialog.show()
+            #if checked==None: return
+            #dialog = QDialog()
+            #dialog.ui = Ui_AboutDialog()
+            #dialog.ui.setupUi(dialog)
+            #dialog.setAttribute(Qt.WA_DeleteOnClose)
+            #dialog.exec_()
 
 
         except BaseException as e:
@@ -773,19 +796,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 fullnameNoAuthors = self.g.fmtname(str(item.text(1)), doformat=False, split=True)[0]
                 fullnameNoAuthors = fullnameNoAuthors.replace(' ','+')
                 queryUrl = '''http://tropicos.org/NameSearch.aspx?name=%s&commonname=''' % fullnameNoAuthors
-                QDesktopServices.openUrl(QUrl(queryUrl))
-            else:
-                pass
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
-
-    def searchTaibif(self):
-        try:
-            item = self.treeWidget.currentItem()
-            if item:
-                fullnameNoAuthors = self.g.fmtname(str(item.text(1)), doformat=False, split=True)[0]
-                fullnameNoAuthors = fullnameNoAuthors.replace(' ','%20')
-                queryUrl = '''http://taibif.tw/zh/taibif-search/namecode?keywords=%s''' % fullnameNoAuthors
                 QDesktopServices.openUrl(QUrl(queryUrl))
             else:
                 pass
