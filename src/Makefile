@@ -9,18 +9,7 @@ all:
 	$(PYRCC) -o iconResources_rc.py iconResources.qrc
 
 translate:
-	pylupdate5 window.py -ts i18n/window_zh_TW.ts
-	pylupdate5 window.py -ts i18n/window_zh_CN.ts
-	pylupdate5 window.py -ts i18n/window_ja_JP.ts
-	pylupdate5 window.py -ts i18n/window_ko_KR.ts
-	pylupdate5 ui_window.py -ts i18n/ui_window_zh_TW.ts
-	pylupdate5 ui_window.py -ts i18n/ui_window_zh_CN.ts
-	pylupdate5 ui_window.py -ts i18n/ui_window_ja_JP.ts
-	pylupdate5 ui_window.py -ts i18n/ui_window_ko_KR.ts
-	pylupdate5 ui_main.py -ts i18n/ui_window_zh_TW.ts
-	pylupdate5 ui_main.py -ts i18n/ui_window_zh_CN.ts
-	pylupdate5 ui_main.py -ts i18n/ui_window_ja_JP.ts
-	pylupdate5 ui_main.py -ts i18n/ui_window_ko_KR.ts
+	./make_trans_ui.sh
 
 binary:
 	pyinstaller --onefile checklister.spec

@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(654, 599)
+        MainWindow.resize(650, 600)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -27,7 +27,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 628, 538))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 624, 538))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_4 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -443,32 +443,15 @@ class Ui_MainWindow(object):
         self.butViewTable.raise_()
         self.line.raise_()
         self.tabWidget.addTab(self.tab, "")
-        self.About = QtWidgets.QWidget()
-        self.About.setObjectName("About")
-        self.gridLayout_10 = QtWidgets.QGridLayout(self.About)
-        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
-        self.gridLayout_10.setObjectName("gridLayout_10")
-        self.scrollArea_2 = QtWidgets.QScrollArea(self.About)
-        self.scrollArea_2.setWidgetResizable(True)
-        self.scrollArea_2.setObjectName("scrollArea_2")
-        self.scrollAreaWidgetContents_2 = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 556, 451))
-        self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
-        self.gridLayout_11 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_2)
-        self.gridLayout_11.setContentsMargins(0, 0, 0, 0)
-        self.gridLayout_11.setObjectName("gridLayout_11")
-        self.textBrowser = QtWidgets.QTextBrowser(self.scrollAreaWidgetContents_2)
-        self.textBrowser.setObjectName("textBrowser")
-        self.gridLayout_11.addWidget(self.textBrowser, 0, 0, 1, 1)
-        self.scrollArea_2.setWidget(self.scrollAreaWidgetContents_2)
-        self.gridLayout_10.addWidget(self.scrollArea_2, 0, 0, 1, 1)
-        self.tabWidget.addTab(self.About, "")
         self.gridLayout_4.addWidget(self.tabWidget, 1, 0, 1, 1)
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
         self.gridLayout.addWidget(self.scrollArea, 0, 1, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 654, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 650, 22))
         self.menubar.setObjectName("menubar")
         self.menuFile = QtWidgets.QMenu(self.menubar)
         self.menuFile.setObjectName("menuFile")
@@ -476,26 +459,16 @@ class Ui_MainWindow(object):
         self.menuEdit.setObjectName("menuEdit")
         self.menuHelp = QtWidgets.QMenu(self.menubar)
         self.menuHelp.setObjectName("menuHelp")
+        self.menuWindow = QtWidgets.QMenu(self.menubar)
+        self.menuWindow.setObjectName("menuWindow")
         MainWindow.setMenuBar(self.menubar)
-        self.statusbar = QtWidgets.QStatusBar(MainWindow)
-        self.statusbar.setObjectName("statusbar")
-        MainWindow.setStatusBar(self.statusbar)
         self.actionExport = QtWidgets.QAction(MainWindow)
-        icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap(":/images/export.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.actionExport.setIcon(icon)
         self.actionExport.setObjectName("actionExport")
         self.actionBatch = QtWidgets.QAction(MainWindow)
         self.actionBatch.setObjectName("actionBatch")
         self.actionDeleteSel = QtWidgets.QAction(MainWindow)
-        icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap(":/images/delete.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.actionDeleteSel.setIcon(icon1)
         self.actionDeleteSel.setObjectName("actionDeleteSel")
         self.actionDeleteAll = QtWidgets.QAction(MainWindow)
-        icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap(":/images/delete_all.svg"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
-        self.actionDeleteAll.setIcon(icon2)
         self.actionDeleteAll.setObjectName("actionDeleteAll")
         self.actionClearSp = QtWidgets.QAction(MainWindow)
         self.actionClearSp.setObjectName("actionClearSp")
@@ -507,6 +480,12 @@ class Ui_MainWindow(object):
         self.actionAbout.setObjectName("actionAbout")
         self.actionQuit = QtWidgets.QAction(MainWindow)
         self.actionQuit.setObjectName("actionQuit")
+        self.actionMinimize = QtWidgets.QAction(MainWindow)
+        self.actionMinimize.setObjectName("actionMinimize")
+        self.actionZoom = QtWidgets.QAction(MainWindow)
+        self.actionZoom.setObjectName("actionZoom")
+        self.actionMaximize = QtWidgets.QAction(MainWindow)
+        self.actionMaximize.setObjectName("actionMaximize")
         self.menuFile.addAction(self.actionExport)
         self.menuFile.addAction(self.actionBatch)
         self.menuFile.addAction(self.actionQuit)
@@ -517,8 +496,12 @@ class Ui_MainWindow(object):
         self.menuHelp.addAction(self.actionAbout)
         self.menuHelp.addAction(self.actionHomepage)
         self.menuHelp.addAction(self.actionReportIssues)
+        self.menuWindow.addAction(self.actionMinimize)
+        self.menuWindow.addAction(self.actionMaximize)
+        self.menuWindow.addAction(self.actionZoom)
         self.menubar.addAction(self.menuFile.menuAction())
         self.menubar.addAction(self.menuEdit.menuAction())
+        self.menubar.addAction(self.menuWindow.menuAction())
         self.menubar.addAction(self.menuHelp.menuAction())
 
         self.retranslateUi(MainWindow)
@@ -589,46 +572,10 @@ class Ui_MainWindow(object):
         self.labelRawTable.setText(_translate("MainWindow", "Raw Table"))
         self.treeWidgetDB.setSortingEnabled(True)
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab), _translate("MainWindow", "Databases"))
-        self.textBrowser.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'.SF NS Text\'; font-size:13pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:18pt; font-weight:600;\">checklister: </span>a species checklist generator</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Brief Introduction</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:italic;\">checklister </span>is a simple application to generate formatted species checklist.</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Specialty</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1. Simple and easy to use</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">2. Free software and of course open source</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">3. Cross-platform. You can use it on Windows/MacOS/GNU Linux/BSD, etc.</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Major functions</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1. Exporting plain-text and rich-text species checklist (markdown, docx, odt)</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">    using pandoc document-converting engine</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">2. Saving your checklist as vernacular/local names</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">3. Supporting darwin core tsv (tab separated file) format (only export)</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">4. Comparing, merging and combining multiple checklists</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">5. Formating scientific name as italic fonts in Excel (primitive function)</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">Contact Information</span></p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Official Website: http://github.com/TaiBON/checklister</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Author:  Cheng-Tao Lin mutolisp@mail.ncyu.edu.tw; mutolisp@gmail.com</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Department of Biological Resources, National Chiayi University</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">Contribution is welcome! </p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-weight:600;\">License</span>: GPL v3</p>\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><br /></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">https://github.com/TaiBON/checklister/blob/master/LICENSE</p></body></html>"))
-        self.tabWidget.setTabText(self.tabWidget.indexOf(self.About), _translate("MainWindow", "About"))
         self.menuFile.setTitle(_translate("MainWindow", "File"))
         self.menuEdit.setTitle(_translate("MainWindow", "Edit"))
         self.menuHelp.setTitle(_translate("MainWindow", "Help"))
+        self.menuWindow.setTitle(_translate("MainWindow", "Window"))
         self.actionExport.setText(_translate("MainWindow", "Export File"))
         self.actionExport.setToolTip(_translate("MainWindow", "Export File"))
         self.actionExport.setShortcut(_translate("MainWindow", "Ctrl+O"))
@@ -641,8 +588,17 @@ class Ui_MainWindow(object):
         self.actionClearSp.setText(_translate("MainWindow", "Clear species"))
         self.actionClearSp.setShortcut(_translate("MainWindow", "Esc"))
         self.actionHomepage.setText(_translate("MainWindow", "Homepage"))
+        self.actionHomepage.setShortcut(_translate("MainWindow", "Ctrl+Shift+H"))
         self.actionReportIssues.setText(_translate("MainWindow", "Report issues"))
+        self.actionReportIssues.setShortcut(_translate("MainWindow", "Ctrl+Shift+R"))
         self.actionAbout.setText(_translate("MainWindow", "About"))
         self.actionQuit.setText(_translate("MainWindow", "Quit"))
+        self.actionMinimize.setText(_translate("MainWindow", "Minimize"))
+        self.actionMinimize.setIconText(_translate("MainWindow", "Minimize window"))
+        self.actionMinimize.setShortcut(_translate("MainWindow", "Ctrl+M"))
+        self.actionZoom.setText(_translate("MainWindow", "Zoom"))
+        self.actionZoom.setShortcut(_translate("MainWindow", "Ctrl+N"))
+        self.actionMaximize.setText(_translate("MainWindow", "Maximize"))
+        self.actionMaximize.setShortcut(_translate("MainWindow", "Ctrl+Shift+M"))
 
 import iconResources_rc

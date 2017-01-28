@@ -124,14 +124,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
             self.AboutDialog = AboutDialog(self)
             self.AboutDialog.show()
-            #if checked==None: return
-            #dialog = QDialog()
-            #dialog.ui = Ui_AboutDialog()
-            #dialog.ui.setupUi(dialog)
-            #dialog.setAttribute(Qt.WA_DeleteOnClose)
-            #dialog.exec_()
-
-
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -184,6 +176,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.tabWidget.setCurrentIndex(1)
             elif qKeyEvent.key() == Qt.Key_A and (qKeyEvent.modifiers() & Qt.AltModifier):
                 self.tabWidget.setCurrentIndex(2)
+            # websearch
+            if qKeyEvent.key() == Qt.Key_T and (qKeyEvent.modifiers() & Qt.ControlModifier):
+                self.searchTropicos()
+            if qKeyEvent.key() == Qt.Key_J and (qKeyEvent.modifiers() & Qt.ControlModifier):
+                self.searchNomenMatch()
 
 
         except BaseException as e:
@@ -396,7 +393,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             retrieved = g.dbGetsp(db_table, self.sqlite_db)
             b_container=[]
             for i in range(len(retrieved)):
-                b_container.append(retrieved[i][3] +  "|" + retrieved[i][5] + "|" + retrieved[i][2])
+                b_container.append(retrieved[i][3] +  "\t" + retrieved[i][5] + "\t" + retrieved[i][2])
             model.setStringList(b_container)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -747,7 +744,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             else:
                 # check for species items
                 item = QTreeWidgetItem()
-                species_item = str.split(str(self.lineSpecies.text()), '|')
+                species_item = str.split(str(self.lineSpecies.text()), '\t')
                 # get species cname
                 splist = self.getDbIdx()
                 splist_zhname = []
@@ -758,11 +755,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     if j == species_item[0]:
                         exists = 1
                 if exists == 1:
-                   item.setText(0, species_item[2])
-                   item.setText(1, species_item[1])
-                   item.setText(2, species_item[0])
-                   self.treeWidget.addTopLevelItem(item)
-                   self.lineSpecies.clear()
+                    # if selected item exists in our tree widget, ignore it
+                    if self.treeWidget.findItems(species_item[1], Qt.MatchExactly, 1):
+                        pass
+                    else:
+                        item.setText(0, species_item[2])
+                        item.setText(1, species_item[1])
+                        item.setText(2, species_item[0])
+                        self.treeWidget.addTopLevelItem(item)
+                    self.lineSpecies.clear()
                 else:
                     QMessageBox.information(self, "Warning", self.tr("The species %s did not exist in our database!") % species_item[0])
                     self.lineSpecies.clear()
