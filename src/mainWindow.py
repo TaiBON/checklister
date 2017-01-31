@@ -5,6 +5,8 @@ from PyQt5.QtGui import QIcon,QDesktopServices
 from PyQt5.QtWidgets import *
 from ui_main import Ui_MainWindow
 from ui_about import Ui_AboutDialog
+from platform import uname
+from subprocess import Popen
 import codecs
 import csv
 import genlist_api
@@ -15,6 +17,7 @@ import shutil
 import sqlite3
 import sys
 import traceback
+
 
 
 
@@ -109,13 +112,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.actionHomepage.triggered.connect(self.urlHomepage)
             self.actionReportIssues.triggered.connect(self.urlIssue)
             self.actionAbout.triggered.connect(self.openAboutDialog)
-
-            #self.setWindowTitle(self.tr('Checklist generator'))
-
-            # browser
-            #QWebView.__init__(self)
-            #self.loadFinished.connect(self._result_available)
-
 
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))

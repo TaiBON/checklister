@@ -12,7 +12,8 @@ translate:
 	./make_trans_ui.sh
 
 binary:
-	pyinstaller --onefile checklister.spec
+	pyinstaller --onefile --windowed checklister.spec
+	rm -fr /Applications/checklister.app
 	./symlink_macos.sh && cp -rf dist/checklister.app /Applications/; cp -rf dist/checklister.app ../../packages/
 
 create_db_schema:

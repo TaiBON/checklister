@@ -24,7 +24,7 @@ class Genlist(object):
         """
         resource_path(relative)
         =======================
-        For pyinstaller 
+        For pyinstaller
 
         ref:  http://stackoverflow.com/questions/7674790/bundling-data-files-with-pyinstaller-onefile
         """
@@ -171,13 +171,19 @@ class Genlist(object):
     # convert markdown to other fileformats using pandoc
     #
     def pandocConvert(self, oformat='docx', ofile_prefix='output'):
-        inpfile = ofile_prefix+'.md'
-        outfile = ofile_prefix+'.'+oformat
-        if uname()[0] == 'Windows':
-            subprocess.Popen([self.resource_path('pandoc'), '-f', 'markdown', '-t', 'docx', inpfile, '-o', outfile], shell=True)
-        else:
-            subprocess.Popen([self.resource_path('pandoc'), inpfile, '-o', outfile])
-        
+        try:
+            inpfile = ofile_prefix + '.md'
+            outfile = ofile_prefix + '.' + oformat
+            if uname()[0] == 'Windows':
+                subprocess.Popen([self.resource_path('pandoc'), '-f', 'markdown', '-t', 'docx', inpfile, '-o', outfile], shell=True)
+            elif uname()[0] == 'Darwin':
+                pandocPath = os.path.dirname(sys.executable)
+                subprocess.Popen([os.path.join(pandocPath, 'pandoc'), inpfile, '-o', outfile])
+            else:
+                subprocess.Popen([self.resource_path('pandoc'), inpfile, '-o', outfile])
+        except BaseException as e:
+            print(str(e))
+
     def dbExecuteSQL(self, schema, dbfile, show_results=False):
         """
         dbExcuteSQL(schema, dbfile, show_results=False)
