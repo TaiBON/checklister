@@ -41,7 +41,7 @@
          <x>0</x>
          <y>0</y>
          <width>624</width>
-         <height>538</height>
+         <height>500</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_4">
@@ -91,20 +91,48 @@
                <enum>QFrame::Raised</enum>
               </property>
               <layout class="QGridLayout" name="gridLayout_2">
-               <item row="1" column="8">
-                <widget class="QPushButton" name="butSlist">
+               <item row="1" column="2">
+                <widget class="QLineEdit" name="lineSlist">
                  <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0" colspan="2">
+                <widget class="QLabel" name="labelBatch">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
                    <horstretch>0</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>Select file ...</string>
+                  <string>Batch Export File</string>
                  </property>
                 </widget>
                </item>
-               <item row="2" column="0" colspan="9">
+               <item row="4" column="3">
+                <widget class="QPushButton" name="butGenerateSp">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">QPushButton#butGenerateSp{
+	qproperty-icon: url(:images/export2.png);
+}</string>
+                 </property>
+                 <property name="text">
+                  <string>Export</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0" colspan="4">
                 <widget class="QTabWidget" name="tabWidget_2">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
@@ -454,43 +482,62 @@
                  </widget>
                 </widget>
                </item>
-               <item row="1" column="0">
-                <widget class="QLabel" name="labelBatch">
+               <item row="1" column="3">
+                <widget class="QPushButton" name="butSlist">
                  <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
                    <horstretch>0</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>Batch Export</string>
+                  <string>Select file ...</string>
                  </property>
                 </widget>
                </item>
-               <item row="0" column="0">
-                <widget class="QLabel" name="labelExportFile">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>Export File</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="1" colspan="6">
-                <widget class="QLineEdit" name="lineSlist">
+               <item row="0" column="2">
+                <widget class="QLineEdit" name="lineOutputFilename">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                    <horstretch>0</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
+                 <property name="text">
+                  <string/>
+                 </property>
                 </widget>
                </item>
-               <item row="4" column="0" colspan="9">
+               <item row="0" column="0" colspan="2">
+                <widget class="QLabel" name="labelExportFile">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>Select Export File</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="3">
+                <widget class="QPushButton" name="butSelectOutput">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="toolTip">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="text">
+                  <string>Select file ...</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0" colspan="4">
                 <widget class="QTreeWidget" name="treeWidget">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -555,155 +602,6 @@
                    <string>Common name</string>
                   </property>
                  </column>
-                </widget>
-               </item>
-               <item row="3" column="0">
-                <widget class="QPushButton" name="butTropicos">
-                 <property name="toolTip">
-                  <string extracomment="Search Tropicos.org database">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search Tropicos database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="whatsThis">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search Tropicos database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton#butTropicos{
-	qproperty-icon: url(:images/search.svg);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>Tropicos</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="8">
-                <widget class="QPushButton" name="butSelectOutput">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="toolTip">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="text">
-                  <string>Select file ...</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="5" column="8">
-                <widget class="QPushButton" name="butGenerateSp">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton#butGenerateSp{
-	qproperty-icon: url(:images/export2.png);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>Export</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="5">
-                <widget class="QPushButton" name="butDeleteSelection">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                   <horstretch>1</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>32</width>
-                   <height>32</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string extracomment="Delete selected item(s)">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete selected item(s)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton#butDeleteSelection{
-	qproperty-icon: url(:images/delete.svg);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string extracomment="delete selected item(s)"/>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="6">
-                <widget class="QPushButton" name="butDeleteAll">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Maximum">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>32</width>
-                   <height>32</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string extracomment="Delete all items">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete all items&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton#butDeleteAll{
-	qproperty-icon: url(:images/delete_all.svg);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string extracomment="delete all items"/>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="1" colspan="6">
-                <widget class="QLineEdit" name="lineOutputFilename">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="1">
-                <widget class="QPushButton" name="butNomenMatch">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>120</width>
-                   <height>0</height>
-                  </size>
-                 </property>
-                 <property name="toolTip">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search NomenMatch — a scientific name match database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="whatsThis">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search NomenMatch (a scientific name matching webapp, thanks for @trashmai)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton#butNomenMatch{
-	qproperty-icon: url(:images/search.svg);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>NomenMatch</string>
-                 </property>
                 </widget>
                </item>
               </layout>
@@ -895,24 +793,30 @@
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
-     <string>File</string>
+     <string>&amp;File</string>
     </property>
-    <addaction name="actionExport"/>
+    <addaction name="actionSelectExport"/>
+    <addaction name="actionSaveTxt"/>
     <addaction name="actionBatch"/>
-    <addaction name="actionQuit"/>
     <addaction name="separator"/>
+    <addaction name="actionExportChecklist"/>
+    <addaction name="actionQuit"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
-     <string>Edit</string>
+     <string>&amp;Edit</string>
     </property>
+    <addaction name="actionAddSpecies"/>
     <addaction name="actionDeleteSel"/>
     <addaction name="actionDeleteAll"/>
     <addaction name="actionClearSp"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
-     <string>Help</string>
+     <string>&amp;Help</string>
+    </property>
+    <property name="toolTipsVisible">
+     <bool>true</bool>
     </property>
     <addaction name="actionAbout"/>
     <addaction name="actionHomepage"/>
@@ -920,7 +824,7 @@
    </widget>
    <widget class="QMenu" name="menuWindow">
     <property name="title">
-     <string>Window</string>
+     <string>&amp;Window</string>
     </property>
     <addaction name="actionMinimize"/>
     <addaction name="actionMaximize"/>
@@ -931,39 +835,108 @@
    <addaction name="menuWindow"/>
    <addaction name="menuHelp"/>
   </widget>
-  <action name="actionExport">
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionSaveTxt"/>
+   <addaction name="actionSelectExport"/>
+   <addaction name="actionBatch"/>
+   <addaction name="separator"/>
+   <addaction name="actionAddSpecies"/>
+   <addaction name="actionDeleteSel"/>
+   <addaction name="actionDeleteAll"/>
+   <addaction name="actionExportChecklist"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionTropicos"/>
+   <addaction name="actionNomenMatch"/>
+   <addaction name="separator"/>
+   <addaction name="actionHomepage"/>
+   <addaction name="actionReportIssues"/>
+  </widget>
+  <action name="actionSelectExport">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/export.svg</normaloff>:/icons/export.svg</iconset>
+   </property>
    <property name="text">
-    <string>Export File</string>
+    <string>Select export file</string>
+   </property>
+   <property name="iconText">
+    <string>Select export file</string>
    </property>
    <property name="toolTip">
-    <string>Export File</string>
+    <string>Select export File</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+O</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
   </action>
   <action name="actionBatch">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/batch.svg</normaloff>:/icons/batch.svg</iconset>
+   </property>
    <property name="text">
+    <string>Batch export</string>
+   </property>
+   <property name="iconText">
     <string>Batch export</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+B</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
   </action>
   <action name="actionDeleteSel">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/delete.svg</normaloff>:/icons/delete.svg</iconset>
+   </property>
    <property name="text">
     <string>Delete selected</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+D</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
   </action>
   <action name="actionDeleteAll">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/delete_all.svg</normaloff>:/icons/delete_all.svg</iconset>
+   </property>
    <property name="text">
     <string>Delete all</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+D</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
    </property>
   </action>
   <action name="actionClearSp">
@@ -975,6 +948,10 @@
    </property>
   </action>
   <action name="actionHomepage">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/home.svg</normaloff>:/icons/home.svg</iconset>
+   </property>
    <property name="text">
     <string>Homepage</string>
    </property>
@@ -983,8 +960,15 @@
    </property>
   </action>
   <action name="actionReportIssues">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/bug_report.svg</normaloff>:/icons/bug_report.svg</iconset>
+   </property>
    <property name="text">
     <string>Report issues</string>
+   </property>
+   <property name="toolTip">
+    <string>Bug report</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+R</string>
@@ -993,6 +977,9 @@
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
    </property>
   </action>
   <action name="actionQuit">
@@ -1025,6 +1012,84 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+M</string>
+   </property>
+  </action>
+  <action name="actionTropicos">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/tropicos.svg</normaloff>:/icons/tropicos.svg</iconset>
+   </property>
+   <property name="text">
+    <string>actionTropicos</string>
+   </property>
+   <property name="toolTip">
+    <string>Search Tropicos database</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+T</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionSaveTxt">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/save_txt.svg</normaloff>:/icons/save_txt.svg</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save species txtfile</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionExportChecklist">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/execute_export.svg</normaloff>:/icons/execute_export.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Export checklist!</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionNomenMatch">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/nomenmatch.svg</normaloff>:/icons/nomenmatch.svg</iconset>
+   </property>
+   <property name="text">
+    <string>actionNomenMatch</string>
+   </property>
+   <property name="toolTip">
+    <string>Search NomenMatch database</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+J</string>
+   </property>
+  </action>
+  <action name="actionAddSpecies">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/addspecies.svg</normaloff>:/icons/addspecies.svg</iconset>
+   </property>
+   <property name="text">
+    <string>Add species</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Return</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
    </property>
   </action>
  </widget>

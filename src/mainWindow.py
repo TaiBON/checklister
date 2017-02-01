@@ -66,16 +66,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.butGenerateSp.clicked.connect(self.genChecklist)
             #self.butSelectTempFile.clicked.connect(self.browTempfile)
             self.butSelectOutput.clicked.connect(self.browOutput)
-            self.butDeleteAll.clicked.connect(self.delAllTreeItems)
-            self.butDeleteSelection.clicked.connect(self.delSelectedItems)
             self.comboDBselect.activated.connect(self.spCompleter)
             self.butUpdateDB.clicked.connect(self.updateDB)
             # enable completer to show matched species list
             self.spCompleter()
-            # search Tropicos
-            self.butTropicos.clicked.connect(self.searchTropicos)
-            self.butNomenMatch.clicked.connect(self.searchNomenMatch)
-
 
             # comparison actions
             self.butCheckASelect.clicked.connect(self.selChecklistA)
@@ -101,7 +95,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # load menubar
             self.statusBar().showMessage(self.tr('Ready'))
             # Menubar::File
-            self.actionExport.triggered.connect(self.browOutput)
+            self.actionExportChecklist.triggered.connect(self.genChecklist)
+            self.actionSelectExport.triggered.connect(self.browOutput)
             self.actionBatch.triggered.connect(self.browSlist)
             self.actionQuit.triggered.connect(self.closeApp)
             # Menubar::Edit
@@ -112,6 +107,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.actionHomepage.triggered.connect(self.urlHomepage)
             self.actionReportIssues.triggered.connect(self.urlIssue)
             self.actionAbout.triggered.connect(self.openAboutDialog)
+
+            # Only in Toolbar actions
+            self.actionSaveTxt.triggered.connect(self.saveChecklistTxt)
+            self.actionTropicos.triggered.connect(self.searchTropicos)
+            self.actionNomenMatch.triggered.connect(self.searchNomenMatch)
+            self.actionAddSpecies.triggered.connect(self.addToTree)
 
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))

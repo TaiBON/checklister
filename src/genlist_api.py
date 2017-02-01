@@ -3,7 +3,6 @@
 import codecs       # utf8 codecs
 import csv          # read/write csv files
 import os
-import pypandoc     # convert markdown to docx/odt, etc.
 import re           # regular expression
 import shutil       # copy files
 import sqlite3      # lightweight database
@@ -34,6 +33,114 @@ class Genlist(object):
             return(relative)
         return os.path.join(os.path.abspath("."), relative)
 
+    def fmtnameNew(fullname, format_type='markdown', \
+                doformat=True, italic_b="*", italic_e="*", withSpAuthor = True, split=True):
+
+        ### clean fullname: remove multiple spaces
+        fullname = re.sub(' +',' ',fullname)
+
+        ### format
+        if fullname is None or fullname is '':
+            print('Usage: fmtname(fullname_with_author)')
+            return
+        if format_type == 'markdown':
+            italic_b = '*'; italic_e = '*'
+        elif format_type == 'html':
+            italic_b = '<i>'; italic_e = '</i>'
+        elif format_type == 'custom':
+            italic_b; italic_e
+        else:
+            print('Unsupported format type: %s (only support markdown and html)' % format_type)
+            return
+        if doformat == False:
+            italic_b = ''
+            italic_e = ''
+        ### processing subordinate
+        fullname_split = fullname.split(' ')
+        length_fullname = len(fullname_split)
+
+
+        epithet_cont = []
+        epithet = ''
+        author_start = ''
+        cross_type = ''
+        subordinate_status = []
+
+        subrank = ['subsp.', 'ssp.', 'var.', 'fo.', 'cv.', '×', 'x']
+        autonym = 'false'
+        for s in range(0,len(subrank)):
+            if subrank[s] in fullname_split:
+                subrank_idx = fullname_split.index(subrank[s])
+                if subrank[s] == '×' or subrank[s] == 'x':
+                    # 把 x 取代成 ×
+                    subrank[s] = '×'
+                    fullname_split[subrank_idx] = '×'
+                    # × 後面有跟著屬名的
+                    # ex: Genus epithet × Genus epithet2
+                    if re.search('[A-Z].*', fullname_split[subrank_idx+1]):
+                        subordinate_status.append([subrank_idx, subrank[s]])
+                        cross_type = 1
+                    else:
+                        # 沒有屬名的 case
+                        fullname_split[subrank_idx+1] = '×' + fullname_split[subrank_idx+1]
+                        fullname_split.remove(subrank[s])
+                else:
+                    subordinate_status.append([subrank_idx, subrank[s]])
+
+                # check for autonyms
+                epithet = fullname_split[1]
+                sub_epithet = fullname_split[subrank_idx + 1]
+                if epithet == sub_epithet:
+                    autonym = True
+
+        fname_sp = italic_b + ' '.join(str(item) for item in fullname_split[0:2])+ italic_e
+
+        #### 有種下階層的
+        subordinate_status = sorted(subordinate_status)
+
+        if cross_type == 1:
+            sidx = int(subordinate_status[0][0])
+            subepithet = italic_b + fullname_split[sidx+1] + ' ' + fullname_split[sidx+2] + italic_e
+            speciesAuthors = ' '.join(str(item) for item in fullname_split[2:sidx])
+            subepithetAuthors = ' '.join(str(item) for item in fullname_split[sidx+3:len(fullname_split)])
+            fullnameNoAuthors = ' '.join([fname_sp, '×',subepithet])
+            fullnameWithAuthors = ' '.join([fname_sp,speciesAuthors,'×',subepithet,subepithetAuthors])
+
+        # autonym
+        elif autonym == True:
+            subrank_name = fullname_split[subrank_idx]
+            subepithet = italic_b + fullname_split[subordinate_status[0][0]+1] + italic_e
+            fullnameWithAuthors = ' '.join([fname_sp, ' '.join(fullname_split[2:subrank_idx]), subrank_name, \
+                  subepithet])
+            fullnameNoAuthors = ' '.join([fname_sp, subrank_name, subepithet])
+
+        # 只有一個種下階層的
+        elif len(subordinate_status) == 1:
+            subrank_name = fullname_split[subrank_idx]
+            subepithet = italic_b + fullname_split[subordinate_status[0][0]+1] + italic_e
+
+            if withSpAuthor == True:
+                fullnameWithAuthors = ' '.join([fname_sp, ' '.join(fullname_split[2:subrank_idx]), subrank_name, \
+                  subepithet, ' '.join(fullname_split[subrank_idx+2:len(fullname_split)])])
+            elif withSpAuthor == False:
+                fullnameWithAuthors = ' '.join([fname_sp, subrank_name, \
+                  subepithet, ' '.join(fullname_split[subrank_idx+2:len(fullname_split)])])
+            fullnameNoAuthors = ' '.join([fname_sp, subrank_name, subepithet])
+        else:
+            authors = fullname_split[2:length_fullname]
+            authors_join = ' '.join(authors)
+            fullnameNoAuthors = ' '.join([fname_sp])
+            fullnameWithAuthors = ' '.join([fullnameNoAuthors, authors_join])
+        # returns
+        if split == False and withSpAuthor == False:
+            return(fullnameNoAuthors)
+        elif split == False:
+            return(fullnameWithAuthors)
+        elif split == True:
+            return([fullnameNoAuthors, fullnameWithAuthors])
+        else:
+            print("Invalid split option. Please choose 'True' or 'False'")
+
     def fmtname(self, fullname, italic_b="*", italic_e="*", format_type='markdown', doformat=True, split=True):
         """
         fmtname(fullname, italic_b="*", italic_e="*", format_type='markdown', doformat=True, split=True)
@@ -43,7 +150,7 @@ class Genlist(object):
         2. subrank (ex: subsp., var., etc.) is not italicized
 
         html tag example <i></i> means italic fonts):
-        <i>Castanopsis cuspidata</i> (Thunb.) Schottky var. <i>carlesii</i> (Hemsl.) T.Yamaz.' 
+        <i>Castanopsis cuspidata</i> (Thunb.) Schottky var. <i>carlesii</i> (Hemsl.) T.Yamaz.'
 
         fullname:
         --------
@@ -63,7 +170,7 @@ class Genlist(object):
 
         split:
         --------
-        After the fullname is formatted, fmtname will return a list: 
+        After the fullname is formatted, fmtname will return a list:
         [formatted_fullname, authors]
 
         If split option is true, fmtname will return a string of fullname and authors.
@@ -89,7 +196,7 @@ class Genlist(object):
             fullname_split.remove('')
         length_fullname = len(fullname_split)
         subordinate_status = []
-        
+
         if '×' in fullname_split:
             cross_idx = fullname_split.index('×')
             subordinate_status.append([cross_idx, '×'])
@@ -141,7 +248,7 @@ class Genlist(object):
                         sub_epithet = '×' + fullname_split[subordinate_status[v][0]+2]
                     else:
                         sub_epithet = fullname_split[subordinate_status[v][0]+1]
-                    epithet = subordinate_status[v][1] + ' ' + italic_b + sub_epithet + italic_e  
+                    epithet = subordinate_status[v][1] + ' ' + italic_b + sub_epithet + italic_e
                 epithet_cont.append(epithet)
             # authors
             if authors_start is '':
@@ -167,9 +274,6 @@ class Genlist(object):
             print("Invalid split option. Please choose 'True' or 'False'")
 
 
-    # DEPRECATED: use pypandoc package
-    # convert markdown to other fileformats using pandoc
-    #
     def pandocConvert(self, oformat='docx', ofile_prefix='output'):
         try:
             inpfile = ofile_prefix + '.md'
@@ -198,7 +302,7 @@ class Genlist(object):
             return(output)
         else:
             conn.commit()
-            print("Execute '%s' successfully" % schema) 
+            print("Execute '%s' successfully" % schema)
         conn.close()
 
     def dbImportTable(self, table_name, csvfile, dbfile):
@@ -274,7 +378,7 @@ class Genlist(object):
         table_name_lists = []
         for files in range(len(checklists)):
             with codecs.open(checklists[files], 'r', 'utf-8') as f:
-                # import all the local names in checklists and merge 
+                # import all the local names in checklists and merge
                 # them into one list
                 m_lists += f.read().splitlines()
                 # import checklists into different tables
@@ -283,7 +387,7 @@ class Genlist(object):
                 table_name_lists.append(checklist_tablename)
                 self.importTable(dbfile, checklist_tablename, checklists[files])
             f.close()
-        # create a union table includes all the species 
+        # create a union table includes all the species
         self.importTable(dbfile, 'tmp_union', m_lists, isFile=False)
         # update
         for t in range(len(table_name_lists)):
@@ -298,7 +402,7 @@ class Genlist(object):
 
     def listToXls(self, import_list, name_italic_col, xls_file):
         """
-        listToXls: write list to excel 
+        listToXls: write list to excel
         ==============================
 
         import_list
@@ -306,7 +410,7 @@ class Genlist(object):
 
         name_italic_col
         ---------------
-        
+
         """
         try:
             xls_subname = str.split(os.path.split(xls_file)[1], '.')[-1]
@@ -345,7 +449,7 @@ class Genlist(object):
             curr_sheet = openpyxl_wb[work_sheet]
             max_col = curr_sheet.get_highest_column()
             max_row = curr_sheet.get_highest_row()
-            # header  
+            # header
             ws_cont = [['orignal', 'formatted']]
             if name_col_num > max_col:
                 print(u'The column number exceed the maximum limit')
@@ -356,6 +460,19 @@ class Genlist(object):
                     d = curr_sheet.cell(row=i, column=name_col_num).value
                     ws_cont.append([d,d])
             self.listToXls(ws_cont, 1, outputfile)
+        except BaseException as e:
+            print(str(e))
+
+    def adjCharTai(self, zhnameWithTai):
+        '''
+        adjCharTai
+        ----------
+
+        處理「台」和「臺」的問題
+        '''
+        try:
+           zhname = re.sub(u'台([灣|北|中|西|南|東])',r'臺\1', zhnameWithTai)
+           return(zhname)
         except BaseException as e:
             print(str(e))
 
@@ -370,7 +487,7 @@ class Genlist(object):
 
         inputfile
         ---------
-        oformat 
+        oformat
         ofile_prefix
         """
         # check for input parameters
@@ -419,13 +536,13 @@ class Genlist(object):
                 curs.execute(insert_db)
                 conn.commit()
         f.close()
-               
+
         # SELECT
         query_all = '''
             SELECT distinct n.* from sample s LEFT OUTER JOIN
-            (SELECT distinct id, family, 
-                family_cname, 
-                fullname, cname, 
+            (SELECT distinct id, family,
+                family_cname,
+                fullname, cname,
                 endemic, iucn_category, source
             FROM %s) as n ON s.cname = n.cname;
         ''' % ( dbtable )
@@ -456,15 +573,15 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             f.write('\n')
             ##### End of HEADER #####
             count_family = '''
-            SELECT count(*) from (SELECT distinct family from sample s left outer join %s n 
+            SELECT count(*) from (SELECT distinct family from sample s left outer join %s n
                     on s.cname=n.cname) as f;
             ''' % dbtable
             count_species = '''
-            SELECT count(*) from (SELECT distinct n.cname from sample s left outer join %s n 
+            SELECT count(*) from (SELECT distinct n.cname from sample s left outer join %s n
                     on s.cname=n.cname) as f;
             ''' % dbtable
             not_exist_sp = '''
-            SELECT distinct s.cname from sample s left outer join %s n 
+            SELECT distinct s.cname from sample s left outer join %s n
                     on s.cname=n.cname where n.cname is null;
             ''' % dbtable
             curs.execute(count_family)
@@ -498,7 +615,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                 pt_plant_type_sql = '''
                     SELECT p.plant_type,p.pt_name
                     FROM dao_plant_type p,
-                        (SELECT distinct plant_type from sample s left outer join %s n 
+                        (SELECT distinct plant_type from sample s left outer join %s n
                         on s.cname=n.cname order by plant_type) as t
                     WHERE p.plant_type = t.plant_type;
                 ''' % dbtable
@@ -522,7 +639,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                         f.write('\n')
                         f.write('\n###'+pt_plant_type[i][1]+'\n\n')
                     taxa_family_sql = '''
-                    select distinct family,family_cname from sample s left outer join %s n 
+                    select distinct family,family_cname from sample s left outer join %s n
                     on s.cname=n.cname where n.plant_type=%i
                     order by plant_type,family;
                     ''' % (dbtable, pt_plant_type[i][0])
@@ -530,8 +647,8 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                     taxa_family = curs.fetchall()
                     for j in range(0,len(taxa_family)):
                         sp_number_in_fam = '''
-                        select count(*) from 
-                            (select distinct fullname, name, n.cname from sample s left outer join %s n 
+                        select count(*) from
+                            (select distinct fullname, name, n.cname from sample s left outer join %s n
                             on s.cname=n.cname where n.plant_type=%i and family='%s'
                             order by plant_type,family,fullname) as a;
                         ''' % (dbtable, pt_plant_type[i][0], taxa_family[j][0])
@@ -549,7 +666,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                             f.write('\n')
                             f.write(fam + ' ' + fam_zh + ' (%i)\n' % fam_spno)
                         taxa_family_sp = '''
-                            select distinct fullname,n.cname,n.endemic,n.source,n.iucn_category,n.name from sample s left outer join %s n 
+                            select distinct fullname,n.cname,n.endemic,n.source,n.iucn_category,n.name from sample s left outer join %s n
                             on s.cname=n.cname where n.plant_type=%i and family='%s'
                             order by plant_type,family,fullname;
                         ''' % (dbtable, pt_plant_type[i][0], taxa_family[j][0])
@@ -563,7 +680,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                                 ENDEMIC = "#"
                             else:
                                 ENDEMIC = ''
-                            # check the source 
+                            # check the source
                             if taxa_family_sp[k][3] == u'栽培':
                                 SRC = '†'
                             elif taxa_family_sp[k][3] == u'歸化':
@@ -582,7 +699,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                             # write species names (fullname)
                             xls_num_row +=1
                             if oformat == 'xlsx':
-                                # when export to xls, format the name to xlsxwriter rich text format 
+                                # when export to xls, format the name to xlsxwriter rich text format
                                 xls_input_name = self.fmtname(taxa_family_sp[k][0], format_type='custom', italic_b='^', italic_e='$', split=False)
                                 formatted_cont = []
                                 splitted_name = xls_input_name.split('^')
@@ -597,7 +714,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
 
                             if spinfo is not None:
                                 if oformat == 'xlsx':
-                                    SPINFO = re.sub(' ', '', ENDEMIC + SRC) 
+                                    SPINFO = re.sub(' ', '', ENDEMIC + SRC)
                                     # write common name
                                     ws.write(xls_num_row, 3, taxa_family_sp[k][1])
                                     # write species info (endemic/naturalized)
@@ -618,10 +735,10 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                 #    wb = Workbook()
                 #    ws = wb.active
                 taxa_family_sql = '''
-                    SELECT DISTINCT 
-                        family,family_cname 
-                    FROM sample s 
-                    LEFT OUTER JOIN %s n 
+                    SELECT DISTINCT
+                        family,family_cname
+                    FROM sample s
+                    LEFT OUTER JOIN %s n
                     ON s.cname=n.cname
                     ORDER BY family;
                     ''' % dbtable
@@ -645,10 +762,10 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
 
                 for j in range(0,len(taxa_family)):
                     sp_number_in_fam = '''
-                        select count(*) from 
+                        select count(*) from
                         (SELECT distinct name,n.cname
-                            FROM sample s LEFT OUTER JOIN %s n 
-                            ON s.cname=n.cname 
+                            FROM sample s LEFT OUTER JOIN %s n
+                            ON s.cname=n.cname
                         WHERE family='%s'
                         ORDER BY family,name) as a;
                     ''' % (dbtable, taxa_family[j][0])
@@ -667,11 +784,11 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                         f.write('\n')
                         f.write(fam+' '+fam_zh+' (%i)\n' % fam_spno)
                     taxa_family_sp = '''
-                        SELECT distinct 
-                            name,n.cname,n.endemic,n.consv_status 
-                        FROM sample s LEFT OUTER JOIN %s n 
-                            ON s.cname=n.cname 
-                        WHERE 
+                        SELECT distinct
+                            name,n.cname,n.endemic,n.consv_status
+                        FROM sample s LEFT OUTER JOIN %s n
+                            ON s.cname=n.cname
+                        WHERE
                             family='%s'
                         ORDER BY family,name;
                     ''' % (dbtable, taxa_family[j][0])
@@ -687,13 +804,13 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                             ENDEMIC = '##'
                         else:
                             ENDEMIC = ''
-                        # conservation status 
+                        # conservation status
                         CONSERV = taxa_family_sp[k][3]
                         spinfo = ' ' + ENDEMIC + CONSERV
 
                         # write species names (fullname)
                         if oformat == 'xlsx':
-                            # when export to xls, format the name to xlsxwriter rich text format 
+                            # when export to xls, format the name to xlsxwriter rich text format
                             xls_num_row +=1
                             xls_input_name = self.fmtname(taxa_family_sp[k][0], format_type='custom', \
                                                 italic_b='^', italic_e='$', split=False)
@@ -728,7 +845,6 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             f.close()
 
             try:
-            #    pypandoc.convert(ofile_prefix + '.md', oformat, outputfile=ofile_prefix+'.'+oformat)
                 if oformat != 'xlsx':
                     self.pandocConvert(oformat, ofile_prefix)
             except BaseException as e:
@@ -736,6 +852,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             curs.execute('DROP TABLE IF EXISTS sample;')
             conn.commit()
             conn.close()
+
 if __name__ == "__main__":
     import doctest
     doctest.testmod()

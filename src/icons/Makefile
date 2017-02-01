@@ -1,26 +1,25 @@
+all: ico resize icns
+
 icns:
-	iconutil -c icns checklister.iconset
+	iconutil -c icns -o checklister.icns "/Users/psilotum/Documents/Dropbox/applications/checklister/src/icons/checklister.iconset"
 
 ico:
-	convert -resize 256x256 checklister_icons_orig.png checklister_small.png 
-	convert -resize 2048x2048 checklister_icons_orig.png checklister.iconset/icon_2048x2048.png
+	sips -z 256 256 checklister_icons_orig.png --out checklister_small.png
 	convert checklister_small.png checklister.ico
 
-# you need to install imagemagick first 
 resize:
-	cd checklister.iconset;
-	cp checklister.iconset/icon_2048x2048.png checklister.iconset/icon_2048x2048@2.png
-	convert -resize 1024x1024 checklister.iconset/icon_2048x2048.png checklister.iconset/icon_1024x1024.png
-	cp checklister.iconset/icon_1024x1024.png checklister.iconset/icon_1024x1024@2.png
-	convert -resize 512x512 checklister.iconset/icon_2048x2048.png checklister.iconset/icon_512x512.png
-	cp checklister.iconset/icon_512x512.png checklister.iconset/icon_512x512@2.png
-	convert -resize 256x256 checklister.iconset/icon_2048x2048.png checklister.iconset/icon_256x256.png
-	cp checklister.iconset/icon_256x256.png checklister.iconset/icon_256x256@2.png
-	convert -resize 128x128 checklister.iconset/icon_2048x2048.png checklister.iconset/icon_128x128.png
-	cp checklister.iconset/icon_128x128.png checklister.iconset/icon_128x128@2.png
-	convert -resize 64x64 checklister.iconset/icon_2048x2048.png checklister.iconset/icon_64x64.png
-	cp checklister.iconset/icon_64x64.png checklister.iconset/icon_64x64@2.png
-	convert -resize 32x32 checklister.iconset/icon_2048x2048.png checklister.iconset/icon_32x32.png
-	cp checklister.iconset/icon_32x32.png checklister.iconset/icon_32x32@2.png
-	convert -resize 16x16 checklister.iconset/icon_2048x2048.png checklister.iconset/icon_16x16.png
-	cp checklister.iconset/icon_16x16.png checklister.iconset/icon_16x16@2.png
+	sips -z 2048 2048 checklister_icons_orig.png --out icon_2048x2048.png
+	sips -z 16 16     icon_2048x2048.png --out checklister.iconset/icon_16x16.png
+	sips -z 32 32     icon_2048x2048.png --out checklister.iconset/icon_16x16@2x.png
+	sips -z 32 32     icon_2048x2048.png --out checklister.iconset/icon_32x32.png
+	sips -z 64 64     icon_2048x2048.png --out checklister.iconset/icon_32x32@2x.png
+	sips -z 128 128   icon_2048x2048.png --out checklister.iconset/icon_128x128.png
+	sips -z 256 256   icon_2048x2048.png --out checklister.iconset/icon_128x128@2x.png
+	sips -z 256 256   icon_2048x2048.png --out checklister.iconset/icon_256x256.png
+	sips -z 512 512   icon_2048x2048.png --out checklister.iconset/icon_256x256@2x.png
+	sips -z 512 512   icon_2048x2048.png --out checklister.iconset/icon_512x512.png
+	sips -z 1024 1024   icon_2048x2048.png --out checklister.iconset/icon_512x512@2x.png
+	sips -z 1024 1024   icon_2048x2048.png --out checklister.iconset/icon_1024x1024.png
+
+clean:
+	rm -rf checklister.iconset/*

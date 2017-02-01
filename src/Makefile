@@ -2,8 +2,9 @@ PYUIC=pyuic5
 PYRCC=pyrcc5
 PYTHON=python3
 
-all:
-	#$(PYUIC) ui/main_window.ui -o ui_window.py
+all: mui translate binary
+
+mui:
 	$(PYUIC) ui/ui_main.ui -o ui_main.py
 	$(PYUIC) ui/ui_about.ui -o ui_about.py
 	$(PYRCC) -o iconResources_rc.py iconResources.qrc
@@ -37,4 +38,4 @@ update_db:
 	sqlite3 db/twnamelist.db < db_schema/update_jp_ylist.sql
 
 clean:
-	rm -fr build dist
+	rm -fr build dist ui_main.py ui_about.py iconResources_rc.py
