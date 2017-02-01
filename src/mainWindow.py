@@ -92,6 +92,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.dbViewer()
             self.butViewTable.clicked.connect(self.viewTable)
 
+
             # load menubar
             self.statusBar().showMessage(self.tr('Ready'))
             # Menubar::File
@@ -103,6 +104,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.actionDeleteSel.triggered.connect(self.delSelectedItems)
             self.actionDeleteAll.triggered.connect(self.delAllTreeItems)
             self.actionClearSp.triggered.connect(self.lineSpecies.clear)
+
+            # Menubar::View
+            self.actionShowToolbarText.triggered.connect(self.setToolBarText)
+
             # Menubar::Help
             self.actionHomepage.triggered.connect(self.urlHomepage)
             self.actionReportIssues.triggered.connect(self.urlIssue)
@@ -116,6 +121,17 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
+
+    def setToolBarText(self):
+        try:
+            if self.actionShowToolbarText.isChecked():
+                self.toolBar.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+                self.toolBar_2.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+            else:
+                self.toolBar.setToolButtonStyle(Qt.ToolButtonIconOnly)
+                self.toolBar_2.setToolButtonStyle(Qt.ToolButtonIconOnly)
+        except BaseException as e:
+           QMessageBox.information(self, "Warning", str(e))
 
     def openAboutDialog(self):
         try:

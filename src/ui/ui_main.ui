@@ -830,8 +830,15 @@
     <addaction name="actionMaximize"/>
     <addaction name="actionZoom"/>
    </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionShowToolbarText"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
+   <addaction name="menuView"/>
    <addaction name="menuWindow"/>
    <addaction name="menuHelp"/>
   </widget>
@@ -1020,7 +1027,7 @@
      <normaloff>:/icons/tropicos.svg</normaloff>:/icons/tropicos.svg</iconset>
    </property>
    <property name="text">
-    <string>actionTropicos</string>
+    <string>Search Tropicos</string>
    </property>
    <property name="toolTip">
     <string>Search Tropicos database</string>
@@ -1068,7 +1075,7 @@
      <normaloff>:/icons/nomenmatch.svg</normaloff>:/icons/nomenmatch.svg</iconset>
    </property>
    <property name="text">
-    <string>actionNomenMatch</string>
+    <string>Search NomenMatch</string>
    </property>
    <property name="toolTip">
     <string>Search NomenMatch database</string>
@@ -1090,6 +1097,17 @@
    </property>
    <property name="iconVisibleInMenu">
     <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionShowToolbarText">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show toolbar text</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+T</string>
    </property>
   </action>
  </widget>
