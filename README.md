@@ -15,8 +15,8 @@ checklister 會根據「基礎資料清單(baselist)」 及「樣本清單(sampl
 目前僅支援 windows 和 MacOS X 兩個平台的執行檔，其餘平台請自行編譯：
 
 * [Windows 平台; v0.4.1](https://github.com/TaiBON/checklister/releases/download/v0.4.1/checklister.exe)
-* [MacOS X Sierra](https://github.com/TaiBON/checklister/releases/download/v0.4.1/checklister_Sierra.dmg)
-* [MacOS X El Capitan](https://github.com/TaiBON/checklister/releases/download/v0.4.1/checklister_El_Capitan.dmg)
+* [MacOS X Sierra](https://github.com/TaiBON/checklister/releases/download/v0.4.1/checklister_v0.4.1_Sierra.dmg)
+* [MacOS X El Capitan](https://github.com/TaiBON/checklister/releases/download/v0.4.1/checklister_v_0.4.1_El_Capitan.dmg)
 
 ### Supported checklist
 
