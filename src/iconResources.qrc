@@ -1,16 +1,20 @@
 <RCC>
   <qresource>
-    <file>icons/bug_report.svg</file>
-    <file>icons/home.svg</file>
-    <file>icons/addspecies.svg</file>
-    <file>icons/execute_export.svg</file>
-    <file>icons/tropicos.svg</file>
-    <file>icons/nomenmatch.svg</file>
-    <file>icons/export.svg</file>
-    <file>icons/save_txt.svg</file>
-    <file>icons/delete_all.svg</file>
-    <file>icons/delete.svg</file>
-    <file>icons/search.svg</file>
-    <file>icons/batch.svg</file>
+    <file>icons/deselect.png</file>
+    <file>icons/select_all.png</file>
+    <file>icons/checklister_icons_orig.png</file>
+    <file>icons/execute_export.png</file>
+    <file>icons/bug_report.png</file>
+    <file>icons/home.png</file>
+    <file>icons/addspecies_32x32.png</file>
+    <file>icons/execute_export.png</file>
+    <file>icons/tropicos.png</file>
+    <file>icons/nomenmatch.png</file>
+    <file>icons/export.png</file>
+    <file>icons/save_txt.png</file>
+    <file>icons/delete_all.png</file>
+    <file>icons/delete.png</file>
+    <file>icons/search.png</file>
+    <file>icons/batch.png</file>
   </qresource>
 </RCC>

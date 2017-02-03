@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>650</width>
-    <height>600</height>
+    <width>710</width>
+    <height>683</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -29,8 +29,19 @@
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="1">
      <widget class="QScrollArea" name="scrollArea">
+      <property name="font">
+       <font>
+        <kerning>true</kerning>
+       </font>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
       <property name="frameShadow">
-       <enum>QFrame::Plain</enum>
+       <enum>QFrame::Raised</enum>
+      </property>
+      <property name="lineWidth">
+       <number>0</number>
       </property>
       <property name="widgetResizable">
        <bool>true</bool>
@@ -40,8 +51,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>624</width>
-         <height>500</height>
+         <width>686</width>
+         <height>608</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_4">
@@ -77,31 +88,154 @@
           <property name="tabBarAutoHide">
            <bool>true</bool>
           </property>
-          <widget class="QWidget" name="SpeciesSelection">
+          <widget class="QWidget" name="TaxaSelection">
            <attribute name="title">
-            <string>Species Selection</string>
+            <string>Taxa selection</string>
            </attribute>
            <layout class="QGridLayout" name="gridLayout_7">
             <item row="0" column="0">
              <widget class="QFrame" name="frame">
               <property name="frameShape">
-               <enum>QFrame::StyledPanel</enum>
+               <enum>QFrame::NoFrame</enum>
               </property>
               <property name="frameShadow">
-               <enum>QFrame::Raised</enum>
+               <enum>QFrame::Sunken</enum>
+              </property>
+              <property name="lineWidth">
+               <number>0</number>
               </property>
               <layout class="QGridLayout" name="gridLayout_2">
-               <item row="1" column="2">
-                <widget class="QLineEdit" name="lineSlist">
+               <item row="0" column="0">
+                <widget class="QLabel" name="labelExportFile">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>Select Export File</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0" colspan="3">
+                <widget class="QTreeWidget" name="treeWidget">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="mouseTracking">
+                  <bool>false</bool>
+                 </property>
+                 <property name="editTriggers">
+                  <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+                 </property>
+                 <property name="dragEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="dragDropOverwriteMode">
+                  <bool>false</bool>
+                 </property>
+                 <property name="dragDropMode">
+                  <enum>QAbstractItemView::NoDragDrop</enum>
+                 </property>
+                 <property name="defaultDropAction">
+                  <enum>Qt::MoveAction</enum>
+                 </property>
+                 <property name="alternatingRowColors">
+                  <bool>true</bool>
+                 </property>
+                 <property name="selectionMode">
+                  <enum>QAbstractItemView::ExtendedSelection</enum>
+                 </property>
+                 <property name="indentation">
+                  <number>10</number>
+                 </property>
+                 <property name="rootIsDecorated">
+                  <bool>true</bool>
+                 </property>
+                 <property name="sortingEnabled">
+                  <bool>true</bool>
+                 </property>
+                 <property name="animated">
+                  <bool>true</bool>
+                 </property>
+                 <property name="wordWrap">
+                  <bool>true</bool>
+                 </property>
+                 <attribute name="headerVisible">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="headerCascadingSectionResizes">
+                  <bool>false</bool>
+                 </attribute>
+                 <attribute name="headerDefaultSectionSize">
+                  <number>60</number>
+                 </attribute>
+                 <attribute name="headerHighlightSections">
+                  <bool>true</bool>
+                 </attribute>
+                 <attribute name="headerMinimumSectionSize">
+                  <number>5</number>
+                 </attribute>
+                 <attribute name="headerShowSortIndicator" stdset="0">
+                  <bool>true</bool>
+                 </attribute>
+                 <column>
+                  <property name="text">
+                   <string>Family</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>FullNameWithAuthors</string>
+                  </property>
+                 </column>
+                 <column>
+                  <property name="text">
+                   <string>Common name</string>
+                  </property>
+                 </column>
+                </widget>
+               </item>
+               <item row="0" column="2">
+                <widget class="QPushButton" name="butSelectOutput">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="toolTip">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="text">
+                  <string>Select file ...</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QLineEdit" name="lineOutputFilename">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                    <horstretch>0</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
+                 <property name="text">
+                  <string/>
+                 </property>
                 </widget>
                </item>
-               <item row="1" column="0" colspan="2">
+               <item row="1" column="0">
                 <widget class="QLabel" name="labelBatch">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
@@ -114,7 +248,7 @@
                  </property>
                 </widget>
                </item>
-               <item row="4" column="3">
+               <item row="6" column="2">
                 <widget class="QPushButton" name="butGenerateSp">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
@@ -124,7 +258,7 @@
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QPushButton#butGenerateSp{
-	qproperty-icon: url(:images/export2.png);
+	qproperty-icon: url(:images/export.png);
 }</string>
                  </property>
                  <property name="text">
@@ -132,7 +266,7 @@
                  </property>
                 </widget>
                </item>
-               <item row="2" column="0" colspan="4">
+               <item row="2" column="0" colspan="3">
                 <widget class="QTabWidget" name="tabWidget_2">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
@@ -154,7 +288,7 @@
                  </property>
                  <widget class="QWidget" name="tabSelect">
                   <attribute name="title">
-                   <string>Select species</string>
+                   <string>Select taxa</string>
                   </attribute>
                   <layout class="QGridLayout" name="gridLayout_9">
                    <item row="2" column="0">
@@ -196,19 +330,6 @@
                      </property>
                      <property name="autoFillBackground">
                       <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QPushButton" name="butAddToTree">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="text">
-                      <string>Add species</string>
                      </property>
                     </widget>
                    </item>
@@ -482,7 +603,7 @@
                  </widget>
                 </widget>
                </item>
-               <item row="1" column="3">
+               <item row="1" column="2">
                 <widget class="QPushButton" name="butSlist">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
@@ -495,50 +616,8 @@
                  </property>
                 </widget>
                </item>
-               <item row="0" column="2">
-                <widget class="QLineEdit" name="lineOutputFilename">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="0" colspan="2">
-                <widget class="QLabel" name="labelExportFile">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>Select Export File</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="3">
-                <widget class="QPushButton" name="butSelectOutput">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="toolTip">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="text">
-                  <string>Select file ...</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="0" colspan="4">
-                <widget class="QTreeWidget" name="treeWidget">
+               <item row="3" column="0" colspan="3">
+                <widget class="QScrollArea" name="scrollArea_2">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
                    <horstretch>0</horstretch>
@@ -548,60 +627,63 @@
                  <property name="minimumSize">
                   <size>
                    <width>0</width>
-                   <height>150</height>
+                   <height>100</height>
                   </size>
                  </property>
-                 <property name="mouseTracking">
-                  <bool>false</bool>
-                 </property>
-                 <property name="alternatingRowColors">
+                 <property name="widgetResizable">
                   <bool>true</bool>
                  </property>
-                 <property name="selectionMode">
-                  <enum>QAbstractItemView::MultiSelection</enum>
-                 </property>
-                 <property name="indentation">
-                  <number>10</number>
-                 </property>
-                 <property name="rootIsDecorated">
-                  <bool>true</bool>
-                 </property>
-                 <property name="sortingEnabled">
-                  <bool>true</bool>
-                 </property>
-                 <property name="animated">
-                  <bool>true</bool>
-                 </property>
-                 <attribute name="headerVisible">
-                  <bool>true</bool>
-                 </attribute>
-                 <attribute name="headerDefaultSectionSize">
-                  <number>60</number>
-                 </attribute>
-                 <attribute name="headerHighlightSections">
-                  <bool>true</bool>
-                 </attribute>
-                 <attribute name="headerMinimumSectionSize">
-                  <number>5</number>
-                 </attribute>
-                 <attribute name="headerShowSortIndicator" stdset="0">
-                  <bool>true</bool>
-                 </attribute>
-                 <column>
-                  <property name="text">
-                   <string>Family</string>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>590</width>
+                    <height>98</height>
+                   </rect>
                   </property>
-                 </column>
-                 <column>
-                  <property name="text">
-                   <string>FullNameWithAuthors</string>
-                  </property>
-                 </column>
-                 <column>
-                  <property name="text">
-                   <string>Common name</string>
-                  </property>
-                 </column>
+                  <layout class="QGridLayout" name="gridLayout_10">
+                   <item row="0" column="0">
+                    <widget class="QLabel" name="label">
+                     <property name="text">
+                      <string>Taxon Info</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item row="1" column="0">
+                    <widget class="QTextBrowser" name="textBrowserInfo">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="minimumSize">
+                      <size>
+                       <width>0</width>
+                       <height>50</height>
+                      </size>
+                     </property>
+                     <property name="sizeAdjustPolicy">
+                      <enum>QAbstractScrollArea::AdjustToContents</enum>
+                     </property>
+                     <property name="openExternalLinks">
+                      <bool>true</bool>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </widget>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QLineEdit" name="lineSlist">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
                 </widget>
                </item>
               </layout>
@@ -614,13 +696,19 @@
             <string>Databases</string>
            </attribute>
            <layout class="QGridLayout" name="gridLayout_8">
-            <item row="2" column="2">
+            <item row="2" column="3">
              <widget class="QPushButton" name="butViewTable">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>108</width>
+                <height>0</height>
+               </size>
               </property>
               <property name="toolTip">
                <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update the checklist database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -670,10 +758,10 @@
               </property>
              </widget>
             </item>
-            <item row="0" column="2">
+            <item row="0" column="3">
              <widget class="QPushButton" name="butUpdateDB">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
@@ -693,7 +781,7 @@
               </property>
              </widget>
             </item>
-            <item row="3" column="0" colspan="3">
+            <item row="3" column="0" colspan="4">
              <widget class="QTreeWidget" name="treeWidgetDB">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
@@ -750,7 +838,7 @@
               </column>
              </widget>
             </item>
-            <item row="1" column="0" colspan="3">
+            <item row="1" column="0" colspan="4">
              <widget class="Line" name="line">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
@@ -763,6 +851,32 @@
               </property>
              </widget>
             </item>
+            <item row="2" column="2">
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item row="0" column="2">
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
            </layout>
            <zorder>butUpdateDB</zorder>
            <zorder>comboDBselect</zorder>
@@ -772,6 +886,8 @@
            <zorder>labelDatabase</zorder>
            <zorder>butViewTable</zorder>
            <zorder>line</zorder>
+           <zorder>horizontalSpacer_2</zorder>
+           <zorder>horizontalSpacer_4</zorder>
           </widget>
          </widget>
         </item>
@@ -787,7 +903,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>650</width>
+     <width>710</width>
      <height>22</height>
     </rect>
    </property>
@@ -807,9 +923,12 @@
      <string>&amp;Edit</string>
     </property>
     <addaction name="actionAddSpecies"/>
+    <addaction name="actionClearSp"/>
+    <addaction name="separator"/>
     <addaction name="actionDeleteSel"/>
     <addaction name="actionDeleteAll"/>
-    <addaction name="actionClearSp"/>
+    <addaction name="actionDeselectAll"/>
+    <addaction name="actionSelectAll"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
     <property name="title">
@@ -843,8 +962,35 @@
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>1</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="focusPolicy">
+    <enum>Qt::ClickFocus</enum>
+   </property>
    <property name="windowTitle">
     <string>toolBar</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolBar{spacing: 0px;}</string>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllToolBarAreas</set>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -859,11 +1005,31 @@
    <addaction name="actionAddSpecies"/>
    <addaction name="actionDeleteSel"/>
    <addaction name="actionDeleteAll"/>
+   <addaction name="actionSelectAll"/>
+   <addaction name="actionDeselectAll"/>
    <addaction name="actionExportChecklist"/>
   </widget>
   <widget class="QToolBar" name="toolBar_2">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
    <property name="windowTitle">
     <string>toolBar_2</string>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QToolBar_2{spacing: 0px;}</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
    </property>
    <attribute name="toolBarArea">
     <enum>TopToolBarArea</enum>
@@ -880,7 +1046,7 @@
   <action name="actionSelectExport">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/export.svg</normaloff>:/icons/export.svg</iconset>
+     <normaloff>:/icons/export.png</normaloff>:/icons/export.png</iconset>
    </property>
    <property name="text">
     <string>Select export file</string>
@@ -901,7 +1067,7 @@
   <action name="actionBatch">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/batch.svg</normaloff>:/icons/batch.svg</iconset>
+     <normaloff>:/icons/batch.png</normaloff>:/icons/batch.png</iconset>
    </property>
    <property name="text">
     <string>Batch export</string>
@@ -919,7 +1085,7 @@
   <action name="actionDeleteSel">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/delete.svg</normaloff>:/icons/delete.svg</iconset>
+     <normaloff>:/icons/delete.png</normaloff>:/icons/delete.png</iconset>
    </property>
    <property name="text">
     <string>Delete selected</string>
@@ -934,7 +1100,7 @@
   <action name="actionDeleteAll">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/delete_all.svg</normaloff>:/icons/delete_all.svg</iconset>
+     <normaloff>:/icons/delete_all.png</normaloff>:/icons/delete_all.png</iconset>
    </property>
    <property name="text">
     <string>Delete all</string>
@@ -948,7 +1114,7 @@
   </action>
   <action name="actionClearSp">
    <property name="text">
-    <string>Clear species</string>
+    <string>Clear taxa</string>
    </property>
    <property name="shortcut">
     <string>Esc</string>
@@ -957,7 +1123,7 @@
   <action name="actionHomepage">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/home.svg</normaloff>:/icons/home.svg</iconset>
+     <normaloff>:/icons/home.png</normaloff>:/icons/home.png</iconset>
    </property>
    <property name="text">
     <string>Homepage</string>
@@ -965,11 +1131,14 @@
    <property name="shortcut">
     <string>Ctrl+Shift+H</string>
    </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
   </action>
   <action name="actionReportIssues">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/bug_report.svg</normaloff>:/icons/bug_report.svg</iconset>
+     <normaloff>:/icons/bug_report.png</normaloff>:/icons/bug_report.png</iconset>
    </property>
    <property name="text">
     <string>Report issues</string>
@@ -979,6 +1148,9 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+R</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
    </property>
   </action>
   <action name="actionAbout">
@@ -1024,7 +1196,7 @@
   <action name="actionTropicos">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/tropicos.svg</normaloff>:/icons/tropicos.svg</iconset>
+     <normaloff>:/icons/tropicos.png</normaloff>:/icons/tropicos.png</iconset>
    </property>
    <property name="text">
     <string>Search Tropicos</string>
@@ -1042,7 +1214,7 @@
   <action name="actionSaveTxt">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/save_txt.svg</normaloff>:/icons/save_txt.svg</iconset>
+     <normaloff>:/icons/save_txt.png</normaloff>:/icons/save_txt.png</iconset>
    </property>
    <property name="text">
     <string>&amp;Save species txtfile</string>
@@ -1057,7 +1229,7 @@
   <action name="actionExportChecklist">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/execute_export.svg</normaloff>:/icons/execute_export.svg</iconset>
+     <normaloff>:/icons/execute_export.png</normaloff>:/icons/execute_export.png</iconset>
    </property>
    <property name="text">
     <string>Export checklist!</string>
@@ -1072,7 +1244,7 @@
   <action name="actionNomenMatch">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/nomenmatch.svg</normaloff>:/icons/nomenmatch.svg</iconset>
+     <normaloff>:/icons/nomenmatch.png</normaloff>:/icons/nomenmatch.png</iconset>
    </property>
    <property name="text">
     <string>Search NomenMatch</string>
@@ -1087,10 +1259,10 @@
   <action name="actionAddSpecies">
    <property name="icon">
     <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/addspecies.svg</normaloff>:/icons/addspecies.svg</iconset>
+     <normaloff>:/icons/addspecies_32x32.png</normaloff>:/icons/addspecies_32x32.png</iconset>
    </property>
    <property name="text">
-    <string>Add species</string>
+    <string>Add taxa</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Return</string>
@@ -1108,6 +1280,39 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+T</string>
+   </property>
+  </action>
+  <action name="actionDeselectAll">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/deselect.png</normaloff>:/icons/deselect.png</iconset>
+   </property>
+   <property name="text">
+    <string>Deselect all species</string>
+   </property>
+   <property name="toolTip">
+    <string>Deselect all taxa</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionSelectAll">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/select_all.png</normaloff>:/icons/select_all.png</iconset>
+   </property>
+   <property name="text">
+    <string>Select all taxa</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
    </property>
   </action>
  </widget>

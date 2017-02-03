@@ -5,6 +5,7 @@ import os
 import sys
 import platform
 from PyQt5.QtCore import Qt, QLocale, QTranslator
+from PyQt5.QtGui import QGuiApplication
 from PyQt5.QtWidgets import *
 from mainWindow import MainWindow
 
@@ -30,13 +31,15 @@ def maximizeWindow(self):
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
+    if platform.system() == 'Windows':
+        app.setStyle(QStyleFactory.create('WindowsVista'))
     # for retina
-    if platform.system == 'Darwin':
+    if platform.system() == 'Darwin':
         app.setAttribute(Qt.AA_EnableHighDpiScaling, True)
     myLocale = QLocale()
     trans = QTranslator()
     g = genlist_api.Genlist()
-    i18nQm = g.resource_path(os.path.join('i18n',myLocale.name(),'ui_main_' + myLocale.name() + '.qm'))
+    i18nQm = g.resource_path(os.path.join('i18n', 'checklister_' + myLocale.name() + '.qm'))
     trans.load(i18nQm)
     app.installTranslator(trans)
     window = MainWindow()

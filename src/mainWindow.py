@@ -57,11 +57,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             #self.butBlist.clicked.connect(self.browBaselist)
             # 批次輸出名錄
             self.butSlist.clicked.connect(self.browSlist)
-            # 把手動選擇的物種加到樹中
-            self.butAddToTree.clicked.connect(self.addToTree)
-            # Key events: 按 Enter 會自動將選擇的物種加到樹中
-            #self.lineSpecies.returnPressed.connect(self.addToTree)
-
 
             self.butGenerateSp.clicked.connect(self.genChecklist)
             #self.butSelectTempFile.clicked.connect(self.browTempfile)
@@ -103,6 +98,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # Menubar::Edit
             self.actionDeleteSel.triggered.connect(self.delSelectedItems)
             self.actionDeleteAll.triggered.connect(self.delAllTreeItems)
+            self.actionDeselectAll.triggered.connect(self.deselectTreeItmes)
+            self.actionSelectAll.triggered.connect(self.selectAllTreeItmes)
             self.actionClearSp.triggered.connect(self.lineSpecies.clear)
 
             # Menubar::View
@@ -118,6 +115,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.actionTropicos.triggered.connect(self.searchTropicos)
             self.actionNomenMatch.triggered.connect(self.searchNomenMatch)
             self.actionAddSpecies.triggered.connect(self.addToTree)
+
+            # Taxon TreeWidget
+            self.treeWidget.itemPressed.connect(self.getTaxonInfo)
+            self.treeWidget.currentItemChanged.connect(self.getTaxonInfo)
 
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -386,6 +387,59 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    def getTaxonInfo(self):
+        try:
+            item = self.treeWidget.currentItem()
+            if item:
+                fullname = self.g.fmtname(str(item.text(1)), doformat=True, format_type='html', split=False)
+                family_cname = str(item.text(0))
+                cname = str(item.text(2))
+                # check database
+                db_table = self.checkDB()
+                # get full information from data tables
+                QUERYSPINFO = '''
+                    SELECT
+                        n.family,
+                        n.cname, n.endemic, n.iucn_category, n.source
+                    FROM %s n
+                    WHERE n.cname = '%s';
+                ''' % (db_table, cname)
+                conn = sqlite3.connect(self.sqlite_db)
+                curs = conn.cursor()
+                curs.execute(QUERYSPINFO)
+                taxonRes = curs.fetchall()
+                family = taxonRes[0][0]
+                endemic = taxonRes[0][2]
+                taxonAttr = []
+                if endemic == 1:
+                    endemic = self.tr(u'<font color="#aaaaaa">(Endemic)</font>')
+                else:
+                    endemic = ''
+                iucn = taxonRes[0][3]
+                if iucn is not None:
+                    taxonAttr.append(iucn) 
+                source = taxonRes[0][4]
+                if source != '未知' and source !='原生':
+                    taxonAttr.append(source)
+                taxonAttr = '<br/>\n'.join(taxonAttr)
+                # export
+                taxonInfo = '''
+                <p class="info">
+                <h3>%s %s %s</h3>
+                Family: %s (%s)<br/>
+                Info:<br/>
+                %s<br/>
+                </p>
+                <p class="synonyms">
+                </p>
+                ''' % (fullname, cname, endemic, \
+                        family_cname, family, \
+                        taxonAttr)
+
+                self.textBrowserInfo.setText(taxonInfo)
+                self.statusBar().showMessage(cname)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
 
     def spCompleter(self):
         try:
@@ -445,6 +499,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 db_table = 'dao_jp_ylist'
             else:
                 db_table = 'dao_pnamelist'
+            self.statusBar().showMessage(self.tr('Current database table is %s' % db_table))
             return(db_table)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -527,7 +582,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             shutil.copy(self.checklist_db, self.orig_db)
             # use pycurl to update database
             curl = pycurl.Curl()
-            dburl = 'https://raw.github.com/mutolisp/namelist-generator/master/src/db/twnamelist.db'
+            dburl = 'https://raw.github.com/TaiBON/checklister/master/src/db/twnamelist.db'
             curl.setopt(pycurl.URL, dburl)
             curl.setopt(pycurl.FOLLOWLOCATION, True)
             #curl.perform()
@@ -537,10 +592,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 curl.perform()
             # update to latest
             shutil.copy(self.latest_db, self.checklist_db)
+            self.statusBar().showMessage(self.tr('Updating database, please wait for a while ...')) 
             QMessageBox.information(self, self.tr('Checklist generator'), self.tr('Update DB done!'))
-            #else:
-            #    QMessageBox.information(self, self.tr('Checklist generator'), self.tr('Update DB failed!')
-            #qApp.restoreOverrideCursor()
+            self.statusBar().showMessage(self.tr('Database updated!')) 
             curl.close()
             # update completer
             self.spCompleter()
@@ -592,35 +646,40 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             WHERE n.cname = s.cname order by family,name;
             ''' % db_table
             curs.execute(query_list)
-            fetched_results = curs.fetchall() 
+            fetched_results = curs.fetchall()
             # check phanton species (does not exist in our database)
-            query_not_exists_sp = ''' 
-                SELECT 
-                    distinct s.cname 
-                FROM 
-                    sample s LEFT OUTER JOIN %s n 
+            query_not_exists_sp = '''
+                SELECT
+                    distinct s.cname
+                FROM
+                    sample s LEFT OUTER JOIN %s n
                 ON s.cname=n.cname
                 WHERE n.cname is null;
-            ''' % db_table 
+            ''' % db_table
             curs.execute(query_not_exists_sp)
             no_sp = curs.fetchall()
-            nsp = []
+            nspList = []
             for i in no_sp:
-                nsp.append(i[0])
-            nsp = ', '.join(nsp)
-            if len(nsp) > 0:
+                nspList.append(i[0])
+            nspStr = ', '.join(nspList)
+            if len(nspList) > 0:
+                # save unmatched name to nomatch.txt
+                sDir = os.path.dirname(Slist)
+                noMatchFile = os.path.join(sDir, 'nomatch.txt')
+                with codecs.open(noMatchFile, 'w+', 'utf-8') as f:
+                    f.write(u'\n'.join(nspList))
                 QMessageBox.information(self, "Warning", \
-                        self.tr(u"The following species did not exist in our database, please check again: %s" % nsp))
+                        self.tr(u'''The following species did not exist in our database,and I stored it at %s. Please check again: %s''' % (noMatchFile, nspStr)))
             # clean the tree first
-            self.delAllTreeItems() 
-            for i in range(len(fetched_results)):
+            self.delAllTreeItems()
+            for i in range(0, len(fetched_results)):
                 item = QTreeWidgetItem()
                 item.setText(0, fetched_results[i][0])
                 item.setText(1, fetched_results[i][1])
                 item.setText(2, fetched_results[i][2])
                 self.treeWidget.addTopLevelItem(item)
         except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
+            QMessageBox.information(self, "Warning! [BrowSlist]", str(e))
 
     def bulkLoadToTree(self, local_name_list):
         try:
@@ -748,6 +807,19 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    def deselectTreeItmes(self):
+        try:
+            self.treeWidget.clearSelection()
+            pass
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def selectAllTreeItmes(self):
+        try:
+            self.treeWidget.selectAll()
+            pass
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
 
     def addToTree(self):
         try:
@@ -777,6 +849,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                         item.setText(2, species_item[0])
                         self.treeWidget.addTopLevelItem(item)
                     self.lineSpecies.clear()
+                    # print info in textBrowserInfo
                 else:
                     QMessageBox.information(self, "Warning", self.tr("The species %s did not exist in our database!") % species_item[0])
                     self.lineSpecies.clear()
