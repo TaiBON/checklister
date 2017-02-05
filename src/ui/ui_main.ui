@@ -300,7 +300,7 @@
                       </sizepolicy>
                      </property>
                      <property name="text">
-                      <string>Common name / scientific name</string>
+                      <string>Common name/scientific name/family</string>
                      </property>
                     </widget>
                    </item>
@@ -975,7 +975,7 @@
     <enum>Qt::ClickFocus</enum>
    </property>
    <property name="windowTitle">
-    <string>toolBar</string>
+    <string>Edit Toolbar</string>
    </property>
    <property name="styleSheet">
     <string notr="true">QToolBar{spacing: 0px;}</string>
@@ -1017,7 +1017,7 @@
     </sizepolicy>
    </property>
    <property name="windowTitle">
-    <string>toolBar_2</string>
+    <string>Search Toolbar</string>
    </property>
    <property name="autoFillBackground">
     <bool>true</bool>
