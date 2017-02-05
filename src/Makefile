@@ -7,6 +7,9 @@ all: mui translate binary
 mui:
 	$(PYUIC) ui/ui_main.ui -o ui_main.py
 	$(PYUIC) ui/ui_about.ui -o ui_about.py
+	$(PYUIC) ui/ui_combine.ui -o ui_combine.py
+	$(PYUIC) ui/ui_compare.ui -o ui_compare.py
+	$(PYUIC) ui/ui_format.ui -o ui_format.py
 	$(PYRCC) -o iconResources_rc.py iconResources.qrc
 
 translate:

@@ -447,6 +447,7 @@ class Genlist(object):
             openpyxl_wb = load_workbook(original, read_only=True)
             work_sheet = openpyxl_wb.get_sheet_names()[0]
             curr_sheet = openpyxl_wb[work_sheet]
+            # TODO deprecated function or class get_highest_row (Use the max_row property)
             max_col = curr_sheet.get_highest_column()
             max_row = curr_sheet.get_highest_row()
             # header
@@ -475,6 +476,61 @@ class Genlist(object):
            return(zhname)
         except BaseException as e:
             print(str(e))
+
+    def expCombList(self, sqlite_db, current_db_table, tobe_combined_lists, exportExcel):
+        """
+        Combine multiple checklists
+        ===========================
+
+
+        Arguments
+        ---------
+        tobo_combined_lists: list()
+        組合不同的名錄，並標示出各名錄間出現的物種
+
+        sqlite_db:
+
+
+        """
+        try:
+            tobe_combined_files = ','.join(tobe_combined_lists)
+            self.combineChecklists(sqlite_db, tobe_combined_lists)
+            #current_db_table = self.checkDB()
+            # print(current_db_table)
+            if current_db_table == 'dao_bnamelist':
+                db_fullname = 'name'
+                iucn = 'consv_status'
+                list_type = 'family'
+            else:
+                db_fullname = 'fullname'
+                iucn = 'iucn_category'
+                list_type = 'plant_type,family'
+                fetch_combined_sql = '''
+                SELECT 
+                    distinct 
+                    d.family,
+                    d.family_cname,
+                    d.%s,
+                    d.endemic,
+                    d.%s,
+                    u.*
+                FROM
+                    tmp_union u, %s d
+                WHERE
+                    u.local_name = d.cname order by %s
+                ''' % (db_fullname, iucn, current_db_table, list_type)
+                combined_table = self.dbExecuteSQL(fetch_combined_sql, sqlite_db, show_results=True)
+            header = ['family', 'family_cname', 'fullname', 'endemic', iucn, 'common name']
+            for i in range(len(tobe_combined_lists)):
+                fname = str.split(os.path.split(tobe_combined_lists[i])[1], '.')
+                header.insert(7+i, fname[0])
+            header = tuple(header)
+            combined_table.insert(0, header)
+            self.combined_checklists = combined_table
+            self.listToXls(combined_table, 2, exportExcel)
+        except BaseException as e:
+            print(str(e))
+
 
     def genEngine(self, dbfile, dbtable, inputfile, oformat='docx', ofile_prefix='output'):
         """

@@ -5,6 +5,9 @@ from PyQt5.QtGui import QIcon,QDesktopServices
 from PyQt5.QtWidgets import *
 from ui_main import Ui_MainWindow
 from ui_about import Ui_AboutDialog
+from ui_combine import Ui_CombineDialog
+from ui_compare import Ui_CompareDialog
+from ui_format import Ui_FormatDialog
 from platform import uname
 from subprocess import Popen
 import codecs
@@ -17,26 +20,13 @@ import shutil
 import sqlite3
 import sys
 import traceback
-
-
-
-
-class AboutDialog(QDialog, Ui_AboutDialog):
-
-     def __init__(self, parent=None):
-         self.MainWindow = MainWindow()
-         super(AboutDialog, self).__init__(parent)
-         self.setupUi(self)
-         self.okButton.clicked.connect(self.destroy)
-
-     def destroy(self):
-         self.close()
+import tempfile
 
 class MainWindow(QMainWindow, Ui_MainWindow):
 
     def __init__(self, parent = None):
         try:
-            super(MainWindow, self).__init__(parent)
+            super().__init__(parent)
             #self.sqlite_db = g.resource_path('twnamelist.db')
             g = genlist_api.Genlist()
             self.g = genlist_api.Genlist()
@@ -48,52 +38,46 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.orig_db = g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist_orig.db'))
             self.sqlite_db = self.checkLocalDB()
 
-            #self.ui = Ui_MainWindow()
             self.setupUi(self)
 
             #add icon
             self.setWindowIcon(QIcon('icons/checklister_small.png'))
 
-            #self.butBlist.clicked.connect(self.browBaselist)
-            # 批次輸出名錄
-            self.butSlist.clicked.connect(self.browSlist)
+            # set up variables
+            self.tempDir = tempfile.gettempdir()
+            self.tempExpFile = os.path.join(self.tempDir, 'checklister_exp_filename.txt')
+            # Clear temp files
+            self.clearOutputFilename()
 
-            self.butGenerateSp.clicked.connect(self.genChecklist)
-            #self.butSelectTempFile.clicked.connect(self.browTempfile)
-            self.butSelectOutput.clicked.connect(self.browOutput)
+            #self.butGenerateSp.clicked.connect(self.genChecklist)
             self.comboDBselect.activated.connect(self.spCompleter)
             self.butUpdateDB.clicked.connect(self.updateDB)
+
+            ### COMPLETER
             # enable completer to show matched species list
             self.spCompleter()
 
             # comparison actions
-            self.butCheckASelect.clicked.connect(self.selChecklistA)
-            self.butCheckBSelect.clicked.connect(self.selChecklistB)
-            self.butCompare.clicked.connect(self.checklistCompare)
-
-            # merge checklist actions
-            self.butMergeChecklists.clicked.connect(self.selMergedList)
+            #self.butCheckASelect.clicked.connect(self.selChecklistA)
+            #self.butCheckBSelect.clicked.connect(self.selChecklistB)
+            #self.butCompare.clicked.connect(self.checklistCompare)
 
             # combine checklist actions
-            self.butCombineChecklists.clicked.connect(self.selCombineList)
             self.combined_checklists = list()
 
-            # format excel scientific names
-            self.butSelectExcel.clicked.connect(self.selExcelFile)
-            self.butFormatName.clicked.connect(self.formatExcel)
-            #self.checkBox.isChecked
 
             # DBViewer
             self.dbViewer()
             self.butViewTable.clicked.connect(self.viewTable)
 
-
+            ### MENUBARS
             # load menubar
             self.statusBar().showMessage(self.tr('Ready'))
             # Menubar::File
-            self.actionExportChecklist.triggered.connect(self.genChecklist)
+            self.actionNewProject.triggered.connect(self.newProj)
             self.actionSelectExport.triggered.connect(self.browOutput)
             self.actionBatch.triggered.connect(self.browSlist)
+            self.actionExportChecklist.triggered.connect(self.genChecklist)
             self.actionQuit.triggered.connect(self.closeApp)
             # Menubar::Edit
             self.actionDeleteSel.triggered.connect(self.delSelectedItems)
@@ -116,10 +100,37 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.actionNomenMatch.triggered.connect(self.searchNomenMatch)
             self.actionAddSpecies.triggered.connect(self.addToTree)
 
+            self.actionMerge.triggered.connect(self.selMergedList)
+            self.actionCombine.triggered.connect(self.openCombDialog)
+            self.actionCompare.triggered.connect(self.openCompareDialog)
+            self.actionFormat.triggered.connect(self.openFormatDialog)
+
+            # actionGroups
+            self.setPlantDBActionGroup()
+
             # Taxon TreeWidget
             self.treeWidget.itemPressed.connect(self.getTaxonInfo)
             self.treeWidget.currentItemChanged.connect(self.getTaxonInfo)
 
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def newProj(self):
+        try:
+            self.clearOutputFilename()
+            self.lineSpecies.clear()
+            self.delAllTreeItems()
+            self.statusBar().showMessage(self.tr(u'Ready'))
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def setPlantDBActionGroup(self):
+        try:
+            actionGroupP = QActionGroup(self.menuPlants, exclusive = True)
+            actionGroupP.addAction(self.actionTaiwanVascularPlants)
+            actionGroupP.addAction(self.actionTaiwanFlora)
+            actionGroupP.addAction(self.actionJapanYlist)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -134,9 +145,34 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
            QMessageBox.information(self, "Warning", str(e))
 
+    def openCombDialog(self):
+        try:
+            self.CombineDialog = CombineDialog(self)
+            self.CombineDialog.setWindowFlags(self.CombineDialog.windowFlags() | Qt.WindowStaysOnTopHint)
+            self.CombineDialog.show()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def openCompareDialog(self):
+        try:
+            self.CompareDialog = CompareDialog(self)
+            self.CompareDialog.setWindowFlags(self.CompareDialog.windowFlags() | Qt.WindowStaysOnTopHint)
+            self.CompareDialog.show()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def openFormatDialog(self):
+        try:
+            self.FormatDialog = FormatDialog(self)
+            self.FormatDialog.setWindowFlags(self.FormatDialog.windowFlags() | Qt.WindowStaysOnTopHint)
+            self.FormatDialog.show()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
     def openAboutDialog(self):
         try:
             self.AboutDialog = AboutDialog(self)
+            self.AboutDialog.setWindowFlags(self.AboutDialog.windowFlags() | Qt.WindowStaysOnTopHint)
             self.AboutDialog.show()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -172,7 +208,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.lineSpecies.clear()
             if qKeyEvent.key() == Qt.Key_Delete or qKeyEvent.key() == Qt.Key_Backspace:
                 self.delSelectedItems()
-            # ctrl/command + s: save txt files
+           # ctrl/command + s: save txt files
             if qKeyEvent.key() == Qt.Key_S and (qKeyEvent.modifiers() & Qt.ControlModifier):
                 self.saveChecklistTxt()
             # ctrl/command + e: export checklist 輸出名錄
@@ -228,43 +264,14 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Warning", str(e))
             self.statusBar().showMessage(self.tr('Debug: butCheckPath error!'))
 
-    def selChecklistA(self):
-        try:
-            text_edit_path = self.butCheckPath(self.lineChecklistA.text())
-            checklist_A = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
-                    text_edit_path, self.tr("Text files (*.txt)"))[0]
-            if checklist_A is None or checklist_A is '':
-                return
-            self.lineChecklistA.setText(checklist_A)
-            #status_bar = "Loading " + checklist_A 
-            #self.statusBar().showMessage(self.tr(status_bar))
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
-
-    def selChecklistB(self):
-        try:
-            text_edit_path = self.butCheckPath(self.lineChecklistB.text())
-            checklist_B = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
-                    text_edit_path, self.tr("Text files (*.txt)"))[0]
-            if checklist_B is None or checklist_B is '':
-                return
-            self.lineChecklistB.setText(checklist_B)
-            #status_bar = "Loading " + checklist_B 
-            #self.statusBar().showMessage(self.tr(status_bar))
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
-
-    # load to be merged list 
+   # load to be merged list 
     def selMergedList(self):
         try:
-            #self.lineMergeChecklists.clear()
-            text_edit_path = self.butCheckPath(str(self.lineMergeChecklists.text()))
             tobe_merged_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to merge"), \
-                    text_edit_path, self.tr("Text files (*.txt)"))[0]
+                '', self.tr("Text files (*.txt)"))[0]
             if tobe_merged_lists is None or tobe_merged_lists == '':
                 return
             tobe_merged_files = ', '.join(tobe_merged_lists)
-            self.lineMergeChecklists.setText(tobe_merged_files)
             # load data into QTreeWidget
             m_lists = []
             for files in range(0,len(tobe_merged_lists)):
@@ -272,9 +279,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                      m_lists += f.read().splitlines()
                 f.close()
             m_lists_uniq = list(set(m_lists))
-            # if self.lineTempFile.text() == '':
-            #     self.lineTempFile.setText(os.path.join(QDir.homePath(), 'merged_checklists.txt'))
-            # self.checklistTextFile(os.path.join(text_edit_path, 'merged_checklists.txt')
             if len(m_lists_uniq) >= 1:
                 self.bulkLoadToTree(m_lists_uniq)
             else:
@@ -284,20 +288,27 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Warning", str(e))
 
     # load to be combined list
-    def selCombineList(self):
+    def execCombList(self, tobe_combined_lists):
         """
         Combine multiple checklists
         ===========================
+
+        組合不同的名錄，並標示出各名錄間出現的物種
+
+        TODO
+        ----
+        整合到 genlist_api 中
+
         """
         try:
             #self.lineCombineChecklists.clear()
-            text_edit_path = self.butCheckPath(self.lineCombineChecklists.text())
-            tobe_combined_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to combine"), \
-                    text_edit_path, self.tr("Text files (*.txt)"))[0]
-            if tobe_combined_lists is None or tobe_combined_lists is '':
-                return
-            tobe_combined_files = ', '.join(tobe_combined_lists)
-            self.lineCombineChecklists.setText(tobe_combined_files)
+            #text_edit_path = self.butCheckPath(self.lineCombineChecklists.text())
+            # tobe_combined_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to combine"), \
+            #         self.home, self.tr("Text files (*.txt)"))[0]
+            # if tobe_combined_lists is None or tobe_combined_lists is '':
+            #     return
+            tobe_combined_files = ','.join(tobe_combined_lists)
+            #self.lineCombineChecklists.setText(tobe_combined_files)
             g = genlist_api.Genlist()
             g.combineChecklists(self.sqlite_db, tobe_combined_lists)
             current_db_table = self.checkDB()
@@ -318,32 +329,29 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     d.%s,
                     d.endemic,
                     d.%s,
-                    u.* 
-                FROM 
+                    u.*
+                FROM
                     tmp_union u, %s d
                 WHERE
                     u.local_name = d.cname order by %s
                 ''' % (db_fullname, iucn, current_db_table, list_type)
                 combined_table = g.dbExecuteSQL(fetch_combined_sql, self.sqlite_db, show_results=True)
-            print(combined_table)
             header = ['family', 'family_cname', 'fullname', 'endemic', iucn, 'common name']
             for i in range(len(tobe_combined_lists)):
                 fname = str.split(os.path.split(tobe_combined_lists[i])[1], '.')
                 header.insert(7+i, fname[0])
             header = tuple(header)
             combined_table.insert(0, header)
-            if self.lineOutputFilename.text() is None or self.lineOutputFilename.text() == '':
-                export_filename = os.path.join(QDir.homePath(), 'combined_checklists.xlsx')
-                self.lineOutputFilename.setText(export_filename)
-            else:
-                export_filename = self.lineOutputFilename.text()
             self.combined_checklists = combined_table
-            print(self.combined_checklists)
-            # clear temp file for local names & Slist
-            #self.lineTempFile.clear()
-            self.lineSlist.clear()
+            # choose file to export
+            combExcelFile = QFileDialog.getSaveFileName(self, self.tr(u"Save combined list as:"), \
+                    self.home, self.tr("Excel files (*.xlsx)"))[0]
+            combStatus = self.g.listToXls(combined_table, 2, combExcelFile)
+            #QMessageBox.information(self, "Warning", self.tr(u'Something went wrong when combining checklists!'))
+            self.statusBar().showMessage(self.tr(u'Combing %s to %s' % (tobe_combined_files, combExcelFile)))
+
             # load data into QTreeWidget
-            self.delAllTreeItems() 
+            self.delAllTreeItems()
             for i in range(1,len(combined_table)):
                 item = QTreeWidgetItem()
                 # family_cname, name, common name
@@ -351,39 +359,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 item.setText(1, combined_table[i][2])
                 item.setText(2, combined_table[i][5])
                 self.treeWidget.addTopLevelItem(item)
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
-
-    def selExcelFile(self):
-        try:
-            #self.lineExcelFilePath.clear()
-            text_edit_path = self.butCheckPath(self.lineExcelFilePath.text())
-            orig_excel_file = QFileDialog.getOpenFileName(self, self.tr(u"Select excel files"), \
-                    text_edit_path, self.tr("Excel files (*.xls *.xlsx)"))[0]
-            if orig_excel_file is None or orig_excel_file is '':
-                return
-            self.lineExcelFilePath.setText(orig_excel_file)
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
-
-    def formatExcel(self):
-        try:
-            orig_excel_file = self.lineExcelFilePath.text()
-            ncol = self.lineExcelColnum.text()
-            if orig_excel_file is None or orig_excel_file is '':
-                QMessageBox.information(self, "Warning", self.tr(u"Please input the excel filename"))
-            elif ncol is None or ncol is '':
-                QMessageBox.information(self, "Warning", self.tr(u"Please input the column number of scientific names"))
-            else:
-                # get filename and os path
-                base_path = os.path.split(orig_excel_file)[0]
-                excel_filename = str.split(os.path.split(orig_excel_file)[1], '.')[0]
-                formatted_excel_filename = excel_filename + '_formatted.xlsx'
-                ncol = int(self.lineExcelColnum.text())
-                formatted_filepath = os.path.join(base_path, formatted_excel_filename)
-                self.g.fmtExcelNames(original=orig_excel_file, outputfile=formatted_filepath, \
-                        name_col_num=ncol)
-                QMessageBox.information(self, "Notice", self.tr(u"Formatted excel file:  %s done!" % formatted_filepath))
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -504,60 +479,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
-    def checklistCompare(self):
-        try:
-            # 1. check for A and B
-            checklist_A = self.lineChecklistA.text()
-            checklist_B = self.lineChecklistB.text()
-            if checklist_A == '':
-                QMessageBox.information(self, "Warning", self.tr("Please input checklist A"))
-            elif checklist_B == '':
-                QMessageBox.information(self, "Warning", self.tr("Please input checklist B"))
-            else:
-                with codecs.open(checklist_A, 'r', 'utf-8') as f:
-                    self.a = f.read().splitlines()
-                f.close()
-                with codecs.open(checklist_B, 'r', 'utf-8') as f:
-                    self.b = f.read().splitlines()
-                f.close()
-                # get different types (difference, intersection, union)
-                ab_idx = self.comboABDifference.currentIndex()
-                if self.a == self.b:
-                    QMessageBox.information(self, "Warning", self.tr("A and B are identical!"))
-                else:
-                    if ab_idx == 0:
-                        ab_type = ['ab', 'diff']
-                        compare_result = set(self.a).difference(self.b)
-                    elif ab_idx == 1:
-                        ab_type = ['ba', 'diff']
-                        compare_result = set(self.b).difference(self.a)
-                    elif ab_idx == 2:
-                        ab_type = ['ab', 'intersection']
-                        compare_result = set(self.a).intersection(self.b)
-                    elif ab_idx == 3:
-                        ab_type = ['ab', 'union']
-                        compare_result = set(self.a).union(self.b)
-                    else:
-                        ab_type = ['ab', 'diff']
-                        compare_result = set(self.a).difference(self.b)
-                        compare_result = set(self.a).difference(self.b)
-                    # set temporary checklist file
-                    a_path = os.path.split(checklist_A)[0]
-                    a_filename = os.path.split(checklist_A)[1].split('.')[0]
-                    b_filename = os.path.split(checklist_B)[1].split('.')[0]
-                    tmp_filename = a_filename + '_' + b_filename + '-' + ab_type[0] + '_' + ab_type[1] + '.txt'
-                    #self.lineTempFile.setText(os.path.join(a_path, tmp_filename))
-                    compare_result = list(compare_result)
-                    # load compared list into QTreeWidget
-                    if len(compare_result) >= 1:
-                        self.bulkLoadToTree(compare_result)
-                    else:
-                        QMessageBox.information(self, "Warning", self.tr("There is no common species between checklist A and B"))
-                        self.delAllTreeItems()
-
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
-
     def checkLocalDB(self):
         try:
             g = genlist_api.Genlist()
@@ -604,15 +525,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def browSlist(self):
         try:
             #self.lineSlist.clear()
-            text_edit_path = self.butCheckPath(self.lineSlist.text())
             Slist = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
-                    text_edit_path, self.tr("Text files (*.txt *.csv)"))[0]
+                    self.home, self.tr("Text files (*.txt *.csv)"))[0]
             if Slist is None or Slist is '':
                 return
-            self.lineSlist.setText(Slist)
-            info_message = u'''When you load species file (only common names) to \
+            info_message = self.tr(u'''When you load species file (only common names) to \
             generate checklist, the "checklist generator" will save a temporary file (filename_temp.txt/csv) within the same directory, \
-            and load this species file into checklist below. You can add/remove species to generate checklist.'''
+            and load this species file into checklist below. You can add/remove species to generate checklist.''')
             QMessageBox.information(self, "Info", self.tr(info_message))
             Slist_str = str.split(str(Slist), '.')
             Slist_modified = Slist_str[0] + '_temp.' + Slist_str[1]
@@ -721,13 +640,17 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             ''' % db_table 
             curs.execute(query_not_exists_sp)
             no_sp = curs.fetchall()
-            nsp = []
+            nspList = []
             for i in no_sp:
-                nsp.append(i[0])
-            nsp = ', '.join(nsp)
-            if len(nsp) > 0:
+                nspList.append(i[0])
+            nspStr = ', '.join(nspList)
+            if len(nspList) > 0:
+                # save unmatched name to nomatch.txt
+                noMatchFile = os.path.join(self.home, 'nomatch.txt')
+                with codecs.open(noMatchFile, 'w+', 'utf-8') as f:
+                    f.write(u'\n'.join(nspList))
                 QMessageBox.information(self, "Warning", \
-                        self.tr(u"The following species did not exist in our database, please check again: %s" % nsp))
+                        self.tr(u"The following species did not exist in our database. I store it at %s. Please check again: %s" % (noMatchFile, nspStr)))
             self.delAllTreeItems() 
             for i in range(len(fetched_results)):
                 item = QTreeWidgetItem()
@@ -739,17 +662,62 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Warning", str(e))
 
     def browOutput(self):
+        '''
+        browOutput
+        ==========
+
+        選擇輸出名錄的檔名(.docx/.odt/.xlsx)
+
+        選擇之後會把要儲存的檔案路徑存在 ${TMP}/checklister_exp_filename.txt 中
+
+        Return
+        ------
+        str tempExpFile: 輸出的暫存檔案，內容為選擇的輸出檔案
+        '''
         try:
-            #self.lineOutputFilename.clear()
-            text_edit_path = self.butCheckPath(self.lineOutputFilename.text())
+            self.clearOutputFilename()
             saveOutputFile = QFileDialog.getSaveFileName(self, self.tr(u"Save file as:"), \
-                    text_edit_path, self.tr("Text files (*.docx *.odt *.xlsx)"))[0]
+                    self.home, self.tr("Text files (*.docx *.odt *.xlsx)"))[0]
             if saveOutputFile is None or saveOutputFile is '':
                 return
-            self.lineOutputFilename.setText(saveOutputFile)
-            # automatically save checklist as a text file
-            #txtFilePath = self.checklistTextFile(saveOutputFile)
-            #self.lineTempFile.setText(txtFilePath)
+            with codecs.open(self.tempExpFile, 'w+', 'utf-8') as f:
+                f.write(saveOutputFile)
+            self.statusBar().showMessage(self.tr(u'Export file is: %s' % saveOutputFile))
+            return(self.tempExpFile)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def outputFilename(self):
+        '''
+        outputFilename
+        ==============
+        輸出名錄的檔名
+        '''
+        try:
+            if not os.path.exists(self.tempExpFile):
+                self.browOutput()
+                with codecs.open(self.tempExpFile, 'r', 'utf-8') as f:
+                    outputFile = f.read()
+                return(outputFile)
+            else:
+                with codecs.open(self.tempExpFile, 'r', 'utf-8') as f:
+                    outputFile = f.read()
+                return(outputFile)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def clearOutputFilename(self):
+        '''
+        clearOutputFilename
+        ===================
+        清掉輸出名錄檔名暫存檔
+
+        '''
+        try:
+            if os.path.exists(self.tempExpFile):
+                os.remove(self.tempExpFile)
+            else:
+                pass
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -823,6 +791,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def addToTree(self):
         try:
+            print(self.lineSpecies.text())
             if self.lineSpecies.text() is '':
                 QMessageBox.information(self, "Warning", self.tr("Please input the species name!"))
                 return
@@ -991,23 +960,27 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # 取得既有的名錄
             tree_item = self.getTreeItems(self.treeWidget)
             # 先確認看一下有沒有輸出的檔名
-            if self.lineOutputFilename.text() == '':
-                QMessageBox.information(self, "Warning", self.tr("Please input export file name!"))
+            tempDir = tempfile.gettempdir()
+            if not os.path.exists(self.tempExpFile):
+                self.browOutput()
+            with codecs.open(self.tempExpFile, 'r', 'utf-8') as f:
+                expFile = f.read()
+            # 儲存的文字檔案
+            savedTxtList = self.checklistTextFile(expFile)
+            # 檢查有沒有同檔名存在，如果有的話另外存成 $filename.bak
+            if os.path.exists(savedTxtList) == True:
+                ofile_abspath = self.g.resource_path(savedTxtList)
+                shutil.copyfile(ofile_abspath, ofile_abspath + '.bak')
+                os.remove(ofile_abspath)
             else:
-                # 儲存的文字檔案
-                savedTxtList = self.checklistTextFile(self.lineOutputFilename.text())
-                # 檢查有沒有同檔名存在，如果有的話另外存成 $filename.bak
-                if os.path.exists(savedTxtList) == True:
-                    ofile_abspath = self.g.resource_path(savedTxtList)
-                    shutil.copyfile(ofile_abspath, ofile_abspath + '.bak')
-                    os.remove(ofile_abspath)
-                else:
-                    pass
-                with codecs.open(savedTxtList, 'w+', 'utf-8') as f:
-                    for sp in tree_item:
-                        f.write("%s\n" % sp)
-                f.close()
-                self.statusBar().showMessage(self.tr("Saving checklist to %s " % savedTxtList))
+                pass
+            with codecs.open(savedTxtList, 'w+', 'utf-8') as f:
+                for sp in tree_item:
+                    f.write("%s\n" % sp)
+            f.close()
+            return(savedTxtList)
+            self.statusBar().showMessage(self.tr("Saving checklist to %s " % savedTxtList)) 
+
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -1020,26 +993,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             tree_item = self.getTreeItems(self.treeWidget)
             # getdbtable
             db_table = self.checkDB()
-            export_filename = self.lineOutputFilename.text()
-            if self.lineOutputFilename.text() == '':
-                QMessageBox.information(self, "Warning", self.tr("Please input export file name "))
-            #elif self.lineTempFile.text() == '' or self.lineSlist == '':
-            #    if self.lineCombineChecklists.text() != '':
-            #        export_combined_checklist_file = self.lineOutputFilename.text()
-            #        g.listToXls(self.combined_checklists, 2, export_combined_checklist_file)
-            #        QMessageBox.information(self, self.tr('Checklist generator'), \
-            #            self.tr("Export checklist to '%s' done!" % export_filename))
-            #        self.lineCombineChecklists.clear()
-            #    else:
-            #        QMessageBox.information(self, "Warning", self.tr("Please input the file to store checklist file"))
-            else:
-                #saved_list = str(self.lineTempFile.text())
-                saved_list = self.checklistTextFile(self.lineOutputFilename.text())
-                with codecs.open(saved_list, 'w+', 'utf-8') as f:
-                    for sp in tree_item:
-                        f.write("%s\n" % sp)
-                f.close()
-                ofile = str(self.lineOutputFilename.text())
+            ofile = self.outputFilename()
+            if ofile:
+                # 儲存成文字檔
+                savedTxtList = self.saveChecklistTxt()
+
                 if os.path.exists(ofile) == True:
                     ofile_abspath = g.resource_path(ofile)
                     shutil.copyfile(ofile_abspath, ofile_abspath+'.bak')
@@ -1051,20 +1009,244 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 curs.execute('DROP TABLE IF EXISTS sample;')
                 conn.commit()
                 # export outputfile
-                g.genEngine(self.sqlite_db, db_table, saved_list, output_flist[1], output_flist[0])
+                g.genEngine(self.sqlite_db, db_table, savedTxtList, output_flist[1], output_flist[0])
                 QMessageBox.information(self, self.tr('Checklist generator'), \
-                        self.tr("Export checklist to '%s' done!" % export_filename))
+                        self.tr("Export checklist to '%s' done!" % ofile))
+
+                # 輸出後清除暫存檔
+                self.clearOutputFilename()
+
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
-    # def browTempfile(self):
-    #     try:
-    #         #self.lineTempFile.clear()
-    #         text_edit_path = self.butCheckPath(self.lineTempFile.text())
-    #         saveTempFile = QFileDialog.getSaveFileName(self, self.tr(u"Save File as ... "), text_edit_path, \
-    #                 self.tr("Text files (*.txt *.csv)"))[0]
-    #         if saveTempFile is None or saveTempFile is '':
-    #             return
-    #         self.lineTempFile.setText(saveTempFile) 
-    #     except BaseException as e:
-    #         MessageBox.information(self, "Warning", str(e))
+class AboutDialog(QDialog, Ui_AboutDialog):
+
+     def __init__(self, mainWindow):
+         #super(AboutDialog, self).__init__(parent)
+         super().__init__()
+         self.setupUi(self)
+         self.okButton.clicked.connect(self.destroy)
+
+     def destroy(self):
+         self.close()
+
+#### Combine Dialog 
+class CombineDialog(QDialog, Ui_CombineDialog):
+
+    def __init__(self, MainWindow):
+        try:
+            super().__init__()
+            self.setupUi(self)
+
+            self.home = os.path.expanduser("~")
+            self.g = genlist_api.Genlist()
+            self.dbTable = MainWindow.checkDB()
+            self.sqlite_db = MainWindow.checkLocalDB()
+
+            self.butSelCombList.clicked.connect(self.selTobeCombFiles)
+            self.butSelExcelFile.clicked.connect(self.selExportExcel)
+            self.butCombine.clicked.connect(self.execCombine)
+            self.butClose.clicked.connect(self.destroy)
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+
+    def selTobeCombFiles(self):
+        # 待組合的名錄
+        try:
+            tobe_combined_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to combine"), \
+                self.home, self.tr("Text files (*.txt)"))[0]
+            if tobe_combined_lists is None or tobe_combined_lists is '':
+                return
+            else:
+                self.textChecklists.setText(','.join(tobe_combined_lists))
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def selExportExcel(self):
+        try:
+            combExcelFile = QFileDialog.getSaveFileName(self, self.tr(u"Save combined list as:"), \
+                self.home, self.tr("Excel files (*.xlsx)"))[0]
+            if combExcelFile is None or combExcelFile is '':
+                return
+            else:
+                self.textExpExcel.setText(combExcelFile)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def execCombine(self):
+        try:
+            combChecklists = str(self.textChecklists.text()).split(',')
+            combExcelFile = str(self.textExpExcel.text())
+            print([combChecklists, combExcelFile])
+            if combChecklists is None or combExcelFile is None:
+                QMessageBox.information(self, "Warning", self.tr(u'Checklists and excel file should not be empty!'))
+                return
+            else:
+                self.g.expCombList(sqlite_db = self.sqlite_db , current_db_table = self.dbTable, \
+                    tobe_combined_lists = combChecklists, exportExcel = combExcelFile)
+                QMessageBox.information(self, "Warning", self.tr(u'Combing checklists done!'))
+                self.textChecklists.clear()
+                self.textExpExcel.clear()
+                self.destroy()
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def destroy(self):
+        self.close()
+
+class CompareDialog(QDialog, Ui_CompareDialog):
+
+    def __init__(self, MainWindow):
+        try:
+            super().__init__()
+            self.setupUi(self)
+
+            self.home = os.path.expanduser("~")
+            self.bulkLoadToTree = MainWindow.bulkLoadToTree
+            self.delAllTreeItems = MainWindow.delAllTreeItems
+            self.butCheckASelect.clicked.connect(self.selChecklistA)
+            self.butCheckBSelect.clicked.connect(self.selChecklistB)
+            self.butCompare.clicked.connect(self.execCompare)
+            self.butClose.clicked.connect(self.destroy)
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def selChecklistA(self):
+        try:
+            checklist_A = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
+                    self.home, self.tr("Text files (*.txt)"))[0]
+            if checklist_A is None or checklist_A is '':
+                return
+            self.lineChecklistA.setText(checklist_A)
+            #status_bar = "Loading " + checklist_A 
+            #self.statusBar().showMessage(self.tr(status_bar))
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def selChecklistB(self):
+        try:
+            checklist_B = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
+                    self.home, self.tr("Text files (*.txt)"))[0]
+            if checklist_B is None or checklist_B is '':
+                return
+            self.lineChecklistB.setText(checklist_B)
+            #status_bar = "Loading " + checklist_B 
+            #self.statusBar().showMessage(self.tr(status_bar))
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def execCompare(self):
+        try:
+            # 1. check for A and B
+            checklist_A = self.lineChecklistA.text()
+            checklist_B = self.lineChecklistB.text()
+            if checklist_A == '':
+                QMessageBox.information(self, "Warning", self.tr("Please input checklist A"))
+            elif checklist_B == '':
+                QMessageBox.information(self, "Warning", self.tr("Please input checklist B"))
+            else:
+                with codecs.open(checklist_A, 'r', 'utf-8') as f:
+                    self.a = f.read().splitlines()
+                f.close()
+                with codecs.open(checklist_B, 'r', 'utf-8') as f:
+                    self.b = f.read().splitlines()
+                f.close()
+                # get different types (difference, intersection, union)
+                ab_idx = self.comboABDifference.currentIndex()
+                if self.a == self.b:
+                    QMessageBox.information(self, "Warning", self.tr("A and B are identical!"))
+                else:
+                    if ab_idx == 0:
+                        ab_type = ['ab', 'diff']
+                        compare_result = set(self.a).difference(self.b)
+                    elif ab_idx == 1:
+                        ab_type = ['ba', 'diff']
+                        compare_result = set(self.b).difference(self.a)
+                    elif ab_idx == 2:
+                        ab_type = ['ab', 'intersection']
+                        compare_result = set(self.a).intersection(self.b)
+                    elif ab_idx == 3:
+                        ab_type = ['ab', 'union']
+                        compare_result = set(self.a).union(self.b)
+                    else:
+                        ab_type = ['ab', 'diff']
+                        compare_result = set(self.a).difference(self.b)
+                        compare_result = set(self.a).difference(self.b)
+                    # set temporary checklist file
+                    a_path = os.path.split(checklist_A)[0]
+                    a_filename = os.path.split(checklist_A)[1].split('.')[0]
+                    b_filename = os.path.split(checklist_B)[1].split('.')[0]
+                    tmp_filename = a_filename + '_' + b_filename + '-' + ab_type[0] + '_' + ab_type[1] + '.txt'
+                    #self.lineTempFile.setText(os.path.join(a_path, tmp_filename))
+                    compare_result = list(compare_result)
+                    print(compare_result)
+                    self.delAllTreeItems()
+                    # load compared list into QTreeWidget
+                    if len(compare_result) >= 1:
+                        self.bulkLoadToTree(compare_result)
+                        self.destroy()
+                    else:
+                        QMessageBox.information(self, "Warning", self.tr("There is no common species between checklist A and B"))
+                        MainWindow.delAllTreeItems()
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+
+    def destroy(self):
+        self.close()
+
+class FormatDialog(QDialog, Ui_FormatDialog):
+
+    def __init__(self, MainWindow):
+        try:
+            super().__init__()
+            self.setupUi(self)
+            self.home = os.path.expanduser("~")
+            self.g = genlist_api.Genlist()
+
+            self.butSelectExcel.clicked.connect(self.selExcelFile)
+            self.butFormatName.clicked.connect(self.formatName)
+            self.butClose.clicked.connect(self.destroy)
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def selExcelFile(self):
+        try:
+            #self.lineExcelFilePath.clear()
+            orig_excel_file = QFileDialog.getOpenFileName(self, self.tr(u"Select excel files"), \
+                    self.home, self.tr("Excel files (*.xls *.xlsx)"))[0]
+            if orig_excel_file is None or orig_excel_file is '':
+                return
+            self.lineExcelFilePath.setText(orig_excel_file)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def formatName(self):
+        try:
+            orig_excel_file = self.lineExcelFilePath.text()
+            ncol = self.lineExcelColnum.text()
+            if orig_excel_file is None or orig_excel_file is '':
+                QMessageBox.information(self, "Warning", self.tr(u"Please input the excel filename"))
+            elif ncol is None or ncol is '':
+                QMessageBox.information(self, "Warning", self.tr(u"Please input the column number of scientific names"))
+            else:
+                # get filename and os path
+                base_path = os.path.split(orig_excel_file)[0]
+                excel_filename = str.split(os.path.split(orig_excel_file)[1], '.')[0]
+                formatted_excel_filename = excel_filename + '_formatted.xlsx'
+                ncol = int(self.lineExcelColnum.text())
+                formatted_filepath = os.path.join(base_path, formatted_excel_filename)
+                self.g.fmtExcelNames(original=orig_excel_file, outputfile=formatted_filepath, \
+                        name_col_num=ncol)
+                QMessageBox.information(self, "Notice", self.tr(u"Formatted excel file:  %s done!" % formatted_filepath))
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def destroy(self):
+        self.close()

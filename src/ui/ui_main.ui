@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>710</width>
-    <height>683</height>
+    <width>678</width>
+    <height>643</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -51,12 +51,12 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>686</width>
-         <height>608</height>
+         <width>654</width>
+         <height>524</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_4">
-        <item row="1" column="0">
+        <item row="0" column="0">
          <widget class="QTabWidget" name="tabWidget">
           <property name="minimumSize">
            <size>
@@ -92,7 +92,7 @@
            <attribute name="title">
             <string>Taxa selection</string>
            </attribute>
-           <layout class="QGridLayout" name="gridLayout_7">
+           <layout class="QGridLayout" name="gridLayout_3">
             <item row="0" column="0">
              <widget class="QFrame" name="frame">
               <property name="frameShape">
@@ -105,20 +105,49 @@
                <number>0</number>
               </property>
               <layout class="QGridLayout" name="gridLayout_2">
-               <item row="0" column="0">
-                <widget class="QLabel" name="labelExportFile">
+               <item row="1" column="0" colspan="2">
+                <widget class="QLineEdit" name="lineSpecies">
                  <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                   <horstretch>0</horstretch>
+                   <verstretch>1</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="baseSize">
+                  <size>
+                   <width>0</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <family>Arial</family>
+                   <pointsize>18</pointsize>
+                   <italic>false</italic>
+                  </font>
+                 </property>
+                 <property name="toolTip">
+                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QLabel" name="label_5">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
                    <horstretch>0</horstretch>
                    <verstretch>0</verstretch>
                   </sizepolicy>
                  </property>
                  <property name="text">
-                  <string>Select Export File</string>
+                  <string>Common name/scientific name/family</string>
                  </property>
                 </widget>
                </item>
-               <item row="5" column="0" colspan="3">
+               <item row="4" column="0" colspan="2">
                 <widget class="QTreeWidget" name="treeWidget">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -145,7 +174,7 @@
                   <bool>false</bool>
                  </property>
                  <property name="dragDropMode">
-                  <enum>QAbstractItemView::NoDragDrop</enum>
+                  <enum>QAbstractItemView::DragDrop</enum>
                  </property>
                  <property name="defaultDropAction">
                   <enum>Qt::MoveAction</enum>
@@ -206,417 +235,7 @@
                  </column>
                 </widget>
                </item>
-               <item row="0" column="2">
-                <widget class="QPushButton" name="butSelectOutput">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="toolTip">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="text">
-                  <string>Select file ...</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="1">
-                <widget class="QLineEdit" name="lineOutputFilename">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string/>
-                 </property>
-                </widget>
-               </item>
-               <item row="1" column="0">
-                <widget class="QLabel" name="labelBatch">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>Batch Export File</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="6" column="2">
-                <widget class="QPushButton" name="butGenerateSp">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="styleSheet">
-                  <string notr="true">QPushButton#butGenerateSp{
-	qproperty-icon: url(:images/export.png);
-}</string>
-                 </property>
-                 <property name="text">
-                  <string>Export</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="2" column="0" colspan="3">
-                <widget class="QTabWidget" name="tabWidget_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Arial</family>
-                   <stylestrategy>PreferDefault</stylestrategy>
-                  </font>
-                 </property>
-                 <property name="currentIndex">
-                  <number>0</number>
-                 </property>
-                 <property name="usesScrollButtons">
-                  <bool>true</bool>
-                 </property>
-                 <widget class="QWidget" name="tabSelect">
-                  <attribute name="title">
-                   <string>Select taxa</string>
-                  </attribute>
-                  <layout class="QGridLayout" name="gridLayout_9">
-                   <item row="2" column="0">
-                    <widget class="QLabel" name="label_5">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="text">
-                      <string>Common name/scientific name/family</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QLineEdit" name="lineSpecies">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-                       <horstretch>0</horstretch>
-                       <verstretch>1</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="baseSize">
-                      <size>
-                       <width>0</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <family>Arial</family>
-                       <pointsize>18</pointsize>
-                       <italic>false</italic>
-                      </font>
-                     </property>
-                     <property name="toolTip">
-                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                     </property>
-                     <property name="autoFillBackground">
-                      <bool>false</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <spacer name="horizontalSpacer_5">
-                     <property name="orientation">
-                      <enum>Qt::Horizontal</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>40</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                  </layout>
-                 </widget>
-                 <widget class="QWidget" name="tabMerge">
-                  <attribute name="title">
-                   <string>Merge</string>
-                  </attribute>
-                  <layout class="QGridLayout" name="gridLayout_5">
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="labelMerge">
-                     <property name="text">
-                      <string>To be merged checklists</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QLineEdit" name="lineMergeChecklists"/>
-                   </item>
-                   <item row="1" column="1">
-                    <widget class="QPushButton" name="butMergeChecklists">
-                     <property name="text">
-                      <string>Select file ...</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="1">
-                    <widget class="QPushButton" name="butMerge">
-                     <property name="text">
-                      <string>Merge</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                 <widget class="QWidget" name="tabCompare">
-                  <attribute name="title">
-                   <string>Compare</string>
-                  </attribute>
-                  <layout class="QGridLayout" name="gridLayout_6">
-                   <item row="1" column="1">
-                    <widget class="QPushButton" name="butCheckASelect">
-                     <property name="text">
-                      <string>Select file ...</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="5">
-                    <widget class="QPushButton" name="butCheckBSelect">
-                     <property name="text">
-                      <string>Select file ...</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="QPushButton" name="butCompare">
-                     <property name="text">
-                      <string>Compare</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QComboBox" name="comboABDifference">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="MinimumExpanding">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>A differ B (A - B)</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>B differ A (B - A)</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>A intersects B (A ∩ B )</string>
-                      </property>
-                     </item>
-                     <item>
-                      <property name="text">
-                       <string>A union B (A ∪ B)</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                   <item row="1" column="3">
-                    <spacer name="horizontalSpacer_3">
-                     <property name="orientation">
-                      <enum>Qt::Horizontal</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>40</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                   <item row="1" column="2">
-                    <spacer name="horizontalSpacer">
-                     <property name="orientation">
-                      <enum>Qt::Horizontal</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>40</width>
-                       <height>20</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                   <item row="1" column="4">
-                    <widget class="QLineEdit" name="lineChecklistB">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="4">
-                    <widget class="QLabel" name="labelChecklistB">
-                     <property name="text">
-                      <string>Checklist B</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QLineEdit" name="lineChecklistA">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="labelChecklistA">
-                     <property name="text">
-                      <string>Checklist A</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                 <widget class="QWidget" name="tabCombine">
-                  <attribute name="title">
-                   <string>Combine</string>
-                  </attribute>
-                  <layout class="QGridLayout" name="gridLayout_12">
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="labelCombine">
-                     <property name="text">
-                      <string>To be combined checklists</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QLineEdit" name="lineCombineChecklists"/>
-                   </item>
-                   <item row="1" column="1">
-                    <widget class="QPushButton" name="butCombineChecklists">
-                     <property name="text">
-                      <string>Select file ...</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                 <widget class="QWidget" name="tab_3">
-                  <attribute name="title">
-                   <string>Format</string>
-                  </attribute>
-                  <layout class="QGridLayout" name="gridLayout_3">
-                   <item row="3" column="1">
-                    <widget class="QLineEdit" name="lineExcelColnum">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="text">
-                      <string>1</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="2">
-                    <widget class="QCheckBox" name="checkBox">
-                     <property name="text">
-                      <string>with header</string>
-                     </property>
-                     <property name="checked">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="0" colspan="2">
-                    <widget class="QLabel" name="labelFormatNames">
-                     <property name="text">
-                      <string>Choose file to format names:</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QLabel" name="labelColNumber">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="text">
-                      <string>Column number</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="3">
-                    <widget class="QPushButton" name="butFormatName">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="text">
-                      <string>Format</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="0" colspan="2">
-                    <widget class="QLineEdit" name="lineExcelFilePath">
-                     <property name="text">
-                      <string/>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="2">
-                    <widget class="QPushButton" name="butSelectExcel">
-                     <property name="toolTip">
-                      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                     </property>
-                     <property name="text">
-                      <string>Select file ...</string>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </widget>
-               </item>
-               <item row="1" column="2">
-                <widget class="QPushButton" name="butSlist">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>Select file ...</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="0" colspan="3">
+               <item row="2" column="0" colspan="2">
                 <widget class="QScrollArea" name="scrollArea_2">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -638,8 +257,8 @@
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>590</width>
-                    <height>98</height>
+                    <width>558</width>
+                    <height>151</height>
                    </rect>
                   </property>
                   <layout class="QGridLayout" name="gridLayout_10">
@@ -674,16 +293,6 @@
                    </item>
                   </layout>
                  </widget>
-                </widget>
-               </item>
-               <item row="1" column="1">
-                <widget class="QLineEdit" name="lineSlist">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
                 </widget>
                </item>
               </layout>
@@ -903,7 +512,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>710</width>
+     <width>678</width>
      <height>22</height>
     </rect>
    </property>
@@ -911,9 +520,10 @@
     <property name="title">
      <string>&amp;File</string>
     </property>
+    <addaction name="actionNewProject"/>
     <addaction name="actionSelectExport"/>
-    <addaction name="actionSaveTxt"/>
     <addaction name="actionBatch"/>
+    <addaction name="actionSaveTxt"/>
     <addaction name="separator"/>
     <addaction name="actionExportChecklist"/>
     <addaction name="actionQuit"/>
@@ -955,9 +565,35 @@
     </property>
     <addaction name="actionShowToolbarText"/>
    </widget>
+   <widget class="QMenu" name="menuTool">
+    <property name="title">
+     <string>Tool</string>
+    </property>
+    <addaction name="actionMerge"/>
+    <addaction name="actionCompare"/>
+    <addaction name="actionCombine"/>
+    <addaction name="separator"/>
+    <addaction name="actionFormat"/>
+   </widget>
+   <widget class="QMenu" name="menuDatabases">
+    <property name="title">
+     <string>Databases</string>
+    </property>
+    <widget class="QMenu" name="menuPlants">
+     <property name="title">
+      <string>Plants</string>
+     </property>
+     <addaction name="actionTaiwanVascularPlants"/>
+     <addaction name="actionTaiwanFlora"/>
+     <addaction name="actionJapanYlist"/>
+    </widget>
+    <addaction name="menuPlants"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
    <addaction name="menuView"/>
+   <addaction name="menuTool"/>
+   <addaction name="menuDatabases"/>
    <addaction name="menuWindow"/>
    <addaction name="menuHelp"/>
   </widget>
@@ -998,6 +634,7 @@
    <attribute name="toolBarBreak">
     <bool>false</bool>
    </attribute>
+   <addaction name="actionNewProject"/>
    <addaction name="actionSaveTxt"/>
    <addaction name="actionSelectExport"/>
    <addaction name="actionBatch"/>
@@ -1070,7 +707,7 @@
      <normaloff>:/icons/batch.png</normaloff>:/icons/batch.png</iconset>
    </property>
    <property name="text">
-    <string>Batch export</string>
+    <string>Select batch export file</string>
    </property>
    <property name="iconText">
     <string>Batch export</string>
@@ -1165,6 +802,9 @@
    <property name="text">
     <string>Quit</string>
    </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
   </action>
   <action name="actionMinimize">
    <property name="text">
@@ -1182,7 +822,7 @@
     <string>Zoom</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+N</string>
+    <string>Ctrl+Shift+N</string>
    </property>
   </action>
   <action name="actionMaximize">
@@ -1310,6 +950,85 @@
    </property>
    <property name="shortcut">
     <string>Ctrl+A</string>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionSelect_export_file">
+   <property name="text">
+    <string>Select export file</string>
+   </property>
+  </action>
+  <action name="actionMerge">
+   <property name="text">
+    <string>Merge checklists</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+G</string>
+   </property>
+  </action>
+  <action name="actionCompare">
+   <property name="text">
+    <string>Compare checklists</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+P</string>
+   </property>
+  </action>
+  <action name="actionCombine">
+   <property name="text">
+    <string>Combine checklists</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+B</string>
+   </property>
+  </action>
+  <action name="actionFormat">
+   <property name="text">
+    <string>Format scientific names</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+F</string>
+   </property>
+  </action>
+  <action name="actionTaiwanVascularPlants">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Taiwan: Vascular plants</string>
+   </property>
+  </action>
+  <action name="actionTaiwanFlora">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Taiwan: Vascular plants (Flora of Taiwan)</string>
+   </property>
+  </action>
+  <action name="actionJapanYlist">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Japan: Ylist</string>
+   </property>
+  </action>
+  <action name="actionNewProject">
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/new.png</normaloff>:/icons/new.png</iconset>
+   </property>
+   <property name="text">
+    <string>New project</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
    </property>
    <property name="iconVisibleInMenu">
     <bool>false</bool>
