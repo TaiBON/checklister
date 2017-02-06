@@ -52,7 +52,7 @@
          <x>0</x>
          <y>0</y>
          <width>654</width>
-         <height>524</height>
+         <height>377</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_4">
@@ -147,7 +147,7 @@
                  </property>
                 </widget>
                </item>
-               <item row="4" column="0" colspan="2">
+               <item row="3" column="0" colspan="2">
                 <widget class="QTreeWidget" name="treeWidget">
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -177,7 +177,7 @@
                   <enum>QAbstractItemView::DragDrop</enum>
                  </property>
                  <property name="defaultDropAction">
-                  <enum>Qt::MoveAction</enum>
+                  <enum>Qt::TargetMoveAction</enum>
                  </property>
                  <property name="alternatingRowColors">
                   <bool>true</bool>
@@ -233,66 +233,6 @@
                    <string>Common name</string>
                   </property>
                  </column>
-                </widget>
-               </item>
-               <item row="2" column="0" colspan="2">
-                <widget class="QScrollArea" name="scrollArea_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>100</height>
-                  </size>
-                 </property>
-                 <property name="widgetResizable">
-                  <bool>true</bool>
-                 </property>
-                 <widget class="QWidget" name="scrollAreaWidgetContents_2">
-                  <property name="geometry">
-                   <rect>
-                    <x>0</x>
-                    <y>0</y>
-                    <width>558</width>
-                    <height>151</height>
-                   </rect>
-                  </property>
-                  <layout class="QGridLayout" name="gridLayout_10">
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="label">
-                     <property name="text">
-                      <string>Taxon Info</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QTextBrowser" name="textBrowserInfo">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <property name="minimumSize">
-                      <size>
-                       <width>0</width>
-                       <height>50</height>
-                      </size>
-                     </property>
-                     <property name="sizeAdjustPolicy">
-                      <enum>QAbstractScrollArea::AdjustToContents</enum>
-                     </property>
-                     <property name="openExternalLinks">
-                      <bool>true</bool>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
                 </widget>
                </item>
               </layout>
@@ -638,13 +578,13 @@
    <addaction name="actionSaveTxt"/>
    <addaction name="actionSelectExport"/>
    <addaction name="actionBatch"/>
+   <addaction name="actionExportChecklist"/>
    <addaction name="separator"/>
    <addaction name="actionAddSpecies"/>
    <addaction name="actionDeleteSel"/>
    <addaction name="actionDeleteAll"/>
    <addaction name="actionSelectAll"/>
    <addaction name="actionDeselectAll"/>
-   <addaction name="actionExportChecklist"/>
   </widget>
   <widget class="QToolBar" name="toolBar_2">
    <property name="sizePolicy">
@@ -679,6 +619,77 @@
    <addaction name="separator"/>
    <addaction name="actionHomepage"/>
    <addaction name="actionReportIssues"/>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetTaxonInfo">
+   <property name="floating">
+    <bool>false</bool>
+   </property>
+   <property name="windowTitle">
+    <string>Taxon Info</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents">
+    <layout class="QGridLayout" name="gridLayout_5">
+     <item row="0" column="0">
+      <widget class="QScrollArea" name="taxonInfoScrollArea">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>100</height>
+        </size>
+       </property>
+       <property name="frameShape">
+        <enum>QFrame::NoFrame</enum>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>654</width>
+          <height>100</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_10">
+         <item row="0" column="0">
+          <widget class="QTextBrowser" name="textBrowserInfo">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="sizeAdjustPolicy">
+            <enum>QAbstractScrollArea::AdjustToContents</enum>
+           </property>
+           <property name="openExternalLinks">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
   </widget>
   <action name="actionSelectExport">
    <property name="icon">

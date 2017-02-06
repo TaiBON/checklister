@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0">
+<TS version="2.1" language="zh_TW" sourcelanguage="en">
 <context>
     <name>AboutDialog</name>
     <message>
         <source>About checklister</source>
-        <translation type="unfinished"></translation>
+        <translation>關於 checklister</translation>
     </message>
-    <message utf8="true">
+    <message>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -57,22 +57,286 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;License&lt;/span&gt;: GPL v3&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;https://github.com/TaiBON/checklister/blob/master/LICENSE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;.SF NS Text&apos;; font-size:13pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;checklister&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;物種名錄產生器&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Version 0.4.2&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;一句話簡單描述&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-style:italic;&quot;&gt;checklister &lt;/span&gt;是一個可以產生物種(分類群)名錄的程式&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;特點&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1. 簡單且易使用&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2. 自由軟體且開放源碼&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3. 跨平台，你可以在&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    Windows/MacOS/GNU Linux/BSD 等作業系統上使用&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;主要功能&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;1. 可各別挑選物種或批次輸出，支援自動補齊(auto complete)，&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    只要輸入中名/科名或部分學名即可快速找到物種&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;2. 可輸出排版好的 Microsoft Word, Open document (odt)&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;    以及 markdown 名錄文字檔。&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;   (使用 pandoc 文件轉換引擎)    &lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;3. Saving your checklist as vernacular/local names&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;4. 輸出名錄支援達爾文核心集格式(darwin core,  Tab 分隔)&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;5. 可比較、合併、組合不同的名錄&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;6. 在 Excel 中的學名可透過本程式斜體化排版&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;7. 支援臺灣、日本(來源：&lt;a href=&quot;http://ylist.info&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://ylist.info&lt;/span&gt;&lt;/a&gt;)的植物名彙資料&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;8. 支援多國語系&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;聯絡資訊&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;官方網頁: &lt;a href=&quot;http://github.com/TaiBON/checklister&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;http://github.com/TaiBON/checklister&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;作者:  林政道(Cheng-Tao Lin)&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Email: &lt;a href=&quot;mailto:mutolisp@mail.ncyu.edu.tw&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;mutolisp@mail.ncyu.edu.tw&lt;/span&gt;&lt;/a&gt;; &lt;a href=&quot;mailto:mutolisp@gmail.com&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;mutolisp@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;嘉義大學生物資源學系&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;歡迎加入一起貢獻！建立生物多樣性的基礎資料庫！&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;授權&lt;/span&gt;: GPL v3&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;https://github.com/TaiBON/checklister/blob/master/LICENSE&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>OK</source>
+        <translation>好的</translation>
+    </message>
+</context>
+<context>
+    <name>CombineDialog</name>
+    <message>
+        <source>Select checklist text files to combine</source>
+        <translation type="unfinished">選擇名錄文字檔案來組合</translation>
+    </message>
+    <message>
+        <source>Text files (*.txt)</source>
+        <translation>文字檔案 (*.txt)</translation>
+    </message>
+    <message>
+        <source>Save combined list as:</source>
+        <translation>儲存組合的名錄至：</translation>
+    </message>
+    <message>
+        <source>Excel files (*.xlsx)</source>
+        <translation>Excel 檔案 (*.xlsx)</translation>
+    </message>
+    <message>
+        <source>Checklists and excel file should not be empty!</source>
+        <translation>待組合的名錄檔案以及 Excel 輸出檔案不可以是空白的！</translation>
+    </message>
+    <message>
+        <source>Combing checklists done!</source>
+        <translation>名錄組合完成！賀！</translation>
+    </message>
+    <message>
+        <source>Dialog</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Step 1&lt;/span&gt;: Select checklist to be combined (*.txt)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select file(s) ...</source>
+        <translation>選擇檔案...</translation>
+    </message>
+    <message>
+        <source>Checklists</source>
+        <translation>名錄</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Step 2&lt;/span&gt;: Select export Excel file:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select file ...</source>
+        <translation>選擇檔案...</translation>
+    </message>
+    <message>
+        <source>Excel file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>關閉</translation>
+    </message>
+    <message>
+        <source>Combine</source>
+        <translation>組合</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Combine multiple checklists&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CompareDialog</name>
+    <message>
+        <source>Open file</source>
+        <translation type="unfinished">開啟檔案</translation>
+    </message>
+    <message>
+        <source>Text files (*.txt)</source>
+        <translation type="unfinished">文字檔案 (*.txt)</translation>
+    </message>
+    <message>
+        <source>Please input checklist A</source>
+        <translation type="unfinished">請輸入名錄 A</translation>
+    </message>
+    <message>
+        <source>Please input checklist B</source>
+        <translation type="unfinished">請輸入名錄 B</translation>
+    </message>
+    <message>
+        <source>A and B are identical!</source>
+        <translation type="unfinished">A 和 B 是相同的！</translation>
+    </message>
+    <message>
+        <source>There is no common species between checklist A and B</source>
+        <translation type="unfinished">在名錄 A 和 B 中並沒有相同的物種存在</translation>
+    </message>
+    <message>
+        <source>Comparing two checklists</source>
+        <translation>比較兩個名錄</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Comparing two checklists&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;比較兩份名錄&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Checklist A</source>
+        <translation>名錄 A</translation>
+    </message>
+    <message>
+        <source>Checklist B</source>
+        <translation>名錄 B</translation>
+    </message>
+    <message>
+        <source>Select file ...</source>
+        <translation>選擇檔案...</translation>
+    </message>
+    <message>
+        <source>Comparing mode</source>
+        <translation>比較模式</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>關閉</translation>
+    </message>
+    <message>
+        <source>Compare</source>
+        <translation>比較</translation>
+    </message>
+    <message>
+        <source>A differ B (A - B)</source>
+        <translation>A 差集 B (A - B)</translation>
+    </message>
+    <message>
+        <source>B differ A (B - A)</source>
+        <translation>B 差集 A (B - A)</translation>
+    </message>
+    <message>
+        <source>A intersects B (A ∩ B )</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A union B (A ∪ B)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>FormatDialog</name>
+    <message>
+        <source>Select excel files</source>
+        <translation type="unfinished">選擇 Excel 檔案</translation>
+    </message>
+    <message>
+        <source>Excel files (*.xls *.xlsx)</source>
+        <translation type="unfinished">Excel 檔案 (*.xls *.xlsx)</translation>
+    </message>
+    <message>
+        <source>Please input the excel filename</source>
+        <translation>請輸入 Excel 的檔名</translation>
+    </message>
+    <message>
+        <source>Please input the column number of scientific names</source>
+        <translation>請輸入學名是在哪個欄位？以 1,2,3, ... 代表</translation>
+    </message>
+    <message>
+        <source>Formatted excel file:  %s done!</source>
+        <translation type="unfinished">%s 學名斜體化完成!</translation>
+    </message>
+    <message>
+        <source>Formating scientific names</source>
+        <translation>格式化學名</translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation>關閉</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;選擇輸出的名錄檔案，支援的檔案格式為：Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). 預設會輸出 docx 和 markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Select file ...</source>
+        <translation>選擇檔案...</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Options&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;選項&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation>格式化</translation>
+    </message>
+    <message>
+        <source>with header</source>
+        <translation>有欄位標題</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Formating scientific names in Excel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;在 Excel 中，斜體化學名&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Excel file</source>
+        <translation>Excel 檔案</translation>
+    </message>
+    <message>
+        <source>Column number of scientific names</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation>1</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
         <source>Ready</source>
-        <translation type="unfinished"></translation>
+        <translation>準備就緒</translation>
     </message>
     <message>
         <source>Debug: butCheckPath error!</source>
-        <translation type="unfinished"></translation>
+        <translation>有蟲請回報！butCheckPath</translation>
+    </message>
+    <message>
+        <source>Text files (*.txt)</source>
+        <translation>文字檔案 (*.txt)</translation>
     </message>
     <message>
         <source>Select checklist text files to merge</source>
@@ -83,60 +347,32 @@ p, li { white-space: pre-wrap; }
         <translation>沒有物種名稱被載入。也許檔案是空的？</translation>
     </message>
     <message>
-        <source>Text files (*.txt)</source>
-        <translation>文字檔案 (*.txt)</translation>
-    </message>
-    <message>
         <source>Select checklist text files to combine</source>
-        <translation>選擇名錄文字檔案來組合</translation>
-    </message>
-    <message>
-        <source>Select excel files</source>
-        <translation>選擇 Excel 檔案</translation>
-    </message>
-    <message>
-        <source>Excel files (*.xls *.xlsx)</source>
-        <translation>Excel 檔案 (*.xls *.xlsx)</translation>
-    </message>
-    <message>
-        <source>Please input the excel filename</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please input the column number of scientific names</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Formatted excel file:  %s done!</source>
-        <translation>%s 學名斜體化完成!</translation>
+        <translation type="obsolete">選擇名錄文字檔案來組合</translation>
     </message>
     <message>
         <source>&lt;font color=&quot;#aaaaaa&quot;&gt;(Endemic)&lt;/font&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;font color=&quot;#aaaaaa&quot;&gt;(特有種)&lt;/font&gt;</translation>
+    </message>
+    <message>
+        <source>Select excel files</source>
+        <translation type="obsolete">選擇 Excel 檔案</translation>
+    </message>
+    <message>
+        <source>Excel files (*.xls *.xlsx)</source>
+        <translation type="obsolete">Excel 檔案 (*.xls *.xlsx)</translation>
     </message>
     <message>
         <source>Current database table is %s</source>
-        <translation type="unfinished"></translation>
+        <translation>現在的資料表是 %s</translation>
     </message>
     <message>
-        <source>Please input checklist A</source>
-        <translation>請輸入名錄 A</translation>
-    </message>
-    <message>
-        <source>Please input checklist B</source>
-        <translation>請輸入名錄 B</translation>
-    </message>
-    <message>
-        <source>A and B are identical!</source>
-        <translation>A 和 B 是相同的！</translation>
-    </message>
-    <message>
-        <source>There is no common species between checklist A and B</source>
-        <translation>在名錄 A 和 B 中並沒有相同的物種存在</translation>
+        <source>Formatted excel file:  %s done!</source>
+        <translation type="obsolete">%s 學名斜體化完成!</translation>
     </message>
     <message>
         <source>Updating database, please wait for a while ...</source>
-        <translation type="unfinished"></translation>
+        <translation>更新資料庫中...逼逼逼，請等一下</translation>
     </message>
     <message>
         <source>Update DB done!</source>
@@ -144,7 +380,7 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Database updated!</source>
-        <translation type="unfinished"></translation>
+        <translation>資料庫已更新！</translation>
     </message>
     <message>
         <source>Open file</source>
@@ -155,12 +391,32 @@ p, li { white-space: pre-wrap; }
         <translation>文字檔案 (*.txt *.csv)</translation>
     </message>
     <message>
+        <source>When you load species file (only common names) to generate checklist, the &quot;checklist generator&quot; will save a temporary file (filename_temp.txt/csv) within the same directory, and load this species file into checklist below. You can add/remove species to generate checklist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>The following species did not exist in our database,and I stored it at %s. Please check again: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The following species did not exist in our database, please check again: %s</source>
-        <translation>下方的物種並不存在資料庫中，請再次確認： %s</translation>
+        <source>Please input checklist A</source>
+        <translation type="obsolete">請輸入名錄 A</translation>
+    </message>
+    <message>
+        <source>Please input checklist B</source>
+        <translation type="obsolete">請輸入名錄 B</translation>
+    </message>
+    <message>
+        <source>A and B are identical!</source>
+        <translation type="obsolete">A 和 B 是相同的！</translation>
+    </message>
+    <message>
+        <source>The following species did not exist in our database. I store it at %s. Please check again: %s</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>There is no common species between checklist A and B</source>
+        <translation type="obsolete">在名錄 A 和 B 中並沒有相同的物種存在</translation>
     </message>
     <message>
         <source>Save file as:</source>
@@ -171,6 +427,10 @@ p, li { white-space: pre-wrap; }
         <translation>檔案 (*.docx *.odt *.xlsx)</translation>
     </message>
     <message>
+        <source>Export file is: %s</source>
+        <translation>輸出的檔案是：%s</translation>
+    </message>
+    <message>
         <source>Please input the species name!</source>
         <translation>請輸入物種名稱</translation>
     </message>
@@ -179,20 +439,16 @@ p, li { white-space: pre-wrap; }
         <translation>這個物種 %s 並不存在資料庫中</translation>
     </message>
     <message>
+        <source>The following species did not exist in our database, please check again: %s</source>
+        <translation type="obsolete">下方的物種並不存在資料庫中，請再次確認： %s</translation>
+    </message>
+    <message>
         <source>%s</source>
         <translation>%s</translation>
     </message>
     <message>
-        <source>Please input export file name!</source>
-        <translation>請輸入輸出的檔名</translation>
-    </message>
-    <message>
         <source>Saving checklist to %s </source>
         <translation>儲存名錄至 %s</translation>
-    </message>
-    <message>
-        <source>Please input export file name </source>
-        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Checklist generator</source>
@@ -200,59 +456,23 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Export checklist to &apos;%s&apos; done!</source>
-        <translation type="unfinished"></translation>
+        <translation>輸出名錄至 &apos;%s&apos; 完成！</translation>
     </message>
     <message>
-        <source>Batch Export</source>
-        <translation type="obsolete">批次輸出</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search NomenMatch (a scientific name matching webapp, thanks for @trashmai)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;搜尋 NomenMatch (學名比對 webapp, 感謝老麥支援 @trashmai)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search NomenMatch ? a scientific name match database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;搜尋 NomenMatch — 學名比對資料庫&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Select species</source>
-        <translation type="obsolete">選擇物種</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete selected item(s)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;刪除選擇的物種&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>File</source>
-        <translation type="obsolete">檔案</translation>
-    </message>
-    <message>
-        <source>Edit</source>
-        <translation type="obsolete">編輯</translation>
-    </message>
-    <message>
-        <source>Export File</source>
-        <translation type="obsolete">輸出檔案</translation>
-    </message>
-    <message>
-        <source>Help</source>
-        <translation type="obsolete">說明</translation>
-    </message>
-    <message>
-        <source>Window</source>
-        <translation type="obsolete">視窗</translation>
-    </message>
-    <message>
-        <source>Species Selection</source>
-        <translation type="obsolete">選擇物種</translation>
+        <source>Please input export file name!</source>
+        <translation type="obsolete">請輸入輸出的檔名</translation>
     </message>
     <message>
         <source>checklister: a species checklist generator</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Select Export File</source>
-        <translation>選擇輸出檔案</translation>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Common name/scientific name/family</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Family</source>
@@ -265,118 +485,6 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Common name</source>
         <translation>俗名</translation>
-    </message>
-    <message>
-        <source>Clear species</source>
-        <translation type="obsolete">清除物種</translation>
-    </message>
-    <message>
-        <source>Batch Export File</source>
-        <translation>選擇批次輸出檔</translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation>輸出</translation>
-    </message>
-    <message>
-        <source>Common name / scientific name</source>
-        <translation>俗名/學名</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select taxa</source>
-        <translation>選擇物種</translation>
-    </message>
-    <message>
-        <source>To be merged checklists</source>
-        <translation>待合併的物種名錄</translation>
-    </message>
-    <message>
-        <source>Merge</source>
-        <translation>合併</translation>
-    </message>
-    <message>
-        <source>A intersects B (A ? B )</source>
-        <translation type="obsolete">A 交集 B (A ∩ B )</translation>
-    </message>
-    <message>
-        <source>A union B (A ? B)</source>
-        <translation type="obsolete">A 聯集 B (A ∪ B)</translation>
-    </message>
-    <message>
-        <source>A differ B (A - B)</source>
-        <translation>A 差集 B (A - B)</translation>
-    </message>
-    <message>
-        <source>B differ A (B - A)</source>
-        <translation>B 差集 A (B - A)</translation>
-    </message>
-    <message utf8="true">
-        <source>A intersects B (A ∩ B )</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <source>A union B (A ∪ B)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Checklist B</source>
-        <translation>名錄 B</translation>
-    </message>
-    <message>
-        <source>Checklist A</source>
-        <translation>名錄 A</translation>
-    </message>
-    <message>
-        <source>Compare</source>
-        <translation>比較</translation>
-    </message>
-    <message>
-        <source>To be combined checklists</source>
-        <translation>待組合的名錄</translation>
-    </message>
-    <message>
-        <source>Combine</source>
-        <translation>組合</translation>
-    </message>
-    <message>
-        <source>1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Add species</source>
-        <translation type="obsolete">新增物種</translation>
-    </message>
-    <message>
-        <source>with header</source>
-        <translation>具有標題</translation>
-    </message>
-    <message>
-        <source>Choose file to format names:</source>
-        <translation>選擇需要斜體化學名的檔案</translation>
-    </message>
-    <message>
-        <source>Column number</source>
-        <translation>欄位數字</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation>斜體化學名</translation>
-    </message>
-    <message>
-        <source>Select file ...</source>
-        <translation>選擇檔案</translation>
-    </message>
-    <message>
-        <source>Taxon Info</source>
-        <translation>物種資訊</translation>
     </message>
     <message>
         <source>Taxa selection</source>
@@ -415,10 +523,6 @@ p, li { white-space: pre-wrap; }
         <translation>原始資料表</translation>
     </message>
     <message>
-        <source>Databases</source>
-        <translation>資料庫</translation>
-    </message>
-    <message>
         <source>&amp;File</source>
         <translation>檔案</translation>
     </message>
@@ -439,16 +543,28 @@ p, li { white-space: pre-wrap; }
         <translation>檢視</translation>
     </message>
     <message>
-        <source>toolBar</source>
-        <translation>工具列</translation>
+        <source>Tool</source>
+        <translation>名錄工具</translation>
     </message>
     <message>
-        <source>toolBar_2</source>
-        <translation>工具列</translation>
+        <source>Databases</source>
+        <translation>資料庫</translation>
     </message>
     <message>
-        <source>Select export file</source>
-        <translation>選擇輸出檔案</translation>
+        <source>Plants</source>
+        <translation>植物資料庫</translation>
+    </message>
+    <message>
+        <source>Edit Toolbar</source>
+        <translation>編輯工具列</translation>
+    </message>
+    <message>
+        <source>Search Toolbar</source>
+        <translation type="unfinished">搜尋工具列</translation>
+    </message>
+    <message>
+        <source>Taxon Info</source>
+        <translation>物種資訊</translation>
     </message>
     <message>
         <source>Select export File</source>
@@ -457,6 +573,10 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Ctrl+O</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Select batch export file</source>
+        <translation type="unfinished">選擇批次輸出檔</translation>
     </message>
     <message>
         <source>Batch export</source>
@@ -519,6 +639,10 @@ p, li { white-space: pre-wrap; }
         <translation>離開</translation>
     </message>
     <message>
+        <source>Ctrl+Q</source>
+        <translation></translation>
+    </message>
+    <message>
         <source>Minimize</source>
         <translation>最小化</translation>
     </message>
@@ -535,8 +659,8 @@ p, li { white-space: pre-wrap; }
         <translation>縮放</translation>
     </message>
     <message>
-        <source>Ctrl+N</source>
-        <translation>Ctrl+N</translation>
+        <source>Ctrl+Shift+N</source>
+        <translation></translation>
     </message>
     <message>
         <source>Maximize</source>
@@ -595,6 +719,10 @@ p, li { white-space: pre-wrap; }
         <translation></translation>
     </message>
     <message>
+        <source>Batch Export</source>
+        <translation type="obsolete">批次輸出</translation>
+    </message>
+    <message>
         <source>Show toolbar text</source>
         <translation>顯示工具列圖示文字</translation>
     </message>
@@ -621,6 +749,202 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Ctrl+A</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>Select export file</source>
+        <translation>選擇輸出檔案</translation>
+    </message>
+    <message>
+        <source>Merge checklists</source>
+        <translation type="unfinished">合併名錄</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+G</source>
+        <translation></translation>
+    </message>
+    <message>
+        <source>Compare checklists</source>
+        <translation type="unfinished">比較名錄</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+P</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Combine checklists</source>
+        <translation type="unfinished">組合名錄</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search NomenMatch (a scientific name matching webapp, thanks for @trashmai)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;搜尋 NomenMatch (學名比對 webapp, 感謝老麥支援 @trashmai)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+B</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Format scientific names</source>
+        <translation type="unfinished">格式化學名</translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+F</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Search NomenMatch ? a scientific name match database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;搜尋 NomenMatch — 學名比對資料庫&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Taiwan: Vascular plants</source>
+        <translation type="unfinished">臺灣維管束植物(親緣關係分類)</translation>
+    </message>
+    <message>
+        <source>Taiwan: Vascular plants (Flora of Taiwan)</source>
+        <translation type="unfinished">臺灣維管束植物(植物誌第二版)</translation>
+    </message>
+    <message>
+        <source>Japan: Ylist</source>
+        <translation type="unfinished">日本植物(Ylist)</translation>
+    </message>
+    <message>
+        <source>New project</source>
+        <translation>新名錄</translation>
+    </message>
+    <message>
+        <source>Ctrl+N</source>
+        <translation>Ctrl+N</translation>
+    </message>
+    <message>
+        <source>Select species</source>
+        <translation type="obsolete">選擇物種</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete selected item(s)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;刪除選擇的物種&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>File</source>
+        <translation type="obsolete">檔案</translation>
+    </message>
+    <message>
+        <source>Edit</source>
+        <translation type="obsolete">編輯</translation>
+    </message>
+    <message>
+        <source>Export File</source>
+        <translation type="obsolete">輸出檔案</translation>
+    </message>
+    <message>
+        <source>Help</source>
+        <translation type="obsolete">說明</translation>
+    </message>
+    <message>
+        <source>Window</source>
+        <translation type="obsolete">視窗</translation>
+    </message>
+    <message>
+        <source>Species Selection</source>
+        <translation type="obsolete">選擇物種</translation>
+    </message>
+    <message>
+        <source>Select Export File</source>
+        <translation type="obsolete">選擇輸出檔案</translation>
+    </message>
+    <message>
+        <source>Clear species</source>
+        <translation type="obsolete">清除物種</translation>
+    </message>
+    <message>
+        <source>Batch Export File</source>
+        <translation type="obsolete">選擇批次輸出檔</translation>
+    </message>
+    <message>
+        <source>Export</source>
+        <translation type="obsolete">輸出</translation>
+    </message>
+    <message>
+        <source>Common name / scientific name</source>
+        <translation type="obsolete">俗名/學名</translation>
+    </message>
+    <message>
+        <source>Select taxa</source>
+        <translation type="obsolete">選擇物種</translation>
+    </message>
+    <message>
+        <source>To be merged checklists</source>
+        <translation type="obsolete">待合併的物種名錄</translation>
+    </message>
+    <message>
+        <source>Merge</source>
+        <translation type="obsolete">合併</translation>
+    </message>
+    <message>
+        <source>A intersects B (A ? B )</source>
+        <translation type="obsolete">A 交集 B (A ∩ B )</translation>
+    </message>
+    <message>
+        <source>A union B (A ? B)</source>
+        <translation type="obsolete">A 聯集 B (A ∪ B)</translation>
+    </message>
+    <message>
+        <source>A differ B (A - B)</source>
+        <translation type="obsolete">A 差集 B (A - B)</translation>
+    </message>
+    <message>
+        <source>B differ A (B - A)</source>
+        <translation type="obsolete">B 差集 A (B - A)</translation>
+    </message>
+    <message>
+        <source>Checklist B</source>
+        <translation type="obsolete">名錄 B</translation>
+    </message>
+    <message>
+        <source>Checklist A</source>
+        <translation type="obsolete">名錄 A</translation>
+    </message>
+    <message>
+        <source>Compare</source>
+        <translation type="obsolete">比較</translation>
+    </message>
+    <message>
+        <source>To be combined checklists</source>
+        <translation type="obsolete">待組合的名錄</translation>
+    </message>
+    <message>
+        <source>Combine</source>
+        <translation type="obsolete">組合</translation>
+    </message>
+    <message>
+        <source>Add species</source>
+        <translation type="obsolete">新增物種</translation>
+    </message>
+    <message>
+        <source>with header</source>
+        <translation type="obsolete">具有標題</translation>
+    </message>
+    <message>
+        <source>Choose file to format names:</source>
+        <translation type="obsolete">選擇需要斜體化學名的檔案</translation>
+    </message>
+    <message>
+        <source>Column number</source>
+        <translation type="obsolete">欄位數字</translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation type="obsolete">斜體化學名</translation>
+    </message>
+    <message>
+        <source>Select file ...</source>
+        <translation type="obsolete">選擇檔案</translation>
+    </message>
+    <message>
+        <source>toolBar</source>
+        <translation type="obsolete">工具列</translation>
+    </message>
+    <message>
+        <source>toolBar_2</source>
+        <translation type="obsolete">工具列</translation>
     </message>
 </context>
 </TS>

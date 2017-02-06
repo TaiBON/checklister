@@ -65,21 +65,9 @@ p, li { white-space: pre-wrap; }
     </message>
 </context>
 <context>
-    <name>MainWindow</name>
+    <name>CombineDialog</name>
     <message>
-        <source>Ready</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Debug: butCheckPath error!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select checklist text files to merge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>There is nothing to load into the tree view of checklist. Maybe the files are empty</source>
+        <source>Select checklist text files to combine</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -87,9 +75,143 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Select checklist text files to combine</source>
+        <source>Save combined list as:</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Excel files (*.xlsx)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checklists and excel file should not be empty!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Combing checklists done!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Dialog</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Step 1&lt;/span&gt;: Select checklist to be combined (*.txt)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select file(s) ...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checklists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Step 2&lt;/span&gt;: Select export Excel file:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select file ...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Excel file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Combine</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Combine multiple checklists&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>CompareDialog</name>
+    <message>
+        <source>Open file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Text files (*.txt)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please input checklist A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Please input checklist B</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A and B are identical!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>There is no common species between checklist A and B</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Comparing two checklists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Comparing two checklists&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checklist A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Checklist B</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select file ...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Comparing mode</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Compare</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>A differ B (A - B)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>B differ A (B - A)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <source>A intersects B (A ∩ B )</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message utf8="true">
+        <source>A union B (A ∪ B)</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>FormatDialog</name>
     <message>
         <source>Select excel files</source>
         <translation type="unfinished"></translation>
@@ -111,27 +233,78 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Formating scientific names</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Close</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select file ...</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Options&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Format</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>with header</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Formating scientific names in Excel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Excel file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Column number of scientific names</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>1</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>MainWindow</name>
+    <message>
+        <source>Ready</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Debug: butCheckPath error!</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Text files (*.txt)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select checklist text files to merge</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>There is nothing to load into the tree view of checklist. Maybe the files are empty</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;font color=&quot;#aaaaaa&quot;&gt;(Endemic)&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Current database table is %s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please input checklist A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please input checklist B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>A and B are identical!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>There is no common species between checklist A and B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -155,11 +328,15 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>When you load species file (only common names) to generate checklist, the &quot;checklist generator&quot; will save a temporary file (filename_temp.txt/csv) within the same directory, and load this species file into checklist below. You can add/remove species to generate checklist.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>The following species did not exist in our database,and I stored it at %s. Please check again: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The following species did not exist in our database, please check again: %s</source>
+        <source>The following species did not exist in our database. I store it at %s. Please check again: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -168,6 +345,10 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Text files (*.docx *.odt *.xlsx)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Export file is: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -183,15 +364,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Please input export file name!</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Saving checklist to %s </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please input export file name </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -207,7 +380,11 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Select Export File</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Common name/scientific name/family</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -220,102 +397,6 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Common name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Batch Export File</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Export</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Common name / scientific name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select taxa</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>To be merged checklists</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Merge</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>A differ B (A - B)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>B differ A (B - A)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <source>A intersects B (A ∩ B )</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message utf8="true">
-        <source>A union B (A ∪ B)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Checklist B</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Checklist A</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Compare</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>To be combined checklists</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Combine</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>1</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>with header</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Choose file to format names:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Column number</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Format</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Select file ...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Taxon Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -355,10 +436,6 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Databases</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&amp;File</source>
         <translation type="unfinished"></translation>
     </message>
@@ -379,15 +456,27 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>toolBar</source>
+        <source>Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>toolBar_2</source>
+        <source>Databases</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Select export file</source>
+        <source>Plants</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit Toolbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search Toolbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Taxon Info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -396,6 +485,10 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Ctrl+O</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select batch export file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -459,6 +552,10 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Ctrl+Q</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Minimize</source>
         <translation type="unfinished"></translation>
     </message>
@@ -475,7 +572,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Ctrl+N</source>
+        <source>Ctrl+Shift+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -560,6 +657,62 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Ctrl+A</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Select export file</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Merge checklists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+G</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Compare checklists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+P</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Combine checklists</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+B</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Format scientific names</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ctrl+Shift+F</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Taiwan: Vascular plants</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Taiwan: Vascular plants (Flora of Taiwan)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Japan: Ylist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>New project</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Ctrl+N</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

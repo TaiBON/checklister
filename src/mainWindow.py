@@ -27,15 +27,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def __init__(self, parent = None):
         try:
             super().__init__(parent)
-            #self.sqlite_db = g.resource_path('twnamelist.db')
             g = genlist_api.Genlist()
             self.g = genlist_api.Genlist()
 
             self.home = os.path.expanduser("~")
-            self.checklist_db_dir = g.resource_path(os.path.join(self.home, 'checklist_db'))
-            self.checklist_db = g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist.db'))
-            self.latest_db = g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist_latest.db'))
-            self.orig_db = g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist_orig.db'))
+            # checking database status
+            self.checklist_db_dir = self.g.resource_path(os.path.join(self.home, 'checklist_db'))
+            self.checklist_db = self.g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist.db'))
+            self.latest_db = self.g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist_latest.db'))
+            self.orig_db = self.g.resource_path(os.path.join(self.checklist_db_dir, 'twnamelist_orig.db'))
             self.sqlite_db = self.checkLocalDB()
 
             self.setupUi(self)
@@ -56,15 +56,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             ### COMPLETER
             # enable completer to show matched species list
             self.spCompleter()
-
-            # comparison actions
-            #self.butCheckASelect.clicked.connect(self.selChecklistA)
-            #self.butCheckBSelect.clicked.connect(self.selChecklistB)
-            #self.butCompare.clicked.connect(self.checklistCompare)
-
-            # combine checklist actions
-            self.combined_checklists = list()
-
 
             # DBViewer
             self.dbViewer()
@@ -119,6 +110,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
             self.clearOutputFilename()
             self.lineSpecies.clear()
+            self.textBrowserInfo.clear()
             self.delAllTreeItems()
             self.statusBar().showMessage(self.tr(u'Ready'))
 
@@ -287,81 +279,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
-    # load to be combined list
-    def execCombList(self, tobe_combined_lists):
-        """
-        Combine multiple checklists
-        ===========================
-
-        組合不同的名錄，並標示出各名錄間出現的物種
-
-        TODO
-        ----
-        整合到 genlist_api 中
-
-        """
-        try:
-            #self.lineCombineChecklists.clear()
-            #text_edit_path = self.butCheckPath(self.lineCombineChecklists.text())
-            # tobe_combined_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to combine"), \
-            #         self.home, self.tr("Text files (*.txt)"))[0]
-            # if tobe_combined_lists is None or tobe_combined_lists is '':
-            #     return
-            tobe_combined_files = ','.join(tobe_combined_lists)
-            #self.lineCombineChecklists.setText(tobe_combined_files)
-            g = genlist_api.Genlist()
-            g.combineChecklists(self.sqlite_db, tobe_combined_lists)
-            current_db_table = self.checkDB()
-            # print(current_db_table)
-            if current_db_table == 'dao_bnamelist':
-                db_fullname = 'name'
-                iucn = 'consv_status'
-                list_type = 'family'
-            else:
-                db_fullname = 'fullname'
-                iucn = 'iucn_category'
-                list_type = 'plant_type,family'
-                fetch_combined_sql = '''
-                SELECT 
-                    distinct 
-                    d.family,
-                    d.family_cname,
-                    d.%s,
-                    d.endemic,
-                    d.%s,
-                    u.*
-                FROM
-                    tmp_union u, %s d
-                WHERE
-                    u.local_name = d.cname order by %s
-                ''' % (db_fullname, iucn, current_db_table, list_type)
-                combined_table = g.dbExecuteSQL(fetch_combined_sql, self.sqlite_db, show_results=True)
-            header = ['family', 'family_cname', 'fullname', 'endemic', iucn, 'common name']
-            for i in range(len(tobe_combined_lists)):
-                fname = str.split(os.path.split(tobe_combined_lists[i])[1], '.')
-                header.insert(7+i, fname[0])
-            header = tuple(header)
-            combined_table.insert(0, header)
-            self.combined_checklists = combined_table
-            # choose file to export
-            combExcelFile = QFileDialog.getSaveFileName(self, self.tr(u"Save combined list as:"), \
-                    self.home, self.tr("Excel files (*.xlsx)"))[0]
-            combStatus = self.g.listToXls(combined_table, 2, combExcelFile)
-            #QMessageBox.information(self, "Warning", self.tr(u'Something went wrong when combining checklists!'))
-            self.statusBar().showMessage(self.tr(u'Combing %s to %s' % (tobe_combined_files, combExcelFile)))
-
-            # load data into QTreeWidget
-            self.delAllTreeItems()
-            for i in range(1,len(combined_table)):
-                item = QTreeWidgetItem()
-                # family_cname, name, common name
-                item.setText(0, combined_table[i][1])
-                item.setText(1, combined_table[i][2])
-                item.setText(2, combined_table[i][5])
-                self.treeWidget.addTopLevelItem(item)
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
-
     def getTaxonInfo(self):
         try:
             item = self.treeWidget.currentItem()
@@ -425,14 +342,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             model = QStringListModel()
             completer.setModel(model)
             # PopupCompletion
-            #completer.setCompletionMode(1)
             # QCompleter setFilterMode Qt>5.2
             # http://doc.qt.io/qt-5/qcompleter.html#filterMode-prop
             completer.setFilterMode(Qt.MatchContains)
             completer.setCaseSensitivity(Qt.CaseInsensitive)
             self.lineSpecies.setCompleter(completer)
             db_table = self.checkDB()
-            retrieved = g.dbGetsp(db_table, self.sqlite_db)
+            retrieved = self.g.dbGetsp(db_table, self.sqlite_db)
             b_container=[]
             for i in range(len(retrieved)):
                 b_container.append(retrieved[i][3] +  "\t" + retrieved[i][5] + "\t" + retrieved[i][2])
@@ -440,27 +356,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
-    #def browBaselist(self):
-    #    """
-    #    browBaselist: browse the baselist file 
-    #    ======================================
-    #    """
-    #    try:
-    #        self.lineBlist.clear()
-    #        Blist = QFileDialog.getOpenFileName(self, self.tr("Open file:"), \
-    #                QDir.homePath(), self.tr("Text files (*.txt *.csv)"))[0]
-    #        if Blist is '' or Blist is None:
-    #            return
-    #        else:
-    #            self.lineBlist.setText(Blist) 
-    #            completer = QCompleter()
-    #            self.lineSpecies.setCompleter(completer)
-    #            model = QStringListModel()
-    #            completer.setModel(model)
-    #            self.getCompleteData(model, Blist)
-    #    except BaseException as e:
-    #        QMessageBox.information(self, "Warning", str(e))
- 
     def checkDB(self):
         try:
             db_idx = self.comboDBselect.currentIndex()
@@ -481,9 +376,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def checkLocalDB(self):
         try:
-            g = genlist_api.Genlist()
+            self.g = genlist_api.Genlist()
             db_filename = 'twnamelist.db'
-            builtin_sqlite_db = g.resource_path(os.path.join('db', db_filename))
+            builtin_sqlite_db = self.g.resource_path(os.path.join('db', db_filename))
             if not os.path.exists(self.checklist_db_dir):
                 os.mkdir(self.checklist_db_dir)
                 # copy db to user directory
@@ -529,13 +424,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     self.home, self.tr("Text files (*.txt *.csv)"))[0]
             if Slist is None or Slist is '':
                 return
-            info_message = self.tr(u'''When you load species file (only common names) to \
-            generate checklist, the "checklist generator" will save a temporary file (filename_temp.txt/csv) within the same directory, \
-            and load this species file into checklist below. You can add/remove species to generate checklist.''')
+            info_message = self.tr(u'''When you load species file (only common names) to generate checklist, the "checklist generator" will save a temporary file (filename_temp.txt/csv) within the same directory, and load this species file into checklist below. You can add/remove species to generate checklist.''')
             QMessageBox.information(self, "Info", self.tr(info_message))
             Slist_str = str.split(str(Slist), '.')
             Slist_modified = Slist_str[0] + '_temp.' + Slist_str[1]
-            # self.lineTempFile.setText(Slist_modified)
             conn = sqlite3.connect(self.sqlite_db)
             curs = conn.cursor()
             drop_table = '''DROP TABLE IF EXISTS sample;'''
@@ -747,26 +639,25 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             model.setStringList(b_container)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
- 
 
     def getDbIdx(self):
         try:
-            g = genlist_api.Genlist()
+            self.g = genlist_api.Genlist()
             db_idx = self.comboDBselect.currentIndex()
             if db_idx == 0:
                 # Phylogeny Group system (PPG, GPG and APG, etc.)
-                retrieved = g.dbGetsp('dao_pnamelist_pg', self.sqlite_db)
+                retrieved = self.g.dbGetsp('dao_pnamelist_pg', self.sqlite_db)
             elif db_idx == 1:
                 # Flora of Taiwan
-                retrieved = g.dbGetsp('dao_pnamelist', self.sqlite_db)
+                retrieved = self.g.dbGetsp('dao_pnamelist', self.sqlite_db)
             elif db_idx == 2:
                 # Birdlist of Taiwan
-                retrieved = g.dbGetsp('dao_bnamelist', self.sqlite_db)
+                retrieved = self.g.dbGetsp('dao_bnamelist', self.sqlite_db)
             elif db_idx == 3:
                 # Plant list of Japan (Ylist, cached: 2015-10-15)
-                retrieved = g.dbGetsp('dao_jp_ylist', self.sqlite_db)
+                retrieved = self.g.dbGetsp('dao_jp_ylist', self.sqlite_db)
             else:
-                retrieved = g.dbGetsp('dao_pnamelist_pg', self.sqlite_db)
+                retrieved = self.g.dbGetsp('dao_pnamelist_pg', self.sqlite_db)
             b_container = []
             for i in range(len(retrieved)):
                     b_container.append([retrieved[i][2], retrieved[i][3], retrieved[i][5]])
@@ -791,7 +682,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def addToTree(self):
         try:
-            print(self.lineSpecies.text())
             if self.lineSpecies.text() is '':
                 QMessageBox.information(self, "Warning", self.tr("Please input the species name!"))
                 return
@@ -989,7 +879,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def genChecklist(self):
         try:
             ## TODO: 
-            g = genlist_api.Genlist()
+            self.g = genlist_api.Genlist()
             tree_item = self.getTreeItems(self.treeWidget)
             # getdbtable
             db_table = self.checkDB()
@@ -999,7 +889,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 savedTxtList = self.saveChecklistTxt()
 
                 if os.path.exists(ofile) == True:
-                    ofile_abspath = g.resource_path(ofile)
+                    ofile_abspath = self.g.resource_path(ofile)
                     shutil.copyfile(ofile_abspath, ofile_abspath+'.bak')
                     os.remove(ofile_abspath)
                 output_flist = str.split(ofile, '.')
@@ -1009,7 +899,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 curs.execute('DROP TABLE IF EXISTS sample;')
                 conn.commit()
                 # export outputfile
-                g.genEngine(self.sqlite_db, db_table, savedTxtList, output_flist[1], output_flist[0])
+                self.g.genEngine(self.sqlite_db, db_table, savedTxtList, output_flist[1], output_flist[0])
                 QMessageBox.information(self, self.tr('Checklist generator'), \
                         self.tr("Export checklist to '%s' done!" % ofile))
 
@@ -1022,7 +912,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 class AboutDialog(QDialog, Ui_AboutDialog):
 
      def __init__(self, mainWindow):
-         #super(AboutDialog, self).__init__(parent)
          super().__init__()
          self.setupUi(self)
          self.okButton.clicked.connect(self.destroy)
@@ -1079,7 +968,7 @@ class CombineDialog(QDialog, Ui_CombineDialog):
         try:
             combChecklists = str(self.textChecklists.text()).split(',')
             combExcelFile = str(self.textExpExcel.text())
-            print([combChecklists, combExcelFile])
+            #print([combChecklists, combExcelFile])
             if combChecklists is None or combExcelFile is None:
                 QMessageBox.information(self, "Warning", self.tr(u'Checklists and excel file should not be empty!'))
                 return
@@ -1183,7 +1072,7 @@ class CompareDialog(QDialog, Ui_CompareDialog):
                     tmp_filename = a_filename + '_' + b_filename + '-' + ab_type[0] + '_' + ab_type[1] + '.txt'
                     #self.lineTempFile.setText(os.path.join(a_path, tmp_filename))
                     compare_result = list(compare_result)
-                    print(compare_result)
+                    #print(compare_result)
                     self.delAllTreeItems()
                     # load compared list into QTreeWidget
                     if len(compare_result) >= 1:
