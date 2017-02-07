@@ -52,392 +52,153 @@
          <x>0</x>
          <y>0</y>
          <width>654</width>
-         <height>377</height>
+         <height>374</height>
         </rect>
        </property>
-       <layout class="QGridLayout" name="gridLayout_4">
+       <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="0">
-         <widget class="QTabWidget" name="tabWidget">
-          <property name="minimumSize">
-           <size>
-            <width>561</width>
-            <height>0</height>
-           </size>
+         <widget class="QFrame" name="frame">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
           </property>
-          <property name="autoFillBackground">
-           <bool>false</bool>
+          <property name="frameShadow">
+           <enum>QFrame::Sunken</enum>
           </property>
-          <property name="tabPosition">
-           <enum>QTabWidget::North</enum>
-          </property>
-          <property name="tabShape">
-           <enum>QTabWidget::Triangular</enum>
-          </property>
-          <property name="currentIndex">
+          <property name="lineWidth">
            <number>0</number>
           </property>
-          <property name="usesScrollButtons">
-           <bool>true</bool>
-          </property>
-          <property name="documentMode">
-           <bool>false</bool>
-          </property>
-          <property name="tabsClosable">
-           <bool>false</bool>
-          </property>
-          <property name="tabBarAutoHide">
-           <bool>true</bool>
-          </property>
-          <widget class="QWidget" name="TaxaSelection">
-           <attribute name="title">
-            <string>Taxa selection</string>
-           </attribute>
-           <layout class="QGridLayout" name="gridLayout_3">
-            <item row="0" column="0">
-             <widget class="QFrame" name="frame">
-              <property name="frameShape">
-               <enum>QFrame::NoFrame</enum>
-              </property>
-              <property name="frameShadow">
-               <enum>QFrame::Sunken</enum>
-              </property>
-              <property name="lineWidth">
-               <number>0</number>
-              </property>
-              <layout class="QGridLayout" name="gridLayout_2">
-               <item row="1" column="0" colspan="2">
-                <widget class="QLineEdit" name="lineSpecies">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
-                   <horstretch>0</horstretch>
-                   <verstretch>1</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="baseSize">
-                  <size>
-                   <width>0</width>
-                   <height>40</height>
-                  </size>
-                 </property>
-                 <property name="font">
-                  <font>
-                   <family>Arial</family>
-                   <pointsize>18</pointsize>
-                   <italic>false</italic>
-                  </font>
-                 </property>
-                 <property name="toolTip">
-                  <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-                 </property>
-                 <property name="autoFillBackground">
-                  <bool>false</bool>
-                 </property>
-                </widget>
-               </item>
-               <item row="0" column="0">
-                <widget class="QLabel" name="label_5">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="text">
-                  <string>Common name/scientific name/family</string>
-                 </property>
-                </widget>
-               </item>
-               <item row="3" column="0" colspan="2">
-                <widget class="QTreeWidget" name="treeWidget">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
-                 </property>
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>150</height>
-                  </size>
-                 </property>
-                 <property name="mouseTracking">
-                  <bool>false</bool>
-                 </property>
-                 <property name="editTriggers">
-                  <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
-                 </property>
-                 <property name="dragEnabled">
-                  <bool>true</bool>
-                 </property>
-                 <property name="dragDropOverwriteMode">
-                  <bool>false</bool>
-                 </property>
-                 <property name="dragDropMode">
-                  <enum>QAbstractItemView::DragDrop</enum>
-                 </property>
-                 <property name="defaultDropAction">
-                  <enum>Qt::TargetMoveAction</enum>
-                 </property>
-                 <property name="alternatingRowColors">
-                  <bool>true</bool>
-                 </property>
-                 <property name="selectionMode">
-                  <enum>QAbstractItemView::ExtendedSelection</enum>
-                 </property>
-                 <property name="indentation">
-                  <number>10</number>
-                 </property>
-                 <property name="rootIsDecorated">
-                  <bool>true</bool>
-                 </property>
-                 <property name="sortingEnabled">
-                  <bool>true</bool>
-                 </property>
-                 <property name="animated">
-                  <bool>true</bool>
-                 </property>
-                 <property name="wordWrap">
-                  <bool>true</bool>
-                 </property>
-                 <attribute name="headerVisible">
-                  <bool>true</bool>
-                 </attribute>
-                 <attribute name="headerCascadingSectionResizes">
-                  <bool>false</bool>
-                 </attribute>
-                 <attribute name="headerDefaultSectionSize">
-                  <number>60</number>
-                 </attribute>
-                 <attribute name="headerHighlightSections">
-                  <bool>true</bool>
-                 </attribute>
-                 <attribute name="headerMinimumSectionSize">
-                  <number>5</number>
-                 </attribute>
-                 <attribute name="headerShowSortIndicator" stdset="0">
-                  <bool>true</bool>
-                 </attribute>
-                 <column>
-                  <property name="text">
-                   <string>Family</string>
-                  </property>
-                 </column>
-                 <column>
-                  <property name="text">
-                   <string>FullNameWithAuthors</string>
-                  </property>
-                 </column>
-                 <column>
-                  <property name="text">
-                   <string>Common name</string>
-                  </property>
-                 </column>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </item>
-           </layout>
-          </widget>
-          <widget class="QWidget" name="tab">
-           <attribute name="title">
-            <string>Databases</string>
-           </attribute>
-           <layout class="QGridLayout" name="gridLayout_8">
-            <item row="2" column="3">
-             <widget class="QPushButton" name="butViewTable">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>108</width>
-                <height>0</height>
-               </size>
-              </property>
-              <property name="toolTip">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update the checklist database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-              </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="1" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineSpecies">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>18</pointsize>
+               <italic>false</italic>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Common name/scientific name/family</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0" colspan="2">
+            <widget class="QTreeWidget" name="treeWidget">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>150</height>
+              </size>
+             </property>
+             <property name="mouseTracking">
+              <bool>false</bool>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
+             </property>
+             <property name="dragEnabled">
+              <bool>true</bool>
+             </property>
+             <property name="dragDropOverwriteMode">
+              <bool>false</bool>
+             </property>
+             <property name="dragDropMode">
+              <enum>QAbstractItemView::DragDrop</enum>
+             </property>
+             <property name="defaultDropAction">
+              <enum>Qt::TargetMoveAction</enum>
+             </property>
+             <property name="alternatingRowColors">
+              <bool>true</bool>
+             </property>
+             <property name="selectionMode">
+              <enum>QAbstractItemView::ExtendedSelection</enum>
+             </property>
+             <property name="indentation">
+              <number>10</number>
+             </property>
+             <property name="rootIsDecorated">
+              <bool>true</bool>
+             </property>
+             <property name="sortingEnabled">
+              <bool>true</bool>
+             </property>
+             <property name="animated">
+              <bool>true</bool>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+             <attribute name="headerVisible">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="headerCascadingSectionResizes">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="headerDefaultSectionSize">
+              <number>60</number>
+             </attribute>
+             <attribute name="headerHighlightSections">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="headerMinimumSectionSize">
+              <number>5</number>
+             </attribute>
+             <attribute name="headerShowSortIndicator" stdset="0">
+              <bool>true</bool>
+             </attribute>
+             <column>
               <property name="text">
-               <string>View</string>
+               <string>Family</string>
               </property>
-             </widget>
-            </item>
-            <item row="2" column="1">
-             <widget class="QComboBox" name="comboDBTables"/>
-            </item>
-            <item row="0" column="1">
-             <widget class="QComboBox" name="comboDBselect">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <item>
-               <property name="text">
-                <string>Vascular plants of Taiwan (phylogeny-based)</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Vascular plants of Taiwan (Flora of Taiwan 2nd Edi.)</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Bird list of Taiwan (2014)</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>Plants of Japan (Ylist)</string>
-               </property>
-              </item>
-             </widget>
-            </item>
-            <item row="0" column="0">
-             <widget class="QLabel" name="labelDatabase">
+             </column>
+             <column>
               <property name="text">
-               <string>Checklist Database</string>
+               <string>FullNameWithAuthors</string>
               </property>
-             </widget>
-            </item>
-            <item row="0" column="3">
-             <widget class="QPushButton" name="butUpdateDB">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="toolTip">
-               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update the checklist database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-              </property>
+             </column>
+             <column>
               <property name="text">
-               <string>Update DB</string>
+               <string>Common name</string>
               </property>
-             </widget>
-            </item>
-            <item row="2" column="0">
-             <widget class="QLabel" name="labelRawTable">
-              <property name="text">
-               <string>Raw Table</string>
-              </property>
-             </widget>
-            </item>
-            <item row="3" column="0" colspan="4">
-             <widget class="QTreeWidget" name="treeWidgetDB">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="minimumSize">
-               <size>
-                <width>0</width>
-                <height>150</height>
-               </size>
-              </property>
-              <property name="mouseTracking">
-               <bool>false</bool>
-              </property>
-              <property name="alternatingRowColors">
-               <bool>true</bool>
-              </property>
-              <property name="selectionMode">
-               <enum>QAbstractItemView::MultiSelection</enum>
-              </property>
-              <property name="indentation">
-               <number>10</number>
-              </property>
-              <property name="rootIsDecorated">
-               <bool>true</bool>
-              </property>
-              <property name="sortingEnabled">
-               <bool>true</bool>
-              </property>
-              <property name="animated">
-               <bool>true</bool>
-              </property>
-              <attribute name="headerVisible">
-               <bool>false</bool>
-              </attribute>
-              <attribute name="headerDefaultSectionSize">
-               <number>60</number>
-              </attribute>
-              <attribute name="headerHighlightSections">
-               <bool>true</bool>
-              </attribute>
-              <attribute name="headerMinimumSectionSize">
-               <number>5</number>
-              </attribute>
-              <attribute name="headerShowSortIndicator" stdset="0">
-               <bool>true</bool>
-              </attribute>
-              <column>
-               <property name="text">
-                <string notr="true">1</string>
-               </property>
-              </column>
-             </widget>
-            </item>
-            <item row="1" column="0" colspan="4">
-             <widget class="Line" name="line">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-             </widget>
-            </item>
-            <item row="2" column="2">
-             <spacer name="horizontalSpacer_2">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item row="0" column="2">
-             <spacer name="horizontalSpacer_4">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-           </layout>
-           <zorder>butUpdateDB</zorder>
-           <zorder>comboDBselect</zorder>
-           <zorder>treeWidgetDB</zorder>
-           <zorder>comboDBTables</zorder>
-           <zorder>labelRawTable</zorder>
-           <zorder>labelDatabase</zorder>
-           <zorder>butViewTable</zorder>
-           <zorder>line</zorder>
-           <zorder>horizontalSpacer_2</zorder>
-           <zorder>horizontalSpacer_4</zorder>
-          </widget>
+             </column>
+            </widget>
+           </item>
+          </layout>
          </widget>
         </item>
        </layout>
@@ -498,6 +259,10 @@
     <addaction name="actionMinimize"/>
     <addaction name="actionMaximize"/>
     <addaction name="actionZoom"/>
+    <addaction name="separator"/>
+    <addaction name="actionShowTaxonInfo"/>
+    <addaction name="actionShowEdit"/>
+    <addaction name="actionShowSearch"/>
    </widget>
    <widget class="QMenu" name="menuView">
     <property name="title">
@@ -528,6 +293,9 @@
      <addaction name="actionJapanYlist"/>
     </widget>
     <addaction name="menuPlants"/>
+    <addaction name="separator"/>
+    <addaction name="actionDatabaseInfo"/>
+    <addaction name="actionUpdateDB"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuEdit"/>
@@ -537,7 +305,7 @@
    <addaction name="menuWindow"/>
    <addaction name="menuHelp"/>
   </widget>
-  <widget class="QToolBar" name="toolBar">
+  <widget class="QToolBar" name="toolBarEdit">
    <property name="sizePolicy">
     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
      <horstretch>0</horstretch>
@@ -586,7 +354,7 @@
    <addaction name="actionSelectAll"/>
    <addaction name="actionDeselectAll"/>
   </widget>
-  <widget class="QToolBar" name="toolBar_2">
+  <widget class="QToolBar" name="toolBarSearch">
    <property name="sizePolicy">
     <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
      <horstretch>0</horstretch>
@@ -658,7 +426,7 @@
           <x>0</x>
           <y>0</y>
           <width>654</width>
-          <height>100</height>
+          <height>103</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_10">
@@ -818,6 +586,12 @@
    </property>
   </action>
   <action name="actionMinimize">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="checked">
+    <bool>false</bool>
+   </property>
    <property name="text">
     <string>Minimize</string>
    </property>
@@ -997,7 +771,7 @@
   </action>
   <action name="actionFormat">
    <property name="text">
-    <string>Format scientific names</string>
+    <string>Format scientific names (beta version)</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+Shift+F</string>
@@ -1043,6 +817,49 @@
    </property>
    <property name="iconVisibleInMenu">
     <bool>false</bool>
+   </property>
+  </action>
+  <action name="actionShowTaxonInfo">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Taxon info widget</string>
+   </property>
+  </action>
+  <action name="actionShowEdit">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Edit toolbar</string>
+   </property>
+  </action>
+  <action name="actionShowSearch">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Search toolbar</string>
+   </property>
+  </action>
+  <action name="actionUpdateDB">
+   <property name="text">
+    <string>Update database</string>
+   </property>
+  </action>
+  <action name="actionDatabaseInfo">
+   <property name="text">
+    <string>Database info</string>
    </property>
   </action>
  </widget>

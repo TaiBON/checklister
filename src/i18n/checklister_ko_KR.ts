@@ -360,10 +360,6 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>%s</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Saving checklist to %s </source>
         <translation type="unfinished"></translation>
     </message>
@@ -397,42 +393,6 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Common name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Taxa selection</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Vascular plants of Taiwan (phylogeny-based)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Vascular plants of Taiwan (Flora of Taiwan 2nd Edi.)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Bird list of Taiwan (2014)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Plants of Japan (Ylist)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Checklist Database</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update the checklist database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Update DB</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Raw Table</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -688,7 +648,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Format scientific names</source>
+        <source>Format scientific names (beta version)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -713,6 +673,52 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Ctrl+N</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Taxon info widget</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Edit toolbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Search toolbar</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Update database</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Database info</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>checklistDB</name>
+    <message>
+        <source>%s</source>
+        <translation type="unfinished"></translation>
+    </message>
+</context>
+<context>
+    <name>DBMainWindow</name>
+    <message>
+        <source>MainWindow</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Raw Table</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update the checklist database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>View</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

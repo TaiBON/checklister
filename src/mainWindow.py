@@ -8,6 +8,7 @@ from ui_about import Ui_AboutDialog
 from ui_combine import Ui_CombineDialog
 from ui_compare import Ui_CompareDialog
 from ui_format import Ui_FormatDialog
+from ui_databases import Ui_DBMainWindow
 from platform import uname
 from subprocess import Popen
 import codecs
@@ -50,16 +51,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.clearOutputFilename()
 
             #self.butGenerateSp.clicked.connect(self.genChecklist)
-            self.comboDBselect.activated.connect(self.spCompleter)
-            self.butUpdateDB.clicked.connect(self.updateDB)
+            # self.comboDBselect.activated.connect(self.spCompleter)
+            # self.butUpdateDB.clicked.connect(self.updateDB)
 
             ### COMPLETER
             # enable completer to show matched species list
             self.spCompleter()
 
             # DBViewer
-            self.dbViewer()
-            self.butViewTable.clicked.connect(self.viewTable)
+            # self.dbViewer()
+            # self.butViewTable.clicked.connect(self.viewTable)
 
             ### MENUBARS
             # load menubar
@@ -77,6 +78,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.actionSelectAll.triggered.connect(self.selectAllTreeItmes)
             self.actionClearSp.triggered.connect(self.lineSpecies.clear)
 
+            # Menubar::Databases
+            self.actionTaiwanVascularPlants.triggered.connect(self.checkDB)
+            self.actionTaiwanFlora.triggered.connect(self.checkDB)
+            self.actionJapanYlist.triggered.connect(self.checkDB)
+            self.actionUpdateDB.triggered.connect(self.updateDB)
+            self.actionDatabaseInfo.triggered.connect(self.openDBMainWindow)
+
             # Menubar::View
             self.actionShowToolbarText.triggered.connect(self.setToolBarText)
 
@@ -84,6 +92,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.actionHomepage.triggered.connect(self.urlHomepage)
             self.actionReportIssues.triggered.connect(self.urlIssue)
             self.actionAbout.triggered.connect(self.openAboutDialog)
+
+            # Menubar::Window
+            self.actionShowEdit.triggered.connect(self.showEdit)
+            self.actionShowSearch.triggered.connect(self.showSearch)
+            self.actionShowTaxonInfo.triggered.connect(self.showTaxonInfo)
 
             # Only in Toolbar actions
             self.actionSaveTxt.triggered.connect(self.saveChecklistTxt)
@@ -126,14 +139,42 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    def showEdit(self):
+        try:
+            if self.actionShowEdit.isChecked():
+                self.toolBarEdit.setVisible(True)
+            else:
+                self.toolBarEdit.setVisible(False)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def showSearch(self):
+        try:
+            if self.actionShowSearch.isChecked():
+                self.toolBarSearch.setVisible(True)
+            else:
+                self.toolBarSearch.setVisible(False)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def showTaxonInfo(self):
+        try:
+            if self.actionShowTaxonInfo.isChecked():
+                self.dockWidgetTaxonInfo.setVisible(True)
+            else:
+                self.dockWidgetTaxonInfo.setVisible(False)
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
     def setToolBarText(self):
         try:
             if self.actionShowToolbarText.isChecked():
-                self.toolBar.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
-                self.toolBar_2.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+                self.toolBarEdit.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+                self.toolBarSearch.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
             else:
-                self.toolBar.setToolButtonStyle(Qt.ToolButtonIconOnly)
-                self.toolBar_2.setToolButtonStyle(Qt.ToolButtonIconOnly)
+                self.toolBarEdit.setToolButtonStyle(Qt.ToolButtonIconOnly)
+                self.toolBarSearch.setToolButtonStyle(Qt.ToolButtonIconOnly)
         except BaseException as e:
            QMessageBox.information(self, "Warning", str(e))
 
@@ -168,6 +209,15 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.AboutDialog.show()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
+
+    def openDBMainWindow(self):
+        try:
+            self.DBMainWindow = checklistDB(self)
+            #self.DBMainWindow.setWindowFlags(self.DBMainWindow.windowFlags() | Qt.WindowStaysOnTopHint)
+            self.DBMainWindow.show()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
 
     def urlHomepage(self):
         try:
@@ -280,6 +330,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Warning", str(e))
 
     def getTaxonInfo(self):
+        '''
+        getTaxonInfo
+        ============
+
+        '''
         try:
             item = self.treeWidget.currentItem()
             if item:
@@ -287,12 +342,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 family_cname = str(item.text(0))
                 cname = str(item.text(2))
                 # check database
-                db_table = self.checkDB()
+                db_table = self.selectDB()
                 # get full information from data tables
                 QUERYSPINFO = '''
                     SELECT
                         n.family,
-                        n.cname, n.endemic, n.iucn_category, n.source
+                        n.cname,
+                        n.endemic,
+                        n.iucn_category,
+                        n.source,
+                        n.id
                     FROM %s n
                     WHERE n.cname = '%s';
                 ''' % (db_table, cname)
@@ -302,31 +361,75 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 taxonRes = curs.fetchall()
                 family = taxonRes[0][0]
                 endemic = taxonRes[0][2]
+                taxonID = taxonRes[0][5]
                 taxonAttr = []
                 if endemic == 1:
                     endemic = self.tr(u'<font color="#aaaaaa">(Endemic)</font>')
                 else:
                     endemic = ''
                 iucn = taxonRes[0][3]
-                if iucn is not None:
-                    taxonAttr.append(iucn) 
+                if len(iucn) > 0:
+                    taxonAttr.append('(' + iucn + ')')
                 source = taxonRes[0][4]
                 if source != '未知' and source !='原生':
                     taxonAttr.append(source)
-                taxonAttr = '<br/>\n'.join(taxonAttr)
+                taxonAttr = ' '.join(taxonAttr)
+                if len(taxonAttr) > 0:
+                    taxonInfo = '''<b>Info</b>:<br/>%s<br/>''' % taxonAttr
+                else:
+                    taxonInfo = '<br/>'
+                ## get synonyms
+
+                # get all of the table name first
+                queryTableList = '''SELECT name FROM sqlite_master WHERE type = "table"'''
+                curs.execute(queryTableList)
+                allTables = curs.fetchall()
+                tabList = []
+                for tab in allTables:
+                    tabList.append(tab[0])
+                # if the synonym table exists, list all the synonyms
+                synonymTab = db_table + '_synonym'
+                if synonymTab in tabList:
+                    querySynonyms = '''
+                    SELECT
+                        namecode,
+                        synonyms
+                    FROM
+                        %s
+                    WHERE id=%i
+                    ''' % (synonymTab, int(taxonID))
+                    curs.execute(querySynonyms)
+                    synonymList = []
+                    synonyms = curs.fetchall()
+                    if len(synonyms) > 0:
+                        for syn in range(0, len(synonyms)):
+                            synonymsFmt = self.g.fmtname(synonyms[syn][1], \
+                                    doformat=True, format_type='html', split=False)
+                            synonymList.append(synonymsFmt)
+                        synonymList = '<br/>\n'.join(synonymList)
+                        synonymHtml = '''
+                        <p class="synonyms">
+                        <b>Synonyms</b>: <br/>
+                        %s
+                        </p>
+                        ''' % synonymList
+                        synonymList + '''</p>'''
+                    else:
+                        synonymHtml = '<br/>'
+                else:
+                    synonymHtml = '<br/>'
                 # export
                 taxonInfo = '''
                 <p class="info">
                 <h3>%s %s %s</h3>
-                Family: %s (%s)<br/>
-                Info:<br/>
-                %s<br/>
+                <br/>
+                <b>Family</b>:<br/> %s (%s)<br/>
                 </p>
-                <p class="synonyms">
-                </p>
+                %s
+                %s
                 ''' % (fullname, cname, endemic, \
                         family_cname, family, \
-                        taxonAttr)
+                        taxonInfo, synonymHtml)
 
                 self.textBrowserInfo.setText(taxonInfo)
                 self.statusBar().showMessage(cname)
@@ -347,7 +450,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             completer.setFilterMode(Qt.MatchContains)
             completer.setCaseSensitivity(Qt.CaseInsensitive)
             self.lineSpecies.setCompleter(completer)
-            db_table = self.checkDB()
+            db_table = self.selectDB()
             retrieved = self.g.dbGetsp(db_table, self.sqlite_db)
             b_container=[]
             for i in range(len(retrieved)):
@@ -356,20 +459,30 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
-    def checkDB(self):
+    def selectDB(self):
         try:
-            db_idx = self.comboDBselect.currentIndex()
-            if db_idx == 0:
+            if self.actionTaiwanVascularPlants.isChecked():
                 db_table = 'dao_pnamelist_pg'
-            elif db_idx == 1:
+            elif self.actionTaiwanFlora.isChecked():
                 db_table = 'dao_pnamelist'
-            elif db_idx == 2:
-                db_table = 'dao_bnamelist'
-            elif db_idx == 3:
+            elif self.actionJapanYlist.isChecked():
                 db_table = 'dao_jp_ylist'
             else:
-                db_table = 'dao_pnamelist'
+                db_table = 'dao_pnamelist_pg'
+            return(db_table)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def checkDB(self):
+        try:
+            db_table = self.selectDB()
+            # after changing the database, clear all the tree items
+            # and browser taxon info
+            self.delAllTreeItems()
+            self.textBrowserInfo.clear()
+            # update status bar
             self.statusBar().showMessage(self.tr('Current database table is %s' % db_table))
+            self.spCompleter()
             return(db_table)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -451,7 +564,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 conn.commit()
             f.close()
             # check the target database table
-            db_table = self.checkDB()
+            db_table = self.selectDB()
             query_list = '''
             SELECT n.family_cname,n.fullname,n.cname FROM %s n, sample s
             WHERE n.cname = s.cname order by family,name;
@@ -514,7 +627,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 curs.execute(insert_db)
             conn.commit()
             # check the target database table
-            db_table = self.checkDB()
+            db_table = self.selectDB()
             query_list = '''
             SELECT n.family_cname,n.fullname,n.cname FROM %s n, compare_sample s
             WHERE n.cname = s.cname order by family,name;
@@ -643,21 +756,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def getDbIdx(self):
         try:
             self.g = genlist_api.Genlist()
-            db_idx = self.comboDBselect.currentIndex()
-            if db_idx == 0:
-                # Phylogeny Group system (PPG, GPG and APG, etc.)
-                retrieved = self.g.dbGetsp('dao_pnamelist_pg', self.sqlite_db)
-            elif db_idx == 1:
-                # Flora of Taiwan
-                retrieved = self.g.dbGetsp('dao_pnamelist', self.sqlite_db)
-            elif db_idx == 2:
-                # Birdlist of Taiwan
-                retrieved = self.g.dbGetsp('dao_bnamelist', self.sqlite_db)
-            elif db_idx == 3:
-                # Plant list of Japan (Ylist, cached: 2015-10-15)
-                retrieved = self.g.dbGetsp('dao_jp_ylist', self.sqlite_db)
-            else:
-                retrieved = self.g.dbGetsp('dao_pnamelist_pg', self.sqlite_db)
+            db_table = self.selectDB()
+            retrieved = self.g.dbGetsp(db_table, self.sqlite_db)
             b_container = []
             for i in range(len(retrieved)):
                     b_container.append([retrieved[i][2], retrieved[i][3], retrieved[i][5]])
@@ -708,7 +808,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                         item.setText(2, species_item[0])
                         self.treeWidget.addTopLevelItem(item)
                     self.lineSpecies.clear()
-                    # print info in textBrowserInfo
                 else:
                     QMessageBox.information(self, "Warning", self.tr("The species %s did not exist in our database!") % species_item[0])
                     self.lineSpecies.clear()
@@ -778,60 +877,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     (item.parent() or root).removeChild(item)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
-    # DB Tree Widget
-    # 設定 tree widget header
-    # self.treeWidget.headerItem().setText(0, _translate("MainWindow", "Family")))
-    def dbViewer(self):
-        try:
-            conn = sqlite3.connect(self.sqlite_db)
-            with conn:
-                curs = conn.cursor()
-                # 設定 combo text: 列出資料庫內所有資料表
-                queryTableList = '''SELECT name FROM sqlite_master WHERE type = "table"'''
-                curs.execute(queryTableList)
-                allTableList = curs.fetchall()
-                for tab in range(0,len(allTableList)):
-                    self.comboDBTables.addItem(self.tr("%s" % allTableList[tab]))
-            conn.close()
-        except BaseException as e:
-            QMessageBox.information(self, "Warning: [dbViewer]", str(e))
-
-    def viewTable(self):
-        '''
-        view table data from sqlite db
-        '''
-        try:
-            # clear all treeWidget items
-            self.treeWidgetDB.clear()
-            # clear all of the columns (headers)
-            self.treeWidgetDB.setColumnCount(0)
-            # fetch table columns
-            tableName = str(self.comboDBTables.currentText())
-            self.treeWidgetDB.header().setVisible(True)
-            conn = sqlite3.connect(self.sqlite_db)
-            with conn:
-                curs = conn.cursor()
-                queryTableColNames = '''pragma table_info('%s')''' % tableName
-                curs.execute(queryTableColNames)
-                columnNamesInfo = curs.fetchall()
-                columnNames = []
-                for col in range(0, len(columnNamesInfo)):
-                    columnNames.append(columnNamesInfo[col][1])
-                    self.treeWidgetDB.headerItem().setText(col, self.tr("%s" % columnNamesInfo[col][1]))
-                # add item data
-                queryTableContents = '''SELECT * FROM %s;''' % tableName
-                curs.execute(queryTableContents)
-                tableContents = curs.fetchall()
-                for i in range(0, len(tableContents)):
-                    item = QTreeWidgetItem()
-                    for col in range(0, len(columnNames)):
-                        # check for species items
-                        item.setText(col, str(tableContents[i][col]))
-                    self.treeWidgetDB.addTopLevelItem(item)
-            conn.close()
-        except BaseException as e:
-            QMessageBox.information(self, "Warning: [viewTable]", str(e))
-
 
     # 儲存批次的文字檔
     def saveChecklistTxt(self):
@@ -882,7 +927,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.g = genlist_api.Genlist()
             tree_item = self.getTreeItems(self.treeWidget)
             # getdbtable
-            db_table = self.checkDB()
+            db_table = self.selectDB()
             ofile = self.outputFilename()
             if ofile:
                 # 儲存成文字檔
@@ -929,7 +974,7 @@ class CombineDialog(QDialog, Ui_CombineDialog):
 
             self.home = os.path.expanduser("~")
             self.g = genlist_api.Genlist()
-            self.dbTable = MainWindow.checkDB()
+            self.dbTable = MainWindow.selectDB()
             self.sqlite_db = MainWindow.checkLocalDB()
 
             self.butSelCombList.clicked.connect(self.selTobeCombFiles)
@@ -968,7 +1013,6 @@ class CombineDialog(QDialog, Ui_CombineDialog):
         try:
             combChecklists = str(self.textChecklists.text()).split(',')
             combExcelFile = str(self.textExpExcel.text())
-            #print([combChecklists, combExcelFile])
             if combChecklists is None or combExcelFile is None:
                 QMessageBox.information(self, "Warning", self.tr(u'Checklists and excel file should not be empty!'))
                 return
@@ -1072,7 +1116,6 @@ class CompareDialog(QDialog, Ui_CompareDialog):
                     tmp_filename = a_filename + '_' + b_filename + '-' + ab_type[0] + '_' + ab_type[1] + '.txt'
                     #self.lineTempFile.setText(os.path.join(a_path, tmp_filename))
                     compare_result = list(compare_result)
-                    #print(compare_result)
                     self.delAllTreeItems()
                     # load compared list into QTreeWidget
                     if len(compare_result) >= 1:
@@ -1139,3 +1182,70 @@ class FormatDialog(QDialog, Ui_FormatDialog):
 
     def destroy(self):
         self.close()
+
+###### DATABASE class
+class checklistDB(QMainWindow, Ui_DBMainWindow):
+    def __init__(self, MainWindow):
+        try:
+            super().__init__()
+            self.setupUi(self)
+
+
+            self.sqlite_db = MainWindow.checkLocalDB()
+            self.dbViewer()
+            self.butViewTable.clicked.connect(self.viewTable)
+
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def dbViewer(self):
+        try:
+            conn = sqlite3.connect(self.sqlite_db)
+            with conn:
+                curs = conn.cursor()
+                # 設定 combo text: 列出資料庫內所有資料表
+                queryTableList = '''SELECT name FROM sqlite_master WHERE type = "table"'''
+                curs.execute(queryTableList)
+                allTableList = curs.fetchall()
+                for tab in range(0,len(allTableList)):
+                    self.comboDBTables.addItem(self.tr("%s" % allTableList[tab]))
+            conn.close()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning: [dbViewer]", str(e))
+
+    def viewTable(self):
+        '''
+        view table data from sqlite db
+        '''
+        try:
+            # clear all treeWidget items
+            self.treeWidgetDB.clear()
+            # clear all of the columns (headers)
+            self.treeWidgetDB.setColumnCount(0)
+            # fetch table columns
+            tableName = str(self.comboDBTables.currentText())
+            self.treeWidgetDB.header().setVisible(True)
+            conn = sqlite3.connect(self.sqlite_db)
+            with conn:
+                curs = conn.cursor()
+                queryTableColNames = '''pragma table_info('%s')''' % tableName
+                curs.execute(queryTableColNames)
+                columnNamesInfo = curs.fetchall()
+                columnNames = []
+                for col in range(0, len(columnNamesInfo)):
+                    columnNames.append(columnNamesInfo[col][1])
+                    self.treeWidgetDB.headerItem().setText(col, self.tr("%s" % columnNamesInfo[col][1]))
+                # add item data
+                queryTableContents = '''SELECT * FROM %s;''' % tableName
+                curs.execute(queryTableContents)
+                tableContents = curs.fetchall()
+                for i in range(0, len(tableContents)):
+                    item = QTreeWidgetItem()
+                    for col in range(0, len(columnNames)):
+                        # check for species items
+                        item.setText(col, str(tableContents[i][col]))
+                    self.treeWidgetDB.addTopLevelItem(item)
+            conn.close()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning: [viewTable]", str(e))

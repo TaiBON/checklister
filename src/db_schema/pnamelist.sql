@@ -12,6 +12,15 @@ CREATE TABLE dao_pnamelist_pg (
   iucn_category varchar,
   source varchar
 );
+DROP TABLE IF EXISTS dao_pnamelist_pg_synonym;
+CREATE TABLE dao_pnamelist_pg_synonym (
+  id integer,
+  accepted_namecode varchar,
+  namecode varchar,
+  fullname varchar,
+  cname varchar,
+  synonyms varchar
+);
 DROP TABLE IF EXISTS dao_pnamelist;
 CREATE TABLE dao_pnamelist (
   id integer primary key,
@@ -49,5 +58,4 @@ INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (0, '苔蘚地衣類植�
 INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (1, '蕨類植物 Ferns and Lycophytes');
 INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (2, '裸子植物 Gymnosperms');
 INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (3, "雙子葉植物 'Dicotyledons'");
-INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (4, '單子葉植物 Monocotyledons'); 
-
+INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (4, '單子葉植物 Monocotyledons');
