@@ -10,6 +10,9 @@ import subprocess   # execute shell commands
 import sys          # system
 import traceback    # dealing with exception
 import xlsxwriter   # export xlsx
+import logging      # for debug
+import rpy2         # rpython binding
+from PyQt5.Qt import QObject
 from openpyxl import Workbook, worksheet, load_workbook
 from platform import uname
 
@@ -60,7 +63,7 @@ class Genlist(object):
         length_fullname = len(fullname_split)
 
 
-        epithet_cont = []
+        epithetLst = []
         epithet = ''
         author_start = ''
         cross_type = ''
@@ -218,7 +221,7 @@ class Genlist(object):
         subordinate_status = sorted(subordinate_status)
         fname_sp = italic_b + ' '.join(str(item) for item in fullname_split[0:2])+ italic_e
         next_s = ''
-        epithet_cont = []
+        epithetLst = []
         epithet = ''
         authors_start = ''
         if len(subordinate_status) >= 1:
@@ -249,27 +252,27 @@ class Genlist(object):
                     else:
                         sub_epithet = fullname_split[subordinate_status[v][0]+1]
                     epithet = subordinate_status[v][1] + ' ' + italic_b + sub_epithet + italic_e
-                epithet_cont.append(epithet)
+                epithetLst.append(epithet)
             # authors
             if authors_start is '':
                 authors_start = subordinate_status[-1][0] + 2
             authors = fullname_split[authors_start:length_fullname]
             authors_join = ' '.join(authors)
             if epithet == '':
-                fname_cont = fname_sp + ' ' + ' '.join(epithet_cont)
+                fnameLst = fname_sp + ' ' + ' '.join(epithetLst)
             else:
-                fname_cont = fname_sp + ' ' + ' '.join(epithet_cont)
+                fnameLst = fname_sp + ' ' + ' '.join(epithetLst)
         else:
             authors = fullname_split[2:length_fullname]
             authors_join = ' '.join(authors)
-            fname_cont = fname_sp
+            fnameLst = fname_sp
         # ex should be italic?
         # NEEDS TO BE CONFIRMED
         # authors_join = re.sub(' ex ', ' ' + italic_b + 'ex' + italic_e + ' ', authors_join)
         if split == False:
-            return(fname_cont + ' ' + authors_join)
+            return(fnameLst + ' ' + authors_join)
         elif split == True:
-            return([fname_cont, authors_join])
+            return([fnameLst, authors_join])
         else:
             print("Invalid split option. Please choose 'True' or 'False'")
 
@@ -413,9 +416,15 @@ class Genlist(object):
 
         """
         try:
+            logging.basicConfig(filename='/tmp/checklister.log',level=logging.DEBUG)
             xls_subname = str.split(os.path.split(xls_file)[1], '.')[-1]
             if xls_subname != 'xlsx':
                 xls_file = str(xls_file) + '.xlsx'
+            xlsBase = re.sub('.xls[x|]$','',xls_file)
+            logging.info(xlsBase)
+            #with codecs.open(xlsBase+'.csv', 'w+', 'utf-8') as f:
+            #    for row in range(len(import_list)):
+            #        f.write('\t'.join(import_list[row]))
             wb = xlsxwriter.Workbook(xls_file)
             ws = wb.add_worksheet()
             # rich formats
@@ -423,10 +432,9 @@ class Genlist(object):
             default = wb.add_format()
             for row in range(len(import_list)):
                 for col in range(len(import_list[row])):
-                    if col == int(name_italic_col):
-                        print(import_list[row][col])
+                    if col == int(name_italic_col) and row > 0:
                         input_name = self.fmtname(import_list[row][col], format_type='custom', italic_b='^', italic_e='$', split=False)
-                        formatted_cont = []
+                        formattedLst = []
                         splitted_name = input_name.split('^')
                         splitted_name.remove('')
                         for i in range(len(splitted_name)):
@@ -434,8 +442,8 @@ class Genlist(object):
                                 should_italic = splitted_name[i].split('$')
                                 a = [italic, should_italic[0], default, should_italic[1]]
                                 for r in range(len(a)):
-                                    formatted_cont.append(a[r])
-                        ws.write_rich_string(row, col, *formatted_cont)
+                                    formattedLst.append(a[r])
+                        ws.write_rich_string(row, col, *formattedLst)
                     else:
                         ws.write(row,col,import_list[row][col])
             wb.close()
@@ -451,7 +459,7 @@ class Genlist(object):
             max_col = curr_sheet.get_highest_column()
             max_row = curr_sheet.get_highest_row()
             # header
-            ws_cont = [['orignal', 'formatted']]
+            wsLst = [['orignal', 'formatted']]
             if name_col_num > max_col:
                 print(u'The column number exceed the maximum limit')
             else:
@@ -459,8 +467,8 @@ class Genlist(object):
                     if header == True:
                         i = i+1
                     d = curr_sheet.cell(row=i, column=name_col_num).value
-                    ws_cont.append([d,d])
-            self.listToXls(ws_cont, 1, outputfile)
+                    wsLst.append([d,d])
+            self.listToXls(wsLst, 1, outputfile)
         except BaseException as e:
             print(str(e))
 
@@ -573,34 +581,38 @@ class Genlist(object):
             species_type = 1
 
         #### INPUT FILES
-        curs.execute('DROP TABLE IF EXISTS sample;')
-        conn.commit()
-        sample_create = '''
-        CREATE TABLE sample (
-          cname varchar
-        );
-        '''
-        curs.execute(sample_create)
-        with open(inputfile, newline='', encoding='utf-8') as f:
-            reader = csv.reader(f, delimiter='|')
-            for row in reader:
-                # substitute 台 to 臺
-                zhname = re.sub('台([灣|北|中|西|南|東])',r'臺\1', row[0])
-                insert_db = '''
-                INSERT INTO sample (cname) VALUES ("%s");
-                ''' % zhname
-                curs.execute(insert_db)
-                conn.commit()
-        f.close()
+        self.importTable(dbfile, table_name = 'sample', import_file=inputfile)
+        # curs.execute('DROP TABLE IF EXISTS sample;')
+        # conn.commit()
+        # sample_create = '''
+        # CREATE TABLE sample (
+        #   cname varchar
+        # );
+        # '''
+        # curs.execute(sample_create)
+        # with open(inputfile, newline='', encoding='utf-8') as f:
+        #     reader = csv.reader(f, delimiter='|')
+        #     for row in reader:
+        #         # substitute 台 to 臺
+        #         zhname = re.sub('台([灣|北|中|西|南|東])',r'臺\1', row[0])
+        #         insert_db = '''
+        #         INSERT INTO sample (cname) VALUES ("%s");
+        #         ''' % zhname
+        #         curs.execute(insert_db)
+        #         conn.commit()
+        # f.close()
 
-        # SELECT
+        ##### EXPORT DwC ##### 
         query_all = '''
-            SELECT distinct n.* from sample s LEFT OUTER JOIN
-            (SELECT distinct id, family,
-                family_cname,
-                fullname, cname,
+            SELECT 
+                distinct n.id, n.family, n.family_cname,
+                n.fullname,n.cname,n.endemic,n.iucn_category,n.source
+            FROM sample s LEFT OUTER JOIN
+            (SELECT distinct plant_type, id, family,
+                family_cname,fullname, cname,
                 endemic, iucn_category, source
-            FROM %s) as n ON s.cname = n.cname;
+            FROM %s ORDER BY plant_type, family) as n ON s.local_name = n.cname 
+            ORDER BY n.plant_type, n.family, n.fullname;
         ''' % ( dbtable )
         curs.execute(query_all)
         dwc_list = curs.fetchall()
@@ -611,6 +623,7 @@ class Genlist(object):
             for i in range(0, len(dwc_list)):
                 writer.writerow(dwc_list[i])
 
+        ##### EXPORT Markdown #####
         with codecs.open(ofile_prefix +'.md', 'w+', 'utf-8') as f:
             ##### Generate HEADER #####
             if species_type == 1:
@@ -630,15 +643,15 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             ##### End of HEADER #####
             count_family = '''
             SELECT count(*) from (SELECT distinct family from sample s left outer join %s n
-                    on s.cname=n.cname) as f;
+                    on s.local_name=n.cname) as f;
             ''' % dbtable
             count_species = '''
             SELECT count(*) from (SELECT distinct n.cname from sample s left outer join %s n
-                    on s.cname=n.cname) as f;
+                    on s.local_name=n.cname) as f;
             ''' % dbtable
             not_exist_sp = '''
-            SELECT distinct s.cname from sample s left outer join %s n
-                    on s.cname=n.cname where n.cname is null;
+            SELECT distinct s.local_name from sample s left outer join %s n
+                    on s.local_name=n.cname where n.cname is null;
             ''' % dbtable
             curs.execute(count_family)
             family_no = curs.fetchall()[0][0]
@@ -661,250 +674,89 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             ####### End of HEADER
 
             ####### namelist BODY
-            if oformat == 'xlsx':
-                wb = xlsxwriter.Workbook(ofile_prefix + '.xlsx')
-                ws = wb.add_worksheet()
-                italic = wb.add_format({'italic': True})
-                default = wb.add_format()
+            pt_plant_type_sql = '''
+                SELECT p.plant_type,p.pt_name
+                FROM dao_plant_type p,
+                    (SELECT distinct plant_type from sample s left outer join %s n
+                    on s.local_name=n.cname order by plant_type) as t
+                WHERE p.plant_type = t.plant_type;
+            ''' % dbtable
+            curs.execute(pt_plant_type_sql)
+            pt_plant_type = curs.fetchall()
+            n = 1
+            m = 1
 
-            if species_type == 1:
-                pt_plant_type_sql = '''
-                    SELECT p.plant_type,p.pt_name
-                    FROM dao_plant_type p,
-                        (SELECT distinct plant_type from sample s left outer join %s n
-                        on s.cname=n.cname order by plant_type) as t
-                    WHERE p.plant_type = t.plant_type;
-                ''' % dbtable
-                curs.execute(pt_plant_type_sql)
-                pt_plant_type = curs.fetchall()
-                n = 1
-                m = 1
-
-                # write excel header
-                xls_num_row = 0
-                if oformat == 'xlsx':
-                    xls_header = [u'',u'Family',u'Species',u'Common name', \
-                        u'Species info',u'IUCN category']
-                    for col in range(len(xls_header)):
-                        ws.write(xls_num_row, col, xls_header[col])
-                for i in range(0,len(pt_plant_type)):
-                    if oformat == 'xlsx':
-                        xls_num_row += 1
-                        ws.write(xls_num_row, 0, pt_plant_type[i][1])
-                    else:
-                        f.write('\n')
-                        f.write('\n###'+pt_plant_type[i][1]+'\n\n')
-                    taxa_family_sql = '''
-                    select distinct family,family_cname from sample s left outer join %s n
-                    on s.cname=n.cname where n.plant_type=%i
-                    order by plant_type,family;
-                    ''' % (dbtable, pt_plant_type[i][0])
-                    curs.execute(taxa_family_sql)
-                    taxa_family = curs.fetchall()
-                    for j in range(0,len(taxa_family)):
-                        sp_number_in_fam = '''
-                        select count(*) from
-                            (select distinct fullname, name, n.cname from sample s left outer join %s n
-                            on s.cname=n.cname where n.plant_type=%i and family='%s'
-                            order by plant_type,family,fullname) as a;
-                        ''' % (dbtable, pt_plant_type[i][0], taxa_family[j][0])
-                        curs.execute(sp_number_in_fam)
-                        fam_spno = curs.fetchall()[0][0]
-                        if oformat == 'xlsx':
-                            fam = taxa_family[j][0]
-                            fam_zh = taxa_family[j][1]
-                            fam_name = fam + '(' + fam_zh + ')'
-                            xls_num_row += 1
-                            ws.write(xls_num_row, 1, fam_name)
-                        else:
-                            fam = str(m) + '. **' + taxa_family[j][0]
-                            fam_zh = taxa_family[j][1] + '**'
-                            f.write('\n')
-                            f.write(fam + ' ' + fam_zh + ' (%i)\n' % fam_spno)
-                        taxa_family_sp = '''
-                            select distinct fullname,n.cname,n.endemic,n.source,n.iucn_category,n.name from sample s left outer join %s n
-                            on s.cname=n.cname where n.plant_type=%i and family='%s'
-                            order by plant_type,family,fullname;
-                        ''' % (dbtable, pt_plant_type[i][0], taxa_family[j][0])
-                        curs.execute(taxa_family_sp)
-                        taxa_family_sp = curs.fetchall()
-                        m = m + 1
-                        # output species within a family
-                        for k in range(0,len(taxa_family_sp)):
-                            # check the endmic species
-                            if taxa_family_sp[k][2] == 1:
-                                ENDEMIC = "#"
-                            else:
-                                ENDEMIC = ''
-                            # check the source
-                            if taxa_family_sp[k][3] == u'栽培':
-                                SRC = '†'
-                            elif taxa_family_sp[k][3] == u'歸化':
-                                SRC = '*'
-                            else:
-                                SRC = ''
-                            # IUCN category
-                            if len(taxa_family_sp[k][4]) == 2:
-                                if oformat == 'xlsx':
-                                    IUCNCAT = taxa_family_sp[k][4]
-                                else:
-                                    IUCNCAT = ' (%s)' % taxa_family_sp[k][4]
-                            else:
-                                IUCNCAT = ''
-                            spinfo = ' ' + ENDEMIC + SRC + IUCNCAT
-                            # write species names (fullname)
-                            xls_num_row +=1
-                            if oformat == 'xlsx':
-                                # when export to xls, format the name to xlsxwriter rich text format
-                                xls_input_name = self.fmtname(taxa_family_sp[k][0], format_type='custom', italic_b='^', italic_e='$', split=False)
-                                formatted_cont = []
-                                splitted_name = xls_input_name.split('^')
-                                splitted_name.remove('')
-                                for i in range(len(splitted_name)):
-                                    if re.search('$', splitted_name[i]):
-                                        should_italic = splitted_name[i].split('$')
-                                        a = [italic, should_italic[0], default, should_italic[1]]
-                                        for r in range(len(a)):
-                                            formatted_cont.append(a[r])
-                                ws.write_rich_string(xls_num_row, 2, *formatted_cont)
-
-                            if spinfo is not None:
-                                if oformat == 'xlsx':
-                                    SPINFO = re.sub(' ', '', ENDEMIC + SRC)
-                                    # write common name
-                                    ws.write(xls_num_row, 3, taxa_family_sp[k][1])
-                                    # write species info (endemic/naturalized)
-                                    ws.write(xls_num_row, 4, SPINFO)
-                                    ws.write(xls_num_row, 5, IUCNCAT)
-                                else:
-                                    f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0], split=False) \
-                                            + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
-                            else:
-                                if oformat == 'xlsx':
-                                    ws.write(xls_num_row, 3, taxa_family_sp[k][1])
-                                else:
-                                    f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0], split=False) \
-                                            + ' ' + taxa_family_sp[k][1] +'\n')
-                            n = n + 1
-            else:
-                #if oformat == 'xlsx':
-                #    wb = Workbook()
-                #    ws = wb.active
+            for i in range(0,len(pt_plant_type)):
+                f.write('\n')
+                f.write('\n###'+pt_plant_type[i][1]+'\n\n')
                 taxa_family_sql = '''
-                    SELECT DISTINCT
-                        family,family_cname
-                    FROM sample s
-                    LEFT OUTER JOIN %s n
-                    ON s.cname=n.cname
-                    ORDER BY family;
-                    ''' % dbtable
+                select distinct family,family_cname from sample s left outer join %s n
+                on s.local_name=n.cname where n.plant_type=%i
+                order by plant_type,family;
+                ''' % (dbtable, pt_plant_type[i][0])
                 curs.execute(taxa_family_sql)
                 taxa_family = curs.fetchall()
-
-                m = 1
-                n = 1
-                # write excel header
-                if oformat == 'xlsx':
-                    #wb = Workbook()
-                    #ws = wb.active
-                    #ws.append(['',u'family',u'species',u'local name', \
-                    #    u'species info',u'Conservation status'])
-                    xls_num_row = 0
-                    xls_header = ['',u'Family',u'Species',u'Common name', \
-                        u'Species info',u'Conservation status']
-                    for col in range(len(xls_header)):
-                        ws.write(xls_num_row, col, xls_header[col])
-
-
                 for j in range(0,len(taxa_family)):
                     sp_number_in_fam = '''
-                        select count(*) from
-                        (SELECT distinct name,n.cname
-                            FROM sample s LEFT OUTER JOIN %s n
-                            ON s.cname=n.cname
-                        WHERE family='%s'
-                        ORDER BY family,name) as a;
-                    ''' % (dbtable, taxa_family[j][0])
+                    select count(*) from
+                        (select distinct fullname, name, n.cname from sample s left outer join %s n
+                        on s.local_name=n.cname where n.plant_type=%i and family='%s'
+                        order by plant_type,family,fullname) as a;
+                    ''' % (dbtable, pt_plant_type[i][0], taxa_family[j][0])
                     curs.execute(sp_number_in_fam)
                     fam_spno = curs.fetchall()[0][0]
-                    if oformat == 'xlsx':
-                        fam = taxa_family[j][0]
-                        fam_zh = '(' + taxa_family[j][1] + ')'
-                        xls_num_row += 1
-                        ws.write(xls_num_row, 0, fam)
-                        ws.write(xls_num_row, 1, fam_zh)
-                        #ws.append([fam + fam_zh])
-                    else:
-                        fam = str(m) + '. **' + taxa_family[j][0]
-                        fam_zh = taxa_family[j][1]+'**'
-                        f.write('\n')
-                        f.write(fam+' '+fam_zh+' (%i)\n' % fam_spno)
+                    fam = str(m) + '. **' + taxa_family[j][0]
+                    fam_zh = taxa_family[j][1] + '**'
+                    f.write('\n')
+                    f.write(fam + ' ' + fam_zh + ' (%i)\n' % fam_spno)
                     taxa_family_sp = '''
-                        SELECT distinct
-                            name,n.cname,n.endemic,n.consv_status
-                        FROM sample s LEFT OUTER JOIN %s n
-                            ON s.cname=n.cname
-                        WHERE
-                            family='%s'
-                        ORDER BY family,name;
-                    ''' % (dbtable, taxa_family[j][0])
+                        select distinct fullname,n.cname,n.endemic,n.source,n.iucn_category,n.name from sample s left outer join %s n
+                        on s.local_name=n.cname where n.plant_type=%i and family='%s'
+                        order by plant_type,family,fullname;
+                    ''' % (dbtable, pt_plant_type[i][0], taxa_family[j][0])
                     curs.execute(taxa_family_sp)
                     taxa_family_sp = curs.fetchall()
                     m = m + 1
                     # output species within a family
                     for k in range(0,len(taxa_family_sp)):
                         # check the endmic species
-                        if taxa_family_sp[k][2] == u'特有種':
+                        if taxa_family_sp[k][2] == 1:
                             ENDEMIC = "#"
-                        elif taxa_family_sp[k][2][0:4] == u'特有亞種':
-                            ENDEMIC = '##'
                         else:
                             ENDEMIC = ''
-                        # conservation status
-                        CONSERV = taxa_family_sp[k][3]
-                        spinfo = ' ' + ENDEMIC + CONSERV
-
-                        # write species names (fullname)
-                        if oformat == 'xlsx':
-                            # when export to xls, format the name to xlsxwriter rich text format
-                            xls_num_row +=1
-                            xls_input_name = self.fmtname(taxa_family_sp[k][0], format_type='custom', \
-                                                italic_b='^', italic_e='$', split=False)
-                            formatted_cont = []
-                            splitted_name = xls_input_name.split('^')
-                            splitted_name.remove('')
-                            for i in range(len(splitted_name)):
-                                if re.search('$', splitted_name[i]):
-                                    should_italic = splitted_name[i].split('$')
-                                    a = [italic, should_italic[0], default, should_italic[1]]
-                                    for r in range(len(a)):
-                                        formatted_cont.append(a[r])
-                            ws.write_rich_string(xls_num_row, 1, *formatted_cont)
+                        # check the source
+                        if taxa_family_sp[k][3] == u'栽培':
+                            SRC = '†'
+                        elif taxa_family_sp[k][3] == u'歸化':
+                            SRC = '*'
+                        else:
+                            SRC = ''
+                        # IUCN category
+                        if len(taxa_family_sp[k][4]) == 2:
+                            IUCNCAT = ' (%s)' % taxa_family_sp[k][4]
+                        else:
+                            IUCNCAT = ''
+                        spinfo = ' ' + ENDEMIC + SRC + IUCNCAT
 
                         if spinfo is not None:
-                            if oformat == 'xlsx':
-                                ws.write(xls_num_row, 2, taxa_family_sp[k][1])
-                                ws.write(xls_num_row, 3, ENDEMIC)
-                                ws.write(xls_num_row, 4, CONSERV)
-                            else:
-                                f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0], split=False) + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
+                            f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0], split=False) \
+                                        + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
                         else:
-                            if oformat == 'xlsx':
-                                ws.write(xls_num_row, 2, taxa_family_sp[k][1])
-                            else:
-                                f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0], split=False) + ' ' + taxa_family_sp[k][1] +'\n')
+                            f.write('    ' + str(n) + '. ' + self.fmtname(taxa_family_sp[k][0], split=False) \
+                                    + ' ' + taxa_family_sp[k][1] +'\n')
                         n = n + 1
-            if oformat == 'xlsx':
-                #wb.save(ofile_prefix + '.' + oformat)
-                #ws.write(0, 0, '%s.xlsx' % ofile_prefix)
-                wb.close()
             f.close()
 
             try:
-                if oformat != 'xlsx':
+                if oformat == 'xlsx':
+                    dwc_list.insert(0, ['taxonID','family', 'familyVernacularName', 'Fullname with Authors', \
+                                        'vernacularName', 'isEndemic', 'iucnCategory', 'source'])
+                    self.listToXls(dwc_list, 3, ofile_prefix)
+                else:
                     self.pandocConvert(oformat, ofile_prefix)
             except BaseException as e:
                 print(str(e))
+            # cleanup everything
             curs.execute('DROP TABLE IF EXISTS sample;')
             conn.commit()
             conn.close()

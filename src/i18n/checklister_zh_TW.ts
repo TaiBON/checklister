@@ -324,12 +324,24 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Please input checklist A</source>
+        <translation type="obsolete">請輸入名錄 A</translation>
+    </message>
+    <message>
+        <source>Please input checklist B</source>
+        <translation type="obsolete">請輸入名錄 B</translation>
+    </message>
+    <message>
         <source>Updating database, please wait for a while ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Update DB done!</source>
         <translation>更新資料庫完成！</translation>
+    </message>
+    <message>
+        <source>A and B are identical!</source>
+        <translation type="obsolete">A 和 B 是相同的！</translation>
     </message>
     <message>
         <source>Database updated!</source>
@@ -348,24 +360,12 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Please input checklist A</source>
-        <translation type="obsolete">請輸入名錄 A</translation>
-    </message>
-    <message>
-        <source>Please input checklist B</source>
-        <translation type="obsolete">請輸入名錄 B</translation>
-    </message>
-    <message>
-        <source>A and B are identical!</source>
-        <translation type="obsolete">A 和 B 是相同的！</translation>
+        <source>There is no common species between checklist A and B</source>
+        <translation type="obsolete">在名錄 A 和 B 中並沒有相同的物種存在</translation>
     </message>
     <message>
         <source>The following species did not exist in our database,and I stored it at %s. Please check again: %s</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>There is no common species between checklist A and B</source>
-        <translation type="obsolete">在名錄 A 和 B 中並沒有相同的物種存在</translation>
     </message>
     <message>
         <source>The following species did not exist in our database. I store it at %s. Please check again: %s</source>

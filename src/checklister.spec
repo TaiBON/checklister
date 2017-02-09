@@ -23,7 +23,7 @@ i18n_tree = Tree('i18n', prefix='i18n', excludes=['.ts'])
 a = Analysis(['checklister.py'],
              hookspath=None,
              runtime_hooks=None,
-             excludes=None,
+             excludes=['jinja2.asyncsupport','jinja2.asyncfilters'],
              cipher=block_cipher)
 
 pyz = PYZ(a.pure,
