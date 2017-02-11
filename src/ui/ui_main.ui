@@ -51,7 +51,7 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>654</width>
+         <width>591</width>
          <height>374</height>
         </rect>
        </property>
@@ -458,6 +458,12 @@
      </item>
     </layout>
    </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidgetMap">
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2"/>
   </widget>
   <action name="actionSelectExport">
    <property name="icon">

@@ -25,6 +25,7 @@ import tempfile
 
 class MainWindow(QMainWindow, Ui_MainWindow):
 
+    @trace
     def __init__(self, parent = None):
         try:
             super().__init__(parent)
@@ -118,7 +119,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
-
+    @trace
     def newProj(self):
         try:
             self.clearOutputFilename()
@@ -130,6 +131,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def setPlantDBActionGroup(self):
         try:
             actionGroupP = QActionGroup(self.menuPlants, exclusive = True)
@@ -139,6 +141,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def showEdit(self):
         try:
             if self.actionShowEdit.isChecked():
@@ -148,6 +151,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def showSearch(self):
         try:
             if self.actionShowSearch.isChecked():
@@ -157,6 +161,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def showTaxonInfo(self):
         try:
             if self.actionShowTaxonInfo.isChecked():
@@ -167,6 +172,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def setToolBarText(self):
         try:
             if self.actionShowToolbarText.isChecked():
@@ -178,6 +184,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
            QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def openCombDialog(self):
         try:
             self.CombineDialog = CombineDialog(self)
@@ -186,6 +193,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def openCompareDialog(self):
         try:
             self.CompareDialog = CompareDialog(self)
@@ -194,6 +202,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def openFormatDialog(self):
         try:
             self.FormatDialog = FormatDialog(self)
@@ -202,6 +211,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def openAboutDialog(self):
         try:
             self.AboutDialog = AboutDialog(self)
@@ -210,6 +220,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def openDBMainWindow(self):
         try:
             self.DBMainWindow = checklistDB(self)
@@ -219,6 +230,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Warning", str(e))
 
 
+    @trace
     def urlHomepage(self):
         try:
             url = 'https://github.com/TaiBON/checklister'
@@ -226,6 +238,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def urlIssue(self):
         try:
             url = 'https://github.com/TaiBON/checklister/issues'
@@ -233,9 +246,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def closeApp(self):
         self.close()
 
+    @trace
     def keyPressEvent(self, qKeyEvent):
         '''
         shortcut key events
@@ -278,6 +293,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def butCheckPath(self, text_edit_path):
         """
         butCheckPath(text_edit)
@@ -307,6 +323,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.statusBar().showMessage(self.tr('Debug: butCheckPath error!'))
 
    # load to be merged list 
+    @trace
     def selMergedList(self):
         try:
             tobe_merged_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to merge"), \
@@ -329,6 +346,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def getTaxonInfo(self):
         '''
         getTaxonInfo
@@ -436,6 +454,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def spCompleter(self):
         try:
             def setHighlighted(self, text):
@@ -459,6 +478,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def selectDB(self):
         try:
             if self.actionTaiwanVascularPlants.isChecked():
@@ -473,6 +493,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def checkDB(self):
         try:
             db_table = self.selectDB()
@@ -487,6 +508,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def checkLocalDB(self):
         try:
             self.g = genlist_api.Genlist()
@@ -504,6 +526,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Warning", str(e))
 
 
+    @trace
     def updateDB(self):
         try:
             self.checkLocalDB()
@@ -530,6 +553,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def browSlist(self):
         try:
             #self.lineSlist.clear()
@@ -605,6 +629,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning! [BrowSlist]", str(e))
 
+    @trace
     def bulkLoadToTree(self, local_name_list):
         try:
             # QTreeItems
@@ -666,6 +691,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def browOutput(self):
         '''
         browOutput
@@ -692,6 +718,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def outputFilename(self):
         '''
         outputFilename
@@ -711,6 +738,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def clearOutputFilename(self):
         '''
         clearOutputFilename
@@ -726,6 +754,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def checklistTextFile(self, saveOutputFile):
         '''
         Get txt file according to the output *.docx/*.odt filename
@@ -740,6 +769,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Warning", str(e))
 
     # import data into auto-completion list
+    @trace
     def getCompleteData(self, model, blist):
         try:
             b_container = []
@@ -753,6 +783,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def getDbIdx(self):
         try:
             self.g = genlist_api.Genlist()
@@ -766,6 +797,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def deselectTreeItmes(self):
         try:
             self.treeWidget.clearSelection()
@@ -773,6 +805,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def selectAllTreeItmes(self):
         try:
             self.treeWidget.selectAll()
@@ -780,6 +813,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def addToTree(self):
         try:
             if self.lineSpecies.text() is '':
@@ -815,6 +849,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def delFromTree(self):
         #removing the QTreeItemWidget object
         try:
@@ -822,6 +857,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def getTreeItems(self, tree_widget):
         try:
             all_items = []
@@ -834,6 +870,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def searchTropicos(self):
         try:
             item = self.treeWidget.currentItem()
@@ -847,6 +884,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def searchNomenMatch(self):
         try:
             item = self.treeWidget.selectedItems()
@@ -866,10 +904,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 
 
+    @trace
     def delAllTreeItems(self):
     # TODO: 加入是否確定要全部刪除的確定
         self.treeWidget.clear()
 
+    @trace
     def delSelectedItems(self):
         try:
             root = self.treeWidget.invisibleRootItem()
@@ -879,6 +919,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Warning", str(e))
 
     # 儲存批次的文字檔
+    @trace
     def saveChecklistTxt(self):
         '''
         saveChecklistTxt
@@ -921,6 +962,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
 
     # 產生名錄
+    @trace
     def genChecklist(self):
         try:
             ## TODO: 
@@ -967,6 +1009,7 @@ class AboutDialog(QDialog, Ui_AboutDialog):
 #### Combine Dialog 
 class CombineDialog(QDialog, Ui_CombineDialog):
 
+    @trace
     def __init__(self, MainWindow):
         try:
             super().__init__()
@@ -986,6 +1029,7 @@ class CombineDialog(QDialog, Ui_CombineDialog):
             QMessageBox.information(self, "Warning", str(e))
 
 
+    @trace
     def selTobeCombFiles(self):
         # 待組合的名錄
         try:
@@ -998,6 +1042,7 @@ class CombineDialog(QDialog, Ui_CombineDialog):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def selExportExcel(self):
         try:
             combExcelFile = QFileDialog.getSaveFileName(self, self.tr(u"Save combined list as:"), \
@@ -1009,6 +1054,7 @@ class CombineDialog(QDialog, Ui_CombineDialog):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def execCombine(self):
         try:
             combChecklists = str(self.textChecklists.text()).split(',')
@@ -1027,11 +1073,13 @@ class CombineDialog(QDialog, Ui_CombineDialog):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def destroy(self):
         self.close()
 
 class CompareDialog(QDialog, Ui_CompareDialog):
 
+    @trace
     def __init__(self, MainWindow):
         try:
             super().__init__()
@@ -1048,6 +1096,7 @@ class CompareDialog(QDialog, Ui_CompareDialog):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def selChecklistA(self):
         try:
             checklist_A = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
@@ -1060,6 +1109,7 @@ class CompareDialog(QDialog, Ui_CompareDialog):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def selChecklistB(self):
         try:
             checklist_B = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
@@ -1072,6 +1122,7 @@ class CompareDialog(QDialog, Ui_CompareDialog):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def execCompare(self):
         try:
             # 1. check for A and B
@@ -1129,11 +1180,13 @@ class CompareDialog(QDialog, Ui_CompareDialog):
             QMessageBox.information(self, "Warning", str(e))
 
 
+    @trace
     def destroy(self):
         self.close()
 
 class FormatDialog(QDialog, Ui_FormatDialog):
 
+    @trace
     def __init__(self, MainWindow):
         try:
             super().__init__()
@@ -1148,6 +1201,7 @@ class FormatDialog(QDialog, Ui_FormatDialog):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def selExcelFile(self):
         try:
             #self.lineExcelFilePath.clear()
@@ -1159,6 +1213,7 @@ class FormatDialog(QDialog, Ui_FormatDialog):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def formatName(self):
         try:
             orig_excel_file = self.lineExcelFilePath.text()
@@ -1180,11 +1235,14 @@ class FormatDialog(QDialog, Ui_FormatDialog):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def destroy(self):
         self.close()
 
 ###### DATABASE class
 class checklistDB(QMainWindow, Ui_DBMainWindow):
+
+    @trace
     def __init__(self, MainWindow):
         try:
             super().__init__()
@@ -1199,6 +1257,7 @@ class checklistDB(QMainWindow, Ui_DBMainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    @trace
     def dbViewer(self):
         try:
             conn = sqlite3.connect(self.sqlite_db)
@@ -1214,6 +1273,7 @@ class checklistDB(QMainWindow, Ui_DBMainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning: [dbViewer]", str(e))
 
+    @trace
     def viewTable(self):
         '''
         view table data from sqlite db
