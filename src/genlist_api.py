@@ -15,15 +15,14 @@ import rpy2         # rpython binding
 from PyQt5.Qt import QObject
 from openpyxl import Workbook, worksheet, load_workbook
 from platform import uname
+from decorators import *
 
 # format the typesetting of names
 class Genlist(object):
 
-    @trace
     def __init__(self, parent=None):
         super(Genlist, self).__init__()
 
-    @trace
     def resource_path(self, relative):
         """
         resource_path(relative)
@@ -38,7 +37,6 @@ class Genlist(object):
             return(relative)
         return os.path.join(os.path.abspath("."), relative)
 
-    @trace
     def fmtnameNew(fullname, format_type='markdown', \
                 doformat=True, italic_b="*", italic_e="*", withSpAuthor = True, split=True):
 
@@ -147,7 +145,6 @@ class Genlist(object):
         else:
             print("Invalid split option. Please choose 'True' or 'False'")
 
-    @trace
     def fmtname(self, fullname, italic_b="*", italic_e="*", format_type='markdown', doformat=True, split=True):
         """
         fmtname(fullname, italic_b="*", italic_e="*", format_type='markdown', doformat=True, split=True)
@@ -281,7 +278,6 @@ class Genlist(object):
             print("Invalid split option. Please choose 'True' or 'False'")
 
 
-    @trace
     def pandocConvert(self, oformat='docx', ofile_prefix='output'):
         try:
             inpfile = ofile_prefix + '.md'
@@ -296,7 +292,6 @@ class Genlist(object):
         except BaseException as e:
             print(str(e))
 
-    @trace
     def dbExecuteSQL(self, schema, dbfile, show_results=False):
         """
         dbExcuteSQL(schema, dbfile, show_results=False)
@@ -314,7 +309,6 @@ class Genlist(object):
             print("Execute '%s' successfully" % schema)
         conn.close()
 
-    @trace
     def dbImportTable(self, table_name, csvfile, dbfile):
         conn = sqlite3.connect(dbfile)
         curs = conn.cursor()
@@ -339,7 +333,6 @@ class Genlist(object):
             conn.commit()
         conn.close()
 
-    @trace
     def dbGetsp(self, table_name, dbfile):
         conn = sqlite3.connect(dbfile)
         curs = conn.cursor()
@@ -350,7 +343,6 @@ class Genlist(object):
         return(get_splist_result)
         conn.close()
 
-    @trace
     def importTable(self, dbfile, table_name, import_file, isFile=True):
         conn = sqlite3.connect(dbfile)
         curs = conn.cursor()
@@ -381,7 +373,6 @@ class Genlist(object):
             curs.execute(insert_db)
         conn.commit()
 
-    @trace
     def combineChecklists(self, dbfile, checklists):
         """
         dbfile: sqlite database
@@ -413,7 +404,6 @@ class Genlist(object):
         output = self.dbExecuteSQL('''SELECT distinct * FROM tmp_union;''', dbfile, show_results = True)
         return(output)
 
-    @trace
     def listToXls(self, import_list, name_italic_col, xls_file):
         """
         listToXls: write list to excel
@@ -461,7 +451,6 @@ class Genlist(object):
         except BaseException as e:
             print(str(e))
 
-    @trace
     def fmtExcelNames(self, original, outputfile, name_col_num, header=True):
         try:
             openpyxl_wb = load_workbook(original, read_only=True)
@@ -484,7 +473,6 @@ class Genlist(object):
         except BaseException as e:
             print(str(e))
 
-    @trace
     def adjCharTai(self, zhnameWithTai):
         '''
         adjCharTai
@@ -498,7 +486,6 @@ class Genlist(object):
         except BaseException as e:
             print(str(e))
 
-    @trace
     def expCombList(self, sqlite_db, current_db_table, tobe_combined_lists, exportExcel):
         """
         Combine multiple checklists
@@ -554,7 +541,6 @@ class Genlist(object):
             print(str(e))
 
 
-    @trace
     def genEngine(self, dbfile, dbtable, inputfile, oformat='docx', ofile_prefix='output'):
         """
         dbfile
