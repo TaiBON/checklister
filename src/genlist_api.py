@@ -11,11 +11,9 @@ import sys          # system
 import traceback    # dealing with exception
 import xlsxwriter   # export xlsx
 import logging      # for debug
-import rpy2         # rpython binding
 from PyQt5.Qt import QObject
 from openpyxl import Workbook, worksheet, load_workbook
 from platform import uname
-from decorators import *
 
 # format the typesetting of names
 class Genlist(object):

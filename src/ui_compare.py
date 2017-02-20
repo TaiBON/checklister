@@ -60,7 +60,7 @@ class Ui_CompareDialog(object):
         self.butCompare.setObjectName("butCompare")
         self.gridLayout_2.addWidget(self.butCompare, 5, 5, 1, 1)
         self.comboABDifference = QtWidgets.QComboBox(self.scrollAreaWidgetContents)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.MinimumExpanding)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.comboABDifference.sizePolicy().hasHeightForWidth())
