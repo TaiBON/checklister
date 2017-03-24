@@ -35,29 +35,31 @@ class Genlist(object):
             return(relative)
         return os.path.join(os.path.abspath("."), relative)
 
-    def fmtnameNew(fullname, format_type='markdown', \
-                doformat=True, italic_b="*", italic_e="*", withSpAuthor = True, split=True):
+    def fmtnameNew(self, fullname, format_type='markdown', italic_b="*", italic_e="*", withSpAuthor = True, doformat=True, split=True):
 
         ### clean fullname: remove multiple spaces
-        fullname = re.sub(' +',' ',fullname)
+        #fullname = re.sub('  ',' ', fullname)
 
         ### format
-        if fullname is None or fullname is '':
-            print('Usage: fmtname(fullname_with_author)')
-            return
-        if format_type == 'markdown':
-            italic_b = '*'; italic_e = '*'
-        elif format_type == 'html':
-            italic_b = '<i>'; italic_e = '</i>'
-        elif format_type == 'custom':
-            italic_b; italic_e
-        else:
-            print('Unsupported format type: %s (only support markdown and html)' % format_type)
-            return
         if doformat == False:
             italic_b = ''
             italic_e = ''
+        else:
+            if fullname is None or fullname is '':
+                print('Usage: fmtname(fullname_with_author)')
+                return
+            if format_type == 'markdown':
+                italic_b = '*'; italic_e = '*'
+            elif format_type == 'html':
+                italic_b = '<i>'; italic_e = '</i>'
+            elif format_type == 'custom':
+                italic_b; italic_e
+            else:
+                print('Unsupported format type: %s (only support markdown and html)' % format_type)
+                return
+
         ### processing subordinate
+        fullname = re.sub('  ',' ', fullname)
         fullname_split = fullname.split(' ')
         length_fullname = len(fullname_split)
 
