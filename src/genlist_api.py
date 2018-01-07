@@ -11,7 +11,7 @@ import sys          # system
 import traceback    # dealing with exception
 import xlsxwriter   # export xlsx
 import logging      # for debug
-#from PyQt5.Qt import QObject
+from PyQt5.Qt import QObject
 from openpyxl import Workbook, worksheet, load_workbook
 from platform import uname
 
@@ -670,7 +670,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
             f.write('\n')
             f.write(u'本名錄中共有 {} 科、{} 種，科名後括弧內為該科之物種總數。'.format(family_no, species_no))
             f.write(sp_note)
-            f.write(sp_conserv)
+            #f.write(sp_conserv)
             f.write('\n')
             ####### End of HEADER
 
