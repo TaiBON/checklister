@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui/ui_about.ui'
 #
-# Created by: PyQt5 UI code generator 5.7.1
+# Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -35,7 +35,6 @@ class Ui_AboutDialog(object):
         self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 486, 757))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
-        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.label_2 = QtWidgets.QLabel(self.scrollAreaWidgetContents)
         self.label_2.setOpenExternalLinks(True)

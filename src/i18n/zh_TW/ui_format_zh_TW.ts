@@ -3,57 +3,57 @@
 <context>
     <name>FormatDialog</name>
     <message>
-        <location filename="../../ui_format.py" line="90"/>
+        <location filename="../../ui_format.py" line="89"/>
         <source>Formating scientific names</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_format.py" line="93"/>
+        <location filename="../../ui_format.py" line="92"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Select export checklist file. Supported file formats: Microsoft Word 2007 (.docx), Open document format (.odt), markdown (.md). Default is docx and markdown.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_format.py" line="92"/>
+        <location filename="../../ui_format.py" line="91"/>
         <source>Close</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_format.py" line="94"/>
+        <location filename="../../ui_format.py" line="93"/>
         <source>Select file ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_format.py" line="95"/>
+        <location filename="../../ui_format.py" line="94"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Options&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_format.py" line="96"/>
+        <location filename="../../ui_format.py" line="95"/>
         <source>Format</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_format.py" line="97"/>
+        <location filename="../../ui_format.py" line="96"/>
         <source>with header</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_format.py" line="98"/>
+        <location filename="../../ui_format.py" line="97"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:18pt; font-weight:600;&quot;&gt;Formating scientific names in Excel&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_format.py" line="99"/>
+        <location filename="../../ui_format.py" line="98"/>
         <source>Excel file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_format.py" line="100"/>
+        <location filename="../../ui_format.py" line="99"/>
         <source>Column number of scientific names</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_format.py" line="101"/>
+        <location filename="../../ui_format.py" line="100"/>
         <source>1</source>
         <translation type="unfinished"></translation>
     </message>

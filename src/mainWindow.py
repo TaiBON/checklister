@@ -81,6 +81,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # Menubar::Databases
             self.actionTaiwanVascularPlants.triggered.connect(self.checkDB)
             self.actionTaiwanFlora.triggered.connect(self.checkDB)
+            self.actionTaiwanRedList2017.triggered.connect(self.checkDB)
             self.actionJapanYlist.triggered.connect(self.checkDB)
             self.actionUpdateDB.triggered.connect(self.updateDB)
             self.actionDatabaseInfo.triggered.connect(self.openDBMainWindow)
@@ -133,6 +134,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
             actionGroupP = QActionGroup(self.menuPlants, exclusive = True)
             actionGroupP.addAction(self.actionTaiwanVascularPlants)
+            actionGroupP.addAction(self.actionTaiwanRedList2017)
             actionGroupP.addAction(self.actionTaiwanFlora)
             actionGroupP.addAction(self.actionJapanYlist)
         except BaseException as e:
@@ -462,6 +464,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
             if self.actionTaiwanVascularPlants.isChecked():
                 db_table = 'dao_pnamelist_pg'
+            elif self.actionTaiwanRedList2017.isChecked():
+                db_table = 'dao_twredlist2017'
             elif self.actionTaiwanFlora.isChecked():
                 db_table = 'dao_pnamelist'
             elif self.actionJapanYlist.isChecked():

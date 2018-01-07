@@ -48,7 +48,7 @@ coll = COLLECT(exe,
 app = BUNDLE(coll,
              name='checklister.app',
              icon='icons/checklister.icns',
-             version='0.5.0',
+             version='0.5.1',
              bundle_identifier=None,
              info_plist={
                 'NSHighResolutionCapable': 'True'

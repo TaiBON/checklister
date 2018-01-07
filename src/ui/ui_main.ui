@@ -289,6 +289,7 @@
       <string>Plants</string>
      </property>
      <addaction name="actionTaiwanVascularPlants"/>
+     <addaction name="actionTaiwanRedList2017"/>
      <addaction name="actionTaiwanFlora"/>
      <addaction name="actionJapanYlist"/>
     </widget>
@@ -860,6 +861,14 @@
   <action name="actionDatabaseInfo">
    <property name="text">
     <string>Database info</string>
+   </property>
+  </action>
+  <action name="actionTaiwanRedList2017">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Taiwan: Red List of Vascular Plants (2017)</string>
    </property>
   </action>
  </widget>

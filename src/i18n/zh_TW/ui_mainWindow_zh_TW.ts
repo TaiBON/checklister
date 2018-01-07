@@ -3,32 +3,32 @@
 <context>
     <name>CombineDialog</name>
     <message>
-        <location filename="../../mainWindow.py" line="993"/>
+        <location filename="../../mainWindow.py" line="996"/>
         <source>Select checklist text files to combine</source>
         <translation type="unfinished">選擇名錄文字檔案來組合</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="993"/>
+        <location filename="../../mainWindow.py" line="996"/>
         <source>Text files (*.txt)</source>
         <translation type="unfinished">文字檔案 (*.txt)</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1004"/>
+        <location filename="../../mainWindow.py" line="1007"/>
         <source>Save combined list as:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1004"/>
+        <location filename="../../mainWindow.py" line="1007"/>
         <source>Excel files (*.xlsx)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1018"/>
+        <location filename="../../mainWindow.py" line="1021"/>
         <source>Checklists and excel file should not be empty!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1023"/>
+        <location filename="../../mainWindow.py" line="1026"/>
         <source>Combing checklists done!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -36,32 +36,32 @@
 <context>
     <name>CompareDialog</name>
     <message>
-        <location filename="../../mainWindow.py" line="1066"/>
+        <location filename="../../mainWindow.py" line="1069"/>
         <source>Open file</source>
         <translation type="unfinished">開啟檔案</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1066"/>
+        <location filename="../../mainWindow.py" line="1069"/>
         <source>Text files (*.txt)</source>
         <translation type="unfinished">文字檔案 (*.txt)</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1082"/>
+        <location filename="../../mainWindow.py" line="1085"/>
         <source>Please input checklist A</source>
         <translation type="unfinished">請輸入名錄 A</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1084"/>
+        <location filename="../../mainWindow.py" line="1087"/>
         <source>Please input checklist B</source>
         <translation type="unfinished">請輸入名錄 B</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1095"/>
+        <location filename="../../mainWindow.py" line="1098"/>
         <source>A and B are identical!</source>
         <translation type="unfinished">A 和 B 是相同的！</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1126"/>
+        <location filename="../../mainWindow.py" line="1129"/>
         <source>There is no common species between checklist A and B</source>
         <translation type="unfinished">在名錄 A 和 B 中並沒有相同的物種存在</translation>
     </message>
@@ -69,27 +69,27 @@
 <context>
     <name>FormatDialog</name>
     <message>
-        <location filename="../../mainWindow.py" line="1155"/>
+        <location filename="../../mainWindow.py" line="1158"/>
         <source>Select excel files</source>
         <translation type="unfinished">選擇 Excel 檔案</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1155"/>
+        <location filename="../../mainWindow.py" line="1158"/>
         <source>Excel files (*.xls *.xlsx)</source>
         <translation type="unfinished">Excel 檔案 (*.xls *.xlsx)</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1168"/>
+        <location filename="../../mainWindow.py" line="1171"/>
         <source>Please input the excel filename</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1170"/>
+        <location filename="../../mainWindow.py" line="1173"/>
         <source>Please input the column number of scientific names</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="1180"/>
+        <location filename="../../mainWindow.py" line="1183"/>
         <source>Formatted excel file:  %s done!</source>
         <translation type="unfinished">%s 學名斜體化完成!</translation>
     </message>
@@ -102,27 +102,27 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="307"/>
+        <location filename="../../mainWindow.py" line="308"/>
         <source>Debug: butCheckPath error!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="537"/>
+        <location filename="../../mainWindow.py" line="540"/>
         <source>Open file</source>
         <translation>開啟檔案</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="312"/>
+        <location filename="../../mainWindow.py" line="313"/>
         <source>Text files (*.txt)</source>
         <translation>文字檔案 (*.txt)</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="312"/>
+        <location filename="../../mainWindow.py" line="313"/>
         <source>Select checklist text files to merge</source>
         <translation>選擇名錄文字檔案來合併</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="327"/>
+        <location filename="../../mainWindow.py" line="328"/>
         <source>There is nothing to load into the tree view of checklist. Maybe the files are empty</source>
         <translation>沒有物種名稱被載入。也許檔案是空的？</translation>
     </message>
@@ -167,17 +167,17 @@
         <translation type="obsolete">在名錄 A 和 B 中並沒有相同的物種存在</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="949"/>
+        <location filename="../../mainWindow.py" line="952"/>
         <source>Checklist generator</source>
         <translation>名錄產生器</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="526"/>
+        <location filename="../../mainWindow.py" line="529"/>
         <source>Update DB done!</source>
         <translation>更新資料庫完成！</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="537"/>
+        <location filename="../../mainWindow.py" line="540"/>
         <source>Text files (*.txt *.csv)</source>
         <translation>文字檔案 (*.txt *.csv)</translation>
     </message>
@@ -187,22 +187,22 @@
         <translation type="obsolete">下方的物種並不存在資料庫中，請再次確認： %s</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="685"/>
+        <location filename="../../mainWindow.py" line="688"/>
         <source>Save file as:</source>
         <translation>儲存檔案為:</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="685"/>
+        <location filename="../../mainWindow.py" line="688"/>
         <source>Text files (*.docx *.odt *.xlsx)</source>
         <translation>檔案 (*.docx *.odt *.xlsx)</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="787"/>
+        <location filename="../../mainWindow.py" line="790"/>
         <source>Please input the species name!</source>
         <translation>請輸入物種名稱</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="813"/>
+        <location filename="../../mainWindow.py" line="816"/>
         <source>The species %s did not exist in our database!</source>
         <translation>這個物種 %s 並不存在資料庫中</translation>
     </message>
@@ -217,52 +217,52 @@
         <translation type="obsolete">請輸入輸出的檔名</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="918"/>
+        <location filename="../../mainWindow.py" line="921"/>
         <source>Saving checklist to %s </source>
         <translation>儲存名錄至 %s</translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="949"/>
+        <location filename="../../mainWindow.py" line="952"/>
         <source>Export checklist to &apos;%s&apos; done!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="367"/>
+        <location filename="../../mainWindow.py" line="368"/>
         <source>&lt;font color=&quot;#aaaaaa&quot;&gt;(Endemic)&lt;/font&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="485"/>
+        <location filename="../../mainWindow.py" line="488"/>
         <source>Current database table is %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="525"/>
+        <location filename="../../mainWindow.py" line="528"/>
         <source>Updating database, please wait for a while ...</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="527"/>
+        <location filename="../../mainWindow.py" line="530"/>
         <source>Database updated!</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="596"/>
+        <location filename="../../mainWindow.py" line="599"/>
         <source>The following species did not exist in our database,and I stored it at %s. Please check again: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="658"/>
+        <location filename="../../mainWindow.py" line="661"/>
         <source>The following species did not exist in our database. I store it at %s. Please check again: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="691"/>
+        <location filename="../../mainWindow.py" line="694"/>
         <source>Export file is: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../mainWindow.py" line="541"/>
+        <location filename="../../mainWindow.py" line="544"/>
         <source>When you load species file (only common names) to generate checklist, the &quot;checklist generator&quot; will save a temporary file (filename_temp.txt/csv) within the same directory, and load this species file into checklist below. You can add/remove species to generate checklist.</source>
         <translation type="unfinished"></translation>
     </message>
@@ -270,7 +270,7 @@
 <context>
     <name>checklistDB</name>
     <message>
-        <location filename="../../mainWindow.py" line="1239"/>
+        <location filename="../../mainWindow.py" line="1243"/>
         <source>%s</source>
         <translation type="unfinished">%s</translation>
     </message>

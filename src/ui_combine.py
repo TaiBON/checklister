@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui/ui_combine.ui'
 #
-# Created by: PyQt5 UI code generator 5.7.1
+# Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -27,7 +27,6 @@ class Ui_CombineDialog(object):
         self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 535, 233))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
-        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_3.setObjectName("gridLayout_3")
         self.scrollArea_2 = QtWidgets.QScrollArea(self.scrollAreaWidgetContents)
         self.scrollArea_2.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -37,7 +36,6 @@ class Ui_CombineDialog(object):
         self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 511, 177))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_2)
-        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.label_2 = QtWidgets.QLabel(self.scrollAreaWidgetContents_2)
         self.label_2.setObjectName("label_2")

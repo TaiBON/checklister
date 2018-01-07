@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui/ui_main.ui'
 #
-# Created by: PyQt5 UI code generator 5.7.1
+# Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -35,7 +35,6 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 654, 374))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_3 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
-        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_3.setObjectName("gridLayout_3")
         self.frame = QtWidgets.QFrame(self.scrollAreaWidgetContents)
         self.frame.setFrameShape(QtWidgets.QFrame.NoFrame)
@@ -153,7 +152,6 @@ class Ui_MainWindow(object):
         self.dockWidgetContents = QtWidgets.QWidget()
         self.dockWidgetContents.setObjectName("dockWidgetContents")
         self.gridLayout_5 = QtWidgets.QGridLayout(self.dockWidgetContents)
-        self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_5.setObjectName("gridLayout_5")
         self.taxonInfoScrollArea = QtWidgets.QScrollArea(self.dockWidgetContents)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
@@ -169,7 +167,6 @@ class Ui_MainWindow(object):
         self.scrollAreaWidgetContents_2.setGeometry(QtCore.QRect(0, 0, 654, 103))
         self.scrollAreaWidgetContents_2.setObjectName("scrollAreaWidgetContents_2")
         self.gridLayout_10 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents_2)
-        self.gridLayout_10.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_10.setObjectName("gridLayout_10")
         self.textBrowserInfo = QtWidgets.QTextBrowser(self.scrollAreaWidgetContents_2)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
@@ -323,6 +320,9 @@ class Ui_MainWindow(object):
         self.actionUpdateDB.setObjectName("actionUpdateDB")
         self.actionDatabaseInfo = QtWidgets.QAction(MainWindow)
         self.actionDatabaseInfo.setObjectName("actionDatabaseInfo")
+        self.actionTaiwanRedList2017 = QtWidgets.QAction(MainWindow)
+        self.actionTaiwanRedList2017.setCheckable(True)
+        self.actionTaiwanRedList2017.setObjectName("actionTaiwanRedList2017")
         self.menuFile.addAction(self.actionNewProject)
         self.menuFile.addAction(self.actionSelectExport)
         self.menuFile.addAction(self.actionBatch)
@@ -354,6 +354,7 @@ class Ui_MainWindow(object):
         self.menuTool.addSeparator()
         self.menuTool.addAction(self.actionFormat)
         self.menuPlants.addAction(self.actionTaiwanVascularPlants)
+        self.menuPlants.addAction(self.actionTaiwanRedList2017)
         self.menuPlants.addAction(self.actionTaiwanFlora)
         self.menuPlants.addAction(self.actionJapanYlist)
         self.menuDatabases.addAction(self.menuPlants.menuAction())
@@ -473,5 +474,6 @@ class Ui_MainWindow(object):
         self.actionShowSearch.setText(_translate("MainWindow", "Search toolbar"))
         self.actionUpdateDB.setText(_translate("MainWindow", "Update database"))
         self.actionDatabaseInfo.setText(_translate("MainWindow", "Database info"))
+        self.actionTaiwanRedList2017.setText(_translate("MainWindow", "Taiwan: Red List of Vascular Plants (2017)"))
 
 import iconResources_rc

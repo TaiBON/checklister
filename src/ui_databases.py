@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui/ui_databases.ui'
 #
-# Created by: PyQt5 UI code generator 5.7.1
+# Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -23,7 +23,6 @@ class Ui_DBMainWindow(object):
         self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 651, 515))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_4 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
-        self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_4.setObjectName("gridLayout_4")
         self.labelRawTable = QtWidgets.QLabel(self.scrollAreaWidgetContents)
         self.labelRawTable.setObjectName("labelRawTable")

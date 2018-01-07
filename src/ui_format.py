@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'ui/ui_format.ui'
 #
-# Created by: PyQt5 UI code generator 5.7.1
+# Created by: PyQt5 UI code generator 5.9.2
 #
 # WARNING! All changes made in this file will be lost!
 
@@ -22,7 +22,6 @@ class Ui_FormatDialog(object):
         self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 542, 222))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
-        self.gridLayout_2.setContentsMargins(0, 0, 0, 0)
         self.gridLayout_2.setObjectName("gridLayout_2")
         spacerItem = QtWidgets.QSpacerItem(325, 20, QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Minimum)
         self.gridLayout_2.addItem(spacerItem, 6, 0, 1, 2)
