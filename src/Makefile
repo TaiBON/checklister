@@ -19,7 +19,8 @@ translate:
 binary:
 	pyinstaller --onefile checklister.spec
 	rm -fr /Applications/checklister.app
-	./symlink_macos.sh && cp -rf dist/checklister.app /Applications/; cp -rf dist/checklister.app ../../packages/
+	#./symlink_macos.sh && 
+	cp -rf dist/checklister.app /Applications/; cp -rf dist/checklister.app ../../packages/
 
 create_db_schema:
 	rm db/twnamelist.db

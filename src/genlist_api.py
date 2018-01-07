@@ -11,7 +11,7 @@ import sys          # system
 import traceback    # dealing with exception
 import xlsxwriter   # export xlsx
 import logging      # for debug
-from PyQt5.Qt import QObject
+#from PyQt5.Qt import QObject
 from openpyxl import Workbook, worksheet, load_workbook
 from platform import uname
 
