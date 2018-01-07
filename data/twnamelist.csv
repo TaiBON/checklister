@@ -1,3 +1,11 @@
+7472|Lycopodiaceae|石松科|峨眉石杉|Huperzia emeiensis|Huperzia emeiensis (Ching & H.S.Kung) Ching & H.S.Kung|1|0|DD|原生
+7510|Lycopodiaceae|石松科|錫金石杉|Huperzia herteriana|Huperzia herteriana (Kummerle) T.Sen & U.Sen|1|0|DD|原生
+7450|Lycopodiaceae|石松科|凉山石杉|Huperzia liangshanica|Huperzia liangshanica (H.S.Kung) Ching & H.S.Kung|1|0|DD|原生
+7508|Lycopodiaceae|石松科|長柄千層塔|Huperzia serrata var. longipetiolata|Huperzia serrata (Thunb.) Trevis. var. longipetiolata (Spring) H.M.Chang|1|0|DD|原生
+7495|Lycopodiaceae|石松科|阿里山千層塔|Huperzia serrata var. myriophyllifolia|Huperzia serrata (Thunb.) Trevis. var. myriophyllifolia (Spring) H.M.Chang|1|0|DD|原生
+7494|Lycopodiaceae|石松科|石松|Lycopodium clavatum|Lycopodium clavatum L.|1|0|LC|原生
+7451|Lycopodiaceae|石松科|柳杉葉石松|Phlegmariurus cryptomerianus|Phlegmariurus cryptomerianus (Maxim.) Satou|1|0|NT|原生
+7455|Selaginellaceae|卷柏科|粗葉卷柏|Selaginella doederleinii subsp. trachyphylla|Selaginella doederleinii Hieron. subsp. trachyphylla (Warb.) X.C.Zhang|1|0|DD|原生
 6998||石松科|玉柏|Dendrolycopodium juniperoideum|Dendrolycopodium juniperoideum (Sw.) A. Haines|1|0|LC|原生
 6999||石松科|地刷子|Diphasiastrum multispicatum|Diphasiastrum multispicatum (J.H. Wilce) Holub|1|0|LC|原生
 7000||石松科|玉山石松|Diphasiastrum veitchii|Diphasiastrum veitchii (Christ) Holub|1|0|LC|原生
@@ -10,11 +18,9 @@
 6975|||金門水韭|Isoëtes taiwanensis var. kinmenensis|Isoëtes taiwanensis De Vol var. kinmenensis F.Y. Lu, H.H. Chen & Y.L. Hsueh|1|0||原生
 6976|||臺灣水韭|Isoëtes taiwanensis var. taiwanensis|Isoëtes taiwanensis De Vol var. taiwanensis|1|1|CR|原生
 7007||石松科|木賊葉石松|Lycopodiastrum casuarinoides|Lycopodiastrum casuarinoides (Spring) Holub ex R.D. Dixit|1|0|LC|原生
-7008||石松科|日本石松|Lycopodium japonicum|Lycopodium japonicum Thunb. ex Murray|1|0||原生
 7009||石松科|過山龍|Palhinhaea cernua|Palhinhaea cernua (L.) Vasc. & Franco|1|0|LC|原生
 7010||石松科|覆葉石松|Phlegmariurus carinatus|Phlegmariurus carinatus (Desv. ex Poir.) Ching|1|0|EN|原生
 7011||石松科|張氏石松|Phlegmariurus changii|Phlegmariurus changii T.Y. Hsieh|1|1|DD|原生
-7012||石松科|柳杉葉蔓石松|Phlegmariurus cryptomerinus|Phlegmariurus cryptomerinus (Maxim.) Satou|1|0|DD|原生
 7013||石松科|寬葉石松|Phlegmariurus cunninghamioides|Phlegmariurus cunninghamioides (Hayata) Ching|1|0|CR|原生
 7014||石松科|福氏石松|Phlegmariurus fordii|Phlegmariurus fordii (Baker) Ching|1|0|LC|原生
 7015||石松科|垂枝石松|Phlegmariurus phlegmaria|Phlegmariurus phlegmaria (L.) T.Sen & U.Sen|1|0|EN|原生
@@ -32,7 +38,6 @@
 7255||卷柏科|密葉卷柏|Selaginella involvens|Selaginella involvens (Sw.) Spring|1|0|LC|原生
 7256||卷柏科|玉山卷柏|Selaginella labordei|Selaginella labordei Hieron. ex Christ|1|0|LC|原生
 7257||卷柏科|琉球卷柏|Selaginella lutchuensis|Selaginella lutchuensis Koidz.|1|0|EN|原生
-7258||卷柏科|馬祖卷柏|Selaginella matsuensis|Selaginella matsuensis C.M. Kuo nom. nud.|1|0||原生
 7259||卷柏科|異葉卷柏|Selaginella moellendorffii|Selaginella moellendorffii Hieron.|1|0|LC|原生
 7260||卷柏科|日本卷柏|Selaginella nipponica|Selaginella nipponica Fr. & Sav.|1|0|EN|原生
 7261||卷柏科|疏葉卷柏|Selaginella remotifolia|Selaginella remotifolia Spring|1|0|LC|原生
@@ -42,6 +47,88 @@
 7265||卷柏科|萬年松|Selaginella tamariscina|Selaginella tamariscina (P. Beauv.) Spring|1|0|LC|原生
 7266||卷柏科|藍地柏|Selaginella uncinata|Selaginella uncinata (Desv. ex Poir.) Spring|1|0|NA|歸化
 7019||石松科|杉葉蔓石松|Spinulum annotinum|Spinulum annotinum (L.) A. Haines|1|0|VU|原生
+7516|Adiantaceae|鐵線蕨科|孟連鐵線蕨|Adiantum menglianense|Adiantum menglianense Y.Y.Qian|2|0|DD|原生
+7499|Aspidiaceae|三叉蕨科|玉山肋毛蕨|Dryopteris nidus|Dryopteris nidus (Baker) Li Bing Zhang|2|1|LC|原生
+7473|Aspidiaceae|三叉蕨科|毛三叉蕨|Tectaria rockii|Tectaria rockii C.Chr.|2|0|DD|原生
+7445|Aspleniaceae|鐵角蕨科|裂葉鐵角蕨|Asplenium lobulatum|Asplenium lobulatum Mett. ex Kuhn|2|0|LC|原生
+7502|Aspleniaceae|鐵角蕨科|劍羽鐵角蕨|Asplenium steerei|Asplenium steerei Harr.|2|0|VU|原生
+7436|Aspleniaceae|鐵角蕨科|湍生鐵角蕨|Hymenasplenium cataractarum|Hymenasplenium cataractarum (Rosenst.) N.Murakami|2|0|LC|原生
+7448|Aspleniaceae|鐵角蕨科|蔭濕膜葉鐵角蕨|Hymenasplenium obliquissimum|Hymenasplenium obliquissimum (Hayata) Sugimoto|2|0|LC|原生
+7453|Athyriaceae|蹄蓋蕨科|逆羽蹄蓋蕨|Athyrium oppositipinnum var. pubescens|Athyrium oppositipinnum Hayata var. pubescens (Tagawa) Tagawa|2|0|LC|原生
+7478|Athyriaceae|蹄蓋蕨科|尖阿蹄蓋蕨|Athyrium ×hohuanshanense|Athyrium ×hohuanshanense Yoshik.|2|1|NA|原生
+7444|Athyriaceae|蹄蓋蕨科|紫柄蹄蓋蕨|Athyrium ×purpurascens|Athyrium ×purpurascens (Tagawa) Sa.Kurata|2|0|NA|原生
+7440|Athyriaceae|蹄蓋蕨科|菲律賓貞蕨|Cornopteris philippinensis|Cornopteris philippinensis M.Kato|2|0|DD|原生
+7506|Athyriaceae|蹄蓋蕨科|阿玉雙蓋蕨|Diplazium agyokuense|Diplazium agyokuense Tagawa|2|0|DD|原生
+7456|Athyriaceae|蹄蓋蕨科|奄美雙蓋蕨|Diplazium amamianum|Diplazium amamianum Tagawa|2|0|LC|原生
+7447|Athyriaceae|蹄蓋蕨科|粗柄雙蓋蕨|Diplazium asperum|Diplazium asperum Blume|2|0|DD|原生
+7501|Athyriaceae|蹄蓋蕨科|邱氏雙蓋蕨|Diplazium chioui|Diplazium chioui T.C.Hsu|2|0|NT|原生
+7519|Athyriaceae|蹄蓋蕨科|隱脈細柄雙蓋蕨|Diplazium donianum var. aphanoneuron|Diplazium donianum (Mett.) Tardieu var. aphanoneuron (Ohwi) Tagawa|2|0|LC|原生
+7485|Athyriaceae|蹄蓋蕨科|角板山雙蓋蕨|Diplazium kappanensis|Diplazium kappanensis Hayata|2|0|DD|原生
+7481|Athyriaceae|蹄蓋蕨科|凱達格蘭雙蓋蕨|Diplazium ketagalaniorum|Diplazium ketagalaniorum T.C.Hsu|2|0|VU|原生
+7467|Athyriaceae|蹄蓋蕨科|郭氏雙蓋蕨|Diplazium kuoi|Diplazium kuoi T.C.Hsu|2|0|VU|原生
+7439|Davalliaceae|骨碎補科|小膜蓋蕨|Davallia perdurans|Davallia perdurans Christ|2|0|LC|原生
+7474|Davalliaceae|骨碎補科|熱帶陰石蕨|Davallia vestita|Davallia vestita Blume|2|0|DD|原生
+7483|Dennstaedtiaceae|碗蕨科|華南鱗蓋蕨|Microlepia nepalensis|Microlepia nepalensis (Spreng.) Fraser-Jenk., Kandel & Pariyar|2|0|LC|原生
+7509|Dennstaedtiaceae|碗蕨科|針毛鱗蓋蕨|Microlepia trapeziformis|Microlepia trapeziformis (Roxb.) Kuhn|2|0|LC|原生
+7490|Dryopteridaceae|鱗毛蕨科|濱海全緣貫眾蕨|Cyrtomium falcatum subsp. australe|Cyrtomium falcatum (L.f.) C.Presl subsp. australe S.Matsumoto ex S.Matsumoto & Ebihara|2|0|LC|原生
+7477|Dryopteridaceae|鱗毛蕨科|顯脈貫眾蕨|Cyrtomium nervosum|Cyrtomium nervosum Ching & K.H.Shing|2|0|DD|原生
+7441|Dryopteridaceae|鱗毛蕨科|密毛鱗毛蕨|Dryopteris barbigera|Dryopteris barbigera (T.Moore ex Hook.) Kuntze|2|0|LC|原生
+7496|Dryopteridaceae|鱗毛蕨科|平行鱗毛蕨|Dryopteris indusiata|Dryopteris indusiata (Makino) Makino & Yamam. ex Yamam.|2|0|NT|原生
+7457|Dryopteridaceae|鱗毛蕨科|近畿鱗毛蕨|Dryopteris kinkiensis|Dryopteris kinkiensis Koidz. ex Tagawa|2|1|EN|原生
+7486|Dryopteridaceae|鱗毛蕨科|脈紋鱗毛蕨|Dryopteris lachoongensis|Dryopteris lachoongensis (Bedd.) B.K.Nayar & S.Kaur|2|0|LC|原生
+7458|Dryopteridaceae|鱗毛蕨科|闊基鱗毛蕨|Dryopteris latibasis|Dryopteris latibasis Ching|2|0|DD|原生
+7462|Dryopteridaceae|鱗毛蕨科|密鱗鱗毛蕨|Dryopteris sinofibrillosa|Dryopteris sinofibrillosa Ching|2|0|DD|原生
+7446|Dryopteridaceae|鱗毛蕨科|微彎假複葉耳蕨|Dryopteris ×subreflexipinna|Dryopteris ×subreflexipinna Ogata|2|1|NA|原生
+7449|Dryopteridaceae|鱗毛蕨科|草葉耳蕨|Polystichum herbaceum|Polystichum herbaceum Ching & Z.Y.Liu|2|0|CR|原生
+7431|Grammitidaceae|禾葉蕨科|寡毛荷包蕨|Calymmodon oligotrichus|Calymmodon oligotrichus T.C.Hsu|2|0|NT|原生
+7465|Grammitidaceae|禾葉蕨科|大禾葉蕨|Grammitis intromissa|Grammitis intromissa (Christ) Parris|2|0|DD|原生
+7430|Grammitidaceae|禾葉蕨科|多毛禾葉蕨|Oreogrammitis congener var. polytricha|Oreogrammitis congener (Blume) Parris var. polytricha T.C.Hsu|2|0|EN|原生
+7513|Grammitidaceae|禾葉蕨科|弼昭禾葉蕨|Oreogrammitis marivelesensis|Oreogrammitis marivelesensis (Copel.) Parris|2|0|CR|原生
+7459|Grammitidaceae|禾葉蕨科|東亞禾葉蕨|Oreogrammitis orientalis|Oreogrammitis orientalis T.C.Hsu|2|0|CR|原生
+7443|Grammitidaceae|禾葉蕨科|寶島穴子蕨|Prosaptia formosana|Prosaptia formosana (Hayata) T.C.Hsu|2|0|LC|原生
+7476|Grammitidaceae|禾葉蕨科|宜蘭禾葉蕨|Radiogrammitis ilanensis|Radiogrammitis ilanensis T.C.Hsu|2|0|CR|原生
+7435|Grammitidaceae|禾葉蕨科|牟氏輻禾蕨|Radiogrammitis moorei|Radiogrammitis moorei Parris & Ralf Knapp|2|0|CR|原生
+7498|Grammitidaceae|禾葉蕨科|亞顯脈禾葉蕨|Radiogrammitis subnervosa|Radiogrammitis subnervosa T.C.Hsu|2|0|VU|原生
+7452|Hymenophyllaceae|膜蕨科|圓唇假脈蕨|Crepidomanes bilabiatum|Crepidomanes bilabiatum (Nees & Blume) Copel.|2|0|EN|原生
+7491|Hymenophyllaceae|膜蕨科|短柄單葉假脈蕨|Didymoglossum motleyi|Didymoglossum motleyi (Bosch) Ebihara & K.Iwats.|2|0|NT|原生
+7503|Hymenophyllaceae|膜蕨科|盾形單葉假脈蕨|Didymoglossum tahitense|Didymoglossum tahitense (Nadeaud) Ebihara & K.Iwats.|2|0|LC|原生
+7511|Hymenophyllaceae|膜蕨科|疏毛毛葉蕨|Hymenophyllum acutum|Hymenophyllum acutum (C.Presl) Ebihara & K.Iwats.|2|0|VU|原生
+7442|Hymenophyllaceae|膜蕨科|青綠膜蕨|Hymenophyllum okadae|Hymenophyllum okadae Masam.|2|0|LC|原生
+7489|Hymenophyllaceae|膜蕨科|半翼柄蕗蕨|Hymenophyllum semialatum|Hymenophyllum semialatum T.C.Hsu|2|0|VU|原生
+7488|Lindsaeaceae|陵齒蕨科|三角葉陵齒蕨|Lindsaea orbiculata var. deltoidea|Lindsaea orbiculata (Lam.) Mett. ex Kuhn var. deltoidea Y.C.Wu|2|0|LC|原生
+7461|Lindsaeaceae|陵齒蕨科|闊片陵齒蕨|Lindsaea orbiculata var. recedens|Lindsaea orbiculata (Lam.) Mett. ex Kuhn var. recedens (Ching) W.C.Shieh|2|0|LC|原生
+7479|Lindsaeaceae|陵齒蕨科|中間烏蕨|Odontosoria ×intermedia|Odontosoria ×intermedia (S.J.Lin, M.Kato & K.Iwats.) Nakaike|2|0|NA|原生
+7468|Lindsaeaceae|陵齒蕨科|八重山烏蕨|Odontosoria ×yaeyamensis|Odontosoria ×yaeyamensis (S.J.Lin, M.Kato & K.Iwats.) Ebihara|2|0|NA|原生
+7492|Ophioglossaceae|瓶爾小草科|蕨萁|Botrychium virginianum|Botrychium virginianum (L.) Sw.|2|0|EN|原生
+7484|Ophioglossaceae|瓶爾小草科|小瓶爾小草|Ophioglossum parvum|Ophioglossum parvum M.Nishida & Kurita|2|0|DD|i?
+7438|Parkeriaceae|水蕨科|姬水蕨|Ceratopteris gaudichaudii var. vulgaris|Ceratopteris gaudichaudii Brongn. var. vulgaris Masuyama & Watano|2|0|LC|原生
+7460|Polypodiaceae|水龍骨科|大線蕨|Leptochilus pothifolius|Leptochilus pothifolius (Buch.-Ham. ex D.Don) Fraser-Jenk.|2|0|LC|原生
+7475|Polypodiaceae|水龍骨科|密葉劍蕨|Loxogramme confertifolia|Loxogramme confertifolia Tagawa|2|1|DD|原生
+7497|Polypodiaceae|水龍骨科|水社擬茀蕨|Phymatosorus longissimus|Phymatosorus longissimus (Blume) Pic.Serm.|2|0|EN|原生
+7470|Polypodiaceae|水龍骨科|海岸擬茀蕨|Phymatosorus scolopendria|Phymatosorus scolopendria (Burm.f.) Pic.Serm.|2|0|LC|原生
+7518|Polypodiaceae|水龍骨科|鹿角蕨|Platycerium bifurcatum|Platycerium bifurcatum (Cav.) C.Chr.|2|0|NA|歸化
+7512|Polypodiaceae|水龍骨科|玉山石韋|Pyrrosia transmorrisonensis|Pyrrosia transmorrisonensis (Hayata) Ching|2|1|DD|原生
+7463|Pteridaceae|鳳尾蕨科|亨氏擬旱蕨|Mildella henryi|Mildella henryi (Christ) C.C.Hall & Lellinger|2|0|LC|原生
+7471|Pteridaceae|鳳尾蕨科|二形鳳尾蕨|Pteris dimorpha var. dimorpha|Pteris dimorpha Copel. var. dimorpha|2|0|LC|原生
+7482|Pteridaceae|鳳尾蕨科|擬翅柄鳳尾蕨|Pteris dimorpha var. metagrevilleana|Pteris dimorpha Copel. var. metagrevilleana Y.S.Chao, H.Y.Liu & W.L.Chiou|2|0|CR|原生
+7432|Pteridaceae|鳳尾蕨科|尾葉鳳尾蕨|Pteris dimorpha var. prolongata|Pteris dimorpha Copel. var. prolongata Y.S.Chao, H.Y.Liu & W.L.Chiou|2|0|LC|原生
+7469|Pteridaceae|鳳尾蕨科|白斑翅柄鳳尾蕨|Pteris grevilleana var. ornata|Pteris grevilleana Wall. ex J.Agardh var. ornata Alderw.|2|0|VU|原生
+7493|Pteridaceae|鳳尾蕨科|彎羽鳳尾蕨|Pteris incurvata|Pteris incurvata Y.S.Chao, H.Y.Liu & W.L.Chiou|2|0|LC|原生
+7466|Pteridaceae|鳳尾蕨科|寬羽鳳尾蕨|Pteris latipinna|Pteris latipinna Y.S.Chao & W.L.Chiou|2|0|VU|原生
+7464|Pteridaceae|鳳尾蕨科|變葉鳳尾蕨|Pteris perplexa|Pteris perplexa Y.S.Chao, H.Y.Liu & W.L.Chiou|2|0|LC|原生
+7505|Thelypteridaceae|金星蕨科|密腺小毛蕨|Cyclosorus aridus|Cyclosorus aridus (D.Don) Tagawa|2|0|LC|原生
+7454|Thelypteridaceae|金星蕨科|野小毛蕨|Cyclosorus dentatus|Cyclosorus dentatus (Forssk.) Ching|2|0|LC|原生
+7487|Thelypteridaceae|金星蕨科|突尖小毛蕨|Cyclosorus ensifer|Cyclosorus ensifer (Tagawa) W.C.Shieh|2|1|DD|原生
+7517|Thelypteridaceae|金星蕨科|秦氏蕨|Cyclosorus ferox|Cyclosorus ferox (Blume) Ching|2|0|NA|原生
+7504|Thelypteridaceae|金星蕨科|蘭嶼圓腺蕨|Cyclosorus kotoensis|Cyclosorus kotoensis (Hayata) W.C.Shieh|2|1|LC|原生
+7437|Thelypteridaceae|金星蕨科|縮羽小毛蕨|Cyclosorus papilio|Cyclosorus papilio (C.Hope) Ching|2|0|NT|原生
+7480|Thelypteridaceae|金星蕨科|密毛小毛蕨|Cyclosorus parasiticus|Cyclosorus parasiticus (L.) Farw.|2|0|LC|原生
+7433|Thelypteridaceae|金星蕨科|小密腺小毛蕨|Cyclosorus subpubescens|Cyclosorus subpubescens (Blume) Ching|2|0|LC|原生
+7515|Thelypteridaceae|金星蕨科|臺灣圓腺蕨|Cyclosorus taiwanensis|Cyclosorus taiwanensis (C.Chr.) H.Ito|2|0|LC|原生
+7507|Thelypteridaceae|金星蕨科|擬密毛毛蕨|Cyclosorus ×intermedius|Cyclosorus ×intermedius W. C. Shieh & J. L. Tsai|2|1|NA|原生
+7514|Thelypteridaceae|金星蕨科|薄葉凸軸蕨|Metathelypteris flaccida|Metathelypteris flaccida (Blume) Ching|2|0|CR|原生
+7434|Thelypteridaceae|金星蕨科|大羽葉新月蕨|Pronephrium asperum|Pronephrium asperum (C.Presl) Holttum|2|0|LC|原生
+7500|Thelypteridaceae|金星蕨科|大斜金星蕨|Thelypteris ×erubesquirolica|Thelypteris ×erubesquirolica W.C.Shieh & J.L.Tsai|2|1|NA|原生
 6926||膜蕨科|窗格長片蕨|Abrodictyum clathratum|Abrodictyum clathratum (Tagawa) Ebihara & K. Iwats.|2|0|NT|原生
 6927||膜蕨科|長片蕨|Abrodictyum cumingii|Abrodictyum cumingii C. Presl|2|0|NT|原生
 6928||膜蕨科|線片長筒蕨|Abrodictyum obscurum var. obscurum|Abrodictyum obscurum (Blume) Ebihara & K. Iwats. var. obscurum|2|0|LC|原生
@@ -69,7 +156,6 @@
 7059||水龍骨科|槲蕨|Aglaomorpha roosii|Aglaomorpha roosii (Nakaike) C.T. Lin & Y.C. Liu comb. nov.|2|0|LC|原生
 7165||鳳尾蕨科|深山粉背蕨|Aleuritopteris agetae|Aleuritopteris agetae Saiki|2|0|LC|原生
 7166||鳳尾蕨科|長柄粉背蕨|Aleuritopteris argentea|Aleuritopteris argentea  (S. G. Gmelin) Fée|2|0|LC|原生
-7167||鳳尾蕨科|臺灣粉背蕨|Aleuritopteris formosana|Aleuritopteris formosana (Hayata) Tagawa|2|0||未知
 7168||鳳尾蕨科|粉背蕨|Aleuritopteris krameri|Aleuritopteris krameri  (Franchet & Savatier) Ching|2|0|DD|原生
 7169||鳳尾蕨科|擬長柄粉背蕨|Aleuritopteris subargentea|Aleuritopteris subargentea Ching|2|0|DD|原生
 6722||桫欏科|韓氏桫欏|Alsophila denticulata|Alsophila denticulata Baker|2|0|NT|原生
@@ -84,17 +170,15 @@
 7024||觀音座蓮科|蘭嶼觀音座蓮|Angiopteris palmiformis|Angiopteris palmiformis (Cav.) C. Chr.|2|0|VU|原生
 7025||觀音座蓮科|臺灣原始觀音座蓮|Angiopteris somae|Angiopteris somae (Hayata) Makino & Nemoto|2|1|EN|原生
 7170||鳳尾蕨科|翠蕨|Anogramma leptophylla|Anogramma leptophylla (L.) Link|2|0|NT|原生
-7171||鳳尾蕨科|有翅車前蕨|Antrophyum alatum|Antrophyum alatum Brack.|2|0||原生
 7172||鳳尾蕨科|阿里山車前蕨|Antrophyum castaneum|Antrophyum castaneum H. Itô|2|1|VU|原生
 7173||鳳尾蕨科|臺灣車前蕨|Antrophyum formosanum|Antrophyum formosanum Hieron.|2|0|LC|原生
 7174||鳳尾蕨科|亨利氏車前蕨|Antrophyum henryi|Antrophyum henryi Hieron.|2|0|VU|原生
 7175||鳳尾蕨科|車前蕨|Antrophyum obovatum|Antrophyum obovatum Bak.|2|0|LC|原生
 7176||鳳尾蕨科|無柄車前蕨|Antrophyum parvulum|Antrophyum parvulum Bl.|2|0|VU|原生
 7177||鳳尾蕨科|蘭嶼車前蕨|Antrophyum sessilifolium|Antrophyum sessilifolium (Cav.) Spreng|2|0|NT|原生
-6781||三叉蕨科|屋久複葉耳蕨|Arachniodes amabilis|Arachniodes amabilis (Blume) Tindale|2|0|LC|原生
 6780||三叉蕨科|斜方複葉耳蕨|Arachniodes amabilis|Arachniodes amabilis (Blume) Tindale|2|0|LC|原生
+6781||三叉蕨科|屋久複葉耳蕨|Arachniodes amabilis|Arachniodes amabilis (Blume) Tindale|2|0|LC|原生
 6782||三叉蕨科|細葉複葉耳蕨|Arachniodes aristata|Arachniodes aristata (G. Forst.) Tindale|2|0|LC|原生
-6783||三叉蕨科|尾形複葉耳蕨|Arachniodes caudata|Arachniodes caudata (Tagawa) Ching|2|0||原生
 6784||三叉蕨科|中華複葉耳蕨|Arachniodes chinensis|Arachniodes chinensis (Rosenst.) Ching|2|0|EN|原生
 6785||三叉蕨科|臺灣兩面複葉耳蕨|Arachniodes festina|Arachniodes festina (Hance) Ching|2|0|LC|原生
 6786||三叉蕨科|臺灣複葉耳蕨|Arachniodes globisora|Arachniodes globisora (Hayata) Ching|2|0|NT|原生
@@ -160,7 +244,6 @@
 6647||蹄蓋蕨科|貞蕨|Athyrium decurrenti-alatum var. ducurrenti-alatum|Athyrium decurrenti-alatum (Hook.) Copel. var. decurrenti-alatum|2|0|LC|原生
 6646||蹄蓋蕨科|毛葉貞蕨|Athyrium decurrenti-alatum var. pilosellum|Athyrium decurrenti-alatum var. pilosellum (H. Itô) Ohwi|2|0|LC|原生
 6648||蹄蓋蕨科|溪谷蹄蓋蕨|Athyrium delavayi var. delavayi|Athyrium delavayi Christ var. delavayi|2|0|LC|原生
-6649||蹄蓋蕨科|姬蹄蓋蕨|Athyrium delavayi var. subrugescens|Athyrium delavayi Christ var. subrugescens (Hayata) Y.C. Liu|2|0||原生
 6650||蹄蓋蕨科|軸果蹄蓋蕨|Athyrium epirachis|Athyrium epirachis (Christ) Ching|2|0|DD|原生
 6651||蹄蓋蕨科|紅柄蹄蓋蕨|Athyrium erythropodum|Athyrium erythropodum Hayata|2|0|LC|原生
 6652||蹄蓋蕨科|細葉蹄蓋蕨|Athyrium iseanum|Athyrium iseanum Rosenst.|2|0|LC|原生
@@ -168,10 +251,8 @@
 6654||蹄蓋蕨科|七星山蹄蓋蕨|Athyrium minimum|Athyrium minimum Ching|2|1|VU|原生
 6655||蹄蓋蕨科|細裂蹄蓋蕨|Athyrium mupinense|Athyrium mupinense Christ|2|0|LC|原生
 6656||蹄蓋蕨科|紅苞蹄蓋蕨|Athyrium nakanoi|Athyrium nakanoi Makino|2|0|LC|原生
-6657||蹄蓋蕨科|日本蹄蓋蕨|Athyrium niponicum|Athyrium niponicum (Mett.) Hance|2|0|NT|原生
 6658||蹄蓋蕨科|黑葉貞蕨|Athyrium opacum|Athyrium opacum (D. Don) Copel.|2|0|LC|原生
 6659||蹄蓋蕨科|對生蹄蓋蕨|Athyrium oppositipennum var. oppositipennum|Athyrium oppositipennum Hayata var. oppositipennum|2|0|LC|原生
-6660||蹄蓋蕨科|逆葉蹄蓋蕨|Athyrium oppositipennum var. pubescens|Athyrium oppositipennum var. pubescens (Tagawa) Tagawa|2|0||原生
 6661||蹄蓋蕨科|光蹄蓋蕨|Athyrium otophorum|Athyrium otophorum (Miq.) Koidz.|2|0|NT|原生
 6662||蹄蓋蕨科|沼生蹄蓋蕨|Athyrium palustre|Athyrium palustre Seriz.|2|0|VU|原生
 6663||蹄蓋蕨科|假軸果蹄蓋蕨|Athyrium pubicostatum|Athyrium pubicostatum Ching & Z.Y. Liu|2|0|LC|原生
@@ -193,7 +274,6 @@
 6794||三叉蕨科|大刺蕨|Bolbitis rhizophylla|Bolbitis rhizophylla (Kaulf.) Hennipman|2|0|NT|原生
 6795||三叉蕨科|紅柄實蕨|Bolbitis scalpturata|Bolbitis scalpturata (Fée) Ching|2|0|VU|原生
 6796||三叉蕨科|海南實蕨|Bolbitis subcordata|Bolbitis subcordata (Copel.) Ching|2|0|LC|原生
-6797||三叉蕨科|厚葉實蕨|Bolbitis virens var. compacta|Bolbitis virens (Wall. ex Hook. & Grev.) Schott var. compacta Hennipman|2|0||原生
 6798||三叉蕨科|網脈刺蕨|Bolbitis ×laxireticulata|Bolbitis ×laxireticulata K. Iwats.|2|0|NA|原生
 6799||三叉蕨科|南仁實蕨|Bolbitis ×nanjenensis|Bolbitis ×nanjenensis C.M. Kuo|2|1|NA|原生
 7036||瓶爾小草科|扇羽陰地蕨|Botrychium lunaria|Botrychium lunaria (L.) Sw.|2|0|NT|原生
@@ -203,21 +283,14 @@
 7062||水龍骨科|疏毛荷包蕨|Calymmodon gracilis|Calymmodon gracilis (Fée) Copel.|2|0|LC|原生
 6930||膜蕨科|大球稈毛蕨|Cephalomanes grande|Cephalomanes grande (Copel.) K. Iwats.|2|0|NT|原生
 6931||膜蕨科|菲律賓厚葉蕨|Cephalomanes javanicum var. asplenioides|Cephalomanes javanicum (Blume) Bosch var. asplenioides (C. Chr.) K. Iwats.|2|0|NT|原生
-7178||鳳尾蕨科|美洲水蕨|Ceratopteris pteridoides|Ceratopteris pteridoides (Hook.) Hieron.|2|0||歸化
 7179||鳳尾蕨科|水蕨|Ceratopteris thalictroides|Ceratopteris thalictroides (L.) Brongn.|2|0|LC|原生
 7180||鳳尾蕨科|細葉碎米蕨|Cheilanthes chusana|Cheilanthes chusana Hook.|2|0|LC|原生
-7181||鳳尾蕨科|擬旱蕨|Cheilanthes nitidula|Cheilanthes nitidula Hook.|2|0||未知
 7182||鳳尾蕨科|毛碎米蕨|Cheilanthes nudiuscula|Cheilanthes nudiuscula (R. Br.) T. Moore|2|0|NT|原生
 7183||鳳尾蕨科|薄葉碎米蕨|Cheilanthes tenuifolia|Cheilanthes tenuifolia (Burm.) Sw.|2|0|LC|原生
 6778||雙扇蕨科|燕尾蕨|Cheiropleuria integrifolia|Cheiropleuria integrifolia (D.C. Eaton ex Hook.) M. Kato, Y. Yataba, Sahashi & N. Murak.|2|0|LC|原生
 7290||金星蕨科|毛蕨|Christella acuminata|Christella acuminata (Houtt.) H. Lév.|2|0|NT|原生
-7291||金星蕨科|擬毛蕨|Christella arida|Christella arida (D. Don) Holttum|2|0|NT|原生
-7292||金星蕨科|野毛蕨|Christella dentata|Christella dentata (Forssk.) Brownsey & Jermy|2|0||原生
-7293||金星蕨科|廣葉毛蕨|Christella ensifera|Christella ensifera (Tagawa) Holttum ex C.M. Kuo|2|1|DD|原生
 7294||金星蕨科|小毛蕨|Christella jaculosa|Christella jaculosa (Christ) Holttum|2|1|LC|原生
 7295||金星蕨科|微縮小毛蕨|Christella latipinna|Christella latipinna (Benth.) H. Lév.|2|1|LC|原生
-7296||金星蕨科|薄葉梳毛蕨|Christella papilio|Christella papilio (C. Hope) K. Iwats.|2|0|DD|原生
-7297||金星蕨科|密毛毛蕨|Christella parasitica|Christella parasitica (L.) H. Lév.|2|0||原生
 7063||水龍骨科|擬虎尾蒿蕨|Chrysogrammitis glandulosa|Chrysogrammitis glandulosa (J. Sm.) Parris|2|0|EN|原生
 6720||蚌殼蕨科|金狗毛蕨|Cibotium barometz|Cibotium barometz (L.) J. Sm.|2|0|LC|原生
 6721||蚌殼蕨科|臺灣金狗毛蕨|Cibotium taiwanense|Cibotium taiwanense C.M. Kuo|2|1|LC|原生
@@ -229,7 +302,6 @@
 7187||鳳尾蕨科|高山鳳了蕨|Coniogramme procera|Coniogramme procera (Wall.) Fée|2|0|LC|原生
 7298||金星蕨科|鈍頭金星蕨|Coryphopteris angulariloba|Coryphopteris angulariloba (Ching) L.J. He & X.C. Zhang|2|0|LC|原生
 7299||金星蕨科|栗柄金星蕨|Coryphopteris japonica|Coryphopteris japonica (Baker) L.J. He & X.C. Zhang|2|1|LC|原生
-6932||膜蕨科|稀毛毛葉蕨|Crepidomanes acutum|Crepidomanes acutum (C. Presl) K. Iwats.|2|0||原生
 6933||膜蕨科|南洋假脈蕨|Crepidomanes bipunctatum|Crepidomanes bipunctatum (Poir.) Copel.|2|0|CR|原生
 6934||膜蕨科|厚邊蕨|Crepidomanes humile|Crepidomanes humile (G. Forst.) Bosch|2|0|LC|原生
 6935||膜蕨科|假脈蕨|Crepidomanes kurzii|Crepidomanes kurzii (Bedd.) Tagawa & K. Iwats.|2|0|NT|原生
@@ -265,24 +337,20 @@
 6736||骨碎補科|鱗葉陰石蕨|Davallia cumingii|Davallia cumingii Hook.|2|0|LC|原生
 6737||骨碎補科|大葉骨碎補|Davallia divaricata|Davallia divaricata Blume|2|0|LC|原生
 6738||骨碎補科|杯狀蓋陰石蕨|Davallia griffithiana|Davallia griffithiana Hook.|2|0|LC|原生
-6739||骨碎補科|臺灣小膜蓋蕨|Davallia parvipinnula|Davallia parvipinnula Hayata|2|0||原生
 6740||骨碎補科|馬來陰石蕨|Davallia pectinata|Davallia pectinata Sm.|2|0|EN|原生
 6741||骨碎補科|陰石蕨|Davallia repens|Davallia repens (L. f.) Kuhn|2|0|NT|原生
 6742||骨碎補科|闊葉骨碎補|Davallia solida|Davallia solida (G. Forst.) Sw.|2|0|LC|原生
 6743||骨碎補科|海州骨碎補|Davallia trichomanoides|Davallia trichomanoides Blume|2|0|LC|原生
-6744||骨碎補科|圓蓋陰石蕨|Davallia tyermannii|Davallia tyermannii (T. Moore) Baker0|2|0||未知
 6745||碗蕨科|細毛碗蕨|Dennstaedtia hirsuta|Dennstaedtia hirsuta (Sw.) Mett. ex Miq.|2|0|LC|原生
 6746||碗蕨科|碗蕨|Dennstaedtia scabra|Dennstaedtia scabra (Wall. ex Hook.) Moore|2|0|LC|原生
 6747||碗蕨科|刺柄碗蕨|Dennstaedtia scandens|Dennstaedtia scandens (Blume) Moore|2|0|LC|原生
 6748||碗蕨科|司氏碗蕨|Dennstaedtia smithii|Dennstaedtia smithii (Hook.) Moore|2|0|LC|原生
 6672||蹄蓋蕨科|亞蹄蓋蕨|Deparia allantodioides|Deparia allantodioides (Bedd.) M. Kato|2|0|LC|原生
-6673||蹄蓋蕨科|大武蹄蓋蕨|Deparia dawuense|Deparia dawuense C.M. Kuo nom. nud.|2|0||未知
 6674||蹄蓋蕨科|假腸蕨|Deparia formosana|Deparia formosana (Rosenst.) R. Sano|2|0|LC|原生
 6675||蹄蓋蕨科|對囊蕨|Deparia lancea|Deparia lancea (Thunb.) Fraser-Jenk.|2|0|LC|原生
 6676||蹄蓋蕨科|昆明假蹄蓋蕨|Deparia longipes|Deparia longipes (Ching) Shinohara|2|0|DD|原生
 6677||蹄蓋蕨科|假蹄蓋蕨|Deparia petersenii|Deparia petersenii (Kunze) M. Kato|2|0|LC|原生
 6678||蹄蓋蕨科|南洋假鱗毛蕨|Deparia subfluvialis|Deparia subfluvialis (Hayata) M. Kato|2|0|LC|原生
-6679||蹄蓋蕨科|羽裂雙蓋蕨|Deparia tomitaroana|Deparia tomitaroana (Masam.) R. Sano|2|0|DD|原生
 6680||蹄蓋蕨科|東亞假鱗毛蕨|Deparia unifurcata|Deparia unifurcata (Baker) M. Kato|2|0|VU|原生
 6918||裏白科|芒萁|Dicranopteris linearis|Dicranopteris linearis (Burm. f.) Underw.|2|0|LC|原生
 6919||裏白科|賽芒萁|Dicranopteris subpectinata|Dicranopteris subpectinata (Christ) C.M. Kuo|2|0|DD|原生
@@ -291,7 +359,6 @@
 6945||膜蕨科|細柄單葉假脈蕨|Didymoglossum beccarianum|Didymoglossum beccarianum (Cesati) Senterre & Rouhan|2|0|LC|原生
 6946||膜蕨科|亞緣單葉假脈蕨|Didymoglossum sublimbatum|Didymoglossum sublimbatum (Müll. Berol.) Ebihara & K. Iwats.|2|0|NT|原生
 6777|||腸蕨|Diplaziopsis javanica|Diplaziopsis javanica (Blume) C. Chr.|2|0|LC|原生
-6681||蹄蓋蕨科|隱脈雙蓋蕨|Diplazium aphanoneuron|Diplazium aphanoneuron Ohwi|2|0||原生
 6682||蹄蓋蕨科|中華雙蓋蕨|Diplazium chinense|Diplazium chinense (Baker) C. Chr.|2|0|EN|原生
 6683||蹄蓋蕨科|邊生雙蓋蕨|Diplazium conterminum|Diplazium conterminum Christ|2|0|LC|原生
 6684||蹄蓋蕨科|厚葉雙蓋蕨|Diplazium crassiusculum|Diplazium crassiusculum Ching|2|0|VU|原生
@@ -302,7 +369,6 @@
 6689||蹄蓋蕨科|毛軸過溝菜蕨|Diplazium esculentum var. pubescens|Diplazium esculentum var. pubescens (Link) Tardieu & C. Chr.|2|0|LC|原生
 6690||蹄蓋蕨科|翅柄雙蓋蕨|Diplazium incomptum|Diplazium incomptum Tagawa|2|0|EN|原生
 6691||蹄蓋蕨科|川上氏雙蓋蕨|Diplazium kawakamii var. kawakamii|Diplazium kawakamii Hayata var. kawakamii|2|0|LC|原生
-6692||蹄蓋蕨科|光柄川上氏雙蓋蕨|Diplazium kawakamii var. subglabratum|Diplazium kawakamii Hayata var. subglabratum Tagawa|2|0||原生
 6693||蹄蓋蕨科|廣葉深山雙蓋蕨|Diplazium latifrons|Diplazium latifrons Alderw.|2|0|LC|原生
 6694||蹄蓋蕨科|疏葉雙蓋蕨|Diplazium laxifrons|Diplazium laxifrons Rosenst|2|0|DD|原生
 6695||蹄蓋蕨科|裂葉雙蓋蕨|Diplazium lobatum|Diplazium lobatum (Tagawa) Tagawa|2|0|NT|原生
@@ -314,7 +380,6 @@
 6701||蹄蓋蕨科|多生菜蕨|Diplazium proliferum|Diplazium proliferum (Lam.) Thouars|2|0|NA|原生
 6702||蹄蓋蕨科|擬德氏雙蓋蕨|Diplazium pseudodoederleinii|Diplazium pseudodoederleinii Hayata|2|1|LC|原生
 6703||蹄蓋蕨科|樸氏雙蓋蕨|Diplazium pullingeri|Diplazium pullingeri (Baker) J. Sm.|2|0|LC|原生
-6704||蹄蓋蕨科|錫金短腸蕨|Diplazium sikkimense|Diplazium sikkimense (C.B. Clarke) C. Chr.|2|0||原生
 6705||蹄蓋蕨科|長苞雙蓋蕨|Diplazium squamigerum|Diplazium squamigerum (Mett.) Matsum.|2|0|LC|原生
 6706||蹄蓋蕨科|臺灣雙蓋蕨|Diplazium taiwanense|Diplazium taiwanense Tagawa|2|0|LC|原生
 6707||蹄蓋蕨科|刺柄雙蓋蕨|Diplazium virescens|Diplazium virescens Kunze|2|0|LC|原生
@@ -336,13 +401,11 @@
 6818||三叉蕨科|迷人鱗毛蕨|Dryopteris decipiens|Dryopteris decipiens (Hook.) Kuntze|2|0|VU|原生
 6819||三叉蕨科|遠軸鱗毛蕨|Dryopteris dickinsii|Dryopteris dickinsii (Franch. & Sav.) C. Chr.|2|1|EN|原生
 6820||三叉蕨科|彎柄假複葉耳蕨|Dryopteris diffracta|Dryopteris diffracta (Baker) C. Chr.|2|0|LC|原生
-6821||三叉蕨科|愛德華鱗毛蕨|Dryopteris edwardsii|Dryopteris edwardsii Fraser-Jenk.|2|0||原生
 6822||三叉蕨科|頂羽鱗毛蕨|Dryopteris enneaphylla|Dryopteris enneaphylla (Baker) C. Chr.|2|0|LC|原生
 6823||三叉蕨科|大頂羽鱗毛蕨|Dryopteris enneaphylla var. pseudosieboldii|Dryopteris enneaphylla (Baker) C. Chr. var. pseudosieboldii (Hayata) Tagawa & K. Iwats.|2|1|NT|原生
 6824||三叉蕨科|闊葉鱗毛蕨|Dryopteris expansa|Dryopteris expansa (C. Presl) Fraser-Jenk. & Jermy|2|0|LC|原生
 6825||三叉蕨科|臺灣鱗毛蕨|Dryopteris formosana|Dryopteris formosana (Christ) C. Chr.|2|0|LC|原生
 6826||三叉蕨科|深山鱗毛蕨|Dryopteris fructuosa|Dryopteris fructuosa (Christ) C. Chr.|2|1|LC|原生
-6827||三叉蕨科|黑足鱗毛蕨|Dryopteris fuscipes|Dryopteris fuscipes C. Chr.|2|0||原生
 6828||三叉蕨科|哈氏假複葉耳蕨|Dryopteris hasseltii|Dryopteris hasseltii (Blume) C. Chr.|2|0|LC|原生
 6829||三叉蕨科|小苞鱗毛蕨|Dryopteris hendersonii|Dryopteris hendersonii (Bedd.) C. Chr.|2|0|LC|原生
 6830||三叉蕨科|黃山鱗毛蕨|Dryopteris huangshanensis|Dryopteris huangshanensis Ching|2|0|DD|原生
@@ -363,24 +426,20 @@
 6845||三叉蕨科|擬桫欏鱗毛蕨|Dryopteris pseudolunanensis|Dryopteris pseudolunanensis Tagawa|2|0|LC|原生
 6846||三叉蕨科|藏布鱗毛蕨|Dryopteris redactopinnata|Dryopteris redactopinnata S.K. Basu & Panigrahi|2|0|LC|原生
 6847||三叉蕨科|逆鱗鱗毛蕨|Dryopteris reflexosquamata|Dryopteris reflexosquamata Hayata|2|0|LC|原生
-6848||三叉蕨科|川西鱗毛蕨|Dryopteris rosthornii|Dryopteris rosthornii (Diels) C. Chr.|2|0||原生
 6849||三叉蕨科|寬羽鱗毛蕨|Dryopteris ryo-itoana|Dryopteris ryo-itoana Sa. Kurata|2|0|VU|原生
 6850||三叉蕨科|史氏鱗毛蕨|Dryopteris scottii|Dryopteris scottii (Bedd.) Ching|2|0|LC|原生
 6851||三叉蕨科|鋸齒葉鱗毛蕨|Dryopteris serratodentata|Dryopteris serratodentata (Bedd.) Hayata|2|0|LC|原生
 6852||三叉蕨科|落鱗鱗毛蕨|Dryopteris sordidipes|Dryopteris sordidipes Tagawa|2|0|LC|原生
 6853||三叉蕨科|長葉鱗毛蕨|Dryopteris sparsa|Dryopteris sparsa (D. Don) Kuntze|2|0|LC|原生
-6854||三叉蕨科|褐鱗鱗毛蕨|Dryopteris squamifera|Dryopteris squamifera Ching & S.K. Wu|2|0||原生
 6855||三叉蕨科|阿里山鱗毛蕨|Dryopteris squamiseta|Dryopteris squamiseta (Hook.) Kuntze|2|0|LC|原生
 6856||三叉蕨科|狹鱗鱗毛蕨|Dryopteris stenolepis|Dryopteris stenolepis (Baker) C. Chr.|2|0|LC|原生
 6857||三叉蕨科|細葉鱗毛蕨|Dryopteris subatrata|Dryopteris subatrata Tagawa|2|1|LC|原生
 6858||三叉蕨科|早田氏鱗毛蕨|Dryopteris subexaltata|Dryopteris subexaltata (Christ) C. Chr.|2|0|LC|原生
 6859||三叉蕨科|亞二型鱗毛蕨|Dryopteris sublacera|Dryopteris sublacera Christ|2|0|DD|原生
-6860||三叉蕨科|微彎柄複葉耳蕨|Dryopteris subreflexipinna|Dryopteris subreflexipinna Ogata|2|0||原生
 6861||三叉蕨科|紅苞鱗毛蕨|Dryopteris subtriangularis|Dryopteris subtriangularis (C. Hope) C. Chr.|2|0|DD|原生
 6862||三叉蕨科|疏葉鱗毛蕨|Dryopteris tenuicula|Dryopteris tenuicula C.G. Matthew & Christ|2|0|LC|原生
 6863||三叉蕨科|落葉鱗毛蕨|Dryopteris tenuipes|Dryopteris tenuipes (Rosenst.) Seriz.|2|1|DD|原生
 6864||三叉蕨科|外山氏鱗毛蕨|Dryopteris toyamae|Dryopteris toyamae Tagawa|2|0|EN|原生
-6865||三叉蕨科|玉山擬鱗毛蕨|Dryopteris transmorrisonensis|Dryopteris transmorrisonensis (Hayata) Hayata|2|0||原生
 6866||三叉蕨科|南海鱗毛蕨|Dryopteris varia|Dryopteris varia (L.) Kuntze|2|0|LC|原生
 6867||三叉蕨科|尼泊爾鱗毛蕨|Dryopteris wallichiana subsp. nepalensis|Dryopteris wallichiana (Spreng.) Hyl. subsp. nepalensis Fraser-Jenk.|2|0|LC|原生
 6868||三叉蕨科|瓦氏鱗毛蕨|Dryopteris wallichiana subsp. wallichiana|Dryopteris wallichiana (Spreng.) Hyl. subsp. wallichiana|2|0|LC|原生
@@ -407,7 +466,6 @@
 6733||蹄蓋蕨科|羽節蕨|Gymnocarpium oyamense|Gymnocarpium oyamense (Baker) Ching|2|0|CR|原生
 6734||蹄蓋蕨科|細裂羽節蕨|Gymnocarpium remotepinnatum|Gymnocarpium remotepinnatum (Hayata) Ching|2|0|LC|原生
 7191||鳳尾蕨科|姬書帶蕨|Haplopteris anguste-elongata|Haplopteris anguste-elongata (Hayata) E.H. Crane|2|0|LC|原生
-7192||鳳尾蕨科|劍葉書帶蕨|Haplopteris ensiformis|Haplopteris ensiformis (Sw.) E.H. Crane|2|0||原生
 7193||鳳尾蕨科|書帶蕨|Haplopteris flexuosa|Haplopteris flexuosa (Fée) E.H. Crane|2|0|LC|原生
 7194||鳳尾蕨科|異葉書帶蕨|Haplopteris heterophylla|Haplopteris heterophylla C.W. Chen, Y.H. Chang & Y.C. Liu|2|0|CR|原生
 7195||鳳尾蕨科|細葉書帶蕨|Haplopteris mediosora|Haplopteris mediosora (Hayata) X.C. Zhang|2|1|VU|原生
@@ -415,7 +473,6 @@
 7197||鳳尾蕨科|垂葉書帶蕨|Haplopteris zosterifolia|Haplopteris zosterifolia (Willd.) E.H. Crane|2|0|LC|原生
 7037||瓶爾小草科|錫蘭七指蕨|Helminthostachys zeylanica|Helminthostachys zeylanica (L.) Hook.|2|0|CR|原生
 6749||碗蕨科|栗蕨|Histiopteris incisa|Histiopteris incisa (Thunb.) J. Sm.|2|0|LC|原生
-6947||膜蕨科|阿里山膜蕨|Hymenophyllum alishanense|Hymenophyllum alishanense De Vol|2|0||原生
 6948||膜蕨科|蕗蕨|Hymenophyllum badium|Hymenophyllum badium Hook. & Grev.|2|0|LC|原生
 6949||膜蕨科|華東膜蕨|Hymenophyllum barbatum|Hymenophyllum barbatum (Bosch) Baker|2|0|LC|原生
 6950||膜蕨科|爪哇厚壁蕨|Hymenophyllum blandum|Hymenophyllum blandum Racib.|2|0|VU|原生
@@ -438,7 +495,6 @@
 6973||骨碎補科|腫足蕨|Hypodematium crenatum|Hypodematium crenatum (Forssk.) Kuhn & Decken|2|0|LC|原生
 6750||碗蕨科|臺灣姬蕨|Hypolepis alpina|Hypolepis alpina (Blume) Hook.|2|0|LC|原生
 6751||碗蕨科|灰姬蕨|Hypolepis pallida|Hypolepis pallida (Blume) Hook.|2|0|EN|原生
-6752||碗蕨科|無腺姬蕨|Hypolepis polypodioides|Hypolepis polypodioides (Blume) Hook.|2|0||原生
 6753||碗蕨科|姬蕨|Hypolepis punctata|Hypolepis punctata (Thunb.) Mett.|2|0|LC|原生
 6754||碗蕨科|細葉姬蕨|Hypolepis tenuifolia|Hypolepis tenuifolia (Forst.) Bernh.|2|0|LC|原生
 7038||瓶爾小草科|阿里山蕨萁|Japanobotrychium arisanense|Japanobotrychium arisanense Masam.|2|0|VU|原生
@@ -459,18 +515,16 @@
 7085||水龍骨科|瓦韋|Lepisorus thunbergianus|Lepisorus thunbergianus (Kaulf.) Ching|2|0|LC|原生
 7086||水龍骨科|擬瓦韋|Lepisorus tosaensis|Lepisorus tosaensis (Makino) H. Itô|2|0|LC|原生
 7087||水龍骨科|萊蕨|Leptochilus decurrens|Leptochilus decurrens Blume|2|0|LC|原生
-7088||水龍骨科|橢圓線蕨|Leptochilus ellipticus|Leptochilus ellipticus (Thunb. ex Murray) Noot.|2|0||未知
 7089||水龍骨科|斷線蕨|Leptochilus hemionitideus|Leptochilus hemionitideus (C. Presl) Noot.|2|0|LC|原生
 7090||水龍骨科|亨利氏線蕨|Leptochilus henryi|Leptochilus henryi (Baker) X.C. Zhang|2|0|DD|原生
 7091||水龍骨科|萊氏線蕨|Leptochilus wrightii|Leptochilus wrightii (Hook. & Baker) X.C. Zhang|2|0|LC|原生
 7092||水龍骨科|新店線蕨|Leptochilus ×shintenensis|Leptochilus ×shintenensis (Hayata) X.C. Zhang & Nooteboom|2|0|NA|原生
 6974||骨碎補科|大膜蓋蕨|Leucostegia truncata|Leucostegia truncata (D. Don) Fraser-Jenk.|2|0|LC|原生
-6977||陵齒蕨科|錢氏鱗始蕨|Lindsaea chienii|Lindsaea chienii Ching|2|0||未知
+6977||陵齒蕨科|錢氏陵齒蕨|Lindsaea chienii|Lindsaea chienii Ching|2|0||未知
 6978||陵齒蕨科|海島陵齒蕨|Lindsaea commixta|Lindsaea commixta Tagawa|2|0|LC|原生
 6979||陵齒蕨科|網脈陵齒蕨|Lindsaea cultrata|Lindsaea cultrata (Willd.) Sw.|2|0|VU|原生
 6980||陵齒蕨科|箭葉陵齒蕨|Lindsaea ensifolia|Lindsaea ensifolia Sw.|2|0|NT|原生
 6981||陵齒蕨科|異葉陵齒蕨|Lindsaea heterophylla|Lindsaea heterophylla Dry.|2|0|NA|原生
-6982||陵齒蕨科|爪哇鱗始蕨|Lindsaea javanensis|Lindsaea javanensis Bl.|2|0||未知
 6983||陵齒蕨科|細葉陵齒蕨|Lindsaea kawabatae|Lindsaea kawabatae Sa. Kurata|2|0|VU|原生
 6984||陵齒蕨科|方柄陵齒蕨|Lindsaea lucida|Lindsaea lucida Bl.|2|1|VU|原生
 6985||陵齒蕨科|鈍齒陵齒蕨|Lindsaea obtusa|Lindsaea obtusa J. Sm.|2|0|NT|原生
@@ -515,8 +569,6 @@
 7102||水龍骨科|薄葉擬茀蕨|Microsorum membranifolium|Microsorum membranifolium (R. Br.) Ching|2|0|VU|原生
 7103||水龍骨科|三叉葉星蕨|Microsorum pteropus|Microsorum pteropus (Blume) Copel.|2|0|LC|原生
 7104||水龍骨科|星蕨|Microsorum punctatum|Microsorum punctatum (L.) Copel.|2|0|LC|原生
-7105||水龍骨科|長葉星蕨|Microsorum rubidum|Microsorum rubidum (Kunze) Copel.|2|0||原生
-7106||水龍骨科|海岸星蕨|Microsorum scolopendria|Microsorum scolopendria (Burm. f.) Copel.|2|0||原生
 7107||水龍骨科|廣葉星蕨|Microsorum steerei|Microsorum steerei (Harr.) Ching|2|0|EN|原生
 7108||水龍骨科|波氏星蕨|Microsorum superficiale|Microsorum superficiale (Blume) Ching|2|0|LC|原生
 6772||碗蕨科|稀子蕨|Monachosorum henryi|Monachosorum henryi Christ|2|0|LC|原生
@@ -544,7 +596,6 @@
 7111||水龍骨科|無毛禾葉蕨|Oreogrammitis adspersa|Oreogrammitis adspersa (Blume) Parris|2|0|VU|原生
 7112||水龍骨科|穴孢濱禾蕨|Oreogrammitis caespitosa|Oreogrammitis caespitosa (Blume) Parris|2|0|EN|原生
 7113||水龍骨科|大武禾葉蕨|Oreogrammitis congener|Oreogrammitis congener (Blume) Parris|2|0|LC|原生
-7114||水龍骨科|短柄禾葉蕨|Oreogrammitis dorsipila|Oreogrammitis dorsipila (Christ) Parris|2|0||原生
 7115||水龍骨科|長孢禾葉蕨|Oreogrammitis nuda|Oreogrammitis nuda (Tagawa) Parris|2|1|EN|原生
 7116||水龍骨科|毛禾葉蕨|Oreogrammitis reinwardtii|Oreogrammitis reinwardtii (Blume) Parris|2|0|NT|原生
 6993||陵齒蕨科|日本陵齒蕨|Osmolindsaea japonica|Osmolindsaea japonica (Baker) Lehtonen & Christenh.|2|0|LC|原生
@@ -596,7 +647,6 @@
 6904||三叉蕨科|黑鱗耳蕨|Polystichum piceopaleaceum|Polystichum piceopaleaceum Tagawa|2|0|LC|原生
 6905||三叉蕨科|南湖耳蕨|Polystichum prescottianum|Polystichum prescottianum (Wall. ex Mett.) T. Moore|2|0|VU|原生
 6906||三叉蕨科|鋸葉耳蕨|Polystichum prionolepis|Polystichum prionolepis Hayata|2|1|LC|原生
-6907||三叉蕨科|擬芽胞耳蕨|Polystichum pseudostenophyllum|Polystichum pseudostenophyllum Tagawa|2|0||原生
 6908||三叉蕨科|阿里山耳蕨|Polystichum scariosum|Polystichum scariosum (Roxb.) C.V. Morton|2|0|LC|原生
 6909||三叉蕨科|福山氏耳蕨|Polystichum sinense|Polystichum sinense (Christ) Christ|2|0|LC|原生
 6910||三叉蕨科|芽胞耳蕨|Polystichum stenophyllum|Polystichum stenophyllum (Franch.) Christ|2|0|LC|原生
@@ -606,15 +656,11 @@
 6914||三叉蕨科|馬祖耳蕨|Polystichum tsus-simense|Polystichum tsus-simense (Hook.) J. Sm. |2|0|LC|原生
 6915||三叉蕨科|關山耳蕨|Polystichum xiphophyllum|Polystichum xiphophyllum (Baker) Diels|2|0|EN|原生
 7316||金星蕨科|頂芽新月蕨|Pronephrium cuspidatum|Pronephrium cuspidatum (Blume) Holttum|2|0|LC|原生
-7317||金星蕨科|大羽新月蕨|Pronephrium gymnopteridifrons|Pronephrium gymnopteridifrons (Hayata) Holttum|2|0||原生
 7318||金星蕨科|變葉新月蕨|Pronephrium insularis|Pronephrium insularis (K. Iwats.) Holttum|2|0|DD|原生
 7319||金星蕨科|長柄新月蕨|Pronephrium longipetiolatum|Pronephrium longipetiolatum (K.Iwats.) Holttum|2|1|VU|原生
-7320||金星蕨科|微紅新月蕨|Pronephrium megacuspe|Pronephrium megacuspe (Baker) Holttum|2|0||原生
 7321||金星蕨科|羽葉新月蕨|Pronephrium parishii|Pronephrium parishii (Bedd.) Holttum|2|0|LC|原生
 7322||金星蕨科|單葉新月蕨|Pronephrium simplex|Pronephrium simplex (Hook.) Holttum|2|0|LC|原生
 7323||金星蕨科|新月蕨|Pronephrium triphyllum|Pronephrium triphyllum (Sw.) Holttum|2|0|LC|原生
-7324||金星蕨科|擬琉球新月蕨|Pronephrium ×pseudoliukiuense|Pronephrium ×pseudoliukiuense (Seriz.) Nakaike|2|0||原生
-7117||水龍骨科|南亞穴子蕨|Prosaptia celebica|Prosaptia celebica (Blume) Tagawa & K. Iwats.|2|0||原生
 7118||水龍骨科|穴子蕨|Prosaptia contigua|Prosaptia contigua (G. Forster) C. Presl|2|0|LC|原生
 7119||水龍骨科|俯垂穴子蕨|Prosaptia nutans|Prosaptia nutans (Blume) Mett.|2|0|EN|原生
 7120||水龍骨科|密毛蒿蕨|Prosaptia obliquata|Prosaptia obliquata (Blume) Mett.|2|0|LC|原生
@@ -640,7 +686,6 @@
 7212||鳳尾蕨科|粗糙鳳尾蕨|Pteris cretica subsp. laeta|Pteris cretica subsp. laeta (Wall. ex Ettingsh.) Fraser-Jenk. |2|0|DD|原生
 7213||鳳尾蕨科|掌鳳尾蕨|Pteris dactylina|Pteris dactylina Hook.|2|0|LC|原生
 7214||鳳尾蕨科|岩鳳尾蕨|Pteris deltodon|Pteris deltodon Bak.|2|0|LC|原生
-7215||鳳尾蕨科|天草鳳尾蕨|Pteris dispar|Pteris dispar Kunze|2|0||原生
 7216||鳳尾蕨科|箭葉鳳尾蕨|Pteris ensiformis|Pteris ensiformis Burm.|2|0|LC|原生
 7217||鳳尾蕨科|傅氏鳳尾蕨|Pteris fauriei|Pteris fauriei Hieron.|2|0|LC|原生
 7218||鳳尾蕨科|臺灣鳳尾蕨|Pteris formosana|Pteris formosana Bak.|2|1|LC|原生
@@ -653,7 +698,6 @@
 7225||鳳尾蕨科|日本鳳尾蕨|Pteris nipponica|Pteris nipponica W.C. Shieh|2|0|NA|原生
 7226||鳳尾蕨科|爪哇鳳尾蕨|Pteris pellucida|Pteris pellucida C. Presl|2|0|EN|原生
 7227||鳳尾蕨科|闊葉鳳尾蕨|Pteris pellucidifolia|Pteris pellucidifolia Hayata|2|0|NT|原生
-7228||鳳尾蕨科|廣東鳳尾蕨|Pteris plumbea|Pteris plumbea Christ|2|0|DD|原生
 7229||鳳尾蕨科|琉球鳳尾蕨|Pteris ryukyuensis|Pteris ryukyuensis Tagawa|2|0|NT|原生
 7230||鳳尾蕨科|半邊羽裂鳳尾蕨|Pteris semipinnata|Pteris semipinnata L.|2|0|LC|原生
 7231||鳳尾蕨科|有刺鳳尾蕨|Pteris setulosocostulata|Pteris setulosocostulata Hayata|2|0|LC|原生
@@ -662,7 +706,6 @@
 7234||鳳尾蕨科|鱗蓋鳳尾蕨|Pteris vittata|Pteris vittata L.|2|0|LC|原生
 7235||鳳尾蕨科|瓦氏鳳尾蕨|Pteris wallichiana|Pteris wallichiana Ag.|2|0|LC|原生
 7236||鳳尾蕨科|烏來鳳尾蕨|Pteris wulaiensis|Pteris wulaiensis C.M. Kuo|2|1|CR|原生
-7237||鳳尾蕨科|行方氏鳳尾蕨|Pteris ×namegatae|Pteris ×namegatae Sa. Kurata|2|0||原生
 7026||觀音座蓮科|觀音座蓮舅|Ptisana pellucida|Ptisana pellucida (C. Presl) Murdock|2|0|CR|原生
 7123||水龍骨科|捲葉蕨|Pyrrosia angustissima|Pyrrosia angustissima (Giesenh. ex Diels) Tagawa & K. Iwats.|2|0|VU|原生
 7124||水龍骨科|抱樹石韋|Pyrrosia lanceolata|Pyrrosia lanceolata (L.) Farw.|2|0|LC|原生
@@ -692,8 +735,6 @@
 7141||水龍骨科|臺灣茀蕨|Selliguea taiwanensis|Selliguea taiwanensis (Tagawa) H. Ohashi & K. Ohashi|2|1|DD|原生
 7142||水龍骨科|姬茀蕨|Selliguea yakushimensis|Selliguea yakushimensis (Makino) Fraser-Jenk.|2|0|NT|原生
 6728||桫欏科|筆筒樹|Sphaeropteris lepifera|Sphaeropteris lepifera (J. Sm. ex Hook.) R.M. Tryon|2|0|LC|原生
-7330||金星蕨科|蘭嶼大葉毛蕨|Sphaerostephanos productus|Sphaerostephanos productus (Kaulf.) Holttum|2|0||原生
-7331||金星蕨科|臺灣毛蕨|Sphaerostephanos taiwanensis|Sphaerostephanos taiwanensis (C. Chr.) Holttum ex C.M. Kuo|2|0||原生
 7332||金星蕨科|溪邊蕨|Stegnogramma dictyoclinoides|Stegnogramma dictyoclinoides Ching|2|0|EN|原生
 7333||金星蕨科|聖蕨|Stegnogramma griffithii|Stegnogramma griffithii (T. Moore) K. Iwats.|2|0|LC|原生
 7334||金星蕨科|威氏聖蕨|Stegnogramma griffithii var. wilfordii|Stegnogramma griffithii var. wilfordii (Hook.) K. Iwats.|2|0|LC|原生
@@ -725,7 +766,6 @@
 7144||水龍骨科|細葉蒿蕨|Themelium tenuisectum|Themelium tenuisectum (Blume) Parris|2|0|VU|原生
 7145||水龍骨科|虎尾蒿蕨|Tomophyllum donianum|Tomophyllum donianum (Spreng.) Fraser-Jenk. & Parris|2|0|NT|原生
 6967||膜蕨科|叉脈單葉假脈蕨|Trichomanes bimarginatum|Trichomanes bimarginatum (Bosch) Bosch|2|0|VU|原生
-6968||膜蕨科|盾型單葉假脈蕨|Trichomanes tahitense|Trichomanes tahitense Nadeaud|2|0||原生
 7238||鳳尾蕨科|連孢一條線蕨|Vaginularia paradoxa|Vaginularia paradoxa (Fée) Mett. ex Miq.|2|0|NT|原生
 7239||鳳尾蕨科|一條線蕨|Vaginularia trichoidea|Vaginularia trichoidea Fée|2|0|CR|原生
 6969||膜蕨科|瓶蕨|Vandenboschia auriculata|Vandenboschia auriculata (Blume) Copel.|2|0|LC|原生
@@ -833,8 +873,8 @@
 5906|Acanthaceae|爵床科|黃蝦花|Pachystachys lutea|Pachystachys lutea (Ruiz et Pav.) Nees|4|0||栽培
 3360|Acanthaceae|爵床科|九頭獅子草|Peristrophe japonica|Peristrophe japonica (Thunb.) Bremek.|4|0|LC|原生
 3361|Acanthaceae|爵床科|長花九頭獅子草|Peristrophe roxburghiana|Peristrophe roxburghiana (Roem. & Schult.) Bremek.|4|0|LC|原生
-3362|Acanthaceae|爵床科|翠蘆利|Ruellia brittoniana|Ruellia brittoniana Leonard|4|0||歸化
-5089|Acanthaceae|爵床科|匍蘆利草|Ruellia prostrata|Ruellia prostrata Poir.|4|0||栽培
+3362|Acanthaceae|爵床科|紫花蘆利草|Ruellia brittoniana|Ruellia brittoniana Leonard|4|0||歸化
+5089|Acanthaceae|爵床科|匐蘆利草|Ruellia prostrata|Ruellia prostrata Poir.|4|0||栽培
 6565|Acanthaceae|莧科|蔓枝蘆利草|Ruellia squarrosa|Ruellia squarrosa Fenzl|4|0|NA|歸化
 3363|Acanthaceae|爵床科|塊根蘆利草|Ruellia tuberosa|Ruellia tuberosa L.|4|0|NA|歸化
 3364|Acanthaceae|爵床科|明萼草|Rungia chinensis|Rungia chinensis Benth.|4|0|LC|原生
@@ -864,13 +904,10 @@
 2103|Aceraceae|槭樹科|青楓|Acer serrulatum|Acer serrulatum Hayata|4|1|LC|原生
 2104|Aceraceae|槭樹科|島田氏三裂槭|Acer tutcheri var. shimadae|Acer tutcheri var. shimadae Hayata|4|0||未知
 1299|Actinidiaceae|獼猴桃科|軟棗獼猴桃|Actinidia arguta|Actinidia arguta (Siebold & Zucc.) Planch. ex Miq.|4|0|VU|原生
-1300|Actinidiaceae|獼猴桃科|硬齒獼猴桃|Actinidia callosa|Actinidia callosa Lindl.|4|0||原生
-1301|Actinidiaceae|獼猴桃科|駝齒獼猴桃|Actinidia callosa var. ephippioidea|Actinidia callosa var. ephippioidea C.F. Liang|4|0||原生
 1302|Actinidiaceae|獼猴桃科|臺灣羊桃|Actinidia chinensis var. setosa|Actinidia chinensis var. setosa H.L. Li|4|1|LC|原生
 1303|Actinidiaceae|獼猴桃科|闊葉獼猴桃|Actinidia latifolia|Actinidia latifolia (Gardner & Champ.) Merr.|4|0|NT|原生
 1304|Actinidiaceae|獼猴桃科|紅莖獼猴桃|Actinidia rubricaulis|Actinidia rubricaulis Dunn|4|0|LC|原生
 1305|Actinidiaceae|獼猴桃科|腺齒獼猴桃|Actinidia rufa|Actinidia rufa (Siebold & Zucc.) Planch. ex Miq.|4|0|LC|原生
-1306|Actinidiaceae|獼猴桃科|四萼獼猴桃|Actinidia tetramera|Actinidia tetramera Maxim.|4|0|DD|原生
 1307|Actinidiaceae|獼猴桃科|水冬瓜|Saurauia tristyla var. oldhamii|Saurauia tristyla var. oldhamii (Hemsl.) Finet & Gagnep.|4|0|LC|原生
 3862|Agavaceae|龍舌蘭科|龍舌蘭|Agave americana|Agave americana L.|4|0|NA|歸化
 6510|Agavaceae|龍舌蘭科|黃斑龍舌蘭|Agave americana var. variegata|Agave americana var. variegata Linn.|4|0||栽培
@@ -901,10 +938,10 @@
 2522|Alangiaceae|八角楓科|華八角楓|Alangium chinense|Alangium chinense (Lour.) Harms|4|0|LC|原生
 3760|Alismataceae|澤瀉科|澤瀉|Alisma canaliculatum|Alisma canaliculatum A. Braun & C.D. Bouché|4|0|VU|原生
 3761|Alismataceae|澤瀉科|圓葉澤瀉|Caldesia grandis|Caldesia grandis Sam.|4|0|CR|原生
-6156|Alismataceae|澤瀉科|象牙草|Echinodorus cordifolius|Echinodorus cordifolius (L.) Griseb.|4|0||栽培
+6156|Alismataceae|澤瀉科|心葉齒果澤瀉|Echinodorus cordifolius|Echinodorus cordifolius (L.) Griseb.|4|0||栽培
 3762|Alismataceae|澤瀉科|臺灣冠果草|Sagittaria guayanensis subsp. lappula|Sagittaria guayanensis subsp. lappula (D. Don) Bogin|4|0|EN|原生
 6398|Alismataceae|澤瀉科|蒙特登慈菇|Sagittaria montevidensis|Sagittaria montevidensis Chamisso & Schlechtendal|4|0||栽培
-3763|Alismataceae|澤瀉科|線慈菇|Sagittaria pygamea|Sagittaria pygamea Miq.|4|0|NT|原生
+3763|Alismataceae|澤瀉科|瓜皮草|Sagittaria pygamea|Sagittaria pygmaea Miq.|4|0|NT|原生
 5851|Alismataceae|澤瀉科|慈姑|Sagittaria sagittifolia|Sagittaria sagittifolia L.|4|0||栽培
 3764|Alismataceae|澤瀉科|三腳剪|Sagittaria trifolia|Sagittaria trifolia L.|4|0|LC|原生
 6505|Alstroemeriaceae|扭柄葉科|百合水仙|Alstromeria aurantiaca|Alstromeria aurantiaca D.Don ex Sweet|4|0||栽培
@@ -913,14 +950,14 @@
 1115|Amaranthaceae|莧科|牛膝|Achyranthes bidentata|Achyranthes bidentata Blume|4|0|LC|原生
 1116|Amaranthaceae|莧科|日本牛膝|Achyranthes bidentata var. japonica|Achyranthes bidentata var. japonica Miq.|4|0|LC|原生
 1117|Amaranthaceae|莧科|柳葉牛膝|Achyranthes longifolia|Achyranthes longifolia (Makino) Makino|4|0|LC|原生
-1118|Amaranthaceae|莧科|蔓雞冠|Aerva sanguinolenta|Aerva sanguinolenta (L.) Blume|4|0||原生
+1118|Amaranthaceae|莧科|絹毛莧|Aerva sanguinolenta|Aerva sanguinolenta (L.) Blume|4|0||原生
 1119|Amaranthaceae|莧科|毛蓮子草|Alternanthera bettzickiana|Alternanthera bettzickiana (Regel) G. Nicholson|4|0|NA|歸化
 1120|Amaranthaceae|莧科|匙葉蓮子草|Alternanthera paronychioides|Alternanthera paronychioides A. St.-Hil.|4|0|NA|歸化
 1121|Amaranthaceae|莧科|空心蓮子草|Alternanthera philoxeroides|Alternanthera philoxeroides (Mart.) Griseb.|4|0|NA|歸化
 1122|Amaranthaceae|莧科|瑞氏蓮子草|Alternanthera reineckii|Alternanthera reineckii Briq.|4|0|NA|歸化
 1123|Amaranthaceae|莧科|蓮子草|Alternanthera sessilis|Alternanthera sessilis (L.) R. Br. ex DC.|4|0|LC|原生
 1124|Amaranthaceae|莧科|尾穗莧|Amaranthus caudatus|Amaranthus caudatus L.|4|0|NA|歸化
-1125|Amaranthaceae|莧科|假刺莧|Amaranthus dubius|Amaranthus dubius Mart. ex Thell.|4|0||歸化
+1125|Amaranthaceae|莧科|假刺莧|Amaranthus dubius|Amaranthus dubius Mart. ex Thell.|4|0||歸化
 1126|Amaranthaceae|莧科|綠穗莧|Amaranthus hybridus|Amaranthus hybridus L.|4|0|NA|歸化
 1127|Amaranthaceae|莧科|凹葉野莧菜|Amaranthus lividus|Amaranthus lividus L.|4|0|NA|歸化
 1128|Amaranthaceae|莧科|青莧|Amaranthus patulus|Amaranthus patulus Bertol.|4|0|NA|歸化
@@ -952,8 +989,8 @@
 6007|Amaryllidaceae|石蒜科|水仙|Narcissus tazetta var. chinensis|Narcissus tazetta var. chinensis Roem|4|0||栽培
 6410|Amaryllidaceae|石蒜科|紫嬌花|Tulbaghia violacea|Tulbaghia violacea Harv.|4|0||栽培
 5777|Anacardiaceae|漆樹科|庚大利|Bouea mocrophylla|Bouea mocrophylla Griff.|4|0||栽培
-2084|Anacardiaceae|漆樹科|山羨子|Buchanania arborescens|Buchanania arborescens (Blume) Blume|4|0|NT|原生
-2085|Anacardiaceae|漆樹科|芒果|Mangifera indica|Mangifera indica L.|4|0||歸化
+2084|Anacardiaceae|漆樹科|山檨子|Buchanania arborescens|Buchanania arborescens (Blume) Blume|4|0|NT|原生
+2085|Anacardiaceae|漆樹科|檬果|Mangifera indica|Mangifera indica L.|4|0||歸化
 2086|Anacardiaceae|漆樹科|黃連木|Pistacia chinensis|Pistacia chinensis Bunge|4|0|LC|原生
 2087|Anacardiaceae|漆樹科|臺灣藤漆|Rhus ambigua|Rhus ambigua Lav. ex Dippel|4|0|LC|原生
 2088|Anacardiaceae|漆樹科|裏白漆|Rhus hypoleuca|Rhus hypoleuca Champ. ex Benth.|4|0|VU|原生
@@ -1011,7 +1048,6 @@
 2573|Apiaceae|繖形科|阿里山天胡荽|Hydrocotyle setulosa|Hydrocotyle setulosa Hayata|4|1|LC|原生
 2574|Apiaceae|繖形科|天胡荽|Hydrocotyle sibthorpioides|Hydrocotyle sibthorpioides Lam.|4|0|LC|原生
 2592|Apiaceae|繖形科|銅錢草|Hydrocotyle verticillata|Hydrocotyle verticillata Thunb.|4|0|NA|歸化
-2575|Apiaceae|繖形科|野天胡荽|Hydrocotyle vulgaris|Hydrocotyle vulgaris L.|4|0||歸化
 2576|Apiaceae|繖形科|水芹菜|Oenanthe javanica|Oenanthe javanica (Blume) DC.|4|0|LC|原生
 2577|Apiaceae|繖形科|翼莖水芹菜|Oenanthe pterocaulon|Oenanthe pterocaulon S.L. Liou, C.Y. Chao & C.C. Chuang|4|1|NT|原生
 2581|Apiaceae|繖形科|臭根|Osmorhiza aristata|Osmorhiza aristata Makino & Jabe|4|0|LC|原生
@@ -1036,7 +1072,7 @@
 2820|Apocynaceae|夾竹桃科|大錦蘭|Anodendron benthamianum|Anodendron benthamianum Hemsl.|4|1|LC|原生
 2821|Apocynaceae|夾竹桃科|柳葉鱔藤|Anodendron salicifolium|Anodendron salicifolium Tsiang & P.T. Li|4|0||未知
 6264|Apocynaceae|夾竹桃科|卡梨撒|Carissa grandiflora|Carissa grandiflora A. DC.|4|0||栽培
-2822|Apocynaceae|夾竹桃科|日日春|Catharanthus roseus|Catharanthus roseus (L.) G. Don|4|0||歸化
+2822|Apocynaceae|夾竹桃科|長春花|Catharanthus roseus|Catharanthus roseus (L.) G. Don|4|0||歸化
 2823|Apocynaceae|夾竹桃科|海檬果|Cerbera manghas|Cerbera manghas L.|4|0|LC|原生
 2824|Apocynaceae|夾竹桃科|酸藤|Ecdysanthera rosea|Ecdysanthera rosea Hook. & Arn.|4|0|LC|原生
 2825|Apocynaceae|夾竹桃科|乳藤|Ecdysanthera utilis|Ecdysanthera utilis Hayata & Kawak.|4|0|LC|原生
@@ -1083,7 +1119,7 @@
 2143|Aquifoliaceae|冬青科|拉拉山冬青|Ilex rarasanensis|Ilex rarasanensis Sasaki|4|1|DD|原生
 2144|Aquifoliaceae|冬青科|鐵冬青|Ilex rotunda|Ilex rotunda Thunb.|4|0|LC|原生
 2145|Aquifoliaceae|冬青科|太平山冬青|Ilex sugerokii var. brevipedunculata|Ilex sugerokii var. brevipedunculata (Maxim.) S.Y. Hu|4|0|LC|原生
-2146|Aquifoliaceae|冬青科|鈴木冬青|Ilex suzukii|Ilex suzukii S.Y. Hu|4|1|NT|原生
+2146|Aquifoliaceae|冬青科|鈴木氏冬青|Ilex suzukii|Ilex suzukii S.Y. Hu|4|1|NT|原生
 2147|Aquifoliaceae|冬青科|雪山冬青|Ilex tugitakayamensis|Ilex tugitakayamensis Sasaki|4|1|LC|原生
 2148|Aquifoliaceae|冬青科|烏來冬青|Ilex uraiensis|Ilex uraiensis Mori & Yamamoto|4|0|LC|原生
 2149|Aquifoliaceae|冬青科|雲南冬青|Ilex yunnanensis var. parvifolia|Ilex yunnanensis var. parvifolia (Hayata) S.Y. Hu|4|1|LC|原生
@@ -1165,7 +1201,7 @@
 5980|Araceae|天南星科|紅花馬蹄蓮|Zantedeschia rehmannii|Zantedeschia rehmannii Engl.|4|0||栽培
 6229|Araliaceae|五加科|刺五加|Acanthopanax senticosus|Acanthopanax senticosus (Rupr. et Maxim.) Harms|4|0||栽培
 2531|Araliaceae|五加科|虎刺楤木|Aralia armata|Aralia armata (Wall.) Seem.|4|0|LC|原生
-2532|Araliaceae|五加科|裡白楤木|Aralia bipinnata|Aralia bipinnata Blanco|4|0||原生
+2532|Araliaceae|五加科|裏白楤木|Aralia bipinnata|Aralia bipinnata Blanco|4|0||原生
 2533|Araliaceae|五加科|食用土當歸|Aralia cordata|Aralia cordata Thunb.|4|0|NT|原生
 2534|Araliaceae|五加科|鵲不踏|Aralia decaisneana|Aralia decaisneana Hance|4|0|LC|原生
 6396|Araliaceae|五加科|虎刺楤木|Aralia finlaysoniana|Aralia finlaysoniana (Wall. ex G.Don) Seem.|4|0|LC|原生
@@ -1227,7 +1263,6 @@
 1280|Aristolochiaceae|馬兜鈴科|瓜葉馬兜鈴|Aristolochia cucurbitifolia|Aristolochia cucurbitifolia Hayata|4|1|VU|原生
 1281|Aristolochiaceae|馬兜鈴科|蜂窩馬兜鈴|Aristolochia foveolata|Aristolochia foveolata Merr.|4|0|NT|原生
 1282|Aristolochiaceae|馬兜鈴科|異葉馬兜鈴|Aristolochia heterophylla|Aristolochia heterophylla Hemsl.|4|0|LC|原生
-1283|Aristolochiaceae|馬兜鈴科|大葉馬兜鈴|Aristolochia kaempferi|Aristolochia kaempferi Willd.|4|0||原生
 5701|Aristolochiaceae|馬兜鈴科|裕榮馬兜鈴|Aristolochia yujungiana|Aristolochia yujungiana C.T. Lu & J.C. Wang|4|1|CR|原生
 1284|Aristolochiaceae|馬兜鈴科|港口馬兜鈴|Aristolochia zollingeriana|Aristolochia zollingeriana Miq.|4|0|NT|原生
 1285|Aristolochiaceae|馬兜鈴科|白斑細辛|Asarum albomaculatum|Asarum albomaculatum Hayata|4|0||未知
@@ -1267,11 +1302,11 @@
 2859|Asclepiadaceae|蘿藦科|鷗蔓|Tylophora ovata|Tylophora ovata (Lindl.) Hook. ex Steud.|4|0|LC|原生
 2860|Asclepiadaceae|蘿藦科|臺灣鷗蔓|Tylophora taiwanensis|Tylophora taiwanensis Hatus.|4|1|NT|原生
 6423|Asteraceae|菊科|洋蓍草|Achillea millefolium|Achillea millefolium L.|4|0||栽培
-3472|Asteraceae|菊科|短舌花金鈕扣|Acmella brachyglossa|Acmella brachyglossa Cass.|4|0||歸化
+3472|Asteraceae|菊科|短舌花金鈕釦|Acmella brachyglossa|Acmella brachyglossa Cass.|4|0||歸化
 3473|Asteraceae|菊科|天文草|Acmella ciliata|Acmella ciliata (Kunth) Cass.|4|0|NA|歸化
-3474|Asteraceae|菊科|印度金鈕扣|Acmella oleracea|Acmella oleracea (L.) R.K. Jansen|4|0||歸化
-3475|Asteraceae|菊科|金鈕扣|Acmella paniculata|Acmella paniculata (Wall. ex DC.) R.K. Jansen|4|0|VU|歸化
-3476|Asteraceae|菊科|沼生金鈕扣|Acmella uliginosa|Acmella uliginosa (Sw.) Cass.|4|0||歸化
+3474|Asteraceae|菊科|印度金鈕釦|Acmella oleracea|Acmella oleracea (L.) R.K. Jansen|4|0||歸化
+3475|Asteraceae|菊科|金鈕釦|Acmella paniculata|Acmella paniculata (Wall. ex DC.) R.K. Jansen|4|0|VU|歸化
+3476|Asteraceae|菊科|沼生金鈕釦|Acmella uliginosa|Acmella uliginosa (Sw.) Cass.|4|0||歸化
 3477|Asteraceae|菊科|下田菊|Adenostemma lavenia|Adenostemma lavenia (L.) Kuntze|4|0|LC|原生
 3478|Asteraceae|菊科|小花下田菊|Adenostemma lavenia var. parviflorum|Adenostemma lavenia var. parviflorum (Blume) Hochr.|4|0|LC|原生
 3479|Asteraceae|菊科|假藿香薊|Ageratina adenophora|Ageratina adenophora (Spreng.) R.M. King & H. Rob.|4|0|NA|歸化
@@ -1360,7 +1395,7 @@
 3553|Asteraceae|菊科|黃金珠|Carpesium nepalense|Carpesium nepalense Less.|4|0|LC|原生
 5093|Asteraceae|菊科|川紅花|Carthamus tinctorius|Carthamus tinctorius L.|4|0||栽培
 3555|Asteraceae|菊科|石胡荽|Centipeda minima|Centipeda minima (L.) A. Braun & Asch.|4|0|LC|原生
-3556|Asteraceae|菊科|菲律賓鈕扣花|Centratherum punctatum|Centratherum punctatum Cass.|4|0||歸化
+3556|Asteraceae|菊科|菲律賓鈕釦花|Centratherum punctatum|Centratherum punctatum Cass.|4|0||歸化
 3557|Asteraceae|菊科|香澤蘭|Chromolaena odorata|Chromolaena odorata (L.) R.M. King & H. Rob.|4|0|NA|歸化
 6059|Asteraceae|菊科|茼蒿|Chrysanthemum coronarium|Chrysanthemum coronarium L.|4|0||栽培
 3558|Asteraceae|菊科|瑪格麗特|Chrysanthemum frutescens|Chrysanthemum frutescens L.|4|0||歸化
@@ -1376,7 +1411,7 @@
 3568|Asteraceae|菊科|華薊|Cirsium lineare|Cirsium lineare (Thunb.) Sch. Bip.|4|0|EN|原生
 3569|Asteraceae|菊科|森氏薊|Cirsium morii|Cirsium morii Hayata|4|1|LC|原生
 3570|Asteraceae|菊科|鈴木氏薊|Cirsium suzukii|Cirsium suzukii Kitam.|4|1|LC|原生
-3571|Asteraceae|菊科|蘇利南野菊|Clibadium surinamense|Clibadium surinamense L.|4|0||歸化
+3571|Asteraceae|菊科|蘇利南野菊|Clibadium surinamense|Clibadium surinamense L.|4|0||歸化
 3572|Asteraceae|菊科|埃及假蓬|Conyza aegyptiaca|Conyza aegyptiaca (L.) Aiton|4|0|EN|原生
 3573|Asteraceae|菊科|美洲假蓬|Conyza bonariensis|Conyza bonariensis (L.) Cronquist|4|0|NA|歸化
 3574|Asteraceae|菊科|加拿大蓬|Conyza canadensis|Conyza canadensis (L.) Cronquist|4|0|NA|歸化
@@ -1405,9 +1440,9 @@
 5718|Asteraceae|菊科|窄葉鱧腸|Eclipta angustata|Eclipta angustata Umemoto & H. Koyama|4|0||栽培
 3594|Asteraceae|菊科|鱧腸|Eclipta prostrata|Eclipta prostrata (L.) L.|4|0|LC|原生
 3595|Asteraceae|菊科|毛鱧腸|Eclipta zippeliana|Eclipta zippeliana Blume|4|0|NA|歸化
-3596|Asteraceae|菊科|毛蓮菜|Elephantopus mollis|Elephantopus mollis Kunth|4|0||歸化
+3596|Asteraceae|菊科|地膽草|Elephantopus mollis|Elephantopus mollis Kunth|4|0||歸化
 3597|Asteraceae|菊科|燈豎朽|Elephantopus scaber|Elephantopus scaber L.|4|0|LC|原生
-3598|Asteraceae|菊科|離葯金腰箭|Eleutheranthera ruderalis|Eleutheranthera ruderalis (Sw.) Sch. Bip.|4|0||歸化
+3598|Asteraceae|菊科|離葯金腰箭|Eleutheranthera ruderalis|Eleutheranthera ruderalis (Sw.) Sch. Bip.|4|0||歸化
 3599|Asteraceae|菊科|纓絨花|Emilia fosbergii|Emilia fosbergii Nicolson|4|0|NA|歸化
 3600|Asteraceae|菊科|粉黃纓絨花|Emilia praetermissa|Emilia praetermissa Milne-Redh.|4|0|NA|歸化
 3601|Asteraceae|菊科|紫背草|Emilia sonchifolia var. javanica|Emilia sonchifolia var. javanica (Burm. f.) Mattf.|4|0|LC|原生
@@ -1463,9 +1498,9 @@
 3648|Asteraceae|菊科|泥胡菜|Hemisteptia lyrata|Hemisteptia lyrata (Bunge) Fisch. & C.A. Mey.|4|0|LC|原生
 3649|Asteraceae|菊科|濱狗娃花|Heteropappus hispidus subsp. arenarius|Heteropappus hispidus subsp. arenarius (Kitam.) Kitam.|4|0|NA|歸化
 3650|Asteraceae|菊科|森氏山柳菊|Hieracium morii|Hieracium morii Hayata|4|1|LC|原生
-5580|Asteraceae|菊科|智利貓耳菊|Hypochaeris chillensis|Hypochaeris chillensis (Kunth) Britton|4|0||原生
+5580|Asteraceae|菊科|智利貓兒菊|Hypochaeris chillensis|Hypochaeris chillensis (Kunth) Britton|4|0||原生
 3651|Asteraceae|菊科|光貓兒菊|Hypochaeris glabra|Hypochaeris glabra L.|4|0|NA|歸化
-3652|Asteraceae|菊科|白花貓耳菊|Hypochaeris microcephala var. albiflora|Hypochaeris microcephala var. albiflora (Kuntze) Cabrera|4|0||歸化
+3652|Asteraceae|菊科|白花貓兒菊|Hypochaeris microcephala var. albiflora|Hypochaeris microcephala var. albiflora (Kuntze) Cabrera|4|0||歸化
 3653|Asteraceae|菊科|貓兒菊|Hypochaeris radicata|Hypochaeris radicata L.|4|0|NA|歸化
 6069|Asteraceae|菊科|None|Ixeridium calcicola|Ixeridium calcicola C.-I Peng, S.W.Chung & T.C. Hsu|4|1||栽培
 3654|Asteraceae|菊科|刀傷草|Ixeridium laevigatum|Ixeridium laevigatum (Blume) Pak & Kawano|4|0|LC|原生
@@ -1484,8 +1519,8 @@
 5579|Asteraceae|菊科|刺萵苣|Lactuca serriola|Lactuca serriola L.|4|0|NA|歸化
 3667|Asteraceae|菊科|瓶頭草|Lagenophora lanata|Lagenophora lanata A. Cunn.|4|0|EN|原生
 3668|Asteraceae|菊科|六角草|Laggera alata|Laggera alata (D. Don) Sch. Bip. ex Oliv.|4|0|VU|原生
-3669|Asteraceae|菊科|稻搓菜|Lapsanastrum apogonoides|Lapsanastrum apogonoides (Maxim.) Pak & K. Bremer|4|0|VU|原生
-3670|Asteraceae|菊科|臺灣稻槎草|Lapsanastrum takasei|Lapsanastrum takasei (Sasaki) Pak & K. Bremer|4|1||原生
+3669|Asteraceae|菊科|稻槎菜|Lapsanastrum apogonoides|Lapsanastrum apogonoides (Maxim.) Pak & K. Bremer|4|0|VU|原生
+3670|Asteraceae|菊科|臺灣稻槎菜|Lapsanastrum takasei|Lapsanastrum takasei (Sasaki) Pak & K. Bremer|4|1||原生
 3671|Asteraceae|菊科|玉山薄雪草|Leontopodium microphyllum|Leontopodium microphyllum Hayata|4|1|LC|原生
 3672|Asteraceae|菊科|法國菊|Leucanthemum vulgare|Leucanthemum vulgare Lam.|4|0|NA|歸化
 3673|Asteraceae|菊科|大吳風草|Ligularia japonica|Ligularia japonica (Thunb.) Less.|4|0|VU|原生
@@ -1508,8 +1543,8 @@
 5849|Asteraceae|菊科|伏生香檬菊|Pectis prostrata|Pectis prostrata Cavanilles|4|0|NA|歸化
 3689|Asteraceae|菊科|半高野帚|Pertya simozawae|Pertya simozawae Masam.|4|1|EN|原生
 3690|Asteraceae|菊科|臺灣款冬|Petasites formosanus|Petasites formosanus Kitam.|4|1|LC|原生
-3691|Asteraceae|菊科|玉山毛連菜|Picris hieracioides subsp. morrisonensis|Picris hieracioides subsp. morrisonensis (Hayata) Kitam.|4|1||原生
-3692|Asteraceae|菊科|高山毛連菜|Picris hieracioides subsp. ohwiana|Picris hieracioides subsp. ohwiana (Kitam.) Kitam.|4|1||原生
+3691|Asteraceae|菊科|玉山毛蓮菜|Picris hieracioides subsp. morrisonensis|Picris hieracioides subsp. morrisonensis (Hayata) Kitam.|4|1||原生
+3692|Asteraceae|菊科|高山毛蓮菜|Picris hieracioides subsp. ohwiana|Picris hieracioides subsp. ohwiana (Kitam.) Kitam.|4|1||原生
 3693|Asteraceae|菊科|美洲闊苞菊|Pluchea carolinensis|Pluchea carolinensis (Jacq.) G. Don|4|0|NA|歸化
 3694|Asteraceae|菊科|鯽魚膽|Pluchea indica|Pluchea indica (L.) Less.|4|0|LC|原生
 3695|Asteraceae|菊科|光梗闊苞菊|Pluchea pteropoda|Pluchea pteropoda Hemsl. ex Forbes & Hemsl.|4|0|VU|原生
@@ -1529,7 +1564,7 @@
 3708|Asteraceae|菊科|奇萊青木香|Saussurea kiraisiensis|Saussurea kiraisiensis Masam.|4|1|VU|原生
 3709|Asteraceae|菊科|小蔓黃菀|Senecio crataegifolius|Senecio crataegifolius Hayata|4|1|VU|原生
 5915|Asteraceae|菊科|瓜葉菊|Senecio cruentus|Senecio cruentus (Masson) DC.|4|0||栽培
-3710|Asteraceae|菊科|窄葉黃菀|Senecio inaequidens|Senecio inaequidens DC.|4|0||歸化
+3710|Asteraceae|菊科|窄葉黃菀|Senecio inaequidens|Senecio inaequidens DC.|4|0||歸化
 5502|Asteraceae|菊科|關山千里光|Senecio kuanshanensis|Senecio kuanshanensis S.W. Chung & C.I. Peng|4|1|EN|原生
 3711|Asteraceae|菊科|玉山黃菀|Senecio morrisonensis|Senecio morrisonensis Hayata|4|1|LC|原生
 3712|Asteraceae|菊科|黃菀|Senecio nemorensis var. dentatus|Senecio nemorensis var. dentatus (Kitam.) H. Koyama|4|1|LC|原生
@@ -1565,7 +1600,7 @@
 3737|Asteraceae|菊科|一枝香|Vernonia cinerea|Vernonia cinerea (L.) Less.|4|0|LC|原生
 3738|Asteraceae|菊科|小花斑鳩菊|Vernonia cinerea var. parviflora|Vernonia cinerea var. parviflora (Reinw. ex Blume) DC.|4|0|LC|原生
 3739|Asteraceae|菊科|光耀藤|Vernonia elliptica|Vernonia elliptica DC.|4|0|NA|歸化
-3740|Asteraceae|菊科|臺灣斑鳩菊|Vernonia gratiosa|Vernonia gratiosa Hance|4|0||原生
+3740|Asteraceae|菊科|過山龍|Vernonia gratiosa|Vernonia gratiosa Hance|4|0||原生
 3741|Asteraceae|菊科|濱斑鳩菊|Vernonia maritima|Vernonia maritima Merr.|4|0|VU|原生
 3742|Asteraceae|菊科|嶺南野菊|Vernonia patula|Vernonia patula (Aiton) Merr.|4|0|LC|原生
 3745|Asteraceae|菊科|蟛蜞菊|Wedelia chinensis|Wedelia chinensis (Osbeck) Merr.|4|0|LC|原生
@@ -1574,7 +1609,7 @@
 3748|Asteraceae|菊科|南美蟛蜞菊|Wedelia trilobata|Wedelia trilobata (L.) Hitchc.|4|0|NA|歸化
 3743|Asteraceae|菊科|雙花蟛蜞菊|Wollastonia biflora|Wollastonia biflora (L.) DC.|4|0|LC|原生
 6247|Asteraceae|菊科|山蟛蜞菊|Wollastonia montana|Wollastonia montana (Blume) DC.|4|0|DD|原生
-3749|Asteraceae|菊科|羊帶來|Xanthium strumarium|Xanthium strumarium L.|4|0||歸化
+3749|Asteraceae|菊科|蒼耳|Xanthium strumarium|Xanthium strumarium L.|4|0||歸化
 3750|Asteraceae|菊科|黃鵪菜|Youngia japonica|Youngia japonica (L.) DC.|4|0|LC|原生
 3751|Asteraceae|菊科|臺灣黃鵪菜|Youngia japonica subsp. formosana|Youngia japonica subsp. formosana (Hayata) Kitam.|4|1|LC|原生
 3752|Asteraceae|菊科|大花黃鵪菜|Youngia japonica subsp. longiflora|Youngia japonica subsp. longiflora Babc. & Stebbins|4|0|LC|原生
@@ -1585,7 +1620,7 @@
 5532|Balanophoraceae|蛇菰科|日本蛇菰|Balanophora japonica|Balanophora japonica Makino|4|0|CR|原生
 981|Balanophoraceae|蛇菰科|穗花蛇菰|Balanophora laxiflora|Balanophora laxiflora Hemsl.|4|0|LC|原生
 982|Balanophoraceae|蛇菰科|海桐生蛇菰|Balanophora wrightii|Balanophora wrightii Makino|4|0|VU|原生
-5533|Balanophoraceae|蛇菰科|屋久島蛇菇|Balanophora yakushimensis|Balanophora yakushimensis Hatus. & Masam.|4|0||原生
+5533|Balanophoraceae|蛇菰科|屋久島蛇菰|Balanophora yakushimensis|Balanophora yakushimensis Hatus. & Masam.|4|0||原生
 2121|Balsaminaceae|鳳仙花科|鳳仙花|Impatiens balsamina|Impatiens balsamina L.|4|0|NA|歸化
 2122|Balsaminaceae|鳳仙花科|棣慕華鳳仙花|Impatiens devolii|Impatiens devolii T.C. Huang|4|1|VU|原生
 6502|Balsaminaceae|鳳仙花科|新幾內亞鳳仙|Impatiens hawkeri|Impatiens hawkeri W. Bull|4|0||栽培
@@ -1616,7 +1651,7 @@
 2386|Begoniaceae|秋海棠科|臺灣秋海棠|Begonia taiwaniana|Begonia taiwaniana Hayata|4|1|LC|原生
 2387|Begoniaceae|秋海棠科|太魯閣秋海棠|Begonia tarokoensis|Begonia tarokoensis M.J. Lai|4|1||未知
 2388|Begoniaceae|秋海棠科|藤枝秋海棠|Begonia tengchiana|Begonia tengchiana C.I. Peng & Y.K. Chen|4|1|VU|原生
-2389|Begoniaceae|秋海棠科|霧台秋海棠|Begonia wutaiana|Begonia wutaiana C.I. Peng & Y.K. Chen|4|1|VU|未知
+2389|Begoniaceae|秋海棠科|霧臺秋海棠|Begonia wutaiana|Begonia wutaiana C.I. Peng & Y.K. Chen|4|1|VU|未知
 2368|Begoniaceae|秋海棠科|鍾氏秋海棠|Begonia ×chungii|Begonia ×chungii C.I. Peng & S.M. Ku|4|1|NA|原生
 2369|Begoniaceae|秋海棠科|臺北秋海棠|Begonia ×taipeiensis|Begonia ×taipeiensis C.I. Peng|4|1|NA|原生
 1214|Berberidaceae|小檗科|長葉小檗|Berberis aristatoserrulata|Berberis aristatoserrulata Hayata|4|1|DD|原生
@@ -1664,12 +1699,12 @@
 3038|Boraginaceae|紫草科|厚殼樹|Ehretia acuminata|Ehretia acuminata R. Br.|4|0|LC|原生
 3039|Boraginaceae|紫草科|破布烏|Ehretia dicksonii|Ehretia dicksonii Hance|4|0|LC|原生
 3040|Boraginaceae|紫草科|長花厚殼樹|Ehretia longiflora|Ehretia longiflora Champ. ex Benth.|4|0|LC|原生
-3031|Boraginaceae|紫草科|小葉厚殼樹|Ehretia microphylla|Ehretia microphylla Lam.|4|0||栽培
+3031|Boraginaceae|紫草科|滿福木|Ehretia microphylla|Ehretia microphylla Lam.|4|0||栽培
 3041|Boraginaceae|紫草科|蘭嶼厚殼樹|Ehretia philippinensis|Ehretia philippinensis A. DC.|4|0|VU|原生
 3042|Boraginaceae|紫草科|恆春厚殼樹|Ehretia resinosa|Ehretia resinosa Hance|4|0|LC|原生
 3050|Boraginaceae|紫草科|白水木|Heliotropium foertherianum|Heliotropium foertherianum Diane & Hilger|4|0|LC|原生
 3043|Boraginaceae|紫草科|山豆根|Heliotropium formosanum|Heliotropium formosanum I.M. Johnst.|4|1|LC|原生
-3044|Boraginaceae|紫草科|印度天芹菜|Heliotropium indicum|Heliotropium indicum L.|4|0||歸化
+3044|Boraginaceae|紫草科|狗尾草|Heliotropium indicum|Heliotropium indicum L.|4|0||歸化
 3045|Boraginaceae|紫草科|伏毛天芹菜|Heliotropium procumbens var. depressum|Heliotropium procumbens Mill. var. depressum (Cham.) H. Y. Liu|4|0|NA|歸化
 3051|Boraginaceae|紫草科|冷飯藤|Heliotropium sarmentosum|Heliotropium sarmentosum (Lam.) Craven|4|0|LC|原生
 3046|Boraginaceae|紫草科|梓木草|Lithospermum zollingeri|Lithospermum zollingeri A. DC.|4|0|VU|原生
@@ -1720,11 +1755,11 @@
 5488|Brassicaceae|十字花科|球果薺|Neslia paniculata|Neslia paniculata (L.) Desv.|4|0|NA|歸化
 1432|Brassicaceae|十字花科|萊菔|Raphanus sativus|Raphanus sativus L.|4|0||未知
 1433|Brassicaceae|十字花科|濱萊菔|Raphanus sativus fo. raphanistroides|Raphanus sativus fo. raphanistroides Makino|4|0|LC|原生
-1434|Brassicaceae|十字花科|野生油菜|Rapistrum rugosum|Rapistrum rugosum (L.) All.|4|0||歸化
+1434|Brassicaceae|十字花科|皺果薺|Rapistrum rugosum|Rapistrum rugosum (L.) All.|4|0||歸化
 1435|Brassicaceae|十字花科|奧地利葶藶|Rorippa austriaca|Rorippa austriaca (Crantz) Besser|4|0|NA|歸化
 1436|Brassicaceae|十字花科|廣東葶藶|Rorippa cantoniensis|Rorippa cantoniensis (Lour.) Ohwi|4|0|LC|原生
 1437|Brassicaceae|十字花科|小葶藶|Rorippa dubia|Rorippa dubia (Pers.) H. Hara|4|0|NA|歸化
-1438|Brassicaceae|十字花科|球果山芥菜|Rorippa globosa|Rorippa globosa (Turcz. ex Fisch. & C.A. Mey.) Hayek|4|0||原生
+1438|Brassicaceae|十字花科|風花菜|Rorippa globosa|Rorippa globosa (Turcz. ex Fisch. & C.A. Mey.) Hayek|4|0||原生
 1439|Brassicaceae|十字花科|葶藶|Rorippa indica|Rorippa indica (L.) Hiern|4|0|LC|原生
 1440|Brassicaceae|十字花科|濕生葶藶|Rorippa palustris|Rorippa palustris (L.) Besser|4|0|NA|歸化
 1441|Brassicaceae|十字花科|歐亞葶藶|Rorippa sylvestris|Rorippa sylvestris (L.) Besser|4|0|NA|歸化
@@ -1775,7 +1810,7 @@
 3106|Callitrichaceae|水馬齒科|日本水馬齒|Callitriche japonica|Callitriche japonica Engelm. ex Hegelm.|4|0|LC|原生
 5498|Callitrichaceae|水馬齒科|廣東水馬齒|Callitriche palustris var. oryzetorum|Callitriche palustris var. oryzetorum (Petr.) Lansdown|4|0|DD|原生
 3107|Callitrichaceae|水馬齒科|凹果水馬齒|Callitriche peploides|Callitriche peploides Nutt.|4|0|NA|歸化
-5215|Callitrichaceae|水馬齒科|細苞水馬齒|Callitriche raveniana|Callitriche raveniana Lansdown|4|1|DD|原生
+5215|Callitrichaceae|水馬齒科|雷文氏水馬齒(細苞水馬齒)|Callitriche raveniana|Callitriche raveniana Lansdown|4|1|DD|原生
 3108|Callitrichaceae|水馬齒科|水馬齒|Callitriche verna|Callitriche verna L.|4|0|NT|原生
 3453|Campanulaceae|桔梗科|玉山沙參|Adenophora morrisonensis|Adenophora morrisonensis Hayata|4|1|LC|原生
 3454|Campanulaceae|桔梗科|高山沙參|Adenophora morrisonensis subsp. uehatae|Adenophora morrisonensis subsp. uehatae (Yamam.) Lammers|4|1|LC|原生
@@ -1812,14 +1847,14 @@
 1399|Capparaceae|山柑科|毛花山柑|Capparis pubiflora|Capparis pubiflora DC.|4|0|EN|原生
 1400|Capparaceae|山柑科|毛瓣蝴蝶木|Capparis sabiifolia|Capparis sabiifolia Hook. f. & Thomson|4|0|LC|原生
 1401|Capparaceae|山柑科|山柑|Capparis sikkimensis subsp. formosana|Capparis sikkimensis subsp. formosana (Hemsl.) Jacobs|4|0|NT|原生
-1403|Capparaceae|山柑科|成功白花菜|Cleome rutidosperma|Cleome rutidosperma DC.|4|0||歸化
+1403|Capparaceae|山柑科|平伏莖白花菜|Cleome rutidosperma|Cleome rutidosperma DC.|4|0||歸化
 1405|Capparaceae|山柑科|魚木|Crateva adansonii subsp. formosensis|Crateva adansonii subsp. formosensis Jacobs|4|1|LC|原生
 1402|Capparaceae|山柑科|白花菜|Gynandropsis gynandra|Gynandropsis gynandra (L.) Briq.|4|0|NA|歸化
 5791|Capparaceae|山柑科|醉蝶花|Tarenaya spinosa|Tarenaya spinosa (Jacq.) Raf.|4|0||栽培
 3416|Caprifoliaceae|忍冬科|臺灣糯米條|Abelia chinensis var. ionandra|Abelia chinensis R. Br. var. ionandra (Hayata) Masam.|4|1|VU|原生
 3417|Caprifoliaceae|忍冬科|阿里山忍冬|Lonicera acuminata|Lonicera acuminata Wall.|4|0|LC|原生
 3418|Caprifoliaceae|忍冬科|無梗忍冬|Lonicera apodantha|Lonicera apodantha Ohwi|4|1|NT|原生
-3419|Caprifoliaceae|忍冬科|裡白忍冬|Lonicera hypoglauca|Lonicera hypoglauca Miq.|4|0||原生
+3419|Caprifoliaceae|忍冬科|裏白忍冬|Lonicera hypoglauca|Lonicera hypoglauca Miq.|4|0||原生
 3420|Caprifoliaceae|忍冬科|忍冬|Lonicera japonica|Lonicera japonica Thunb.|4|0|LC|原生
 3421|Caprifoliaceae|忍冬科|川上氏忍冬|Lonicera kawakamii|Lonicera kawakamii (Hayata) Masam.|4|1|VU|原生
 3422|Caprifoliaceae|忍冬科|大花忍冬|Lonicera macrantha|Lonicera macrantha (D. Don) Spreng.|4|0|VU|原生
@@ -1845,7 +1880,7 @@
 3440|Caprifoliaceae|忍冬科|假繡球|Viburnum sympodiale|Viburnum sympodiale Graebn.|4|0|LC|原生
 3441|Caprifoliaceae|忍冬科|臺東莢蒾|Viburnum taitoense|Viburnum taitoense Hayata|4|1|LC|原生
 3442|Caprifoliaceae|忍冬科|壺花莢蒾|Viburnum urceolatum|Viburnum urceolatum Siebold & Zucc.|4|0|LC|原生
-2367|Caricaceae|番木瓜科|木瓜|Carica papaya|Carica papaya L.|4|0||歸化
+2367|Caricaceae|番木瓜科|番木瓜|Carica papaya|Carica papaya L.|4|0||歸化
 1063|Caryophyllaceae|石竹科|無心菜|Arenaria serpyllifolia|Arenaria serpyllifolia L.|4|0|LC|原生
 1064|Caryophyllaceae|石竹科|亞毛無心菜|Arenaria subpilosa|Arenaria subpilosa (Hayata) Ohwi|4|1|LC|原生
 1065|Caryophyllaceae|石竹科|高山無心菜|Arenaria takasagomontana|Arenaria takasagomontana (Masam.) S.S. Ying|4|1|LC|原生
@@ -1892,7 +1927,6 @@
 1098|Caryophyllaceae|石竹科|阿里山繁縷|Stellaria arisanensis|Stellaria arisanensis (Hayata) Hayata|4|1|LC|原生
 1099|Caryophyllaceae|石竹科|繁縷|Stellaria media|Stellaria media (L.) Vill.|4|0|LC|原生
 1100|Caryophyllaceae|石竹科|小花繁縷|Stellaria media var. micrantha|Stellaria media var. micrantha (Hayata) T.S. Liu & S.S. Ying|4|1||原生
-1101|Caryophyllaceae|石竹科|賽繁縷|Stellaria media var. procera|Stellaria media var. procera Klatt & Richt.|4|1||原生
 6055|Caryophyllaceae|石竹科|獨子繁縷|Stellaria monosperma var. japonica|Stellaria monosperma var. japonica Buch.-Ham. ex D. Don|4|0||栽培
 1102|Caryophyllaceae|石竹科|網脈繁縷|Stellaria reticulivena|Stellaria reticulivena Hayata|4|1|LC|原生
 1103|Caryophyllaceae|石竹科|疏花繁縷|Stellaria saxatilis|Stellaria saxatilis Buch.-Ham. ex D. Don|4|0|LC|原生
@@ -1938,7 +1972,7 @@
 6159|Chenopodiaceae|藜科|菠菜|Spinacia oleracea|Spinacia oleracea L.|4|0||栽培
 1112|Chenopodiaceae|藜科|裸花鹼蓬|Suaeda maritima|Suaeda maritima (L.) Dumort.|4|0|LC|原生
 5427|Chloranthaceae|金粟蘭科|絲穗金粟蘭|Chloranthus fortunei|Chloranthus fortunei (A. Gray) Solms|4|0||未知
-1277|Chloranthaceae|金粟蘭科|寬葉金粟蘭|Chloranthus henryi|Chloranthus henryi Hemsl.|4|0||未知
+1277|Chloranthaceae|金粟蘭科|寬葉金粟蘭|Chloranthus henryi|Chloranthus henryi Hemsl.|4|0||未知
 1278|Chloranthaceae|金粟蘭科|臺灣及己|Chloranthus oldhamii|Chloranthus oldhamii Solms|4|0|LC|原生
 1279|Chloranthaceae|金粟蘭科|草珊瑚|Sarcandra glabra|Sarcandra glabra (Thunb.) Nakai|4|0|LC|原生
 1355|Clusiaceae|金絲桃科|蘭嶼胡桐|Calophyllum blancoi|Calophyllum blancoi Planch. & Triana|4|0|EN|原生
@@ -1948,7 +1982,7 @@
 1357|Clusiaceae|金絲桃科|蘭嶼福木|Garcinia linii|Garcinia linii C.E. Chang|4|1|NT|原生
 1358|Clusiaceae|金絲桃科|大葉鳳果|Garcinia livingstonei|Garcinia livingstonei T. Anderson|4|0||未知
 6227|Clusiaceae|金絲桃科|鳳果|Garcinia mangostana|Garcinia mangostana Linn.|4|0||栽培
-1359|Clusiaceae|金絲桃科|福木|Garcinia multiflora|Garcinia multiflora Champ. ex Benth.|4|0||原生
+1359|Clusiaceae|金絲桃科|恆春福木|Garcinia multiflora|Garcinia multiflora Champ. ex Benth.|4|0||原生
 1360|Clusiaceae|金絲桃科|菲島福木|Garcinia subelliptica|Garcinia subelliptica Merr.|4|0|EN|原生
 6232|Clusiaceae|金絲桃科|蛋樹|Garcinia xanthochymus|Garcinia xanthochymus Hook. f.|4|0||栽培
 1361|Clusiaceae|金絲桃科|連翹|Hypericum ascyron|Hypericum ascyron L.|4|0|LC|原生
@@ -2025,7 +2059,7 @@
 2988|Convolvulaceae|旋花科|吊鐘藤|Hewittia malabarica|Hewittia malabarica (L.) Suresh|4|0|LC|原生
 2989|Convolvulaceae|旋花科|天茄兒|Ipomoea alba|Ipomoea alba L.|4|0|NA|歸化
 2990|Convolvulaceae|旋花科|甕菜|Ipomoea aquatica|Ipomoea aquatica Forssk.|4|0|NA|歸化
-2991|Convolvulaceae|旋花科|甘藷|Ipomoea batatas|Ipomoea batatas (L.) Lam.|4|0||歸化
+2991|Convolvulaceae|旋花科|甘薯|Ipomoea batatas|Ipomoea batatas (L.) Lam.|4|0||歸化
 2992|Convolvulaceae|旋花科|白花牽牛|Ipomoea biflora|Ipomoea biflora (L.) Pers.|4|0|LC|原生
 2993|Convolvulaceae|旋花科|番仔藤|Ipomoea cairica|Ipomoea cairica (L.) Sweet|4|0|NA|歸化
 2994|Convolvulaceae|旋花科|樹牽牛|Ipomoea carnea subsp. fistulosa|Ipomoea carnea subsp. fistulosa (Mart. ex Choisy) D.F. Austin|4|0|NA|歸化
@@ -2070,7 +2104,7 @@
 2526|Cornaceae|山茱萸科|東瀛珊瑚|Aucuba japonica|Aucuba japonica Thunb.|4|0|LC|原生
 2527|Cornaceae|山茱萸科|四照花|Benthamidia japonica var. chinensis|Benthamidia japonica var. chinensis (Osborn) H. Hara|4|0|DD|原生
 2528|Cornaceae|山茱萸科|臺灣青莢葉|Helwingia japonica subsp. taiwaniana|Helwingia japonica subsp. taiwaniana Y.P. Yang & H.Y. Liu|4|1|LC|原生
-2529|Cornaceae|山茱萸科|燈台樹|Swida controversa|Swida controversa (Hemsl.) Soják|4|0|NT|原生
+2529|Cornaceae|山茱萸科|燈臺樹|Swida controversa|Swida controversa (Hemsl.) Soják|4|0|NT|原生
 2530|Cornaceae|山茱萸科|梜木|Swida macrophylla|Swida macrophylla (Wall.) Soják|4|0|LC|原生
 1454|Crassulaceae|景天科|落地生根|Bryophyllum pinnatum|Bryophyllum pinnatum (Lam.) Oken|4|0|NA|歸化
 5423|Crassulaceae|景天科|翡翠木|Crassula argentea|Crassula argentea Thunb.|4|0||栽培
@@ -2161,7 +2195,7 @@
 3999|Cyperaceae|莎草科|大井氏扁果薹|Carex caucasica|Carex caucasica Steven|4|0|NT|原生
 4000|Cyperaceae|莎草科|黃花薹|Carex chrysolepis|Carex chrysolepis Franch. & Sav.|4|0|LC|原生
 4001|Cyperaceae|莎草科|煙火薹|Carex cruciata|Carex cruciata Wahlenb.|4|0|LC|原生
-4002|Cyperaceae|莎草科|隱柱薹|Carex cryptostachys|Carex cryptostachys Brongn.|4|0||原生
+4002|Cyperaceae|莎草科|多序宿柱薹|Carex cryptostachys|Carex cryptostachys Brongn.|4|0||原生
 4003|Cyperaceae|莎草科|大穗日本薹|Carex doniana|Carex doniana Spreng.|4|0|LC|原生
 4004|Cyperaceae|莎草科|線葉宿柱薹|Carex fernaldiana|Carex fernaldiana H. Lév. & Vaniot|4|0|LC|原生
 4005|Cyperaceae|莎草科|紅鞘薹|Carex filicina|Carex filicina Nees|4|0|LC|原生
@@ -2173,7 +2207,7 @@
 4011|Cyperaceae|莎草科|鳳凰宿柱薹|Carex hoozanensis|Carex hoozanensis Hayata|4|0|LC|原生
 4012|Cyperaceae|莎草科|班囊果薹|Carex kiotensis|Carex kiotensis Franch. & Sav.|4|0|LC|原生
 4013|Cyperaceae|莎草科|海米|Carex kobomugi|Carex kobomugi Ohwi|4|0|CR|原生
-4014|Cyperaceae|莎草科|貝舌薹|Carex ligulata|Carex ligulata Nees|4|0||原生
+4014|Cyperaceae|莎草科|具舌薹|Carex ligulata|Carex ligulata Nees|4|0||原生
 5926|Cyperaceae|莎草科|舌葉薹|Carex ligulata var. glabriutriculata|Carex ligulata var. glabriutriculata Nees|4|0||栽培
 4015|Cyperaceae|莎草科|劉氏薹|Carex liui|Carex liui T. Koyama & T.I. Chuang|4|1|LC|原生
 4016|Cyperaceae|莎草科|長梗扁果薹|Carex longistipes|Carex longistipes Hayata|4|0|LC|原生
@@ -2187,9 +2221,9 @@
 4024|Cyperaceae|莎草科|毛囊果薹|Carex nemostachys|Carex nemostachys Steud.|4|0|NT|原生
 4025|Cyperaceae|莎草科|聚生穗序薹|Carex nubigena|Carex nubigena D. Don ex Tilloch & Taylor|4|0|LC|原生
 4026|Cyperaceae|莎草科|直蕊宿柱薹|Carex orthostemon|Carex orthostemon Hayata|4|1|LC|原生
-4027|Cyperaceae|莎草科|球穗薹|Carex oxyandra|Carex oxyandra Kudo|4|0||原生
+4027|Cyperaceae|莎草科|南投薹|Carex oxyandra|Carex oxyandra Kudo|4|0||原生
 4028|Cyperaceae|莎草科|黃穗薹|Carex perakensis|Carex perakensis C.B. Clarke|4|0|LC|原生
-4029|Cyperaceae|莎草科|鏡子薹|Carex phacota|Carex phacota Spreng.|4|0||原生
+4029|Cyperaceae|莎草科|七星班囊果薹|Carex phacota|Carex phacota Spreng.|4|0||原生
 4030|Cyperaceae|莎草科|小海米|Carex pumila|Carex pumila Thunb.|4|0|LC|原生
 4031|Cyperaceae|莎草科|太魯閣薹|Carex purpureotincta|Carex purpureotincta Ohwi|4|1|VU|原生
 4032|Cyperaceae|莎草科|紅頭薹|Carex rafflesiana|Carex rafflesiana Boott|4|0|NT|原生
@@ -2211,7 +2245,7 @@
 4048|Cyperaceae|莎草科|光桿輪傘莎草|Cyperus alternifolius|Cyperus alternifolius L.|4|0|NA|歸化
 4049|Cyperaceae|莎草科|風車草|Cyperus alternifolius subsp. flabelliformis|Cyperus alternifolius subsp. flabelliformis Kük.|4|0||歸化
 4050|Cyperaceae|莎草科|阿穆爾莎草|Cyperus amuricus|Cyperus amuricus Maxim.|4|0|NA|原生
-4051|Cyperaceae|莎草科|莎田草|Cyperus compressus|Cyperus compressus L.|4|0||原生
+4051|Cyperaceae|莎草科|沙田草|Cyperus compressus|Cyperus compressus L.|4|0||原生
 4052|Cyperaceae|莎草科|長尖莎草|Cyperus cuspidatus|Cyperus cuspidatus Kunth|4|0|NA|原生
 4053|Cyperaceae|莎草科|異花莎草|Cyperus difformis|Cyperus difformis L.|4|0|LC|原生
 4054|Cyperaceae|莎草科|多脈莎草|Cyperus diffusus|Cyperus diffusus Vahl|4|0|LC|原生
@@ -2344,7 +2378,7 @@
 3873|Dioscoreaceae|薯蕷科|大薯|Dioscorea alata|Dioscorea alata L.|4|0|LC|原生
 3874|Dioscoreaceae|薯蕷科|家山藥|Dioscorea batatas|Dioscorea batatas Decne.|4|0|LC|原生
 3875|Dioscoreaceae|薯蕷科|大青薯|Dioscorea benthamii|Dioscorea benthamii Prain & Burkill|4|0|LC|原生
-3876|Dioscoreaceae|薯蕷科|獨黃|Dioscorea bulbifera|Dioscorea bulbifera L.|4|0||原生
+3876|Dioscoreaceae|薯蕷科|黃獨|Dioscorea bulbifera|Dioscorea bulbifera L.|4|0||原生
 3877|Dioscoreaceae|薯蕷科|掌葉薯|Dioscorea codonopsidifolia|Dioscorea codonopsidifolia Kamik.|4|1|LC|原生
 3878|Dioscoreaceae|薯蕷科|華南薯蕷|Dioscorea collettii|Dioscorea collettii Hook. f.|4|0|LC|原生
 3879|Dioscoreaceae|薯蕷科|蘭嶼田薯|Dioscorea cumingii|Dioscorea cumingii Prain & Burkill|4|0|VU|原生
@@ -2358,7 +2392,7 @@
 3886|Dioscoreaceae|薯蕷科|細葉野山藥|Dioscorea japonica var. oldhamii|Dioscorea japonica var. oldhamii Uline ex R. Knuth|4|0|LC|原生
 3887|Dioscoreaceae|薯蕷科|基隆野山藥|Dioscorea japonica var. pseudojaponica|Dioscorea japonica var. pseudojaponica (Hayata) Yamam.|4|1|LC|原生
 3888|Dioscoreaceae|薯蕷科|圓錐花薯蕷|Dioscorea kaoi|Dioscorea kaoi T.S. Liu & T.C. Huang|4|1|LC|原生
-3889|Dioscoreaceae|薯蕷科|裡白葉薯榔|Dioscorea matsudae|Dioscorea matsudae Hayata|4|0||原生
+3889|Dioscoreaceae|薯蕷科|裏白葉薯榔|Dioscorea matsudae|Dioscorea matsudae Hayata|4|0||原生
 5440|Dioscoreaceae|薯蕷科|薯蕷|Dioscorea oppositifolia|Dioscorea oppositifolia L.|4|0||未知
 3890|Dioscoreaceae|薯蕷科|假山藥薯|Dioscorea persimilis|Dioscorea persimilis Prain & Burkill|4|0|LC|原生
 3891|Dioscoreaceae|薯蕷科|長山藥|Dioscorea polystachya|Dioscorea polystachya Turcz.|4|0||原生
@@ -2372,7 +2406,7 @@
 1380|Droseraceae|茅膏菜科|小毛氈苔|Drosera spatulata|Drosera spatulata Labill.|4|0|LC|原生
 6243|Ebenaceae|柿樹科|黑柿|Diospyros digyna|Diospyros digyna Jacq.|4|0||栽培
 2703|Ebenaceae|柿樹科|軟毛柿|Diospyros eriantha|Diospyros eriantha Champ. ex Benth.|4|0|LC|原生
-2704|Ebenaceae|柿樹科|象牙柿|Diospyros ferrea|Diospyros ferrea (Willd.) Bakh.|4|0|VU|原生
+2704|Ebenaceae|柿樹科|象牙樹|Diospyros ferrea|Diospyros ferrea (Willd.) Bakh.|4|0|VU|原生
 2705|Ebenaceae|柿樹科|山柿|Diospyros japonica|Diospyros japonica Siebold & Zucc.|4|0|LC|原生
 2706|Ebenaceae|柿樹科|柿|Diospyros kaki|Diospyros kaki Thunb.|4|0||未知
 2707|Ebenaceae|柿樹科|蘭嶼柿|Diospyros kotoensis|Diospyros kotoensis T. Yamaz.|4|1|EN|原生
@@ -2435,7 +2469,6 @@
 2632|Ericaceae|杜鵑花科|志佳陽杜鵑|Rhododendron sikayotaizanense|Rhododendron sikayotaizanense Masam.|4|0||未知
 2633|Ericaceae|杜鵑花科|唐杜鵑|Rhododendron simsii|Rhododendron simsii Planch.|4|0|NT|原生
 2634|Ericaceae|杜鵑花科|阿里山杜鵑|Rhododendron tanakae|Rhododendron tanakae Hayata|4|0|DD|未知
-2635|Ericaceae|杜鵑花科|大武杜鵑|Rhododendron tashiroi|Rhododendron tashiroi Maxim.|4|0|DD|未知
 6574|Ericaceae|杜鵑花科|豔紫杜鵑|Rhododendron ×pulchrum|Rhododendron ×pulchrum Sweet|4|0||栽培
 2636|Ericaceae|杜鵑花科|米飯花|Vaccinium bracteatum|Vaccinium bracteatum Thunb.|4|0|LC|原生
 2637|Ericaceae|杜鵑花科|珍珠花|Vaccinium dunalianum var. caudatifolium|Vaccinium dunalianum var. caudatifolium (Hayata) H.L. Li|4|1|LC|原生
@@ -2453,7 +2486,7 @@
 3975|Eriocaulaceae|穀精草科|尼泊爾穀精草|Eriocaulon nepalense|Eriocaulon nepalense Prescott ex Bong.|4|0|CR|原生
 3976|Eriocaulaceae|穀精草科|大葉穀精草|Eriocaulon sexangulare|Eriocaulon sexangulare L.|4|0|LC|原生
 3977|Eriocaulaceae|穀精草科|泰山穀精草|Eriocaulon taishanense|Eriocaulon taishanense F.Z. Li|4|0|CR|原生
-3978|Eriocaulaceae|穀精草科|菲律賓縠精草|Eriocaulon truncatum|Eriocaulon truncatum Buch.-Ham. ex Mart.|4|0||原生
+3978|Eriocaulaceae|穀精草科|菲律賓穀精草|Eriocaulon truncatum|Eriocaulon truncatum Buch.-Ham. ex Mart.|4|0||原生
 1912|Euphorbiaceae|大戟科|屏東鐵莧|Acalypha akoensis|Acalypha akoensis Hayata|4|1|DD|原生
 1913|Euphorbiaceae|大戟科|臺灣鐵莧|Acalypha angatensis|Acalypha angatensis Blanco|4|0|LC|原生
 1914|Euphorbiaceae|大戟科|南美鐵莧|Acalypha aristata|Acalypha aristata Kunth|4|0|NA|歸化
@@ -2480,7 +2513,7 @@
 1933|Euphorbiaceae|大戟科|密花五月茶|Antidesma japonicum var. densiflorum|Antidesma japonicum var. densiflorum Hurus.|4|1|LC|原生
 1934|Euphorbiaceae|大戟科|枯里珍|Antidesma pentandrum var. barbatum|Antidesma pentandrum var. barbatum (C. Presl) Merr.|4|0|LC|原生
 1930|Euphorbiaceae|大戟科|蘭嶼枯里珍|Antidesma pleuricum|Antidesma pleuricum Tul.|4|0|VU|原生
-1935|Euphorbiaceae|大戟科|茄苳|Bischofia javanica|Bischofia javanica Blume|4|0||原生
+1935|Euphorbiaceae|大戟科|茄冬|Bischofia javanica|Bischofia javanica Blume|4|0||原生
 5443|Euphorbiaceae|大戟科|黑面神|Breynia fruticosa|Breynia fruticosa (L.) Hook. f.|4|0||未知
 1936|Euphorbiaceae|大戟科|紅仔珠|Breynia officinalis|Breynia officinalis Hemsl.|4|0|LC|原生
 1937|Euphorbiaceae|大戟科|小紅仔珠|Breynia officinalis var. accrescens|Breynia officinalis var. accrescens (Hayata) M.J. Deng & J.C. Wang|4|0|LC|原生
@@ -2571,7 +2604,7 @@
 2010|Euphorbiaceae|大戟科|葉下珠|Phyllanthus urinaria|Phyllanthus urinaria L.|4|0||原生
 2011|Euphorbiaceae|大戟科|光果葉下珠|Phyllanthus urinaria subsp. nudicarpus|Phyllanthus urinaria subsp. nudicarpus Rossignol & Haicour|4|0|LC|原生
 2012|Euphorbiaceae|大戟科|蜜甘草|Phyllanthus ussuriensis|Phyllanthus ussuriensis Rupr. & Maxim.|4|0|LC|原生
-2013|Euphorbiaceae|大戟科|細葉油柑|Phyllanthus virgatus|Phyllanthus virgatus G. Forst.|4|0||原生
+2013|Euphorbiaceae|大戟科|黃珠子草|Phyllanthus virgatus|Phyllanthus virgatus G. Forst.|4|0||原生
 2014|Euphorbiaceae|大戟科|蓖麻|Ricinus communis|Ricinus communis L.|4|0|NA|歸化
 2015|Euphorbiaceae|大戟科|白桕|Sapium discolor|Sapium discolor (Champ. ex Benth.) Müll. Arg.|4|0|LC|原生
 5208|Euphorbiaceae|大戟科|烏桕|Sapium sebiferum|Sapium sebiferum (L.) Dum. Cours.|4|0|NA|歸化
@@ -2656,7 +2689,7 @@
 6573|Fabaceae|豆科|西非豬屎豆|Crotalaria goreensis|Crotalaria goreensis Guill. & Perr.|4|0|NA|歸化
 1697|Fabaceae|豆科|恆春野百合|Crotalaria incana|Crotalaria incana L.|4|0|NA|歸化
 1698|Fabaceae|豆科|太陽麻|Crotalaria juncea|Crotalaria juncea L.|4|0|NA|歸化
-1699|Fabaceae|豆科|長葉豬屎豆|Crotalaria lanceolata|Crotalaria lanceolata E. Mey.|4|0||歸化
+1699|Fabaceae|豆科|披針葉野百合|Crotalaria lanceolata|Crotalaria lanceolata E. Mey.|4|0||歸化
 1701|Fabaceae|豆科|線葉野百合|Crotalaria linifolia|Crotalaria linifolia L. f.|4|0|LC|原生
 1702|Fabaceae|豆科|假苜蓿|Crotalaria medicaginea|Crotalaria medicaginea Lam.|4|0|DD|原生
 1703|Fabaceae|豆科|黃豬屎豆|Crotalaria micans|Crotalaria micans Link|4|0|NA|歸化
@@ -2677,7 +2710,7 @@
 1716|Fabaceae|豆科|假木豆|Dendrolobium triangulare|Dendrolobium triangulare (Retz.) Schindl.|4|0|LC|原生
 1717|Fabaceae|豆科|白木蘇花|Dendrolobium umbellatum|Dendrolobium umbellatum (L.) Benth.|4|0|LC|原生
 1718|Fabaceae|豆科|蘭嶼魚藤|Derris canarensis|Derris canarensis (Dalzell) Baker|4|0|EN|原生
-1719|Fabaceae|豆科|魚藤|Derris elliptica|Derris elliptica (Roxb.) Benth.|4|0||歸化
+1719|Fabaceae|豆科|毛魚藤|Derris elliptica|Derris elliptica (Roxb.) Benth.|4|0||歸化
 1720|Fabaceae|豆科|疏花魚藤|Derris laxiflora|Derris laxiflora Benth.|4|1|LC|原生
 1721|Fabaceae|豆科|三葉魚藤|Derris trifoliata|Derris trifoliata Lour.|4|0|LC|原生
 1722|Fabaceae|豆科|多枝草合歡|Desmanthus virgatus|Desmanthus virgatus (L.) Willd.|4|0|NA|歸化
@@ -2696,7 +2729,7 @@
 1735|Fabaceae|豆科|波葉山螞蝗|Desmodium sequax|Desmodium sequax Wall.|4|0|LC|原生
 1736|Fabaceae|豆科|紫花山螞蝗|Desmodium tortuosum|Desmodium tortuosum (Sw.) DC.|4|0|NA|歸化
 1738|Fabaceae|豆科|蠅翼草|Desmodium triflorum|Desmodium triflorum (L.) DC.|4|0|LC|原生
-1739|Fabaceae|豆科|西班牙三葉草|Desmodium uncinatum|Desmodium uncinatum (Jacq.) DC.|4|0|NA|歸化
+1739|Fabaceae|豆科|銀葉藤|Desmodium uncinatum|Desmodium uncinatum (Jacq.) DC.|4|0|NA|歸化
 1740|Fabaceae|豆科|絨毛葉山螞蝗|Desmodium velutinum|Desmodium velutinum (Willd.) DC.|4|0|LC|原生
 1741|Fabaceae|豆科|單葉拿身草|Desmodium zonatum|Desmodium zonatum Miq.|4|0|LC|原生
 1742|Fabaceae|豆科|三裂葉扁豆|Dolichos trilobus var. kosyunensis|Dolichos trilobus var. kosyunensis (Hosok.) H. Ohashi & Tateishi|4|1|VU|原生
@@ -2842,12 +2875,12 @@
 5979|Fabaceae|豆科|黃椒草|Trifolium dudium|Trifolium dudium Sibth.|4|0||栽培
 1866|Fabaceae|豆科|紅菽草|Trifolium pratense|Trifolium pratense L.|4|0|NA|歸化
 1867|Fabaceae|豆科|菽草|Trifolium repens|Trifolium repens L.|4|0|NA|歸化
-1868|Fabaceae|豆科|彎果葫蘆巴|Trigonella hamosa|Trigonella hamosa Besser|4|0||歸化
+1868|Fabaceae|豆科|彎果胡蘆巴|Trigonella hamosa|Trigonella hamosa Besser|4|0||歸化
 1869|Fabaceae|豆科|圓葉兔尾草|Uraria aequilobata|Uraria aequilobata Hosok.|4|0|EN|原生
 1870|Fabaceae|豆科|兔尾草|Uraria crinita|Uraria crinita (L.) Desv. ex DC.|4|0|LC|原生
 1871|Fabaceae|豆科|大葉兔尾草|Uraria lagopodioides|Uraria lagopodioides (L.) DC.|4|0|LC|原生
 1872|Fabaceae|豆科|羽葉兔尾草|Uraria picta|Uraria picta (Jacq.) Desv. ex DC.|4|0|DD|原生
-1873|Fabaceae|豆科|多花野碗豆|Vicia cracca|Vicia cracca L.|4|0||歸化
+1873|Fabaceae|豆科|多花野豌豆|Vicia cracca|Vicia cracca L.|4|0||歸化
 5921|Fabaceae|豆科|苕子|Vicia dasycarpa|Vicia dasycarpa Tenore|4|0||栽培
 5468|Fabaceae|豆科|蠶豆|Vicia faba|Vicia faba L.|4|0||栽培
 1874|Fabaceae|豆科|小巢豆|Vicia hirsuta|Vicia hirsuta (L.) Gray|4|0|NA|歸化
@@ -2906,8 +2939,7 @@
 6051|Fagaceae|殼斗科|阿里山三斗石櫟|Pasania hancei var. arisanensis|Pasania hancei var. arisanensis (Benth.) Schottky|4|0||栽培
 5784|Fagaceae|殼斗科|細葉三斗石櫟|Pasania hancei var. ternaticupula|Pasania hancei var. ternaticupula (Benth.) Schottky|4|0||栽培
 5804|Fagaceae|殼斗科|麻櫟|Quercus acutissima|Quercus acutissima Carruth.|4|0|NA|歸化
-813|Fagaceae|殼斗科|槲櫟|Quercus aliena|Quercus aliena Blume|4|0|CR|原生
-814|Fagaceae|殼斗科|孛孛櫟|Quercus aliena var. acutiserrata|Quercus aliena var. acutiserrata Maxim. ex Wenz.|4|0||未知
+813|Fagaceae|殼斗科|大槲櫟|Quercus aliena|Quercus aliena Blume|4|0|CR|原生
 6139|Fagaceae|殼斗科|大槲樹|Quercus aliena var. aliena|Quercus aliena var. aliena Bl.|4|0|CR|原生
 776|Fagaceae|殼斗科|嶺南青剛櫟|Quercus championii|Quercus championii Benth.|4|0|LC|原生
 815|Fagaceae|殼斗科|槲樹|Quercus dentata|Quercus dentata Thunb.|4|0|NA|歸化
@@ -2916,7 +2948,7 @@
 778|Fagaceae|殼斗科|青剛櫟|Quercus glauca|Quercus glauca Thunb.|4|0|LC|原生
 779|Fagaceae|殼斗科|谷園青剛櫟|Quercus glauca var. kuyuensis|Quercus glauca var. kuyuensis J.C. Liao|4|1|DD|原生
 780|Fagaceae|殼斗科|圓果青剛櫟|Quercus globosa|Quercus globosa (T.P. Lin & T.S. Liu) J.C. Liao|4|0|LC|原生
-781|Fagaceae|殼斗科|佳保台圓果青剛櫟|Quercus globosa fo. chiapautaiensis|Quercus globosa fo. chiapautaiensis (Liao) Liao|4|1||原生
+781|Fagaceae|殼斗科|佳保臺圓果青剛櫟|Quercus globosa fo. chiapautaiensis|Quercus globosa fo. chiapautaiensis (Liao) Liao|4|1||原生
 782|Fagaceae|殼斗科|灰背櫟|Quercus hypophaea|Quercus hypophaea Hayata|4|1|NT|原生
 783|Fagaceae|殼斗科|錐果櫟|Quercus longinux|Quercus longinux Hayata|4|1|LC|原生
 784|Fagaceae|殼斗科|郭氏錐果櫟|Quercus longinux var. kuoi|Quercus longinux var. kuoi (J.C. Liao) C.F. Shen|4|1|DD|原生
@@ -2927,7 +2959,6 @@
 6303|Fagaceae|殼斗科|姥芽櫟|Quercus phillyrioides|Quercus phillyrioides A. Gray|4|0||栽培
 789|Fagaceae|殼斗科|波葉櫟|Quercus repandifolia|Quercus repandifolia J.C. Liao|4|1|VU|原生
 790|Fagaceae|殼斗科|白背櫟|Quercus salicina|Quercus salicina Blume|4|0|LC|原生
-6354|Fagaceae|殼斗科|短柄枹櫟|Quercus serrata var. brevipetiolata|Quercus serrata var. brevipetiolata Thunb.|4|0||原生
 791|Fagaceae|殼斗科|毽子櫟|Quercus sessilifolia|Quercus sessilifolia Blume|4|0|LC|原生
 817|Fagaceae|殼斗科|高山櫟|Quercus spinosa|Quercus spinosa David ex Franch.|4|0|LC|原生
 792|Fagaceae|殼斗科|狹葉櫟|Quercus stenophylloides|Quercus stenophylloides Hayata|4|1|LC|原生
@@ -2954,7 +2985,7 @@
 1391|Fumariaceae|紫菫科|凹子黃菫|Corydalis pallida var. sparsimamma|Corydalis pallida var. sparsimamma (Ohwi) Ohwi|4|1|LC|原生
 1392|Fumariaceae|紫菫科|小花黃菫|Corydalis racemosa|Corydalis racemosa (Thunb.) Pers.|4|0|LC|原生
 1393|Fumariaceae|紫菫科|臺灣黃菫|Corydalis tashiroi|Corydalis tashiroi Makino|4|0|LC|原生
-1394|Fumariaceae|紫菫科|球果紫蓳|Fumaria officinalis|Fumaria officinalis L.|4|0||歸化
+1394|Fumariaceae|紫菫科|球果紫菫|Fumaria officinalis|Fumaria officinalis L.|4|0||歸化
 2783|Gentianaceae|龍膽科|百金|Centaurium japonicum|Centaurium japonicum (Maxim.) Druce|4|0|LC|原生
 6093|Gentianaceae|龍膽科|百金花|Centaurium pulchellum var. altaicum|Centaurium pulchellum var. altaicum (Griseb.) Kitag. et Hara|4|0|VU|原生
 6236|Gentianaceae|龍膽科|洋桔梗|Eustoma russellianum|Eustoma russellianum (Don) Griseb.|4|0||栽培
@@ -2976,11 +3007,11 @@
 2799|Gentianaceae|龍膽科|厚葉龍膽|Gentiana tentyoensis|Gentiana tentyoensis Masam.|4|1|CR|原生
 2800|Gentianaceae|龍膽科|臺東龍膽|Gentiana tenuissima|Gentiana tenuissima Hayata|4|1|NT|原生
 2801|Gentianaceae|龍膽科|奇萊肋柱花|Lomatogonium chilaiensis|Lomatogonium chilaiensis C.H. Chen & J.C. Wang|4|1|CR|原生
-3755|Gentianaceae|龍膽科|金蓮花|Nymphoides aurantiaca|Nymphoides aurantiaca (Dalzell) Kuntze|4|0|CR|原生
+3755|Gentianaceae|龍膽科|黃花莕菜|Nymphoides aurantiaca|Nymphoides aurantiaca (Dalzell) Kuntze|4|0|CR|原生
 3756|Gentianaceae|龍膽科|小莕菜|Nymphoides coreana|Nymphoides coreana (H. Lév.) H. Hara|4|0|VU|原生
 3757|Gentianaceae|龍膽科|銀蓮花|Nymphoides cristata|Nymphoides cristata (Roxb.) Kuntze|4|0||未知
 5211|Gentianaceae|龍膽科|龍骨瓣莕菜|Nymphoides hydrophylla|Nymphoides hydrophylla (Lour.) Kuntze|4|0|CR|原生
-3758|Gentianaceae|龍膽科|金銀蓮花|Nymphoides indica|Nymphoides indica (L.) Kuntze|4|0|EN|原生
+3758|Gentianaceae|龍膽科|印度莕菜|Nymphoides indica|Nymphoides indica (L.) Kuntze|4|0|EN|原生
 5495|Gentianaceae|龍膽科|龍潭莕菜|Nymphoides lungtanensis|Nymphoides lungtanensis S.P. Li, T.H. Hsieh & C.C. Lin|4|1|EW|原生
 3759|Gentianaceae|龍膽科|莕菜|Nymphoides peltata|Nymphoides peltata (S.G. Gmel.) Kuntze|4|0|NA|歸化
 2802|Gentianaceae|龍膽科|翼萼蔓|Pterygocalyx volubilis|Pterygocalyx volubilis Maxim.|4|0|VU|原生
@@ -3006,33 +3037,32 @@
 1904|Geraniaceae|牻牛兒苗科|小花牻牛兒苗|Geranium pusillum|Geranium pusillum L.|4|0|NA|歸化
 1905|Geraniaceae|牻牛兒苗科|漢紅魚腥草|Geranium robertianum|Geranium robertianum L.|4|0|LC|原生
 1906|Geraniaceae|牻牛兒苗科|山牻牛兒苗|Geranium suzukii|Geranium suzukii Masam.|4|1|LC|原生
-1907|Geraniaceae|牻牛兒苗科|早田牻牛兒苗|Geranium suzukii var. hayatanum|Geranium suzukii Masam. var. hayatanum Masam.|4|0||未知
 1908|Geraniaceae|牻牛兒苗科|老鸛草|Geranium wilfordii|Geranium wilfordii Maxim.|4|0|NT|原生
-3380|Gesneriaceae|苦苣苔科|芒毛苣苔|Aeschynanthus acuminatus|Aeschynanthus acuminatus Wall. ex A. DC.|4|0||原生
-3381|Gesneriaceae|苦苣苔科|光萼唇柱苣苔|Chirita anachoreta|Chirita anachoreta Hance|4|0|VU|原生
+3380|Gesneriaceae|苦苣苔科|長果藤|Aeschynanthus acuminatus|Aeschynanthus acuminatus Wall. ex A. DC.|4|0||原生
+3381|Gesneriaceae|苦苣苔科|雙心皮草|Chirita anachoreta|Chirita anachoreta Hance|4|0|VU|原生
 5811|Gesneriaceae|苦苣苔科|中美鐘鈴花|Codonanthe crassifoloa|Codonanthe crassifoloa (Focke) Morton|4|0||栽培
 6020|Gesneriaceae|苦苣苔科|毛苦苣苔|Columnea purpurata|Columnea purpurata Hanst.|4|0||栽培
 3382|Gesneriaceae|苦苣苔科|苦苣苔|Conandron ramondioides|Conandron ramondioides Siebold & Zucc.|4|0|NT|原生
 5704|Gesneriaceae|苦苣苔科|臺灣苦苣苔|Conandron ramondioides var. taiwanensis|Conandron ramondioides var. taiwanensis Sieb. & Zucc.|4|0||栽培
-3383|Gesneriaceae|苦苣苔科|槳果苣苔|Cyrtandra umbellifera|Cyrtandra umbellifera Merr.|4|0|VU|原生
+3383|Gesneriaceae|苦苣苔科|雄胞囊草|Cyrtandra umbellifera|Cyrtandra umbellifera Merr.|4|0|VU|原生
 3384|Gesneriaceae|苦苣苔科|長蒴苣苔|Didymocarpus anachoretus|Didymocarpus anachoretus (Hance) H. Lév.|4|0||未知
 5931|Gesneriaceae|苦苣苔科|喜蔭花|Episcia cupreata|Episcia cupreata (Hook. f.) Hanst.|4|0||栽培
 3385|Gesneriaceae|苦苣苔科|臺灣苣苔|Epithema taiwanense|Epithema taiwanense S.S. Ying|4|1|EN|原生
 3386|Gesneriaceae|苦苣苔科|密花苣苔|Epithema taiwanense var. fasciculatum|Epithema taiwanense var. fasciculatum (C.B. Clarke) Z.Yu Li & M.T. Kao|4|0|VU|原生
-3387|Gesneriaceae|苦苣苔科|臺灣半蒴苣苔|Hemiboea bicornuta|Hemiboea bicornuta (Hayata) Ohwi|4|0||原生
+3387|Gesneriaceae|苦苣苔科|角桐草|Hemiboea bicornuta|Hemiboea bicornuta (Hayata) Ohwi|4|0||原生
 3388|Gesneriaceae|苦苣苔科|石吊蘭|Lysionotus pauciflorus|Lysionotus pauciflorus Maxim.|4|0|LC|原生
-3389|Gesneriaceae|苦苣苔科|蘭嶼吊石苣苔|Lysionotus pauciflorus var. ikedae|Lysionotus pauciflorus var. ikedae (Hatus.) W.T. Wang|4|1|EN|原生
+3389|Gesneriaceae|苦苣苔科|蘭嶼石吊蘭|Lysionotus pauciflorus var. ikedae|Lysionotus pauciflorus var. ikedae (Hatus.) W.T. Wang|4|1|EN|原生
 3390|Gesneriaceae|苦苣苔科|盾葉苣苔|Metapetrocosmea peltata|Metapetrocosmea peltata (Merr. & Chun) W.T. Wang|4|0||未知
 3391|Gesneriaceae|苦苣苔科|旋莢木|Paraboea swinhoei|Paraboea swinhoei (Hance) Burtt|4|0|LC|原生
-3392|Gesneriaceae|苦苣苔科|全唇尖舌苣苔|Rhynchoglossum obliquum var. hologlossum|Rhynchoglossum obliquum var. hologlossum (Hayata) W.T. Wang|4|0||原生
+3392|Gesneriaceae|苦苣苔科|尖舌草|Rhynchoglossum obliquum var. hologlossum|Rhynchoglossum obliquum var. hologlossum (Hayata) W.T. Wang|4|1||原生
 3393|Gesneriaceae|苦苣苔科|短梗同蕊草|Rhynchotechum brevipedunculatum|Rhynchotechum brevipedunculatum J.C. Wang in J.C. Wang & C.C. Wang|4|1|LC|原生
-3394|Gesneriaceae|苦苣苔科|異色線柱苣苔|Rhynchotechum discolor|Rhynchotechum discolor (Maxim.) B.L. Burtt|4|0||原生
+3394|Gesneriaceae|苦苣苔科|同蕊草|Rhynchotechum discolor|Rhynchotechum discolor (Maxim.) B.L. Burtt|4|0||原生
 6466|Gesneriaceae|苦苣苔科|羽裂同蕊草|Rhynchotechum discolor fo. isum|Rhynchotechum discolor fo. isum (Maxim.) Burtt|4|0|NA|原生
 3395|Gesneriaceae|苦苣苔科|羽裂線柱苣苔|Rhynchotechum discolor var. incisum|Rhynchotechum discolor var. incisum (Ohwi) Walker|4|0||原生
-3396|Gesneriaceae|苦苣苔科|臺灣線柱苣苔|Rhynchotechum formosanum|Rhynchotechum formosanum Hatus.|4|0|NT|原生
+3396|Gesneriaceae|苦苣苔科|蓬萊同蕊草|Rhynchotechum formosanum|Rhynchotechum formosanum Hatus.|4|0|NT|原生
 6115|Gesneriaceae|苦苣苔科|非洲堇|Saintpaulia ionantha|Saintpaulia ionantha Wendl.|4|0||栽培
-3397|Gesneriaceae|苦苣苔科|台閩苣苔|Titanotrichum oldhamii|Titanotrichum oldhamii (Hemsl.) Soler.|4|0||原生
-3398|Gesneriaceae|苦苣苔科|臺灣異葉苣苔|Whytockia sasakii|Whytockia sasakii (Hayata) B.L. Burtt|4|0||原生
+3397|Gesneriaceae|苦苣苔科|俄氏草|Titanotrichum oldhamii|Titanotrichum oldhamii (Hemsl.) Soler.|4|0||原生
+3398|Gesneriaceae|苦苣苔科|玉玲花|Whytockia sasakii|Whytockia sasakii (Hayata) B.L. Burtt|4|1||原生
 5734|Goodeniaceae|草海桐科|紫扇花|Scaevola aemula|Scaevola aemula R.Br.|4|0||栽培
 3470|Goodeniaceae|草海桐科|海南草海桐|Scaevola hainanensis|Scaevola hainanensis Hance|4|0|CR|原生
 3471|Goodeniaceae|草海桐科|草海桐|Scaevola taccada|Scaevola taccada (Gaertn.) Roxb.|4|0|LC|原生
@@ -3079,7 +3109,7 @@
 1150|Illiciaceae|八角科|東亞八角|Illicium tashiroi|Illicium tashiroi Maxim.|4|0|LC|原生
 3918|Iridaceae|鳶尾科|射干|Belamcanda chinensis|Belamcanda chinensis (L.) Redouté|4|0|LC|原生
 3919|Iridaceae|鳶尾科|臺灣射干|Belamcanda chinensis var. taiwanensis|Belamcanda chinensis var. taiwanensis S.S. Ying|4|1|EN|原生
-3920|Iridaceae|鳶尾科|射干菖蒲|Crocosmia ×crocosmiiflora|Crocosmia ×crocosmiiflora (Lemoine ex Anonymous) N.E. Br.|4|0||歸化
+3920|Iridaceae|鳶尾科|觀音蘭|Crocosmia ×crocosmiiflora|Crocosmia ×crocosmiiflora (Lemoine ex Anonymous) N.E. Br.|4|0||歸化
 3921|Iridaceae|鳶尾科|唐菖蒲|Gladiolus gandavensis|Gladiolus gandavensis Van Houtte|4|0||歸化
 3922|Iridaceae|鳶尾科|臺灣鳶尾|Iris formosana|Iris formosana Ohwi|4|1|LC|原生
 6393|Iridaceae|鳶尾科|日本鳶尾|Iris japonica|Iris japonica Thunb.|4|1||栽培
@@ -3099,10 +3129,10 @@
 745|Juglandaceae|胡桃科|化香樹|Platycarya strobilacea|Platycarya strobilacea Siebold & Zucc.|4|0|LC|原生
 5719|Juncaceae|燈心草科|小燈心草|Juncus bufonius|Juncus bufonius L.|4|0||栽培
 3934|Juncaceae|燈心草科|燈心草|Juncus effusus var. decipiens|Juncus effusus var. decipiens Buchenau|4|0|LC|原生
-5568|Juncaceae|燈心草科|絲葉燈心草|Juncus imbricatus|Juncus imbricatus Laharpe|4|0||歸化
+5568|Juncaceae|燈心草科|絲葉燈心草|Juncus imbricatus|Juncus imbricatus Laharpe|4|0||歸化
 6048|Juncaceae|燈心草科|None|Juncus kuohii|Juncus kuohii M.-J. Jung|4|1||栽培
 3935|Juncaceae|燈心草科|錢蒲|Juncus leschenaultii|Juncus leschenaultii J. Gay ex Laharpe|4|0|LC|原生
-5569|Juncaceae|燈心草科|禾葉燈心草|Juncus marginatus|Juncus marginatus Rostk.|4|0||歸化
+5569|Juncaceae|燈心草科|禾葉燈心草|Juncus marginatus|Juncus marginatus Rostk.|4|0||歸化
 3936|Juncaceae|燈心草科|大井氏燈心草|Juncus ohwianus|Juncus ohwianus M.T. Kao|4|1|EN|原生
 3937|Juncaceae|燈心草科|阿里山燈心草|Juncus tenuis|Juncus tenuis Willd.|4|0|LC|原生
 3938|Juncaceae|燈心草科|鴛鴦湖燈心草|Juncus tobdeniorum|Juncus tobdeniorum Noltie|4|0|VU|原生
@@ -3120,10 +3150,10 @@
 3113|Lamiaceae|唇形科|日本筋骨草|Ajuga nipponensis|Ajuga nipponensis Makino|4|0|VU|原生
 3114|Lamiaceae|唇形科|矮筋骨草|Ajuga pygmaea|Ajuga pygmaea A. Gray|4|0|VU|原生
 3115|Lamiaceae|唇形科|臺灣筋骨草|Ajuga taiwanensis|Ajuga taiwanensis Nakai ex Murata|4|0|LC|原生
-3116|Lamiaceae|唇形科|魚針草|Anisomeles indica|Anisomeles indica (L.) Kuntze|4|0||原生
+3116|Lamiaceae|唇形科|金劍草|Anisomeles indica|Anisomeles indica (L.) Kuntze|4|1||原生
 3117|Lamiaceae|唇形科|小冠薰|Basilicum polystachyon|Basilicum polystachyon (L.) Moench|4|0|VU|原生
 3118|Lamiaceae|唇形科|毛葯花|Bostrychanthera deflexa|Bostrychanthera deflexa Benth.|4|0|LC|原生
-5551|Lamiaceae|唇形科|伏生風輪菜|Clinopodium brownei|Clinopodium brownei (Sw.) Kuntze|4|0||歸化
+5551|Lamiaceae|唇形科|伏生風輪菜|Clinopodium brownei|Clinopodium brownei (Sw.) Kuntze|4|0||歸化
 3119|Lamiaceae|唇形科|風輪菜|Clinopodium chinense|Clinopodium chinense (Benth.) Kuntze|4|0|LC|原生
 3120|Lamiaceae|唇形科|光風輪|Clinopodium gracile|Clinopodium gracile (Benth.) Kuntze|4|0|LC|原生
 3121|Lamiaceae|唇形科|疏花風輪菜|Clinopodium laxiflorum|Clinopodium laxiflorum (Hayata) C.Y. Wu & S.J. Hsuan|4|1|LC|原生
@@ -3178,7 +3208,7 @@
 3170|Lamiaceae|唇形科|南湖大山夏枯草|Prunella vulgaris var. nanhutashanense|Prunella vulgaris var. nanhutashanense S.S. Ying|4|0||未知
 3168|Lamiaceae|唇形科|高山夏枯草|Prunella vulgaris var. nanhutashanensis|Prunella vulgaris var. nanhutashanensis S.S. Ying|4|1|VU|原生
 5684|Lamiaceae|唇形科|迷迭香|Rosmarinus officinalis|Rosmarinus officinalis L.|4|0||栽培
-3171|Lamiaceae|唇形科|掌狀野藿香|Rubiteucris palmata|Rubiteucris palmata (Benth. ex Hook. f.) Kudô|4|0||原生
+3171|Lamiaceae|唇形科|掌葉野藿香|Rubiteucris palmata|Rubiteucris palmata (Benth. ex Hook. f.) Kudô|4|0||原生
 3172|Lamiaceae|唇形科|阿里山紫花鼠尾草|Salvia arisanensis|Salvia arisanensis Hayata|4|1|LC|原生
 5416|Lamiaceae|唇形科|南丹參|Salvia bowleyana|Salvia bowleyana Dunn|4|0||未知
 3173|Lamiaceae|唇形科|紅花鼠尾草|Salvia coccinea|Salvia coccinea Buc'hoz ex Etl.|4|0|NA|歸化
@@ -3227,7 +3257,7 @@
 5134|Lauraceae|樟科|小葉樟|Cinnamomum brevipedunculatum|Cinnamomum brevipedunculatum C.E. Chang|4|1|VU|原生
 5135|Lauraceae|樟科|陰香|Cinnamomum burmannii|Cinnamomum burmannii (Nees & T. Nees) Blume|4|0|NA|歸化
 5136|Lauraceae|樟科|樟樹|Cinnamomum camphora|Cinnamomum camphora (L.) J. Presl|4|0|LC|原生
-5137|Lauraceae|樟科|栳樹|Cinnamomum camphora var. nominale|Cinnamomum camphora var. nominale Hayata|4|1||原生
+5137|Lauraceae|樟科|栳樟|Cinnamomum camphora var. nominale|Cinnamomum camphora var. nominale Hayata|4|1||原生
 6010|Lauraceae|樟科|肉桂|Cinnamomum cassia|Cinnamomum cassia Presl.|4|0||栽培
 5138|Lauraceae|樟科|臺灣肉桂|Cinnamomum insularimontanum|Cinnamomum insularimontanum Hayata|4|1|LC|原生
 5139|Lauraceae|樟科|牛樟|Cinnamomum kanehirae|Cinnamomum kanehirae Hayata|4|1|EN|原生
@@ -3245,7 +3275,7 @@
 5151|Lauraceae|樟科|腰果楠|Dehaasia incrassata|Dehaasia incrassata (Jack) Kosterm.|4|0|CR|原生
 5152|Lauraceae|樟科|三蕊楠|Endiandra coriacea|Endiandra coriacea Merr.|4|0|CR|原生
 5153|Lauraceae|樟科|月桂|Laurus nobilis|Laurus nobilis L.|4|0||栽培
-5154|Lauraceae|樟科|天台烏藥|Lindera aggregata|Lindera aggregata (Sims) Kosterm.|4|0||原生
+5154|Lauraceae|樟科|天臺烏藥|Lindera aggregata|Lindera aggregata (Sims) Kosterm.|4|0||原生
 5155|Lauraceae|樟科|小葉烏藥|Lindera aggregata var. playfairii|Lindera aggregata var. playfairii (Hemsl.) H.B. Cui|4|0|NA|原生
 5156|Lauraceae|樟科|內苳子|Lindera akoensis|Lindera akoensis Hayata|4|1|LC|原生
 5157|Lauraceae|樟科|香葉樹|Lindera communis|Lindera communis Hemsl.|4|0|LC|原生
@@ -3275,16 +3305,16 @@
 5181|Lauraceae|樟科|恆春楨楠|Machilus obovatifolia|Machilus obovatifolia (Hayata) Kaneh. & Sasaki|4|1|LC|原生
 5485|Lauraceae|樟科|大武楨楠|Machilus obovatifolia var. taiwuensis|Machilus obovatifolia var. taiwuensis S. Y. Lu & T. T. Chen|4|1|LC|原生
 5182|Lauraceae|樟科|菲律賓楠|Machilus philippinensis|Machilus philippinensis Merr.|4|0|LC|原生
-5183|Lauraceae|樟科|紅楠|Machilus thunbergii|Machilus thunbergii Siebold & Zucc.|4|0||原生
+5183|Lauraceae|樟科|豬腳楠|Machilus thunbergii|Machilus thunbergii Siebold & Zucc.|4|0||原生
 5184|Lauraceae|樟科|香楠|Machilus zuihoensis|Machilus zuihoensis Hayata|4|1|LC|原生
 5185|Lauraceae|樟科|青葉楠|Machilus zuihoensis var. mushaensis|Machilus zuihoensis var. mushaensis (F.Y. Lu) Y.C. Liu|4|1|LC|原生
 5186|Lauraceae|樟科|銳葉新木薑子|Neolitsea aciculata|Neolitsea aciculata (Blume) Koidz.|4|0|LC|原生
 5187|Lauraceae|樟科|變葉新木薑子|Neolitsea aciculata var. variabillima|Neolitsea aciculata var. variabillima J.C. Liao|4|1|LC|原生
 5188|Lauraceae|樟科|高山新木薑子|Neolitsea acuminatissima|Neolitsea acuminatissima (Hayata) Kaneh. & Sasaki|4|1|LC|原生
-5189|Lauraceae|樟科|武威新木薑子|Neolitsea buisanensis|Neolitsea buisanensis Yamam. & Kamik.|4|0||原生
+5189|Lauraceae|樟科|武威山新木薑子|Neolitsea buisanensis|Neolitsea buisanensis Yamam. & Kamik.|4|0||原生
 5190|Lauraceae|樟科|石厝新木薑子|Neolitsea buisanensis fo. sutsuoensis|Neolitsea buisanensis Yamamoto & Kamikoti fo. sutsuoensis J. C. Liao|4|1|NA|原生
 5191|Lauraceae|樟科|大武新木薑子|Neolitsea daibuensis|Neolitsea daibuensis Kamik.|4|1|NT|原生
-5192|Lauraceae|樟科|南仁新木薑子|Neolitsea hiiranensis|Neolitsea hiiranensis T.S. Liu & J.C. Liao|4|1|VU|原生
+5192|Lauraceae|樟科|南仁山新木薑子|Neolitsea hiiranensis|Neolitsea hiiranensis T.S. Liu & J.C. Liao|4|1|VU|原生
 5193|Lauraceae|樟科|五掌楠|Neolitsea konishii|Neolitsea konishii (Hayata) Kaneh. & Sasaki|4|0|LC|原生
 5194|Lauraceae|樟科|小芽新木薑子|Neolitsea parvigemma|Neolitsea parvigemma (Hayata) Kaneh. & Sasaki|4|1|LC|原生
 5195|Lauraceae|樟科|白新木薑子|Neolitsea sericea|Neolitsea sericea (Blume) Koidz.|4|0|LC|原生
@@ -3292,9 +3322,9 @@
 5197|Lauraceae|樟科|蘭嶼新木薑子|Neolitsea villosa|Neolitsea villosa (Blume) Merr.|4|0|CR|原生
 5680|Lauraceae|樟科|酪梨|Persea americana|Persea americana Mill.|4|0||栽培
 5198|Lauraceae|樟科|臺灣雅楠|Phoebe formosana|Phoebe formosana (Hayata) Hayata|4|0|LC|原生
-5199|Lauraceae|樟科|臺灣擦樹|Sassafras randaiense|Sassafras randaiense (Hayata) Rehder|4|1|NT|原生
-2453|Lecythidaceae|玉蕊科|棋盤腳|Barringtonia asiatica|Barringtonia asiatica (L.) Kurz|4|0|VU|原生
-2454|Lecythidaceae|玉蕊科|水茄苳|Barringtonia racemosa|Barringtonia racemosa (L.) Spreng.|4|0|VU|原生
+5199|Lauraceae|樟科|臺灣檫樹|Sassafras randaiense|Sassafras randaiense (Hayata) Rehder|4|1|NT|原生
+2453|Lecythidaceae|玉蕊科|棋盤腳樹|Barringtonia asiatica|Barringtonia asiatica (L.) Kurz|4|0|VU|原生
+2454|Lecythidaceae|玉蕊科|水茄冬|Barringtonia racemosa|Barringtonia racemosa (L.) Spreng.|4|0|VU|原生
 5925|Lecythidaceae|玉蕊科|巴西栗|Bertholletia excelsa|Bertholletia excelsa Humb. et Bonpl.|4|0||栽培
 5796|Lecythidaceae|玉蕊科|小猴胡桃|Lecythis minor|Lecythis minor Jacq.|4|0||栽培
 6119|Lecythidaceae|玉蕊科|大猴胡桃|Lecythis zabucajo|Lecythis zabucajo Aubl.|4|0||栽培
@@ -3316,7 +3346,7 @@
 6581|Lentibulariaceae|狸藻科|異萼挖耳草|Utricularia heterosepala|Utricularia heterosepala Benj.|4|0|EN|原生
 6585|Lentibulariaceae|狸藻科|北美狸藻|Utricularia inflata|Utricularia inflata Walter|4|0||疑問
 6584|Lentibulariaceae|狸藻科|利維達狸藻|Utricularia livida|Utricularia livida E. Mey.|4|0||歸化
-5233|Lentibulariaceae|狸藻科|小狸藻|Utricularia minor|Utricularia minor L.|4|0|DD|未知
+5233|Lentibulariaceae|狸藻科|小貍藻|Utricularia minor|Utricularia minor L.|4|0|DD|未知
 6586|Lentibulariaceae|狸藻科|斜果挖耳草|Utricularia minutissima|Utricularia minutissima Vahl|4|0||原生
 6582|Lentibulariaceae|狸藻科|史氏挖耳草|Utricularia smithiana|Utricularia smithiana Wight|4|0||歸化
 3408|Lentibulariaceae|狸藻科|圓葉挖耳草|Utricularia striatula|Utricularia striatula Sm.|4|0|NT|原生
@@ -3380,12 +3410,12 @@
 3824|Liliaceae|百合科|野小百合|Lilium callosum|Lilium callosum Siebold & Zucc.|4|0|DD|原生
 3825|Liliaceae|百合科|臺灣百合|Lilium formosanum|Lilium formosanum Wallace|4|1|LC|原生
 3826|Liliaceae|百合科|粗莖麝香百合|Lilium longiflorum var. scabrum|Lilium longiflorum var. scabrum Masam.|4|1|DD|原生
-3827|Liliaceae|百合科|豔紅鹿子百合|Lilium speciosum var. gloriosoides|Lilium speciosum var. gloriosoides Baker|4|0|CR|原生
+3827|Liliaceae|百合科|艷紅鹿子百合|Lilium speciosum var. gloriosoides|Lilium speciosum var. gloriosoides Baker|4|0|CR|原生
 3828|Liliaceae|百合科|小麥門冬|Liriope minor|Liriope minor (Maxim.) Makino|4|0||未知
 3829|Liliaceae|百合科|細葉麥門冬|Liriope minor var. angustissima|Liriope minor var. angustissima (Ohwi) S.S. Ying|4|1||原生
 3830|Liliaceae|百合科|闊葉麥門冬|Liriope platyphylla|Liriope platyphylla F.T. Wang & T. Tang|4|0||原生
 3831|Liliaceae|百合科|麥門冬|Liriope spicata|Liriope spicata (Thunb.) Lour.|4|0||原生
-5115|Liliaceae|百合科|臺灣鹿藥|Maianthemum formosanum|Maianthemum formosanum (Hayata) La Frankie|4|0||原生
+5115|Liliaceae|百合科|鹿藥|Maianthemum formosanum|Maianthemum formosanum (Hayata) La Frankie|4|0||原生
 5526|Liliaceae|百合科|原氏鹿藥|Maianthemum harae|Maianthemum harae Y. H. Tseng & C. T. Chao|4|1|LC|原生
 3848|Liliaceae|百合科|鹿藥|Maianthemum japonicum|Maianthemum japonicum (A. Gray) La Frankie|4|0|LC|原生
 3832|Liliaceae|百合科|間型沿階草|Ophiopogon intermedius|Ophiopogon intermedius D. Don|4|0|LC|原生
@@ -3416,7 +3446,7 @@
 3858|Liliaceae|百合科|延齡草|Trillium tschonoskii|Trillium tschonoskii Maxim.|4|0|NT|原生
 5794|Liliaceae|百合科|鬱金香|Tulipa gesneriana|Tulipa gesneriana L.|4|0||栽培
 3859|Liliaceae|百合科|臺灣藜蘆|Veratrum formosanum|Veratrum formosanum Loes.|4|1|LC|原生
-3860|Liliaceae|百合科|雪山黎蘆|Veratrum shuehshanarum|Veratrum shuehshanarum S.S. Ying|4|1|DD|原生
+3860|Liliaceae|百合科|雪山藜蘆|Veratrum shuehshanarum|Veratrum shuehshanarum S.S. Ying|4|1|DD|原生
 6490|Liliaceae|百合科|丫蕊花|Ypsilandra thibetica|Ypsilandra thibetica Franch.|4|0|LC|原生
 5448|Liliaceae|百合科|蔥蘭|Zephyranthes candida|Zephyranthes candida (Lindl.) Herb.|4|0||栽培
 5688|Liliaceae|百合科|韭蘭|Zephyranthes carinata|Zephyranthes carinata Herb.|4|0||栽培
@@ -3434,7 +3464,7 @@
 960|Loranthaceae|桑寄生科|檜葉寄生|Korthalsella japonica|Korthalsella japonica (Thunb.) Engl.|4|0|LC|原生
 961|Loranthaceae|桑寄生科|椆樹桑寄生|Loranthus delavayi|Loranthus delavayi Tiegh.|4|0|LC|原生
 962|Loranthaceae|桑寄生科|高氏桑寄生|Loranthus kaoi|Loranthus kaoi (J.M. Chao) H.S. Kiu|4|1|NT|原生
-963|Loranthaceae|桑寄生科|蓮華池寄生|Scurrula tsaii|Scurrula tsaii (S.T. Chiu) Y.P. Yang & S.Y. Lu|4|0||未知
+963|Loranthaceae|桑寄生科|蓮華池桑寄生|Scurrula tsaii|Scurrula tsaii (S.T. Chiu) Y.P. Yang & S.Y. Lu|4|0||未知
 964|Loranthaceae|桑寄生科|木蘭桑寄生|Taxillus limprichtii|Taxillus limprichtii (Grüning) H.S. Kiu|4|0|VU|原生
 6402|Loranthaceae|桑寄生科|亮葉木蘭寄生|Taxillus limpritchii var. longiflorus|Taxillus limpritchii var. longiflorus (Grüning) Kiu|4|0|VU|原生
 965|Loranthaceae|桑寄生科|大葉桑寄生|Taxillus liquidambaricola|Taxillus liquidambaricola (Hayata) Hosok.|4|1|LC|原生
@@ -3446,7 +3476,7 @@
 971|Loranthaceae|桑寄生科|杜鵑桑寄生|Taxillus rhododendricolus|Taxillus rhododendricolus (Hayata) S.T. Chiu|4|1|LC|原生
 972|Loranthaceae|桑寄生科|李棟山桑寄生|Taxillus ritozanensis|Taxillus ritozanensis (Hayata) S.T. Chiu|4|1|LC|原生
 973|Loranthaceae|桑寄生科|埔姜桑寄生|Taxillus theifer|Taxillus theifer (Hayata) H.S. Kiu|4|1|DD|原生
-974|Loranthaceae|桑寄生科|蓮華池寄生|Taxillus tsaii|Taxillus tsaii S.T. Chiu|4|1||原生
+974|Loranthaceae|桑寄生科|蓮華池桑寄生|Taxillus tsaii|Taxillus tsaii S.T. Chiu|4|1||原生
 975|Loranthaceae|桑寄生科|臺灣槲寄生|Viscum alniformosanae|Viscum alniformosanae Hayata|4|1|LC|原生
 976|Loranthaceae|桑寄生科|柿寄生|Viscum angulatum|Viscum angulatum B. Heyne|4|0|NT|原生
 977|Loranthaceae|桑寄生科|椆櫟柿寄生|Viscum articulatum|Viscum articulatum Burm. f.|4|0|LC|原生
@@ -3502,7 +3532,7 @@
 6364|Malvaceae|錦葵科|草棉|Gossypium herbaceum|Gossypium herbaceum L.|4|0||栽培
 5977|Malvaceae|錦葵科|陸地棉|Gossypium hirsutum|Gossypium hirsutum L.|4|0||栽培
 5595|Malvaceae|錦葵科|糙葉木槿|Hibiscus asper|Hibiscus asper Hook. f.|4|0|NA|歸化
-5094|Malvaceae|錦葵科|洋麻|Hibiscus cannabinus|Hibiscus cannabinus L.|4|0||栽培
+5094|Malvaceae|錦葵科|大麻槿|Hibiscus cannabinus|Hibiscus cannabinus L.|4|0||栽培
 5605|Malvaceae|錦葵科|牧野氏山芙蓉|Hibiscus makinoi|Hibiscus makinoi Jotani & Ohba|4|0|LC|原生
 2269|Malvaceae|錦葵科|木芙蓉|Hibiscus mutabilis|Hibiscus mutabilis L.|4|0|DD|原生
 2270|Malvaceae|錦葵科|朱槿|Hibiscus rosa-sinensis|Hibiscus rosa-sinensis L.|4|0||歸化
@@ -3513,7 +3543,7 @@
 2272|Malvaceae|錦葵科|木槿|Hibiscus syriacus|Hibiscus syriacus L.|4|0|NA|歸化
 2273|Malvaceae|錦葵科|山芙蓉|Hibiscus taiwanensis|Hibiscus taiwanensis S.Y. Hu|4|1|LC|原生
 2274|Malvaceae|錦葵科|黃槿|Hibiscus tiliaceus|Hibiscus tiliaceus L.|4|0|LC|原生
-2275|Malvaceae|錦葵科|頭花葵|Malachra capitata|Malachra capitata (L.) L.|4|0||歸化
+2275|Malvaceae|錦葵科|旋葵|Malachra capitata|Malachra capitata (L.) L.|4|0||歸化
 2277|Malvaceae|錦葵科|華錦葵|Malva cathayensis|Malva cathayensis M.G. Gilbert, Y. Tang & Dorr|4|0|NA|歸化
 2276|Malvaceae|錦葵科|圓葉錦葵|Malva neglecta|Malva neglecta Wallr.|4|0|NA|歸化
 5642|Malvaceae|錦葵科|小花錦葵|Malva parviflora|Malva parviflora L.|4|0|NA|歸化
@@ -3521,11 +3551,10 @@
 2278|Malvaceae|錦葵科|賽葵|Malvastrum coromandelianum|Malvastrum coromandelianum (L.) Garcke|4|0|NA|歸化
 2279|Malvaceae|錦葵科|穗花賽葵|Malvastrum spicatum|Malvastrum spicatum (L.) A. Gray|4|0|NA|歸化
 6577|Malvaceae|錦葵科|南美朱槿|Malvaviscus arboreus|Malvaviscus arboreus Cav.|4|0||栽培
-2280|Malvaceae|錦葵科|卡羅萊納錦葵|Modiola caroliniana|Modiola caroliniana (L.) G. Don|4|0||歸化
+2280|Malvaceae|錦葵科|刺果錦葵|Modiola caroliniana|Modiola caroliniana (L.) G. Don|4|0||歸化
 2281|Malvaceae|錦葵科|細葉金午時花|Sida acuta|Sida acuta Burm. f.|4|0|LC|原生
 2282|Malvaceae|錦葵科|圓葉金午時花|Sida cordifolia|Sida cordifolia L.|4|0|LC|原生
 2283|Malvaceae|錦葵科|爪哇金午時花|Sida javensis|Sida javensis Cav.|4|0|DD|原生
-5492|Malvaceae|錦葵科|短柄爪哇金午時花|Sida javensis subsp. expilosa|Sida javensis subsp. expilosa Borss. Waalk.|4|0||原生
 2284|Malvaceae|錦葵科|薄葉金午時花|Sida mysorensis|Sida mysorensis Wight & Arn.|4|0|LC|原生
 2285|Malvaceae|錦葵科|金午時花|Sida rhombifolia|Sida rhombifolia L.|4|0|LC|原生
 2286|Malvaceae|錦葵科|恆春金午時花|Sida rhombifolia subsp. insularis|Sida rhombifolia subsp. insularis (Hatus.) Hatus.|4|0|LC|原生
@@ -3554,11 +3583,10 @@
 2458|Melastomataceae|野牡丹科|都蘭山金石榴|Bredia dulanica|Bredia dulanica C.L. Yeh, S.W.Chung & T.C. Hsu|4|1|VU|原生
 2459|Melastomataceae|野牡丹科|小金石榴|Bredia gibba|Bredia gibba Ohwi|4|1|LC|原生
 5493|Melastomataceae|野牡丹科|毛布勒德藤|Bredia hirsuta|Bredia hirsuta Blume|4|0||原生
-2460|Melastomataceae|野牡丹科|圓葉布勒德藤|Bredia hirsuta var. rotundifolia|Bredia hirsuta var. rotundifolia (Y. Liu & C.H. Ou) S.F. Huang & T.C. Huang|4|1|NT|原生
-2462|Melastomataceae|野牡丹科|來社金石榴|Bredia laisherana|Bredia laisherana C.L. Yeh & C.R. Yeh|4|1|CR|原生
+2460|Melastomataceae|野牡丹科|圓葉布勒徳藤|Bredia hirsuta var. rotundifolia|Bredia hirsuta var. rotundifolia (Y. Liu & C.H. Ou) S.F. Huang & T.C. Huang|4|1|NT|原生
+2462|Melastomataceae|野牡丹科|來社山布勒德藤|Bredia laisherana|Bredia laisherana C.L. Yeh & C.R. Yeh|4|1|CR|原生
 2463|Melastomataceae|野牡丹科|金石榴|Bredia oldhamii|Bredia oldhamii Hook. f.|4|1|LC|原生
 2464|Melastomataceae|野牡丹科|垂花布勒德木|Bredia penduliflora|Bredia penduliflora S.S. Ying|4|0||未知
-2465|Melastomataceae|野牡丹科|過路驚|Bredia quadrangularis|Bredia quadrangularis Cogn.|4|0||未知
 2461|Melastomataceae|野牡丹科|布勒德藤|Bredia scandens|Bredia scandens (Ito & Matsum.) Hayata|4|1|LC|原生
 2466|Melastomataceae|野牡丹科|毛野牡丹|Clidemia hirta|Clidemia hirta (L.) D. Don|4|0|NA|歸化
 2467|Melastomataceae|野牡丹科|臺灣野牡丹藤|Medinilla formosana|Medinilla formosana Hayata|4|1|VU|原生
@@ -3583,8 +3611,8 @@
 2062|Meliaceae|楝科|紅柴|Aglaia formosana|Aglaia formosana (Hayata) Hayata|4|0|LC|原生
 2063|Meliaceae|楝科|樹蘭|Aglaia odorata|Aglaia odorata Lour.|4|0||栽培
 2064|Meliaceae|楝科|穗花樹蘭|Aphanamixis polystachya|Aphanamixis polystachya (Wall.) R. Parker|4|0|VU|原生
-2065|Meliaceae|楝科|蘭嶼擬椌木|Chisocheton patens|Chisocheton patens Blume|4|0|VU|原生
-2066|Meliaceae|楝科|蘭嶼樫木|Dysoxylum arborescens|Dysoxylum arborescens (Blume) Miq.|4|0|VU|原生
+2065|Meliaceae|楝科|蘭嶼擬樫木|Chisocheton patens|Chisocheton patens Blume|4|0|VU|原生
+2066|Meliaceae|楝科|小葉樫木|Dysoxylum arborescens|Dysoxylum arborescens (Blume) Miq.|4|0|VU|原生
 2067|Meliaceae|楝科|蘭嶼椌木|Dysoxylum cumingianum|Dysoxylum cumingianum C. DC.|4|0|NT|原生
 2068|Meliaceae|楝科|紅果椌木|Dysoxylum hongkongense|Dysoxylum hongkongense (Tutcher) Merr.|4|0|LC|原生
 2069|Meliaceae|楝科|大花樫木|Dysoxylum parasiticum|Dysoxylum parasiticum (Osbeck) Kosterm.|4|0|LC|原生
@@ -3619,7 +3647,6 @@
 6200|Moraceae|桑科|猴面果|Artocarpus lakoocha|Artocarpus lakoocha Roxb.|4|0||栽培
 6197|Moraceae|桑科|香波羅|Artocarpus odoratissimus|Artocarpus odoratissimus Merr.|4|0||栽培
 835|Moraceae|桑科|蘭嶼麵包樹|Artocarpus xanthocarpus|Artocarpus xanthocarpus Merr.|4|0|VU|原生
-836|Moraceae|桑科|楮樹|Broussonetia kaempferi|Broussonetia kaempferi Siebold|4|0|VU|原生
 837|Moraceae|桑科|小構樹|Broussonetia monoica|Broussonetia monoica Hance|4|0|LC|原生
 838|Moraceae|桑科|構樹|Broussonetia papyrifera|Broussonetia papyrifera (L.) L'Hér. ex Vent.|4|0|LC|原生
 839|Moraceae|桑科|細齒水蛇麻|Fatoua pilosa|Fatoua pilosa Gaudich.|4|0|LC|原生
@@ -3712,13 +3739,13 @@
 2663|Myrsinaceae|紫金牛科|黑星紫金牛|Ardisia virens|Ardisia virens Kurz|4|0|LC|原生
 2664|Myrsinaceae|紫金牛科|矮紫金牛|Bladhia humilis|Bladhia humilis (Vahl) Sasaki|4|0||未知
 2665|Myrsinaceae|紫金牛科|藤木槲|Embelia laeta|Embelia laeta (L.) Mez|4|0||未知
-2666|Myrsinaceae|紫金牛科|藤毛木槲|Embelia laeta var. papilligera|Embelia laeta var. papilligera (Nakai) E. Walker|4|1||原生
+2666|Myrsinaceae|紫金牛科|藤毛木檞|Embelia laeta var. papilligera|Embelia laeta var. papilligera (Nakai) E. Walker|4|1||原生
 2667|Myrsinaceae|紫金牛科|賽山椒|Embelia lenticellata|Embelia lenticellata Hayata|4|1|LC|原生
 2668|Myrsinaceae|紫金牛科|野山椒|Embelia rudis|Embelia rudis Hand.-Mazz.|4|0|LC|原生
 2669|Myrsinaceae|紫金牛科|菲律賓山桂花|Maesa elmerii|Maesa elmerii Mez|4|0||未知
 2670|Myrsinaceae|紫金牛科|山桂花|Maesa japonica|Maesa japonica (Thunb.) Moritzi & Zoll.|4|0|LC|原生
 2671|Myrsinaceae|紫金牛科|蘭嶼山桂花|Maesa lanyuensis|Maesa lanyuensis Y.P. Yang|4|1|LC|原生
-2672|Myrsinaceae|紫金牛科|恆春山桂花|Maesa perlaria|Maesa perlaria (Lour.) Merr.|4|0|DD|原生
+2672|Myrsinaceae|紫金牛科|鯽魚膽|Maesa perlaria|Maesa perlaria (Lour.) Merr.|4|0|DD|原生
 2673|Myrsinaceae|紫金牛科|臺灣山桂花|Maesa perlaria var. formosana|Maesa perlaria var. formosana (Mez) Y.P. Yang|4|0|LC|原生
 2674|Myrsinaceae|紫金牛科|小葉鐵仔|Myrsine africana|Myrsine africana L.|4|0|LC|原生
 2675|Myrsinaceae|紫金牛科|大明橘|Myrsine seguinii|Myrsine seguinii H. Lév.|4|0|LC|原生
@@ -3764,7 +3791,7 @@
 1038|Nyctaginaceae|紫茉莉科|黃細心|Boerhavia diffusa|Boerhavia diffusa L.|4|0|NA|歸化
 1039|Nyctaginaceae|紫茉莉科|直立黃細心|Boerhavia erecta|Boerhavia erecta L.|4|0|NA|歸化
 1040|Nyctaginaceae|紫茉莉科|光果黃細心|Boerhavia glabrata|Boerhavia glabrata Blume|4|0|LC|原生
-1041|Nyctaginaceae|紫茉莉科|花蓮黃細心|Boerhavia hualienense|Boerhavia hualienense S.H. Chen & M.J. Wu|4|0||未知
+1041|Nyctaginaceae|紫茉莉科|花蓮黃細心|Boerhavia hualienense|Boerhavia hualienense S.H. Chen & M.J. Wu|4|1||未知
 1042|Nyctaginaceae|紫茉莉科|九重葛|Bougainvillea spectabilis|Bougainvillea spectabilis Willd.|4|0||歸化
 1043|Nyctaginaceae|紫茉莉科|紫茉莉|Mirabilis jalapa|Mirabilis jalapa L.|4|0|NA|歸化
 1044|Nyctaginaceae|紫茉莉科|腺果藤|Pisonia aculeata|Pisonia aculeata L.|4|0|LC|原生
@@ -3812,7 +3839,6 @@
 2487|Onagraceae|柳葉菜科|心葉露珠草|Circaea cordata|Circaea cordata Royle|4|0|LC|原生
 2488|Onagraceae|柳葉菜科|臺灣露珠草|Circaea erubescens|Circaea erubescens Franch. & Sav.|4|0|LC|原生
 2489|Onagraceae|柳葉菜科|禿梗露珠草|Circaea glabrescens|Circaea glabrescens (Pamp.) Hand.-Mazz.|4|0|RE|原生
-2490|Onagraceae|柳葉菜科|南方露珠草|Circaea mollis|Circaea mollis Siebold & Zucc.|4|0||未知
 2491|Onagraceae|柳葉菜科|黑龍江柳葉菜|Epilobium amurense|Epilobium amurense Hausskn.|4|0|LC|原生
 2492|Onagraceae|柳葉菜科|短葉柳葉菜|Epilobium brevifolium subsp. trichoneurum|Epilobium brevifolium subsp. trichoneurum (Hausskn.) P.H. Raven|4|0|LC|原生
 2493|Onagraceae|柳葉菜科|合歡柳葉菜|Epilobium hohuanense|Epilobium hohuanense G.Y. Yin|4|1|LC|原生
@@ -3823,7 +3849,7 @@
 6417|Onagraceae|柳葉菜科|吊鐘花|Fuchsia hybrida|Fuchsia hybrida Hort.|4|0||栽培
 2499|Onagraceae|柳葉菜科|白花水龍|Ludwigia adscendens|Ludwigia adscendens (L.) H. Hara|4|0|LC|原生
 5596|Onagraceae|柳葉菜科|翼莖水丁香|Ludwigia decurrens|Ludwigia decurrens Walter|4|0|NA|歸化
-2501|Onagraceae|柳葉菜科|黃花水丁香|Ludwigia epilobioides|Ludwigia epilobioides Maxim.|4|0||原生
+2501|Onagraceae|柳葉菜科|假柳葉菜|Ludwigia epilobioides|Ludwigia epilobioides Maxim.|4|0||原生
 2502|Onagraceae|柳葉菜科|毛盤黃花水丁香|Ludwigia epilobioides subsp. greatrexii|Ludwigia epilobioides subsp. greatrexii (H. Hara) P.H. Raven|4|0||未知
 5597|Onagraceae|柳葉菜科|美洲水丁香|Ludwigia erecta|Ludwigia erecta (L.) H. Hara|4|0|NA|歸化
 2503|Onagraceae|柳葉菜科|細葉水丁香|Ludwigia hyssopifolia|Ludwigia hyssopifolia (G. Don) Exell|4|0|LC|原生
@@ -3869,14 +3895,14 @@
 6442|Orchidaceae|蘭科|杉林溪捲瓣蘭|Bulbophyllum albociliatum var. shanlinshiense|Bulbophyllum albociliatum var. shanlinshiense Lin & Chang|4|0|LC|原生
 4679|Orchidaceae|蘭科|維明豆蘭|Bulbophyllum albociliatum var. weiminianum|Bulbophyllum albociliatum var. weiminianum T.P. Lin & Kuo Huang|4|1|VU|原生
 4681|Orchidaceae|蘭科|小豆蘭|Bulbophyllum aureolabellum|Bulbophyllum aureolabellum T.P. Lin|4|1|LC|原生
-4682|Orchidaceae|蘭科|短梗豆蘭|Bulbophyllum brevipedunculatum|Bulbophyllum brevipedunculatum T.C. Hsu & S.W. Chung|4|1|VU|未知
+4682|Orchidaceae|蘭科|短梗豆蘭|Bulbophyllum brevipedunculatum|Bulbophyllum brevipedunculatum T.C. Hsu & S.W. Chung|4|1|VU|未知
 4683|Orchidaceae|蘭科|溪頭豆蘭|Bulbophyllum chitouense|Bulbophyllum chitouense S.S. Ying|4|1|EN|原生
 4684|Orchidaceae|蘭科|毛緣萼豆蘭|Bulbophyllum ciliisepalum|Bulbophyllum ciliisepalum T.C. Hsu & S.W.Chung|4|1|EN|原生
 6175|Orchidaceae|蘭科|斷尾捲瓣蘭|Bulbophyllum confragosum|Bulbophyllum confragosum Lin & Chang|4|0|DD|原生
 4685|Orchidaceae|蘭科|狹萼豆蘭|Bulbophyllum drymoglossum|Bulbophyllum drymoglossum Maxim. ex Ôkubo|4|0|LC|原生
 5510|Orchidaceae|蘭科|無毛捲瓣蘭|Bulbophyllum electrinum var. calvum|Bulbophyllum electrinum var. calvum T.P. Lin & W.M. Lin|4|1|DD|原生
 4686|Orchidaceae|蘭科|長軸捲瓣蘭|Bulbophyllum electrinum var. sui|Bulbophyllum electrinum var. sui T.P. Lin & W.M. Lin|4|0|VU|原生
-4687|Orchidaceae|蘭科|流蘇豆蘭|Bulbophyllum fimbriperianthium|Bulbophyllum fimbriperianthium W.M. Lin, L.L.K. Huang & T.P. Lin|4|1|CR|原生
+4687|Orchidaceae|蘭科|流蘇豆蘭|Bulbophyllum fimbriperianthium|Bulbophyllum fimbriperianthium W.M. Lin, L.L.K. Huang & T.P. Lin|4|1|CR|原生
 4688|Orchidaceae|蘭科|臺灣豆蘭|Bulbophyllum formosanum|Bulbophyllum formosanum (Rolfe) Seidenf.|4|0||未知
 4689|Orchidaceae|蘭科|花蓮捲瓣蘭|Bulbophyllum hirundinis|Bulbophyllum hirundinis (Gagnep.) Seidenf.|4|0|LC|原生
 6408|Orchidaceae|蘭科|張氏捲瓣蘭|Bulbophyllum hirundinis var. puniceum|Bulbophyllum hirundinis var. puniceum Lin & Chang|4|0||栽培
@@ -3885,7 +3911,6 @@
 6163|Orchidaceae|蘭科|觀霧豆蘭|Bulbophyllum kuanwuense|Bulbophyllum kuanwuense S. W. Chung & T. C. Hsu|4|1|EN|原生
 4692|Orchidaceae|蘭科|觀霧豆蘭|Bulbophyllum kuanwuensis|Bulbophyllum kuanwuensis S.W. Chung & T.C. Hsu|4|1|EN|未知
 5511|Orchidaceae|蘭科|克森豆蘭|Bulbophyllum kuanwuensis var. luchuensis|Bulbophyllum kuanwuensis var. luchuensis T.P. Lin & W.M. Lin|4|1||原生
-5512|Orchidaceae|蘭科|石仙桃豆蘭|Bulbophyllum kuanwuensis var. rutilum|Bulbophyllum kuanwuensis var. rutilum T.P. Lin & W.M. Lin|4|1||原生
 4693|Orchidaceae|蘭科|烏來捲瓣蘭|Bulbophyllum macraei|Bulbophyllum macraei (Lindl.) Rchb. f.|4|0|LC|原生
 4694|Orchidaceae|蘭科|紫紋捲瓣蘭|Bulbophyllum melanoglossum|Bulbophyllum melanoglossum Hayata|4|1|LC|原生
 4695|Orchidaceae|蘭科|毛葯捲瓣蘭|Bulbophyllum omerandrum|Bulbophyllum omerandrum Hayata|4|0|NT|原生
@@ -3936,9 +3961,9 @@
 4736|Orchidaceae|蘭科|東部線柱蘭|Cheirostylis tabiyahanensis|Cheirostylis tabiyahanensis (Hayata) N.Pearce & P.J. Cribb|4|0||原生
 4737|Orchidaceae|蘭科|阿里山指柱蘭|Cheirostylis takeoi|Cheirostylis takeoi (Hayata) Schltr.|4|0|LC|原生
 4738|Orchidaceae|蘭科|和社指柱蘭|Cheirostylis tortilacinia|Cheirostylis tortilacinia C.S. Leou|4|1|NT|原生
-5725|Orchidaceae|蘭科|寬囊大蜘蛛蘭|Chiloschista parishii|Chiloschista parishii Seidenf.|4|0||栽培
+5725|Orchidaceae|蘭科|寬囊大蜘蛛蘭|Chiloschista parishii|Chiloschista parishii Seidenf.|4|0||栽培
 4739|Orchidaceae|蘭科|大蜘蛛蘭|Chiloschista segawae|Chiloschista segawae (Masam.) Masam. & Fukuy.|4|1|NT|原生
-4740|Orchidaceae|蘭科|臺灣黃唇蘭|Chrysoglossum ornatum|Chrysoglossum ornatum Blume|4|0|LC|原生
+4740|Orchidaceae|蘭科|黃唇蘭|Chrysoglossum ornatum|Chrysoglossum ornatum Blume|4|0|LC|原生
 5002|Orchidaceae|蘭科|黃繡球蘭|Cleisostoma acuminatum|Cleisostoma acuminatum Rolfe|4|1|NT|原生
 4741|Orchidaceae|蘭科|虎紋蘭|Cleisostoma paniculatum|Cleisostoma paniculatum (Ker Gawl.) Garay|4|0|LC|原生
 4742|Orchidaceae|蘭科|烏來閉口蘭|Cleisostoma uraiense|Cleisostoma uraiense (Hayata) Garay & H.R. Sweet|4|0|EN|原生
@@ -3947,8 +3972,8 @@
 4745|Orchidaceae|蘭科|柯麗白蘭|Collabium chinense|Collabium chinense (Rolfe) Tang & F.T. Wang|4|0|EN|原生
 4746|Orchidaceae|蘭科|臺灣柯麗白蘭|Collabium formosanum|Collabium formosanum Hayata|4|0|LC|原生
 5933|Orchidaceae|蘭科|高山絨蘭|Conchidium japonicum|Conchidium japonicum (Maxim.) S. C. Chen & J. J. Wood|4|0||栽培
-4747|Orchidaceae|蘭科|喜馬拉雅盔蘭|Corybas himalaicus|Corybas himalaicus (King & Pantl.) Schltr.|4|0|CR|未知
-5236|Orchidaceae|蘭科|豔紫盔蘭|Corybas puniceus|Corybas puniceus T.P. Lin & W.M. Lin|4|1|CR|原生
+4747|Orchidaceae|蘭科|喜馬拉雅盔蘭|Corybas himalaicus|Corybas himalaicus (King & Pantl.) Schltr.|4|0|CR|未知
+5236|Orchidaceae|蘭科|艷紫盔蘭|Corybas puniceus|Corybas puniceus T.P. Lin & W.M. Lin|4|1|CR|原生
 4748|Orchidaceae|蘭科|杉林溪盔蘭|Corybas shanlinshiensis|Corybas shanlinshiensis W.M. Lin, T.C. Hsu & T.P. Lin|4|0||未知
 4749|Orchidaceae|蘭科|辛氏盔蘭|Corybas sinii|Corybas sinii T. Tang & F.T. Wang|4|0|EN|原生
 4750|Orchidaceae|蘭科|紅盔蘭|Corybas taiwanensis|Corybas taiwanensis T.P. Lin & S.Y. Leu|4|1|EN|原生
@@ -3984,7 +4009,7 @@
 4773|Orchidaceae|蘭科|肉果蘭|Cyrtosia javanica|Cyrtosia javanica Blume|4|0|EN|原生
 4774|Orchidaceae|蘭科|黃石斛|Dendrobium catenatum|Dendrobium catenatum Lindl.|4|0|VU|原生
 4775|Orchidaceae|蘭科|長距石斛|Dendrobium chameleon|Dendrobium chameleon Ames|4|0|LC|原生
-4776|Orchidaceae|蘭科|金草|Dendrobium chryseum|Dendrobium chryseum Rolfe|4|0|NT|原生
+4776|Orchidaceae|蘭科|金草蘭|Dendrobium chryseum|Dendrobium chryseum Rolfe|4|0|NT|原生
 4777|Orchidaceae|蘭科|鴿石斛|Dendrobium crumenatum|Dendrobium crumenatum Sw.|4|0|VU|原生
 4778|Orchidaceae|蘭科|燕子石斛|Dendrobium equitans|Dendrobium equitans Kraenzl.|4|0|NT|原生
 4779|Orchidaceae|蘭科|新竹石斛|Dendrobium falconeri|Dendrobium falconeri Hook. f.|4|0|NT|原生
@@ -3992,11 +4017,11 @@
 4781|Orchidaceae|蘭科|哥氏石斛|Dendrobium goldschmidtianum|Dendrobium goldschmidtianum Kraenzl.|4|0|VU|原生
 4782|Orchidaceae|蘭科|細莖石斛|Dendrobium leptocladum|Dendrobium leptocladum Hayata|4|1|LC|原生
 4783|Orchidaceae|蘭科|櫻石斛|Dendrobium linawianum|Dendrobium linawianum Rchb. f.|4|0|CR|原生
-5210|Orchidaceae|蘭科|呂宋石槲|Dendrobium luzonense|Dendrobium luzonense Lindl.|4|0|CR|未知
+5210|Orchidaceae|蘭科|呂宋石斛|Dendrobium luzonense|Dendrobium luzonense Lindl.|4|0|CR|未知
 4784|Orchidaceae|蘭科|紅花石斛|Dendrobium miyakei|Dendrobium miyakei Schltr.|4|0|NT|原生
 4785|Orchidaceae|蘭科|石斛|Dendrobium moniliforme|Dendrobium moniliforme (L.) Sw.|4|0|LC|原生
 4786|Orchidaceae|蘭科|臺灣石斛|Dendrobium nobile var. formosanum|Dendrobium nobile var. formosanum Rchb. f.|4|1|DD|原生
-5515|Orchidaceae|蘭科|琉球石槲|Dendrobium okinawense|Dendrobium okinawense Hatus. & Ida|4|0|NT|原生
+5515|Orchidaceae|蘭科|琉球石斛|Dendrobium okinawense|Dendrobium okinawense Hatus. & Ida|4|0|NT|原生
 4788|Orchidaceae|蘭科|小雙花石斛|Dendrobium somae|Dendrobium somae Hayata|4|1|VU|原生
 4789|Orchidaceae|蘭科|黃花石斛|Dendrobium tosaense|Dendrobium tosaense Makino|4|0|VU|原生
 4790|Orchidaceae|蘭科|黃穗蘭|Dendrochilum uncatum|Dendrochilum uncatum Rchb. f.|4|0|VU|原生
@@ -4014,7 +4039,7 @@
 4800|Orchidaceae|蘭科|臺灣鈴蘭|Epipactis helleborine subsp. ohwii|Epipactis helleborine subsp. ohwii (Fukuy.) H.J. Su|4|1|LC|原生
 4801|Orchidaceae|蘭科|無葉上鬚蘭|Epipogium aphyllum|Epipogium aphyllum Sw.|4|0|NT|原生
 4802|Orchidaceae|蘭科|日本上鬚蘭|Epipogium japonicum|Epipogium japonicum Makino|4|0|NT|原生
-5555|Orchidaceae|蘭科|墾丁上鬚蘭|Epipogium kentingensis|Epipogium kentingensis T. P. Lin & S. H. Wu|4|1||原生
+5555|Orchidaceae|蘭科|墾丁上鬚蘭|Epipogium kentingensis|Epipogium kentingensis T. P. Lin & S. H. Wu|4|1||原生
 4803|Orchidaceae|蘭科|高士佛上鬚蘭|Epipogium roseum|Epipogium roseum (D. Don) Lindl.|4|0|LC|原生
 4804|Orchidaceae|蘭科|小腳筒蘭|Eria amica|Eria amica Rchb. f.|4|0|LC|原生
 4805|Orchidaceae|蘭科|黃絨蘭|Eria corneri|Eria corneri Rchb. f.|4|0|LC|原生
@@ -4031,19 +4056,19 @@
 4814|Orchidaceae|蘭科|三葯細筆蘭|Erythrodes triantherae|Erythrodes triantherae C.L. Yeh & C.S. Leou|4|1|EN|原生
 4815|Orchidaceae|蘭科|蔓莖山珊瑚|Erythrorchis altissima|Erythrorchis altissima (Blume) Blume|4|0|LC|原生
 4816|Orchidaceae|蘭科|寶島芋蘭|Eulophia bicallosa|Eulophia bicallosa (D. Don) P.F. Hunt & Summerh.|4|0|DD|原生
-4817|Orchidaceae|蘭科|雙板芋蘭|Eulophia bicarinata|Eulophia bicarinata (Lindl.) Hook. f.|4|0||未知
+4817|Orchidaceae|蘭科|闊葉芋蘭|Eulophia bicarinata|Eulophia bicarinata (Lindl.) Hook. f.|4|0||未知
 4818|Orchidaceae|蘭科|短裂芋蘭|Eulophia brachycentra|Eulophia brachycentra Hayata|4|1|DD|原生
 4819|Orchidaceae|蘭科|紫芋蘭|Eulophia dentata|Eulophia dentata Ames|4|1|LC|原生
 6415|Orchidaceae|蘭科|臺灣芋蘭|Eulophia formosana|Eulophia formosana (Rolfe) Rolfe|4|0||栽培
 4820|Orchidaceae|蘭科|禾草芋蘭|Eulophia graminea|Eulophia graminea Lindl.|4|0|NT|原生
 4821|Orchidaceae|蘭科|毛芋蘭|Eulophia hirsuta|Eulophia hirsuta J. Joseph & Vajr.|4|0||未知
-4822|Orchidaceae|蘭科|輻射芋蘭|Eulophia pelorica|Eulophia pelorica D.L. Jones & M.A. Clem.|4|0|CR|原生
+4822|Orchidaceae|蘭科|輻射芋蘭|Eulophia pelorica|Eulophia pelorica D.L. Jones & M.A. Clem.|4|0|CR|原生
 4823|Orchidaceae|蘭科|南洋芋蘭|Eulophia pulchra|Eulophia pulchra (Thouars) Lindl.|4|0|NT|原生
 4824|Orchidaceae|蘭科|山芋蘭|Eulophia zollingeri|Eulophia zollingeri (Rchb. f.) J.J. Sm.|4|0|LC|原生
 4825|Orchidaceae|蘭科|木槲|Flickingeria comata|Flickingeria comata (Blume) A.D. Hawkes|4|0|NT|原生
 4826|Orchidaceae|蘭科|淡色暫花蘭|Flickingeria pallens|Flickingeria pallens (Ridl.) A.D. Hawkes|4|0||未知
 5224|Orchidaceae|蘭科|世富暫花蘭|Flickingeria parietiformis|Flickingeria parietiformis (J.J. Sm.) A.D. Hawkes|4|0|DD|原生
-4827|Orchidaceae|蘭科|士富暫花蘭|Flickingeria shihfuana|Flickingeria shihfuana T.P. Lin & K. Huang|4|0||未知
+4827|Orchidaceae|蘭科|世富暫花蘭|Flickingeria shihfuana|Flickingeria shihfuana T.P. Lin & K. Huang|4|0||未知
 4828|Orchidaceae|蘭科|輻射暫花蘭|Flickingeria tairukounia|Flickingeria tairukounia (S.S. Ying) T.P. Lin|4|1|DD|原生
 5562|Orchidaceae|蘭科|淺黃暫花蘭|Flickingeria xantholeuca|Flickingeria xantholeuca (Rchb. f.) A.D. Hawkes|4|0|NT|原生
 4829|Orchidaceae|蘭科|小囊山珊瑚|Galeola falconeri|Galeola falconeri Hook. f.|4|0|LC|原生
@@ -4081,7 +4106,7 @@
 4853|Orchidaceae|蘭科|阿里山斑葉蘭|Goodyera arisanensis|Goodyera arisanensis Hayata|4|1||原生
 4854|Orchidaceae|蘭科|大花斑葉蘭|Goodyera biflora|Goodyera biflora (Lindl.) Hook. f.|4|0|EN|原生
 4855|Orchidaceae|蘭科|雙板斑葉蘭|Goodyera bilamellata|Goodyera bilamellata Hayata|4|1|LC|原生
-4856|Orchidaceae|蘭科|波密斑葉蘭|Goodyera bomiensis|Goodyera bomiensis K.Y. Lang|4|0||未知
+4856|Orchidaceae|蘭科|波密斑葉蘭|Goodyera bomiensis|Goodyera bomiensis K.Y. Lang|4|0||未知
 4857|Orchidaceae|蘭科|毛苞斑葉蘭|Goodyera clavata|Goodyera clavata N.Pearce & P.J. Cribb|4|0|LC|原生
 4858|Orchidaceae|蘭科|大武斑葉蘭|Goodyera daibuzanensis|Goodyera daibuzanensis Yamam.|4|1|LC|原生
 4859|Orchidaceae|蘭科|厚唇斑葉蘭|Goodyera foliosa|Goodyera foliosa (Lindl.) Benth. ex C.B. Clarke|4|0|LC|原生
@@ -4095,7 +4120,7 @@
 4866|Orchidaceae|蘭科|南投斑葉蘭|Goodyera repens|Goodyera repens (L.) R. Br.|4|0|EN|原生
 6094|Orchidaceae|蘭科|滇藏斑葉蘭|Goodyera robusta|Goodyera robusta Hook. f.|4|0||栽培
 4867|Orchidaceae|蘭科|斑葉蘭|Goodyera schlechtendaliana|Goodyera schlechtendaliana Rchb. f.|4|0|LC|原生
-4868|Orchidaceae|蘭科|哥綠懷蘭|Goodyera seikoomontana|Goodyera seikoomontana Yamam.|4|1||原生
+4868|Orchidaceae|蘭科|歌綠懷蘭|Goodyera seikoomontana|Goodyera seikoomontana Yamam.|4|1||原生
 4869|Orchidaceae|蘭科|鳥嘴蓮|Goodyera velutina|Goodyera velutina Maxim. ex Regel|4|0|LC|原生
 5880|Orchidaceae|蘭科|斑紋鳥嘴蓮|Goodyera velutina var. albo-nervosa|Goodyera velutina var. albo-nervosa Lin & Chang|4|0|DD|原生
 4870|Orchidaceae|蘭科|綠花斑葉蘭|Goodyera viridiflora|Goodyera viridiflora (Blume) Lindl. ex D. Dietr.|4|0|NT|原生
@@ -4111,9 +4136,9 @@
 4880|Orchidaceae|蘭科|叉瓣玉鳳蘭|Habenaria pantlingiana|Habenaria pantlingiana Kraenzl.|4|0|LC|原生
 4881|Orchidaceae|蘭科|毛唇玉鳳蘭|Habenaria petelotii|Habenaria petelotii Gagnep.|4|0|LC|原生
 4882|Orchidaceae|蘭科|裂瓣玉鳳蘭|Habenaria polytricha|Habenaria polytricha Rolfe|4|0|LC|原生
-4883|Orchidaceae|蘭科|狹辦玉鳳蘭|Habenaria stenopetala|Habenaria stenopetala Lindl.|4|0||原生
+4883|Orchidaceae|蘭科|狹瓣玉鳳蘭|Habenaria stenopetala|Habenaria stenopetala Lindl.|4|0||原生
 5841|Orchidaceae|蘭科|蔡氏玉鳳蘭|Habenaria tsaiana|Habenaria tsaiana Lin|4|1|DD|原生
-6470|Orchidaceae|蘭科|漢考克蘭|Hancockia uniflora|Hancockia uniflora Rolfe|4|0||栽培
+6470|Orchidaceae|蘭科|漢考克蘭|Hancockia uniflora|Hancockia uniflora Rolfe|4|0||栽培
 4884|Orchidaceae|蘭科|香蘭|Haraella retrocalla|Haraella retrocalla (Hayata) Kudô|4|1|NT|原生
 5626|Orchidaceae|蘭科|全唇早田蘭|Hayata merrillii|Hayata merrillii (Ames & Quisumb.) T.C. Hsu & S.W. Chung|4|0|DD|原生
 6522|Orchidaceae|蘭科|裂唇早田蘭|Hayata tabiyahanensis|Hayata tabiyahanensis (Hayata) Aver.|4|1|NT|原生
@@ -4130,12 +4155,12 @@
 4892|Orchidaceae|蘭科|全唇皿柱蘭|Lecanorchis nigricans|Lecanorchis nigricans Honda|4|0|NT|原生
 5631|Orchidaceae|蘭科|屋久全唇皿蘭|Lecanorchis nigricans var. yakushimensis|Lecanorchis nigricans var. yakushimensis T. Hashim.|4|0|NT|原生
 5755|Orchidaceae|蘭科|None|Lecanorchis nigricans var. yakusimensis|Lecanorchis nigricans var. yakusimensis|4|0||栽培
-6265|Orchidaceae|蘭科|亞輻射皿蘭|Lecanorchis subpelorica|Lecanorchis subpelorica T.C. Hsu & S.W. Chung|4|1||栽培
-4893|Orchidaceae|蘭科|杉野氏皿蘭|Lecanorchis suginoana|Lecanorchis suginoana (Tuyama) Seriz.|4|0|NT|未知
+6265|Orchidaceae|蘭科|亞輻射皿蘭|Lecanorchis subpelorica|Lecanorchis subpelorica T.C. Hsu & S.W. Chung|4|1||栽培
+4893|Orchidaceae|蘭科|杉野氏皿蘭|Lecanorchis suginoana|Lecanorchis suginoana (Tuyama) Seriz.|4|0|NT|未知
 4894|Orchidaceae|蘭科|紋皿柱蘭|Lecanorchis thalassica|Lecanorchis thalassica T.P. Lin|4|1|EN|原生
 5632|Orchidaceae|蘭科|糙莖皿蘭|Lecanorchis trachycaula|Lecanorchis trachycaula Ohwi|4|0|NT|原生
-4895|Orchidaceae|蘭科|三裂皿蘭|Lecanorchis triloba|Lecanorchis triloba J.J. Sm.|4|0|EN|未知
-4896|Orchidaceae|蘭科|綠皿蘭|Lecanorchis virella|Lecanorchis virella T. Hashim.|4|0|CR|未知
+4895|Orchidaceae|蘭科|三裂皿蘭|Lecanorchis triloba|Lecanorchis triloba J.J. Sm.|4|0|EN|未知
+4896|Orchidaceae|蘭科|綠皿蘭|Lecanorchis virella|Lecanorchis virella T. Hashim.|4|0|CR|未知
 4897|Orchidaceae|蘭科|白花羊耳蒜|Liparis amabilis|Liparis amabilis Fukuy.|4|1|CR|原生
 4898|Orchidaceae|蘭科|雙葉羊耳蒜|Liparis auriculata|Liparis auriculata Blume ex Miq.|4|0|VU|原生
 4899|Orchidaceae|蘭科|一葉羊耳蒜|Liparis bootanensis|Liparis bootanensis Griff.|4|0|LC|原生
@@ -4188,13 +4213,13 @@
 4940|Orchidaceae|蘭科|白花金唇蘭|Myrmechis drymoglossifolia|Myrmechis drymoglossifolia Hayata|4|1|LC|原生
 4941|Orchidaceae|蘭科|風蘭|Neofinetia falcata|Neofinetia falcata (Thunb.) H.H. Hu|4|0||未知
 4942|Orchidaceae|蘭科|鳥巢蘭|Neottia acuminata|Neottia acuminata Schltr.|4|0|DD|原生
-5556|Orchidaceae|蘭科|合歡山雙葉蘭|Neottia hohuanshanensis|Neottia hohuanshanensis T. P. Lin & S. H. Wu|4|1||原生
+5556|Orchidaceae|蘭科|合歡山雙葉蘭|Neottia hohuanshanensis|Neottia hohuanshanensis T. P. Lin & S. H. Wu|4|1||原生
 5998|Orchidaceae|蘭科|小雙葉蘭|Neottia japonica|Neottia japonica (Blume) Szlach.|4|0||栽培
 6335|Orchidaceae|蘭科|碧綠溪雙葉蘭|Neottia piluchiensis|Neottia piluchiensis T.P. Lin|4|1|NT|原生
 6196|Orchidaceae|蘭科|三角雙葉蘭|Neottia suzukii|Neottia suzukii (Masam.) Szlach.|4|1||栽培
 5560|Orchidaceae|蘭科|阿里山脈葉蘭|Nervilia alishanensis|Nervilia alishanensis T. C. Hsu, S. W. Chung & C. M. Kuo|4|1|NT|原生
 4943|Orchidaceae|蘭科|東亞脈葉蘭|Nervilia aragoana|Nervilia aragoana Gaudich.|4|0|LC|原生
-4944|Orchidaceae|蘭科|四重溪脈葉蘭|Nervilia crociformis|Nervilia crociformis (Zoll. & Moritzi) Seidenf.|4|0|VU|未知
+4944|Orchidaceae|蘭科|四重溪脈葉蘭|Nervilia crociformis|Nervilia crociformis (Zoll. & Moritzi) Seidenf.|4|0|VU|未知
 4945|Orchidaceae|蘭科|古氏脈葉蘭|Nervilia cumberlegei|Nervilia cumberlegei Seidenf. & Smitin.|4|0|CR|原生
 5607|Orchidaceae|蘭科|鐮唇脈葉蘭|Nervilia falcata|Nervilia falcata (King & Pantl.) Schltr.|4|0|CR|原生
 4946|Orchidaceae|蘭科|蘭嶼脈葉蘭|Nervilia lanyuensis|Nervilia lanyuensis S.S. Ying|4|1|NT|原生
@@ -4221,7 +4246,7 @@
 4961|Orchidaceae|蘭科|紫葉齒唇蘭|Odontochilus elwesii|Odontochilus elwesii C.B. Clarke ex Hook. f.|4|0|CR|原生
 4962|Orchidaceae|蘭科|單囊齒唇蘭|Odontochilus inabai|Odontochilus inabai (Hayata) Hayata ex T.P. Lin|4|0|LC|原生
 4963|Orchidaceae|蘭科|雙囊齒唇蘭|Odontochilus lanceolatus|Odontochilus lanceolatus (Lindl.) Blume|4|0|LC|原生
-4964|Orchidaceae|蘭科|南嶺齒唇蘭|Odontochilus nanlingensis|Odontochilus nanlingensis (L.P. Siu & K.Y. Lang) Ormerod|4|0|NT|未知
+4964|Orchidaceae|蘭科|南嶺齒唇蘭|Odontochilus nanlingensis|Odontochilus nanlingensis (L.P. Siu & K.Y. Lang) Ormerod|4|0|NT|未知
 5542|Orchidaceae|蘭科|齒爪齒唇蘭|Odontochilus poilanei|Odontochilus poilanei (Gagnep.) Ormerod|4|0|CR|原生
 5895|Orchidaceae|蘭科|文心蘭|Oncidium flexuosum|Oncidium flexuosum Lodd.|4|0||栽培
 4965|Orchidaceae|蘭科|雙板山蘭|Oreorchis bilamellata|Oreorchis bilamellata Fukuy.|4|1|VU|原生
@@ -4236,7 +4261,7 @@
 4973|Orchidaceae|蘭科|臺灣鷺草|Peristylus formosanus|Peristylus formosanus (Schltr.) T.P. Lin|4|0|LC|原生
 4974|Orchidaceae|蘭科|南投闊蕊蘭|Peristylus goodyeroides|Peristylus goodyeroides (D. Don) Lindl.|4|0|LC|原生
 5521|Orchidaceae|蘭科|纖細闊蕊蘭|Peristylus gracilis|Peristylus gracilis Blume|4|0|EN|原生
-4976|Orchidaceae|蘭科|短裂闊蕊蘭|Peristylus intrudens|Peristylus intrudens (Ames) Ormerod|4|0||未知
+4976|Orchidaceae|蘭科|短裂闊蕊蘭|Peristylus intrudens|Peristylus intrudens (Ames) Ormerod|4|0||未知
 4975|Orchidaceae|蘭科|裂唇闊蕊蘭|Peristylus lacertifer|Peristylus lacertifer (Lindl.) J.J. Sm.|4|0|NT|原生
 4977|Orchidaceae|蘭科|黃鶴頂蘭|Phaius flavus|Phaius flavus (Blume) Lindl.|4|0|LC|原生
 4978|Orchidaceae|蘭科|細莖鶴頂蘭|Phaius mishmensis|Phaius mishmensis (Lindl. & Paxton) Rchb. f.|4|0|LC|原生
@@ -4245,7 +4270,7 @@
 4981|Orchidaceae|蘭科|白蝴蝶蘭|Phalaenopsis aphrodite|Phalaenopsis aphrodite Rchb. f.|4|0|CR|原生
 4982|Orchidaceae|蘭科|偃花蝴蝶蘭|Phalaenopsis decumbens|Phalaenopsis decumbens (Griff.) Holttum|4|0||未知
 4983|Orchidaceae|蘭科|羅比氏蝴蝶蘭|Phalaenopsis decumbens var. lobbii|Phalaenopsis decumbens var. lobbii (Rchb. f.) P.F. Hunt|4|0||未知
-4984|Orchidaceae|蘭科|粉紅蝴蝶蘭|Phalaenopsis equestris|Phalaenopsis equestris (Schauer) Rchb. f.|4|0|CR|原生
+4984|Orchidaceae|蘭科|桃紅蝴蝶蘭|Phalaenopsis equestris|Phalaenopsis equestris (Schauer) Rchb. f.|4|0|CR|原生
 4985|Orchidaceae|蘭科|烏來石山桃|Pholidota cantonensis|Pholidota cantonensis Rolfe|4|0|LC|原生
 4986|Orchidaceae|蘭科|垂莖芙樂蘭|Phreatia caulescens|Phreatia caulescens Ames|4|0|CR|原生
 4987|Orchidaceae|蘭科|寶島芙樂蘭|Phreatia formosana|Phreatia formosana Rolfe ex Hemsl.|4|0|LC|原生
@@ -4318,14 +4343,12 @@
 5045|Orchidaceae|蘭科|臺灣凡尼蘭|Vanilla albida|Vanilla albida Blume|4|0|LC|原生
 5046|Orchidaceae|蘭科|姬氏凡尼蘭|Vanilla griffithii|Vanilla griffithii Rchb. f.|4|0||未知
 5047|Orchidaceae|蘭科|綠葉旗唇蘭|Vexillabium integrum|Vexillabium integrum (Fukuy.) S.S. Ying|4|1|VU|原生
-5524|Orchidaceae|蘭科|精巧旗唇蘭|Vexillabium nakaianum|Vexillabium nakaianum Maek.|4|0||原生
 5048|Orchidaceae|蘭科|紫葉旗唇蘭|Vexillabium yakushimense|Vexillabium yakushimense (Yamam.) F. Maek.|4|0|LC|原生
 5049|Orchidaceae|蘭科|二尾蘭|Vrydagzynea nuda|Vrydagzynea nuda Blume|4|0|LC|原生
 5214|Orchidaceae|蘭科|密鱗長花柄蘭|Yoania amagiensis var. squamipes|Yoania amagiensis var. squamipes C.L. Yeh & C.S. Leou|4|1|CR|原生
 5050|Orchidaceae|蘭科|長花柄蘭|Yoania japonica|Yoania japonica Maxim.|4|0|EN|原生
 5051|Orchidaceae|蘭科|白花線柱蘭|Zeuxine affinis|Zeuxine affinis (Lindl.) Benth. ex Hook. f.|4|0|LC|原生
 5052|Orchidaceae|蘭科|阿玉線柱蘭|Zeuxine agyokuana|Zeuxine agyokuana Fukuy.|4|0|LC|原生
-5053|Orchidaceae|蘭科|黃花線柱蘭|Zeuxine flava|Zeuxine flava (Wall. ex Lindl.) Trimen|4|0|DD|未知
 5054|Orchidaceae|蘭科|全唇線柱蘭|Zeuxine integrilabella|Zeuxine integrilabella C.S. Leou|4|1|VU|原生
 5055|Orchidaceae|蘭科|關刀溪線柱蘭|Zeuxine kantokeiensis|Zeuxine kantokeiensis Tatew. & Masam.|4|0|DD|原生
 5056|Orchidaceae|蘭科|臺灣線柱蘭|Zeuxine nervosa|Zeuxine nervosa (Wall. ex Lindl.) Trimen|4|0|LC|原生
@@ -4345,7 +4368,6 @@
 1891|Oxalidaceae|酢漿草科|楊桃|Averrhoa carambola|Averrhoa carambola L.|4|0||歸化
 1892|Oxalidaceae|酢漿草科|羞禮花|Biophytum sensitivum|Biophytum sensitivum (L.) DC.|4|0|LC|原生
 1893|Oxalidaceae|酢漿草科|臺灣山酢漿草|Oxalis acetosella subsp. formosana|Oxalis acetosella subsp. formosana (Terao) S.F. Huang & T.C. Huang|4|0|LC|原生
-1894|Oxalidaceae|酢漿草科|山酢漿草|Oxalis acetosella subsp. griffithii|Oxalis acetosella subsp. griffithii (Edgew. & Hook. f.) Hara|4|0||未知
 1895|Oxalidaceae|酢漿草科|大霸尖山酢漿草|Oxalis acetosella subsp. taemoni|Oxalis acetosella subsp. taemoni (Yamam.) S.F. Huang & T.C. Huang|4|1|VU|原生
 1896|Oxalidaceae|酢漿草科|酢漿草|Oxalis corniculata|Oxalis corniculata L.|4|0|LC|原生
 1897|Oxalidaceae|酢漿草科|紫花酢漿草|Oxalis corymbosa|Oxalis corymbosa DC.|4|0|NA|歸化
@@ -4372,7 +4394,7 @@
 3104|Phrymaceae|透骨草科|蠅毒草|Phryma leptostachya|Phryma leptostachya L.|4|0|VU|原生
 1033|Phytolaccaceae|商陸科|臺灣商陸|Phytolacca acinosa|Phytolacca acinosa Roxb.|4|0||未知
 1034|Phytolaccaceae|商陸科|美洲商陸|Phytolacca americana|Phytolacca americana L.|4|0|NA|歸化
-5571|Phytolaccaceae|商陸科|二十蕊商陸|Phytolacca icosandra|Phytolacca icosandra L.|4|0||歸化
+5571|Phytolaccaceae|商陸科|二十蕊商陸|Phytolacca icosandra|Phytolacca icosandra L.|4|0||歸化
 1035|Phytolaccaceae|商陸科|日本商陸|Phytolacca japonica|Phytolacca japonica Makino|4|0|LC|原生
 1036|Phytolaccaceae|商陸科|數珠珊瑚|Rivina humilis|Rivina humilis L.|4|0|NA|歸化
 6313|Piperaceae|胡椒科|皺葉椒草|Peperomia caperata|Peperomia caperata Ruiz et Pav. ex Yuncher|4|0||栽培
@@ -4391,7 +4413,7 @@
 1269|Piperaceae|胡椒科|多脈風藤|Piper interruptum var. multinervum|Piper interruptum var. multinervum C. DC.|4|0|DD|原生
 1270|Piperaceae|胡椒科|風藤|Piper kadsura|Piper kadsura (Choisy) Ohwi|4|0|LC|原生
 1271|Piperaceae|胡椒科|恆春風藤|Piper kawakamii|Piper kawakamii Hayata|4|1|LC|原生
-1272|Piperaceae|胡椒科|菲律賓胡椒|Piper kwashoense|Piper kwashoense Hayata|4|0||原生
+1272|Piperaceae|胡椒科|綠島風藤|Piper kwashoense|Piper kwashoense Hayata|4|1||原生
 6563|Piperaceae|胡椒科|假蒟|Piper sarmentosum|Piper sarmentosum Roxb.|4|0|NA|歸化
 1273|Piperaceae|胡椒科|薄葉風藤|Piper sintenense|Piper sintenense Hatus.|4|1|LC|原生
 1274|Piperaceae|胡椒科|臺灣荖藤|Piper taiwanense|Piper taiwanense Lin & Lu|4|1|LC|原生
@@ -4401,7 +4423,7 @@
 1502|Pittosporaceae|海桐科|疏果海桐|Pittosporum illicioides|Pittosporum illicioides Makino|4|0|LC|原生
 1503|Pittosporaceae|海桐科|細葉疏果海桐|Pittosporum illicioides var. angustifolium|Pittosporum illicioides var. angustifolium Huang ex S.Y. Lu|4|1|VU|原生
 1504|Pittosporaceae|海桐科|蘭嶼海桐|Pittosporum moluccanum|Pittosporum moluccanum Miq.|4|0|LC|原生
-1505|Pittosporaceae|海桐科|臺灣海桐|Pittosporum pentandrum|Pittosporum pentandrum (Blanco) Merr.|4|0||原生
+1505|Pittosporaceae|海桐科|七里香|Pittosporum pentandrum|Pittosporum pentandrum (Blanco) Merr.|4|0||原生
 1506|Pittosporaceae|海桐科|海桐|Pittosporum tobira|Pittosporum tobira (Thunb.) W.T. Aiton|4|0|LC|原生
 3411|Plantaginaceae|車前科|車前草|Plantago asiatica|Plantago asiatica L.|4|0|LC|原生
 3412|Plantaginaceae|車前科|長葉車前草|Plantago lanceolata|Plantago lanceolata L.|4|0|NA|歸化
@@ -4418,7 +4440,7 @@
 4173|Poaceae|禾本科|阿里山翦股穎|Agrostis arisan-montana|Agrostis arisan-montana Ohwi|4|1|LC|原生
 4169|Poaceae|禾本科|類燕麥翦股穎|Agrostis avenacea|Agrostis avenacea J.F. Gmel.|4|0|NA|歸化
 4170|Poaceae|禾本科|翦股穎|Agrostis clavata|Agrostis clavata Trin.|4|0|LC|原生
-4171|Poaceae|禾本科|多形翦股穎|Agrostis dimorpholemma|Agrostis dimorpholemma Ohwi|4|0|EN|原生
+4171|Poaceae|禾本科|多形翦穎|Agrostis dimorpholemma|Agrostis dimorpholemma Ohwi|4|0|EN|原生
 4175|Poaceae|禾本科|伯明翦股穎|Agrostis fukuyamae|Agrostis fukuyamae Ohwi|4|1|LC|原生
 4172|Poaceae|禾本科|玉山翦股穎|Agrostis infirma|Agrostis infirma Buse|4|0|LC|原生
 4174|Poaceae|禾本科|草山翦股穎|Agrostis sozanensis|Agrostis sozanensis Hayata|4|1|LC|原生
@@ -4436,7 +4458,7 @@
 5746|Poaceae|禾本科|燕麥草|Arrhenatherum elatius|Arrhenatherum elatius (L.) Beauv. ex J.& K. Presl|4|0||栽培
 4187|Poaceae|禾本科|變葉燕麥草|Arrhenatherum elatius fo. variegatum|Arrhenatherum elatius fo. variegatum Hitchc.|4|0|NA|歸化
 4188|Poaceae|禾本科|藎草|Arthraxon hispidus|Arthraxon hispidus (Thunb.) Makino|4|0|LC|原生
-4189|Poaceae|禾本科|小葉藎草|Arthraxon lancifolius|Arthraxon lancifolius (Trin.) Hochst.|4|0|VU|歸化
+4189|Poaceae|禾本科|小葉藎草|Arthraxon lancifolius|Arthraxon lancifolius (Trin.) Hochst.|4|0|VU|歸化
 4190|Poaceae|禾本科|粗梗藎草|Arthraxon pauciflorus|Arthraxon pauciflorus Honda|4|1|DD|原生
 4191|Poaceae|禾本科|暖地藎草|Arthraxon quartinianus|Arthraxon quartinianus (A. Rich.) Nash|4|0|LC|原生
 4192|Poaceae|禾本科|內文竹|Arthrostylidium naibunensis|Arthrostylidium naibunensis (Hayata) W.C. Lin|4|1|DD|原生
@@ -4479,7 +4501,7 @@
 6572|Poaceae|禾本科|大穗孔穎草|Bothriochloa macera|Bothriochloa macera (Steud.) S.T. Blake|4|0|NA|歸化
 6496|Poaceae|禾本科|信號草|Brachiaria brizantha|Brachiaria brizantha Stapf.|4|0||栽培
 4228|Poaceae|禾本科|巴拉草|Brachiaria mutica|Brachiaria mutica (Forssk.) Stapf|4|0|NA|歸化
-4229|Poaceae|禾本科|尾桴草|Brachiaria reptans|Brachiaria reptans (L.) C.A. Gardner & C.E. Hubb.|4|0||原生
+4229|Poaceae|禾本科|尾稃草|Brachiaria reptans|Brachiaria reptans (L.) C.A. Gardner & C.E. Hubb.|4|0||原生
 4230|Poaceae|禾本科|四生臂形草|Brachiaria subquadripara|Brachiaria subquadripara (Trin.) Hitchc.|4|0|LC|原生
 4231|Poaceae|禾本科|毛臂形草|Brachiaria villosa|Brachiaria villosa (Lam.) A. Camus|4|0|LC|原生
 4232|Poaceae|禾本科|川上短柄草|Brachypodium kawakamii|Brachypodium kawakamii Hayata|4|1|LC|原生
@@ -4500,7 +4522,7 @@
 4246|Poaceae|禾本科|綠島細柄草|Capillipedium kwashotensis|Capillipedium kwashotensis (Hayata) C.C. Hsu|4|1|NT|原生
 4247|Poaceae|禾本科|細柄草|Capillipedium parviflorum|Capillipedium parviflorum (R. Br.) Stapf|4|0|LC|原生
 4248|Poaceae|禾本科|多節細柄草|Capillipedium parviflorum var. spicigerum|Capillipedium parviflorum var. spicigerum (Benth.) Roberty|4|0|LC|原生
-4249|Poaceae|禾本科|野牛草|Cenchrus ciliaris|Cenchrus ciliaris L.|4|0||歸化
+4249|Poaceae|禾本科|水牛草|Cenchrus ciliaris|Cenchrus ciliaris L.|4|0||歸化
 4250|Poaceae|禾本科|蒺藜草|Cenchrus echinatus|Cenchrus echinatus L.|4|0|NA|歸化
 4251|Poaceae|禾本科|假淡竹葉|Centotheca lappacea|Centotheca lappacea (L.) Desv.|4|0|NT|原生
 4252|Poaceae|禾本科|無芒山澗草|Chikusichloa mutica|Chikusichloa mutica Keng|4|0|CR|原生
@@ -4516,7 +4538,7 @@
 4261|Poaceae|禾本科|竹節草|Chrysopogon aciculatus|Chrysopogon aciculatus (Retz.) Trin.|4|0|LC|原生
 4263|Poaceae|禾本科|薏苡|Coix lacryma-jobi|Coix lacryma-jobi L.|4|0|NA|歸化
 4262|Poaceae|禾本科|臺灣薏苡|Coix lacryma-jobi var. formosana|Coix lacryma-jobi var. formosana Ohwi|4|0||未知
-4264|Poaceae|禾本科|檸檬茅|Cymbopogon citratus|Cymbopogon citratus (DC.) Stapf|4|0||歸化
+4264|Poaceae|禾本科|檸檬香茅|Cymbopogon citratus|Cymbopogon citratus (DC.) Stapf|4|0||歸化
 4265|Poaceae|禾本科|香茅|Cymbopogon nardus|Cymbopogon nardus (L.) Rendle|4|0|NA|歸化
 4266|Poaceae|禾本科|扭鞘香茅|Cymbopogon tortilis|Cymbopogon tortilis (J. Presl) Hitchc.|4|0|LC|原生
 4267|Poaceae|禾本科|橘草|Cymbopogon tortilis var. goeringii|Cymbopogon tortilis var. goeringii (Steud.) Hand.-Mazz.|4|0||未知
@@ -4655,7 +4677,7 @@
 4389|Poaceae|禾本科|班入鳳凰竹|Leleba floribunda fo. albovariegata|Leleba floribunda fo. albovariegata (Makino) Nakai|4|0||未知
 4390|Poaceae|禾本科|紅鳳凰竹|Leleba floribunda fo. viridistriata|Leleba floribunda fo. viridistriata (Makino ex Tsuboi) Nakai|4|0||未知
 4391|Poaceae|禾本科|蘇方竹|Leleba multiplex fo. alphonsokarri|Leleba multiplex fo. alphonsokarri (Mitford ex Satow) Nakai|4|0||未知
-4392|Poaceae|禾本科|囊桴竹|Leptaspis formosana|Leptaspis formosana C.C. Hsu|4|1|CR|原生
+4392|Poaceae|禾本科|囊稃竹|Leptaspis formosana|Leptaspis formosana C.C. Hsu|4|1|CR|原生
 4393|Poaceae|禾本科|千金子|Leptochloa chinensis|Leptochloa chinensis (L.) Nees|4|0|LC|原生
 4305|Poaceae|禾本科|雙稃草|Leptochloa fusca|Leptochloa fusca (L.) Kunth|4|0|LC|原生
 4394|Poaceae|禾本科|團穗千金子|Leptochloa fusca subsp. fascicularis|Leptochloa fusca subsp. fascicularis (Lam.) N. Snow|4|0|NA|歸化
@@ -4679,10 +4701,10 @@
 4408|Poaceae|禾本科|日本莠竹|Microstegium japonicum|Microstegium japonicum (Miq.) Koidz.|4|0|LC|原生
 4409|Poaceae|禾本科|竹葉茅|Microstegium nudum|Microstegium nudum (Trin.) A. Camus|4|0|LC|原生
 4410|Poaceae|禾本科|相馬莠竹|Microstegium somae|Microstegium somae (Hayata) Ohwi|4|1|LC|原生
-6186|Poaceae|禾本科|None|Microstegium spectabile|Microstegium spectabile (Trin.) A. Camus|4|0||栽培
+6186|Poaceae|禾本科|大莠竹|Microstegium spectabile|Microstegium spectabile (Trin.) A. Camus|4|0||栽培
 5898|Poaceae|禾本科|纖細莠竹|Microstegium tenue|Microstegium tenue (Trin.) Hosok|4|0|NA|原生
 4411|Poaceae|禾本科|柔枝莠竹|Microstegium vimineum|Microstegium vimineum (Trin.) A. Camus|4|0|LC|原生
-4412|Poaceae|禾本科|栗草|Milium effusum|Milium effusum L.|4|0||原生
+4412|Poaceae|禾本科|粟草|Milium effusum|Milium effusum L.|4|0||原生
 4413|Poaceae|禾本科|五節芒|Miscanthus floridulus|Miscanthus floridulus (Labill.) Warb. ex K. Schum. & Lauterb.|4|0|LC|原生
 4414|Poaceae|禾本科|金平芒|Miscanthus kanehirae|Miscanthus kanehirae Honda|4|0||未知
 4416|Poaceae|禾本科|芒|Miscanthus sinensis|Miscanthus sinensis Andersson|4|0|LC|原生
@@ -4708,14 +4730,14 @@
 6213|Poaceae|禾本科|東非野生稻|Oryza punctata|Oryza punctata Kotschy ex Steud.|4|0||栽培
 4425|Poaceae|禾本科|野生稻|Oryza rufipogon|Oryza rufipogon Griff.|4|0|RE|原生
 4426|Poaceae|禾本科|稻子|Oryza sativa|Oryza sativa L.|4|0||栽培
-4427|Poaceae|禾本科|純頭落芒草|Oryzopsis obtusa|Oryzopsis obtusa Stapf|4|0|CR|原生
+4427|Poaceae|禾本科|鈍頭落芒草|Oryzopsis obtusa|Oryzopsis obtusa Stapf|4|0|CR|原生
 4428|Poaceae|禾本科|新店奧圖草|Ottochloa nodosa|Ottochloa nodosa (Kunth) Dandy|4|0|LC|原生
 4429|Poaceae|禾本科|糠稷|Panicum bisulcatum|Panicum bisulcatum Thunb.|4|0|LC|原生
 4430|Poaceae|禾本科|短葉黍|Panicum brevifolium|Panicum brevifolium L.|4|0|LC|原生
 4431|Poaceae|禾本科|水社黍|Panicum curviflorum var. suishaense|Panicum curviflorum var. suishaense (Hayata) Veldkamp|4|0|CR|原生
 4432|Poaceae|禾本科|洋野黍|Panicum dichotomiflorum|Panicum dichotomiflorum Michx.|4|0|NA|歸化
 4433|Poaceae|禾本科|南亞黍|Panicum humile|Panicum humile Nees ex Steud.|4|0|LC|原生
-4434|Poaceae|禾本科|綱脈稷|Panicum luzonense|Panicum luzonense J. Presl|4|0|EN|原生
+4434|Poaceae|禾本科|網脈稷|Panicum luzonense|Panicum luzonense J. Presl|4|0|EN|原生
 4435|Poaceae|禾本科|大黍|Panicum maximum|Panicum maximum Jacq.|4|0|NA|歸化
 4436|Poaceae|禾本科|稷|Panicum miliaceum|Panicum miliaceum L.|4|0|NA|歸化
 4437|Poaceae|禾本科|心葉稷|Panicum notatum|Panicum notatum Retz.|4|0|LC|原生
@@ -4731,7 +4753,7 @@
 4447|Poaceae|禾本科|雙穗雀稗|Paspalum distichum|Paspalum distichum L.|4|0|LC|原生
 4448|Poaceae|禾本科|裂穎雀稗|Paspalum fimbriatum|Paspalum fimbriatum Kunth|4|0|NA|歸化
 4449|Poaceae|禾本科|長葉雀稗|Paspalum longifolium|Paspalum longifolium Roxb.|4|0|LC|原生
-4450|Poaceae|禾本科|百喜草|Paspalum notatum|Paspalum notatum Flüggé|4|0||歸化
+4450|Poaceae|禾本科|巴西亞雀稗|Paspalum notatum|Paspalum notatum Flüggé|4|0||歸化
 4451|Poaceae|禾本科|圓果雀稗|Paspalum orbiculare|Paspalum orbiculare G. Forst.|4|0|LC|原生
 4452|Poaceae|禾本科|多穗雀稗|Paspalum paniculatum|Paspalum paniculatum L.|4|0|NA|歸化
 6033|Poaceae|禾本科|高雀稗|Paspalum plicatulum|Paspalum plicatulum Michx.|4|0||栽培
@@ -4822,7 +4844,7 @@
 5445|Poaceae|禾本科|擬高粱|Sorghum propinquum|Sorghum propinquum (Kunth) Hitchc.|4|0|NA|歸化
 6000|Poaceae|禾本科|蘇丹草|Sorghum sudanense|Sorghum sudanense (Piper) Stapf.|4|0||栽培
 4517|Poaceae|禾本科|互花米草|Spartina alterniflora|Spartina alterniflora Loisel.|4|0|NA|歸化
-4518|Poaceae|禾本科|桴藎|Sphaerocaryum malaccense|Sphaerocaryum malaccense (Trin.) Pilg.|4|0||原生
+4518|Poaceae|禾本科|稃藎|Sphaerocaryum malaccense|Sphaerocaryum malaccense (Trin.) Pilg.|4|0||原生
 4519|Poaceae|禾本科|濱刺草|Spinifex littoreus|Spinifex littoreus (Burm. f.) Merr.|4|0|LC|原生
 4520|Poaceae|禾本科|臺南大油芒|Spodiopogon tainanensis|Spodiopogon tainanensis Hayata|4|1|LC|原生
 4521|Poaceae|禾本科|雙梗大油芒|Spodiopogon tainanensis fo. hayatae|Spodiopogon tainanensis fo. hayatae (Honda) C.C. Hsu|4|0||未知
@@ -4850,7 +4872,6 @@
 4541|Poaceae|禾本科|臺灣三毛草|Trisetum spicatum var. formosanum|Trisetum spicatum var. formosanum (Honda) Ohwi|4|1|LC|原生
 4542|Poaceae|禾本科|小麥|Triticum aestivum|Triticum aestivum L.|4|0||歸化
 5505|Poaceae|禾本科|雀稗尾稃草|Urochloa glumaris|Urochloa glumaris (Trin.) Veldkamp|4|0|NT|原生
-6239|Poaceae|禾本科|尾稃草|Urochloa reptans|Urochloa reptans (L.) Stapf|4|0|LC|原生
 4543|Poaceae|禾本科|培地茅|Vetiveria zizanioides|Vetiveria zizanioides (L.) Nash|4|0|NA|歸化
 4544|Poaceae|禾本科|鼠茅|Vulpia myuros|Vulpia myuros (L.) C.C. Gmel.|4|0|NA|歸化
 4545|Poaceae|禾本科|玉山箭竹|Yushania niitakayamensis|Yushania niitakayamensis (Hayata) Keng f.|4|0|LC|原生
@@ -4953,7 +4974,7 @@
 5564|Primulaceae|報春花科|澤珍珠菜|Lysimachia candida|Lysimachia candida Lindl.|4|0|RE|原生
 2680|Primulaceae|報春花科|排香草|Lysimachia capillipes|Lysimachia capillipes Hemsl.|4|0|LC|原生
 2681|Primulaceae|報春花科|清水山過路黃|Lysimachia chingshuiensis|Lysimachia chingshuiensis C.I. Peng & C.M. Hu|4|1|CR|原生
-2682|Primulaceae|報春花科|叢生花珍珠菜|Lysimachia congestiflora|Lysimachia congestiflora Hemsl.|4|0||原生
+2682|Primulaceae|報春花科|臺灣珍珠菜|Lysimachia congestiflora|Lysimachia congestiflora Hemsl.|4|0||原生
 2683|Primulaceae|報春花科|異葉珍珠菜|Lysimachia decurrens|Lysimachia decurrens G. Forst.|4|0|LC|原生
 2684|Primulaceae|報春花科|星宿菜|Lysimachia fortunei|Lysimachia fortunei Maxim.|4|0|LC|原生
 2685|Primulaceae|報春花科|小茄|Lysimachia japonica|Lysimachia japonica Thunb.|4|0|LC|原生
@@ -5069,10 +5090,9 @@
 5455|Rhamnaceae|鼠李科|無刺棗|Ziziphus jujuba var. inermis|Ziziphus jujuba var. inermis (Bunge) Rehder|4|0||未知
 5099|Rhamnaceae|鼠李科|印度棗|Ziziphus mauritiana|Ziziphus mauritiana Lam.|4|0||歸化
 5802|Rhamnaceae|鼠李科|大棗|Ziziphus vulgaris var. inermis|Ziziphus vulgaris var. inermis Bunge|4|0||栽培
-5234|Rhizophoraceae|紅樹科|紅茄苳|Bruguiera gymnorhiza|Bruguiera gymnorhiza (L.) Savigny|4|0|RE|原生
+5234|Rhizophoraceae|紅樹科|紅茄冬|Bruguiera gymnorhiza|Bruguiera gymnorhiza (L.) Savigny|4|0|RE|原生
 5235|Rhizophoraceae|紅樹科|細蕊紅樹|Ceriops tagal|Ceriops tagal (Perr.) C.B. Rob.|4|0|RE|原生
 2480|Rhizophoraceae|紅樹科|水筆仔|Kandelia obovata|Kandelia obovata Sheue, H.Y. Liu & J. Yong|4|0|NT|原生
-2481|Rhizophoraceae|紅樹科|五梨跤|Rhizophora mucronata|Rhizophora mucronata Lam.|4|0||未知
 2482|Rhizophoraceae|紅樹科|紅海欖|Rhizophora stylosa|Rhizophora stylosa Griff.|4|0|VU|原生
 1507|Rosaceae|薔薇科|龍牙草|Agrimonia pilosa|Agrimonia pilosa Ledeb.|4|0|LC|原生
 1508|Rosaceae|薔薇科|赤楊葉梨|Aria alnifolia|Aria alnifolia (Siebold & Zucc.) Decne.|4|0|EN|原生
@@ -5085,7 +5105,7 @@
 1512|Rosaceae|薔薇科|花蓮舖地蜈蚣|Cotoneaster hualiensis|Cotoneaster hualiensis J. Fryer & B. Hylmo|4|0||原生
 1513|Rosaceae|薔薇科|臺灣舖地蜈蚣|Cotoneaster konishii|Cotoneaster konishii Hayata|4|1|LC|原生
 1514|Rosaceae|薔薇科|玉山舖地蜈蚣|Cotoneaster morrisonensis|Cotoneaster morrisonensis Hayata|4|1|LC|原生
-1515|Rosaceae|薔薇科|樂山鋪地蜈蚣|Cotoneaster rokujodaisanensis|Cotoneaster rokujodaisanensis Hayata|4|0||原生
+1515|Rosaceae|薔薇科|樂山舖地蜈蚣|Cotoneaster rokujodaisanensis|Cotoneaster rokujodaisanensis Hayata|4|1||原生
 5531|Rosaceae|薔薇科|粉紅花舖地蜈蚣|Cotoneaster rosiflorus|Cotoneaster rosiflorus K.C. Chang & F.Y. Lu|4|1|NT|原生
 1516|Rosaceae|薔薇科|高山栒子|Cotoneaster subadpressus|Cotoneaster subadpressus T.T. Yu|4|0|VU|原生
 5460|Rosaceae|薔薇科|野山楂|Crataegus cuneata|Crataegus cuneata Siebold & Zucc.|4|0||未知
@@ -5132,7 +5152,7 @@
 1549|Rosaceae|薔薇科|郁李|Prunus japonica|Prunus japonica Thunb.|4|0|NA|歸化
 895|Rosaceae|薔薇科|太平山櫻花|Prunus matuurae|Prunus matuurae Sasaki|4|1|LC|原生
 1182|Rosaceae|薔薇科|梅|Prunus mume|Prunus mume (Siebold) Siebold & Zucc.|4|0|NA|歸化
-1550|Rosaceae|薔薇科|臺灣稠李|Prunus obtusata|Prunus obtusata Koehne|4|0|EN|原生
+1550|Rosaceae|薔薇科|臺灣椆李|Prunus obtusata|Prunus obtusata Koehne|4|0|EN|原生
 1551|Rosaceae|薔薇科|桃|Prunus persica|Prunus persica (L.) Batsch|4|0||未知
 1552|Rosaceae|薔薇科|墨點櫻桃|Prunus phaeosticta|Prunus phaeosticta (Hance) Maxim.|4|0|LC|原生
 1553|Rosaceae|薔薇科|冬青葉桃仁|Prunus phaeosticta var. ilicifolia|Prunus phaeosticta (Hance) Maxim. var. ilicifolia Yamam.|4|0|EN|原生
@@ -5188,11 +5208,11 @@
 1595|Rosaceae|薔薇科|蘭嶼懸鉤子|Rubus lanyuensis|Rubus lanyuensis Chang|4|1|NT|原生
 6003|Rosaceae|薔薇科|細葉懸鉤子|Rubus linearifolius|Rubus linearifolius Hayata|4|0||栽培
 1596|Rosaceae|薔薇科|柳氏懸鉤子|Rubus liui|Rubus liui Y.P. Yang & S.Y. Lu|4|1|LC|原生
-1597|Rosaceae|薔薇科|裡白懸鉤子|Rubus mesogaeus|Rubus mesogaeus Focke|4|0||原生
+1597|Rosaceae|薔薇科|裏白懸鉤子|Rubus mesogaeus|Rubus mesogaeus Focke|4|0||原生
 1598|Rosaceae|薔薇科|尾葉懸鉤子|Rubus morii|Rubus morii Hayata|4|1|LC|原生
 1599|Rosaceae|薔薇科|粗毛懸鉤子|Rubus nagasawanus|Rubus nagasawanus Koidz.|4|1|VU|原生
 1600|Rosaceae|薔薇科|白絨懸鉤子|Rubus niveus|Rubus niveus Thunb.|4|0|LC|原生
-1601|Rosaceae|薔薇科|小梣葉懸鉤子|Rubus parviaraliifolius|Rubus parviaraliifolius Hayata|4|1||原生
+1601|Rosaceae|薔薇科|小楤葉懸鉤子|Rubus parviaraliifolius|Rubus parviaraliifolius Hayata|4|1||原生
 1602|Rosaceae|薔薇科|紅梅消|Rubus parvifolius|Rubus parvifolius L.|4|0|LC|原生
 1603|Rosaceae|薔薇科|臺東紅梅消|Rubus parvifolius var. toapiensis|Rubus parvifolius var. toapiensis (Yamam.) Hosok.|4|1|DD|原生
 1604|Rosaceae|薔薇科|刺萼寒莓|Rubus pectinellus|Rubus pectinellus Maxim.|4|0|LC|原生
@@ -5202,8 +5222,8 @@
 1608|Rosaceae|薔薇科|梨葉懸鉤子|Rubus pyrifolius|Rubus pyrifolius Sm.|4|0|LC|原生
 1609|Rosaceae|薔薇科|李棟山懸鉤子|Rubus ritozanensis|Rubus ritozanensis Sasaki|4|1|LC|原生
 1610|Rosaceae|薔薇科|高山懸鉤子|Rubus rolfei|Rubus rolfei S. Vidal|4|0|NT|原生
-6347|Rosaceae|薔薇科|None|Rubus rosifolius|Rubus rosifolius ×fraxinifolius Juinn-Yih Huang and Jer-Ming Hu|4|0||栽培
 1611|Rosaceae|薔薇科|刺莓|Rubus rosifolius|Rubus rosifolius Sm.|4|0|LC|原生
+6347|Rosaceae|薔薇科|None|Rubus rosifolius|Rubus rosifolius ×fraxinifolius Juinn-Yih Huang and Jer-Ming Hu|4|0||栽培
 1612|Rosaceae|薔薇科|棕紅懸鉤子|Rubus rufus|Rubus rufus Focke|4|0|NT|原生
 1613|Rosaceae|薔薇科|紅腺懸鉤子|Rubus sumatranus|Rubus sumatranus Miq.|4|0|EN|原生
 1614|Rosaceae|薔薇科|斯氏懸鉤子|Rubus swinhoei|Rubus swinhoei Hance|4|0|LC|原生
@@ -5236,7 +5256,7 @@
 2870|Rubiaceae|茜草科|無刺伏牛花|Damnacanthus angustifolius|Damnacanthus angustifolius Hayata|4|1|LC|原生
 2871|Rubiaceae|茜草科|伏牛花|Damnacanthus indicus|Damnacanthus indicus C.F. Gaertn.|4|0|LC|原生
 2872|Rubiaceae|茜草科|小牙草|Dentella repens|Dentella repens (L.) J.R. Forst. & G. Forst.|4|0|LC|原生
-2873|Rubiaceae|茜草科|維州鈕扣草|Diodia virginiana|Diodia virginiana L.|4|0||歸化
+2873|Rubiaceae|茜草科|維州鈕釦草|Diodia virginiana|Diodia virginiana L.|4|0||歸化
 2874|Rubiaceae|茜草科|刺果豬殃殃|Galium echinocarpum|Galium echinocarpum Hayata|4|1|LC|原生
 2875|Rubiaceae|茜草科|圓葉豬殃殃|Galium formosense|Galium formosense Ohwi|4|1|LC|原生
 2876|Rubiaceae|茜草科|福山氏豬殃殃|Galium fukuyamai|Galium fukuyamai Masam.|4|1|VU|原生
@@ -5258,7 +5278,7 @@
 2891|Rubiaceae|茜草科|臭涼喉茶|Hedyotis butensis|Hedyotis butensis Masam.|4|1|DD|原生
 2892|Rubiaceae|茜草科|金毛耳草|Hedyotis chrysotricha|Hedyotis chrysotricha (Palib.) Merr.|4|0|VU|原生
 2893|Rubiaceae|茜草科|繖花龍吐珠|Hedyotis corymbosa|Hedyotis corymbosa (L.) Lam.|4|0|LC|原生
-2894|Rubiaceae|茜草科|白花蛇舌草|Hedyotis diffusa|Hedyotis diffusa Willd.|4|0||原生
+2894|Rubiaceae|茜草科|定經草|Hedyotis diffusa|Hedyotis diffusa Willd.|4|0||原生
 2895|Rubiaceae|茜草科|南投涼喉茶|Hedyotis hedyotidea|Hedyotis hedyotidea (DC.) Merr.|4|0|LC|原生
 5606|Rubiaceae|茜草科|蘊璋耳草|Hedyotis koana|Hedyotis koana R.J. Wang|4|0|DD|原生
 5627|Rubiaceae|茜草科|松葉耳草|Hedyotis pinifolia|Hedyotis pinifolia Wall. ex G. Don|4|0|DD|原生
@@ -5441,7 +5461,7 @@
 5801|Sapotaceae|山欖科|加蜜蛋黃果|Pouteria caimito|Pouteria caimito Badlk.|4|0||栽培
 6066|Sapotaceae|山欖科|馬米果|Pouteria sapota|Pouteria sapota (Jacq.) H. E. Moore et Stearn|4|0||栽培
 5902|Sapotaceae|山欖科|變味果|Synsepalum dulcificum|Synsepalum dulcificum Daniell|4|0||栽培
-1258|Saururaceae|三白草科|蕺菜|Houttuynia cordata|Houttuynia cordata Thunb.|4|0||原生
+1258|Saururaceae|三白草科|臭腥草|Houttuynia cordata|Houttuynia cordata Thunb.|4|0||原生
 1259|Saururaceae|三白草科|三白草|Saururus chinensis|Saururus chinensis (Lour.) Baill.|4|0|LC|原生
 1476|Saxifragaceae|虎耳草科|落新婦|Astilbe longicarpa|Astilbe longicarpa (Hayata) Hayata|4|1|LC|原生
 1477|Saxifragaceae|虎耳草科|阿里山落新婦|Astilbe macroflora|Astilbe macroflora Hayata|4|1|LC|原生
@@ -5472,7 +5492,7 @@
 1499|Saxifragaceae|虎耳草科|圓葉鑽地風|Schizophragma integrifolium var. fauriei|Schizophragma integrifolium var. fauriei (Hayata) Hayata|4|1|LC|原生
 1500|Saxifragaceae|虎耳草科|黃水枝|Tiarella polyphylla|Tiarella polyphylla D. Don|4|0|VU|原生
 1145|Schisandraceae|五味子科|南五味子|Kadsura japonica|Kadsura japonica (L.) Dunal|4|0|LC|原生
-1146|Schisandraceae|五味子科|菲律賓南五味子|Kadsura philippinensis|Kadsura philippinensis Elm.|4|0|NT|原生
+1146|Schisandraceae|五味子科|菲律賓五味子|Kadsura philippinensis|Kadsura philippinensis Elm.|4|0|NT|原生
 1147|Schisandraceae|五味子科|阿里山五味子|Schisandra arisanensis|Schisandra arisanensis Hayata|4|1|LC|原生
 3243|Scrophulariaceae|玄參科|黑蒴|Alectra arvensis|Alectra arvensis (Benth.) Merr.|4|0|LC|原生
 5720|Scrophulariaceae|玄參科|天使花|Angelonia salicariifolia|Angelonia salicariifolia Humb. & Bonpl.|4|0||栽培
@@ -5519,11 +5539,11 @@
 3282|Scrophulariaceae|玄參科|阿里山通泉草|Mazus delavayi|Mazus delavayi Bonati|4|0|LC|原生
 3283|Scrophulariaceae|玄參科|佛氏通泉草|Mazus fauriei|Mazus fauriei Bonati|4|1|LC|原生
 3284|Scrophulariaceae|玄參科|薄葉通泉草|Mazus goodenifolius|Mazus goodenifolius Pennell|4|0|LC|原生
-3285|Scrophulariaceae|玄參科|烏子草|Mazus miquelii|Mazus miquelii Makino|4|0||原生
+3285|Scrophulariaceae|玄參科|匍莖通泉草|Mazus miquelii|Mazus miquelii Makino|4|0||原生
 3286|Scrophulariaceae|玄參科|通泉草|Mazus pumilus|Mazus pumilus (Burm. f.) Steenis|4|0|LC|原生
 3287|Scrophulariaceae|玄參科|臺南通泉草|Mazus tainanensis|Mazus tainanensis T.H. Hsieh|4|1|DD|原生
 3288|Scrophulariaceae|玄參科|黃花過長沙舅|Mecardonia procumbens|Mecardonia procumbens (Mill.) Small|4|0|NA|歸化
-3289|Scrophulariaceae|玄參科|山蘿花|Melampyrum roseum|Melampyrum roseum Maxim.|4|0||未知
+3289|Scrophulariaceae|玄參科|山蘿花|Melampyrum roseum|Melampyrum roseum Maxim.|4|0||未知
 6566|Scrophulariaceae|玄參科|小蕊珍珠草|Micranthemum micranthemoides|Micranthemum micranthemoides (Nutt.) Wettst.|4|0|NA|歸化
 3290|Scrophulariaceae|玄參科|微果草|Microcarpaea minima|Microcarpaea minima (Retz.) Merr.|4|0|NT|原生
 3291|Scrophulariaceae|玄參科|尼泊爾溝酸漿|Mimulus tenellus var. japonicus|Mimulus tenellus Bunge var. japonicus (Miq.) Hand.-Mazz.|4|0|LC|原生
@@ -5545,21 +5565,21 @@
 3270|Scrophulariaceae|玄參科|藍豬耳|Torenia crustacea|Torenia crustacea (L.) Cham. & Schltdl.|4|0|LC|原生
 3306|Scrophulariaceae|玄參科|母丁香|Torenia flava|Torenia flava Buch.-Ham. ex Benth.|4|0|LC|原生
 3307|Scrophulariaceae|玄參科|夏菫|Torenia fournieri|Torenia fournieri Linden ex E. Fourn.|4|0|NA|歸化
-3308|Scrophulariaceae|玄參科|長梗花蜈蚣|Torenia violacea|Torenia violacea (Azaola ex Blanco) Pennell|4|0|NT|原生
+3308|Scrophulariaceae|玄參科|紫萼蝴蝶草|Torenia violacea|Torenia violacea (Azaola ex Blanco) Pennell|4|0|NT|原生
 3267|Scrophulariaceae|玄參科|定經草|Vandellia anagallis|Vandellia anagallis (Burm. f.) T. Yamaz.|4|0|LC|原生
 3277|Scrophulariaceae|玄參科|臺南見風紅|Vandellia scutellariiformis|Vandellia scutellariiformis (T. Yamaz.) T. Yamaz.|4|1|EN|原生
 3279|Scrophulariaceae|玄參科|屏東見風紅|Vandellia viscosa|Vandellia viscosa (Hornem.) Merr.|4|0|EN|原生
 3309|Scrophulariaceae|玄參科|直立婆婆納|Veronica arvensis|Veronica arvensis L.|4|0|NA|歸化
 3310|Scrophulariaceae|玄參科|婆婆納|Veronica didyma|Veronica didyma Ten.|4|0|LC|原生
 3311|Scrophulariaceae|玄參科|睫毛婆婆納|Veronica hederifolia|Veronica hederifolia L.|4|0|NA|歸化
-3312|Scrophulariaceae|玄參科|爪哇水苦賈|Veronica javanica|Veronica javanica Blume|4|0||原生
+3312|Scrophulariaceae|玄參科|爪哇水苦藚|Veronica javanica|Veronica javanica Blume|4|0||原生
 3313|Scrophulariaceae|玄參科|追風草|Veronica linariifolia|Veronica linariifolia Pall. ex Link|4|0|LC|原生
-3314|Scrophulariaceae|玄參科|玉山水苦賈|Veronica morrisonicola|Veronica morrisonicola Hayata|4|0||原生
-3315|Scrophulariaceae|玄參科|貧子水苦賈|Veronica oligosperma|Veronica oligosperma Hayata|4|0||原生
+3314|Scrophulariaceae|玄參科|玉山水苦藚|Veronica morrisonicola|Veronica morrisonicola Hayata|4|1||原生
+3315|Scrophulariaceae|玄參科|貧子水苦藚|Veronica oligosperma|Veronica oligosperma Hayata|4|1||原生
 3316|Scrophulariaceae|玄參科|毛蟲婆婆納|Veronica peregrina|Veronica peregrina L.|4|0|NA|歸化
 3317|Scrophulariaceae|玄參科|阿拉伯婆婆納|Veronica persica|Veronica persica Poir.|4|0|NA|歸化
-3318|Scrophulariaceae|玄參科|臺灣水苦賈|Veronica taiwanica|Veronica taiwanica T. Yamaz.|4|0||原生
-3319|Scrophulariaceae|玄參科|水苦賈|Veronica undulata|Veronica undulata Wall.|4|0||原生
+3318|Scrophulariaceae|玄參科|臺灣水苦藚|Veronica taiwanica|Veronica taiwanica T. Yamaz.|4|1||原生
+3319|Scrophulariaceae|玄參科|水苦藚|Veronica undulata|Veronica undulata Wall.|4|0||原生
 3320|Scrophulariaceae|玄參科|新竹腹水草|Veronicastrum axillare var. simadai|Veronicastrum axillare var. simadai (Masam.) H.Y. Liu|4|1|VU|原生
 3321|Scrophulariaceae|玄參科|臺灣腹水草|Veronicastrum formosanum|Veronicastrum formosanum (Masam.) T. Yamaz.|4|1|EN|原生
 3322|Scrophulariaceae|玄參科|高山腹水草|Veronicastrum kitamurae|Veronicastrum kitamurae (Ohwi) T. Yamaz.|4|1|EN|原生
@@ -5568,11 +5588,11 @@
 2058|Simaroubaceae|苦木科|鴉膽子|Brucea javanica|Brucea javanica (L.) Merr.|4|0|LC|原生
 2059|Simaroubaceae|苦木科|苦樹|Picrasma quassioides|Picrasma quassioides (D. Don) Benn.|4|0|VU|原生
 3896|Smilacaceae|菝葜科|阿里山菝葜|Smilax arisanensis|Smilax arisanensis Hayata|4|0|LC|原生
-3893|Smilacaceae|菝葜科|土茯苓|Smilax bockii|Smilax bockii Warb.|4|0||原生
+3893|Smilacaceae|菝葜科|平柄菝葜|Smilax bockii|Smilax bockii Warb.|4|0||原生
 3897|Smilacaceae|菝葜科|假菝葜|Smilax bracteata|Smilax bracteata C. Presl|4|0|LC|原生
 3898|Smilacaceae|菝葜科|糙莖菝葜|Smilax bracteata var. verruculosa|Smilax bracteata var. verruculosa (Merr.) T. Koyama|4|0|LC|原生
 3899|Smilacaceae|菝葜科|菝葜|Smilax china|Smilax china L.|4|0|LC|原生
-3900|Smilacaceae|菝葜科|裡白菝葜|Smilax corbularia|Smilax corbularia Kunth|4|0||原生
+3900|Smilacaceae|菝葜科|裏白菝葜|Smilax corbularia|Smilax corbularia Kunth|4|0||原生
 3901|Smilacaceae|菝葜科|宜蘭菝葜|Smilax discotis|Smilax discotis Warb.|4|0|LC|原生
 3902|Smilacaceae|菝葜科|細葉菝葜|Smilax elongatoumbellata|Smilax elongatoumbellata Hayata|4|0|LC|原生
 3892|Smilacaceae|菝葜科|香港偽土茯苓|Smilax gaudichaudiana|Smilax gaudichaudiana Kunth|4|0||未知
@@ -5586,8 +5606,8 @@
 3910|Smilacaceae|菝葜科|南投菝葜|Smilax nantoensis|Smilax nantoensis T. Koyama|4|1|LC|原生
 3911|Smilacaceae|菝葜科|日本菝葜|Smilax nipponica|Smilax nipponica Miq.|4|0|VU|原生
 3912|Smilacaceae|菝葜科|耳葉菝葜|Smilax ocreata|Smilax ocreata A. DC.|4|0|LC|原生
-3913|Smilacaceae|菝葜科|烏蘇里山馬薯|Smilax riparia|Smilax riparia A. DC.|4|0||原生
-3895|Smilacaceae|菝葜科|臺中假土茯苓|Smilax seisuiensis|Smilax seisuiensis (Hayata) T. C. Hsu & S. W. Chung|4|1|VU|原生
+3913|Smilacaceae|菝葜科|大武牛尾菜|Smilax riparia|Smilax riparia A. DC.|4|0||原生
+3895|Smilacaceae|菝葜科|臺中土茯苓|Smilax seisuiensis|Smilax seisuiensis (Hayata) T. C. Hsu & S. W. Chung|4|1|VU|原生
 5591|Smilacaceae|菝葜科|短柱土茯苓|Smilax septemnervia|Smilax septemnervia (F. T. Wang & Tang) T. C. Hsu & S. W. Chung|4|0|DD|原生
 3914|Smilacaceae|菝葜科|臺灣山馬薯|Smilax sieboldii|Smilax sieboldii Miq.|4|0|LC|原生
 3915|Smilacaceae|菝葜科|玉山菝葜|Smilax vaginata|Smilax vaginata Decne.|4|0|LC|原生
@@ -5610,13 +5630,13 @@
 3206|Solanaceae|茄科|櫻桃小番茄|Lycopersicon esculentum var. cerasiforme|Lycopersicon esculentum var. cerasiforme Alef.|4|0|NA|歸化
 3207|Solanaceae|茄科|大本炮仔草|Nicandra physalodes|Nicandra physalodes (L.) Gaertn.|4|0|NA|歸化
 3208|Solanaceae|茄科|翼柄煙草|Nicotiana alata|Nicotiana alata Link & Otto|4|0|NA|歸化
-3209|Solanaceae|茄科|野生種煙草|Nicotiana longiflora|Nicotiana longiflora Cav.|4|0||歸化
+3209|Solanaceae|茄科|長花煙草|Nicotiana longiflora|Nicotiana longiflora Cav.|4|0||歸化
 3210|Solanaceae|茄科|皺葉煙草|Nicotiana plumbaginifolia|Nicotiana plumbaginifolia Viv.|4|0|NA|歸化
 3211|Solanaceae|茄科|煙草|Nicotiana tabacum|Nicotiana tabacum L.|4|0|NA|歸化
 3212|Solanaceae|茄科|林氏燈籠草|Physaliastrum chamaesarachoides|Physaliastrum chamaesarachoides (Makino) Makino|4|0|EN|原生
 3213|Solanaceae|茄科|燈籠草|Physalis angulata|Physalis angulata L.|4|0|NA|歸化
 3214|Solanaceae|茄科|毛苦蘵|Physalis minima|Physalis minima L.|4|0||歸化
-3215|Solanaceae|茄科|祕魯苦蘵|Physalis peruviana|Physalis peruviana L.|4|0||歸化
+3215|Solanaceae|茄科|秘魯苦蘵|Physalis peruviana|Physalis peruviana L.|4|0||歸化
 3216|Solanaceae|茄科|毛酸漿|Physalis pubescens|Physalis pubescens L.|4|0|NA|歸化
 3217|Solanaceae|茄科|光果龍葵|Solanum americanum|Solanum americanum Mill.|4|0|NA|歸化
 3218|Solanaceae|茄科|刺茄|Solanum capsicoides|Solanum capsicoides All.|4|0|NA|歸化
@@ -5641,7 +5661,7 @@
 3235|Solanaceae|茄科|木龍葵|Solanum scabrum|Solanum scabrum Mill.|4|0|NA|歸化
 3236|Solanaceae|茄科|星茄|Solanum seaforthianum|Solanum seaforthianum Andrews|4|0|NA|歸化
 3237|Solanaceae|茄科|擬刺茄|Solanum sisymbriifolium|Solanum sisymbriifolium Lam.|4|0|NA|歸化
-3238|Solanaceae|茄科|水茄|Solanum torvum|Solanum torvum Sw.|4|0||歸化
+3238|Solanaceae|茄科|萬桃花|Solanum torvum|Solanum torvum Sw.|4|0||歸化
 3239|Solanaceae|茄科|馬鈴薯|Solanum tuberosum|Solanum tuberosum L.|4|0|NA|歸化
 3240|Solanaceae|茄科|黃水茄|Solanum undatum|Solanum undatum Lam.|4|0|VU|原生
 5612|Solanaceae|茄科|毛果茄|Solanum viarum|Solanum viarum Dunal|4|0|NA|歸化
@@ -5650,7 +5670,7 @@
 4617|Sparganiaceae|黑三稜科|東亞黑三稜|Sparganium fallax|Sparganium fallax Graebn.|4|0|VU|原生
 3754|Sphenocleaceae|密穗桔梗科|尖瓣花|Sphenoclea zeylanica|Sphenoclea zeylanica Gaertn.|4|0|LC|原生
 2356|Stachyuraceae|旌節花科|通條樹|Stachyurus himalaicus|Stachyurus himalaicus Hook. f. & Thomson|4|0|LC|原生
-2173|Staphyleaceae|省沽油科|野鴨椿|Euscaphis japonica|Euscaphis japonica (Thunb. ex Roem. & Schult.) Kanitz|4|0||原生
+2173|Staphyleaceae|省沽油科|野鴉椿|Euscaphis japonica|Euscaphis japonica (Thunb. ex Roem. & Schult.) Kanitz|4|0||原生
 2174|Staphyleaceae|省沽油科|山香圓|Turpinia formosana|Turpinia formosana Nakai|4|1|LC|原生
 2175|Staphyleaceae|省沽油科|羽葉山香圓|Turpinia ovalifolia|Turpinia ovalifolia Elmer|4|0|NT|原生
 2176|Staphyleaceae|省沽油科|三葉山香圓|Turpinia ternata|Turpinia ternata Nakai|4|0|LC|原生
@@ -5716,7 +5736,6 @@
 1310|Theaceae|茶科|毛柱楊桐|Adinandra lasiostyla|Adinandra lasiostyla Hayata|4|1|LC|原生
 1311|Theaceae|茶科|細葉茶梨|Anneslea lanceolata|Anneslea lanceolata (Hayata) Kaneh.|4|1|VU|原生
 1312|Theaceae|茶科|短柱山茶|Camellia brevistyla|Camellia brevistyla (Hayata) Cohen-Stuart|4|0|LC|原生
-1313|Theaceae|茶科|武威山茶|Camellia buisanensis|Camellia buisanensis Sasaki|4|1||原生
 1314|Theaceae|茶科|尾葉山茶|Camellia caudata|Camellia caudata Wall.|4|0|LC|原生
 1324|Theaceae|茶科|臺灣山茶|Camellia formosensis|Camellia formosensis (Masam. & Suzuki) M.H. Su, C.F. Hsieh & C.H. Tsou|4|1|NT|原生
 1315|Theaceae|茶科|垢果山茶|Camellia furfuracea|Camellia furfuracea (Merr.) Cohen-Stuart|4|0|VU|原生
@@ -5745,7 +5764,7 @@
 1338|Theaceae|茶科|厚葉柃木|Eurya glaberrima|Eurya glaberrima Hayata|4|1|LC|原生
 1339|Theaceae|茶科|毛果柃木|Eurya gnaphalocarpa|Eurya gnaphalocarpa Hayata|4|0|LC|原生
 1340|Theaceae|茶科|早田氏柃木|Eurya hayatae|Eurya hayatae Yamam.|4|1|LC|原生
-1341|Theaceae|茶科|柃木|Eurya japonica|Eurya japonica Thunb.|4|0||未知
+1341|Theaceae|茶科|日本柃木|Eurya japonica|Eurya japonica Thunb.|4|0||未知
 1342|Theaceae|茶科|薄葉柃木|Eurya leptophylla|Eurya leptophylla Hayata|4|1|LC|原生
 1343|Theaceae|茶科|細枝柃木|Eurya loquaiana|Eurya loquaiana Dunn|4|0|LC|原生
 1344|Theaceae|茶科|光葉柃木|Eurya nitida|Eurya nitida Korth.|4|0|NT|原生
@@ -5852,7 +5871,7 @@
 914|Urticaceae|蕁麻科|裂葉樓梯草|Elatostema trilobulatum|Elatostema trilobulatum (Hayata) T. Yamaz.|4|1|LC|原生
 915|Urticaceae|蕁麻科|柔毛樓梯草|Elatostema villosum|Elatostema villosum B.L. Shih & Y.P. Yang|4|1|VU|原生
 916|Urticaceae|蕁麻科|蠍子草|Girardinia diversifolia|Girardinia diversifolia (Link) Friis|4|0|LC|原生
-917|Urticaceae|蕁麻科|糯米團|Gonostegia hirta|Gonostegia hirta (Blume ex Hassk.) Miq.|4|0||原生
+917|Urticaceae|蕁麻科|糯米糰|Gonostegia hirta|Gonostegia hirta (Blume ex Hassk.) Miq.|4|0||原生
 918|Urticaceae|蕁麻科|小葉石薯|Gonostegia matsudai|Gonostegia matsudai (Yamam.) Yamam. & Masam.|4|1|LC|原生
 919|Urticaceae|蕁麻科|五蕊石薯|Gonostegia pentandra|Gonostegia pentandra (Roxb.) Miq.|4|0|VU|原生
 920|Urticaceae|蕁麻科|火焰桑葉麻|Laportea aestuans|Laportea aestuans (L.) Chew|4|0|NA|歸化
@@ -5864,7 +5883,6 @@
 926|Urticaceae|蕁麻科|花點草|Nanocnide japonica|Nanocnide japonica Blume|4|0|LC|原生
 927|Urticaceae|蕁麻科|長梗紫麻|Oreocnide pedunculata|Oreocnide pedunculata (Shirai) Masam.|4|0|LC|原生
 928|Urticaceae|蕁麻科|三脈紫麻|Oreocnide trinervis|Oreocnide trinervis (Wedd.) Miq.|4|0|LC|原生
-5536|Urticaceae|蕁麻科|臺灣牆草|Parietaria taiwania|Parietaria taiwania C. L. Yeh & C. S. Leou|4|1||原生
 929|Urticaceae|蕁麻科|赤車使者|Pellionia radicans|Pellionia radicans (Siebold & Zucc.) Wedd.|4|0|LC|原生
 930|Urticaceae|蕁麻科|糙葉赤車使者|Pellionia scabra|Pellionia scabra Benth.|4|0|LC|原生
 714|Urticaceae|蕁麻科|長柄冷水麻|Pilea angulata|Pilea angulata (Blume) Blume|4|0|LC|原生
@@ -5892,7 +5910,7 @@
 949|Urticaceae|蕁麻科|霧水葛|Pouzolzia zeylanica|Pouzolzia zeylanica (L.) Benn. & R. Br.|4|0|LC|原生
 950|Urticaceae|蕁麻科|烏來麻|Procris laevigata|Procris laevigata Miq.|4|0|LC|原生
 951|Urticaceae|蕁麻科|臺灣蕁麻|Urtica taiwaniana|Urtica taiwaniana S.S. Ying|4|1|LC|原生
-952|Urticaceae|蕁麻科|蕁麻|Urtica thunbergiana|Urtica thunbergiana Siebold & Zucc.|4|0||原生
+952|Urticaceae|蕁麻科|咬人貓|Urtica thunbergiana|Urtica thunbergiana Siebold & Zucc.|4|0||原生
 3443|Valerianaceae|敗醬科|臺灣敗醬|Patrinia formosana|Patrinia formosana Kitam.|4|1|LC|原生
 3444|Valerianaceae|敗醬科|禿敗醬|Patrinia glabrifolia|Patrinia glabrifolia Yamam. & Sasaki|4|1|LC|原生
 3445|Valerianaceae|敗醬科|黃花龍芽草|Patrinia scabiosifolia|Patrinia scabiosifolia Link|4|0|LC|原生
@@ -5930,7 +5948,7 @@
 3082|Verbenaceae|馬鞭草科|龍吐珠|Clerodendrum thomsoniae|Clerodendrum thomsoniae Balf.|4|0||未知
 3083|Verbenaceae|馬鞭草科|海州常山|Clerodendrum trichotomum|Clerodendrum trichotomum Thunb.|4|0|LC|原生
 3084|Verbenaceae|馬鞭草科|金露花|Duranta repens|Duranta repens L.|4|0|NA|歸化
-3085|Verbenaceae|馬鞭草科|馬櫻丹|Lantana camara|Lantana camara L.|4|0||歸化
+3085|Verbenaceae|馬鞭草科|馬纓丹|Lantana camara|Lantana camara L.|4|0||歸化
 3086|Verbenaceae|馬鞭草科|鴨舌癀|Phyla nodiflora|Phyla nodiflora (L.) Greene|4|0|LC|原生
 3087|Verbenaceae|馬鞭草科|恆春臭黃荊|Premna hengchunensis|Premna hengchunensis S. Y. Lu & Yuen P. Yang|4|1|NT|原生
 3088|Verbenaceae|馬鞭草科|臭黃荊|Premna microphylla|Premna microphylla Turcz.|4|0|LC|原生
@@ -5950,32 +5968,32 @@
 5672|Verbenaceae|馬鞭草科|牡荊|Vitex negundo var. cannabifolia|Vitex negundo var. cannabifolia (Siebold & Zucc.) Hand.-Mazz.|4|0||栽培
 3101|Verbenaceae|馬鞭草科|山埔姜|Vitex quinata|Vitex quinata (Lour.) F.N. Williams|4|0|LC|原生
 3102|Verbenaceae|馬鞭草科|海埔姜|Vitex rotundifolia|Vitex rotundifolia L. f.|4|0|LC|原生
-3103|Verbenaceae|馬鞭草科|三葉蔓荊|Vitex trifolia|Vitex trifolia L.|4|0|VU|原生
+3103|Verbenaceae|馬鞭草科|三葉埔姜|Vitex trifolia|Vitex trifolia L.|4|0|VU|原生
 2334|Violaceae|堇菜科|鼠鞭草|Hybanthus enneaspermus|Hybanthus enneaspermus (L.) F. Muell.|4|0|NT|原生
-2335|Violaceae|堇菜科|喜岩堇菜|Viola adenothrix|Viola adenothrix Hayata|4|0||原生
-2336|Violaceae|堇菜科|雪山堇菜|Viola adenothrix var. tsugitakaensis|Viola adenothrix var. tsugitakaensis (Masam.) J.C. Wang & T.C. Huang|4|0||原生
+2335|Violaceae|堇菜科|喜岩菫菜|Viola adenothrix|Viola adenothrix Hayata|4|0||原生
+2336|Violaceae|堇菜科|雪山菫菜|Viola adenothrix var. tsugitakaensis|Viola adenothrix var. tsugitakaensis (Masam.) J.C. Wang & T.C. Huang|4|1||原生
 2337|Violaceae|堇菜科|如意草|Viola arcuata|Viola arcuata Blume|4|0|LC|原生
-2338|Violaceae|堇菜科|野生堇菜|Viola arvensis|Viola arvensis Murray|4|0||歸化
-2339|Violaceae|堇菜科|箭葉堇菜|Viola betonicifolia|Viola betonicifolia Sm.|4|0||原生
-2340|Violaceae|堇菜科|雙黃花堇菜|Viola biflora|Viola biflora L.|4|0|NT|原生
-2341|Violaceae|堇菜科|短毛堇菜|Viola confusa|Viola confusa Champ. ex Benth.|4|0||原生
+2338|Violaceae|堇菜科|野生菫菜|Viola arvensis|Viola arvensis Murray|4|0||歸化
+2339|Violaceae|堇菜科|箭葉菫菜|Viola betonicifolia|Viola betonicifolia Sm.|4|0||原生
+2340|Violaceae|堇菜科|雙黃花菫菜|Viola biflora|Viola biflora L.|4|0|NT|原生
+2341|Violaceae|堇菜科|短毛菫菜|Viola confusa|Viola confusa Champ. ex Benth.|4|0||原生
 2342|Violaceae|堇菜科|茶匙黃|Viola diffusa|Viola diffusa Ging.|4|0|LC|原生
-2343|Violaceae|堇菜科|臺灣堇菜|Viola formosana|Viola formosana Hayata|4|0||原生
-2344|Violaceae|堇菜科|川上氏堇菜|Viola formosana var. stenopetala|Viola formosana var. stenopetala (Hayata) J.C. Wang, T.C. Huang & T. Hashim.|4|0||原生
-2345|Violaceae|堇菜科|紫花堇菜|Viola grypoceras|Viola grypoceras A. Gray|4|0||原生
-2346|Violaceae|堇菜科|小堇菜|Viola inconspicua subsp. nagasakiensis|Viola inconspicua subsp. nagasakiensis (W. Becker) J.C. Wang & T.C. Huang|4|0||原生
+2343|Violaceae|堇菜科|臺灣菫菜|Viola formosana|Viola formosana Hayata|4|0||原生
+2344|Violaceae|堇菜科|川上氏菫菜|Viola formosana var. stenopetala|Viola formosana var. stenopetala (Hayata) J.C. Wang, T.C. Huang & T. Hashim.|4|1||原生
+2345|Violaceae|堇菜科|紫花菫菜|Viola grypoceras|Viola grypoceras A. Gray|4|0||原生
+2346|Violaceae|堇菜科|小菫菜|Viola inconspicua subsp. nagasakiensis|Viola inconspicua subsp. nagasakiensis (W. Becker) J.C. Wang & T.C. Huang|4|0||原生
 2347|Violaceae|堇菜科|紫花地丁|Viola mandshurica|Viola mandshurica W. Becker|4|0|LC|原生
-2348|Violaceae|堇菜科|微堇菜|Viola minor|Viola minor (Makino) Makino|4|0||未知
-2349|Violaceae|堇菜科|臺北堇菜|Viola nagasawae|Viola nagasawae Makino & Hayata|4|0||原生
-2350|Violaceae|堇菜科|普萊氏堇菜|Viola nagasawae var. pricei|Viola nagasawae var. pricei (W. Becker) J.C. Wang & T.C. Huang|4|0||原生
-2351|Violaceae|堇菜科|翠峰堇菜|Viola obtusa var. tsuifengensis|Viola obtusa var. tsuifengensis Hashim.|4|1|VU|原生
-6348|Violaceae|堇菜科|香堇菜|Viola odorata|Viola odorata L.|4|0||栽培
-2352|Violaceae|堇菜科|尖山堇菜|Viola senzanensis|Viola senzanensis Hayata|4|0||原生
-2353|Violaceae|堇菜科|新竹堇菜|Viola shinchikuensis|Viola shinchikuensis Yamam.|4|0||原生
+2348|Violaceae|堇菜科|微菫菜|Viola minor|Viola minor (Makino) Makino|4|0||未知
+2349|Violaceae|堇菜科|臺北菫菜|Viola nagasawae|Viola nagasawae Makino & Hayata|4|0||原生
+2350|Violaceae|堇菜科|普萊氏菫菜|Viola nagasawae var. pricei|Viola nagasawae var. pricei (W. Becker) J.C. Wang & T.C. Huang|4|0||原生
+2351|Violaceae|堇菜科|翠峰菫菜|Viola obtusa var. tsuifengensis|Viola obtusa var. tsuifengensis Hashim.|4|1|VU|原生
+6348|Violaceae|堇菜科|香菫菜|Viola odorata|Viola odorata L.|4|0||栽培
+2352|Violaceae|堇菜科|尖山菫菜|Viola senzanensis|Viola senzanensis Hayata|4|1||原生
+2353|Violaceae|堇菜科|新竹菫菜|Viola shinchikuensis|Viola shinchikuensis Yamam.|4|1||原生
 2354|Violaceae|堇菜科|心葉茶匙黃|Viola tenuis|Viola tenuis Benth.|4|0|LC|原生
 5469|Violaceae|堇菜科|三角葉菫菜|Viola triangulifolia|Viola triangulifolia W. Becker|4|0||未知
 5470|Violaceae|堇菜科|荁|Viola vaginata|Viola vaginata Maxim.|4|0||原生
-2355|Violaceae|堇菜科|葡堇菜|Viola verecunda|Viola verecunda A. Gray|4|0||未知
+2355|Violaceae|堇菜科|葡菫菜|Viola verecunda|Viola verecunda A. Gray|4|0||未知
 2207|Vitaceae|葡萄科|山葡萄|Ampelopsis brevipedunculata|Ampelopsis brevipedunculata (Maxim.) Trautv.|4|0||原生
 2206|Vitaceae|葡萄科|毛山葡萄|Ampelopsis brevipedunculata var. ciliata|Ampelopsis brevipedunculata var. ciliata (Nakai) F.Y. Lu|4|0|LC|原生
 2208|Vitaceae|葡萄科|漢氏山葡萄|Ampelopsis brevipedunculata var. hancei|Ampelopsis brevipedunculata var. hancei (Planch.) Rehder|4|0|LC|原生
@@ -6032,15 +6050,15 @@
 4639|Zingiberaceae|薑科|屯鹿月桃|Alpinia tonrokuensis|Alpinia tonrokuensis Hayata|4|1|NA|原生
 4640|Zingiberaceae|薑科|烏來月桃|Alpinia uraiensis|Alpinia uraiensis Hayata|4|1|LC|原生
 4641|Zingiberaceae|薑科|月桃|Alpinia zerumbet|Alpinia zerumbet (Pers.) B.L. Burtt & R.M. Sm.|4|0|LC|原生
-4625|Zingiberaceae|薑科|宜蘭月桃|Alpinia ×ilanensis|Alpinia ×ilanensis S.C. Liu & J.C. Wang|4|0||未知
+4625|Zingiberaceae|薑科|宜蘭月桃|Alpinia ×ilanensis|Alpinia ×ilanensis S.C. Liu & J.C. Wang|4|1||未知
 4642|Zingiberaceae|薑科|絹毛鳶尾|Costus speciosus|Costus speciosus (J. Koenig) Sm.|4|0|LC|原生
 5927|Zingiberaceae|薑科|薑荷花|Curcuma alismatifolia|Curcuma alismatifolia Gagnep.|4|0||栽培
 4643|Zingiberaceae|薑科|鬱金|Curcuma domestica|Curcuma domestica Valeton|4|0||歸化
 4644|Zingiberaceae|薑科|二黃|Curcuma viridiflora|Curcuma viridiflora Roxb.|4|0||未知
-4645|Zingiberaceae|薑科|薑黃|Curcuma zedoaria|Curcuma zedoaria (Christm.) Roscoe|4|0|NA|歸化
+4645|Zingiberaceae|薑科|莪朮|Curcuma zedoaria|Curcuma zedoaria (Christm.) Roscoe|4|0|NA|歸化
 4646|Zingiberaceae|薑科|野薑花|Hedychium coronarium|Hedychium coronarium J. Koenig|4|0|NA|歸化
 4647|Zingiberaceae|薑科|南薑|Languas galanga|Languas galanga (L.) Stuntz|4|0||未知
-4648|Zingiberaceae|薑科|蘭嶼法式薑|Vanoverberghia sasakiana|Vanoverberghia sasakiana H. Funak. & H. Ohashi|4|1|VU|原生
+4648|Zingiberaceae|薑科|蘭嶼法氏薑|Vanoverberghia sasakiana|Vanoverberghia sasakiana H. Funak. & H. Ohashi|4|1|VU|原生
 4649|Zingiberaceae|薑科|三奈|Zingiber kawagoi|Zingiber kawagoi Hayata|4|1|LC|原生
 4650|Zingiberaceae|薑科|薑|Zingiber officinale|Zingiber officinale Roscoe|4|0|NA|歸化
 4651|Zingiberaceae|薑科|少葉薑|Zingiber oligophyllum|Zingiber oligophyllum K. Schum.|4|1|EN|原生
@@ -6048,6 +6066,5 @@
 5534|Zingiberaceae|薑科|雙龍薑|Zingiber shuanglongensis|Zingiber shuanglongensis C.L. Yeh & S.W. Chung|4|0|LC|原生
 4653|Zingiberaceae|薑科|薑花|Zingiber zerumbet|Zingiber zerumbet (L.) Roscoe ex Sm.|4|0|NA|歸化
 3794|Zosteraceae|甘藻科|甘藻|Zostera japonica|Zostera japonica Asch. & Graebn.|4|0|LC|原生
-1909|Zygophyllaceae|蒺藜科|大花蒺藜|Tribulus cistoides|Tribulus cistoides L.|4|0||未知
 1910|Zygophyllaceae|蒺藜科|臺灣蒺藜|Tribulus taiwanense|Tribulus taiwanense T.C. Huang & T.H. Hsieh|4|1|NT|原生
 1911|Zygophyllaceae|蒺藜科|蒺藜|Tribulus terrestris|Tribulus terrestris L.|4|0|LC|原生
