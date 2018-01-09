@@ -115,7 +115,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             # Taxon TreeWidget
             self.treeWidget.itemPressed.connect(self.getTaxonInfo)
+            self.treeWidget.itemPressed.connect(self.getWebInfo)
             self.treeWidget.currentItemChanged.connect(self.getTaxonInfo)
+            self.treeWidget.currentItemChanged.connect(self.getWebInfo)
+            self.buttonReload.clicked.connect(self.butLoadWeb)
+            #self.webDBSelectButton.connect(self.checkWebDB)
 
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -434,6 +438,72 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
                 self.textBrowserInfo.setText(taxonInfo)
                 self.statusBar().showMessage(cname)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def getWebInfo(self):
+        '''
+        getWebInfo
+        ============
+        Obtain
+        '''
+        try:
+            item = self.treeWidget.currentItem()
+            if item:
+                fullname = self.g.fmtname(str(item.text(1)), doformat=False, split=True)
+                fullnameNoAuthors = fullname[0]
+                cname = ' '.join([item.text(1), fullnameNoAuthors])
+                queryUrl = self.checkWebDB(fullnameNoAuthors)
+                self.loadUrl(queryUrl)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+    
+    def checkWebDB(self, species):
+        try:
+            webDBIdx = self.webDBSelectButton.currentIndex()
+            if webDBIdx == 0:
+                # tropicos
+                queryUrl = '''http://tropicos.org/NameSearch.aspx?name=%s&commonname=''' % species
+            elif webDBIdx == 1:
+                # theplantlist
+                queryUrl = '''http://www.theplantlist.org/tpl1.1/search?q=%s''' % species
+                pass
+            elif webDBIdx == 2:
+                # TaiBNET
+                queryUrl = '''http://taibnet.sinica.edu.tw/chi/taibnet_species_list.php?T2=%s&T2_new_value=true&fr=y''' % species
+            elif webDBIdx == 3:
+                # IPNI
+                pass
+            elif webDBIdx == 4:
+                # tai2
+                # http://tai2.ntu.edu.tw/PlantInfo/SearchResult.php?search=%s&rgkeyword=2&recrodnum=20&enter2=送出
+                queryUrl = '''http://tai2.ntu.edu.tw/PlantInfo/SearchResult.php?search=%s&rgkeyword=2&recrodnum=20&enter2=送出''' % species
+            else:
+                queryUrl = '''http://tropicos.org/NameSearch.aspx?name=%s&commonname=''' % species
+            return(queryUrl)
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def loadUrl(self, URL):
+        try:
+            self.urlLine.setText(URL)
+            self.webEngineView.setUrl(QUrl(URL))
+            self.statusBar().showMessage('Loading %s' % URL)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def butLoadWeb(self):
+        try:
+            item = self.treeWidget.currentItem()
+            if item:
+                fullname = self.g.fmtname(str(item.text(1)), doformat=False, split=True)
+                fullnameNoAuthors = fullname[0]
+                queryUrl = self.checkWebDB(fullnameNoAuthors)
+                self.urlLine.setText(queryUrl)
+                self.loadUrl(queryUrl)
+            else:
+                pass
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
@@ -795,7 +865,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 return
             else:
                 # check for species items
-                item = QTreeWidgetItem()
+                #root = QTreeWidgetItem() 
                 species_item = str.split(str(self.lineSpecies.text()), '\t')
                 # get species cname
                 splist = self.getDbIdx()
@@ -806,9 +876,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 for i, j in enumerate(splist_zhname):
                     if j == species_item[0]:
                         exists = 1
+
                 if exists == 1:
+                    item = QTreeWidgetItem()
                     # if selected item exists in our tree widget, ignore it
-                    if self.treeWidget.findItems(species_item[1], Qt.MatchExactly, 1):
+                    # match pattern: family and fullname
+                    if self.treeWidget.findItems(species_item[1], Qt.MatchExactly, 1) and \
+                        self.treeWidget.findItems(species_item[0], Qt.MatchExactly, 1):
                         pass
                     else:
                         item.setText(0, species_item[2])

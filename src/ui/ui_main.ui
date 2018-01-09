@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>678</width>
-    <height>643</height>
+    <width>864</width>
+    <height>681</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -29,6 +29,18 @@
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="1">
      <widget class="QScrollArea" name="scrollArea">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>0</width>
+        <height>374</height>
+       </size>
+      </property>
       <property name="font">
        <font>
         <kerning>true</kerning>
@@ -51,11 +63,11 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>654</width>
-         <height>353</height>
+         <width>840</width>
+         <height>374</height>
         </rect>
        </property>
-       <layout class="QGridLayout" name="gridLayout_3">
+       <layout class="QGridLayout" name="gridLayout_4">
         <item row="0" column="0">
          <widget class="QFrame" name="frame">
           <property name="frameShape">
@@ -185,6 +197,13 @@
              </property>
             </widget>
            </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="dblabel">
+             <property name="text">
+              <string>Current DB: Vascular plants of Taiwan</string>
+             </property>
+            </widget>
+           </item>
            <item row="0" column="0">
             <widget class="QLabel" name="label_5">
              <property name="sizePolicy">
@@ -198,14 +217,29 @@
              </property>
             </widget>
            </item>
-           <item row="0" column="1">
-            <widget class="QLabel" name="dblabel">
-             <property name="text">
-              <string>Current DB: Vascular plants of Taiwan</string>
-             </property>
-            </widget>
-           </item>
           </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QTextBrowser" name="textBrowserInfo">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="sizeAdjustPolicy">
+           <enum>QAbstractScrollArea::AdjustToContents</enum>
+          </property>
+          <property name="openExternalLinks">
+           <bool>true</bool>
+          </property>
          </widget>
         </item>
        </layout>
@@ -220,7 +254,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>678</width>
+     <width>864</width>
      <height>22</height>
     </rect>
    </property>
@@ -397,6 +431,9 @@
    <addaction name="actionReportIssues"/>
   </widget>
   <widget class="QDockWidget" name="dockWidgetTaxonInfo">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="floating">
     <bool>false</bool>
    </property>
@@ -407,8 +444,8 @@
     <number>8</number>
    </attribute>
    <widget class="QWidget" name="dockWidgetContents">
-    <layout class="QGridLayout" name="gridLayout_5">
-     <item row="0" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
       <widget class="QScrollArea" name="taxonInfoScrollArea">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -433,31 +470,73 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>654</width>
-          <height>124</height>
+          <width>840</width>
+          <height>141</height>
          </rect>
         </property>
-        <layout class="QGridLayout" name="gridLayout_10">
+        <layout class="QGridLayout" name="gridLayout_3">
          <item row="0" column="0">
-          <widget class="QTextBrowser" name="textBrowserInfo">
+          <widget class="QLineEdit" name="urlLine">
+           <property name="text">
+            <string/>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="buttonReload">
+           <property name="text">
+            <string>Go</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="3">
+          <widget class="QWebEngineView" name="webEngineView">
+           <property name="url">
+            <url>
+             <string>about:blank</string>
+            </url>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QComboBox" name="webDBSelectButton">
            <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
            </property>
            <property name="minimumSize">
             <size>
-             <width>0</width>
-             <height>50</height>
+             <width>150</width>
+             <height>0</height>
             </size>
            </property>
-           <property name="sizeAdjustPolicy">
-            <enum>QAbstractScrollArea::AdjustToContents</enum>
-           </property>
-           <property name="openExternalLinks">
-            <bool>true</bool>
-           </property>
+           <item>
+            <property name="text">
+             <string>Tropicos</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>The Plant List</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>TaiBNet</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>IPNI</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Plants of Taiwan</string>
+            </property>
+           </item>
           </widget>
          </item>
         </layout>
@@ -878,7 +957,29 @@
     <string>Taiwan: Red List of Vascular Plants (2017)</string>
    </property>
   </action>
+  <action name="ButReload">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../iconResources.qrc">
+     <normaloff>:/icons/search.png</normaloff>:/icons/search.png</iconset>
+   </property>
+   <property name="text">
+    <string>ButReload</string>
+   </property>
+   <property name="toolTip">
+    <string>ButReload</string>
+   </property>
+  </action>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QWebEngineView</class>
+   <extends>QWidget</extends>
+   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="../iconResources.qrc"/>
  </resources>
