@@ -320,6 +320,22 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">%s 學名斜體化完成!</translation>
     </message>
     <message>
+        <source>Current DB: the Red List of Taiwan Vascular Plants (2017)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Current DB: Flora of Taiwan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Current DB: Ylist</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Current DB: Vascular Plants of Taiwan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Current database table is %s</source>
         <translation type="unfinished"></translation>
     </message>
@@ -420,14 +436,6 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Common name/scientific name/family</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>Family</source>
         <translation>科名</translation>
     </message>
@@ -438,6 +446,18 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Common name</source>
         <translation>俗名</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Common name/scientific name/family</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Current DB: Vascular plants of Taiwan</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>&amp;File</source>
@@ -732,6 +752,10 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Taxa selection</source>
+        <translation type="obsolete">物種選擇</translation>
+    </message>
+    <message>
         <source>Update database</source>
         <translation type="unfinished"></translation>
     </message>
@@ -742,10 +766,6 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Taiwan: Red List of Vascular Plants (2017)</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Taxa selection</source>
-        <translation type="obsolete">物種選擇</translation>
     </message>
     <message>
         <source>Vascular plants of Taiwan (phylogeny-based)</source>

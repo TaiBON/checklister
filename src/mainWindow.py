@@ -464,14 +464,19 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
             if self.actionTaiwanVascularPlants.isChecked():
                 db_table = 'dao_pnamelist_pg'
+                self.dblabel.setText(self.tr('Current DB: Vascular Plants of Taiwan'))
             elif self.actionTaiwanRedList2017.isChecked():
                 db_table = 'dao_twredlist2017'
+                self.dblabel.setText(self.tr('Current DB: the Red List of Taiwan Vascular Plants (2017)'))
             elif self.actionTaiwanFlora.isChecked():
                 db_table = 'dao_pnamelist'
+                self.dblabel.setText(self.tr('Current DB: Flora of Taiwan'))
             elif self.actionJapanYlist.isChecked():
                 db_table = 'dao_jp_ylist'
+                self.dblabel.setText(self.tr('Current DB: Ylist'))
             else:
                 db_table = 'dao_pnamelist_pg'
+                self.dblabel.setText(self.tr('Current DB: Vascular Plants of Taiwan'))
             return(db_table)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))

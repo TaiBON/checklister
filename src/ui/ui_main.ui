@@ -52,7 +52,7 @@
          <x>0</x>
          <y>0</y>
          <width>654</width>
-         <height>374</height>
+         <height>353</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_3">
@@ -68,49 +68,7 @@
            <number>0</number>
           </property>
           <layout class="QGridLayout" name="gridLayout_2">
-           <item row="1" column="0" colspan="2">
-            <widget class="QLineEdit" name="lineSpecies">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
-               <horstretch>0</horstretch>
-               <verstretch>1</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="baseSize">
-              <size>
-               <width>0</width>
-               <height>40</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <family>Arial</family>
-               <pointsize>18</pointsize>
-               <italic>false</italic>
-              </font>
-             </property>
-             <property name="toolTip">
-              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-             </property>
-             <property name="autoFillBackground">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_5">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="text">
-              <string>Common name/scientific name/family</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0" colspan="2">
+           <item row="4" column="0" colspan="2">
             <widget class="QTreeWidget" name="treeWidget">
              <property name="sizePolicy">
               <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -196,6 +154,55 @@
                <string>Common name</string>
               </property>
              </column>
+            </widget>
+           </item>
+           <item row="2" column="0" colspan="2">
+            <widget class="QLineEdit" name="lineSpecies">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+               <horstretch>0</horstretch>
+               <verstretch>1</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>Arial</family>
+               <pointsize>18</pointsize>
+               <italic>false</italic>
+              </font>
+             </property>
+             <property name="toolTip">
+              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Common name/scientific name/family</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="dblabel">
+             <property name="text">
+              <string>Current DB: Vascular plants of Taiwan</string>
+             </property>
             </widget>
            </item>
           </layout>
@@ -427,7 +434,7 @@
           <x>0</x>
           <y>0</y>
           <width>654</width>
-          <height>103</height>
+          <height>124</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_10">
