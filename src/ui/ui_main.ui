@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>864</width>
-    <height>681</height>
+    <height>657</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -471,7 +471,7 @@
           <x>0</x>
           <y>0</y>
           <width>840</width>
-          <height>141</height>
+          <height>117</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_3">
@@ -976,7 +976,7 @@
  <customwidgets>
   <customwidget>
    <class>QWebEngineView</class>
-   <extends>QWidget</extends>
+   <extends></extends>
    <header location="global">QtWebEngineWidgets/QWebEngineView</header>
   </customwidget>
  </customwidgets>

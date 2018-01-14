@@ -18,7 +18,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Another species checklist generator&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Version 0.5.0&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Version 0.5.1&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Brief Introduction&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -320,6 +320,18 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">%s 學名斜體化完成!</translation>
     </message>
     <message>
+        <source>Please input checklist A</source>
+        <translation type="obsolete">請輸入名錄 A</translation>
+    </message>
+    <message>
+        <source>Please input checklist B</source>
+        <translation type="obsolete">請輸入名錄 B</translation>
+    </message>
+    <message>
+        <source>A and B are identical!</source>
+        <translation type="obsolete">A 和 B 是相同的！</translation>
+    </message>
+    <message>
         <source>Current DB: the Red List of Taiwan Vascular Plants (2017)</source>
         <translation type="unfinished"></translation>
     </message>
@@ -336,20 +348,12 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>There is no common species between checklist A and B</source>
+        <translation type="obsolete">在名錄 A 和 B 中並沒有相同的物種存在</translation>
+    </message>
+    <message>
         <source>Current database table is %s</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please input checklist A</source>
-        <translation type="obsolete">請輸入名錄 A</translation>
-    </message>
-    <message>
-        <source>Please input checklist B</source>
-        <translation type="obsolete">請輸入名錄 B</translation>
-    </message>
-    <message>
-        <source>A and B are identical!</source>
-        <translation type="obsolete">A 和 B 是相同的！</translation>
     </message>
     <message>
         <source>Updating database, please wait for a while ...</source>
@@ -376,12 +380,12 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>There is no common species between checklist A and B</source>
-        <translation type="obsolete">在名錄 A 和 B 中並沒有相同的物種存在</translation>
-    </message>
-    <message>
         <source>The following species did not exist in our database,and I stored it at %s. Please check again: %s</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The following species did not exist in our database, please check again: %s</source>
+        <translation type="obsolete">下方的物種並不存在資料庫中，請再次確認： %s</translation>
     </message>
     <message>
         <source>The following species did not exist in our database. I store it at %s. Please check again: %s</source>
@@ -400,8 +404,8 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The following species did not exist in our database, please check again: %s</source>
-        <translation type="obsolete">下方的物種並不存在資料庫中，請再次確認： %s</translation>
+        <source>%s</source>
+        <translation type="obsolete">%s</translation>
     </message>
     <message>
         <source>Please input the species name!</source>
@@ -412,8 +416,8 @@ p, li { white-space: pre-wrap; }
         <translation>這個物種 %s 並不存在資料庫中</translation>
     </message>
     <message>
-        <source>%s</source>
-        <translation type="obsolete">%s</translation>
+        <source>Please input export file name!</source>
+        <translation type="obsolete">請輸入輸出的檔名</translation>
     </message>
     <message>
         <source>Saving checklist to %s </source>
@@ -426,10 +430,6 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Export checklist to &apos;%s&apos; done!</source>
         <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Please input export file name!</source>
-        <translation type="obsolete">請輸入輸出的檔名</translation>
     </message>
     <message>
         <source>checklister: a species checklist generator</source>
@@ -452,11 +452,11 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Common name/scientific name/family</source>
+        <source>Current DB: Vascular plants of Taiwan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Current DB: Vascular plants of Taiwan</source>
+        <source>Common name/scientific name/family</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -502,6 +502,30 @@ p, li { white-space: pre-wrap; }
     <message>
         <source>Taxon Info</source>
         <translation>物種資訊</translation>
+    </message>
+    <message>
+        <source>Go</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tropicos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The Plant List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TaiBNet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>IPNI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Plants of Taiwan</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Select export File</source>
@@ -576,6 +600,10 @@ p, li { white-space: pre-wrap; }
         <translation>離開</translation>
     </message>
     <message>
+        <source>Taxa selection</source>
+        <translation type="obsolete">物種選擇</translation>
+    </message>
+    <message>
         <source>Ctrl+Q</source>
         <translation type="unfinished"></translation>
     </message>
@@ -588,32 +616,64 @@ p, li { white-space: pre-wrap; }
         <translation>最小化視窗</translation>
     </message>
     <message>
+        <source>Vascular plants of Taiwan (phylogeny-based)</source>
+        <translation type="obsolete">臺灣維管束植物(親緣關係分類)</translation>
+    </message>
+    <message>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
+    </message>
+    <message>
+        <source>Vascular plants of Taiwan (Flora of Taiwan 2nd Edi.)</source>
+        <translation type="obsolete">臺灣維管束植物(植物誌第二版)</translation>
     </message>
     <message>
         <source>Zoom</source>
         <translation>縮放</translation>
     </message>
     <message>
+        <source>Bird list of Taiwan (2014)</source>
+        <translation type="obsolete">臺灣鳥類名錄(2014)</translation>
+    </message>
+    <message>
         <source>Ctrl+Shift+N</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Plants of Japan (Ylist)</source>
+        <translation type="obsolete">日本植物(Ylist)</translation>
     </message>
     <message>
         <source>Maximize</source>
         <translation>最大化</translation>
     </message>
     <message>
+        <source>Checklist Database</source>
+        <translation type="obsolete">名錄資料庫</translation>
+    </message>
+    <message>
         <source>Ctrl+Shift+M</source>
         <translation></translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update the checklist database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;更新名錄資料庫&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Search Tropicos</source>
         <translation>搜尋 Tropicos</translation>
     </message>
     <message>
+        <source>Update DB</source>
+        <translation type="obsolete">更新資料庫</translation>
+    </message>
+    <message>
         <source>Search Tropicos database</source>
         <translation>搜尋 Tropicos 資料庫</translation>
+    </message>
+    <message>
+        <source>Raw Table</source>
+        <translation type="obsolete">原始資料表</translation>
     </message>
     <message>
         <source>Ctrl+T</source>
@@ -752,10 +812,6 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Taxa selection</source>
-        <translation type="obsolete">物種選擇</translation>
-    </message>
-    <message>
         <source>Update database</source>
         <translation type="unfinished"></translation>
     </message>
@@ -768,36 +824,8 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Vascular plants of Taiwan (phylogeny-based)</source>
-        <translation type="obsolete">臺灣維管束植物(親緣關係分類)</translation>
-    </message>
-    <message>
-        <source>Vascular plants of Taiwan (Flora of Taiwan 2nd Edi.)</source>
-        <translation type="obsolete">臺灣維管束植物(植物誌第二版)</translation>
-    </message>
-    <message>
-        <source>Bird list of Taiwan (2014)</source>
-        <translation type="obsolete">臺灣鳥類名錄(2014)</translation>
-    </message>
-    <message>
-        <source>Plants of Japan (Ylist)</source>
-        <translation type="obsolete">日本植物(Ylist)</translation>
-    </message>
-    <message>
-        <source>Checklist Database</source>
-        <translation type="obsolete">名錄資料庫</translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Update the checklist database&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;更新名錄資料庫&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
-        <source>Update DB</source>
-        <translation type="obsolete">更新資料庫</translation>
-    </message>
-    <message>
-        <source>Raw Table</source>
-        <translation type="obsolete">原始資料表</translation>
+        <source>ButReload</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>Batch Export</source>

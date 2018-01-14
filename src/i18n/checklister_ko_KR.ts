@@ -18,7 +18,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Another species checklist generator&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Version 0.5.0&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Version 0.5.1&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Brief Introduction&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -408,11 +408,11 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Common name/scientific name/family</source>
+        <source>Current DB: Vascular plants of Taiwan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Current DB: Vascular plants of Taiwan</source>
+        <source>Common name/scientific name/family</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -457,6 +457,30 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Taxon Info</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Go</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Tropicos</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>The Plant List</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>TaiBNet</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>IPNI</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Plants of Taiwan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -717,6 +741,10 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Taiwan: Red List of Vascular Plants (2017)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>ButReload</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

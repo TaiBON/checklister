@@ -1,7 +1,10 @@
 # -*- mode: python -*-
+import ntpath
+import PyQt5
+from PyQt5.QtCore import *
+import os
 
 def Datafiles(*filenames, **kw):
-    import os
 
     def datafile(path, strip_path=True):
         parts = path.split('/')
@@ -22,9 +25,11 @@ i18n_tree = Tree('i18n', prefix='i18n', excludes=['.ts'])
 
 a = Analysis(['checklister.py'],
              hookspath=None,
-             runtime_hooks=None,
-             excludes=['jinja2.asyncsupport','jinja2.asyncfilters'],
-             cipher=block_cipher)
+             #pathex = [os.path.join(ntpath.dirname(PyQt5.__file__), 'Qt', 'bin')],
+             runtime_hooks = None,
+             hiddenimports = ['PyQt5'],
+             #excludes = ['jinja2.asyncsupport','jinja2.asyncfilters'],
+             cipher = block_cipher)
 
 pyz = PYZ(a.pure,
              cipher=block_cipher)
@@ -33,6 +38,8 @@ exe = EXE(pyz,
           exclude_binaries=True,
           name='checklister',
           debug=False,
+          win_no_prefer_redirects=False,
+          win_private_assemblies=False,
           strip=None,
           upx=True,
           console=False )
@@ -49,7 +56,8 @@ app = BUNDLE(coll,
              name='checklister.app',
              icon='icons/checklister.icns',
              version='0.5.1',
-             bundle_identifier=None,
+             #bundle_identifier=None,
+             #bundle_identifier='org.qt-project.Qt.QtWebEngineCore',
              info_plist={
                 'NSHighResolutionCapable': 'True'
              }

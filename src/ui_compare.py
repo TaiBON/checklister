@@ -11,7 +11,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_CompareDialog(object):
     def setupUi(self, CompareDialog):
         CompareDialog.setObjectName("CompareDialog")
-        CompareDialog.resize(567, 256)
+        CompareDialog.resize(567, 232)
         self.gridLayout = QtWidgets.QGridLayout(CompareDialog)
         self.gridLayout.setObjectName("gridLayout")
         self.scrollArea = QtWidgets.QScrollArea(CompareDialog)
@@ -19,7 +19,7 @@ class Ui_CompareDialog(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 543, 232))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 543, 208))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout_2.setObjectName("gridLayout_2")
