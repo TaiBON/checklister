@@ -20,7 +20,7 @@ translate:
 	./make_trans_ui.sh
 
 binary:
-	$(PYINSTALLER) --onefile checklister.spec
+	$(PYINSTALLER) --onefile checklister.spec --clean --log-level=DEBUG
 	rm -fr /Applications/checklister.app
 	#./symlink_macos.sh && 
 	cp -rf dist/checklister.app /Applications/; cp -rf dist/checklister.app ../../packages/

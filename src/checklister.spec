@@ -25,9 +25,7 @@ i18n_tree = Tree('i18n', prefix='i18n', excludes=['.ts'])
 
 a = Analysis(['checklister.py'],
              hookspath=None,
-             #pathex = [os.path.join(ntpath.dirname(PyQt5.__file__), 'Qt', 'bin')],
              runtime_hooks = None,
-             hiddenimports = ['PyQt5'],
              #excludes = ['jinja2.asyncsupport','jinja2.asyncfilters'],
              cipher = block_cipher)
 
@@ -44,20 +42,21 @@ exe = EXE(pyz,
           upx=True,
           console=False )
 coll = COLLECT(exe,
-               a.binaries + [('pandoc', '/usr/local/bin/pandoc', 'BINARY')],
+               a.binaries + [('pandoc', '/usr/local/bin/pandoc', 'BINARY')], 
                i18n_tree,
                dbfile,
                a.zipfiles,
                a.datas,
                strip=None,
                upx=True,
+               bundle_identifier='org.qt-project.Qt.QtWebEngineCore',
                name=os.path.join('dist', 'checklister'))
 app = BUNDLE(coll,
              name='checklister.app',
              icon='icons/checklister.icns',
              version='0.5.1',
              #bundle_identifier=None,
-             #bundle_identifier='org.qt-project.Qt.QtWebEngineCore',
+             bundle_identifier='org.qt-project.Qt.QtWebEngineCore',
              info_plist={
                 'NSHighResolutionCapable': 'True'
              }
