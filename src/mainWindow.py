@@ -508,7 +508,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             return(results)
         except sr.RequestError as e:
             print("Could not request results from Google Speech Recognition service; {0}".format(e))
-        except sr.UnknownValueErrorr:
+        except sr.UnknownValueError:
             print("Google Speech Recognition does not undertand your speech")
 
     def speechAddToTree(self):
