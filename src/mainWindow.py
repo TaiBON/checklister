@@ -22,6 +22,7 @@ import sqlite3
 import sys
 import traceback
 import tempfile
+import speech_recognition as sr # speech recognition
 
 class MainWindow(QMainWindow, Ui_MainWindow):
 
@@ -273,6 +274,11 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.tabWidget.setCurrentIndex(1)
             elif qKeyEvent.key() == Qt.Key_A and (qKeyEvent.modifiers() & Qt.AltModifier):
                 self.tabWidget.setCurrentIndex(2)
+            if qKeyEvent.key() == Qt.Key_G and (qKeyEvent.modifiers() & Qt.ControlModifier):
+                self.speechAddToTree()
+                #speechResult = self.g.speechRecognition()
+                #self.lineSpecies.setText(speechResult)
+                #self.spCompleter()
             # websearch
             if qKeyEvent.key() == Qt.Key_T and (qKeyEvent.modifiers() & Qt.ControlModifier):
                 self.searchTropicos()
@@ -490,6 +496,39 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.urlLine.setText(URL)
             self.webEngineView.setUrl(QUrl(URL))
             self.statusBar().showMessage('Loading %s' % URL)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def speechRecognition(self):
+        try:
+            recognizer = sr.Recognizer()
+            with sr.Microphone() as source:
+                audio = recognizer.listen(source)
+                results = recognizer.recognize_google(audio, language='zh-TW')
+            return(results)
+        except sr.RequestError as e:
+            print("Could not request results from Google Speech Recognition service; {0}".format(e))
+        except sr.UnknownValueErrorr:
+            print("Google Speech Recognition does not undertand your speech")
+
+    def speechAddToTree(self):
+        try:
+            speechResult = self.speechRecognition()
+                #self.lineSpecies.setText(speechResult)
+            db_table = self.selectDB()
+            retrieved = self.g.dbGetsp(db_table, self.sqlite_db)
+            names = []
+            for i in range(len(retrieved)):
+                names.append(retrieved[i][3] +  "\t" + retrieved[i][5] + "\t" + retrieved[i][2])
+            matches = filter(lambda x: re.match(speechResult, x), names)
+            res = []
+            for p in matches:
+                res.append(p)
+            if len(res) == 0:
+                self.lineSpecies.setText(speechResult)
+            else:
+                self.lineSpecies.setText(res[0])
+                self.addToTree()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
