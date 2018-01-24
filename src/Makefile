@@ -24,6 +24,12 @@ binary:
 	$(PYINSTALLER) --onefile checklister.spec --clean
 	rm -fr /Applications/checklister.app
 	cp -rf dist/checklister.app /Applications/; cp -rf dist/checklister.app ../../packages/
+	if [ !-d dist/checklister_dist ]; then
+		mkdir -p dist/checklister_dist
+	fi
+	mv dist/checklister.app dist/checklister_dist
+	hdiutil create dist/checklister.dmg -srcfolder dist/checklister_dist -ov
+
 
 create_db_schema:
 	rm db/twnamelist.db
