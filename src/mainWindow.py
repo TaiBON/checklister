@@ -276,9 +276,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.tabWidget.setCurrentIndex(2)
             if qKeyEvent.key() == Qt.Key_G and (qKeyEvent.modifiers() & Qt.ControlModifier):
                 self.speechAddToTree()
-                #speechResult = self.g.speechRecognition()
-                #self.lineSpecies.setText(speechResult)
-                #self.spCompleter()
             # websearch
             if qKeyEvent.key() == Qt.Key_T and (qKeyEvent.modifiers() & Qt.ControlModifier):
                 self.searchTropicos()
@@ -501,20 +498,29 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def speechRecognition(self):
         try:
+            db_table = self.selectDB() 
+            if db_table == 'dao_jp_ylist':
+                speechLanguage = 'ja-JP'
+            else:
+                speechLanguage = 'zh-TW'
+
             recognizer = sr.Recognizer()
             with sr.Microphone() as source:
                 audio = recognizer.listen(source)
-                results = recognizer.recognize_google(audio, language='zh-TW')
+                results = recognizer.recognize_google(audio, language=speechLanguage)
             return(results)
         except sr.RequestError as e:
-            print("Could not request results from Google Speech Recognition service; {0}".format(e))
+            QMessageBox.information(self, "Warning","Could not request results from Google Speech Recognition service; {0}".format(e))
         except sr.UnknownValueError:
-            print("Google Speech Recognition does not undertand your speech")
+            QMessageBox.information(self, "Warning","Google Speech Recognition does not undertand your speech")
+        except IndexError: 
+            QMessageBox.information(self, "Warning","No internet connection")
+        except KeyError:
+            QMessageBox.information(self, "Warning", "Invalid API key or quota maxed out")
 
     def speechAddToTree(self):
         try:
             speechResult = self.speechRecognition()
-                #self.lineSpecies.setText(speechResult)
             db_table = self.selectDB()
             retrieved = self.g.dbGetsp(db_table, self.sqlite_db)
             names = []
@@ -530,7 +536,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.lineSpecies.setText(res[0])
                 self.addToTree()
         except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
+            QMessageBox.information(self, "Warning speechAddToTree()", str(e))
 
     def butLoadWeb(self):
         try:
