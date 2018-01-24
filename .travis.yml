@@ -1,48 +1,40 @@
-os: 
+os:
 - osx
 language: objective-c
 python:
 - '3.6'
 osx_image: xcode9.2
-
 before_install:
-    - brew update && brew bundle
-    - brew outdated xctool || brew upgrade xctool
-    - brew install python3
-    - brew install pandoc
-    - brew install portaudio
-    - pip3 install pyinstaller
-    - pip3 install sip
-    - pip3 install PyQt5
-    - pip3 install openpyxl
-    - pip3 install pycurl
-    - pip3 install XlsxWriter
-    - pip3 install SpeechRecognition
-    - pip3 install pyaudio
-
+- brew update && brew bundle
+- brew outdated xctool || brew upgrade xctool
+- brew install python3
+- brew install pandoc
+- brew install portaudio
+- pip3 install pyinstaller
+- pip3 install sip
+- pip3 install PyQt5
+- pip3 install openpyxl
+- pip3 install pycurl
+- pip3 install XlsxWriter
+- pip3 install SpeechRecognition
+- pip3 install pyaudio
 script:
-    - cd src
-    - make mui
-    - pyinstaller --onefile checklister.spec --clean
-    - mkdir dist/checklister_dist
-    - mv dist/checklister.app dist/checklister_dist/
-    - hdiutil create dist/checklister.dmg -srcfolder dist/checklister_dist -ov
-
+- cd src
+- make mui
+- pyinstaller --onefile checklister.spec --clean
+- mkdir dist/checklister_dist
+- mv dist/checklister.app dist/checklister_dist/
+- hdiutil create dist/checklister.dmg -srcfolder dist/checklister_dist -ov
 after_success:
-  - |
+- |2
 
-       $(npm bin)/set-up-ssh --key "$encrypted_0c68eec41c44_key" \
-                             --iv "$encrypted_0c68eec41c44_iv" \
-                             --path-encrypted-key ".travis/github_deploy_key.enc"
-
+  $(npm bin)/set-up-ssh --key "$encrypted_0c68eec41c44_key" \
+                        --iv "$encrypted_0c68eec41c44_iv" \
+                        --path-encrypted-key ".travis/github_deploy_key.enc"
 deploy:
-  skip_cleanup: true
   provider: releases
-  api_key: 
-  skip_cleanup: true
-  file:
-    - "src/dist/checklister.dmg"
+  api_key:
+    secure: z2ZusnFKevp9pwUpGvSwZgE73EHk3Dj6/YDlc4G2byBhB8klopy6/vD0XW/8GoZCHFNv9Op5ied5sQfL8ql907mKZEJ+5GnYoEnabJBliqRmjgVJcMBQoKmzU/HfeNzWMty15Up+8DcoOWaIMV5B306DqqYpmm6QTJ0Nf8/Lx/Nz5/UU7LKuL2EP+vz4FaL98DmWr+0WA5zQCACm0NTTb+mtjhtKNBQic3fPvXHY3q7nBhXga3ALaES2YAX67w1uxGRl+Vbxw08G2bnnB7mAFs98IiUHz3j1Ju2mhuJP9FJYWOA6s+uGJ/B7qAmPi3ibAZttaT3e9OQESTISdVHM+c8GJsXmP3ZHXH6fOdUVJJbEqk695iooFxLHVHWvISnYoq6E/j+4jyVjD88GetsGWefN1uKmJe7FTQ3aZ7kVIsUX6svhZj1md0uPN/bJ9hczWznk8PEi2ejC3V+aPFTPHZ3PZ22ybdslUOKwaEjW2YBKDtGVdElH5SRm6gQcImxpqf7llh28ZKxLqUVjlpytzmrncWurgDPISHBPnHtF55H1T8c+4OGLUUPW3uonJO1VR6J4hLlgNjUvMKMLyBbfgp6RMw0oyZ5+3Z1fYRmjwNITEycbkN4njyDfFVegKwnlO6AoUYs6Lan/4HANb8kuIMePlMKsC6bwt82hE+CaFcU=
+  file: src/dist/checklister.dmg
   on:
-    tags: true
-    all_branches: true
     repo: TaiBON/checklister
