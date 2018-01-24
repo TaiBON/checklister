@@ -1,0 +1,48 @@
+os: 
+- osx
+language: objective-c
+python:
+- '3.6'
+osx_image: xcode9.2
+
+before_install:
+    - brew update && brew bundle
+    - brew outdated xctool || brew upgrade xctool
+    - brew install python3
+    - brew install pandoc
+    - brew install portaudio
+    - pip3 install pyinstaller
+    - pip3 install sip
+    - pip3 install PyQt5
+    - pip3 install openpyxl
+    - pip3 install pycurl
+    - pip3 install XlsxWriter
+    - pip3 install SpeechRecognition
+    - pip3 install pyaudio
+
+script:
+    - cd src
+    - make mui
+    - pyinstaller --onefile checklister.spec --clean
+    - mkdir dist/checklister_dist
+    - mv dist/checklister.app dist/checklister_dist/
+    - hdiutil create dist/checklister.dmg -srcfolder dist/checklister_dist -ov
+
+after_success:
+  - |
+
+       $(npm bin)/set-up-ssh --key "$encrypted_0c68eec41c44_key" \
+                             --iv "$encrypted_0c68eec41c44_iv" \
+                             --path-encrypted-key ".travis/github_deploy_key.enc"
+
+deploy:
+  skip_cleanup: true
+  provider: releases
+  api_key: 
+  skip_cleanup: true
+  file:
+    - "src/dist/checklister.dmg"
+  on:
+    tags: true
+    all_branches: true
+    repo: TaiBON/checklister

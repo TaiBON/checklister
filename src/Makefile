@@ -3,6 +3,7 @@ PYRCC=pyrcc5
 PYTHON=python3
 PYTHONVENV=PYTHON36
 PYINSTALLER=$(PYTHONVENV)/bin/pyinstaller
+VERSION=v0.5.2
 #PYINSTALLER= /usr/local/bin/pyinstaller
 
 all: mui translate binary
@@ -20,9 +21,8 @@ translate:
 	./make_trans_ui.sh
 
 binary:
-	$(PYINSTALLER) --onefile checklister.spec --clean --log-level=DEBUG
+	$(PYINSTALLER) --onefile checklister.spec --clean
 	rm -fr /Applications/checklister.app
-	#./symlink_macos.sh && 
 	cp -rf dist/checklister.app /Applications/; cp -rf dist/checklister.app ../../packages/
 
 create_db_schema:
