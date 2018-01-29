@@ -120,6 +120,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.treeWidget.currentItemChanged.connect(self.getTaxonInfo)
             self.treeWidget.currentItemChanged.connect(self.getWebInfo)
             self.buttonReload.clicked.connect(self.butLoadWeb)
+            self.backwardButton.clicked.connect(self.webBackward)
+            self.forwardButton.clicked.connect(self.webForward)
+            self.stopButton.clicked.connect(self.webStop)
+
             #self.webDBSelectButton.connect(self.checkWebDB)
 
         except BaseException as e:
@@ -504,6 +508,25 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.urlLine.setText(URL)
             self.webEngineView.setUrl(QUrl(URL))
             self.statusBar().showMessage('Loading %s' % URL)
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def webBackward(self):
+        try:
+            self.webEngineView.back()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def webForward(self):
+        try:
+            self.webEngineView.forward()
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+    def webStop(self):
+        try:
+            self.webEngineView.stop()
+            self.webEngineView.load('about:blank')
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
