@@ -462,22 +462,33 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             QMessageBox.information(self, "Warning", str(e))
     
     def checkWebDB(self, species):
+        '''
+        search for species on taxoninfo widget
+        '''
         try:
             webDBIdx = self.webDBSelectButton.currentIndex()
             if webDBIdx == 0:
+                queryUrl = '''http://www.eol.org/search?q=%s&search=Go''' % species
+            elif webDBIdx == 1:
                 # tropicos
                 queryUrl = '''http://tropicos.org/NameSearch.aspx?name=%s&commonname=''' % species
-            elif webDBIdx == 1:
+            elif webDBIdx == 2:
                 # theplantlist
                 queryUrl = '''http://www.theplantlist.org/tpl1.1/search?q=%s''' % species
                 pass
-            elif webDBIdx == 2:
+            elif webDBIdx == 3:
                 # TaiBNET
                 queryUrl = '''http://taibnet.sinica.edu.tw/chi/taibnet_species_list.php?T2=%s&T2_new_value=true&fr=y''' % species
-            elif webDBIdx == 3:
-                # IPNI
-                pass
             elif webDBIdx == 4:
+                # IPNI
+                spSplitted = species.split(' ')
+                if len(spSplitted) == 2:
+                    queryUrl = '''http://www.ipni.org/ipni/advPlantNameSearch.do?find_genus=%s&find_species=%s&find_rankToReturn=spec''' % (spSplitted[0], spSplitted[1])
+                elif len(spSplitted) >= 4:
+                    queryUrl = '''http://www.ipni.org/ipni/advPlantNameSearch.do?find_genus=%s&find_species=%s&find_infraspecies=%s''' % (spSplitted[0], spSplitted[1], spSplitted[3])
+                else:
+                    queryUrl = '''http://www.ipni.org/ipni/advPlantNameSearch.do?find_genus=%s&find_species=%s&find_rankToReturn=spec''' % (spSplitted[0], spSplitted[1])
+            elif webDBIdx == 5:
                 # tai2
                 # http://tai2.ntu.edu.tw/PlantInfo/SearchResult.php?search=%s&rgkeyword=2&recrodnum=20&enter2=送出
                 queryUrl = '''http://tai2.ntu.edu.tw/PlantInfo/SearchResult.php?search=%s&rgkeyword=2&recrodnum=20&enter2=送出''' % species
