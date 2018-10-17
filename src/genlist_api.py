@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+"""
+.. module:: Genlist
+   :synopsis: A checklist generator engine
+
+.. moduleauthor:: Cheng-Tao Lin
+"""
+
 import codecs       # utf8 codecs
 import csv          # read/write csv files
 import os
@@ -11,7 +19,6 @@ import sys          # system
 import traceback    # dealing with exception
 import xlsxwriter   # export xlsx
 import logging      # for debug
-from PyQt5.Qt import QObject
 from openpyxl import Workbook, worksheet, load_workbook
 from platform import uname
 
@@ -37,6 +44,25 @@ class Genlist(object):
 
     def fmtnameNew(self, fullname, format_type='markdown', italic_b="*", italic_e="*", withSpAuthor = True, doformat=True, split=True):
         ### format
+        """
+        Format scientific names
+        =======================
+
+        parameters
+        ==========
+        
+        1. fullname
+        2. format_type: markdown/html/custom. Default is markdown.
+        3. italic_b: begin character of italic font
+        4. italic_e: end character of italic font
+        5. withSpAuthor: boolean. If True, the scientific name will append authors
+        6. doformat: boolean
+
+
+        return
+        ======
+        formatted scientific names
+        """
         if doformat == False:
             italic_b = ''
             italic_e = ''
@@ -181,7 +207,7 @@ class Genlist(object):
         <i>Castanopsis cuspidata</i> (Thunb.) Schottky var. <i>carlesii</i> (Hemsl.) T.Yamaz.'
 
         fullname:
-        --------
+        =========
         fullname, ex: 'Castanopsis cuspidata (Thunb.) Schottky var. carlesii (Hemsl.) T.Yamaz.'
 
         format_type:

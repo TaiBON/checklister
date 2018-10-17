@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+#
+"""
+.. module:: MainWindow
+   :synopsis: checklister main window
+.. moduleauthor:: Cheng-Tao Lin
+"""
 from PyQt5.QtCore import *
 from PyQt5.QtGui import QIcon,QDesktopServices
 from PyQt5.QtWidgets import *
@@ -11,6 +17,7 @@ from ui_format import Ui_FormatDialog
 from ui_databases import Ui_DBMainWindow
 from platform import uname
 from subprocess import Popen
+from datetime import datetime # datetime
 import codecs
 import csv
 import genlist_api
@@ -18,11 +25,15 @@ import os
 import pycurl
 import re
 import shutil
+import speech_recognition as sr # speech recognition
 import sqlite3
 import sys
-import traceback
 import tempfile
-import speech_recognition as sr # speech recognition
+import traceback
+import uuid     # Python UUID, for generate a checklist id
+import yaml     # Python YAML
+
+
 
 class MainWindow(QMainWindow, Ui_MainWindow):
 
@@ -129,6 +140,19 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
     def newProj(self):
+        """
+        newProj
+        =======
+        Synopsis: initiating a new project
+
+        Args:
+        ----------
+        None
+
+        Returns:
+        --------
+        None
+        """
         try:
             self.clearOutputFilename()
             self.lineSpecies.clear()
@@ -280,6 +304,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 self.tabWidget.setCurrentIndex(2)
             if qKeyEvent.key() == Qt.Key_G and (qKeyEvent.modifiers() & Qt.ControlModifier):
                 self.speechAddToTree()
+                self.statusBar().showMessage(self.tr('Speech recognizing...please say plant common name'))
             # websearch
             if qKeyEvent.key() == Qt.Key_T and (qKeyEvent.modifiers() & Qt.ControlModifier):
                 self.searchTropicos()
@@ -496,6 +521,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 # tai2
                 # http://tai2.ntu.edu.tw/PlantInfo/SearchResult.php?search=%s&rgkeyword=2&recrodnum=20&enter2=送出
                 queryUrl = '''http://tai2.ntu.edu.tw/PlantInfo/SearchResult.php?search=%s&rgkeyword=2&recrodnum=20&enter2=送出''' % species
+            elif webDBIdx == 6:
+                queryUrl = '''http://www.plantsoftheworldonline.org/?q=%s''' % species
             else:
                 queryUrl = '''http://tropicos.org/NameSearch.aspx?name=%s&commonname=''' % species
             return(queryUrl)
@@ -542,6 +569,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             with sr.Microphone() as source:
                 audio = recognizer.listen(source)
                 results = recognizer.recognize_google(audio, language=speechLanguage)
+                self.statusBar().showMessage(self.tr('Google recognized the plant name as: %s' %s))
             return(results)
         except sr.RequestError as e:
             QMessageBox.information(self, "Warning","Could not request results from Google Speech Recognition service; {0}".format(e))
@@ -559,7 +587,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             retrieved = self.g.dbGetsp(db_table, self.sqlite_db)
             names = []
             for i in range(len(retrieved)):
-                names.append(retrieved[i][3] +  "\t" + retrieved[i][5] + "\t" + retrieved[i][2])
+                names.append(retrieved[i][3] +  "|" + retrieved[i][5] + "|" + retrieved[i][2])
             matches = filter(lambda x: re.match(speechResult, x), names)
             res = []
             for p in matches:
@@ -604,7 +632,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             retrieved = self.g.dbGetsp(db_table, self.sqlite_db)
             b_container=[]
             for i in range(len(retrieved)):
-                b_container.append(retrieved[i][3] +  "\t" + retrieved[i][5] + "\t" + retrieved[i][2])
+                b_container.append(retrieved[i][3] +  "|" + retrieved[i][5] + "|" + retrieved[i][2])
             model.setStringList(b_container)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -691,7 +719,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
             #self.lineSlist.clear()
             Slist = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
-                    self.home, self.tr("Text files (*.txt *.csv)"))[0]
+                    self.home, self.tr("Text files (*.txt *.yml *.yaml)"))[0]
             if Slist is None or Slist is '':
                 return
             info_message = self.tr(u'''When you load species file (only common names) to generate checklist, the "checklist generator" will save a temporary file (filename_temp.txt/csv) within the same directory, and load this species file into checklist below. You can add/remove species to generate checklist.''')
@@ -891,7 +919,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             if saveOutputFile is None or saveOutputFile is '':
                 return
             outputFilePath = os.path.splitext(self.g.resource_path(saveOutputFile))
-            checklistTxtFile = outputFilePath[0] + '.txt'
+            checklistTxtFile = outputFilePath[0] + '.yml'
             return(checklistTxtFile)
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -945,7 +973,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             else:
                 # check for species items
                 #root = QTreeWidgetItem() 
-                species_item = str.split(str(self.lineSpecies.text()), '\t')
+                species_item = str.split(str(self.lineSpecies.text()), '|')
                 # get species cname
                 splist = self.getDbIdx()
                 splist_zhname = []
@@ -970,7 +998,16 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                         self.treeWidget.addTopLevelItem(item)
                     self.lineSpecies.clear()
                 else:
-                    QMessageBox.information(self, "Warning", self.tr("The species %s did not exist in our database!") % species_item[0])
+                    item = QTreeWidgetItem()
+                    if '|' in str(self.lineSpecies.text()):
+                        species_item = str.split(str(self.lineSpecies.text()), '|')
+                        item.setText(0, species_item[0])
+                        item.setText(1, species_item[1])
+                        item.setText(2, species_item[2])
+                        self.treeWidget.addTopLevelItem(item)
+                    else:
+                        QMessageBox.information(self, "Warning", self.tr('''The species %s did not exist in our database!
+                        You can add it manually by "family|fullname with authors|common name" ''') % species_item[0])
                     self.lineSpecies.clear()
             self.lineSpecies.clear()
         except BaseException as e:
@@ -990,10 +1027,10 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             child_count = root.childCount()
             for i in range(child_count):
                 item = root.child(i)
-                all_items.append(item.text(2))
+                all_items.append([item.text(0), item.text(1), item.text(2)])
             return all_items
         except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
+            QMessageBox.information(self, "Warning [getTreeItems]", str(e))
 
     def searchTropicos(self):
         try:
@@ -1039,6 +1076,21 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    def initMetadata(self):
+        '''
+        Initiating metadata of a checklist
+        '''
+        try:
+            # get create time
+            checklistTime = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+            checklistUUID = str(uuid.uuid4())
+            checklistMetadata = [{'eventID': checklistUUID}, {'eventDate': checklistTime}]
+            return(checklistMetadata)
+            #
+        except BaseException as e:
+            QMessageBox.information(self, "Warning [savedMetadata]", str(e))
+
+
     # 儲存批次的文字檔
     def saveChecklistTxt(self):
         '''
@@ -1066,19 +1118,33 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # 檢查有沒有同檔名存在，如果有的話另外存成 $filename.bak
             if os.path.exists(savedTxtList) == True:
                 ofile_abspath = self.g.resource_path(savedTxtList)
+                # open yaml file to check if the metadata exists
+                with codecs.open(ofile_abspath, 'r') as f:
+                    ymldata = yaml.load(f)
+                    # clear the taxa list
+                    ymldata['taxa'] = []
                 shutil.copyfile(ofile_abspath, ofile_abspath + '.bak')
                 os.remove(ofile_abspath)
             else:
-                pass
-            with codecs.open(savedTxtList, 'w+', 'utf-8') as f:
-                for sp in tree_item:
-                    f.write("%s\n" % sp)
+                checklistMetadata = self.initMetadata()
+                ymldata = {'taxa': [], 'metadata': checklistMetadata}
+            with codecs.open(savedTxtList, 'w', 'utf-8') as f:
+                # save
+
+                for sp in range(0, len(tree_item)):
+                    family = tree_item[sp][0]
+                    scientificName = tree_item[sp][1]
+                    vernacularName = tree_item[sp][2]
+                    ymldata['taxa'].append({'family': '%s' % family,
+                        'scientificName':'%s' % scientificName, 
+                        'vernacularName':'%s' % vernacularName})
+                yaml.dump(ymldata, f, allow_unicode=True)
             f.close()
             return(savedTxtList)
             self.statusBar().showMessage(self.tr("Saving checklist to %s " % savedTxtList)) 
 
         except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
+            QMessageBox.information(self, "Warning [saveCheckListTxt]:", str(e))
 
 
     # 產生名錄

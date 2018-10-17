@@ -11,9 +11,10 @@ Contents:
 module
 
 .. toctree::
-   :maxdepth: 2
-   module
+   :maxdepth: 3
 
+   mainWindow
+   genlist_api
 
 Indices and tables
 ==================

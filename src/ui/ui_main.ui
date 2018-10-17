@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1127</width>
-    <height>657</height>
+    <height>633</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -63,8 +63,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>578</width>
-         <height>538</height>
+         <width>502</width>
+         <height>514</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_4">
@@ -491,8 +491,8 @@
          <rect>
           <x>0</x>
           <y>0</y>
-          <width>506</width>
-          <height>516</height>
+          <width>576</width>
+          <height>492</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_5">
@@ -587,6 +587,11 @@
                <string>Plants of Taiwan</string>
               </property>
              </item>
+             <item>
+              <property name="text">
+               <string>Plants of the World (POWO)</string>
+              </property>
+             </item>
             </widget>
            </item>
            <item row="0" column="2">
@@ -618,7 +623,7 @@
           </layout>
          </item>
          <item row="1" column="0">
-          <widget class="QWebEngineView" name="webEngineView" native="true">
+          <widget class="QWebEngineView" name="webEngineView">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
              <horstretch>0</horstretch>
@@ -628,7 +633,7 @@
            <property name="autoFillBackground">
             <bool>false</bool>
            </property>
-           <property name="url" stdset="0">
+           <property name="url">
             <url>
              <string>about:blank</string>
             </url>
@@ -1072,7 +1077,7 @@
  <customwidgets>
   <customwidget>
    <class>QWebEngineView</class>
-   <extends></extends>
+   <extends>QWidget</extends>
    <header location="global">QtWebEngineWidgets/QWebEngineView</header>
   </customwidget>
  </customwidgets>
