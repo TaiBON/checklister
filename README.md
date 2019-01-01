@@ -33,4 +33,4 @@ python, shell script 等採用 GPL v3
 
 ### Citation
 
-Cheng-Tao Lin (2018) Checklister—a cross-platform species checklist generator. URL: https://github.com/TaiBON/checklister DOI: DOI: 10.5281/zenodo.1493694
+Cheng-Tao Lin (2018) Checklister—a cross-platform species checklist generator. URL: https://github.com/TaiBON/checklister  DOI:10.5281/zenodo.1493694
