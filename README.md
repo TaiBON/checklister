@@ -4,6 +4,7 @@
 
 checklister 是一個跨平台的物種名錄產生器
 
+[![DOI](https://zenodo.org/badge/44288646.svg)](https://zenodo.org/badge/latestdoi/44288646)
 
 ### 執行檔下載
 
@@ -28,3 +29,8 @@ python, shell script 等採用 GPL v3
 ### Discussion Group
 
 [Facebook "checklist generator"](https://www.facebook.com/groups/1491667327794847/)
+
+
+### Citation
+
+Cheng-Tao Lin (2018) Checklister—a cross-platform species checklist generator. URL: https://github.com/TaiBON/checklister  DOI:10.5281/zenodo.1493694
