@@ -868,14 +868,14 @@
 3357|Acanthaceae|爵床科|卵葉鱗球花|Lepidagathis inaequalis|Lepidagathis inaequalis C.B. Clarke ex Elmer|4|0|LC|原生
 3358|Acanthaceae|爵床科|小琉球鱗球花|Lepidagathis secunda|Lepidagathis secunda Nees|4|0|EN|原生
 3359|Acanthaceae|爵床科|柳葉鱗球花|Lepidagathis stenophylla|Lepidagathis stenophylla C.B. Clarke ex Hayata|4|1|NT|原生
-6588|Acanthaceae|莧科|瘤子草|Nelsonia canescens|Nelsonia canescens (Lam.) Spreng.|4|0|NA|歸化
+6588|Acanthaceae|爵床科|瘤子草|Nelsonia canescens|Nelsonia canescens (Lam.) Spreng.|4|0|NA|歸化
 5897|Acanthaceae|爵床科|紅樓花|Odontonema strictum|Odontonema strictum (Nees) Kuntze|4|0||栽培
 5906|Acanthaceae|爵床科|黃蝦花|Pachystachys lutea|Pachystachys lutea (Ruiz et Pav.) Nees|4|0||栽培
 3360|Acanthaceae|爵床科|九頭獅子草|Peristrophe japonica|Peristrophe japonica (Thunb.) Bremek.|4|0|LC|原生
 3361|Acanthaceae|爵床科|長花九頭獅子草|Peristrophe roxburghiana|Peristrophe roxburghiana (Roem. & Schult.) Bremek.|4|0|LC|原生
 3362|Acanthaceae|爵床科|紫花蘆利草|Ruellia brittoniana|Ruellia brittoniana Leonard|4|0|NA|歸化
 5089|Acanthaceae|爵床科|匐蘆利草|Ruellia prostrata|Ruellia prostrata Poir.|4|0|DD|栽培
-6565|Acanthaceae|莧科|蔓枝蘆利草|Ruellia squarrosa|Ruellia squarrosa Fenzl|4|0|NA|歸化
+6565|Acanthaceae|爵床科|蔓枝蘆利草|Ruellia squarrosa|Ruellia squarrosa Fenzl|4|0|NA|歸化
 3363|Acanthaceae|爵床科|塊根蘆利草|Ruellia tuberosa|Ruellia tuberosa L.|4|0|NA|歸化
 3364|Acanthaceae|爵床科|明萼草|Rungia chinensis|Rungia chinensis Benth.|4|0|LC|原生
 3365|Acanthaceae|爵床科|臺灣明萼草|Rungia taiwanensis|Rungia taiwanensis T. Yamaz.|4|1|LC|原生
@@ -6068,6 +6068,6 @@
 3794|Zosteraceae|甘藻科|甘藻|Zostera japonica|Zostera japonica Asch. & Graebn.|4|0|LC|原生
 1910|Zygophyllaceae|蒺藜科|臺灣蒺藜|Tribulus taiwanense|Tribulus taiwanense T.C. Huang & T.H. Hsieh|4|1|NT|原生
 1911|Zygophyllaceae|蒺藜科|蒺藜|Tribulus terrestris|Tribulus terrestris L.|4|0|LC|原生
-8608|||刺苞果|Acanthospermum australe|Acanthospermum australe (L.) O. Kuntze|4|0||
-8609|||蔓莖栓果菊|Launaea sarmentosa|Launaea sarmentosa (Willd.) Merr.|4|0||
-8613|||疏稈水毛花|Schoenoplectiella multiseta|Schoenoplectiella multiseta (Hayasaka & C.Sato) Hayasaka|4|0||
+8608|Asteraceae|菊科|刺苞果|Acanthospermum australe|Acanthospermum australe (L.) O. Kuntze|4|0||
+8609|Asteraceae|菊科|蔓莖栓果菊|Launaea sarmentosa|Launaea sarmentosa (Willd.) Merr.|4|0||
+8613|Cyperaceae|莎草科|疏稈水毛花|Schoenoplectiella multiseta|Schoenoplectiella multiseta (Hayasaka & C.Sato) Hayasaka|4|0||

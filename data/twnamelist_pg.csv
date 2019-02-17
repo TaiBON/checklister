@@ -1369,8 +1369,8 @@
 3842|Asparagaceae|天門冬科|球子草|Peliosanthes teta var. humilis|Peliosanthes teta var. humilis (Andrews) Jessop ex Gandhi|4|0||原生
 3841|Asparagaceae|天門冬科|高氏球子草|Peliosanthes teta var. kaoi|Peliosanthes teta var. kaoi (Ohwi) S.S. Ying|4|1|LC|原生
 6317|Asparagaceae|天門冬科|晚香玉|Polianthes tuberosa|Polianthes tuberosa L.|4|0||栽培
-3844|Asparagaceae|天門冬科|清水山黃精|Polygonatum chingshuishanianum|Polygonatum chingshuishanianum S.S. Ying|4|1|DD|原生
-3845|Asparagaceae|天門冬科|萎蕤|Polygonatum odoratum var. pluriflorum|Polygonatum odoratum var. pluriflorum Ohwi|4|0|LC|原生
+3844|Asparagaceae|天門冬科|清水山黃精|Polygonatum arisanense var. chingshuishanianum|Polygonatum arisanense var. chingshuishanianum (S.S. Ying) C.T. Chao & Y.H. Tseng|4|1|DD|原生
+3845|Asparagaceae|天門冬科|萎蕤|Polygonatum arisanense|Polygonatum arisanense Hayata var. arisanense|4|1|LC|原生
 5994|Asparagaceae|天門冬科|棒葉虎尾蘭|Sansevieria cylindrica|Sansevieria cylindrica Bojer|4|0||栽培
 3867|Asparagaceae|天門冬科|虎尾蘭|Sansevieria trifasciata|Sansevieria trifasciata Prain|4|0||栽培
 3849|Asparagaceae|天門冬科|異蕊草|Thysanotus chinensis|Thysanotus chinensis Benth.|4|0|CR|原生
@@ -1821,7 +1821,7 @@
 1420|Brassicaceae|十字花科|日本蔊菜|Cardamine nipponica|Cardamine nipponica Franch. & Sav.|4|0|DD|原生
 1421|Brassicaceae|十字花科|腎葉碎米薺|Cardamine reniformis|Cardamine reniformis Hayata|4|1|LC|原生
 1422|Brassicaceae|十字花科|臺灣碎米薺|Cardamine scutata var. rotundiloba|Cardamine scutata var. rotundiloba (Hayata) T.S. Liu & S.S. Ying|4|1|LC|原生
-1423|Brassicaceae|十字花科|柔毛堇葉碎米薺|Cardamine violifolia var. pilosa|Cardamine violifolia var. pilosa K.L. Chang & H.L. Huang|4|0||未知
+1423|Brassicaceae|十字花科|柔毛菫葉碎米薺|Cardamine violifolia var. pilosa|Cardamine violifolia var. pilosa K.L. Chang & H.L. Huang|4|0||未知
 1424|Brassicaceae|十字花科|臺灣假山葵|Cochlearia formosana|Cochlearia formosana Hayata|4|1|NT|原生
 1425|Brassicaceae|十字花科|臭濱芥|Coronopus didymus|Coronopus didymus (L.) Sm.|4|0|NA|歸化
 1426|Brassicaceae|十字花科|濱芥|Coronopus integrifolius|Coronopus integrifolius (DC.) Spreng.|4|0|NA|歸化
@@ -2137,15 +2137,15 @@
 3015|Convolvulaceae|旋花科|長梗毛娥房藤|Jacquemontia tamnifolia|Jacquemontia tamnifolia (L.) Griseb.|4|0|NA|歸化
 3016|Convolvulaceae|旋花科|鮮蕊藤|Lepistemon binectariferum var. trichocarpum|Lepistemon binectariferum var. trichocarpum (Gagnep.) Ooststr.|4|0|NT|原生
 3017|Convolvulaceae|旋花科|光滑鮮蕊藤|Lepistemon intermedius|Lepistemon intermedius Hallier f.|4|0|CR|原生
-5570|Convolvulaceae|旋花科|蔓生菜欒藤|Merremia cissoides|Merremia cissoides (Lam.) Hallier f.|4|0||歸化
+5570|Convolvulaceae|旋花科|蔓生菜欒藤|Distimake cissoides|Distimake cissoides (Lam.) Simões & Staples|4|0||歸化
 3018|Convolvulaceae|旋花科|菜欒藤|Merremia gemella|Merremia gemella (Burm. f.) Hallier f.|4|0|NA|歸化
 3019|Convolvulaceae|旋花科|卵葉菜欒藤|Merremia hederacea|Merremia hederacea (Burm. f.) Hallier f.|4|0|LC|原生
 3020|Convolvulaceae|旋花科|變葉姬旋花|Merremia hirta|Merremia hirta (L.) Merr.|4|0|VU|原生
-3021|Convolvulaceae|旋花科|掌葉姬旋花|Merremia quinata|Merremia quinata (R. Br.) Ooststr.|4|0|DD|原生
-3022|Convolvulaceae|旋花科|紅花姬旋花|Merremia similis|Merremia similis Elmer|4|0|CR|原生
-3023|Convolvulaceae|旋花科|姬旋花|Merremia tuberosa|Merremia tuberosa (L.) Rendle|4|0|NA|歸化
+3021|Convolvulaceae|旋花科|掌葉姬旋花|Distimake quinatus|Distimake quinatus (R.Br.) Simões & Staples|4|0|DD|原生
+3022|Convolvulaceae|旋花科|紅花姬旋花|Decalobanthus similis|Decalobanthus similis (Elmer) Simões & Staples|4|0|CR|原生
+3023|Convolvulaceae|旋花科|姬旋花|Distimake tuberosus|Distimake tuberosus (L.) Simões & Staples|4|0|NA|歸化
 3024|Convolvulaceae|旋花科|毛姬旋花|Merremia umbellata|Merremia umbellata (L.) Hallier f.|4|0||未知
-3025|Convolvulaceae|旋花科|掌葉菜欒藤|Merremia vitifolia|Merremia vitifolia (Burm. f.) Hallier f.|4|0|EN|原生
+3025|Convolvulaceae|旋花科|掌葉菜欒藤|Camonea vitifolia|Camonea vitifolia (Burm. f.) Simões & Staples|4|0|EN|原生
 3026|Convolvulaceae|旋花科|盒果藤|Operculina turpethum|Operculina turpethum (L.) Silva Manso|4|0|LC|原生
 3027|Convolvulaceae|旋花科|大萼旋花|Stictocardia tiliifolia|Stictocardia tiliifolia (Desr.) Hallier f.|4|0|LC|原生
 3028|Convolvulaceae|旋花科|戟葉菜欒藤|Xenostegia tridentata|Xenostegia tridentata (L.) D.F. Austin & Staples|4|0|LC|原生
@@ -2637,7 +2637,6 @@
 1975|Euphorbiaceae|大戟科|白樹仔|Suregada aequorea|Suregada aequorea (Hance) Seem.|4|1|VU|原生
 2015|Euphorbiaceae|大戟科|白桕|Triadica cochinchinensis|Triadica cochinchinensis Lour.|4|0|LC|原生
 5208|Euphorbiaceae|大戟科|烏桕|Triadica sebifera|Triadica sebifera (L.) Small|4|0|NA|歸化
-6299|Euphorbiaceae|大戟科|烏臼|Triadica sebifera|Triadica sebifera (L.) Small|4|0||栽培
 1926|Euphorbiaceae|大戟科|油桐|Vernicia fordii|Vernicia fordii (Hemsl.) Airy Shaw|4|0|NA|歸化
 5809|Euphorbiaceae|大戟科|千年桐|Vernicia montana|Vernicia montana Lour.|4|0|NA|歸化
 1632|Fabaceae|豆科|雞母珠|Abrus precatorius|Abrus precatorius L.|4|0|LC|原生
@@ -3066,7 +3065,7 @@
 6466|Gesneriaceae|苦苣苔科|羽裂同蕊草|Rhynchotechum discolor fo. incisum|Rhynchotechum discolor (Maxim.) B.L.Burtt fo. incisum (Ohwi) Hatus. ex J.C.Wang|4|0|NA|原生
 3395|Gesneriaceae|苦苣苔科|羽裂線柱苣苔|Rhynchotechum discolor var. incisum|Rhynchotechum discolor var. incisum (Ohwi) Walker|4|0||原生
 3396|Gesneriaceae|苦苣苔科|蓬萊同蕊草|Rhynchotechum formosanum|Rhynchotechum formosanum Hatus.|4|0|NT|原生
-6115|Gesneriaceae|苦苣苔科|非洲堇|Saintpaulia ionantha|Saintpaulia ionantha Wendl.|4|0||栽培
+6115|Gesneriaceae|苦苣苔科|非洲菫|Saintpaulia ionantha|Saintpaulia ionantha Wendl.|4|0||栽培
 3397|Gesneriaceae|苦苣苔科|俄氏草|Titanotrichum oldhamii|Titanotrichum oldhamii (Hemsl.) Soler.|4|0|LC|原生
 3398|Gesneriaceae|苦苣苔科|玉玲花|Whytockia sasakii|Whytockia sasakii (Hayata) B.L. Burtt|4|1|LC|原生
 5734|Goodeniaceae|草海桐科|紫扇花|Scaevola aemula|Scaevola aemula R.Br.|4|0||栽培
@@ -3808,7 +3807,7 @@
 2440|Myrtaceae|桃金孃科|番石榴|Psidium guajava|Psidium guajava L.|4|0|NA|歸化
 2441|Myrtaceae|桃金孃科|桃金孃|Rhodomyrtus tomentosa|Rhodomyrtus tomentosa (Aiton) Hassk.|4|0|LC|原生
 2442|Myrtaceae|桃金孃科|小葉赤楠|Syzygium buxifolium|Syzygium buxifolium Hook. & Arn.|4|0|LC|原生
-5834|Myrtaceae|桃金孃科|堇寶蓮|Syzygium cumini|Syzygium cumini (L.) Skeels|4|0||栽培
+5834|Myrtaceae|桃金孃科|菫寶蓮|Syzygium cumini|Syzygium cumini (L.) Skeels|4|0||栽培
 2443|Myrtaceae|桃金孃科|密脈赤楠|Syzygium densinervium var. insulare|Syzygium densinervium var. insulare C.E. Chang|4|1|NT|原生
 5703|Myrtaceae|桃金孃科|橢圓葉赤楠|Syzygium elliptifolium|Syzygium elliptifolium (Merr.) Merr.|4|0||原生
 2444|Myrtaceae|桃金孃科|細脈赤楠|Syzygium euphlebium|Syzygium euphlebium (Hayata) Mori|4|1|DD|原生
@@ -5973,31 +5972,31 @@
 3098|Verbenaceae|馬鞭草科|狹葉馬鞭草|Verbena brasiliensis|Verbena brasiliensis Vell.|4|0|NA|歸化
 5091|Verbenaceae|馬鞭草科|凌亂馬鞭草|Verbena incompta|Verbena incompta P.W. Michael|4|0||未知
 3099|Verbenaceae|馬鞭草科|馬鞭草|Verbena officinalis|Verbena officinalis L.|4|0|NA|歸化
-2334|Violaceae|堇菜科|鼠鞭草|Hybanthus enneaspermus|Hybanthus enneaspermus (L.) F. Muell.|4|0|NT|原生
-2335|Violaceae|堇菜科|喜岩菫菜|Viola adenothrix var. adenothrix|Viola adenothrix Hayata var. adenothrix|4|0|LC|原生
-2336|Violaceae|堇菜科|雪山菫菜|Viola adenothrix var. tsugitakaensis|Viola adenothrix var. tsugitakaensis (Masam.) J.C. Wang & T.C. Huang|4|1|LC|原生
-2337|Violaceae|堇菜科|如意草|Viola arcuata|Viola arcuata Blume|4|0|LC|原生
-2338|Violaceae|堇菜科|野生菫菜|Viola arvensis|Viola arvensis Murray|4|0|NA|歸化
-2339|Violaceae|堇菜科|箭葉菫菜|Viola betonicifolia|Viola betonicifolia Sm.|4|0|LC|原生
-2340|Violaceae|堇菜科|雙黃花菫菜|Viola biflora|Viola biflora L.|4|0|NT|原生
-2341|Violaceae|堇菜科|短毛菫菜|Viola confusa|Viola confusa Champ. ex Benth.|4|0|LC|原生
-2342|Violaceae|堇菜科|茶匙黃|Viola diffusa|Viola diffusa Ging.|4|0|LC|原生
-2343|Violaceae|堇菜科|臺灣菫菜|Viola formosana var. formosana|Viola formosana Hayata var. formosana|4|0|LC|原生
-2344|Violaceae|堇菜科|川上氏菫菜|Viola formosana var. stenopetala|Viola formosana var. stenopetala (Hayata) J.C. Wang, T.C. Huang & T. Hashim.|4|1|LC|原生
-2345|Violaceae|堇菜科|紫花菫菜|Viola grypoceras|Viola grypoceras A. Gray|4|0|LC|原生
-2346|Violaceae|堇菜科|小菫菜|Viola inconspicua subsp. nagasakiensis|Viola inconspicua subsp. nagasakiensis (W. Becker) J.C. Wang & T.C. Huang|4|0|LC|原生
-2347|Violaceae|堇菜科|紫花地丁|Viola mandshurica|Viola mandshurica W. Becker|4|0|LC|原生
-2348|Violaceae|堇菜科|微菫菜|Viola minor|Viola minor (Makino) Makino|4|0||未知
-2349|Violaceae|堇菜科|臺北菫菜|Viola nagasawae|Viola nagasawae Makino & Hayata|4|0|LC|原生
-2350|Violaceae|堇菜科|普萊氏菫菜|Viola nagasawae var. pricei|Viola nagasawae var. pricei (W. Becker) J.C. Wang & T.C. Huang|4|0|LC|原生
-2351|Violaceae|堇菜科|翠峰菫菜|Viola obtusa var. tsuifengensis|Viola obtusa var. tsuifengensis Hashim.|4|1|VU|原生
-6348|Violaceae|堇菜科|香菫菜|Viola odorata|Viola odorata L.|4|0||栽培
-2352|Violaceae|堇菜科|尖山菫菜|Viola senzanensis|Viola senzanensis Hayata|4|1|LC|原生
-2353|Violaceae|堇菜科|新竹菫菜|Viola shinchikuensis|Viola shinchikuensis Yamam.|4|1|LC|原生
-2354|Violaceae|堇菜科|心葉茶匙黃|Viola tenuis|Viola tenuis Benth.|4|0|LC|原生
-5469|Violaceae|堇菜科|三角葉菫菜|Viola triangulifolia|Viola triangulifolia W. Becker|4|0||未知
-5470|Violaceae|堇菜科|荁|Viola vaginata|Viola vaginata Maxim.|4|0||原生
-2355|Violaceae|堇菜科|葡菫菜|Viola verecunda|Viola verecunda A. Gray|4|0||未知
+2334|Violaceae|菫菜科|鼠鞭草|Hybanthus enneaspermus|Hybanthus enneaspermus (L.) F. Muell.|4|0|NT|原生
+2335|Violaceae|菫菜科|喜岩菫菜|Viola adenothrix var. adenothrix|Viola adenothrix Hayata var. adenothrix|4|0|LC|原生
+2336|Violaceae|菫菜科|雪山菫菜|Viola adenothrix var. tsugitakaensis|Viola adenothrix var. tsugitakaensis (Masam.) J.C. Wang & T.C. Huang|4|1|LC|原生
+2337|Violaceae|菫菜科|如意草|Viola arcuata|Viola arcuata Blume|4|0|LC|原生
+2338|Violaceae|菫菜科|野生菫菜|Viola arvensis|Viola arvensis Murray|4|0|NA|歸化
+2339|Violaceae|菫菜科|箭葉菫菜|Viola betonicifolia|Viola betonicifolia Sm.|4|0|LC|原生
+2340|Violaceae|菫菜科|雙黃花菫菜|Viola biflora|Viola biflora L.|4|0|NT|原生
+2341|Violaceae|菫菜科|短毛菫菜|Viola confusa|Viola confusa Champ. ex Benth.|4|0|LC|原生
+2342|Violaceae|菫菜科|茶匙黃|Viola diffusa|Viola diffusa Ging.|4|0|LC|原生
+2343|Violaceae|菫菜科|臺灣菫菜|Viola formosana var. formosana|Viola formosana Hayata var. formosana|4|0|LC|原生
+2344|Violaceae|菫菜科|川上氏菫菜|Viola formosana var. stenopetala|Viola formosana var. stenopetala (Hayata) J.C. Wang, T.C. Huang & T. Hashim.|4|1|LC|原生
+2345|Violaceae|菫菜科|紫花菫菜|Viola grypoceras|Viola grypoceras A. Gray|4|0|LC|原生
+2346|Violaceae|菫菜科|小菫菜|Viola inconspicua subsp. nagasakiensis|Viola inconspicua subsp. nagasakiensis (W. Becker) J.C. Wang & T.C. Huang|4|0|LC|原生
+2347|Violaceae|菫菜科|紫花地丁|Viola mandshurica|Viola mandshurica W. Becker|4|0|LC|原生
+2348|Violaceae|菫菜科|微菫菜|Viola minor|Viola minor (Makino) Makino|4|0||未知
+2349|Violaceae|菫菜科|臺北菫菜|Viola nagasawae|Viola nagasawae Makino & Hayata|4|0|LC|原生
+2350|Violaceae|菫菜科|普萊氏菫菜|Viola nagasawae var. pricei|Viola nagasawae var. pricei (W. Becker) J.C. Wang & T.C. Huang|4|0|LC|原生
+2351|Violaceae|菫菜科|翠峰菫菜|Viola obtusa var. tsuifengensis|Viola obtusa var. tsuifengensis Hashim.|4|1|VU|原生
+6348|Violaceae|菫菜科|香菫菜|Viola odorata|Viola odorata L.|4|0||栽培
+2352|Violaceae|菫菜科|尖山菫菜|Viola senzanensis|Viola senzanensis Hayata|4|1|LC|原生
+2353|Violaceae|菫菜科|新竹菫菜|Viola shinchikuensis|Viola shinchikuensis Yamam.|4|1|LC|原生
+2354|Violaceae|菫菜科|心葉茶匙黃|Viola tenuis|Viola tenuis Benth.|4|0|LC|原生
+5469|Violaceae|菫菜科|三角葉菫菜|Viola triangulifolia|Viola triangulifolia W. Becker|4|0||未知
+5470|Violaceae|菫菜科|荁|Viola vaginata|Viola vaginata Maxim.|4|0||原生
+2355|Violaceae|菫菜科|葡菫菜|Viola verecunda|Viola verecunda A. Gray|4|0||未知
 2207|Vitaceae|葡萄科|山葡萄|Ampelopsis brevipedunculata|Ampelopsis brevipedunculata (Maxim.) Trautv.|4|0||原生
 2206|Vitaceae|葡萄科|毛山葡萄|Ampelopsis brevipedunculata var. ciliata|Ampelopsis brevipedunculata var. ciliata (Nakai) F.Y. Lu|4|0|LC|原生
 2208|Vitaceae|葡萄科|漢氏山葡萄|Ampelopsis brevipedunculata var. hancei|Ampelopsis brevipedunculata var. hancei (Planch.) Rehder|4|0|LC|原生
@@ -6092,3 +6091,8 @@
 8632|Asteraceae|菊科|大蒲公英舅|Pyrrhopappus carolinianus|Pyrrhopappus carolinianus (Walter) DC.|4|0||歸化
 8633|Asteraceae|菊科|大狼杷草|Bidens frondosa|Bidens frondosa L.|4|0||歸化
 8634|Urticaceae|蕁麻科|墻草|Parietaira micrantha|Parietaira micrantha Ledeb.|4|0||歸化
+8635|Fabaceae|豆科|阿勃勒|Cassia fistula|Cassia fistula L.|4|0||栽培
+8636|Euphorbiaceae|大戟科|裂葉巴豆|Astraea lobata|Astraea lobata (L.) Klotzsch|4|0||歸化
+8637|Asteraceae|菊科|陀螺紫菀|Aster turbinatus var. turbinatus|Aster turbinatus S. Moore var. turbinatus|4|0||原生
+8638|Asparagaceae|天門冬科|大屯黃精|Polygonatum arisanense var. formosanum|Polygonatum arisanense Hayata var. formosanum (Hayata) C.T. Chao & Y.H. Tseng|4|1|LC|原生
+8639|Convolvulaceae|旋花科|繖花菜欒藤|Camonea umbellata|Camonea umbellata (L.) Simões & Staples|4|0|NA|歸化
