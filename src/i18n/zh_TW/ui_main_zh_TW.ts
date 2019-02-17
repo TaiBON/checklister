@@ -3,7 +3,7 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../ui_main.py" line="434"/>
+        <location filename="../../ui_main.py" line="484"/>
         <source>checklister: a species checklist generator</source>
         <translation type="unfinished"></translation>
     </message>
@@ -18,7 +18,7 @@
         <translation type="obsolete">俗名/學名</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="439"/>
+        <location filename="../../ui_main.py" line="485"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -118,17 +118,17 @@
         <translation type="obsolete">輸出檔案</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="436"/>
+        <location filename="../../ui_main.py" line="489"/>
         <source>Family</source>
         <translation>科名</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="437"/>
+        <location filename="../../ui_main.py" line="490"/>
         <source>FullNameWithAuthors</source>
         <translation>學名含作者</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="438"/>
+        <location filename="../../ui_main.py" line="491"/>
         <source>Common name</source>
         <translation>俗名</translation>
     </message>
@@ -158,7 +158,7 @@
         <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;更新名錄資料庫&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="446"/>
+        <location filename="../../ui_main.py" line="496"/>
         <source>View</source>
         <translation>檢視</translation>
     </message>
@@ -198,7 +198,7 @@
         <translation type="obsolete">原始資料表</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="448"/>
+        <location filename="../../ui_main.py" line="498"/>
         <source>Databases</source>
         <translation>資料庫</translation>
     </message>
@@ -223,37 +223,37 @@
         <translation type="obsolete">視窗</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="462"/>
+        <location filename="../../ui_main.py" line="517"/>
         <source>Ctrl+O</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="464"/>
+        <location filename="../../ui_main.py" line="519"/>
         <source>Batch export</source>
         <translation>批次輸出</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="465"/>
+        <location filename="../../ui_main.py" line="520"/>
         <source>Ctrl+B</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="466"/>
+        <location filename="../../ui_main.py" line="521"/>
         <source>Delete selected</source>
         <translation>刪除選取的物種</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="467"/>
+        <location filename="../../ui_main.py" line="522"/>
         <source>Ctrl+D</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="468"/>
+        <location filename="../../ui_main.py" line="523"/>
         <source>Delete all</source>
         <translation>刪除全部</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="469"/>
+        <location filename="../../ui_main.py" line="524"/>
         <source>Ctrl+Shift+D</source>
         <translation></translation>
     </message>
@@ -263,72 +263,72 @@
         <translation type="obsolete">清除物種</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="471"/>
+        <location filename="../../ui_main.py" line="526"/>
         <source>Esc</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="472"/>
+        <location filename="../../ui_main.py" line="527"/>
         <source>Homepage</source>
         <translation>官方首頁</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="473"/>
+        <location filename="../../ui_main.py" line="528"/>
         <source>Ctrl+Shift+H</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="474"/>
+        <location filename="../../ui_main.py" line="529"/>
         <source>Report issues</source>
         <translation>回報問題</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="476"/>
+        <location filename="../../ui_main.py" line="531"/>
         <source>Ctrl+Shift+R</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="477"/>
+        <location filename="../../ui_main.py" line="532"/>
         <source>About</source>
         <translation>關於</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="478"/>
+        <location filename="../../ui_main.py" line="533"/>
         <source>Quit</source>
         <translation>離開</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="480"/>
+        <location filename="../../ui_main.py" line="535"/>
         <source>Minimize</source>
         <translation>最小化</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="481"/>
+        <location filename="../../ui_main.py" line="536"/>
         <source>Minimize window</source>
         <translation>最小化視窗</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="482"/>
+        <location filename="../../ui_main.py" line="537"/>
         <source>Ctrl+M</source>
         <translation>Ctrl+M</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="483"/>
+        <location filename="../../ui_main.py" line="538"/>
         <source>Zoom</source>
         <translation>縮放</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="519"/>
+        <location filename="../../ui_main.py" line="574"/>
         <source>Ctrl+N</source>
         <translation>Ctrl+N</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="485"/>
+        <location filename="../../ui_main.py" line="540"/>
         <source>Maximize</source>
         <translation>最大化</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="486"/>
+        <location filename="../../ui_main.py" line="541"/>
         <source>Ctrl+Shift+M</source>
         <translation></translation>
     </message>
@@ -338,22 +338,22 @@
         <translation type="obsolete">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;搜尋 NomenMatch — 學名比對資料庫&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="442"/>
+        <location filename="../../ui_main.py" line="492"/>
         <source>&amp;File</source>
         <translation>檔案</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="443"/>
+        <location filename="../../ui_main.py" line="493"/>
         <source>&amp;Edit</source>
         <translation>編輯</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="444"/>
+        <location filename="../../ui_main.py" line="494"/>
         <source>&amp;Help</source>
         <translation>說明</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="445"/>
+        <location filename="../../ui_main.py" line="495"/>
         <source>&amp;Window</source>
         <translation>視窗</translation>
     </message>
@@ -378,82 +378,82 @@
         <translation type="obsolete">工具列</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="506"/>
+        <location filename="../../ui_main.py" line="561"/>
         <source>Select export file</source>
         <translation>選擇輸出檔案</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="461"/>
+        <location filename="../../ui_main.py" line="516"/>
         <source>Select export File</source>
         <translation>選擇輸出檔案</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="475"/>
+        <location filename="../../ui_main.py" line="530"/>
         <source>Bug report</source>
         <translation>回報問題</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="488"/>
+        <location filename="../../ui_main.py" line="543"/>
         <source>Search Tropicos database</source>
         <translation>搜尋 Tropicos 資料庫</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="489"/>
+        <location filename="../../ui_main.py" line="544"/>
         <source>Ctrl+T</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="490"/>
+        <location filename="../../ui_main.py" line="545"/>
         <source>&amp;Save species txtfile</source>
         <translation>儲存俗名至文字檔</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="491"/>
+        <location filename="../../ui_main.py" line="546"/>
         <source>Ctrl+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="492"/>
+        <location filename="../../ui_main.py" line="547"/>
         <source>Export checklist!</source>
         <translation>輸出名錄！</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="493"/>
+        <location filename="../../ui_main.py" line="548"/>
         <source>Ctrl+E</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="495"/>
+        <location filename="../../ui_main.py" line="550"/>
         <source>Search NomenMatch database</source>
         <translation>搜尋 NomenMatch 資料庫</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="496"/>
+        <location filename="../../ui_main.py" line="551"/>
         <source>Ctrl+J</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="498"/>
+        <location filename="../../ui_main.py" line="553"/>
         <source>Ctrl+Return</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="487"/>
+        <location filename="../../ui_main.py" line="542"/>
         <source>Search Tropicos</source>
         <translation>搜尋 Tropicos</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="494"/>
+        <location filename="../../ui_main.py" line="549"/>
         <source>Search NomenMatch</source>
         <translation>搜尋 NomenMatch</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="499"/>
+        <location filename="../../ui_main.py" line="554"/>
         <source>Show toolbar text</source>
         <translation>顯示工具列圖示文字</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="500"/>
+        <location filename="../../ui_main.py" line="555"/>
         <source>Ctrl+Shift+T</source>
         <translation></translation>
     </message>
@@ -463,7 +463,7 @@
         <translation type="obsolete">選擇物種</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="452"/>
+        <location filename="../../ui_main.py" line="502"/>
         <source>Taxon Info</source>
         <translation>物種資訊</translation>
     </message>
@@ -473,208 +473,233 @@
         <translation type="obsolete">物種選擇</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="470"/>
+        <location filename="../../ui_main.py" line="525"/>
         <source>Clear taxa</source>
         <translation>清除候選物種</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="497"/>
+        <location filename="../../ui_main.py" line="552"/>
         <source>Add taxa</source>
         <translation>加入物種</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="501"/>
+        <location filename="../../ui_main.py" line="556"/>
         <source>Deselect all species</source>
         <translation>取消選擇全部</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="502"/>
+        <location filename="../../ui_main.py" line="557"/>
         <source>Deselect all taxa</source>
         <translation>取消選擇所有物種</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="503"/>
+        <location filename="../../ui_main.py" line="558"/>
         <source>Ctrl+Shift+S</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="504"/>
+        <location filename="../../ui_main.py" line="559"/>
         <source>Select all taxa</source>
         <translation>選擇所有物種</translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="505"/>
+        <location filename="../../ui_main.py" line="560"/>
         <source>Ctrl+A</source>
         <translation></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="441"/>
+        <location filename="../../ui_main.py" line="486"/>
         <source>Common name/scientific name/family</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="447"/>
+        <location filename="../../ui_main.py" line="497"/>
         <source>Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="449"/>
+        <location filename="../../ui_main.py" line="499"/>
         <source>Plants</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="450"/>
+        <location filename="../../ui_main.py" line="500"/>
         <source>Edit Toolbar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="451"/>
+        <location filename="../../ui_main.py" line="501"/>
         <source>Search Toolbar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="463"/>
+        <location filename="../../ui_main.py" line="518"/>
         <source>Select batch export file</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="479"/>
+        <location filename="../../ui_main.py" line="534"/>
         <source>Ctrl+Q</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="484"/>
+        <location filename="../../ui_main.py" line="539"/>
         <source>Ctrl+Shift+N</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="507"/>
+        <location filename="../../ui_main.py" line="562"/>
         <source>Merge checklists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="508"/>
+        <location filename="../../ui_main.py" line="563"/>
         <source>Ctrl+Shift+G</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="509"/>
+        <location filename="../../ui_main.py" line="564"/>
         <source>Compare checklists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="510"/>
+        <location filename="../../ui_main.py" line="565"/>
         <source>Ctrl+Shift+P</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="511"/>
+        <location filename="../../ui_main.py" line="566"/>
         <source>Combine checklists</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="512"/>
+        <location filename="../../ui_main.py" line="567"/>
         <source>Ctrl+Shift+B</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="514"/>
+        <location filename="../../ui_main.py" line="569"/>
         <source>Ctrl+Shift+F</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="515"/>
+        <location filename="../../ui_main.py" line="570"/>
         <source>Taiwan: Vascular plants</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="516"/>
+        <location filename="../../ui_main.py" line="571"/>
         <source>Taiwan: Vascular plants (Flora of Taiwan)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="517"/>
+        <location filename="../../ui_main.py" line="572"/>
         <source>Japan: Ylist</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="518"/>
+        <location filename="../../ui_main.py" line="573"/>
         <source>New project</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="513"/>
+        <location filename="../../ui_main.py" line="568"/>
         <source>Format scientific names (beta version)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="520"/>
+        <location filename="../../ui_main.py" line="575"/>
         <source>Taxon info widget</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="521"/>
+        <location filename="../../ui_main.py" line="576"/>
         <source>Edit toolbar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="522"/>
+        <location filename="../../ui_main.py" line="577"/>
         <source>Search toolbar</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="523"/>
+        <location filename="../../ui_main.py" line="578"/>
         <source>Update database</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="524"/>
+        <location filename="../../ui_main.py" line="579"/>
         <source>Database info</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="525"/>
+        <location filename="../../ui_main.py" line="580"/>
         <source>Taiwan: Red List of Vascular Plants (2017)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="440"/>
+        <location filename="../../ui_main.py" line="487"/>
         <source>Current DB: Vascular plants of Taiwan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="453"/>
+        <location filename="../../ui_main.py" line="504"/>
         <source>Go</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="454"/>
+        <location filename="../../ui_main.py" line="506"/>
         <source>Tropicos</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="455"/>
+        <location filename="../../ui_main.py" line="507"/>
         <source>The Plant List</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="456"/>
+        <location filename="../../ui_main.py" line="508"/>
         <source>TaiBNet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="457"/>
+        <location filename="../../ui_main.py" line="509"/>
         <source>IPNI</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="458"/>
+        <location filename="../../ui_main.py" line="510"/>
         <source>Plants of Taiwan</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../ui_main.py" line="527"/>
+        <location filename="../../ui_main.py" line="582"/>
         <source>ButReload</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui_main.py" line="503"/>
+        <source>&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui_main.py" line="505"/>
+        <source>EOL</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui_main.py" line="511"/>
+        <source>Plants of the World (POWO)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui_main.py" line="512"/>
+        <source>&lt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../ui_main.py" line="513"/>
+        <source>X</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

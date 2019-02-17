@@ -1520,7 +1520,7 @@
 1532|Dryopteridaceae|鱗毛蕨科|闊基鱗毛蕨|Dryopteris latibasis|Dryopteris latibasis Ching|2|0|DD|原生
 1533|Dryopteridaceae|鱗毛蕨科|厚葉鱗毛蕨|Dryopteris lepidopoda|Dryopteris lepidopoda Hayata|2|0|LC|原生
 1534|Dryopteridaceae|鱗毛蕨科|三角葉鱗毛蕨|Dryopteris marginata|Dryopteris marginata (Wall. ex Christ) Christ|2|0|LC|原生
-1535|Dryopteridaceae|鱗毛蕨科|長葉鱗毛蕨  |Dryopteris melanocarpa|Dryopteris melanocarpa Hayata|2|0|LC|原生
+1535|Dryopteridaceae|鱗毛蕨科|長葉鱗毛蕨|Dryopteris melanocarpa|Dryopteris melanocarpa Hayata|2|0|LC|原生
 1536|Dryopteridaceae|鱗毛蕨科|黑鱗遠軸鱗毛蕨|Dryopteris namegatae|Dryopteris namegatae (Sa.Kurata) Sa.Kurata|2|0|VU|原生
 1537|Dryopteridaceae|鱗毛蕨科|魚鱗蕨|Dryopteris paleolata|Dryopteris paleolata (Pic.Serm.) Li Bing Zhang|2|0|LC|原生
 1538|Dryopteridaceae|鱗毛蕨科|柄囊蕨|Dryopteris peranema|Dryopteris peranema Li Bing Zhang|2|0|LC|原生
@@ -5804,3 +5804,24 @@
 6473|Amaryllidaceae|石蒜科|韭蘭|Zephyranthes carinata|Zephyranthes carinata Herb.|4|0||栽培
 6474|Apocynaceae|夾竹桃科|沙漠玫瑰|Adenium obesum|Adenium obesum (Forssk.) Roem. & Schult.|4|0||栽培
 6475|Apocynaceae|夾竹桃科|夾竹桃|Nerium oleander|Nerium oleander L.|4|0||栽培
+8614|Primulaceae|報春花科|大漢山珍珠菜|Lysimachia ravenii|Lysimachia ravenii C.I. Peng|4|1||原生
+8615|Orobanchaceae|列當科|大武獨腳金|Striga crispata|Striga crispata S.Z. Yang, Z.X. Chen, C.F. Chen and P.H. Chen|4|1||原生
+8616|Orchidaceae|蘭科|三角唇松蘭|Gastrochilus deltoglossus|Gastrochilus deltoglossus T.C. Hsu, S.I Hsieh, J.H. Wu & H.C. Hung|4|1|CR|原生
+8617|Berberidaceae|小檗科|森氏小檗|Berberis morii|Berberis morii Harber, K.F. Chung & C.C. Yu|4|1|DD|原生
+8618|Orchidaceae|蘭科|間型上鬚蘭|Epigonium meridianus|Epigonium meridianus T.P. Lin|4|1||原生
+8619|Orchidaceae|蘭科|南投羊耳蘭|Liparis monoceros|Liparis monoceros T.P. Lin|4|1||原生
+8620|Orchidaceae|蘭科|鍬形脈葉蘭|Nervilla septemtrionarius|Nervilla septemtrionarius T.P. Lin|4|1||原生
+8621|Orchidaceae|蘭科|高雄赤箭|Gastrodia kaohsiungensis|Gastrodia kaohsiungensis T.P. Lin|4|1||原生
+8622|Asteraceae|菊科|擴花紫背草|Emilia ×latens|Emilia ×latens J.Y. Wang & J.C. Wang|4|1||原生
+8623|Vitaceae|葡萄科|彭氏擬烏斂莓|Pseudocayratia pengiana|Pseudocayratia pengiana T.W. Hsu & J. Wen|4|1||原生
+8624|Asteraceae|菊科|塔塔加薊|Cirsium tatakaense|Cirsium tatakaense Y.H. Tseng & C.Y. Chang|4|1||原生
+8625|Orchidaceae|蘭科|血紅肉果蘭|Cyrtosia septentrionalis|Cyrtosia septentrionalis (Rchb. f.) Garay|4|0||原生
+8626|Malvaceae|錦葵科|椴葉捕魚木|Grewia tiliifolia|Grewia tiliifolia Vahl|4|0||原生
+8627|Gentianaceae|龍膽科|鋪地穿心草|Canscora diffusa|Canscora diffusa (Vahl) R. Br. ex Roem. & Schult.|4|0||歸化
+8628|Passifloraceae|西番蓮科|雙花西番蓮|Passiflora biflora|Passiflora biflora Lam.|4|0||歸化
+8629|Plantaginaceae|車前科|加拿大柳穿魚|Linaria canadensis|Linaria canadensis (L.) Dum. Cours.|4|0||歸化
+8630|Primulaceae|報春花科|水茴草|Samolus valerandi|Samolus valerandi L.|4|0||歸化
+8631|Asteraceae|菊科|絲葉艾|Artemisia filifolia|Artemisia filifolia Torr.|4|0||歸化
+8632|Asteraceae|菊科|大蒲公英舅|Pyrrhopappus carolinianus|Pyrrhopappus carolinianus (Walter) DC.|4|0||歸化
+8633|Asteraceae|菊科|大狼杷草|Bidens frondosa|Bidens frondosa L.|4|0||歸化
+8634|Urticaceae|蕁麻科|墻草|Parietaira micrantha|Parietaira micrantha Ledeb.|4|0||歸化

@@ -18,7 +18,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Another species checklist generator&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Version 0.5.1&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Version 0.5.2&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Brief Introduction&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -284,6 +284,10 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Speech recognizing...please say plant common name</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Debug: butCheckPath error!</source>
         <translation type="unfinished"></translation>
     </message>
@@ -301,6 +305,10 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>&lt;font color=&quot;#aaaaaa&quot;&gt;(Endemic)&lt;/font&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Google recognized the plant name as: %s</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -340,7 +348,7 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Text files (*.txt *.csv)</source>
+        <source>Text files (*.txt *.yml *.yaml)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -372,7 +380,8 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>The species %s did not exist in our database!</source>
+        <source>The species %s did not exist in our database!
+                        You can add it manually by &quot;family|fullname with authors|common name&quot; </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -392,6 +401,18 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Common name/scientific name/family</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Current DB: Vascular plants of Taiwan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Family</source>
         <translation type="unfinished"></translation>
     </message>
@@ -401,18 +422,6 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Common name</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Input species name. Type part of common names/epithets/family to list similar names. &lt;/p&gt;&lt;p&gt;You can press enter or return to add it to the checklist.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Current DB: Vascular plants of Taiwan</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Common name/scientific name/family</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -460,7 +469,15 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Go</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>EOL</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -481,6 +498,18 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <source>Plants of Taiwan</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Plants of the World (POWO)</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>X</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

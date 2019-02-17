@@ -26,6 +26,8 @@ i18n_tree = Tree('i18n', prefix='i18n', excludes=['.ts'])
 a = Analysis(['checklister.py'],
              hookspath=None,
              runtime_hooks = None,
+             #hiddenimports=['PyQt5.sip'],
+             hiddenimports = ['QtWebEngineProcess'],
              #excludes = ['jinja2.asyncsupport','jinja2.asyncfilters'],
              cipher = block_cipher)
 
