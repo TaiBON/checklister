@@ -569,13 +569,13 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             with sr.Microphone() as source:
                 audio = recognizer.listen(source)
                 results = recognizer.recognize_google(audio, language=speechLanguage)
-                self.statusBar().showMessage(self.tr('Google recognized the plant name as: %s' %s))
+                self.statusBar().showMessage(self.tr('Google recognized the plant name as: %s' % results))
             return(results)
         except sr.RequestError as e:
             QMessageBox.information(self, "Warning","Could not request results from Google Speech Recognition service; {0}".format(e))
-        except sr.UnknownValueError:
+        except sr.UnknownValueError as v:
             QMessageBox.information(self, "Warning","Google Speech Recognition does not undertand your speech")
-        except IndexError: 
+        except IndexError:
             QMessageBox.information(self, "Warning","No internet connection")
         except KeyError:
             QMessageBox.information(self, "Warning", "Invalid API key or quota maxed out")
