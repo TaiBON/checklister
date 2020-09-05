@@ -16,8 +16,8 @@ checklister 是一個跨平台的物種名錄產生器
 
 ### Supported checklist
 
-1. 臺灣維管束植物名錄 (Vascular plants of Taiwan, APGIV / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資訊整合查詢系統](http://tai2.ntu.edu.tw), [TaiBNET](http://taibnet.sinica.edu.tw)
-    1. 收錄分類群：6031 (v0.5.0, 2017-02-21)
+1. 臺灣維管束植物名錄 (Vascular plants of Taiwan, APGIV / Flora of Taiwan 2nd Edition)。資料來源：[臺灣植物資訊整合查詢系統](http://tai2.ntu.edu.tw), [TaiBNET](http://taibnet.sinica.edu.tw)，另外包含部分栽培、歸化物種
+    1. 收錄分類群：6031 (v0.5.0, 2017-02-21)，最新版本(選單中按資料庫更新)：6121 (2020-09-05)
 2. Plants of Japan ("Ylist", 20103 records). Source: http://ylist.info
 
 
