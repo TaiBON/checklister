@@ -6132,3 +6132,4 @@ INSERT INTO dao_pnamelist_pg (id,family,family_cname,cname,name,fullname,plant_t
 INSERT INTO dao_pnamelist_pg (id,family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('8774','Fabaceae','豆科','蘇利南合歡','Calliandra surinamensis','Calliandra surinamensis Benth.',6,0,'','栽培');
 INSERT INTO dao_pnamelist_pg (id,family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('8775','Fabaceae','豆科','花旗木','Cassia bakeriana','Cassia bakeriana Craib',6,0,'','栽培');
 INSERT INTO dao_pnamelist_pg (id,family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('8776','Zingiberaceae','薑科','薑黃','Curcuma longa','Curcuma longa L.',4,0,'','栽培');
+INSERT INTO dao_pnamelist_pg (id,family,family_cname,cname,name,fullname,plant_type,endemic,iucn_category,source) VALUES ('8777','Asteraceae','菊科','長苞小薊','Cirsium japonicum var. fukienense','Cirsium japonicum DC. var. fukienense Kitam.',6,0,'','原生')
