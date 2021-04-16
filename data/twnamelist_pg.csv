@@ -4483,8 +4483,7 @@
 3291|Phrymaceae|蠅毒草科|尼泊爾溝酸漿|Mimulus tenellus var. japonicus|Mimulus tenellus Bunge var. japonicus (Miq.) Hand.-Mazz.|6|0|LC|原生
 6564|Phrymaceae|蠅毒草科|濱溝馬齒|Peplidium maritimum|Peplidium maritimum (L. f.) Asch.|6|0||原生
 3104|Phrymaceae|蠅毒草科|蠅毒草|Phryma leptostachya|Phryma leptostachya L.|6|0|VU|原生
-1929|Phyllanthaceae|葉下珠科|南仁五月茶|Antidesma hiiranense|Antidesma hiiranense Hayata|6|1|NT|原生
-1931|Phyllanthaceae|葉下珠科|日本五月茶|Antidesma japonicum|Antidesma japonicum Siebold & Zucc.|6|0||未知
+1931|Phyllanthaceae|葉下珠科|日本五月茶|Antidesma japonicum var. japonicum|Antidesma japonicum Siebold & Zucc. var. japonicum|6|0|NT|原生
 1932|Phyllanthaceae|葉下珠科|南投五月茶|Antidesma japonicum var. acutisepalum|Antidesma japonicum var. acutisepalum (Hayata) Hurus.|6|1|DD|原生
 1933|Phyllanthaceae|葉下珠科|密花五月茶|Antidesma japonicum var. densiflorum|Antidesma japonicum var. densiflorum Hurus.|6|1|LC|原生
 1934|Phyllanthaceae|葉下珠科|枯里珍|Antidesma pentandrum var. barbatum|Antidesma pentandrum var. barbatum (C. Presl) Merr.|6|0|LC|原生
@@ -5720,6 +5719,10 @@
 3904|Smilacaceae|菝葜科|和社菝葜|Smilax glaucochina|Smilax glaucochina Warb.|4|0||未知
 3905|Smilacaceae|菝葜科|早田氏菝葜|Smilax hayatae|Smilax hayatae T. Koyama|4|1|LC|原生
 3906|Smilacaceae|菝葜科|密刺菝葜|Smilax horridiramula|Smilax horridiramula Hayata|4|1|LC|原生
+8783|Smilacaceae|菝葜科|海島土茯苓|Smilax insularis|Smilax insularis T.C. Hsu & S.W. Chung|4|0|LC|原生
+8784|Smilacaceae|菝葜科|阿里山土茯苓|Smilax koyame|Smilax koyame T.C. Hsu & S.W. Chung|4|1||原生
+8785|Smilacaceae|菝葜科|來社土茯苓|Smilax planipedunculata var. raishaensis|Smilax planipedunculata Hayata var. raishaensis (Hayata) T.C. Hsu & S.W. Chung|4|1||原生
+8786|Smilacaceae|菝葜科|臺北土茯苓|Smilax taipeiensis|Smilax taipeiensis T.C. Hsu & S.W. Chung|4|1||原生
 3907|Smilacaceae|菝葜科|臺灣土茯苓|Smilax lanceifolia|Smilax lanceifolia Roxb.|4|0|LC|原生
 3908|Smilacaceae|菝葜科|呂氏菝葜|Smilax luei|Smilax luei T. Koyama|4|1|VU|原生
 3909|Smilacaceae|菝葜科|巒大菝葜|Smilax menispermoidea|Smilax menispermoidea A. DC.|4|0|LC|原生
@@ -6095,7 +6098,6 @@
 8637|Asteraceae|菊科|陀螺紫菀|Aster turbinatus var. turbinatus|Aster turbinatus S. Moore var. turbinatus|6|0||原生
 8638|Asparagaceae|天門冬科|大屯黃精|Polygonatum arisanense var. formosanum|Polygonatum arisanense Hayata var. formosanum (Hayata) C.T. Chao & Y.H. Tseng|4|1|LC|原生
 8639|Convolvulaceae|旋花科|繖花菜欒藤|Camonea umbellata|Camonea umbellata (L.) Simões & Staples|6|0||歸化
-8640|Fabaceae|豆科|阿勃勒|Cassia fistula|Cassia fistula L.|6|0||栽培
 8641|Fabaceae|豆科|金龜樹|Pithecellobium dulce|Pithecellobium dulce (Roxb.) Benth.|6|0||栽培
 8642|Fabaceae|豆科|小實孔雀豆|Adenanthera microsperma|Adenanthera microsperma Teijsm. & Binn.|6|0||栽培
 8643|Fabaceae|豆科|盾柱木|Peltophorum pterocarpum|Peltophorum pterocarpum (DC.) Backer ex K.Heyne|6|0||栽培
@@ -6138,3 +6140,4 @@
 8780|Orchidaceae|蘭科|四季竹柏蘭|Cymbidium ×oblancifolium|Cymbidium ×oblancifolium Z.J. Liu & S.C. Chen|4|0||原生
 8781|Orchidaceae|蘭科|擬紅衣指柱蘭|Cheirostylis tortilacinia var. wutaiensis|Cheirostylis tortilacinia var. wutaiensis T.P. Lin|4|1||原生
 8782|Orchidaceae|蘭科|綠花臺灣莪白蘭|Oberonia formosana Hayata fo. viridiflora|Oberonia formosana Hayata fo. viridiflora T.P. Lin|4|1||原生
+8787|Malvaceae|錦葵科|掌葉蘋婆|Sterculia foetida|Sterculia foetida L.|6|0||栽培
