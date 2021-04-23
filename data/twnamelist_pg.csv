@@ -1233,7 +1233,7 @@
 4605|Araceae|天南星科|土半夏|Typhonium blumei|Typhonium blumei Nicolson & Sivad.|4|0|LC|原生
 4606|Araceae|天南星科|金慈姑|Typhonium roxburghii|Typhonium roxburghii Schott|4|0||歸化
 4613|Araceae|天南星科|無根萍|Wolffia arrhiza|Wolffia arrhiza (L.) Horkel ex Wimm.|4|0|LC|原生
-6256|Araceae|天南星科|None|Wolffia globosa|Wolffia globosa (L.) Wimm.|4|0||栽培
+6256|Araceae|天南星科|無根萍|Wolffia globosa|Wolffia globosa (L.) Wimm.|4|0|LC|原生
 4607|Araceae|天南星科|千年芋|Xanthosoma sagittifolium|Xanthosoma sagittifolium (L.) Schott|4|0||歸化
 4608|Araceae|天南星科|紫柄千年芋|Xanthosoma violaceum|Xanthosoma violaceum Schott|4|0||歸化
 6110|Araceae|天南星科|海芋|Zantedeschia aethiopica|Zantedeschia aethiopica (L.) Spreng|4|0|LC|原生
@@ -2578,7 +2578,7 @@
 5665|Euphorbiaceae|大戟科|威氏鐵莧|Acalypha wilkesiana|Acalypha wilkesiana Müll. Arg.|6|0||栽培
 1925|Euphorbiaceae|大戟科|臺灣山麻桿|Alchornea trewioides var. formosae|Alchornea trewioides var. formosae (Müll. Arg. ex Pax & K. Hoffm.) Pax & K. Hoffm.|6|1|VU|原生
 1927|Euphorbiaceae|大戟科|石栗|Aleurites moluccanus|Aleurites moluccanus (L.) Willd.|6|0||未知
-1928|Euphorbiaceae|大戟科|廣東油桐|Aleurites montanus|Aleurites montanus (Lour.) E.H. Wilson|6|0||歸化
+1928|Euphorbiaceae|大戟科|廣東油桐|Vernicia montana|Vernicia montana Lour.|6|0||歸化
 1955|Euphorbiaceae|大戟科|假鐵莧|Claoxylon brachyandrum|Claoxylon brachyandrum Pax & K. Hoffm.|6|0|NT|原生
 5681|Euphorbiaceae|大戟科|變葉木|Codiaeum variegatum|Codiaeum variegatum (L.) Rumph. ex A. Juss.|6|0||栽培
 1956|Euphorbiaceae|大戟科|波氏巴豆|Croton bonplandianus|Croton bonplandianus Baill.|6|0||歸化
@@ -2638,7 +2638,6 @@
 2015|Euphorbiaceae|大戟科|白桕|Triadica cochinchinensis|Triadica cochinchinensis Lour.|6|0|LC|原生
 5208|Euphorbiaceae|大戟科|烏桕|Triadica sebifera|Triadica sebifera (L.) Small|6|0||歸化
 1926|Euphorbiaceae|大戟科|油桐|Vernicia fordii|Vernicia fordii (Hemsl.) Airy Shaw|6|0||歸化
-5809|Euphorbiaceae|大戟科|千年桐|Vernicia montana|Vernicia montana Lour.|6|0||歸化
 1632|Fabaceae|豆科|雞母珠|Abrus precatorius|Abrus precatorius L.|6|0|LC|原生
 1633|Fabaceae|豆科|藤相思樹|Acacia caesia|Acacia caesia (L.) Willd.|6|0|LC|原生
 1634|Fabaceae|豆科|相思樹|Acacia confusa|Acacia confusa Merr.|6|0|LC|原生
@@ -6141,3 +6140,20 @@
 8781|Orchidaceae|蘭科|擬紅衣指柱蘭|Cheirostylis tortilacinia var. wutaiensis|Cheirostylis tortilacinia var. wutaiensis T.P. Lin|4|1||原生
 8782|Orchidaceae|蘭科|綠花臺灣莪白蘭|Oberonia formosana Hayata fo. viridiflora|Oberonia formosana Hayata fo. viridiflora T.P. Lin|4|1||原生
 8787|Malvaceae|錦葵科|掌葉蘋婆|Sterculia foetida|Sterculia foetida L.|6|0||栽培
+8788|Fabaceae|豆科|腋花硬皮豆|Macrotyloma axillare|Macrotyloma axillare (E.Mey.) Verdc.|6|0||歸化
+8789|Urticaceae|蕁麻科|稀齒樓梯草|Elatostema cuneatum|Elatostema cuneatum Wight|6|0||原生
+8790|Euphorbiaceae|大戟科|日日櫻|Jatropha integerrima|Jatropha integerrima Jacq.|6|0||栽培
+8791|Euphorbiaceae|大戟科|霸王鞭|Euphorbia antiquorum|Euphorbia antiquorum L.|6|0||栽培
+8792|Euphorbiaceae|大戟科|玉麒麟|Euphorbia neriifolia|Euphorbia neriifolia L.|6|0||栽培
+8993|Campanulaceae|桔梗科|翅莖半邊蓮|Lobelia heyneana|Lobelia heyneana Schult.|6|0||原生
+8994|Hydrangeaceae|八仙花科|蘭嶼溲疏|Deutzia hayatai|Deutzia hayatai Nakai|6|1||原生
+8995|Begoniaceae|秋海棠科|巴西秋海棠|Begonia hirtella|Begonia hirtella Link|6|0||歸化
+8996|Poaceae|禾本科|信號草|Urochloa brizantha|Urochloa brizantha (A.Rich.)|4|0||歸化
+8997|Poaceae|禾本科|彎柄尾稃草|Urochloa deflexa|Urochloa deflexa (Schumach.) H.Scholz|4|0||歸化
+8998|Poaceae|禾本科|多枝尾稃草|Urochloa ramosa|Urochloa ramosa (L.) T.Q.Nguyen|4|0||歸化
+8999|Poaceae|禾本科|扁野黍|Eriochloa contracta|Eriochloa contracta Hitchc.|4|0||歸化
+9000|Poaceae|禾本科|蒼白野黍|Eriochloa punctata|Eriochloa punctata (L.) Ham.|4|0||歸化
+9001|Poaceae|禾本科|伏生野黍|Eriochloa succincta|Eriochloa succincta (Trin.) Kunth|4|0||歸化
+9002|Poaceae|禾本科|朝陽隱子草|Cleistogenes hackelii|Cleistogenes hackelii (Honda) Honda|4|0||原生
+9003|Poaceae|禾本科|瑞氏楔穎草|Apocopis wrightii|Apocopis wrightii Munro|4|0||原生
+9004|Asteraceae|菊科|翼薊|Cirsium vulgare|Cirsium vulgare (Savi) Ten.|6|0||歸化
