@@ -5,8 +5,9 @@
 7450|Lycopodiaceae|石松科|凉山石杉|Huperzia liangshanica|Huperzia liangshanica (H.S.Kung) Ching & H.S.Kung|1|0|DD|原生
 7004|Lycopodiaceae|石松科|反捲葉石杉|Huperzia quasipolytrichoides|Huperzia quasipolytrichoides (Hayata) Ching|1|0|LC|原生
 7002|Lycopodiaceae|石松科|小杉葉石杉|Huperzia selago|Huperzia selago (L.) Bernh. ex Schrank & Mart.|1|0|VU|原生
-7005|Lycopodiaceae|石松科|千層塔|Huperzia serrata|Huperzia serrata (Thunb.) Trevis.|1|0|DD|原生
+7005|Lycopodiaceae|石松科|長柄千層塔|Huperzia javanica|Huperzia javanica (Sw.) C.Y.Yang|1|0|DD|原生
 7006|Lycopodiaceae|石松科|相馬氏石杉|Huperzia somae|Huperzia somae (Hayata) Ching|1|0|LC|原生
+9085|Lycopodiaceae|石松科|阿里山千層塔|Huperzia myriophyllifolia|Huperzia myriophyllifolia (Hayata) Holub|1|1||原生
 7007|Lycopodiaceae|石松科|木賊葉石松|Lycopodiastrum casuarinoides|Lycopodiastrum casuarinoides (Spring) Holub ex R.D.Dixit|1|0|LC|原生
 7009|Lycopodiaceae|石松科|過山龍|Lycopodiella cernua|Lycopodiella cernua (L.) Pic.Serm.|1|0|LC|原生
 7019|Lycopodiaceae|石松科|杉葉蔓石松|Lycopodium annotinum|Lycopodium annotinum L.|1|0|VU|原生
@@ -61,12 +62,12 @@
 6625|Aspleniaceae|鐵角蕨科|蘭嶼鐵角蕨|Asplenium matsumurae|Asplenium matsumurae Christ|2|1|EN|原生
 6612|Aspleniaceae|鐵角蕨科|臺灣山蘇花|Asplenium nidus|Asplenium nidus L.|2|0|LC|原生
 9019|Aspleniaceae|鐵角蕨科|鐮羽鐵角蕨|Asplenium normale fo. scythiforme|Asplenium normale D.Don fo. scythiforme Z.X.Chang|2|1||原生
-6595|Aspleniaceae|鐵角蕨科|北方生芽鐵角蕨|Asplenium normale var. boreale|Asplenium normale D.Don var. boreale Ohwi ex Sa.Kurata|2|0|VU|原生
+6595|Aspleniaceae|鐵角蕨科|北方鐵角蕨(北方生芽鐵角蕨)|Asplenium boreale|Asplenium boreale (Ohwi ex Sa.Kurata) Nakaike|2|0|VU|原生
 6613|Aspleniaceae|鐵角蕨科|生芽鐵角蕨|Asplenium normale var. normale|Asplenium normale D.Don var. normale|2|0|LC|原生
 6615|Aspleniaceae|鐵角蕨科|俄氏鐵角蕨|Asplenium oldhami|Asplenium oldhami Hance|2|0|LC|原生
 6616|Aspleniaceae|鐵角蕨科|北京鐵角蕨|Asplenium pekinense|Asplenium pekinense Hance|2|0|DD|原生
-6617|Aspleniaceae|鐵角蕨科|碧鳳鐵角蕨|Asplenium pifongiae|Asplenium pifongiae L.Y.Kuo, F.W.Li & Y.H.Chang|2|1|EN|原生
-6604|Aspleniaceae|鐵角蕨科|革葉鐵角蕨|Asplenium polyodon|Asplenium polyodon G.Forst.|2|0|LC|原生
+6617|Aspleniaceae|鐵角蕨科|碧鳳鐵角蕨|Asplenium pifongiae|Asplenium pifongiae L.Y.Kuo, F.W.Li & Y.H.Chang|2|0|EN|原生
+6604|Aspleniaceae|鐵角蕨科|革葉鐵角蕨|Asplenium falcatum|Asplenium falcatum Lam.|2|0|LC|原生
 6618|Aspleniaceae|鐵角蕨科|長生鐵角蕨|Asplenium prolongatum|Asplenium prolongatum Hook.|2|0|LC|原生
 6611|Aspleniaceae|鐵角蕨科|大黑柄鐵角蕨|Asplenium pseudolaserpitiifolium|Asplenium pseudolaserpitiifolium Ching|2|0|LC|原生
 6620|Aspleniaceae|鐵角蕨科|細葉鐵角蕨|Asplenium pulcherrimum|Asplenium pulcherrimum (Baker) Ching ex Tardieu|2|0|NT|原生
@@ -94,7 +95,6 @@
 6603|Aspleniaceae|鐵角蕨科|剪葉膜葉鐵角蕨|Hymenasplenium excisum|Hymenasplenium excisum (C.Presl) S.Linds.|2|0|LC|原生
 6598|Aspleniaceae|鐵角蕨科|單邊膜葉鐵角蕨|Hymenasplenium murakami-hatanakae|Hymenasplenium murakami-hatanakae Nakaike|2|0|LC|原生
 7448|Aspleniaceae|鐵角蕨科|蔭濕膜葉鐵角蕨|Hymenasplenium obliquissimum|Hymenasplenium obliquissimum (Hayata) Sugim.|2|0|LC|原生
-6614|Aspleniaceae|鐵角蕨科|綠柄剪葉鐵角蕨|Hymenasplenium obscurum|Hymenasplenium obscurum (Blume) Tagawa|2|0|NT|原生
 9015|Aspleniaceae|鐵角蕨科|尖峰嶺膜葉鐵角蕨|Hymenasplenium pseudobscurum|Hymenasplenium pseudobscurum Viane|2|0||原生
 6626|Aspleniaceae|鐵角蕨科|小膜葉鐵角蕨|Hymenasplenium subnormale|Hymenasplenium subnormale (Copel.) Nakaike|2|0|DD|原生
 6639|Athyriaceae|蹄蓋蕨科|宿蹄蓋蕨|Athyrium anisopterum|Athyrium anisopterum Christ|2|0|LC|原生
@@ -106,7 +106,7 @@
 6647|Athyriaceae|蹄蓋蕨科|貞蕨|Athyrium decurrentialatum var. decurrentialatum|Athyrium decurrentialatum (Hook.) Copel. var. decurrentialatum|2|0|LC|原生
 6646|Athyriaceae|蹄蓋蕨科|毛葉貞蕨|Athyrium decurrentialatum var. pilosellum|Athyrium decurrentialatum var. pilosellum (H.Itô) Ohwi|2|0|LC|原生
 6648|Athyriaceae|蹄蓋蕨科|溪谷蹄蓋蕨|Athyrium delavayi var. delavayi|Athyrium delavayi Christ var. delavayi|2|0|LC|原生
-9016|Athyriaceae|蹄蓋蕨科|姬蹄蓋蕨|Athyrium delavayi var. subrigescens|Athyrium delavayi Christ var. subrigescens Hayata|2|0||原生
+9016|Athyriaceae|蹄蓋蕨科|姬蹄蓋蕨|Athyrium delavayi var. subrigescens|Athyrium delavayi Christ var. subrigescens (Hayata) Yea C.Liu, W.L.Chiou & H.Y.Liu|2|0||原生
 6650|Athyriaceae|蹄蓋蕨科|軸果蹄蓋蕨|Athyrium epirachis|Athyrium epirachis (Christ) Ching|2|0|DD|原生
 6651|Athyriaceae|蹄蓋蕨科|紅柄蹄蓋蕨|Athyrium erythropodum|Athyrium erythropodum Hayata|2|0|LC|原生
 6643|Athyriaceae|蹄蓋蕨科|大葉貞蕨|Athyrium fluviale|Athyrium fluviale (Hayata) C.Chr.|2|0|LC|原生
@@ -252,11 +252,11 @@
 6790|Dryopteridaceae|鱗毛蕨科|細葉實蕨|Bolbitis angustipinna|Bolbitis angustipinna (Hayata) H.Itô|2|0|LC|原生
 6791|Dryopteridaceae|鱗毛蕨科|刺蕨|Bolbitis appendiculata|Bolbitis appendiculata (Willd.) K.Iwats.|2|0|LC|原生
 6792|Dryopteridaceae|鱗毛蕨科|尾葉實蕨|Bolbitis heteroclita|Bolbitis heteroclita (C.Presl) Ching|2|0|LC|原生
-9024|Dryopteridaceae|鱗毛蕨科|尾葉實蕨×海南實蕨|Bolbitis heteroclita ×subcordata|Bolbitis heteroclita (C.Presl) Ching × B. subcordata (Copel.) Ching|2|1||原生
+9024|Dryopteridaceae|鱗毛蕨科|尾葉實蕨×海南實蕨|Bolbitis heteroclita ×Bolbitis subcordata|Bolbitis heteroclita (C.Presl) Ching ×Bolbitis subcordata (Copel.) Ching|2|1||原生
 6794|Dryopteridaceae|鱗毛蕨科|大刺蕨|Bolbitis rhizophylla|Bolbitis rhizophylla (Kaulf.) Hennipman|2|0|NT|原生
 6795|Dryopteridaceae|鱗毛蕨科|紅柄實蕨|Bolbitis scalpturata|Bolbitis scalpturata (Fée) Ching|2|0|VU|原生
 6796|Dryopteridaceae|鱗毛蕨科|海南實蕨|Bolbitis subcordata|Bolbitis subcordata (Copel.) Ching|2|0|LC|原生
-9025|Dryopteridaceae|鱗毛蕨科|厚葉實蕨|Bolbitis virens var. compacta|Bolbitis virens (Wall. ex Hook. & Grev.) Schott var. compacta Hennipman|2|0||原生
+9025|Dryopteridaceae|鱗毛蕨科|蓮華池實蕨(厚葉實蕨)|Bolbitis lianhuachihensis|Bolbitis lianhuachihensis Y.S.Chao, Y.F.Huang, & H.Y.Liu|2|1||原生
 6800|Dryopteridaceae|鱗毛蕨科|愛德氏肋毛蕨|Ctenitis eatonii|Ctenitis eatonii (Baker) Ching|2|0|LC|原生
 6801|Dryopteridaceae|鱗毛蕨科|肋毛蕨|Ctenitis subglandulosa|Ctenitis subglandulosa (Hance) Ching|2|0|LC|原生
 6802|Dryopteridaceae|鱗毛蕨科|奇葉貫眾蕨|Cyrtomium anomophyllum|Cyrtomium anomophyllum (Zenker) Fraser-Jenk.|2|0|LC|原生
@@ -278,6 +278,7 @@
 6816|Dryopteridaceae|鱗毛蕨科|近中肋鱗毛蕨|Dryopteris costalisora|Dryopteris costalisora Tagawa|2|1|LC|原生
 6817|Dryopteridaceae|鱗毛蕨科|桫欏鱗毛蕨|Dryopteris cycadina|Dryopteris cycadina (Franch. & Sav.) C.Chr.|2|0|LC|原生
 6818|Dryopteridaceae|鱗毛蕨科|迷人鱗毛蕨|Dryopteris decipiens|Dryopteris decipiens (Hook.) Kuntze|2|0|VU|原生
+9086|Dryopteridaceae|鱗毛蕨科|深裂迷人鱗毛蕨|Dryopteris decipiens var. diplazioides|Dryopteris decipiens (Hook.) Kuntze var. diplazioides (Christ) Ching|2|0||原生
 6819|Dryopteridaceae|鱗毛蕨科|遠軸鱗毛蕨|Dryopteris dickinsii|Dryopteris dickinsii (Franch. & Sav.) C.Chr.|2|1|EN|原生
 6820|Dryopteridaceae|鱗毛蕨科|彎柄假複葉耳蕨|Dryopteris diffracta|Dryopteris diffracta (Baker) C.Chr.|2|0|LC|原生
 9027|Dryopteridaceae|鱗毛蕨科|愛氏鱗毛蕨|Dryopteris edwardsii|Dryopteris edwardsii Fraser-Jenk.|2|0||原生
@@ -300,6 +301,7 @@
 7486|Dryopteridaceae|鱗毛蕨科|脈紋鱗毛蕨|Dryopteris lachoongensis|Dryopteris lachoongensis (Bedd.) B.K.Nayar & S.Kaur|2|0|LC|原生
 6836|Dryopteridaceae|鱗毛蕨科|厚葉鱗毛蕨|Dryopteris lepidopoda|Dryopteris lepidopoda Hayata|2|0|LC|原生
 6837|Dryopteridaceae|鱗毛蕨科|三角葉鱗毛蕨|Dryopteris marginata|Dryopteris marginata (C.B. Clarke) Christ|2|0|LC|原生
+9087|Dryopteridaceae|鱗毛蕨科|近軸鱗毛蕨|Dryopteris medioxima|Dryopteris medioxima Koidz.|2|0||原生
 6838|Dryopteridaceae|鱗毛蕨科|馬氏肋毛蕨|Dryopteris maximowicziana|Dryopteris maximowicziana (Miq.) C.Chr.|2|0|VU|原生
 6839|Dryopteridaceae|鱗毛蕨科|黑孢鱗毛蕨|Dryopteris melanocarpa|Dryopteris melanocarpa Hayata|2|0|LC|原生
 6840|Dryopteridaceae|鱗毛蕨科|黑鱗遠軸鱗毛蕨|Dryopteris namegatae|Dryopteris namegatae (Sa.Kurata) Sa.Kurata|2|0|VU|原生
@@ -361,7 +363,7 @@
 6894|Dryopteridaceae|鱗毛蕨科|韓氏耳蕨|Polystichum hancockii|Polystichum hancockii (Hance) Diels|2|0|LC|原生
 6895|Dryopteridaceae|鱗毛蕨科|鋸齒葉耳蕨|Polystichum hecatopterum|Polystichum hecatopterum Diels|2|0|LC|原生
 7449|Dryopteridaceae|鱗毛蕨科|草葉耳蕨|Polystichum herbaceum|Polystichum herbaceum Ching & Z.Y.Liu|2|0|CR|原生
-6807|Dryopteridaceae|鱗毛蕨科|狹葉貫眾蕨|Polystichum integripinnum|Polystichum integripinnum Hayata|2|1|LC|原生
+6807|Dryopteridaceae|鱗毛蕨科|狹葉貫眾蕨|Polystichum integripinnum|Polystichum integripinnum Hayata|2|0|LC|原生
 6896|Dryopteridaceae|鱗毛蕨科|高山耳蕨|Polystichum lachenense|Polystichum lachenense (Hook.) Bedd.|2|0|LC|原生
 6897|Dryopteridaceae|鱗毛蕨科|鞭葉耳蕨|Polystichum lepidocaulon|Polystichum lepidocaulon (Hook.) J.Sm.|2|0|LC|原生
 6898|Dryopteridaceae|鱗毛蕨科|鐮葉耳蕨|Polystichum manmeiense|Polystichum manmeiense (Christ) Nakaike|2|0|LC|原生
@@ -422,9 +424,11 @@
 6948|Hymenophyllaceae|膜蕨科|蕗蕨|Hymenophyllum badium|Hymenophyllum badium Hook. & Grev.|2|0|LC|原生
 6949|Hymenophyllaceae|膜蕨科|華東膜蕨|Hymenophyllum barbatum|Hymenophyllum barbatum (Bosch) Baker|2|0|LC|原生
 6950|Hymenophyllaceae|膜蕨科|爪哇厚壁蕨|Hymenophyllum blandum|Hymenophyllum blandum Racib.|2|0|VU|原生
+9080|Hymenophyllaceae|膜蕨科|波紋蕗蕨|Hymenophyllum crispatum|Hymenophyllum crispatum Wall. ex Hook. & Grev.|2|0||原生
 6951|Hymenophyllaceae|膜蕨科|厚壁蕨|Hymenophyllum denticulatum|Hymenophyllum denticulatum Sw.|2|0|NT|原生
 6952|Hymenophyllaceae|膜蕨科|棣氏膜蕨|Hymenophyllum devolii|Hymenophyllum devolii M.J.Lai|2|1|LC|原生
 6953|Hymenophyllaceae|膜蕨科|指裂細口團扇蕨|Hymenophyllum digitatum|Hymenophyllum digitatum (Sw.) Fosberg|2|0|EN|原生
+9079|Hymenophyllaceae|膜蕨科|玲瓏蕗蕨|Hymenophyllum exquisitum|Hymenophyllum exquisitum T.C.Hsu & Y.S.Chao|2|1||原生
 6954|Hymenophyllaceae|膜蕨科|叢葉蕗蕨|Hymenophyllum fimbriatum|Hymenophyllum fimbriatum J.Sm.|2|0|LC|原生
 6955|Hymenophyllaceae|膜蕨科|南洋厚壁蕨|Hymenophyllum holochilum|Hymenophyllum holochilum (Bosch) C.Chr.|2|0|LC|原生
 6956|Hymenophyllaceae|膜蕨科|爪哇蕗蕨|Hymenophyllum javanicum|Hymenophyllum javanicum Spreng.|2|0|NT|原生
@@ -435,7 +439,7 @@
 6960|Hymenophyllaceae|膜蕨科|毛緣細口團扇蕨|Hymenophyllum palmatifidum|Hymenophyllum palmatifidum (Müll. Berol.) Ebihara & K.Iwats.|2|0|CR|原生
 6961|Hymenophyllaceae|膜蕨科|頂囊蕗蕨|Hymenophyllum paniculiflorum|Hymenophyllum paniculiflorum C.Presl|2|0|LC|原生
 6962|Hymenophyllaceae|膜蕨科|星毛膜蕨|Hymenophyllum pilosissimum|Hymenophyllum pilosissimum C.Chr.|2|0|VU|原生
-6963|Hymenophyllaceae|膜蕨科|細葉蕗蕨|Hymenophyllum polyanthos|Hymenophyllum polyanthos (Sw.) Sw.|2|0|LC|原生
+6963|Hymenophyllaceae|膜蕨科|細葉蕗蕨|Hymenophyllum fujisanense|Hymenophyllum fujisanense Nakai|2|0|LC|原生
 6964|Hymenophyllaceae|膜蕨科|南洋蕗蕨|Hymenophyllum productum|Hymenophyllum productum Kunze|2|0|CR|原生
 7489|Hymenophyllaceae|膜蕨科|半翼柄蕗蕨|Hymenophyllum semialatum|Hymenophyllum semialatum T.C.Hsu|2|0|VU|原生
 6965|Hymenophyllaceae|膜蕨科|寬片膜蕨|Hymenophyllum simonsianum|Hymenophyllum simonsianum Hook.|2|0|CR|原生
@@ -445,7 +449,7 @@
 6971|Hymenophyllaceae|膜蕨科|大葉瓶蕨|Vandenboschia maxima|Vandenboschia maxima (Blume) Copel.|2|0|LC|原生
 6972|Hymenophyllaceae|膜蕨科|南海瓶蕨|Vandenboschia striata|Vandenboschia striata (D.Don) Ebihara|2|0|LC|原生
 9039|Hymenophyllaceae|膜蕨科|亞窗格狀瓶蕨|Vandenboschia subclathrata|Vandenboschia subclathrata K.Iwats.|2|0||原生
-6973|Hypodematiaceae|腫足蕨科|腫足蕨|Hypodematium crenatum|Hypodematium crenatum (Forssk.) Kuhn & Decken|2|0|LC|原生
+6973|Hypodematiaceae|腫足蕨科|腫足蕨|Hypodematium shingii|Hypodematium shingii Li Bing Zhang, X.P.Fan & X.F.Gao|2|0|LC|原生
 9040|Hypodematiaceae|腫足蕨科|臺灣腫足蕨|Hypodematium taiwanense|Hypodematium taiwanense Ching ex K.H.Shing|2|0||原生
 6974|Hypodematiaceae|腫足蕨科|大膜蓋蕨|Leucostegia truncata|Leucostegia truncata (D.Don) Fraser-Jenk.|2|0|LC|原生
 6978|Lindsaeaceae|鱗始蕨科|海島鱗始蕨|Lindsaea bonii|Lindsaea bonii Christ|2|0|LC|原生
@@ -509,7 +513,7 @@
 7055|Plagiogyriaceae|瘤足蕨科|小泉氏瘤足蕨|Plagiogyria koidzumii|Plagiogyria koidzumii Tagawa|2|0|CR|原生
 9044|Plagiogyriaceae|瘤足蕨科|密葉瘤足蕨|Plagiogyria pycnophylla|Plagiogyria pycnophylla (Kunze) Mett.|2|0|DD|原生
 7056|Plagiogyriaceae|瘤足蕨科|耳形瘤足蕨|Plagiogyria stenoptera|Plagiogyria stenoptera (Hance) Diels|2|0|LC|原生
-7060|Polypodiaceae|水龍骨科|肢節蕨|Arthromeris lehmannii|Arthromeris lehmannii (Mett.) Ching|2|0|LC|原生
+7060|Polypodiaceae|水龍骨科|肢節蕨|Selliguea lehmannii|Selliguea lehmannii (Mett.) Christenh.|2|0|LC|原生
 7062|Polypodiaceae|水龍骨科|疏毛荷包蕨|Calymmodon gracilis|Calymmodon gracilis (Fée) Copel.|2|0|LC|原生
 7431|Polypodiaceae|水龍骨科|寡毛荷包蕨|Calymmodon oligotrichus|Calymmodon oligotrichus T.C.Hsu|2|1|NT|原生
 7061|Polypodiaceae|水龍骨科|姬荷包蕨|Calymmodon ordinatus|Calymmodon ordinatus Copel.|2|0|VU|原生
@@ -527,7 +531,7 @@
 7071|Polypodiaceae|水龍骨科|疏毛水龍骨|Goniophlebium transpianense|Goniophlebium transpianense (Yamam.) L.Y.Kuo|2|1|LC|原生
 7072|Polypodiaceae|水龍骨科|伏石蕨|Lemmaphyllum microphyllum|Lemmaphyllum microphyllum C.Presl|2|0|LC|原生
 7073|Polypodiaceae|水龍骨科|骨牌蕨|Lemmaphyllum rostratum|Lemmaphyllum rostratum (Bedd.) Tagawa|2|0|LC|原生
-7108|Polypodiaceae|水龍骨科|攀援星蕨(波氏星蕨)|Lepidomicrosorium ningpoense|Lepidomicrosorium ningpoense (Baker) L.Y.Kuo|2|0|LC|原生
+7108|Polypodiaceae|水龍骨科|攀援星蕨(波氏星蕨)|Lepidomicrosorum ningpoense|Lepidomicrosorum ningpoense (Baker) L.Y.Kuo|2|0|LC|原生
 9045|Polypodiaceae|水龍骨科|扭瓦葦|Lepisorus contortus|Lepisorus contortus (Christ) Ching|2|0|LC|原生
 7075|Polypodiaceae|水龍骨科|川上氏瓦韋|Lepisorus kawakamii|Lepisorus kawakamii (Hayata) Tagawa|2|1|LC|原生
 7076|Polypodiaceae|水龍骨科|猺山瓦韋|Lepisorus kuchenensis|Lepisorus kuchenensis (Y.C.Wu) Ching|2|0|DD|原生
@@ -559,7 +563,7 @@
 7097|Polypodiaceae|水龍骨科|長柄劍蕨|Loxogramme remotefrondigera|Loxogramme remotefrondigera Hayata|2|1|LC|原生
 7098|Polypodiaceae|水龍骨科|柳葉劍蕨|Loxogramme salicifolia|Loxogramme salicifolia (Makino) Makino|2|0|LC|原生
 7099|Polypodiaceae|水龍骨科|梳葉蕨|Micropolypodium okuboi|Micropolypodium okuboi (Yatabe) Hayata|2|0|LC|原生
-7101|Polypodiaceae|水龍骨科|膜葉星蕨|Microsorum membranaceum|Microsorum membranaceum (D.Don) Ching|2|0|LC|原生
+7101|Polypodiaceae|水龍骨科|膜葉星蕨|Bosmania membranacea|Bosmania membranacea (D.Don) Testo|2|0|LC|原生
 7104|Polypodiaceae|水龍骨科|星蕨|Microsorum punctatum|Microsorum punctatum (L.) Copel.|2|0|LC|原生
 7470|Polypodiaceae|水龍骨科|海岸星蕨(海岸擬茀蕨)|Microsorum scolopendria|Microsorum scolopendria (Burm.f) Copel.|2|0|LC|原生
 7107|Polypodiaceae|水龍骨科|廣葉星蕨|Microsorum steerei|Microsorum steerei (Harr.) Ching|2|0|EN|原生
@@ -593,7 +597,7 @@
 9048|Polypodiaceae|水龍骨科|擬槭葉石韋|Pyrrosia ×pseudopolydactylis|Pyrrosia ×pseudopolydactylis Seriz.|2|1|EN|原生
 7123|Polypodiaceae|水龍骨科|捲葉蕨|Pyrrosia angustissima|Pyrrosia angustissima (Giesenh. ex Diels) Tagawa & K.Iwats.|2|0|VU|原生
 9049|Polypodiaceae|水龍骨科|相近石葦|Pyrrosia assimilis|Pyrrosia assimilis (Baker) Ching|2|0|DD|原生
-7124|Polypodiaceae|水龍骨科|批針葉石韋(抱樹石韋)|Pyrrosia lanceolata|Pyrrosia lanceolata (L.) Farw.|2|0|LC|原生
+7124|Polypodiaceae|水龍骨科|抱樹石韋|Pyrrosia lanceolata|Pyrrosia lanceolata (L.) Farw.|2|0|LC|原生
 7125|Polypodiaceae|水龍骨科|絨毛石韋|Pyrrosia linearifolia|Pyrrosia linearifolia (Hook.) Ching|2|0|LC|原生
 7126|Polypodiaceae|水龍骨科|石韋|Pyrrosia lingua|Pyrrosia lingua (Thunb.) Farw.|2|0|LC|原生
 7127|Polypodiaceae|水龍骨科|松田氏石韋|Pyrrosia matsudae|Pyrrosia matsudae (Hayata) Tagawa|2|1|EN|原生
@@ -605,7 +609,7 @@
 7136|Polypodiaceae|水龍骨科|恩氏茀蕨|Selliguea engleri|Selliguea engleri (Luerss.) Fraser-Jenk.|2|0|LC|原生
 7140|Polypodiaceae|水龍骨科|掌葉茀蕨|Selliguea falcatopinnata|Selliguea falcatopinnata (Hayata) H.Ohashi & K.Ohashi|2|0|VU|原生
 7137|Polypodiaceae|水龍骨科|三葉茀蕨|Selliguea hastata|Selliguea hastata (Thunb.) Fraser-Jenk.|2|0|LC|原生
-7138|Polypodiaceae|水龍骨科|玉山茀蕨|Selliguea quasidivaricata|Selliguea quasidivaricata (Hayata) H.Ohashi & K.Ohashi|2|1|LC|原生
+7138|Polypodiaceae|水龍骨科|玉山茀蕨|Selliguea quasidivaricata|Selliguea quasidivaricata (Hayata) H.Ohashi & K.Ohashi|2|0|LC|原生
 7141|Polypodiaceae|水龍骨科|臺灣茀蕨|Selliguea taiwanensis|Selliguea taiwanensis (Tagawa) H.Ohashi & K.Ohashi|2|1|DD|原生
 7142|Polypodiaceae|水龍骨科|姬茀蕨|Selliguea yakushimensis|Selliguea yakushimensis (Makino) Fraser-Jenk.|2|0|NT|原生
 7145|Polypodiaceae|水龍骨科|早田裂禾蕨(虎尾蒿蕨)|Tomophyllum hayatae|Tomophyllum hayatae (Masam.) T.C.Hsu|2|0|NT|原生
@@ -636,7 +640,7 @@
 9052|Pteridaceae|鳳尾蕨科|臺灣粉背蕨|Aleuritopteris formosana|Aleuritopteris formosana (Hayata) Tagawa|2|0||原生
 7463|Pteridaceae|鳳尾蕨科|亨氏擬旱蕨|Aleuritopteris henryi|Aleuritopteris henryi (Christ) F.W.Li|2|0|LC|原生
 7168|Pteridaceae|鳳尾蕨科|克氏粉背蕨(粉背蕨)|Aleuritopteris krameri|Aleuritopteris krameri  (Franch. & Sav.) Ching|2|0|DD|原生
-7169|Pteridaceae|鳳尾蕨科|擬長柄粉背蕨|Aleuritopteris subargentea|Aleuritopteris subargentea Ching|2|0|DD|原生
+7169|Pteridaceae|鳳尾蕨科|擬長柄粉背蕨|Aleuritopteris subargentea|Aleuritopteris subargentea Ching ex S.K.Wu|2|0|DD|原生
 7170|Pteridaceae|鳳尾蕨科|翠蕨|Anogramma leptophylla|Anogramma leptophylla (L.) Link|2|0|NT|原生
 9053|Pteridaceae|鳳尾蕨科|美葉車前蕨|Antrophyum callifolium|Antrophyum callifolium Blume|2|0||原生
 7172|Pteridaceae|鳳尾蕨科|栗色車前蕨(阿里山車前蕨)|Antrophyum castaneum|Antrophyum castaneum H.Itô|2|1|VU|原生
@@ -696,7 +700,7 @@
 7493|Pteridaceae|鳳尾蕨科|彎羽鳳尾蕨|Pteris incurvata|Pteris incurvata Y.S.Chao, H.Y.Liu & W.L.Chiou|2|1|LC|原生
 7220|Pteridaceae|鳳尾蕨科|無柄鳳尾蕨|Pteris kawabatae|Pteris kawabatae Sa. Kurata|2|0|VU|原生
 7221|Pteridaceae|鳳尾蕨科|城戶氏鳳尾蕨|Pteris kidoi|Pteris kidoi Sa. Kurata|2|0|NT|原生
-7466|Pteridaceae|鳳尾蕨科|寬羽鳳尾蕨|Pteris latipinna|Pteris latipinna Y.S.Chao & W.L.Chiou|2|1|VU|原生
+7466|Pteridaceae|鳳尾蕨科|寬羽鳳尾蕨|Pteris latipinna|Pteris latipinna Y.S.Chao & W.L.Chiou|2|0|VU|原生
 7222|Pteridaceae|鳳尾蕨科|蓬萊鳳尾蕨|Pteris longipes|Pteris longipes D.Don|2|0|LC|原生
 7223|Pteridaceae|鳳尾蕨科|長葉鳳尾蕨|Pteris longipinna|Pteris longipinna Hayata|2|1|LC|原生
 7224|Pteridaceae|鳳尾蕨科|鳳尾蕨|Pteris multifida|Pteris multifida Poir.|2|0|LC|原生
@@ -718,7 +722,7 @@
 7238|Pteridaceae|鳳尾蕨科|連孢針葉蕨(連孢一條線蕨)|Vaginularia junghuhnii|Vaginularia junghuhnii Mett.|2|0|NT|原生
 7239|Pteridaceae|鳳尾蕨科|針葉蕨(一條線蕨)|Vaginularia trichoidea|Vaginularia trichoidea Fée|2|0|CR|原生
 7240|Rhachidosoraceae|軸果蕨科|軸果蕨|Rhachidosorus pulcher|Rhachidosorus pulcher (Tagawa) Ching|2|0|NT|原生
-7241|Salviniaceae|槐葉蘋科|卡州滿江紅|Azolla caroliniana|Azolla caroliniana Willd.|2|0|NA|歸化
+7241|Salviniaceae|槐葉蘋科|墨西哥滿江紅|Azolla mexicana|Azolla mexicana Schltdl. & Cham. ex Kunze|2|0|NA|歸化
 7242|Salviniaceae|槐葉蘋科|滿江紅|Azolla pinnata|Azolla pinnata R.Br.|2|0|DD|原生
 9063|Salviniaceae|槐葉蘋科|酒杯槐葉蘋|Salvinia cucullata|Salvinia cucullata Roxb. ex Bory|2|0|NA|歸化
 7243|Salviniaceae|槐葉蘋科|人厭槐葉蘋|Salvinia molesta|Salvinia molesta D.S.Mitch.|2|0|NA|歸化
@@ -749,17 +753,20 @@
 7288|Tectariaceae|三叉蕨科|地耳蕨|Tectaria zeilanica|Tectaria zeilanica (Houtt.) Sledge|2|0|LC|原生
 7318|Thelypteridaceae|金星蕨科|變葉新月小毛蕨(變葉新月蕨)|×Chrinephrium insulare|×Chrinephrium insulare (K.Iwats.) Nakaike|2|0|DD|原生
 7311|Thelypteridaceae|金星蕨科|小梯葉泛美金星蕨(小梯葉金星蕨)|Amauropelta angustifrons|Amauropelta angustifrons (Miq.) Y.H.Chang|2|0|LC|原生
-9065|Thelypteridaceae|金星蕨科|小梯葉泛美金星蕨×密腺泛美金星蕨|Amauropelta angustifrons ×glanduligera|Amauropelta angustifrons (Miq.) Y.H.Chang ×A. glanduligera (Kunze) Y.H.Chang|2|1||原生
+9065|Thelypteridaceae|金星蕨科|小梯葉泛美金星蕨×密腺泛美金星蕨|Amauropelta angustifrons × Amauropelta glanduligera|Amauropelta angustifrons (Miq.) Y.H.Chang ×Amauropelta glanduligera (Kunze) Y.H.Chang|2|1||原生
 7312|Thelypteridaceae|金星蕨科|縮羽泛美金星蕨(縮羽金星蕨)|Amauropelta beddomei|Amauropelta beddomei (Baker) Y.H.Chang|2|0|LC|原生
 7307|Thelypteridaceae|金星蕨科|密腺泛美金星蕨(密腺金星蕨)|Amauropelta glanduligera|Amauropelta glanduligera (Kunze) Y.H.Chang|2|0|LC|原生
 7289|Thelypteridaceae|金星蕨科|星毛蕨|Ampelopteris prolifera|Ampelopteris prolifera (Retz.) Copel.|2|0|LC|原生
 9066|Thelypteridaceae|金星蕨科|賽小毛蕨|Christella ×acuminatoides|Christella ×acuminatoides (W.C.Shieh & J.L.Tsai) Y.H.Chang|2|1||原生
 7507|Thelypteridaceae|金星蕨科|擬密毛小毛蕨(擬密毛毛蕨)|Christella ×intermedius|Christella ×intermedius (W.C.Shieh & J.L.Tsai) Y.H.Chang|2|1||原生
 7290|Thelypteridaceae|金星蕨科|小毛蕨(毛蕨)|Christella acuminata|Christella acuminata (Houtt.) H.Lév.|2|0|NT|原生
+9083|Thelypteridaceae|金星蕨科|小毛蕨×密毛小毛蕨|Christella acuminata ×Christella parasitica|Christella acuminata (Houtt.) H.Lév. ×Christella parasitica (L.) H.Lév. ex Y.H.Chang|2|0||原生
 7505|Thelypteridaceae|金星蕨科|密腺小毛蕨|Christella arida|Christella arida (D.Don) Holttum|2|0|LC|原生
 7454|Thelypteridaceae|金星蕨科|野小毛蕨|Christella dentata|Christella dentata (Forssk.) Brownsey & Jermy|2|0|LC|原生
 7487|Thelypteridaceae|金星蕨科|突尖小毛蕨|Christella ensifer|Christella ensifer (Tagawa) Holttum ex C.M.Kuo|2|1|DD|原生
 7294|Thelypteridaceae|金星蕨科|小密腺小毛蕨(小毛蕨)|Christella jaculosa|Christella jaculosa (Christ) Holttum|2|1|LC|原生
+9082|Thelypteridaceae|金星蕨科|假毛蕨×疣狀假毛蕨|Pseudocyclosorus esquirolii ×Pseudocyclosorus tylodes|Pseudocyclosorus esquirolii (Christ) Ching ×Pseudocyclosorus tylodes (Kunze) Ching|2|0||原生
+9081|Thelypteridaceae|金星蕨科|突尖小毛蕨×密毛小毛蕨|Christella ensifer ×Christella parasitica|Christella ensifer ×Christella parasitica (L.) H.Lév. ex Y.H.Chang|2|1||原生
 7295|Thelypteridaceae|金星蕨科|微縮小毛蕨|Christella latipinna|Christella latipinna (Benth.) H.Lév.|2|1|LC|原生
 7437|Thelypteridaceae|金星蕨科|薄葉梳小毛蕨(縮羽小毛蕨)|Christella papilio|Christella papilio (C.Hope) K.Iwats.|2|0|NT|原生
 7480|Thelypteridaceae|金星蕨科|密毛小毛蕨|Christella parasitica|Christella parasitica (L.) H.Lév. ex Y.H.Chang|2|0|LC|原生
@@ -803,6 +810,7 @@
 7337|Woodsiaceae|岩蕨科|蜘蛛岩蕨|Woodsia andersonii|Woodsia andersonii (Bedd.) Christ|2|0|CR|原生
 7338|Woodsiaceae|岩蕨科|岡本氏岩蕨|Woodsia okamotoi|Woodsia okamotoi Tagawa|2|1|CR|原生
 7339|Woodsiaceae|岩蕨科|岩蕨|Woodsia polystichoides|Woodsia polystichoides D.C.Eaton|2|0|LC|原生
+9084|Woodsiaceae|岩蕨科|陝西岩蕨|Woodsia shensiensis|Woodsia shensiensis Ching|2|0||原生
 5480|Araucariaceae|南洋杉科|貝殼杉|Agathis dammara|Agathis dammara (Lamb.) Rich. & A.Rich.|3|0||栽培
 5481|Araucariaceae|南洋杉科|廣葉南洋杉|Araucaria bidwillii|Araucaria bidwillii Hook.|3|0||栽培
 5084|Araucariaceae|南洋杉科|肯氏南洋杉|Araucaria cunninghamii|Araucaria cunninghamii Aiton ex D.Don|3|0||栽培
@@ -1490,6 +1498,7 @@
 4659|Orchidaceae|蘭科|一葉罈花蘭|Acanthephippium striatum|Acanthephippium striatum Lindl.|4|0|LC|原生
 4660|Orchidaceae|蘭科|罈花蘭|Acanthephippium sylhetense|Acanthephippium sylhetense Lindl.|4|0|LC|原生
 4661|Orchidaceae|蘭科|臺灣禾葉蘭|Agrostophyllum inocephalum|Agrostophyllum inocephalum (Schauer) Ames|4|0|CR|原生
+9078|Orchidaceae|蘭科|臺灣糠穗蘭|Agrostophyllum formosanum|Agrostophyllum formosanum Rolfe|4|1||原生
 4662|Orchidaceae|蘭科|南湖雛蘭|Amitostigma alpestre|Amitostigma alpestre Fukuy.|4|1|LC|原生
 4663|Orchidaceae|蘭科|小雛蘭|Amitostigma gracile|Amitostigma gracile (Blume) Schltr.|4|0|NT|原生
 4664|Orchidaceae|蘭科|小兜蕊蘭|Androcorys pusillus|Androcorys pusillus (Ohwi & Fukuy.) Masam.|4|0|LC|原生
@@ -1498,9 +1507,9 @@
 4667|Orchidaceae|蘭科|恆春金線蓮|Anoectochilus koshunensis|Anoectochilus koshunensis Hayata|4|1|LC|原生
 4668|Orchidaceae|蘭科|山林無葉蘭|Aphyllorchis montana|Aphyllorchis montana Rchb.f.|4|0|LC|原生
 4669|Orchidaceae|蘭科|長葉竹節蘭|Appendicula fenixii|Appendicula fenixii (Ames) Schltr.|4|1|NT|原生
-4670|Orchidaceae|蘭科|臺灣竹葉蘭|Appendicula formosana|Appendicula formosana Hayata|4|1|LC|原生
 6233|Orchidaceae|蘭科|多枝竹節蘭|Appendicula lucbanensis|Appendicula lucbanensis (Ames) Ames|4|0|CR|原生
-4671|Orchidaceae|蘭科|竹葉蘭|Appendicula reflexa|Appendicula reflexa Blume|4|0||原生
+4670|Orchidaceae|蘭科|臺灣竹葉蘭|Appendicula reflexa var. reflexa|Appendicula reflexa Blume var. reflexa|4|0|LC|原生
+9077|Orchidaceae|蘭科|蘭嶼竹節蘭|Appendicula reflexa var. kotoensis|Appendicula reflexa Blume var. kotoensis|4|1||原生
 4672|Orchidaceae|蘭科|龍爪蘭|Arachnis labrosa|Arachnis labrosa (Lindl. ex Paxton) Rchb.f.|4|0|LC|原生
 4673|Orchidaceae|蘭科|葦草蘭|Arundina graminifolia|Arundina graminifolia (D.Don) Hochr.|4|0|CR|原生
 4674|Orchidaceae|蘭科|鹿角蘭|Ascocentrum pumilum|Ascocentrum pumilum (Hayata) Schltr.|4|1|LC|原生
@@ -4461,6 +4470,7 @@
 3109|Lamiaceae|唇形科|頂頭花|Platostoma hispidum|Platostoma hispidum (L.) A.J.Paton|6|0|CR|原生
 3165|Lamiaceae|唇形科|耳葉刺蕊草|Pogostemon auricularius|Pogostemon auricularius (L.) Hassk.|6|0|LC|原生
 3166|Lamiaceae|唇形科|臺灣刺蕊草|Pogostemon formosanus|Pogostemon formosanus Oliv.|6|1|LC|原生
+9088|Lamiaceae|唇形科|深山刺蕊草|Pogostemon monticola|Pogostemon monticola T.C.Hsu, S.W.Chung, S.H.Liu & W.J.Huang|6|1||原生
 3167|Lamiaceae|唇形科|水虎尾|Pogostemon stellatus|Pogostemon stellatus (Lour.) Kuntze|6|0|EN|原生
 3087|Lamiaceae|唇形科|恆春臭黃荊|Premna hengchunensis|Premna hengchunensis S. Y. Lu & Yuen P. Yang|6|1|NT|原生
 3088|Lamiaceae|唇形科|臭黃荊|Premna microphylla|Premna microphylla Turcz.|6|0|LC|原生
