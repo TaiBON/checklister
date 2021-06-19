@@ -67,7 +67,7 @@ class Genlist(object):
             italic_b = ''
             italic_e = ''
         else:
-            if fullname is None or fullname is '':
+            if fullname == None or fullname == '':
                 print('Usage: fmtname(fullname_with_author)')
                 return
             if format_type == 'markdown':
@@ -229,7 +229,7 @@ class Genlist(object):
 
         If split option is true, fmtname will return a string of fullname and authors.
         """
-        if fullname is None or fullname is '':
+        if fullname == None or fullname == '':
             print('Usage: fmtname(fullname_with_author)')
             return
         if format_type == 'markdown':
@@ -305,7 +305,7 @@ class Genlist(object):
                     epithet = subordinate_status[v][1] + ' ' + italic_b + sub_epithet + italic_e
                 epithetLst.append(epithet)
             # authors
-            if authors_start is '':
+            if authors_start == '':
                 authors_start = subordinate_status[-1][0] + 2
             authors = fullname_split[authors_start:length_fullname]
             authors_join = ' '.join(authors)
@@ -789,7 +789,7 @@ I：表示瀕臨絕種野生動物、II：表示珍貴稀有野生動物、III�
                             IUCNCAT = ''
                         spinfo = ' ' + ENDEMIC + SRC + IUCNCAT
 
-                        if spinfo is not None:
+                        if spinfo != None:
                             f.write('    ' + str(n) + '. ' + self.fmtnameNew(taxa_family_sp[k][0], split=False) \
                                         + ' ' + taxa_family_sp[k][1] + spinfo + '\n')
                         else:

@@ -1,2 +1,2 @@
-filevers=(0, 5, 2a2, 0),
-prodvers=(0, 5, 2a2, 0)
+filevers=(0, 5, 3, 0),
+prodvers=(0, 5, 3, 0)

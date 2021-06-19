@@ -278,7 +278,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
 
             if qKeyEvent.key() == Qt.Key_Return or qKeyEvent.key() == Qt.Key_Enter:
-                if self.lineSpecies.text() is not None:
+                if self.lineSpecies.text() != None:
                     self.addToTree()
                 self.lineSpecies.clear()
             if qKeyEvent.key() == Qt.Key_Escape:
@@ -327,7 +327,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
         """
         try:
-            if text_edit_path is None or text_edit_path is '':
+            if text_edit_path == None or text_edit_path == '':
                 text_edit_path = QDir.homePath()
             else:
                 if os.path.isdir(text_edit_path) == True:
@@ -349,7 +349,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         try:
             tobe_merged_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to merge"), \
                 '', self.tr("Text files (*.txt)"))[0]
-            if tobe_merged_lists is None or tobe_merged_lists == '':
+            if tobe_merged_lists == None or tobe_merged_lists == '':
                 return
             tobe_merged_files = ', '.join(tobe_merged_lists)
             # load data into QTreeWidget
@@ -723,7 +723,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             #self.lineSlist.clear()
             Slist = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
                     self.home, self.tr("Text files (*.txt *.yml *.yaml)"))[0]
-            if Slist is None or Slist is '':
+            if Slist == None or Slist == '':
                 return
             info_message = self.tr(u'''When you load species file (only common names) to generate checklist, the "checklist generator" will save a temporary file (filename_temp.txt/csv) within the same directory, and load this species file into checklist below. You can add/remove species to generate checklist.''')
             QMessageBox.information(self, "Info", self.tr(info_message))
@@ -871,7 +871,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.clearOutputFilename()
             saveOutputFile = QFileDialog.getSaveFileName(self, self.tr(u"Save file as:"), \
                     self.home, self.tr("Text files (*.docx *.odt *.xlsx)"))[0]
-            if saveOutputFile is None or saveOutputFile is '':
+            if saveOutputFile == None or saveOutputFile == '':
                 return
             with codecs.open(self.tempExpFile, 'w+', 'utf-8') as f:
                 f.write(saveOutputFile)
@@ -919,7 +919,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         Get txt file according to the output *.docx/*.odt filename
         '''
         try:
-            if saveOutputFile is None or saveOutputFile is '':
+            if saveOutputFile == None or saveOutputFile == '':
                 return
             outputFilePath = os.path.splitext(self.g.resource_path(saveOutputFile))
             checklistTxtFile = outputFilePath[0] + '.yml'
@@ -970,7 +970,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def addToTree(self):
         try:
-            if self.lineSpecies.text() is '':
+            if self.lineSpecies.text() == '':
                 QMessageBox.information(self, "Warning", self.tr("Please input the species name!"))
                 return
             else:
@@ -1221,7 +1221,7 @@ class CombineDialog(QDialog, Ui_CombineDialog):
         try:
             tobe_combined_lists = QFileDialog.getOpenFileNames(self, self.tr(u"Select checklist text files to combine"), \
                 self.home, self.tr("Text files (*.txt)"))[0]
-            if tobe_combined_lists is None or tobe_combined_lists is '':
+            if tobe_combined_lists == None or tobe_combined_lists == '':
                 return
             else:
                 self.textChecklists.setText(','.join(tobe_combined_lists))
@@ -1232,7 +1232,7 @@ class CombineDialog(QDialog, Ui_CombineDialog):
         try:
             combExcelFile = QFileDialog.getSaveFileName(self, self.tr(u"Save combined list as:"), \
                 self.home, self.tr("Excel files (*.xlsx)"))[0]
-            if combExcelFile is None or combExcelFile is '':
+            if combExcelFile == None or combExcelFile == '':
                 return
             else:
                 self.textExpExcel.setText(combExcelFile)
@@ -1243,7 +1243,7 @@ class CombineDialog(QDialog, Ui_CombineDialog):
         try:
             combChecklists = str(self.textChecklists.text()).split(',')
             combExcelFile = str(self.textExpExcel.text())
-            if combChecklists is None or combExcelFile is None:
+            if combChecklists == None or combExcelFile == None:
                 QMessageBox.information(self, "Warning", self.tr(u'Checklists and excel file should not be empty!'))
                 return
             else:
@@ -1282,7 +1282,7 @@ class CompareDialog(QDialog, Ui_CompareDialog):
         try:
             checklist_A = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
                     self.home, self.tr("Text files (*.txt)"))[0]
-            if checklist_A is None or checklist_A is '':
+            if checklist_A == None or checklist_A == '':
                 return
             self.lineChecklistA.setText(checklist_A)
             #status_bar = "Loading " + checklist_A 
@@ -1294,7 +1294,7 @@ class CompareDialog(QDialog, Ui_CompareDialog):
         try:
             checklist_B = QFileDialog.getOpenFileName(self, self.tr(u"Open file"), \
                     self.home, self.tr("Text files (*.txt)"))[0]
-            if checklist_B is None or checklist_B is '':
+            if checklist_B == None or checklist_B == '':
                 return
             self.lineChecklistB.setText(checklist_B)
             #status_bar = "Loading " + checklist_B 
@@ -1383,7 +1383,7 @@ class FormatDialog(QDialog, Ui_FormatDialog):
             #self.lineExcelFilePath.clear()
             orig_excel_file = QFileDialog.getOpenFileName(self, self.tr(u"Select excel files"), \
                     self.home, self.tr("Excel files (*.xls *.xlsx)"))[0]
-            if orig_excel_file is None or orig_excel_file is '':
+            if orig_excel_file == None or orig_excel_file == '':
                 return
             self.lineExcelFilePath.setText(orig_excel_file)
         except BaseException as e:
@@ -1393,9 +1393,9 @@ class FormatDialog(QDialog, Ui_FormatDialog):
         try:
             orig_excel_file = self.lineExcelFilePath.text()
             ncol = self.lineExcelColnum.text()
-            if orig_excel_file is None or orig_excel_file is '':
+            if orig_excel_file == None or orig_excel_file == '':
                 QMessageBox.information(self, "Warning", self.tr(u"Please input the excel filename"))
-            elif ncol is None or ncol is '':
+            elif ncol == None or ncol == '':
                 QMessageBox.information(self, "Warning", self.tr(u"Please input the column number of scientific names"))
             else:
                 # get filename and os path
