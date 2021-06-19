@@ -574,7 +574,7 @@
              </item>
              <item>
               <property name="text">
-               <string>TaiBNet</string>
+               <string>TaiCOL</string>
               </property>
              </item>
              <item>
@@ -590,6 +590,11 @@
              <item>
               <property name="text">
                <string>Plants of the World (POWO)</string>
+              </property>
+             </item>
+              <item>
+              <property name="text">
+               <string>iNaturalist</string>
               </property>
              </item>
             </widget>

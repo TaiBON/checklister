@@ -54,6 +54,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             self.setupUi(self)
 
             #add icon
+            # QDir.addSearchPath('icons', 'icons/') # for qt6
             self.setWindowIcon(QIcon('icons/checklister_small.png'))
 
             # set up variables
@@ -165,7 +166,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
     def setPlantDBActionGroup(self):
         try:
-            actionGroupP = QActionGroup(self.menuPlants, exclusive = True)
+            actionGroupP = QActionGroup(self.menuPlants)#, exclusive = True)
             actionGroupP.addAction(self.actionTaiwanVascularPlants)
             actionGroupP.addAction(self.actionTaiwanRedList2017)
             actionGroupP.addAction(self.actionTaiwanFlora)
@@ -523,6 +524,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                 queryUrl = '''http://tai2.ntu.edu.tw/PlantInfo/SearchResult.php?search=%s&rgkeyword=2&recrodnum=20&enter2=送出''' % species
             elif webDBIdx == 6:
                 queryUrl = '''http://www.plantsoftheworldonline.org/?q=%s''' % species
+            elif webDBIdx == 7:
+                queryUrl = '''https://www.inaturalist.org/taxa/search?utf8=✓&q=%s''' % species
             else:
                 queryUrl = '''http://tropicos.org/NameSearch.aspx?name=%s&commonname=''' % species
             return(queryUrl)

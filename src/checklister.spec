@@ -27,7 +27,7 @@ a = Analysis(['checklister.py'],
              hookspath=None,
              runtime_hooks = None,
              #hiddenimports=['PyQt5.sip'],
-             hiddenimports = ['QtWebEngineProcess'],
+             #hiddenimports = ['QtWebEngineProcess'],
              #excludes = ['jinja2.asyncsupport','jinja2.asyncfilters'],
              cipher = block_cipher)
 
@@ -56,7 +56,7 @@ coll = COLLECT(exe,
 app = BUNDLE(coll,
              name='checklister.app',
              icon='icons/checklister.icns',
-             version='0.5.2a2',
+             version='0.5.3',
              #bundle_identifier=None,
              bundle_identifier='org.qt-project.Qt.QtWebEngineCore',
              info_plist={
