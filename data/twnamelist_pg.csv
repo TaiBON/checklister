@@ -680,6 +680,7 @@
 9057|Pteridaceae|鳳尾蕨科|行方氏鳳尾蕨|Pteris ×namegatae|Pteris ×namegatae Sa.Kurata|2|0||原生
 7205|Pteridaceae|鳳尾蕨科|細葉鳳尾蕨|Pteris angustipinna|Pteris angustipinna Tagawa|2|1|CR|原生
 7206|Pteridaceae|鳳尾蕨科|阿里山鳳尾蕨|Pteris arisanensis|Pteris arisanensis Tagawa|2|0|LC|原生
+9091|Pteridaceae|鳳尾蕨科|南台灣鳳尾蕨|Pteris austrotaiwanensis|Pteris austrotaiwanensis Y.S.Chao|2|1|NT|原生
 7208|Pteridaceae|鳳尾蕨科|長柄鳳尾蕨|Pteris bella|Pteris bella Tagawa|2|1|NT|原生
 7209|Pteridaceae|鳳尾蕨科|弧脈鳳尾蕨|Pteris biaurita|Pteris biaurita L.|2|0|LC|原生
 7210|Pteridaceae|鳳尾蕨科|卡氏鳳尾蕨|Pteris cadieri|Pteris cadieri Christ|2|0|LC|原生
@@ -704,9 +705,11 @@
 7466|Pteridaceae|鳳尾蕨科|寬羽鳳尾蕨|Pteris latipinna|Pteris latipinna Y.S.Chao & W.L.Chiou|2|0|VU|原生
 7222|Pteridaceae|鳳尾蕨科|蓬萊鳳尾蕨|Pteris longipes|Pteris longipes D.Don|2|0|LC|原生
 7223|Pteridaceae|鳳尾蕨科|長葉鳳尾蕨|Pteris longipinna|Pteris longipinna Hayata|2|1|LC|原生
+9092|Pteridaceae|鳳尾蕨科|海岸鳳尾蕨|Pteris minor|Pteris minor (Hieron.) Y.S.Chao|2|0|LC|原生
 7224|Pteridaceae|鳳尾蕨科|鳳尾蕨|Pteris multifida|Pteris multifida Poir.|2|0|LC|原生
 7225|Pteridaceae|鳳尾蕨科|日本鳳尾蕨|Pteris nipponica|Pteris nipponica W.C.Shieh|2|0||歸化
 7464|Pteridaceae|鳳尾蕨科|變葉鳳尾蕨|Pteris perplexa|Pteris perplexa Y.S.Chao, H.Y.Liu & W.L.Chiou|2|0|LC|原生
+9093|Pteridaceae|鳳尾蕨科|擬烏來鳳尾蕨|Pteris pseudowulaiensis|Pteris pseudowulaiensis Y.S.Chao|2|0|LC|原生
 9061|Pteridaceae|鳳尾蕨科|皺葉鳳尾蕨|Pteris rugosifolia|Pteris rugosifolia Y.S.Chao|2|1||原生
 7229|Pteridaceae|鳳尾蕨科|琉球鳳尾蕨|Pteris ryukyuensis|Pteris ryukyuensis Tagawa|2|0|NT|原生
 7207|Pteridaceae|鳳尾蕨科|紅柄鳳尾蕨|Pteris scabristipes|Pteris scabristipes Tagawa|2|1|LC|原生
@@ -719,7 +722,7 @@
 7226|Pteridaceae|鳳尾蕨科|爪哇鳳尾蕨|Pteris venusta|Pteris venusta Kunze|2|0|EN|原生
 7234|Pteridaceae|鳳尾蕨科|鱗蓋鳳尾蕨|Pteris vittata|Pteris vittata L.|2|0|LC|原生
 7235|Pteridaceae|鳳尾蕨科|瓦氏鳳尾蕨|Pteris wallichiana|Pteris wallichiana Ag.|2|0|LC|原生
-7236|Pteridaceae|鳳尾蕨科|烏來鳳尾蕨|Pteris wulaiensis|Pteris wulaiensis C.M.Kuo|2|1|CR|原生
+7236|Pteridaceae|鳳尾蕨科|烏來鳳尾蕨|Pteris wulaiensis|Pteris wulaiensis C.M.Kuo|2|0|CR|原生
 7238|Pteridaceae|鳳尾蕨科|連孢針葉蕨(連孢一條線蕨)|Vaginularia junghuhnii|Vaginularia junghuhnii Mett.|2|0|NT|原生
 7239|Pteridaceae|鳳尾蕨科|針葉蕨(一條線蕨)|Vaginularia trichoidea|Vaginularia trichoidea Fée|2|0|CR|原生
 7240|Rhachidosoraceae|軸果蕨科|軸果蕨|Rhachidosorus pulcher|Rhachidosorus pulcher (Tagawa) Ching|2|0|NT|原生
