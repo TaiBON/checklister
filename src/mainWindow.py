@@ -6,9 +6,9 @@
    :synopsis: checklister main window
 .. moduleauthor:: Cheng-Tao Lin
 """
-from PyQt5.QtCore import *
-from PyQt5.QtGui import QIcon,QDesktopServices
-from PyQt5.QtWidgets import *
+from PyQt6.QtCore import *
+from PyQt6.QtGui import QIcon,QDesktopServices,QActionGroup
+from PyQt6.QtWidgets import *
 from ui_main import Ui_MainWindow
 from ui_about import Ui_AboutDialog
 from ui_combine import Ui_CombineDialog
@@ -42,7 +42,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             super().__init__(parent)
             g = genlist_api.Genlist()
             self.g = genlist_api.Genlist()
-
             self.home = os.path.expanduser("~")
             # checking database status
             self.checklist_db_dir = self.g.resource_path(os.path.join(self.home, 'checklist_db'))
@@ -55,7 +54,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
 
             #add icon
             # QDir.addSearchPath('icons', 'icons/') # for qt6
-            self.setWindowIcon(QIcon('icons/checklister_small.png'))
+            self.setWindowIcon(QIcon('checklister_small.png'))
 
             # set up variables
             self.tempDir = tempfile.gettempdir()
@@ -205,18 +204,18 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def setToolBarText(self):
         try:
             if self.actionShowToolbarText.isChecked():
-                self.toolBarEdit.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
-                self.toolBarSearch.setToolButtonStyle(Qt.ToolButtonTextUnderIcon)
+                self.toolBarEdit.setToolButtonStyle(ToolButtonTextUnderIcon)
+                self.toolBarSearch.setToolButtonStyle(ToolButtonTextUnderIcon)
             else:
-                self.toolBarEdit.setToolButtonStyle(Qt.ToolButtonIconOnly)
-                self.toolBarSearch.setToolButtonStyle(Qt.ToolButtonIconOnly)
+                self.toolBarEdit.setToolButtonStyle(ToolButtonIconOnly)
+                self.toolBarSearch.setToolButtonStyle(ToolButtonIconOnly)
         except BaseException as e:
            QMessageBox.information(self, "Warning", str(e))
 
     def openCombDialog(self):
         try:
             self.CombineDialog = CombineDialog(self)
-            self.CombineDialog.setWindowFlags(self.CombineDialog.windowFlags() | Qt.WindowStaysOnTopHint)
+            self.CombineDialog.setWindowFlags(self.CombineDialog.windowFlags() | WindowStaysOnTopHint)
             self.CombineDialog.show()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -224,7 +223,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def openCompareDialog(self):
         try:
             self.CompareDialog = CompareDialog(self)
-            self.CompareDialog.setWindowFlags(self.CompareDialog.windowFlags() | Qt.WindowStaysOnTopHint)
+            self.CompareDialog.setWindowFlags(self.CompareDialog.windowFlags() | WindowStaysOnTopHint)
             self.CompareDialog.show()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -232,7 +231,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def openFormatDialog(self):
         try:
             self.FormatDialog = FormatDialog(self)
-            self.FormatDialog.setWindowFlags(self.FormatDialog.windowFlags() | Qt.WindowStaysOnTopHint)
+            self.FormatDialog.setWindowFlags(self.FormatDialog.windowFlags() | WindowStaysOnTopHint)
             self.FormatDialog.show()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -240,7 +239,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def openAboutDialog(self):
         try:
             self.AboutDialog = AboutDialog(self)
-            self.AboutDialog.setWindowFlags(self.AboutDialog.windowFlags() | Qt.WindowStaysOnTopHint)
+            self.AboutDialog.setWindowFlags(self.AboutDialog.windowFlags() | WindowStaysOnTopHint)
             self.AboutDialog.show()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -248,7 +247,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
     def openDBMainWindow(self):
         try:
             self.DBMainWindow = checklistDB(self)
-            #self.DBMainWindow.setWindowFlags(self.DBMainWindow.windowFlags() | Qt.WindowStaysOnTopHint)
+            #self.DBMainWindow.setWindowFlags(self.DBMainWindow.windowFlags() | WindowStaysOnTopHint)
             self.DBMainWindow.show()
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
@@ -277,39 +276,39 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         '''
         try:
 
-            if qKeyEvent.key() == Qt.Key_Return or qKeyEvent.key() == Qt.Key_Enter:
+            if qKeyEvent.key() == Qt.Key.Key_Return or qKeyEvent.key() == Qt.Key.Key_Enter:
                 if self.lineSpecies.text() != None:
                     self.addToTree()
                 self.lineSpecies.clear()
-            if qKeyEvent.key() == Qt.Key_Escape:
+            if qKeyEvent.key() == Qt.Key.Key_Escape:
                 self.lineSpecies.clear()
-            if qKeyEvent.key() == Qt.Key_Delete or qKeyEvent.key() == Qt.Key_Backspace:
+            if qKeyEvent.key() == Qt.Key.Key_Delete or qKeyEvent.key() == Qt.Key.Key_Backspace:
                 self.delSelectedItems()
            # ctrl/command + s: save txt files
-            if qKeyEvent.key() == Qt.Key_S and (qKeyEvent.modifiers() & Qt.ControlModifier):
+            if qKeyEvent.key() == Qt.Key.Key_S and (qKeyEvent.modifiers() & Qt.KeyboardModifier.ControlModifier):
                 self.saveChecklistTxt()
             # ctrl/command + e: export checklist 輸出名錄
-            if qKeyEvent.key() == Qt.Key_E and (qKeyEvent.modifiers() & Qt.ControlModifier):
+            if qKeyEvent.key() == Qt.Key.Key_E and (qKeyEvent.modifiers() & Qt.KeyboardModifier.ControlModifier):
                 self.genChecklist()
             # ctrl/command + o: save export file
-            if qKeyEvent.key() == Qt.Key_O and (qKeyEvent.modifiers() & Qt.ControlModifier):
+            if qKeyEvent.key() == Qt.Key.Key_O and (qKeyEvent.modifiers() & Qt.KeyboardModifier.ControlModifier):
                 self.browOutput()
             # ctrl/command + b: open batch file
-            if qKeyEvent.key() == Qt.Key_B and (qKeyEvent.modifiers() & Qt.ControlModifier):
+            if qKeyEvent.key() == Qt.Key.Key_B and (qKeyEvent.modifiers() & Qt.KeyboardModifier.ControlModifier):
                 self.browSlist()
-            if qKeyEvent.key() == Qt.Key_S and (qKeyEvent.modifiers() & Qt.AltModifier):
+            if qKeyEvent.key() == Qt.Key.Key_S and (qKeyEvent.modifiers() & Qt.KeyboardModifier.AltModifier):
                 self.tabWidget.setCurrentIndex(0)
-            elif qKeyEvent.key() == Qt.Key_D and (qKeyEvent.modifiers() & Qt.AltModifier):
+            elif qKeyEvent.key() == Qt.Key.Key_D and (qKeyEvent.modifiers() & Qt.KeyboardModifier.AltModifier):
                 self.tabWidget.setCurrentIndex(1)
-            elif qKeyEvent.key() == Qt.Key_A and (qKeyEvent.modifiers() & Qt.AltModifier):
+            elif qKeyEvent.key() == Qt.Key.Key_A and (qKeyEvent.modifiers() & Qt.KeyboardModifier.AltModifier):
                 self.tabWidget.setCurrentIndex(2)
-            if qKeyEvent.key() == Qt.Key_G and (qKeyEvent.modifiers() & Qt.ControlModifier):
+            if qKeyEvent.key() == Qt.Key.Key_G and (qKeyEvent.modifiers() & Qt.KeyboardModifier.ControlModifier):
                 self.speechAddToTree()
                 self.statusBar().showMessage(self.tr('Speech recognizing...please say plant common name'))
             # websearch
-            if qKeyEvent.key() == Qt.Key_T and (qKeyEvent.modifiers() & Qt.ControlModifier):
+            if qKeyEvent.key() == Qt.Key.Key_T and (qKeyEvent.modifiers() & Qt.KeyboardModifier.ControlModifier):
                 self.searchTropicos()
-            if qKeyEvent.key() == Qt.Key_J and (qKeyEvent.modifiers() & Qt.ControlModifier):
+            if qKeyEvent.key() == Qt.Key.Key_J and (qKeyEvent.modifiers() & Qt.KeyboardModifier.ControlModifier):
                 self.searchNomenMatch()
 
 
@@ -622,14 +621,12 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             def setHighlighted(self, text):
                 self.lastSelected = text
             g = genlist_api.Genlist()
-            completer = QCompleter()
+            completer = QCompleter() 
             model = QStringListModel()
             completer.setModel(model)
             # PopupCompletion
-            # QCompleter setFilterMode Qt>5.2
-            # http://doc.qt.io/qt-5/qcompleter.html#filterMode-prop
-            completer.setFilterMode(Qt.MatchContains)
-            completer.setCaseSensitivity(Qt.CaseInsensitive)
+            completer.setFilterMode(Qt.MatchFlag.MatchContains)
+            completer.setCaseSensitivity(Qt.CaseSensitivity.CaseInsensitive)
             self.lineSpecies.setCompleter(completer)
             db_table = self.selectDB()
             retrieved = self.g.dbGetsp(db_table, self.sqlite_db)
@@ -991,8 +988,8 @@ class MainWindow(QMainWindow, Ui_MainWindow):
                     item = QTreeWidgetItem()
                     # if selected item exists in our tree widget, ignore it
                     # match pattern: family and fullname
-                    if self.treeWidget.findItems(species_item[1], Qt.MatchExactly, 1) and \
-                        self.treeWidget.findItems(species_item[0], Qt.MatchExactly, 1):
+                    if self.treeWidget.findItems(species_item[1], Qt.MatchFlag.MatchExactly, 1) and \
+                        self.treeWidget.findItems(species_item[0], Qt.MatchFlag.MatchExactly, 1):
                         pass
                     else:
                         item.setText(0, species_item[2])

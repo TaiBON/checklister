@@ -4,9 +4,9 @@ import locale
 import os
 import sys
 import platform
-from PyQt5.QtCore import Qt, QLocale, QTranslator
-from PyQt5.QtGui import QGuiApplication
-from PyQt5.QtWidgets import *
+from PyQt6.QtCore import Qt, QLocale, QTranslator, QDir
+from PyQt6.QtGui import QGuiApplication
+from PyQt6.QtWidgets import *
 from mainWindow import MainWindow
 
 
@@ -33,12 +33,13 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
     if platform.system() == 'Windows':
         app.setStyle(QStyleFactory.create('WindowsVista'))
-    # for retina
-    if platform.system() == 'Darwin':
-        app.setAttribute(Qt.AA_EnableHighDpiScaling, True)
+    # for retina Only for Qt5
+    # if platform.system() == 'Darwin':
+    #    app.setAttribute(Qt.AA_EnableHighDpiScaling, True)
     myLocale = QLocale()
     trans = QTranslator()
     g = genlist_api.Genlist()
+    QDir.addSearchPath('icons', './icons')
     i18nQm = g.resource_path(os.path.join('i18n', 'checklister_' + myLocale.name() + '.qm'))
     trans.load(i18nQm)
     app.installTranslator(trans)
@@ -48,5 +49,4 @@ if __name__ == "__main__":
     window.actionMinimize.triggered.connect(minimizeWindow)
     window.actionZoom.triggered.connect(normalWindow)
     window.actionMaximize.triggered.connect(maximizeWindow)
-
-    sys.exit(app.exec_())
+    sys.exit(app.exec())

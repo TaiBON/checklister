@@ -1,6 +1,6 @@
-PYUIC=pyuic5
-PYRCC=pyrcc5
-PYTHON=python3
+PYUIC=pyuic6
+PYRCC=pyrcc6
+PYTHON=python3.9
 PYTHONVENV=PYTHON39
 PYINSTALLER=$(PYTHONVENV)/bin/pyinstaller
 VERSION=v0.5.3
@@ -15,7 +15,7 @@ mui:
 	$(PYUIC) ui/ui_compare.ui -o ui_compare.py
 	$(PYUIC) ui/ui_format.ui -o ui_format.py
 	$(PYUIC) ui/ui_databases.ui -o ui_databases.py
-	$(PYRCC) -o iconResources_rc.py iconResources.qrc
+	#$(PYRCC) -o iconResources_rc.py iconResources.qrc
 
 translate:
 	./make_trans_ui.sh
