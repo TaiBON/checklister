@@ -1,18 +1,9 @@
 xlsxwriter
-#codecs
-#csv
-#re
-#shutil
-#sqlite3
-#traceback
-#logging
-openpyxl
-PyQt5>=5.0
+PyQt6>=6.0
 PyQtWebEngine
 SpeechRecognition
 PyYAML
 pyaml
 pycurl
-#brew install portaudio
 pyaudio
 pyinstaller
