@@ -1,0 +1,11 @@
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (1, 'dao_pnamelist', 'Taiwan-Vascular plants (Flora of Taiwan)', 'plants');
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (2, 'dao_pnamelist_pg', 'Taiwan-Vascular plants', 'plants');
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (3, 'dao_twredlist', 'Taiwan-The Red List of Taiwan Vascular Plants (2017)', 'plants');
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (4, 'dao_jp_ylist', 'Japan-YList', 'plants');
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (5, 'dao_cn_plant', 'China-Vascular Plants', 'plants');
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (6,'taicol_amphibia', 'Taiwan-Amphibians', 'Amphibia');
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (7,'taicol_animalia', 'Taiwan-Mammals', 'Animalia');
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (8,'taicol_aves', 'Taiwan-Birds', 'Aves');
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (9,'taicol_reptilia', 'Taiwan-Reptiles', 'Reptilia');
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (10,'taicol_insecta', 'Taiwan-Insects', 'Insecta');
+INSERT INTO dao_dblist (id, table_name, db_name, db_type) values (11,'taicol_fungi', 'Taiwan-Fungi', 'Fungi');

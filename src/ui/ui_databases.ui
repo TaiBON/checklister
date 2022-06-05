@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Database Management</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -26,7 +26,7 @@
          <x>0</x>
          <y>0</y>
          <width>651</width>
-         <height>515</height>
+         <height>507</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_4">
@@ -92,6 +92,9 @@
           <property name="mouseTracking">
            <bool>false</bool>
           </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::AllEditTriggers</set>
+          </property>
           <property name="alternatingRowColors">
            <bool>true</bool>
           </property>
@@ -113,14 +116,14 @@
           <attribute name="headerVisible">
            <bool>false</bool>
           </attribute>
+          <attribute name="headerMinimumSectionSize">
+           <number>5</number>
+          </attribute>
           <attribute name="headerDefaultSectionSize">
            <number>60</number>
           </attribute>
           <attribute name="headerHighlightSections">
            <bool>true</bool>
-          </attribute>
-          <attribute name="headerMinimumSectionSize">
-           <number>5</number>
           </attribute>
           <attribute name="headerShowSortIndicator" stdset="0">
            <bool>true</bool>
@@ -144,7 +147,7 @@
      <x>0</x>
      <y>0</y>
      <width>677</width>
-     <height>22</height>
+     <height>24</height>
     </rect>
    </property>
   </widget>

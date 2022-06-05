@@ -21,7 +21,7 @@ class Ui_DBMainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollArea.setObjectName("scrollArea")
         self.scrollAreaWidgetContents = QtWidgets.QWidget()
-        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 651, 515))
+        self.scrollAreaWidgetContents.setGeometry(QtCore.QRect(0, 0, 651, 507))
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.gridLayout_4 = QtWidgets.QGridLayout(self.scrollAreaWidgetContents)
         self.gridLayout_4.setObjectName("gridLayout_4")
@@ -50,6 +50,7 @@ class Ui_DBMainWindow(object):
         self.treeWidgetDB.setSizePolicy(sizePolicy)
         self.treeWidgetDB.setMinimumSize(QtCore.QSize(0, 150))
         self.treeWidgetDB.setMouseTracking(False)
+        self.treeWidgetDB.setEditTriggers(QtWidgets.QAbstractItemView.EditTrigger.AllEditTriggers)
         self.treeWidgetDB.setAlternatingRowColors(True)
         self.treeWidgetDB.setSelectionMode(QtWidgets.QAbstractItemView.SelectionMode.MultiSelection)
         self.treeWidgetDB.setIndentation(10)
@@ -67,7 +68,7 @@ class Ui_DBMainWindow(object):
         self.gridLayout.addWidget(self.scrollArea, 0, 0, 1, 1)
         DBMainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(DBMainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 677, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 677, 24))
         self.menubar.setObjectName("menubar")
         DBMainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(DBMainWindow)
@@ -79,7 +80,7 @@ class Ui_DBMainWindow(object):
 
     def retranslateUi(self, DBMainWindow):
         _translate = QtCore.QCoreApplication.translate
-        DBMainWindow.setWindowTitle(_translate("DBMainWindow", "MainWindow"))
+        DBMainWindow.setWindowTitle(_translate("DBMainWindow", "Database Management"))
         self.labelRawTable.setText(_translate("DBMainWindow", "Raw Table"))
         self.butViewTable.setToolTip(_translate("DBMainWindow", "<html><head/><body><p>Update the checklist database</p></body></html>"))
         self.butViewTable.setText(_translate("DBMainWindow", "View"))

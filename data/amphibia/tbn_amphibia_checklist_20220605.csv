@@ -1,0 +1,45 @@
+物種UUID,分類階層,類群,科,科中文名,分類群學名,分類群俗名,簡學名,特有性,原生性,保育類等級,國內紅皮書評估類別
+bf6a3e58-a8a5-4c76-9658-81a672faea92,種,兩棲類,Bufonidae,蟾蜍科,"Bufo bankorensis",盤古蟾蜍,"Bufo bankorensis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+54754afb-b5c8-4849-8405-4e74f1c936cb,種,兩棲類,Bufonidae,蟾蜍科,"Duttaphrynus melanostictus",黑眶蟾蜍,"Duttaphrynus melanostictus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+f4b2f0bb-b7ae-4fb9-b466-1d58a4a77ce2,種,兩棲類,Bufonidae,蟾蜍科,"Rhinella marina",海蟾蜍,"Rhinella marina",,"外來 Non-native",,
+548afc00-41bb-4980-9cc1-8bbdd9e5860e,種,兩棲類,Dicroglossidae,叉舌蛙科,"Fejervarya cancrivora",海蛙,"Fejervarya cancrivora",,"外來 Non-native",,"資料缺乏（DD, Data Deficient）"
+9fd8a640-b420-4e46-8073-f6865124c318,種,兩棲類,Dicroglossidae,叉舌蛙科,"Fejervarya limnocharis",澤蛙,"Fejervarya limnocharis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+255b6444-4f05-4faf-9011-b35215176e0c,種,兩棲類,Dicroglossidae,叉舌蛙科,"Hoplobatrachus rugulosus",虎皮蛙,"Hoplobatrachus rugulosus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+4e683882-5eee-4650-869c-daf7328a1f06,種,兩棲類,Dicroglossidae,叉舌蛙科,"Limnonectes fujianensis",福建大頭蛙,"Limnonectes fujianensis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+89d7be27-d836-4ef1-8cfa-2ea202ce995b,種,兩棲類,Eleutherodactylidae,卵齒蟾科,"Eleutherodactylus planirostris",溫室蟾,"Eleutherodactylus planirostris",,"外來 Non-native",,
+9863c62f-c8f6-43a5-a337-59c2c028d804,種,兩棲類,Hylidae,樹蟾科,"Hyla chinensis",中國樹蟾,"Hyla chinensis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+00a2f8fd-ff08-4b5f-8d37-0880e7320587,種,兩棲類,Hynobiidae,山椒魚科,"Hynobius arisanensis",阿里山山椒魚,"Hynobius arisanensis",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"易危（VU, Vulnerable）"
+53f81e9d-d079-42a1-a9f1-6fa6e96eaa52,種,兩棲類,Hynobiidae,山椒魚科,"Hynobius formosanus",臺灣山椒魚,"Hynobius formosanus",台灣特有,"原生 Native",第一級、瀕臨絕種保育類野生動物,"瀕危（EN, Endangered）"
+e8a89a66-cc57-454f-84ba-2cde6ac5fbd3,種,兩棲類,Hynobiidae,山椒魚科,"Hynobius fucus",觀霧山椒魚,"Hynobius fucus",台灣特有,"原生 Native",第一級、瀕臨絕種保育類野生動物,"瀕危（EN, Endangered）"
+9610bea3-8a90-417e-9948-2fabb701fd7f,種,兩棲類,Hynobiidae,山椒魚科,"Hynobius glacialis",南湖山椒魚,"Hynobius glacialis",台灣特有,"原生 Native",第一級、瀕臨絕種保育類野生動物,"極危（CR, Critically Endangered）"
+9ef5200b-f94b-4a6b-bdc8-e8a6ba6a548b,種,兩棲類,Hynobiidae,山椒魚科,"Hynobius sonani",楚南氏山椒魚,"Hynobius sonani",台灣特有,"原生 Native",第一級、瀕臨絕種保育類野生動物,"瀕危（EN, Endangered）"
+be3e1ea9-8cd4-42ee-9212-e7d003d34acf,種下階層,兩棲類,Microhylidae,狹口蛙科,"Kaloula pulchra pulchra",亞洲錦蛙,"Kaloula pulchra pulchra",,"外來 Non-native",,
+94a953b6-d8ab-4f73-ae47-224bf942b8eb,種,兩棲類,Microhylidae,狹口蛙科,"Kaloula pulchra",亞洲錦蛙,"Kaloula pulchra",,"外來 Non-native",,
+a0499d8b-42ee-4fd4-ab4a-f60138d4ed07,種,兩棲類,Microhylidae,狹口蛙科,"Microhyla butleri",巴氏小雨蛙,"Microhyla butleri",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+4d6b83ff-b8c9-43a5-af53-08016a57f045,種,兩棲類,Microhylidae,狹口蛙科,"Microhyla fissipes",小雨蛙,"Microhyla fissipes",,"原生 Native",,"暫無危機（LC, Least Concern）"
+4439fe56-3d21-4c64-a2ef-bdb93008ea6e,種,兩棲類,Microhylidae,狹口蛙科,"Microhyla heymonsi",黑蒙西氏小雨蛙,"Microhyla heymonsi",,"原生 Native",,"暫無危機（LC, Least Concern）"
+a4c36a54-1c37-402d-93c2-a3f276bf8f4d,種,兩棲類,Microhylidae,狹口蛙科,"Micryletta steinegeri",史丹吉氏小雨蛙,"Micryletta steinegeri",台灣特有,"原生 Native",,"易危（VU, Vulnerable）"
+c201ef4b-c647-432e-bd82-0b60f45f0f4b,種,兩棲類,Ranidae,赤蛙科,"Hylarana latouchii",拉都希氏赤蛙,"Hylarana latouchii",,"原生 Native",,"暫無危機（LC, Least Concern）"
+2457ec2f-57ac-496f-b072-e0a310d77226,種,兩棲類,Ranidae,赤蛙科,"Hylarana taipehensis",臺北赤蛙,"Hylarana taipehensis",,"原生 Native",第二級、珍貴稀有保育類野生動物,"瀕危（EN, Endangered）"
+ff912a9f-c4d4-4b83-aed2-1da3c462b9b2,種,兩棲類,Ranidae,赤蛙科,"Lithobates catesbeianus",美洲牛蛙,"Lithobates catesbeianus",,"外來 Non-native",,
+0ca5399a-baf8-4432-9d3e-cb1bd7e777cb,種,兩棲類,Ranidae,赤蛙科,"Nidirana adenopleura",腹斑蛙,"Nidirana adenopleura",,"原生 Native",,"暫無危機（LC, Least Concern）"
+127088ed-624d-415b-805b-42af0057f031,種,兩棲類,Ranidae,赤蛙科,"Nidirana okinavana",豎琴蛙,"Nidirana okinavana",,"原生 Native",第二級、珍貴稀有保育類野生動物,"極危（CR, Critically Endangered）"
+7bbcda01-2d82-4894-b571-26d33affc4d7,種,兩棲類,Ranidae,赤蛙科,"Odorrana swinhoana",斯文豪氏赤蛙,"Odorrana swinhoana",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+631a9f03-306f-4a24-b947-f20244505f4f,種,兩棲類,Ranidae,赤蛙科,"Pelophylax fukienensis",金線蛙,"Pelophylax fukienensis",,"原生 Native",第三級、其他應予保育之野生動物,"接近受脅（NT, Near Threatened）"
+adde0a74-1e78-4b42-9a22-62f2f444852e,種,兩棲類,Ranidae,赤蛙科,"Rana longicrus",長腳赤蛙,"Rana longicrus",,"原生 Native",,"接近受脅（NT, Near Threatened）"
+7c5aabc4-90cc-442a-b4de-ce382cc2bb48,種,兩棲類,Ranidae,赤蛙科,"Rana sauteri",梭德氏赤蛙,"Rana sauteri",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+c148e475-a3e7-4bfa-a7c3-31c2de13e5b8,種,兩棲類,Ranidae,赤蛙科,"Sylvirana guentheri",貢德氏赤蛙,"Sylvirana guentheri",,"原生 Native",,"暫無危機（LC, Least Concern）"
+568ba3b8-0071-4ed7-b3ac-a6a9cb791873,種,兩棲類,Rhacophoridae,樹蛙科,"Buergeria choui",周氏樹蛙,"Buergeria choui",,"原生 Native",,"暫無危機（LC, Least Concern）"
+29fedae9-a41b-4036-943d-e3e8d547292a,種,兩棲類,Rhacophoridae,樹蛙科,"Buergeria otai",太田樹蛙,"Buergeria otai",,"原生 Native",,
+4eecc993-1f40-4c39-a245-4943530e4fb7,種,兩棲類,Rhacophoridae,樹蛙科,"Buergeria robusta",褐樹蛙,"Buergeria robusta",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+84826748-ecfd-475a-bf7a-f094c7a46dd6,種,兩棲類,Rhacophoridae,樹蛙科,"Kurixalus berylliniris",碧眼樹蛙,"Kurixalus berylliniris",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+ec171c0f-c458-4949-90d2-8a69dfa073c6,種,兩棲類,Rhacophoridae,樹蛙科,"Kurixalus eiffingeri",艾氏樹蛙,"Kurixalus eiffingeri",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+483cec07-4b28-4ddb-a0a6-13788def5ec5,種,兩棲類,Rhacophoridae,樹蛙科,"Kurixalus idiootocus",面天樹蛙,"Kurixalus idiootocus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+ed69e7ab-386d-4f2c-9d4a-dc4b22e04209,種,兩棲類,Rhacophoridae,樹蛙科,"Kurixalus wangi",王氏樹蛙,"Kurixalus wangi",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+54423ea5-09c1-4e01-abae-24cece5c3918,種,兩棲類,Rhacophoridae,樹蛙科,"Polypedates braueri",布氏樹蛙,"Polypedates braueri",,"原生 Native",,"暫無危機（LC, Least Concern）"
+1488d5cc-26fb-43ae-8d18-040edea6bb27,種,兩棲類,Rhacophoridae,樹蛙科,"Polypedates megacephalus",斑腿樹蛙,"Polypedates megacephalus",,"外來 Non-native",,
+24ac63cf-dc3f-4431-a176-1f9225c6a56a,種,兩棲類,Rhacophoridae,樹蛙科,"Zhangixalus arvalis",諸羅樹蛙,"Zhangixalus arvalis",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"瀕危（EN, Endangered）"
+ea348cf4-0ae6-4eec-8556-5084d658982e,種,兩棲類,Rhacophoridae,樹蛙科,"Zhangixalus aurantiventris",橙腹樹蛙,"Zhangixalus aurantiventris",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"瀕危（EN, Endangered）"
+174930ef-4c05-4db5-801d-700f00bcf311,種,兩棲類,Rhacophoridae,樹蛙科,"Zhangixalus moltrechti",莫氏樹蛙,"Zhangixalus moltrechti",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+8ce5f221-61ad-4e5d-a084-5084d8c9b055,種,兩棲類,Rhacophoridae,樹蛙科,"Zhangixalus prasinatus",翡翠樹蛙,"Zhangixalus prasinatus",台灣特有,"原生 Native",第三級、其他應予保育之野生動物,"接近受脅（NT, Near Threatened）"
+3a7000ea-cb36-4995-8d90-7dcd37c51a34,種,兩棲類,Rhacophoridae,樹蛙科,"Zhangixalus taipeianus",臺北樹蛙,"Zhangixalus taipeianus",台灣特有,"原生 Native",第三級、其他應予保育之野生動物,"易危（VU, Vulnerable）"

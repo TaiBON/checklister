@@ -1,0 +1,153 @@
+物種UUID,分類階層,類群,科,科中文名,分類群學名,分類群俗名,簡學名,特有性,原生性,保育類等級,國內紅皮書評估類別
+71e0d009-f8f2-43f6-8a8c-c136574d5546,種下階層,哺乳類,Balaenopteridae,鬚鯨科,"Balaenoptera edeni brydei",布氏鯨,"Balaenoptera edeni brydei",,"原生 Native",第一級、瀕臨絕種保育類野生動物,"未評估（NE, Not Evaluated）"
+525d7081-7040-456a-8d28-53381a10dc44,種,哺乳類,Balaenopteridae,鬚鯨科,"Balaenoptera acutorostrata",小鬚鯨,"Balaenoptera acutorostrata",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+39c658e8-d46d-4ffb-bde5-3df040704793,種,哺乳類,Balaenopteridae,鬚鯨科,"Balaenoptera omurai",大村鯨,"Balaenoptera omurai",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+e7e61480-ff22-42ef-8c55-ceaaef205e25,種,哺乳類,Balaenopteridae,鬚鯨科,"Balaenoptera physalus",長須鯨,"Balaenoptera physalus",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+a225e20b-9a77-4033-b833-fc8db006fdec,種,哺乳類,Balaenopteridae,鬚鯨科,"Balaenoptera taiwanica",臺灣鯨,"Balaenoptera taiwanica",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+6358b5a1-3a1b-4354-a9cb-72a77a7cb3eb,種,哺乳類,Balaenopteridae,鬚鯨科,"Megaptera novaeangliae",大翅鯨,"Megaptera novaeangliae",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+637a7223-36ab-4934-9e56-193a782ee8b6,種,哺乳類,Bovidae,牛科,"Bubalus bubalis",水牛,"Bubalus bubalis",,"外來 Non-native",,
+c6b50b1a-8e3b-4729-ba20-73faaf3d9250,種,哺乳類,Bovidae,牛科,"Capricornis swinhoei",臺灣野山羊,"Capricornis swinhoei",台灣特有,"原生 Native",第三級、其他應予保育之野生動物,"接近受脅（NT, Near Threatened）"
+2bc7c6f6-0ae0-4dbc-b3d3-edc1cf38ddf8,種下階層,哺乳類,Canidae,犬科,"Canis lupus familiaris",家犬,"Canis lupus familiaris",,"外來 Non-native",,
+1ef26ce6-3221-41a6-bd30-46ce27bf49c6,種,哺乳類,Cercopithecidae,獼猴科,"Macaca cyclopis",臺灣獼猴,"Macaca cyclopis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+7289401e-7e8f-4cb7-9928-7433333b2e46,種下階層,哺乳類,Cervidae,鹿科,"Cervus nippon taiouanus",臺灣梅花鹿,"Cervus nippon taiouanus",台灣特有,"原生 Native",,不適用
+78165751-c537-4b92-948b-27a9fde8d585,種下階層,哺乳類,Cervidae,鹿科,"Muntiacus reevesi micrurus",臺灣山羌,"Muntiacus reevesi micrurus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+103f39fd-deea-4def-be42-cda337d745ea,種下階層,哺乳類,Cervidae,鹿科,"Rusa unicolor swinhoii",水鹿(swinhoii亞種),"Rusa unicolor swinhoii",台灣特有,"原生 Native",第三級、其他應予保育之野生動物,"接近受脅（NT, Near Threatened）"
+0bdcea29-6d89-4ed7-b227-36b9bbe32c8b,種,哺乳類,Cervidae,鹿科,"Cervus nippon",臺灣梅花鹿,"Cervus nippon",,"原生 Native",,不適用
+9f5d6529-1903-47d9-8a75-ed46e65d7159,種,哺乳類,Cervidae,鹿科,"Muntiacus reevesi",山羌,"Muntiacus reevesi",,"原生 Native",,"暫無危機（LC, Least Concern）"
+ec16b5e7-3bc6-48e1-99e3-fe071331a48e,種,哺乳類,Cervidae,鹿科,"Rusa unicolor",水鹿,"Rusa unicolor",,"原生 Native",第三級、其他應予保育之野生動物,"接近受脅（NT, Near Threatened）"
+92f6f0db-3fda-4fa1-bc81-d6ce529ceb0d,種,哺乳類,Cricetidae,倉鼠科,"Eothenomys melanogaster",黑腹絨鼠,"Eothenomys melanogaster",,"原生 Native",,"接近受脅（NT, Near Threatened）"
+3c2ebbcf-3e4d-44f1-93f3-fc74ff493023,種,哺乳類,Cricetidae,倉鼠科,"Microtus kikuchii",臺灣高山田鼠,"Microtus kikuchii",台灣特有,"原生 Native",,"接近受脅（NT, Near Threatened）"
+3293542b-82c4-4173-98a7-1a7a8079a8e1,種,哺乳類,Delphinidae,海豚科,"Delphinus capensis",長吻真海豚,"Delphinus capensis",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+04ef2c54-9875-4bd0-af03-3734d0c18b1d,種,哺乳類,Delphinidae,海豚科,"Delphinus delphis",真海豚,"Delphinus delphis",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+85ffeafa-7409-47d2-b6fe-9ea9034f4818,種,哺乳類,Delphinidae,海豚科,"Feresa attenuata",小虎鯨,"Feresa attenuata",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+02c914da-21c0-4d17-b67e-491defc98381,種,哺乳類,Delphinidae,海豚科,"Globicephala macrorhynchus",短肢領航鯨,"Globicephala macrorhynchus",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+45a0d895-326c-4bca-8991-11347fff85bc,種,哺乳類,Delphinidae,海豚科,"Grampus griseus",瑞氏海豚,"Grampus griseus",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+be1253ce-1c72-4d7b-ac74-936c9882a2ec,種,哺乳類,Delphinidae,海豚科,"Lagenodelphis hosei",弗氏海豚,"Lagenodelphis hosei",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+1b07f8fc-3ed8-4b63-80bf-f57556663cb8,種,哺乳類,Delphinidae,海豚科,"Orcinus orca",虎鯨,"Orcinus orca",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+b1ea8557-7dfb-4cce-a3bc-bfc9d3dfa19b,種,哺乳類,Delphinidae,海豚科,"Peponocephala electra",瓜頭鯨,"Peponocephala electra",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+24dfe25f-2210-4085-b270-4b0c483d8c6e,種,哺乳類,Delphinidae,海豚科,"Pseudorca crassidens",偽虎鯨,"Pseudorca crassidens",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+c3b4ff09-9126-44a2-a420-35ddedb79369,種,哺乳類,Delphinidae,海豚科,"Sousa chinensis",中華白海豚,"Sousa chinensis",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+1f1f655d-1522-48bf-82ea-d0fc92c36d5b,種,哺乳類,Delphinidae,海豚科,"Stenella attenuata",熱帶斑海豚,"Stenella attenuata",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+adae1946-cffe-465a-a1fe-520915600c6e,種,哺乳類,Delphinidae,海豚科,"Stenella coeruleoalba",條紋海豚,"Stenella coeruleoalba",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+020aa3aa-b69b-4198-992a-8c8f8eede9c0,種,哺乳類,Delphinidae,海豚科,"Stenella longirostris",長吻飛旋海豚,"Stenella longirostris",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+4f7a7d42-eb80-4370-81e6-8da56c5c38e2,種,哺乳類,Delphinidae,海豚科,"Steno bredanensis",糙齒海豚,"Steno bredanensis",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+9b6dbed3-9205-40f5-95f8-d36baa8c7ba4,種,哺乳類,Delphinidae,海豚科,"Tursiops aduncus",印太瓶鼻海豚,"Tursiops aduncus",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+21a8c039-f798-4ead-9331-fb522862aeeb,種,哺乳類,Delphinidae,海豚科,"Tursiops truncatus",瓶鼻海豚,"Tursiops truncatus",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+baec67fd-bc41-44b9-9449-986d17fe6c06,種,哺乳類,Felidae,貓科,"Felis catus",家貓,"Felis catus",,"外來 Non-native",,
+dbf5e038-f9e6-4101-93db-baa7ad072d50,種,哺乳類,Felidae,貓科,"Neofelis nebulosa",臺灣雲豹,"Neofelis nebulosa",,"原生 Native",第一級、瀕臨絕種保育類野生動物,"區域滅絕（RE, Regionally Extinct）"
+96acaa9b-0412-4853-8168-fccd12166426,種,哺乳類,Felidae,貓科,"Prionailurus bengalensis",石虎,"Prionailurus bengalensis",,"原生 Native",第一級、瀕臨絕種保育類野生動物,"瀕危（EN, Endangered）"
+1c2765a3-ec61-41df-97fb-3d84c54b4aa7,種下階層,哺乳類,Herpestidae,獴科,"Herpestes urva formosanus",食蟹獴formosanus亞種,"Herpestes urva formosanus",,"原生 Native",第三級、其他應予保育之野生動物,"接近受脅（NT, Near Threatened）"
+46159f00-98da-44c4-9d8a-c4876c7b2f1d,種,哺乳類,Herpestidae,獴科,"Herpestes urva",食蟹獴,"Herpestes urva",,"原生 Native",第三級、其他應予保育之野生動物,"接近受脅（NT, Near Threatened）"
+c2a0ef00-569b-479f-8cfd-bb467fb8f45f,種下階層,哺乳類,Hipposideridae,葉鼻蝠科,"Coelops frithii formosanus",臺灣無尾葉鼻蝠,"Coelops frithii formosanus",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"易危（VU, Vulnerable）"
+67bce3f5-4317-47a1-a05d-eb4cb8e74acd,種下階層,哺乳類,Hipposideridae,葉鼻蝠科,"Hipposideros armiger terasensis",臺灣葉鼻蝠(terasensis亞種),"Hipposideros armiger terasensis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+7ec2b401-ca32-42bd-9b5a-63d61823a097,種,哺乳類,Hipposideridae,葉鼻蝠科,"Coelops frithii",臺灣無尾葉鼻蝠,"Coelops frithii",,"原生 Native",第二級、珍貴稀有保育類野生動物,"易危（VU, Vulnerable）"
+eade4ab3-27bf-4ad3-9aec-5a269ad7e903,種,哺乳類,Hipposideridae,葉鼻蝠科,"Hipposideros armiger",臺灣葉鼻蝠,"Hipposideros armiger",,"原生 Native",,"暫無危機（LC, Least Concern）"
+79ef595c-81e6-4e35-8574-23e83bdd6c2a,種,哺乳類,Hominidae,人科,"Homo sapiens",智人,"Homo sapiens",,"原生 Native",,
+ef7b7132-e20a-4b35-829a-b5b8512dac85,種,哺乳類,Kogiidae,小抹香鯨科,"Kogia breviceps",小抹香鯨,"Kogia breviceps",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+dc3dfcea-e2d5-4d41-8575-1e04c9f4bbdb,種,哺乳類,Kogiidae,小抹香鯨科,"Kogia sima",侏儒抹香鯨,"Kogia sima",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+ff4608e3-4fc3-4db5-824f-ccfb3b6bbf0b,種下階層,哺乳類,Leporidae,兔科,"Lepus sinensis formosus",臺灣野兔(formosus亞種),"Lepus sinensis formosus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+06fc3e21-c3d8-4d18-b4ee-29f3cb93f1b2,種,哺乳類,Leporidae,兔科,"Lepus sinensis",臺灣野兔,"Lepus sinensis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+806fa9d6-73f9-4755-beb6-199f7b4fb990,種下階層,哺乳類,Manidae,穿山甲科,"Manis pentadactyla pentadactyla",穿山甲(pentadactyla亞種),"Manis pentadactyla pentadactyla",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"易危（VU, Vulnerable）"
+12893a44-eca8-44a1-955f-970705f53bc4,種,哺乳類,Manidae,穿山甲科,"Manis pentadactyla",穿山甲,"Manis pentadactyla",,"原生 Native",第二級、珍貴稀有保育類野生動物,"易危（VU, Vulnerable）"
+ea6ee1c4-787c-4268-8cda-7006a6c0a894,種,哺乳類,Miniopteridae,長翼蝠科,"Miniopterus fuliginosus",東亞摺翅蝠,"Miniopterus fuliginosus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+b5eaeb8d-ec5e-4ea3-b8ea-0bbd444894c6,種,哺乳類,Molossidae,游離尾蝠科,"Tadarida insignis",東亞游離尾蝠,"Tadarida insignis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+e882a3b5-7cdd-4469-84e8-9bad36ee1008,種,哺乳類,Muridae,鼠科,"Apodemus agrarius",赤背條鼠,"Apodemus agrarius",,"原生 Native",,"暫無危機（LC, Least Concern）"
+68018d1d-450b-4192-a8b6-052ed439aa59,種,哺乳類,Muridae,鼠科,"Apodemus semotus",臺灣森鼠,"Apodemus semotus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+d7fafa45-746e-4dce-97ef-519e47407523,種,哺乳類,Muridae,鼠科,"Bandicota indica",鬼鼠,"Bandicota indica",,"原生 Native",,"暫無危機（LC, Least Concern）"
+3ea8055e-5d95-4b84-ad96-4e48b849a9c3,種,哺乳類,Muridae,鼠科,"Micromys minutus",巢鼠,"Micromys minutus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+4dee6592-1c03-4a49-b485-73b05366e99d,種,哺乳類,Muridae,鼠科,"Mus caroli",田鼷鼠,"Mus caroli",,"原生 Native",,"暫無危機（LC, Least Concern）"
+dd2c5271-02b4-4441-91f5-e6b4b0dc0116,種,哺乳類,Muridae,鼠科,"Mus musculus",家鼷鼠,"Mus musculus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+200754a7-3859-4575-b2b2-8e2e24f82be2,種,哺乳類,Muridae,鼠科,"Niviventer coninga",臺灣刺鼠,"Niviventer coninga",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+4b0de2e1-3476-40a2-a5c4-63c12dc43044,種,哺乳類,Muridae,鼠科,"Niviventer culturatus",高山白腹鼠,"Niviventer culturatus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+aae297ff-949c-4aac-9bc5-bc33916744e0,種,哺乳類,Muridae,鼠科,"Rattus exulans",緬甸小鼠,"Rattus exulans",,"外來 Non-native",,不適用
+42ac4e1f-aec4-4d1b-ba51-7cfa1427b216,種,哺乳類,Muridae,鼠科,"Rattus losea",小黃腹鼠,"Rattus losea",,"原生 Native",,"暫無危機（LC, Least Concern）"
+f4f37c2f-c263-440f-8bcd-8ce505c876df,種,哺乳類,Muridae,鼠科,"Rattus norvegicus",溝鼠,"Rattus norvegicus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+607da5d5-b2ee-41c8-b179-6f9219f9c3dd,種,哺乳類,Muridae,鼠科,"Rattus rattus",玄鼠,"Rattus rattus",,"原生 Native",,
+f0c78ade-a44b-4067-ab8d-94d0719fd145,種,哺乳類,Muridae,鼠科,"Rattus tanezumi",亞洲家鼠,"Rattus tanezumi",,"原生 Native",,"暫無危機（LC, Least Concern）"
+76412706-8cf6-4ea9-8e48-7d74ad05eeeb,種下階層,哺乳類,Mustelidae,貂科,"Lutra lutra chinensis",水獺(chinensis亞種),"Lutra lutra chinensis",,"原生 Native",第一級、瀕臨絕種保育類野生動物,"極危（CR, Critically Endangered）"
+a70faadd-7ab3-47a8-a654-4860c7e32f52,種下階層,哺乳類,Mustelidae,貂科,"Martes flavigula chrysospila",黃喉貂,"Martes flavigula chrysospila",台灣特有,"原生 Native",第三級、其他應予保育之野生動物,"易危（VU, Vulnerable）"
+f1e18686-73e8-46e0-8325-a64f85dcd43d,種下階層,哺乳類,Mustelidae,貂科,"Melogale moschata subaurantiaca",鼬獾(subaurantiaca亞種),"Melogale moschata subaurantiaca",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+244cc3d6-0a1b-44ec-a4ca-7394b8e0f2f7,種下階層,哺乳類,Mustelidae,貂科,"Mustela nivalis formosana",臺灣小黃鼠狼,"Mustela nivalis formosana",台灣特有,"原生 Native",第三級、其他應予保育之野生動物,"易危（VU, Vulnerable）"
+3bd283f8-121e-4580-b395-908af1373ef1,種下階層,哺乳類,Mustelidae,貂科,"Mustela sibirica taivana",黃鼠狼,"Mustela sibirica taivana",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+f8947246-6152-439c-9a67-a6b1422941b4,種,哺乳類,Mustelidae,貂科,"Lutra lutra",水獺,"Lutra lutra",,"原生 Native",第一級、瀕臨絕種保育類野生動物,"極危（CR, Critically Endangered）"
+53c48060-9365-4028-92bb-cc8245f59881,種,哺乳類,Mustelidae,貂科,"Martes flavigula",黃喉貂,"Martes flavigula",,"原生 Native",第三級、其他應予保育之野生動物,"易危（VU, Vulnerable）"
+adab0bac-34a0-4d24-8e4e-7b0336ff1df7,種,哺乳類,Mustelidae,貂科,"Melogale moschata",鼬獾,"Melogale moschata",,"原生 Native",,"暫無危機（LC, Least Concern）"
+1b2bd256-b844-4cb6-bc52-8b377c08ba22,種,哺乳類,Mustelidae,貂科,"Mustela nivalis",臺灣小黃鼠狼,"Mustela nivalis",,"原生 Native",第三級、其他應予保育之野生動物,"易危（VU, Vulnerable）"
+7ecf32e7-0fb6-44c0-8c01-b6e017ad2985,種,哺乳類,Mustelidae,貂科,"Mustela sibirica",黃鼠狼,"Mustela sibirica",,"原生 Native",,"暫無危機（LC, Least Concern）"
+fb177ad6-769a-42e3-995f-5594e899c76f,種,哺乳類,Phocoenidae,鼠海豚科,"Neophocaena phocaenoides",江豚,"Neophocaena phocaenoides",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+40119379-861d-4e93-b566-e90901be88bd,種,哺乳類,Physeteridae,抹香鯨科,"Physeter macrocephalus",抹香鯨,"Physeter macrocephalus",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+280e0314-7d54-41ab-8c19-027dee079334,種下階層,哺乳類,Pteropodidae,大蝙蝠科,"Pteropus dasymallus formosus",臺灣狐蝠,"Pteropus dasymallus formosus",台灣特有,"原生 Native",第一級、瀕臨絕種保育類野生動物,"極危（CR, Critically Endangered）"
+5f7d20a1-1d0b-4122-b905-517463797c98,種,哺乳類,Pteropodidae,大蝙蝠科,"Cynopterus sphinx",印度犬果蝠,"Cynopterus sphinx",,"原生 Native",,不適用
+52de4e15-0819-4346-bd73-505256a30d9e,種,哺乳類,Pteropodidae,大蝙蝠科,"Pteropus dasymallus",臺灣狐蝠,"Pteropus dasymallus",,"原生 Native",第一級、瀕臨絕種保育類野生動物,"極危（CR, Critically Endangered）"
+14d0933d-08f2-403c-83d6-96c8479ec3f7,種,哺乳類,Pteropodidae,大蝙蝠科,"Rousettus leschenaultii",棕果蝠,"Rousettus leschenaultii",,"原生 Native",第二級、珍貴稀有保育類野生動物,不適用
+7511dd09-9ba5-4869-b51b-fe25b2b63e44,種,哺乳類,Rhinolophidae,蹄鼻蝠科,"Rhinolophus formosae",臺灣大蹄鼻蝠,"Rhinolophus formosae",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+48f298c6-4b25-488a-9308-c05da7c81d51,種,哺乳類,Rhinolophidae,蹄鼻蝠科,"Rhinolophus monoceros",臺灣小蹄鼻蝠,"Rhinolophus monoceros",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+c7fa2e1e-789f-4424-9978-8462dfaccf10,種下階層,哺乳類,Sciuridae,松鼠科,"Belomys pearsonii kaleensis",小鼯鼠,"Belomys pearsonii kaleensis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+ebffab32-e2f6-49a1-93eb-a35ea6dd5f39,種下階層,哺乳類,Sciuridae,松鼠科,"Callosciurus erythraeus thaiwanensis",赤腹松鼠(thaiwanensis亞種),"Callosciurus erythraeus thaiwanensis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+ecacc4d1-1d69-4c62-8129-e1b6c49dbc91,種下階層,哺乳類,Sciuridae,松鼠科,"Dremomys pernyi owstoni",長吻松鼠(owstoni亞種),"Dremomys pernyi owstoni",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+996a8f52-bc64-4893-bd37-945b53229dcb,種下階層,哺乳類,Sciuridae,松鼠科,"Petaurista alborufus lena",白面鼯鼠,"Petaurista alborufus lena",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+04f92af0-f2f9-45d8-8c99-a957620f022b,種下階層,哺乳類,Sciuridae,松鼠科,"Petaurista philippensis grandis",大赤鼯鼠(grandis亞種),"Petaurista philippensis grandis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+c02dc244-6ec4-40bf-bc35-5493d7390081,種下階層,哺乳類,Sciuridae,松鼠科,"Tamiops maritimus formosanus",條紋松鼠,"Tamiops maritimus formosanus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+ab026aab-7ef7-4c35-880a-7e0d530da4e0,種,哺乳類,Sciuridae,松鼠科,"Belomys pearsonii",小鼯鼠,"Belomys pearsonii",,"原生 Native",,"暫無危機（LC, Least Concern）"
+17369a4d-5103-432d-9d17-3242fc0096c9,種,哺乳類,Sciuridae,松鼠科,"Callosciurus erythraeus",赤腹松鼠,"Callosciurus erythraeus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+a11b41ee-06c0-474a-b7b0-64ff8d7af19f,種,哺乳類,Sciuridae,松鼠科,"Dremomys pernyi",長吻松鼠,"Dremomys pernyi",,"原生 Native",,"暫無危機（LC, Least Concern）"
+5106f526-5277-4727-981e-86e713ce6c74,種,哺乳類,Sciuridae,松鼠科,"Petaurista alborufus",白面鼯鼠,"Petaurista alborufus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+f67629cd-817d-41e3-a132-2b89e612ab2a,種,哺乳類,Sciuridae,松鼠科,"Petaurista philippensis",大赤鼯鼠,"Petaurista philippensis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+adaafb8e-5c5d-445a-a8e6-261cb901a627,種,哺乳類,Sciuridae,松鼠科,"Tamiops maritimus",條紋松鼠,"Tamiops maritimus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+ca427ccb-1d7e-43bf-993b-f244b51b1e21,種下階層,哺乳類,Soricidae,尖鼠科,"Crocidura rapax kurodai",臺灣長尾麝鼩,"Crocidura rapax kurodai",台灣特有,"原生 Native",,
+a9d18bf1-ab4e-4c19-80bf-639600c1afc2,種下階層,哺乳類,Soricidae,尖鼠科,"Crocidura rapax lutaoensis",綠島長尾麝鼩,"Crocidura rapax lutaoensis",台灣特有,"原生 Native",,
+1884d392-802c-4e7c-b20e-bb0cd64fee1b,種下階層,哺乳類,Soricidae,尖鼠科,"Crocidura rapax tadae",蘭嶼長尾麝鼩,"Crocidura rapax tadae",台灣特有,"原生 Native",,
+899b8f21-5c62-4ae8-99a1-d6bacb7ba74c,種下階層,哺乳類,Soricidae,尖鼠科,"Crocidura shantungensis hosletti",荷氏小麝鼩,"Crocidura shantungensis hosletti",台灣特有,"原生 Native",,
+59e4538f-605e-4f8a-954d-6695df1d6fdc,種,哺乳類,Soricidae,尖鼠科,"Anourosorex yamashinai",短尾鼩,"Anourosorex yamashinai",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+bf3f11ab-ffc4-4d05-a191-ca3f1a8dc493,種,哺乳類,Soricidae,尖鼠科,"Chimarrogale himalayica",水鼩,"Chimarrogale himalayica",,"原生 Native",第二級、珍貴稀有保育類野生動物,"易危（VU, Vulnerable）"
+4e4ae164-8878-4163-9687-d09e72ccfb24,種,哺乳類,Soricidae,尖鼠科,"Chodsigoa sodalis",細尾長尾鼩,"Chodsigoa sodalis",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+0d5ad954-5c72-4753-9ada-e985fa43465e,種,哺乳類,Soricidae,尖鼠科,"Crocidura rapax",長尾麝鼩,"Crocidura rapax",,"原生 Native",,"暫無危機（LC, Least Concern）"
+22288955-7b71-48d6-950a-5899ca904542,種,哺乳類,Soricidae,尖鼠科,"Crocidura shantungensis",荷氏小麝鼩,"Crocidura shantungensis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+8dd51e84-20af-473a-8c64-553461fb5988,種,哺乳類,Soricidae,尖鼠科,"Crocidura tanakae",臺灣灰麝鼩,"Crocidura tanakae",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+14d1c702-5d76-4786-81b2-95a1051416f4,種,哺乳類,Soricidae,尖鼠科,"Episoriculus fumidus",臺灣長尾鼩,"Episoriculus fumidus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+b7fb0967-2cfd-4961-8409-d50ed5c035a9,種,哺乳類,Soricidae,尖鼠科,"Suncus murinus",臭鼩,"Suncus murinus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+70068ad9-c107-42c4-bdb8-89ecbdc69385,種下階層,哺乳類,Suidae,豬科,"Sus scrofa taivanus",臺灣野豬(taivanus亞種),"Sus scrofa taivanus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+090f6f96-69ad-4493-9673-c917bf8617b4,種,哺乳類,Suidae,豬科,"Sus scrofa",臺灣野豬,"Sus scrofa",,"原生 Native",,"暫無危機（LC, Least Concern）"
+d27ae413-a183-4fe6-8313-67527cd7965d,種下階層,哺乳類,Talpidae,鼴鼠科,"Mogera insularis insularis",臺灣鼴鼠(指名亞種),"Mogera insularis insularis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+46107149-2b06-47d2-9c2d-ae3af5df5354,種,哺乳類,Talpidae,鼴鼠科,"Mogera insularis",臺灣鼴鼠,"Mogera insularis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+d6acae4c-bc10-4f50-ba48-111296780bf1,種,哺乳類,Talpidae,鼴鼠科,"Mogera kanoana",鹿野氏鼴鼠,"Mogera kanoana",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+861b3e71-0272-4a96-b81f-fa7b8588ac3a,種下階層,哺乳類,Ursidae,熊科,"Ursus thibetanus formosanus",臺灣黑熊,"Ursus thibetanus formosanus",台灣特有,"原生 Native",第一級、瀕臨絕種保育類野生動物,"瀕危（EN, Endangered）"
+87d49346-7297-4c0d-a92e-19179e68e9d8,種,哺乳類,Ursidae,熊科,"Ursus thibetanus",亞洲黑熊,"Ursus thibetanus",,"原生 Native",第一級、瀕臨絕種保育類野生動物,"瀕危（EN, Endangered）"
+1ec16df2-ae13-4bdb-a0f5-0c235aa0476e,種下階層,哺乳類,Vespertilionidae,蝙蝠科,"Eptesicus pachyomus horikawai",崛川氏棕蝠,"Eptesicus pachyomus horikawai",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+9b4851e7-82ee-41d1-96b3-eba220b0e4aa,種下階層,哺乳類,Vespertilionidae,蝙蝠科,"Myotis fimbriatus taiwanensis",臺灣毛腿鼠耳蝠,"Myotis fimbriatus taiwanensis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+5ce13ac2-2325-4faf-9567-e01b43099352,種下階層,哺乳類,Vespertilionidae,蝙蝠科,"Myotis formosus flavus",金黃鼠耳蝠,"Myotis formosus flavus",台灣特有,"原生 Native",,"易危（VU, Vulnerable）"
+4de1d63b-1b78-4460-933b-941903374398,種下階層,哺乳類,Vespertilionidae,蝙蝠科,"Nyctalus plancyi velutinus",絨山蝠,"Nyctalus plancyi velutinus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+aafc551d-aee2-495a-b381-2014df4a1e33,種,哺乳類,Vespertilionidae,蝙蝠科,"Arielulus torquatus",黃頸蝠,"Arielulus torquatus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+d7b4cff9-4cca-46bb-996d-571f37fcdd0b,種,哺乳類,Vespertilionidae,蝙蝠科,"Barbastella darjelingensis",東方寬耳蝠,"Barbastella darjelingensis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+afe841ea-276b-45ea-8b57-dc56f812c3ca,種,哺乳類,Vespertilionidae,蝙蝠科,"Eptesicus pachyomus",崛川氏棕蝠,"Eptesicus pachyomus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+02226548-3724-4043-beee-ea24b83df50a,種,哺乳類,Vespertilionidae,蝙蝠科,"Harpiocephalus harpia",毛翼管鼻蝠,"Harpiocephalus harpia",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+062ff32c-a886-4bf3-85be-3094c08f13c7,種,哺乳類,Vespertilionidae,蝙蝠科,"Harpiola isodon",金芒管鼻蝠,"Harpiola isodon",,"原生 Native",,"暫無危機（LC, Least Concern）"
+a89dc7ac-888d-41d8-8f76-c75cd806151b,種,哺乳類,Vespertilionidae,蝙蝠科,"Hypsugo pulveratus",灰伏翼,"Hypsugo pulveratus",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+ff907f94-7673-4e31-9238-0d61c8a4811c,種,哺乳類,Vespertilionidae,蝙蝠科,"Kerivoula furva",玄彩蝠,"Kerivoula furva",,"原生 Native",,"暫無危機（LC, Least Concern）"
+a7c6d2f4-81d1-4085-9cc4-5c707335d5f4,種,哺乳類,Vespertilionidae,蝙蝠科,"Murina bicolor",黃胸管鼻蝠,"Murina bicolor",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+983f733c-e0f8-4b41-b66d-8442645a5997,種,哺乳類,Vespertilionidae,蝙蝠科,"Murina gracilis",姬管鼻蝠,"Murina gracilis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+291a93e2-a46c-4706-8880-31d53ad069aa,種,哺乳類,Vespertilionidae,蝙蝠科,"Murina puta",臺灣管鼻蝠,"Murina puta",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+8787be1c-2d5f-40a3-814d-069f5b78a2b1,種,哺乳類,Vespertilionidae,蝙蝠科,"Murina recondita",隱姬管鼻蝠,"Murina recondita",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+9212289c-66a0-4418-814a-d603d9a3cda7,種,哺乳類,Vespertilionidae,蝙蝠科,"Myotis fimbriatus",毛腿鼠耳蝠,"Myotis fimbriatus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+76cf5e03-c6eb-43fb-ae8a-7322635f22f9,種,哺乳類,Vespertilionidae,蝙蝠科,"Myotis formosus",金黃鼠耳蝠,"Myotis formosus",,"原生 Native",,"易危（VU, Vulnerable）"
+3247491d-9141-41b9-b97a-c43acdcabb3c,種,哺乳類,Vespertilionidae,蝙蝠科,"Myotis frater",長尾鼠耳蝠,"Myotis frater",,"原生 Native",,"暫無危機（LC, Least Concern）"
+5ef1f347-a86c-4942-a81c-4840927ca2cd,種,哺乳類,Vespertilionidae,蝙蝠科,"Myotis laniger",華南水鼠耳蝠,"Myotis laniger",,"原生 Native",,"暫無危機（LC, Least Concern）"
+e1becc51-67ae-4dbe-bae6-deb8046fd5c9,種,哺乳類,Vespertilionidae,蝙蝠科,"Myotis rufoniger",赤黑鼠耳蝠,"Myotis rufoniger",,"原生 Native",,"暫無危機（LC, Least Concern）"
+3d6fc582-50e9-45c6-b137-9475473d4ac6,種,哺乳類,Vespertilionidae,蝙蝠科,"Myotis secundus",長趾鼠耳蝠,"Myotis secundus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+11685854-83a2-4017-b07c-67210a80686f,種,哺乳類,Vespertilionidae,蝙蝠科,"Myotis soror",紅棕鼠耳蝠,"Myotis soror",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+c75ec5ab-1ebe-4371-a1aa-3980b91907db,種,哺乳類,Vespertilionidae,蝙蝠科,"Nyctalus plancyi",絨山蝠,"Nyctalus plancyi",,"原生 Native",,"暫無危機（LC, Least Concern）"
+972e9adb-b068-4169-b97d-bef9eac71825,種,哺乳類,Vespertilionidae,蝙蝠科,"Pipistrellus abramus",東亞家蝠,"Pipistrellus abramus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+4c497a4b-02bc-4d4b-b502-51763dd0ab4b,種,哺乳類,Vespertilionidae,蝙蝠科,"Pipistrellus montanus",山家蝠,"Pipistrellus montanus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+3c13c2ea-37be-44de-8e41-9dda16da11be,種,哺乳類,Vespertilionidae,蝙蝠科,"Pipistrellus taiwanensis",臺灣家蝠,"Pipistrellus taiwanensis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+6057b08a-9292-4858-b69b-97ca6f636b7d,種,哺乳類,Vespertilionidae,蝙蝠科,"Plecotus taivanus",臺灣長耳蝠,"Plecotus taivanus",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+5de000d1-14ae-4ce2-ac01-67ee81ba6995,種,哺乳類,Vespertilionidae,蝙蝠科,"Scotophilus kuhlii",高頭蝠,"Scotophilus kuhlii",,"原生 Native",,"暫無危機（LC, Least Concern）"
+7d34fecb-ca50-4c2d-90bc-bb83439d7035,種,哺乳類,Vespertilionidae,蝙蝠科,"Submyotodon latirostris",寬吻鼠耳蝠,"Submyotodon latirostris",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+d24d4734-c348-4e9b-b1c8-cfeb4b1b31dd,種,哺乳類,Vespertilionidae,蝙蝠科,"Vespertilio sinensis",霜毛蝠,"Vespertilio sinensis",,"原生 Native",,"瀕危（EN, Endangered）"
+20fe92f8-16d1-465f-be47-4145d86bc660,種下階層,哺乳類,Viverridae,靈貓科,"Paguma larvata taivana",白鼻心(taivana亞種),"Paguma larvata taivana",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+e76585d5-5643-49dc-876a-b95699e6fd54,種下階層,哺乳類,Viverridae,靈貓科,"Viverricula indica taivana",麝香貓taivana亞種,"Viverricula indica taivana",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"易危（VU, Vulnerable）"
+b20f4f14-efc7-4031-a9a2-dd1729839f27,種,哺乳類,Viverridae,靈貓科,"Paguma larvata",白鼻心,"Paguma larvata",,"原生 Native",,"暫無危機（LC, Least Concern）"
+a9e6148a-e792-4475-bba8-db50bd8759cd,種,哺乳類,Viverridae,靈貓科,"Viverricula indica",麝香貓,"Viverricula indica",,"原生 Native",第二級、珍貴稀有保育類野生動物,"易危（VU, Vulnerable）"
+c58ca8a2-6d29-4185-90f0-5229b0019719,種,哺乳類,Ziphiidae,喙鯨科,"Indopacetus pacificus",朗氏喙鯨,"Indopacetus pacificus",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+ce68a0a5-7884-4ccd-a227-3a1a3699d907,種,哺乳類,Ziphiidae,喙鯨科,"Mesoplodon densirostris",柏氏中喙鯨,"Mesoplodon densirostris",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+ba532919-8c78-44dd-9230-77524d89c913,種,哺乳類,Ziphiidae,喙鯨科,"Mesoplodon ginkgodens",銀杏齒中喙鯨,"Mesoplodon ginkgodens",,"原生 Native",第二級、珍貴稀有保育類野生動物,
+078b0a92-6948-46dd-a3d8-e3caad02401b,種,哺乳類,Ziphiidae,喙鯨科,"Ziphius cavirostris",柯氏喙鯨,"Ziphius cavirostris",,"原生 Native",第二級、珍貴稀有保育類野生動物,

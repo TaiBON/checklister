@@ -1,0 +1,119 @@
+物種UUID,分類階層,類群,科,科中文名,分類群學名,分類群俗名,簡學名,特有性,原生性,保育類等級,國內紅皮書評估類別
+5adb8be0-5410-4922-9f12-daa700c37f14,種,爬蟲類,Agamidae,飛蜥科,"Diploderma brevipes",短肢攀蜥,"Diploderma brevipes",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+b4a0f603-12e1-4f0e-8560-450ed055fa09,種,爬蟲類,Agamidae,飛蜥科,"Diploderma luei",呂氏攀蜥,"Diploderma luei",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"資料缺乏（DD, Data Deficient）"
+56fd8f78-9bf8-4197-8453-a2db4b817962,種,爬蟲類,Agamidae,飛蜥科,"Diploderma makii",牧氏攀蜥,"Diploderma makii",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"接近受脅（NT, Near Threatened）"
+b5da1edb-8f56-4e4a-bcf1-71533779231d,種,爬蟲類,Agamidae,飛蜥科,"Diploderma polygonatum",黃口攀蜥,"Diploderma polygonatum",,"原生 Native",,
+e4552802-d7c0-450f-af17-2a7a85328b86,種,爬蟲類,Agamidae,飛蜥科,"Diploderma swinhonis",斯文豪氏攀蜥,"Diploderma swinhonis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+f3bb3294-f26a-4d6c-ab70-23f5b0667481,種,爬蟲類,Agamidae,飛蜥科,"Physignathus cocincinus",綠水龍,"Physignathus cocincinus",,"外來 Non-native",,
+6b3d895e-4eb2-45d2-b88d-a2d2342c8c6e,種,爬蟲類,Anguidae,蛇蜥科,"Dopasia harti",哈特氏蛇蜥,"Dopasia harti",,"原生 Native",第二級、珍貴稀有保育類野生動物,"資料缺乏（DD, Data Deficient）"
+30ecc23f-0b29-440d-abe7-85e3ac4881c3,種,爬蟲類,Chamaeleonidae,變色龍科,"Chamaeleo calyptratus",高冠變色龍,"Chamaeleo calyptratus",,"原生 Native",,
+9ca257ce-5c90-412c-9558-d0c692e65571,種,爬蟲類,Cheloniidae,蠵龜科,"Caretta caretta",赤蠵龜,"Caretta caretta",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+9ceb18ee-2e88-40c6-84aa-079de58c2c6c,種,爬蟲類,Cheloniidae,蠵龜科,"Chelonia mydas",綠蠵龜,"Chelonia mydas",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+ecc9e451-b816-4792-bac6-983e5e633a71,種,爬蟲類,Cheloniidae,蠵龜科,"Eretmochelys imbricata",玳瑁,"Eretmochelys imbricata",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+82b23908-a037-4198-b8f2-9dc5197d8493,種,爬蟲類,Cheloniidae,蠵龜科,"Lepidochelys olivacea",欖蠵龜,"Lepidochelys olivacea",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+fa561dd6-3909-42f3-9bc2-e4444c64c707,種,爬蟲類,Colubridae,黃頷蛇科,"Amphiesma sp.",排灣腹鏈蛇,"Amphiesma sp.",台灣特有,"原生 Native",,
+8be06967-5e75-409e-b385-370f62584df9,種,爬蟲類,Colubridae,黃頷蛇科,"Amphiesma stolatum",花浪蛇,"Amphiesma stolatum",,"原生 Native",,"暫無危機（LC, Least Concern）"
+3befed95-7127-4a55-93e4-fb9d4625125b,種,爬蟲類,Colubridae,黃頷蛇科,"Boiga kraepelini",大頭蛇,"Boiga kraepelini",,"原生 Native",,"暫無危機（LC, Least Concern）"
+774fb097-6a9c-4e9e-82ed-cb83fc287d6c,種,爬蟲類,Colubridae,黃頷蛇科,"Calamaria pavimentata",鐵線蛇,"Calamaria pavimentata",,"原生 Native",,
+a5ebe9d2-8bc9-454d-92fa-6d4720587a58,種,爬蟲類,Colubridae,黃頷蛇科,"Cyclophiops major",青蛇,"Cyclophiops major",,"原生 Native",,"暫無危機（LC, Least Concern）"
+51cbc525-33be-4ffa-a5b3-ae081ab93733,種,爬蟲類,Colubridae,黃頷蛇科,"Elaphe carinata",王錦蛇,"Elaphe carinata",,"原生 Native",,"暫無危機（LC, Least Concern）"
+dcdffc54-2f92-48ec-9543-c7f59f53d73f,種,爬蟲類,Colubridae,黃頷蛇科,"Euprepiophis mandarinus",玉斑錦蛇,"Euprepiophis mandarinus",,"原生 Native",第三級、其他應予保育之野生動物,"暫無危機（LC, Least Concern）"
+479ef797-d299-468c-aa96-aeb5b6fbf8b3,種,爬蟲類,Colubridae,黃頷蛇科,"Gonyosoma frenatus",灰腹綠錦蛇,"Gonyosoma frenatus",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+00f89f81-f5dd-4593-b9cf-2fd5bd429694,種,爬蟲類,Colubridae,黃頷蛇科,"Hebius miyajimae",金絲蛇,"Hebius miyajimae",台灣特有,"原生 Native",第一級、瀕臨絕種保育類野生動物,"瀕危（EN, Endangered）"
+89bf77af-cc15-44f6-bff4-a12ee7a03900,種,爬蟲類,Colubridae,黃頷蛇科,"Hebius sauteri",梭德氏遊蛇,"Hebius sauteri",台灣特有,"原生 Native",,
+a8553e83-ae11-49e0-9867-0cfb0fe2a6e0,種,爬蟲類,Colubridae,黃頷蛇科,"Lycodon rufozonatus",紅斑蛇,"Lycodon rufozonatus",,"原生 Native",,
+1bc162c5-fbaf-4be3-b925-843da235a6b6,種,爬蟲類,Colubridae,黃頷蛇科,"Lycodon ruhstrati",白梅花蛇,"Lycodon ruhstrati",,"原生 Native",,
+30201913-8f51-41ab-b7b1-33ef7c228dfb,種,爬蟲類,Colubridae,黃頷蛇科,"Oligodon formosanus",赤背松柏根,"Oligodon formosanus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+5b386059-7265-4039-9239-43bb49235fdc,種,爬蟲類,Colubridae,黃頷蛇科,"Oligodon ornatus",赤腹松柏根,"Oligodon ornatus",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+7de37932-20d8-41fd-bd8d-a803c5b15854,種,爬蟲類,Colubridae,黃頷蛇科,"Oreocryptophis porphyraceus",紅竹蛇,"Oreocryptophis porphyraceus",,"原生 Native",,
+a0624436-a49d-457c-b491-dc61406d49c3,種,爬蟲類,Colubridae,黃頷蛇科,"Orthriophis taeniurus",臺灣黑眉錦蛇,"Orthriophis taeniurus",,"原生 Native",第三級、其他應予保育之野生動物,
+e1dd4255-153a-46a5-bc94-4af831c4331b,種,爬蟲類,Colubridae,黃頷蛇科,"Plagiopholis styani",福建頸斑蛇,"Plagiopholis styani",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+a8a7d3a2-76b2-4f91-925f-6e7028150446,種,爬蟲類,Colubridae,黃頷蛇科,"Psammodynastes pulverulentus",茶斑蛇,"Psammodynastes pulverulentus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+47978396-8340-4201-a766-c3c79e9bd4c1,種,爬蟲類,Colubridae,黃頷蛇科,"Pseudagkistrodon rudis",擬龜殼花,"Pseudagkistrodon rudis",,"原生 Native",,
+938b3d6e-65cc-44b3-a0f5-f3de6cc57ef0,種,爬蟲類,Colubridae,黃頷蛇科,"Pseudoxenodon stejnegeri",史丹吉氏斜鱗蛇,"Pseudoxenodon stejnegeri",,"原生 Native",,
+34b52900-53c4-422f-b353-5d2de3f1f60f,種,爬蟲類,Colubridae,黃頷蛇科,"Ptyas korros",細紋南蛇,"Ptyas korros",,"原生 Native",,"暫無危機（LC, Least Concern）"
+d0a1fd02-c836-4e09-8f06-287438b6bcc5,種,爬蟲類,Colubridae,黃頷蛇科,"Ptyas mucosus",南蛇,"Ptyas mucosus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+4b1343f3-89a6-484f-bad3-76956a3776de,種,爬蟲類,Colubridae,黃頷蛇科,"Rhabdophis swinhonis",斯文豪氏遊蛇,"Rhabdophis swinhonis",台灣特有,"原生 Native",第三級、其他應予保育之野生動物,"暫無危機（LC, Least Concern）"
+634de9d3-0592-4573-b730-a6fcc9a24e8a,種,爬蟲類,Colubridae,黃頷蛇科,"Rhabdophis tigrinus",虎斑頸槽蛇,"Rhabdophis tigrinus",,"原生 Native",,
+c35a686b-be3e-4cb5-8502-238920a34c28,種,爬蟲類,Colubridae,黃頷蛇科,"Sibynophis chinensis",黑頭蛇,"Sibynophis chinensis",,"原生 Native",,
+1638a432-d2fd-473f-bac2-5c1fe2a70c20,種,爬蟲類,Colubridae,黃頷蛇科,"Sinonatrix annularis",赤腹遊蛇,"Sinonatrix annularis",,"原生 Native",第二級、珍貴稀有保育類野生動物,"資料缺乏（DD, Data Deficient）"
+ba6cb1e8-7585-42d8-a693-ba280ef44cea,種,爬蟲類,Colubridae,黃頷蛇科,"Sinonatrix percarinata",白腹遊蛇,"Sinonatrix percarinata",,"原生 Native",,"接近受脅（NT, Near Threatened）"
+b065f5f5-3bee-482b-9f1a-6015fcac5b19,種,爬蟲類,Colubridae,黃頷蛇科,"Xenochrophis flavipunctatus",草花蛇,"Xenochrophis flavipunctatus",,"原生 Native",第三級、其他應予保育之野生動物,"暫無危機（LC, Least Concern）"
+1e9afb42-367f-471d-af20-50b7011c9e40,種,爬蟲類,Colubridae,黃頷蛇科,"Zaocys dhumnades",過山刀,"Zaocys dhumnades",,"原生 Native",,"暫無危機（LC, Least Concern）"
+1acef1e4-9f24-4f9c-8ab1-f4ded3437a5f,種,爬蟲類,Dermochelyidae,革龜科,"Dermochelys coriacea",革龜,"Dermochelys coriacea",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+3acaf9a3-16e8-4d2d-be7b-b1d8fa293456,種,爬蟲類,Elapidae,蝙蝠蛇科,"Bungarus multicinctus",雨傘節,"Bungarus multicinctus",,"原生 Native",,
+c0d90c23-e84e-47e3-b0e6-84c8bfa794e8,種,爬蟲類,Elapidae,蝙蝠蛇科,"Emydocephalus ijimae",飯島氏海蛇,"Emydocephalus ijimae",,"原生 Native",,
+4598f4c3-5807-4013-b22a-6cf4e38519ba,種,爬蟲類,Elapidae,蝙蝠蛇科,"Hydrophis curtus",棘刺海蛇,"Hydrophis curtus",,"原生 Native",,
+7169ed21-135d-4fb7-b4ad-ea82246f0452,種,爬蟲類,Elapidae,蝙蝠蛇科,"Hydrophis cyanocinctus",青環海蛇,"Hydrophis cyanocinctus",,"原生 Native",,
+e5509f42-a524-4e84-b023-400bcd08d0a3,種,爬蟲類,Elapidae,蝙蝠蛇科,"Hydrophis melanocephalus",黑頭海蛇,"Hydrophis melanocephalus",,"原生 Native",,
+3146f02b-2d7f-4410-a1d7-ec9253ec8da8,種,爬蟲類,Elapidae,蝙蝠蛇科,"Hydrophis ornatus",麗斑海蛇,"Hydrophis ornatus",,"原生 Native",,
+6240aa63-a25f-4569-b0f1-fabe4ab094e2,種,爬蟲類,Elapidae,蝙蝠蛇科,"Hydrophis peronii",角海蛇,"Hydrophis peronii",,"原生 Native",,
+f450930f-98b5-4dab-a5b9-ed84d2f13ed6,種,爬蟲類,Elapidae,蝙蝠蛇科,"Laticauda colubrina",黃唇青斑海蛇,"Laticauda colubrina",,"原生 Native",,
+bf6b2263-bc5b-4bd2-84c8-c369c2f516b3,種,爬蟲類,Elapidae,蝙蝠蛇科,"Laticauda laticaudata",黑唇青斑海蛇,"Laticauda laticaudata",,"原生 Native",,
+3fb85da7-dfee-4808-9b8e-6e14978b486b,種,爬蟲類,Elapidae,蝙蝠蛇科,"Laticauda semifasciata",闊帶青斑海蛇,"Laticauda semifasciata",,"原生 Native",,
+4eb2f8d6-c656-452a-8fcf-bf34d9f6f2a4,種,爬蟲類,Elapidae,蝙蝠蛇科,"Naja atra",眼鏡蛇,"Naja atra",,"原生 Native",,"暫無危機（LC, Least Concern）"
+465eee4f-f2eb-4dca-ace2-3d7e5be84fa3,種,爬蟲類,Elapidae,蝙蝠蛇科,"Pelamis platurus",長吻海蛇,"Pelamis platurus",,"原生 Native",,
+6cd76c8f-05b6-497d-bbf4-505334c1beac,種,爬蟲類,Elapidae,蝙蝠蛇科,"Sinomicrurus macclellandi",環紋赤蛇,"Sinomicrurus macclellandi",,"原生 Native",第三級、其他應予保育之野生動物,
+fa0528e2-44f5-442e-93ec-782a6bdc6eca,種,爬蟲類,Elapidae,蝙蝠蛇科,"Sinomicrurus sauteri",梭德氏帶紋赤蛇,"Sinomicrurus sauteri",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"暫無危機（LC, Least Concern）"
+9fdabd61-783c-4a57-9a19-4e9dab98cf9f,種,爬蟲類,Emydidae,澤龜科,"Trachemys scripta",紅耳泥龜,"Trachemys scripta",,"外來 Non-native",,
+74a5b53d-11b7-4740-955d-6587995d5793,種,爬蟲類,Gekkonidae,壁虎科,"Gehyra mutilata",裂足虎,"Gehyra mutilata",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+12c920ac-e8d3-4ba1-bb70-18583a5d278b,種,爬蟲類,Gekkonidae,壁虎科,"Gekko gecko",大守宮,"Gekko gecko",,"外來 Non-native",,
+142d5c54-cb14-4954-a5f9-f02713cf719d,種,爬蟲類,Gekkonidae,壁虎科,"Gekko guishanicus",龜山壁虎,"Gekko guishanicus",,"原生 Native",,
+afc11993-46ea-4304-9c05-ff0198ccf250,種,爬蟲類,Gekkonidae,壁虎科,"Gekko hokouensis",鉛山壁虎,"Gekko hokouensis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+b918cdac-a9ef-4f60-b396-d3cad83ef45c,種,爬蟲類,Gekkonidae,壁虎科,"Gekko kikuchii",菊池氏壁虎,"Gekko kikuchii",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"資料缺乏（DD, Data Deficient）"
+b2975c1c-8643-4206-a6de-2f2ec65f30d9,種,爬蟲類,Gekkonidae,壁虎科,"Gekko monarchus",脊斑壁虎,"Gekko monarchus",,"外來 Non-native",,
+9c16eaf2-fda5-4392-8eaf-7586b6270c08,種,爬蟲類,Gekkonidae,壁虎科,"Hemidactylus bowringii",無疣蝎虎,"Hemidactylus bowringii",,"原生 Native",,"暫無危機（LC, Least Concern）"
+04c6dcad-8ff2-4911-a95e-b13996177c41,種,爬蟲類,Gekkonidae,壁虎科,"Hemidactylus brookii",密疣蝎虎,"Hemidactylus brookii",,"外來 Non-native",,
+381bf2ce-6ad3-4a01-a6ae-e03d1eb7d60d,種,爬蟲類,Gekkonidae,壁虎科,"Hemidactylus frenatus",疣尾蝎虎,"Hemidactylus frenatus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+daa5fdb7-8165-4b29-aded-dd4b0265b001,種,爬蟲類,Gekkonidae,壁虎科,"Hemidactylus garnotii",鋸尾蝎虎,"Hemidactylus garnotii",,"原生 Native",,
+82cea777-387b-4f49-ab58-01ffe24d055e,種,爬蟲類,Gekkonidae,壁虎科,"Hemidactylus stejnegeri",史丹吉氏蝎虎,"Hemidactylus stejnegeri",,"原生 Native",,"暫無危機（LC, Least Concern）"
+eea05d43-5895-4d78-a647-397b351e274b,種,爬蟲類,Gekkonidae,壁虎科,"Hemiphyllodactylus typus",半葉趾蝎虎,"Hemiphyllodactylus typus",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+829f3f60-a99e-418d-b771-8989e34f62b3,種,爬蟲類,Gekkonidae,壁虎科,"Lepidodactylus lugubris",鱗趾虎,"Lepidodactylus lugubris",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+6b9bc28a-2fce-4322-83bf-1020c36030a0,種,爬蟲類,Gekkonidae,壁虎科,"Lepidodactylus yami",雅美鱗趾虎,"Lepidodactylus yami",台灣特有,"原生 Native",第二級、珍貴稀有保育類野生動物,"資料缺乏（DD, Data Deficient）"
+6e4ebaf6-7bcc-4962-9b76-6c03cca192f6,種,爬蟲類,Geoemydidae,地龜科,"Cuora flavomarginata",食蛇龜,"Cuora flavomarginata",,"原生 Native",第一級、瀕臨絕種保育類野生動物,"易危（VU, Vulnerable）"
+4b94bfc5-86cf-4c04-a358-83da85980619,種,爬蟲類,Geoemydidae,地龜科,"Mauremys mutica",柴棺龜,"Mauremys mutica",,"原生 Native",第一級、瀕臨絕種保育類野生動物,
+a1148186-eaa1-482a-931f-7b26c9d96a7a,種,爬蟲類,Geoemydidae,地龜科,"Mauremys reevesii",金龜,"Mauremys reevesii",,"原生 Native",第二級、珍貴稀有保育類野生動物,"極危（CR, Critically Endangered）"
+3d145d1d-f9b2-47fd-99fc-f047b10cd560,種,爬蟲類,Geoemydidae,地龜科,"Mauremys sinensis",斑龜,"Mauremys sinensis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+d08669ba-8e9e-4d01-b96e-4265d17bc96d,種,爬蟲類,Homalopsidae,水蛇科,"Enhydris plumbea",鉛色水蛇,"Enhydris plumbea",,"原生 Native",第三級、其他應予保育之野生動物,"易危（VU, Vulnerable）"
+acffe805-822f-4fce-bfd8-fdd8bd096319,種,爬蟲類,Homalopsidae,水蛇科,"Myrrophis chinensis",唐水蛇,"Myrrophis chinensis",,"原生 Native",第二級、珍貴稀有保育類野生動物,"瀕危（EN, Endangered）"
+27cc5120-bb2d-4a43-b353-154b05987c0f,種,爬蟲類,Iguanidae,美洲鬣蜥科,"Iguana iguana",綠鬣蜥,"Iguana iguana",,"外來 Non-native",,
+28c3ac47-08cf-48d6-a709-58a379b27798,種,爬蟲類,Lacertidae,正蜥科,"Takydromus formosanus",臺灣草蜥,"Takydromus formosanus",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+aa76d4e3-3cee-43b3-9c1b-81ea53557026,種,爬蟲類,Lacertidae,正蜥科,"Takydromus hsuehshanensis",雪山草蜥,"Takydromus hsuehshanensis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+3b33f66d-7384-469c-b554-b3a9badae85d,種,爬蟲類,Lacertidae,正蜥科,"Takydromus kuehnei",古氏草蜥,"Takydromus kuehnei",,"原生 Native",,
+5d6932b1-85be-48b6-bbf1-3ce9baac83d5,種,爬蟲類,Lacertidae,正蜥科,"Takydromus luyeanus",鹿野草蜥,"Takydromus luyeanus",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+dfcd02f0-bb59-43e0-b035-f72509ec1822,種,爬蟲類,Lacertidae,正蜥科,"Takydromus sauteri",梭德氏草蜥,"Takydromus sauteri",台灣特有,"原生 Native",第三級、其他應予保育之野生動物,"資料缺乏（DD, Data Deficient）"
+10b6ef03-d72f-406f-ab21-14a5b644dee5,種,爬蟲類,Lacertidae,正蜥科,"Takydromus septentrionalis",北草蜥,"Takydromus septentrionalis",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+be489ded-5294-4a59-82e8-dc1211c441ba,種,爬蟲類,Lacertidae,正蜥科,"Takydromus stejnegeri",蓬萊草蜥,"Takydromus stejnegeri",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+8b7b627d-15c1-4126-86ce-2fafc4b61dd0,種,爬蟲類,Lacertidae,正蜥科,"Takydromus viridipunctatus",翠斑草蜥,"Takydromus viridipunctatus",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+b6cbb8e2-8c0b-4a4a-a353-7206a3ef9fa4,種,爬蟲類,Pareatidae,鈍頭蛇科,"Pareas atayal",泰雅鈍頭蛇,"Pareas atayal",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+36df148e-4ab3-4570-987d-3ac6697a1f81,種,爬蟲類,Pareatidae,鈍頭蛇科,"Pareas formosensis",臺灣鈍頭蛇,"Pareas formosensis",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+9c90875f-70d1-4d70-b769-adc73d1c4b0d,種,爬蟲類,Pareatidae,鈍頭蛇科,"Pareas komaii",駒井氏鈍頭蛇,"Pareas komaii",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+534293e3-4d9b-42fb-93e5-8a09a36c62d6,種,爬蟲類,Podocnemididae,,"Podocnemis unifilis",黃頭側頸龜,"Podocnemis unifilis",,"原生 Native",,
+02090f7f-f362-4a04-9b5a-a797c4e32246,種,爬蟲類,Polychrotidae,變色蜥科,"Anolis sagrei",沙氏變色蜥,"Anolis sagrei",,"外來 Non-native",,
+edd1ff3a-bfea-4ad6-87fd-9e0b8f897872,種,爬蟲類,Pythonidae,蟒科,"Python bivittatus",緬甸蟒,"Python bivittatus",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+d4df2150-da18-420c-b3b5-20ac90905006,種,爬蟲類,Pythonidae,蟒科,"Python regius",球蟒,"Python regius",,"外來 Non-native",,
+1cf088a6-77a9-42eb-b062-70826006ed66,種,爬蟲類,Scincidae,石龍子科,"Ateuchosaurus chinensis",中國光蜥,"Ateuchosaurus chinensis",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+11721a8e-f075-4999-9c66-83c73a6c46ab,種,爬蟲類,Scincidae,石龍子科,"Emoia atrocostata",岩岸島蜥,"Emoia atrocostata",,"原生 Native",,"接近受脅（NT, Near Threatened）"
+fdb1f11f-1f55-49ae-94f8-74c5c5c5fd55,種,爬蟲類,Scincidae,石龍子科,"Eutropis cumingi",庫氏真稜蜥,"Eutropis cumingi",,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+85a463d0-5328-49ea-8e2f-f5d546304ca7,種,爬蟲類,Scincidae,石龍子科,"Eutropis longicaudata",長尾真稜蜥,"Eutropis longicaudata",,"原生 Native",,"暫無危機（LC, Least Concern）"
+d223bcc0-c3ca-425d-9459-a0229de04ddd,種,爬蟲類,Scincidae,石龍子科,"Eutropis multicarinata",多稜真稜蜥,"Eutropis multicarinata",,"原生 Native",,
+47ab4272-64bb-4b8e-b010-037fb787f256,種,爬蟲類,Scincidae,石龍子科,"Eutropis multifasciata",多線真稜蜥,"Eutropis multifasciata",,"外來 Non-native",,
+c405a9d0-fd1d-4d93-afd5-99972e363790,種,爬蟲類,Scincidae,石龍子科,"Plestiodon chinensis",中國石龍子,"Plestiodon chinensis",,"原生 Native",,
+819ae3f4-db8b-4a6c-968e-ed17edde6671,種,爬蟲類,Scincidae,石龍子科,"Plestiodon elegans",麗紋石龍子,"Plestiodon elegans",,"原生 Native",,"暫無危機（LC, Least Concern）"
+76646403-513b-46b2-9847-e08556c6d6aa,種,爬蟲類,Scincidae,石龍子科,"Plestiodon leucostictus",白斑石龍子,"Plestiodon leucostictus",台灣特有,"原生 Native",,"資料缺乏（DD, Data Deficient）"
+e74931db-d96c-4263-82a2-c36a0f4caffb,種,爬蟲類,Scincidae,石龍子科,"Scincella formosensis",臺灣滑蜥,"Scincella formosensis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+a5083846-569d-472c-8a66-e2dadbd8ab32,種,爬蟲類,Scincidae,石龍子科,"Sphenomorphus incognitus",股鱗蜓蜥,"Sphenomorphus incognitus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+09fff617-7cfd-4978-96bf-e87fcd262751,種,爬蟲類,Scincidae,石龍子科,"Sphenomorphus indicus",印度蜓蜥,"Sphenomorphus indicus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+8b007610-14d4-4254-b052-66afa50d18d2,種,爬蟲類,Scincidae,石龍子科,"Sphenomorphus taiwanensis",臺灣蜓蜥,"Sphenomorphus taiwanensis",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"
+060c8136-2fe0-4478-8f68-c2d1a85b413d,種,爬蟲類,Testudinidae,陸龜科,"Centrochelys  sulcata",蘇卡達象龜,"Centrochelys  sulcata",,"外來 Non-native",,
+c12abbb0-3792-44b9-bbb7-8923cfb9fd4f,種,爬蟲類,Trionychidae,鱉科,"Pelodiscus sinensis",中華鱉,"Pelodiscus sinensis",,"原生 Native",,"暫無危機（LC, Least Concern）"
+2098e4b8-10a6-4fef-8292-ad5449b0f98c,種,爬蟲類,Typhlopidae,盲蛇科,"Argyrophis koshunensis",恆春盲蛇,"Argyrophis koshunensis",台灣特有,"原生 Native",,
+95587842-c654-4f20-a297-229dc4cc49fa,種,爬蟲類,Typhlopidae,盲蛇科,"Ramphotyphlops braminus",鉤盲蛇,"Ramphotyphlops braminus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+a26247d3-879c-4272-a5c8-504f54654f50,種,爬蟲類,Viperidae,蝮蛇科,"Daboia siamensis",鎖鍊蛇,"Daboia siamensis",,"原生 Native",第二級、珍貴稀有保育類野生動物,"暫無危機（LC, Least Concern）"
+1e885a7c-5dfd-46f1-a141-658c4d403dbd,種,爬蟲類,Viperidae,蝮蛇科,"Deinagkistrodon acutus",百步蛇,"Deinagkistrodon acutus",,"原生 Native",第二級、珍貴稀有保育類野生動物,"暫無危機（LC, Least Concern）"
+37f0c327-4e6e-4dea-ba9f-61e3ea1da59e,種,爬蟲類,Viperidae,蝮蛇科,"Ovophis monticola",瑪家山龜殼花,"Ovophis monticola",,"原生 Native",第二級、珍貴稀有保育類野生動物,"暫無危機（LC, Least Concern）"
+6f7f1568-39e7-461b-b5e2-94b67917db63,種,爬蟲類,Viperidae,蝮蛇科,"Protobothrops mucrosquamatus",龜殼花,"Protobothrops mucrosquamatus",,"原生 Native",,"暫無危機（LC, Least Concern）"
+4cd602c8-af4c-4e47-b2af-f85e5c48218f,種,爬蟲類,Viperidae,蝮蛇科,"Trimeresurus gracilis",菊池氏龜殼花,"Trimeresurus gracilis",台灣特有,"原生 Native",第三級、其他應予保育之野生動物,"暫無危機（LC, Least Concern）"
+a6fc0c54-c0bd-40ee-8494-bd4f1defd8f0,種,爬蟲類,Viperidae,蝮蛇科,"Trimeresurus stejnegeri",赤尾青竹絲,"Trimeresurus stejnegeri",,"原生 Native",,
+d348ba61-0bed-467a-a2b3-4bb7b4a826f0,種,爬蟲類,Xenodermatidae,閃皮蛇科,"Achalinus formosanus",臺灣標蛇,"Achalinus formosanus",,"原生 Native",,
+2c477dd1-88b2-49d3-b072-8a72bf225ad7,種,爬蟲類,Xenodermatidae,閃皮蛇科,"Achalinus niger",標蛇,"Achalinus niger",台灣特有,"原生 Native",,"暫無危機（LC, Least Concern）"

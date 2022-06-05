@@ -71,6 +71,58 @@ CREATE TABLE dao_jp_ylist (
   source varchar
 );
 
+DROP TABLE IF EXISTS taicol_animalia;
+CREATE TABLE taicol_animalia (
+  id integer primary key,
+  family varchar,
+  family_cname varchar,
+  cname varchar,
+  name varchar,
+  fullname varchar,
+  endemic integer,
+  iucn_category varchar,
+  source varchar
+);
+
+DROP TABLE IF EXISTS taicol_amphibia;
+CREATE TABLE taicol_amphibia (
+  id integer primary key,
+  family varchar,
+  family_cname varchar,
+  cname varchar,
+  name varchar,
+  fullname varchar,
+  endemic integer,
+  iucn_category varchar,
+  source varchar
+);
+
+DROP TABLE IF EXISTS taicol_aves;
+CREATE TABLE taicol_aves (
+  id integer primary key,
+  family varchar,
+  family_cname varchar,
+  cname varchar,
+  name varchar,
+  fullname varchar,
+  endemic integer,
+  iucn_category varchar,
+  source varchar
+);
+-- TaiCOL: reptilia
+DROP TABLE IF EXISTS taicol_reptilia;
+CREATE TABLE taicol_reptilia (
+  id integer primary key,
+  family varchar,
+  family_cname varchar,
+  cname varchar,
+  name varchar,
+  fullname varchar,
+  endemic integer,
+  iucn_category varchar,
+  source varchar
+);
+
 DROP TABLE IF EXISTS dao_plant_type;
 CREATE TABLE dao_plant_type (
   plant_type integer,
