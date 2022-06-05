@@ -383,6 +383,16 @@ class Genlist(object):
             conn.commit()
         conn.close()
 
+    def dbTables(self, table_name, dbfile):
+        conn = sqlite3.connect(dbfile)
+        curs = conn.cursor()
+        get_db_tables = '''SELECT * FROM %s ''' % table_name
+        curs.execute(get_db_tables)
+        get_dblist_result = curs.fetchall()
+        conn.commit()
+        return(get_dblist_result)
+        conn.close()
+
     def dbGetsp(self, table_name, dbfile):
         conn = sqlite3.connect(dbfile)
         curs = conn.cursor()

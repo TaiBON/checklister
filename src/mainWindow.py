@@ -67,6 +67,7 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             # self.butUpdateDB.clicked.connect(self.updateDB)
 
             ### COMPLETER
+            self.dbCompleter()
             # enable completer to show matched species list
             self.spCompleter()
 
@@ -275,7 +276,9 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         shortcut key events
         '''
         try:
-
+            if qKeyEvent.key() == Qt.Key.Key_Return and (qKeyEvent.modifiers() & Qt.KeyboardModifier.ControlModifier):
+                if self.lineDB.text() != None:
+                    self.selectDB()
             if qKeyEvent.key() == Qt.Key.Key_Return or qKeyEvent.key() == Qt.Key.Key_Enter:
                 if self.lineSpecies.text() != None:
                     self.addToTree()
@@ -637,10 +640,38 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
+    def dbCompleter(self):
+        try:
+            def setHighlighted(self, text):
+                self.lastSelected = text
+            g = genlist_api.Genlist()
+            completer = QCompleter() 
+            model = QStringListModel()
+            completer.setModel(model)
+            # PopupCompletion
+            completer.setFilterMode(Qt.MatchFlag.MatchContains)
+            completer.setCaseSensitivity(Qt.CaseSensitivity.CaseInsensitive)
+            self.lineDB.setCompleter(completer)
+            db_table = self.selectDB()
+            retrieved = self.g.dbTables('dao_dblist', self.sqlite_db)
+            b_container=[]
+            for i in range(len(retrieved)):
+                b_container.append(retrieved[i][2] +  "|" + retrieved[i][1] )
+            model.setStringList(b_container)
+
+        except BaseException as e:
+            QMessageBox.information(self, "Warning", str(e))
+
+
     def selectDB(self):
         try:
-            if self.actionTaiwanVascularPlants.isChecked():
+            if lineDB.text() != None: 
+                db_tableitem = str.split(str(self.lineDB.text()), '|')
+                db_table = db_tableitem[1]
+                dblabel.setText(self.tr(db_tableitem[0]))
+            elif self.actionTaiwanVascularPlants.isChecked():
                 db_table = 'dao_pnamelist_pg'
+                self.lineDB.text() 
                 self.dblabel.setText(self.tr('Current DB: Vascular Plants of Taiwan'))
             elif self.actionTaiwanRedList2017.isChecked():
                 db_table = 'dao_twredlist2017'
