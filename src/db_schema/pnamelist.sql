@@ -1,4 +1,13 @@
 -- create plant namelist "pnamelist"
+
+DROP TABLE IF EXISTS dao_dblist;
+CREATE TABLE dao_dblist (
+  id integer primary key,
+  table_name varchar, --database table name, ex: dao_pnamelist_pg
+  db_name varchar, -- database name, ex: Taiwan: Vascular plants
+  db_type varchar -- database type: plant/non-plant
+);
+
 DROP TABLE IF EXISTS dao_pnamelist_pg;
 CREATE TABLE dao_pnamelist_pg (
   id integer primary key,
@@ -62,12 +71,12 @@ CREATE TABLE dao_jp_ylist (
   source varchar
 );
 
-
 DROP TABLE IF EXISTS dao_plant_type;
 CREATE TABLE dao_plant_type (
   plant_type integer,
   pt_name varchar
 );
+
 INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (0, '苔蘚地衣類植物 Mosses and Lichens');
 INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (1, '石松類植物 Lycophytes');
 INSERT INTO dao_plant_type (plant_type, pt_name) VALUES (2, '蕨類植物 Monilophytes');

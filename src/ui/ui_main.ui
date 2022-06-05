@@ -27,7 +27,7 @@
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="1">
+    <item row="4" column="1">
      <widget class="QScrollArea" name="scrollArea">
       <property name="sizePolicy">
        <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
@@ -64,7 +64,7 @@
          <x>0</x>
          <y>0</y>
          <width>502</width>
-         <height>506</height>
+         <height>516</height>
         </rect>
        </property>
        <layout class="QGridLayout" name="gridLayout_4">
@@ -120,6 +120,9 @@
              <property name="autoFillBackground">
               <bool>false</bool>
              </property>
+             <property name="styleSheet">
+              <string notr="true">border-radius: 5px;</string>
+             </property>
             </widget>
            </item>
            <item row="0" column="0">
@@ -132,13 +135,6 @@
              </property>
              <property name="text">
               <string>Common name/scientific name/family</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QLabel" name="dblabel">
-             <property name="text">
-              <string>Current DB: Vascular plants of Taiwan</string>
              </property>
             </widget>
            </item>
@@ -158,6 +154,9 @@
              </property>
              <property name="mouseTracking">
               <bool>false</bool>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 1px gray; border-radius: 5px;</string>
              </property>
              <property name="editTriggers">
               <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
@@ -258,6 +257,31 @@
        </layout>
       </widget>
      </widget>
+    </item>
+    <item row="3" column="1">
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <widget class="QLabel" name="dblabel">
+        <property name="text">
+         <string>Current DB: Vascular plants of Taiwan</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QLineEdit" name="lineDB">
+        <property name="styleSheet">
+         <string notr="true">border-radius: 5px;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QPushButton" name="selectDBButton">
+        <property name="text">
+         <string>select</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
    </layout>
   </widget>
@@ -360,92 +384,6 @@
    <addaction name="menuWindow"/>
    <addaction name="menuHelp"/>
   </widget>
-  <widget class="QToolBar" name="toolBarEdit">
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-     <horstretch>0</horstretch>
-     <verstretch>1</verstretch>
-    </sizepolicy>
-   </property>
-   <property name="mouseTracking">
-    <bool>false</bool>
-   </property>
-   <property name="focusPolicy">
-    <enum>Qt::ClickFocus</enum>
-   </property>
-   <property name="windowTitle">
-    <string>Edit Toolbar</string>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QToolBar{spacing: 0px;}</string>
-   </property>
-   <property name="allowedAreas">
-    <set>Qt::AllToolBarAreas</set>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>40</width>
-     <height>40</height>
-    </size>
-   </property>
-   <property name="toolButtonStyle">
-    <enum>Qt::ToolButtonIconOnly</enum>
-   </property>
-   <property name="floatable">
-    <bool>true</bool>
-   </property>
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-   <addaction name="actionNewProject"/>
-   <addaction name="actionSaveTxt"/>
-   <addaction name="actionSelectExport"/>
-   <addaction name="actionBatch"/>
-   <addaction name="actionExportChecklist"/>
-   <addaction name="separator"/>
-   <addaction name="actionAddSpecies"/>
-   <addaction name="actionDeleteSel"/>
-   <addaction name="actionDeleteAll"/>
-   <addaction name="actionSelectAll"/>
-   <addaction name="actionDeselectAll"/>
-  </widget>
-  <widget class="QToolBar" name="toolBarSearch">
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
-   <property name="windowTitle">
-    <string>Search Toolbar</string>
-   </property>
-   <property name="autoFillBackground">
-    <bool>true</bool>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QToolBar_2{spacing: 0px;}</string>
-   </property>
-   <property name="iconSize">
-    <size>
-     <width>40</width>
-     <height>40</height>
-    </size>
-   </property>
-   <attribute name="toolBarArea">
-    <enum>TopToolBarArea</enum>
-   </attribute>
-   <attribute name="toolBarBreak">
-    <bool>false</bool>
-   </attribute>
-   <addaction name="actionTropicos"/>
-   <addaction name="actionNomenMatch"/>
-   <addaction name="separator"/>
-   <addaction name="actionHomepage"/>
-   <addaction name="actionReportIssues"/>
-  </widget>
   <widget class="QDockWidget" name="dockWidgetTaxonInfo">
    <property name="enabled">
     <bool>true</bool>
@@ -496,7 +434,7 @@
           <x>0</x>
           <y>0</y>
           <width>576</width>
-          <height>484</height>
+          <height>536</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_5">
@@ -515,6 +453,9 @@
                <width>100</width>
                <height>0</height>
               </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border: 1px solid gray; border-radius: 5px;</string>
              </property>
              <property name="text">
               <string/>
@@ -563,6 +504,11 @@
              </property>
              <item>
               <property name="text">
+               <string>Plants of the World (POWO)</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
                <string>EOL</string>
               </property>
              </item>
@@ -589,11 +535,6 @@
              <item>
               <property name="text">
                <string>Plants of Taiwan</string>
-              </property>
-             </item>
-             <item>
-              <property name="text">
-               <string>Plants of the World (POWO)</string>
               </property>
              </item>
              <item>
@@ -657,10 +598,6 @@
    </widget>
   </widget>
   <action name="actionSelectExport">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/export.png</normaloff>:/icons/export.png</iconset>
-   </property>
    <property name="text">
     <string>Select export file</string>
    </property>
@@ -678,10 +615,6 @@
    </property>
   </action>
   <action name="actionBatch">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/batch.png</normaloff>:/icons/batch.png</iconset>
-   </property>
    <property name="text">
     <string>Select batch export file</string>
    </property>
@@ -696,10 +629,6 @@
    </property>
   </action>
   <action name="actionDeleteSel">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/delete.png</normaloff>:/icons/delete.png</iconset>
-   </property>
    <property name="text">
     <string>Delete selected</string>
    </property>
@@ -711,10 +640,6 @@
    </property>
   </action>
   <action name="actionDeleteAll">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/delete_all.png</normaloff>:/icons/delete_all.png</iconset>
-   </property>
    <property name="text">
     <string>Delete all</string>
    </property>
@@ -734,10 +659,6 @@
    </property>
   </action>
   <action name="actionHomepage">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/home.png</normaloff>:/icons/home.png</iconset>
-   </property>
    <property name="text">
     <string>Homepage</string>
    </property>
@@ -749,10 +670,6 @@
    </property>
   </action>
   <action name="actionReportIssues">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/bug_report.png</normaloff>:/icons/bug_report.png</iconset>
-   </property>
    <property name="text">
     <string>Report issues</string>
    </property>
@@ -816,10 +733,6 @@
    </property>
   </action>
   <action name="actionTropicos">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/tropicos.png</normaloff>:/icons/tropicos.png</iconset>
-   </property>
    <property name="text">
     <string>Search Tropicos</string>
    </property>
@@ -834,10 +747,6 @@
    </property>
   </action>
   <action name="actionSaveTxt">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/save_txt.png</normaloff>:/icons/save_txt.png</iconset>
-   </property>
    <property name="text">
     <string>&amp;Save species txtfile</string>
    </property>
@@ -849,10 +758,6 @@
    </property>
   </action>
   <action name="actionExportChecklist">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/execute_export.png</normaloff>:/icons/execute_export.png</iconset>
-   </property>
    <property name="text">
     <string>Export checklist!</string>
    </property>
@@ -864,10 +769,6 @@
    </property>
   </action>
   <action name="actionNomenMatch">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/nomenmatch.png</normaloff>:/icons/nomenmatch.png</iconset>
-   </property>
    <property name="text">
     <string>Search NomenMatch</string>
    </property>
@@ -879,10 +780,6 @@
    </property>
   </action>
   <action name="actionAddSpecies">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/addspecies_32x32.png</normaloff>:/icons/addspecies_32x32.png</iconset>
-   </property>
    <property name="text">
     <string>Add taxa</string>
    </property>
@@ -905,10 +802,6 @@
    </property>
   </action>
   <action name="actionDeselectAll">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/deselect.png</normaloff>:/icons/deselect.png</iconset>
-   </property>
    <property name="text">
     <string>Deselect all species</string>
    </property>
@@ -923,10 +816,6 @@
    </property>
   </action>
   <action name="actionSelectAll">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/select_all.png</normaloff>:/icons/select_all.png</iconset>
-   </property>
    <property name="text">
     <string>Select all taxa</string>
    </property>
@@ -1002,10 +891,6 @@
    </property>
   </action>
   <action name="actionNewProject">
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/new.png</normaloff>:/icons/new.png</iconset>
-   </property>
    <property name="text">
     <string>New project</string>
    </property>
@@ -1070,10 +955,6 @@
   <action name="ButReload">
    <property name="checkable">
     <bool>true</bool>
-   </property>
-   <property name="icon">
-    <iconset resource="../iconResources.qrc">
-     <normaloff>:/icons/search.png</normaloff>:/icons/search.png</iconset>
    </property>
    <property name="text">
     <string>ButReload</string>

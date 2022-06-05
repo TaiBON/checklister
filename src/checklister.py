@@ -39,7 +39,7 @@ if __name__ == "__main__":
     myLocale = QLocale()
     trans = QTranslator()
     g = genlist_api.Genlist()
-    QDir.addSearchPath('icons', './icons')
+    #QDir.addSearchPath('icons', './icons')
     i18nQm = g.resource_path(os.path.join('i18n', 'checklister_' + myLocale.name() + '.qm'))
     trans.load(i18nQm)
     app.installTranslator(trans)

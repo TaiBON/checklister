@@ -3,7 +3,7 @@ PYRCC=pyrcc6
 PYTHON=python3.9
 PYTHONVENV=PYTHON39
 PYINSTALLER=$(PYTHONVENV)/bin/pyinstaller
-VERSION=v0.5.3
+VERSION=v0.6.0
 #PYINSTALLER= /usr/local/bin/pyinstaller
 
 all: mui translate binary
