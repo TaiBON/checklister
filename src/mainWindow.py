@@ -652,7 +652,6 @@ class MainWindow(QMainWindow, Ui_MainWindow):
             completer.setFilterMode(Qt.MatchFlag.MatchContains)
             completer.setCaseSensitivity(Qt.CaseSensitivity.CaseInsensitive)
             self.lineDB.setCompleter(completer)
-            db_table = self.selectDB()
             retrieved = self.g.dbTables('dao_dblist', self.sqlite_db)
             b_container=[]
             for i in range(len(retrieved)):
@@ -662,32 +661,32 @@ class MainWindow(QMainWindow, Ui_MainWindow):
         except BaseException as e:
             QMessageBox.information(self, "Warning", str(e))
 
-
     def selectDB(self):
         try:
-            if lineDB.text() != None: 
-                db_tableitem = str.split(str(self.lineDB.text()), '|')
-                db_table = db_tableitem[1]
-                dblabel.setText(self.tr(db_tableitem[0]))
-            elif self.actionTaiwanVascularPlants.isChecked():
-                db_table = 'dao_pnamelist_pg'
-                self.lineDB.text() 
-                self.dblabel.setText(self.tr('Current DB: Vascular Plants of Taiwan'))
-            elif self.actionTaiwanRedList2017.isChecked():
-                db_table = 'dao_twredlist2017'
-                self.dblabel.setText(self.tr('Current DB: the Red List of Taiwan Vascular Plants (2017)'))
-            elif self.actionTaiwanFlora.isChecked():
-                db_table = 'dao_pnamelist'
-                self.dblabel.setText(self.tr('Current DB: Flora of Taiwan'))
-            elif self.actionJapanYlist.isChecked():
-                db_table = 'dao_jp_ylist'
-                self.dblabel.setText(self.tr('Current DB: Ylist'))
+            if self.lineDB.text() != '': 
+                db_items = str.split(str(self.lineDB.text()), '|') 
+                db_table = db_items[0]
+#            elif self.actionTaiwanVascularPlants.isChecked():
+#                db_table = 'dao_pnamelist_pg'
+#                #self.lineDB.setText(self.tr('Current DB: Vascular Plants of Taiwan')) 
+#                self.dblabel.setText(self.tr('Current DB: Vascular Plants of Taiwan'))
+#            elif self.actionTaiwanRedList2017.isChecked():
+#                db_table = 'dao_twredlist2017'
+#                self.dblabel.setText(self.tr('Current DB: the Red List of Taiwan Vascular Plants (2017)'))
+#            elif self.actionTaiwanFlora.isChecked():
+#                db_table = 'dao_pnamelist'
+#                self.dblabel.setText(self.tr('Current DB: Flora of Taiwan'))
+#            elif self.actionJapanYlist.isChecked():
+#                db_table = 'dao_jp_ylist'
+#                self.dblabel.setText(self.tr('Current DB: Ylist'))
             else:
                 db_table = 'dao_pnamelist_pg'
                 self.dblabel.setText(self.tr('Current DB: Vascular Plants of Taiwan'))
             return(db_table)
-        except BaseException as e:
-            QMessageBox.information(self, "Warning", str(e))
+        except Exception as e:
+            exception_type, exception_object, exception_traceback = sys.exc_info()
+            line_number = exception_traceback.tb_lineno
+            QMessageBox.information(self, "Warning", str(line_number) + ':' + str(e))
 
     def checkDB(self):
         try:

@@ -121,7 +121,7 @@
               <bool>false</bool>
              </property>
              <property name="styleSheet">
-              <string notr="true">border-radius: 5px;</string>
+              <string notr="true">border: 1px solid gray; border-radius: 5px;</string>
              </property>
             </widget>
            </item>
@@ -156,7 +156,7 @@
               <bool>false</bool>
              </property>
              <property name="styleSheet">
-              <string notr="true">border: 1px gray; border-radius: 5px;</string>
+              <string notr="true">border: 2px gray; border-radius: 5px;</string>
              </property>
              <property name="editTriggers">
               <set>QAbstractItemView::DoubleClicked|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked</set>
@@ -271,6 +271,9 @@
        <widget class="QLineEdit" name="lineDB">
         <property name="styleSheet">
          <string notr="true">border-radius: 5px;</string>
+        </property>
+        <property name="text">
+         <string>Taiwan: Vascular plants|dao_pnamelist_pg</string>
         </property>
        </widget>
       </item>
