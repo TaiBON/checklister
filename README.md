@@ -6,6 +6,8 @@ checklister 是一個跨平台的物種名錄產生器
 
 [![DOI](https://zenodo.org/badge/44288646.svg)](https://zenodo.org/badge/latestdoi/44288646)
 
+新版--> https://github.com/mutolisp/checklister_ng
+
 ### 執行檔下載
 
 目前僅支援 windows 和 MacOS X 兩個平台的執行檔，其餘平台請自行編譯：
